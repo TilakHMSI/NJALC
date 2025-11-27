@@ -1,0 +1,25 @@
+{
+	"create_route_map":	false,
+	"create_new_project":	false,
+	"created_menu":	false,
+	"created_views":	true,
+	"theme":	"basicHTML",
+	"output_folder":	"C:\\MagicXPA412\\Projects\\HondaALC\\output",
+	"backup_current":	false,
+	"source_images_folder":	"C:\\MagicXPA412\\Projects\\HondaALC\\images",
+	"copy_images":	false,
+	"exposed_functionality":	true,
+	"allow_testing":	false,
+	"project_name":	"HondaALC",
+	"web_modules":	[
+		{
+			"module_name":	"",
+			"load_on_demand":	false,
+			"form_files":	[
+				"WarningmessageGrey/WarningmessageGrey",
+				"WarningmessageRed/WarningmessageRed"
+			]
+		}
+	],
+	"controls_accessor_only":	false
+}

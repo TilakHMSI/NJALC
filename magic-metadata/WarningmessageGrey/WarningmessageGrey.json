@@ -1,0 +1,75 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"WarningmessageGrey",
+		"window_type":	12,
+		"component_path":	"WarningmessageGrey/",
+		"module_name":	"",
+		"component_uniquename":	"WarningmessageGrey_WarningmessageGrey"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	575,
+		"height":	299
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"WARNNING....",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	2,
+				"y":	0,
+				"width":	570,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"P_ERROR",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	52,
+				"width":	565,
+				"height":	182
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VButton",
+				"button_style":	1,
+				"format":	"RET\\URN",
+				"attribute":	"A",
+				"common_line_id":	"line242"
+			},
+			"coordinates":	{
+				"x":	232,
+				"y":	242,
+				"width":	115,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

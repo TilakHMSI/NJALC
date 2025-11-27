@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<MenusRepository>
+
+  <Menus>
+    <Menu>
+      <MenuType val="4"/>
+      <MenuUid val="4000"/>
+      <Name val="Default Pulldown menu"/>
+      <MenuEntry>
+        <MenuType val="1"/>
+        <MenuUid val="4001"/>
+        <VISIBLE val="Y"/>
+        <Enabled val="Y"/>
+        <Description_U val="&amp;File"/>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4002"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="&amp;Open Application"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="23"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="79"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="1"/>
+            <Tooltip_U val="Open Application"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4003"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="&amp;Close Application"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="24"/>
+          </Event>
+          <Tool>
+            <ToolNumber val="21"/>
+            <Tooltip_U val="Close Application"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="5"/>
+          <MenuUid val="4004"/>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4005"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="Printer &amp;Setup"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="162"/>
+          </Event>
+          <Tool>
+            <ToolNumber val="153"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Printer Setup"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="5"/>
+          <MenuUid val="4006"/>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4007"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <Description_U val="E&amp;xit"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="28"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="A"/>
+            <Key val="115"/>
+          </AccessKey>
+        </MenuEntry>
+      </MenuEntry>
+      <MenuEntry>
+        <MenuType val="1"/>
+        <MenuUid val="4008"/>
+        <VISIBLE val="Y"/>
+        <Enabled val="Y"/>
+        <Description_U val="&amp;Edit"/>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4009"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <Description_U val="C&amp;ancel"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="33"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="113"/>
+          </AccessKey>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4010"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="&amp;Undo Editing"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="180"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="A"/>
+            <Key val="8"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="115"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Undo Editing"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="5"/>
+          <MenuUid val="4011"/>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4012"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="Cu&amp;t"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="11"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="88"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="78"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Cut"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4013"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="&amp;Copy"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="239"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="67"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="79"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Copy"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4014"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="&amp;Paste"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="240"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="86"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="80"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Paste"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="5"/>
+          <MenuUid val="4015"/>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4016"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="C&amp;reate Line"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="37"/>
+          </Event>
+          <AccessKey>
+            <Key val="115"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="195"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Create Line"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4017"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <Description_U val="Create &amp;Line Above"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="634"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="S"/>
+            <Key val="115"/>
+          </AccessKey>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4018"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="&amp;Delete Line"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="36"/>
+          </Event>
+          <AccessKey>
+            <Key val="114"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="196"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Delete Line"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4019"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="S&amp;elect All"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="286"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="65"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="194"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Select All"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="5"/>
+          <MenuUid val="4020"/>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4021"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="&amp;Zoom"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="34"/>
+          </Event>
+          <AccessKey>
+            <Key val="116"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="199"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Zoom"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4022"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="&amp;Wide"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="35"/>
+          </Event>
+          <AccessKey>
+            <Key val="117"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="198"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Wide"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="5"/>
+          <MenuUid val="4023"/>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4024"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="D&amp;itto"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="77"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="68"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="197"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Ditto"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4025"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="&amp;Set to NULL"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="209"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="85"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="200"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Set to NULL"/>
+          </Tool>
+        </MenuEntry>
+      </MenuEntry>
+      <MenuEntry>
+        <MenuType val="1"/>
+        <MenuUid val="4026"/>
+        <VISIBLE val="Y"/>
+        <Enabled val="Y"/>
+        <Description_U val="&amp;Options"/>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4027"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="&amp;Modify Records"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="30"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="77"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="23"/>
+            <ToolGroup val="1"/>
+            <Tooltip_U val="Modify Records"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4028"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="&amp;Create Records"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="31"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="69"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="24"/>
+            <ToolGroup val="1"/>
+            <Tooltip_U val="Create Records"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4029"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="&amp;Query Records"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="32"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="81"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="25"/>
+            <ToolGroup val="1"/>
+            <Tooltip_U val="Query Records"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="5"/>
+          <MenuUid val="4030"/>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4031"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="&amp;Locate"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="122"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="76"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="26"/>
+            <ToolGroup val="2"/>
+            <Tooltip_U val="Locate a Record"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4032"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="Locate &amp;Next"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="165"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="X"/>
+            <Key val="76"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="27"/>
+            <ToolGroup val="2"/>
+            <Tooltip_U val="Locate Next"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4033"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="&amp;Range of Records"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="123"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="82"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="28"/>
+            <ToolGroup val="2"/>
+            <Tooltip_U val="Range of Records"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4034"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="&amp;View by Key"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="124"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="75"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="29"/>
+            <ToolGroup val="2"/>
+            <Tooltip_U val="View by Key"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4035"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="Sor&amp;t Records"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="125"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="84"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="30"/>
+            <ToolGroup val="2"/>
+            <Tooltip_U val="Sort Records"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4036"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="&amp;Print Data"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="160"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="80"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="193"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Print Data"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="5"/>
+          <MenuUid val="4037"/>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4038"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="Begin Table"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="72"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="36"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="32"/>
+            <ToolGroup val="4"/>
+            <Tooltip_U val="Begin Table"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4039"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="Previous Screen"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="66"/>
+          </Event>
+          <AccessKey>
+            <Key val="33"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="34"/>
+            <ToolGroup val="4"/>
+            <Tooltip_U val="Previous Screen"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4040"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="Previous Row"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="64"/>
+          </Event>
+          <AccessKey>
+            <Key val="38"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="36"/>
+            <ToolGroup val="4"/>
+            <Tooltip_U val="Previous Row"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4041"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="Next Row"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="65"/>
+          </Event>
+          <AccessKey>
+            <Key val="40"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="37"/>
+            <ToolGroup val="4"/>
+            <Tooltip_U val="Next Row"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4042"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="Next Screen"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="67"/>
+          </Event>
+          <AccessKey>
+            <Key val="34"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="35"/>
+            <ToolGroup val="4"/>
+            <Tooltip_U val="Next Screen"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4043"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="B"/>
+          <Description_U val="End Table"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="73"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="35"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="33"/>
+            <ToolGroup val="4"/>
+            <Tooltip_U val="End Table"/>
+          </Tool>
+        </MenuEntry>
+      </MenuEntry>
+      <MenuEntry>
+        <MenuType val="1"/>
+        <MenuUid val="4044"/>
+        <VISIBLE val="Y"/>
+        <Enabled val="Y"/>
+        <Description_U val="&amp;Window"/>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4045"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="Close &amp;All"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="370"/>
+          </Event>
+          <Tool>
+            <ToolNumber val="208"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Close All"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="5"/>
+          <MenuUid val="4046"/>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4047"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="&amp;Next Window"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="462"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="C"/>
+            <Key val="9"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="206"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Next Window"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="3"/>
+          <MenuUid val="4048"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+          <ImageFor val="M"/>
+          <Description_U val="&amp;Previous Window"/>
+          <Event>
+            <EventType val="I"/>
+            <InternalEventID val="463"/>
+          </Event>
+          <AccessKey>
+            <Modifier val="X"/>
+            <Key val="9"/>
+          </AccessKey>
+          <Tool>
+            <ToolNumber val="205"/>
+            <ToolGroup val="999"/>
+            <Tooltip_U val="Previous Window"/>
+          </Tool>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="5"/>
+          <MenuUid val="4049"/>
+        </MenuEntry>
+        <MenuEntry>
+          <MenuType val="7"/>
+          <MenuUid val="4050"/>
+          <VISIBLE val="Y"/>
+          <Enabled val="Y"/>
+        </MenuEntry>
+      </MenuEntry>
+    </Menu>
+  </Menus>
+
+</MenusRepository>
