@@ -1,0 +1,493 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PRODSCEDULECONTROLMENU",
+		"window_type":	12,
+		"component_path":	"VMNUO002_ProdControl/PRODUCTIONSCHEDULECONTMEN/PRODUCTIONSCHEDULECONTMEN/",
+		"module_name":	"",
+		"component_uniquename":	"VMNUO002_ProdControl_PRODUCTIONSCHEDULECONTMEN_PRODUCTIONSCHEDULECONTMEN_PRODSCEDULECONTROLMENU"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	533
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	444,
+				"y":	3,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PGM=VMNUO002(2-1)",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	468,
+				"y":	3,
+				"width":	90,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DB_NAME1_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	95,
+				"y":	13,
+				"width":	23,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DB_NAME2_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	13,
+				"width":	23,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit5",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	460,
+				"y":	20,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit6",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	515,
+				"y":	20,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	19,
+				"y":	42,
+				"width":	313,
+				"height":	358
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONVPRT0021",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	73,
+				"width":	250,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONVPRT0022",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	119,
+				"width":	250,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONVPRT0023",
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	166,
+				"width":	250,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONVPRT0024",
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	210,
+				"width":	250,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONVPRT0025",
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	255,
+				"width":	250,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONVPRT0026",
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	301,
+				"width":	250,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	359,
+				"y":	42,
+				"width":	181,
+				"height":	78
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	360,
+				"y":	123,
+				"width":	180,
+				"height":	208
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONPROD_INDICATE",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	374,
+				"y":	75,
+				"width":	150,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONYEAR_PROD_PLAN",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	374,
+				"y":	159,
+				"width":	150,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONMONTHLY_PROD_PLAN",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	374,
+				"y":	202,
+				"width":	150,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONPROD_SEQ_PLAN",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	374,
+				"y":	244,
+				"width":	150,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"LIST",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	426,
+				"y":	137,
+				"width":	48,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"CAUTION",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	429,
+				"y":	55,
+				"width":	40,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONBRRTO027",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line335"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	343,
+				"width":	250,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"common_line_id":	"line335"
+			},
+			"coordinates":	{
+				"x":	360,
+				"y":	335,
+				"width":	181,
+				"height":	65
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONPROD_SEQ_PLAN_001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line335"
+			},
+			"coordinates":	{
+				"x":	374,
+				"y":	351,
+				"width":	150,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

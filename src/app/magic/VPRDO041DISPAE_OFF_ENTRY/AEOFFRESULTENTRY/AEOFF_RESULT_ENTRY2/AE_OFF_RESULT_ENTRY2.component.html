@@ -1,0 +1,138 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.AE_OFF_RESULT_ENTRY2"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                ENGINE NO.
+            </label>
+            <label [magic]="mgc.S5_ENGFRMTYPE">
+                {{mg.getValue(mgc.S5_ENGFRMTYPE) }}
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.S5_CHASSIS_NO"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.S5_CHASSIS_NO))"
+                    [magic]="mgc.S5_CHASSIS_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S5_CHASSIS_NO> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                MTO CODE
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.S5_MTO_CODE"
+                    [magic]="mgc.S5_MTO_CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S5_MTO_CODE> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                PROD.LINE
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.S5_PRODLINE"
+                    [magic]="mgc.S5_PRODLINE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S5_PRODLINE> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                AE-OFF DATE
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.S5_AFOFF_DATE"
+                [magic]="mgc.S5_AFOFF_DATE"
+                [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE)"
+                dateInput
+            />
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                AE-OFF TIME
+            </label>
+            <input
+                type="time"
+                [formControlName]="mgc.S5_AFOFF_TIME"
+                [magic]="mgc.S5_AFOFF_TIME"
+                [style.visibility]="mg.getVisible(mgc.S5_AFOFF_TIME)"
+                step=1
+            />
+            <div
+                [magic]="mgc.Group13"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label15"
+                        class="lable_overflow"
+                    >
+                        LINE
+                    </label>
+                    <label
+                        [magic]="mgc.Label14"
+                        class="lable_overflow"
+                    >
+                        TOTAL
+                    </label>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label [magic]="mgc.Edit17">
+                        {{mg.getValue(mgc.Edit17) }}
+                    </label>
+                    <div>
+                        <input
+                            [formControlName]="mgc.V_PROGRESS1"
+                            type='number'
+                            [magic]="mgc.V_PROGRESS1"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.V_PROGRESS1> </mgError>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label18"
+                        class="lable_overflow"
+                    >
+                        MTOC TOTAL
+                    </label>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        <input
+                            [formControlName]="mgc.V_PROGRESS2"
+                            type='number'
+                            [magic]="mgc.V_PROGRESS2"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.V_PROGRESS2> </mgError>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

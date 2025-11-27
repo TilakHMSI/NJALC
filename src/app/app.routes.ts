@@ -13,6 +13,12 @@ export const routes: Routes = [
         path: 'Home',
         component: RouterContainerMagicComponent,
 
+
+        children: [{
+            path: 'VMNUO001',
+            component: RouterContainerMagicComponent,
+
+        }, ]
     },
 
 ];

@@ -12,7 +12,14 @@
 				"RouteName":	"Home",
 				"ModuleName":	"",
 				"OutletName":	"",
-				"children":	null
+				"children":	[
+					{
+						"RouteName":	"VMNUO001",
+						"ModuleName":	"",
+						"OutletName":	"",
+						"children":	null
+					}
+				]
 			}
 		]
 	}

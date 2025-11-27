@@ -1,0 +1,44 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.MENUSELECT"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                Location Error!!
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                Which Menu do you want?
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.LOCATE_V"
+                    [magic]="mgc.LOCATE_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.LOCATE_V> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.OK">
+                {{mg.getValue(mgc.OK)}}
+            </button>
+            <button [magic]="mgc.CANCEL">
+                {{mg.getValue(mgc.CANCEL)}}
+            </button>
+        </div>
+    </div>
+</div>

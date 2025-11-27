@@ -1,0 +1,142 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.PRODSCHEDULECONTROLMENU"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.V_LOCATE_P">
+                {{mg.getValue(mgc.V_LOCATE_P) }}
+            </label>
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PGM=VMNUO002(2)
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.V_DB_NAME1_P">
+                {{mg.getValue(mgc.V_DB_NAME1_P) }}
+            </label>
+            <label [magic]="mgc.V_DB_NAME2_P">
+                {{mg.getValue(mgc.V_DB_NAME2_P) }}
+            </label>
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5)
+| magicDate : mgc.Edit5}}
+            </label>
+            <label [magic]="mgc.Edit6">
+                {{mg.getValue(mgc.Edit6)
+| magicTime : mgc.Edit6}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+            </label>
+            <button
+                [magic]="mgc.BUTTONVPRT0021"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRT0021)"
+            >
+                {{mg.getValue(mgc.BUTTONVPRT0021)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRT0022"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRT0022)"
+            >
+                {{mg.getValue(mgc.BUTTONVPRT0022)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONBRRTO027"
+                [style.visibility]="mg.getVisible(mgc.BUTTONBRRTO027)"
+            >
+                {{mg.getValue(mgc.BUTTONBRRTO027)}}
+            </button>
+            <label
+                [magic]="mgc.Label8"
+                [style.visibility]="mg.getVisible(mgc.Label8)"
+                class="lable_overflow"
+            >
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label9"
+                [style.visibility]="mg.getVisible(mgc.Label9)"
+                class="lable_overflow"
+            >
+            </label>
+            <button
+                [magic]="mgc.BUTTONVMNUO00221"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVMNUO00221)"
+            >
+                {{mg.getValue(mgc.BUTTONVMNUO00221)}}
+            </button>
+            <label
+                [magic]="mgc.Label10"
+                [style.visibility]="mg.getVisible(mgc.Label10)"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <button
+                [magic]="mgc.BUTTONVMNUO00222"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVMNUO00222)"
+            >
+                {{mg.getValue(mgc.BUTTONVMNUO00222)}}
+            </button>
+            <label
+                [magic]="mgc.Label11"
+                [style.visibility]="mg.getVisible(mgc.Label11)"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <button
+                [magic]="mgc.BUTTONVMNUO00223"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVMNUO00223)"
+            >
+                {{mg.getValue(mgc.BUTTONVMNUO00223)}}
+            </button>
+            <label
+                [magic]="mgc.Label12"
+                [style.visibility]="mg.getVisible(mgc.Label12)"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <button
+                [magic]="mgc.BUTTONVMNUO00224"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVMNUO00224)"
+            >
+                {{mg.getValue(mgc.BUTTONVMNUO00224)}}
+            </button>
+            <label
+                [magic]="mgc.Label13"
+                [style.visibility]="mg.getVisible(mgc.Label13)"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label14"
+                [style.visibility]="mg.getVisible(mgc.Label14)"
+                class="lable_overflow"
+            >
+            </label>
+            <button
+                [magic]="mgc.BUTTONFILE_REORGANIZE"
+                [style.visibility]="mg.getVisible(mgc.BUTTONFILE_REORGANIZE)"
+            >
+                {{mg.getValue(mgc.BUTTONFILE_REORGANIZE)}}
+            </button>
+        </div>
+    </div>
+</div>

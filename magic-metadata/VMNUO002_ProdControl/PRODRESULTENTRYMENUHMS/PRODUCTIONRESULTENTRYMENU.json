@@ -1,0 +1,402 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PRODUCTIONRESULTENTRYMENU",
+		"window_type":	12,
+		"component_path":	"VMNUO002_ProdControl/PRODRESULTENTRYMENUHMS/",
+		"module_name":	"",
+		"component_uniquename":	"VMNUO002_ProdControl_PRODRESULTENTRYMENUHMS_PRODUCTIONRESULTENTRYMENU"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	533
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Image1",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	3,
+				"width":	181,
+				"height":	42
+			},
+			"hint":	null,
+			"controlType":	"I",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"HMSI",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	246,
+				"y":	3,
+				"width":	71,
+				"height":	46
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	456,
+				"y":	3,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit5",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	459,
+				"y":	20,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"PGM=VMNUO002(4)",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	481,
+				"y":	3,
+				"width":	75,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit6",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	514,
+				"y":	20,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DB_NAME1_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	95,
+				"y":	49,
+				"width":	23,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DB_NAME2_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	49,
+				"width":	23,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	31,
+				"y":	60,
+				"width":	500,
+				"height":	395
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"New_PDIOFF_RESULT_ENTVPRDO066",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	168,
+				"y":	224,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"AEOFF_RESULT_ENTRYVPRDO041",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	70,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"AFOFF_RESULT_ENTRYVPRDO042",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	107,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VQON_RESULT_ENTRYVPRDO065",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	146,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"FRM_VQOFF_RESULT_ENTVPRDO043",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	185,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PACKING_RESULT_ENTRYVPRDO044",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	262,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SHIPPING_RESULT_ENTRYVPRDO045",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	299,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"RETURN_RESULT_ENTRYVPRDO046",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	336,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"EXC_OUTGO_RESULTVPRDO047",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	375,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BJPN_ENGINE_NO_ENTRY",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	419,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

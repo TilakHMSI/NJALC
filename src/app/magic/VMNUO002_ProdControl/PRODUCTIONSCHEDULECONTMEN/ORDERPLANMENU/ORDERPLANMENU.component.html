@@ -1,0 +1,74 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ORDERPLANMENU"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.V_LOCATE_P">
+                {{mg.getValue(mgc.V_LOCATE_P) }}
+            </label>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VMNUO002(2-4)
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.V_DB_NAME1_P">
+                {{mg.getValue(mgc.V_DB_NAME1_P) }}
+            </label>
+            <label [magic]="mgc.V_DB_NAME2_P">
+                {{mg.getValue(mgc.V_DB_NAME2_P) }}
+            </label>
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5)
+| magicDate : mgc.Edit5}}
+            </label>
+            <label [magic]="mgc.Edit6">
+                {{mg.getValue(mgc.Edit6)
+| magicTime : mgc.Edit6}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+            </label>
+            <button
+                [magic]="mgc.BUTTONVPRDO181"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDO181)"
+            >
+                70
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRDO182"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDO182)"
+            >
+                70
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRDO175"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDO175)"
+            >
+                70
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRDO176"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDO176)"
+            >
+                70
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRDB049"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDB049)"
+            >
+                70
+            </button>
+        </div>
+    </div>
+</div>

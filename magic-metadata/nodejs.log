@@ -1,0 +1,59 @@
+Generation output:
+Generate Route Map
+
+C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
+generating routes map
+    routes length: 1
+genRouteFile : []  createRootRoute = true
+    generating 2 root routes
+[36mUPDATE[39m src/app/app.routes.ts (694 bytes)
+
+
+ Generate Modules
+
+C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
+copying files
+
+
+
+C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
+generating modules
+[V-CLI] cmd.exe /c ng g @magic-xpa/cli:modules
+   Number of modules to be check for generate: 1
+Nothing to be done.
+
+Generate Components
+
+C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
+copying files
+
+
+
+C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
+generating components
+[V-CLI] cmd.exe /c ng g @magic-xpa/cli:magic
+[>]  ********************************* START    GENERATE *********************************
+   Number of modules to be check for generate: 1
+[>]           ******    Start Web Module name : []    *******
+*** Step 1: Loading JSON files ***
+[>] Loading JSON file .//magic-metadata/VMNUO001_GENERAL_MENU/GENERALMENU.json
+[>] Loading JSON file .//magic-metadata/VMNUO001_GENERAL_MENU/FactoryConfirmation/FactoryConfirmation.json
+*** Step 2: Processing JSON files -  (2 components) ***
+[>] Processing JSON file for component GENERALMENU
+[>] Processing JSON file for component FactoryConfirmation
+*** Step 3: generate components. (2 components) ***
+[>] generate component GENERALMENU
+[>] generate component FactoryConfirmation
+[>] Step 4: components-list.
+ Total old components: 17, added components: 2. 
+[>]  ********************************* E N D    GENERATE *********************************
+[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/GENERALMENU.mg.controls.g.ts (2034 bytes)
+[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/GENERALMENU.component.ts (752 bytes)
+[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/GENERALMENU.component.html (3472 bytes)
+[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/FactoryConfirmation/FactoryConfirmation.mg.controls.g.ts (739 bytes)
+[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/FactoryConfirmation/FactoryConfirmation.component.ts (2199 bytes)
+[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/FactoryConfirmation/FactoryConfirmation.component.html (545 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (6764 bytes)
+
+
+

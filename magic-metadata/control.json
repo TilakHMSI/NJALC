@@ -1,0 +1,16 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Label2",
+		"text":	"PGM=VMNUO001"
+	},
+	"coordinates":	{
+		"x":	494,
+		"y":	3,
+		"width":	60,
+		"height":	13
+	},
+	"hint":	null,
+	"controlType":	"L",
+	"children":	null
+}

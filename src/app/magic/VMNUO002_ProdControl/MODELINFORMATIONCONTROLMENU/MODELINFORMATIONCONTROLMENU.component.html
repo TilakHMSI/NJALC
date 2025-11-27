@@ -1,0 +1,142 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.MODELINFORMATIONCONTROLMENU"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.V_LOCATE_P">
+                {{mg.getValue(mgc.V_LOCATE_P) }}
+            </label>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VMNUO002(1)
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.V_DB_NAME1_P">
+                {{mg.getValue(mgc.V_DB_NAME1_P) }}
+            </label>
+            <label [magic]="mgc.V_DB_NAME2_P">
+                {{mg.getValue(mgc.V_DB_NAME2_P) }}
+            </label>
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5)
+| magicDate : mgc.Edit5}}
+            </label>
+            <label [magic]="mgc.Edit6">
+                {{mg.getValue(mgc.Edit6)
+| magicTime : mgc.Edit6}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+            </label>
+            <button
+                [magic]="mgc.BUTTONVPRT0011"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRT0011)"
+            >
+                {{mg.getValue(mgc.BUTTONVPRT0011)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRT0012"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRT0012)"
+            >
+                {{mg.getValue(mgc.BUTTONVPRT0012)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRT0013"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRT0013)"
+            >
+                {{mg.getValue(mgc.BUTTONVPRT0013)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRDO001"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDO001)"
+            >
+                {{mg.getValue(mgc.BUTTONVPRDO001)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRDO028"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDO028)"
+            >
+                {{mg.getValue(mgc.BUTTONVPRDO028)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRDO014029"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDO014029)"
+            >
+                {{mg.getValue(mgc.BUTTONVPRDO014029)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRDO068030"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDO068030)"
+            >
+                {{mg.getValue(mgc.BUTTONVPRDO068030)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONVPRT0015"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVPRT0015)"
+            >
+                {{mg.getValue(mgc.BUTTONVPRT0015)}}
+            </button>
+            <label
+                [magic]="mgc.Label8"
+                [style.visibility]="mg.getVisible(mgc.Label8)"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label10"
+                [style.visibility]="mg.getVisible(mgc.Label10)"
+                class="lable_overflow"
+            >
+            </label>
+            <button
+                [magic]="mgc.BUTTONMTOC_MASTER_LIST"
+                [style.visibility]="mg.getVisible(mgc.BUTTONMTOC_MASTER_LIST)"
+            >
+                {{mg.getValue(mgc.BUTTONMTOC_MASTER_LIST)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONMTOC_MAINT_CHK_LSIT"
+                [style.visibility]="mg.getVisible(mgc.BUTTONMTOC_MAINT_CHK_LSIT)"
+            >
+                {{mg.getValue(mgc.BUTTONMTOC_MAINT_CHK_LSIT)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONVSHPO021"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVSHPO021)"
+            >
+                {{mg.getValue(mgc.BUTTONVSHPO021)}}
+            </button>
+            <button
+                [magic]="mgc.BUTTONVSHPO022"
+                [style.visibility]="mg.getVisible(mgc.BUTTONVSHPO022)"
+            >
+                {{mg.getValue(mgc.BUTTONVSHPO022)}}
+            </button>
+            <label
+                [magic]="mgc.Label9"
+                [style.visibility]="mg.getVisible(mgc.Label9)"
+                class="lable_overflow"
+            >
+                LIST
+            </label>
+            <label
+                [magic]="mgc.Label11"
+                [style.visibility]="mg.getVisible(mgc.Label11)"
+                class="lable_overflow"
+            >
+                HSC
+            </label>
+        </div>
+    </div>
+</div>

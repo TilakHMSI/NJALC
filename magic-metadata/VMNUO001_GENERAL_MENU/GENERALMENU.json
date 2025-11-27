@@ -1,0 +1,322 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"GENERALMENU",
+		"window_type":	1,
+		"component_path":	"VMNUO001_GENERAL_MENU/",
+		"module_name":	"",
+		"component_uniquename":	"VMNUO001_GENERAL_MENU_GENERALMENU"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	533
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Image3",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	5,
+				"width":	89,
+				"height":	192
+			},
+			"hint":	null,
+			"controlType":	"I",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Image4",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	196,
+				"y":	5,
+				"width":	189,
+				"height":	50
+			},
+			"hint":	null,
+			"controlType":	"I",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	471,
+				"y":	3,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PGM=VMNUO001",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	494,
+				"y":	3,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DB_NAME1_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	95,
+				"y":	13,
+				"width":	23,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DB_NAME2_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	13,
+				"width":	23,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit7",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	456,
+				"y":	16,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit8",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	511,
+				"y":	16,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"LAST UPDATED DATE:29/03/2011\r\n\r\n",
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	95,
+				"y":	28,
+				"width":	78,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit10",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	473,
+				"y":	33,
+				"width":	70,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit11",
+				"dataexp":	true,
+				"format":	"XXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	496,
+				"y":	44,
+				"width":	20,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Factory_Code",
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	213,
+				"width":	84,
+				"height":	68
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	59,
+				"width":	393,
+				"height":	413
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONPRODUCTION",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	73,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONEV_PRODUCTION",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	112,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONEV_PRODUCTION_001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	432,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

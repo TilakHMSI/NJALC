@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-WarningmessageRed_WarningmessageRed',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./WarningmessageRed.component.css'],
     templateUrl: './WarningmessageRed.component.html'
 })
 export class WarningmessageRed extends TaskBaseMagicComponent implements MagicModalInterface {
@@ -23,15 +24,15 @@ export class WarningmessageRed extends TaskBaseMagicComponent implements MagicMo
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "WarningmessageRed";
+    private static readonly formName: string = "Warning";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
+    private static readonly width: string = "500px";
     private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
-    private static readonly isResizable: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
+    private static readonly isResizable: boolean = false;
     private static readonly isMovable: boolean = true;
     X() {
         return WarningmessageRed.x;

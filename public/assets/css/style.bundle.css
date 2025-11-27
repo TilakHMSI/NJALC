@@ -2476,6 +2476,19 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
 
+.btn-wdth {
+  width: 100%! important;
+  text-align: center;
+}
+.btn-wdth-half {
+  width: 50%! important;
+  text-align: center;
+}
+.btn-wdth-75 {
+  width: 75%! important;
+  text-align: center;
+}
+
 .btn-primary {
   color: #ffffff;
   background-color: #3699FF;
@@ -4390,7 +4403,7 @@ input[type="button"].btn-block {
 .card-header {
   padding: 1rem 1.25rem;
   margin-bottom: 0;
-  background-color: #ffffff;
+  background-color: #f9c6c6;
   border-bottom: 1px solid #EBEDF3; }
   .card-header:first-child {
     border-radius: calc(0.42rem - 1px) calc(0.42rem - 1px) 0 0; }
