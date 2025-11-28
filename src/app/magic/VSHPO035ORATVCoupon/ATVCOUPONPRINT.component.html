@@ -1,0 +1,74 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ATVCOUPONPRINT"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VSHPO035
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                FRAME No.
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.ENGFRMTYPE_V"
+                    [magic]="mgc.ENGFRMTYPE_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.ENGFRMTYPE_V> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.ENGFRMTYPE_V"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.CHASSIS_NO_V"
+                    type='number'
+                    [magic]="mgc.CHASSIS_NO_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.CHASSIS_NO_V> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.EXEC_BUTTON">
+                E:Exec
+            </button>
+            <button [magic]="mgc.CANCEL_BUTTON">
+                C:Cancel
+            </button>
+        </div>
+    </div>
+</div>

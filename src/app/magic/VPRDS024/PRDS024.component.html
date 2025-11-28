@@ -1,0 +1,152 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.PRDS024"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                CAUTION!
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                TWO KINDS OF MODEL EXIST IN SAME FRAME-NUMBER.
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                PLEASE CHOOSE ONE OF FOLLOWING MODEL.
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_PAMAIN"
+                    [magic]="mgc.V_PAMAIN"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_PAMAIN> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                MODEL CODE
+            </label>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                MODEL NAME
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                COLOR
+            </label>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                VIN TYPE
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.V_SENTAKU"
+                (change)="task.mgOnRadioSelectionChanged(mgc.V_SENTAKU)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_SENTAKU);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.V_SENTAKU"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_PAMTO_CODE_LINK1"
+                    [magic]="mgc.V_PAMTO_CODE_LINK1"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_PAMTO_CODE_LINK1> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_PAMTO_CODE_LINK2"
+                    [magic]="mgc.V_PAMTO_CODE_LINK2"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_PAMTO_CODE_LINK2> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_PAMTO_NAME_LINK1"
+                    [magic]="mgc.V_PAMTO_NAME_LINK1"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_PAMTO_NAME_LINK1> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_PAMTO_NAME_LINK2"
+                    [magic]="mgc.V_PAMTO_NAME_LINK2"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_PAMTO_NAME_LINK2> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_PACOLOR_CODE_LINK1"
+                    [magic]="mgc.V_PACOLOR_CODE_LINK1"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_PACOLOR_CODE_LINK1> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_PACOLOR_CODE_LINK2"
+                    [magic]="mgc.V_PACOLOR_CODE_LINK2"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_PACOLOR_CODE_LINK2> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                I:ISO(WITHOUT C/D)
+            </label>
+            <label
+                [magic]="mgc.Label16"
+                class="lable_overflow"
+            >
+                V:VIN(WITH C/D)
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Select">
+                {{mg.getValue(mgc.btn_Select)}}
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,47 +1,26 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.AEOFF_RESULT_ENTRY"
-    >
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.AEOFF_RESULT_ENTRY">
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label3"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label3" class="lable_overflow">
                 Last Export Report Time
             </label>
-            <input
-                type="time"
-                [formControlName]="mgc.V_VDharamTime"
-                [magic]="mgc.V_VDharamTime"
-                step=1
-            />
+            <input type="time" [formControlName]="mgc.V_VDharamTime" [magic]="mgc.V_VDharamTime" step=1 />
             <div>
-                <input
-                    [formControlName]="mgc.V_LOCATE_P"
-                    [magic]="mgc.V_LOCATE_P"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.V_LOCATE_P" [magic]="mgc.V_LOCATE_P" mgFormat />
                 <mgError [magic]=mgc.V_LOCATE_P> </mgError>
             </div>
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label2" class="lable_overflow">
                 PGM=VPRDO041
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
             <label [magic]="mgc.Edit5">
                 {{mg.getValue(mgc.Edit5)
-| magicDate : mgc.Edit5}}
+                | magicDate : mgc.Edit5}}
             </label>
             <label [magic]="mgc.Edit6">
                 {{mg.getValue(mgc.Edit6)
-| magicTime : mgc.Edit6}}
+                | magicTime : mgc.Edit6}}
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
@@ -49,63 +28,108 @@
             </magic-subform>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label7"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label7" class="lable_overflow">
             </label>
-            <label
-                [magic]="mgc.Edit8"
-                [style.visibility]="mg.getVisible(mgc.Edit8)"
-            >
+            <label [magic]="mgc.Edit8" [style.visibility]="mg.getVisible(mgc.Edit8)">
                 {{mg.getValue(mgc.Edit8) }}
             </label>
-            <div
-                [magic]="mgc.MODE_DSP"
-                [style.visibility]="mg.getVisible(mgc.MODE_DSP)"
-                (change)="task.mgOnRadioSelectionChanged(mgc.MODE_DSP)"
-            >
+            <div [magic]="mgc.MODE_DSP" [style.visibility]="mg.getVisible(mgc.MODE_DSP)"
+                (change)="task.mgOnRadioSelectionChanged(mgc.MODE_DSP)">
                 <div *ngFor="let o of mg.getItemListValues(mgc.MODE_DSP);">
                     <label>
-                        <input
-                            type="radio"
-                            [formControlName]="mgc.MODE_DSP"
-                            [value]="o.index"
-                        />
+                        <input type="radio" [formControlName]="mgc.MODE_DSP" [value]="o.index" />
                         {{o.displayValue}}
                     </label>
                 </div>
             </div>
-            <label
-                [magic]="mgc.Label9"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label9" class="lable_overflow">
                 ENGINE NO.
             </label>
             <div>
-                <input
-                    [formControlName]="mgc.ENGINE_NO_DSP"
-                    [magic]="mgc.ENGINE_NO_DSP"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.ENGINE_NO_DSP" [magic]="mgc.ENGINE_NO_DSP" mgFormat />
                 <mgError [magic]=mgc.ENGINE_NO_DSP> </mgError>
             </div>
-            <label
-                [magic]="mgc.Label11"
-                [style.visibility]="mg.getVisible(mgc.Label11)"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label11" [style.visibility]="mg.getVisible(mgc.Label11)" class="lable_overflow">
                 MISSION NO.
             </label>
             <div>
-                <input
-                    [formControlName]="mgc.MISSION_DSP"
-                    [magic]="mgc.MISSION_DSP"
-                    [style.visibility]="mg.getVisible(mgc.MISSION_DSP)"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.MISSION_DSP" [magic]="mgc.MISSION_DSP"
+                    [style.visibility]="mg.getVisible(mgc.MISSION_DSP)" mgFormat />
                 <mgError [magic]=mgc.MISSION_DSP> </mgError>
             </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid" [magic]="mgc.AEOFF_RESULT_ENTRY">
+        <div class="row">
+            <div class="col-lg-12 col-xxl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <h3><label class="lable_overflow mb-0">
+                                    PGM=VPRDO041
+                                </label></h3>
+
+                            <div class="d-flex">
+                                <label [magic]="mgc.Edit5" class="mb-0 mr-3">
+                                    {{mg.getValue(mgc.Edit5)
+                                    | magicDate : mgc.Edit5}}
+                                </label>
+                                <label [magic]="mgc.Edit6" class="mb-0 mr-3">
+                                    {{mg.getValue(mgc.Edit6)
+                                    | magicTime : mgc.Edit6}}
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <div class="col-lg-12">
+                                <magic-subform [magic]="mgc.AEOFF_RESULT_ENTRYHMSI">
+                                </magic-subform>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group row">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>Service Type</label>
+                                            <div [magic]="mgc.MODE_DSP" [style.visibility]="mg.getVisible(mgc.MODE_DSP)"
+                                                (change)="task.mgOnRadioSelectionChanged(mgc.MODE_DSP)">
+                                                <div *ngFor="let o of mg.getItemListValues(mgc.MODE_DSP);">
+                                                    <label>
+                                                        <input type="radio" [formControlName]="mgc.MODE_DSP"
+                                                            [value]="o.index" />
+                                                        {{o.displayValue}}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>ENGINE NO </label>
+                                            <input class="form-control" [formControlName]="mgc.ENGINE_NO_DSP"
+                                                [magic]="mgc.ENGINE_NO_DSP" mgFormat />
+                                            <mgError [magic]=mgc.ENGINE_NO_DSP> </mgError>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>ENGINE NO </label>
+                                            <input class="form-control" [formControlName]="mgc.MISSION_DSP"
+                                                [magic]="mgc.MISSION_DSP" mgFormat />
+                                            <mgError [magic]=mgc.MISSION_DSP> </mgError>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

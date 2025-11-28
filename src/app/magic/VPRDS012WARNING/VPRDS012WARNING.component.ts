@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./AEOFF_RESULT_ENTRY.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./VPRDS012WARNING.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDO041DISPAE_OFF_ENTRY_AEOFF_RESULT_ENTRY',
+    selector: 'mga-VPRDS012WARNING_VPRDS012WARNING',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './AEOFF_RESULT_ENTRY.component.html'
+    templateUrl: './VPRDS012WARNING.component.html'
 })
-export class AEOFF_RESULT_ENTRY extends TaskBaseMagicComponent implements MagicModalInterface {
+export class VPRDS012WARNING extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,44 +23,44 @@ export class AEOFF_RESULT_ENTRY extends TaskBaseMagicComponent implements MagicM
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "AE-OFF RESULT ENTRY";
+    private static readonly formName: string = "VPRDS012WARNING";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1250px";
-    private static readonly height: string = "720px";
+    private static readonly width: string = "300px";
+    private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = false;
+    private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return AEOFF_RESULT_ENTRY.x;
+        return VPRDS012WARNING.x;
     }
     Y() {
-        return AEOFF_RESULT_ENTRY.y;
+        return VPRDS012WARNING.y;
     }
     Width(): string {
-        return AEOFF_RESULT_ENTRY.width;
+        return VPRDS012WARNING.width;
     }
     Height(): string {
-        return AEOFF_RESULT_ENTRY.height;
+        return VPRDS012WARNING.height;
     }
     IsCenteredToWindow() {
-        return AEOFF_RESULT_ENTRY.isCenteredToWindow;
+        return VPRDS012WARNING.isCenteredToWindow;
     }
     FormName() {
-        return AEOFF_RESULT_ENTRY.formName;
+        return VPRDS012WARNING.formName;
     }
     ShowTitleBar() {
-        return AEOFF_RESULT_ENTRY.showTitleBar;
+        return VPRDS012WARNING.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return AEOFF_RESULT_ENTRY.shouldCloseOnBackgroundClick;
+        return VPRDS012WARNING.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return AEOFF_RESULT_ENTRY.isResizable;
+        return VPRDS012WARNING.isResizable;
     }
     IsMovable() {
-        return AEOFF_RESULT_ENTRY.isMovable;
+        return VPRDS012WARNING.isMovable;
     }
 }

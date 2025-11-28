@@ -1,0 +1,341 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PRDS024",
+		"window_type":	12,
+		"component_path":	"VPRDS024/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDS024_PRDS024"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	358,
+		"height":	258
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"CAUTION!",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	16,
+				"y":	5,
+				"width":	45,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"TWO KINDS OF MODEL EXIST IN SAME FRAME-NUMBER.",
+				"common_line_id":	"line29"
+			},
+			"coordinates":	{
+				"x":	34,
+				"y":	29,
+				"width":	235,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"PLEASE CHOOSE ONE OF FOLLOWING MODEL.",
+				"common_line_id":	"line47"
+			},
+			"coordinates":	{
+				"x":	34,
+				"y":	47,
+				"width":	190,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PAMAIN",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line73"
+			},
+			"coordinates":	{
+				"x":	34,
+				"y":	73,
+				"width":	95,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"MODEL CODE",
+				"common_line_id":	"line115"
+			},
+			"coordinates":	{
+				"x":	41,
+				"y":	115,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"MODEL NAME",
+				"common_line_id":	"line115"
+			},
+			"coordinates":	{
+				"x":	104,
+				"y":	115,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"COLOR",
+				"common_line_id":	"line115"
+			},
+			"coordinates":	{
+				"x":	201,
+				"y":	115,
+				"width":	30,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"VIN TYPE",
+				"common_line_id":	"line115"
+			},
+			"coordinates":	{
+				"x":	260,
+				"y":	115,
+				"width":	45,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_SENTAKU",
+				"items_list":	"True,False",
+				"attribute":	"B",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	16,
+				"y":	140,
+				"width":	14,
+				"height":	55
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PAMTO_CODE_LINK1",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	39,
+				"y":	148,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PAMTO_CODE_LINK2",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	40,
+				"y":	174,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PAMTO_NAME_LINK1",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	104,
+				"y":	148,
+				"width":	95,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PAMTO_NAME_LINK2",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	104,
+				"y":	174,
+				"width":	95,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PACOLOR_CODE_LINK1",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	201,
+				"y":	148,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PACOLOR_CODE_LINK2",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	201,
+				"y":	174,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"text":	"I:ISO(WITHOUT C/D)",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	260,
+				"y":	148,
+				"width":	95,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label16",
+				"text":	"V:VIN(WITH C/D)",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	260,
+				"y":	174,
+				"width":	80,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Select",
+				"attribute":	"A",
+				"common_line_id":	"line218"
+			},
+			"coordinates":	{
+				"x":	131,
+				"y":	218,
+				"width":	66,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

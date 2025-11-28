@@ -1,0 +1,59 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.VPRDS012WARNING"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                WARNING
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_MESSAGE_P"
+                    [magic]="mgc.V_MESSAGE_P"
+                    mgFormat
+                    required
+                />
+                <mgError [magic]=mgc.V_MESSAGE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                Click or press return key to continue!
+            </label>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <button [magic]="mgc.btn_Close">
+                {{mg.getValue(mgc.btn_Close)}}
+            </button>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+        </div>
+    </div>
+</div>

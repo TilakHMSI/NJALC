@@ -1,0 +1,92 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.VPRDB052ENGFRMBARCDLABEL"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PGM=VPRDB052
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                NOW PRINTING ...
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicDate : mgc.Edit2}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                PLAN CODE:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.vX2_PLAN_CODE"
+                    [magic]="mgc.vX2_PLAN_CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.vX2_PLAN_CODE> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                PLAN DATE:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.vX2_PLAN_DATE"
+                [magic]="mgc.vX2_PLAN_DATE"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                PLAN SEQ:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.vX2_PLAN_SEQ"
+                    type='number'
+                    [magic]="mgc.vX2_PLAN_SEQ"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.vX2_PLAN_SEQ> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.vX2_PLAN_SEQ_SUFFIX"
+                    type='number'
+                    [magic]="mgc.vX2_PLAN_SEQ_SUFFIX"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.vX2_PLAN_SEQ_SUFFIX> </mgError>
+            </div>
+        </div>
+    </div>
+</div>
