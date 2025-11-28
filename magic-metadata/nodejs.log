@@ -1,13 +1,4 @@
 Generation output:
-Generate Route Map
-
-C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
-generating routes map
-    routes length: 1
-genRouteFile : []  createRootRoute = true
-    generating 2 root routes
-[36mUPDATE[39m src/app/app.routes.ts (694 bytes)
-
 
  Generate Modules
 
@@ -36,24 +27,66 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VMNUO001_GENERAL_MENU/GENERALMENU.json
-[>] Loading JSON file .//magic-metadata/VMNUO001_GENERAL_MENU/FactoryConfirmation/FactoryConfirmation.json
-*** Step 2: Processing JSON files -  (2 components) ***
-[>] Processing JSON file for component GENERALMENU
-[>] Processing JSON file for component FactoryConfirmation
-*** Step 3: generate components. (2 components) ***
-[>] generate component GENERALMENU
-[>] generate component FactoryConfirmation
+[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY.json
+[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY.json
+[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.json
+[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY_HMSI.json
+[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY2/AEOFF_RESULT_ENTRY2.json
+[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/ERROR_MESSAGE/ERROR_MESSAGE.json
+[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AEOFFRESULTENTRY.json
+[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AE_OFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.json
+[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/CONFIRMATION_MESSAGE/MESSAGE.json
+*** Step 2: Processing JSON files -  (9 components) ***
+[>] Processing JSON file for component AEOFF_RESULT_ENTRY
+[>] Processing JSON file for component AEOFF_RESULT_ENTRY
+[>] Processing JSON file for component AE_OFF_RESULT_ENTRY2
+[>] Processing JSON file for component AEOFF_RESULT_ENTRY_HMSI
+[>] Processing JSON file for component AEOFF_RESULT_ENTRY2
+[>] Processing JSON file for component ERROR_MESSAGE
+[>] Processing JSON file for component AEOFFRESULTENTRY
+[>] Processing JSON file for component AE_OFF_RESULT_ENTRY2
+[>] Processing JSON file for component MESSAGE
+*** Step 3: generate components. (9 components) ***
+[>] generate component AEOFF_RESULT_ENTRY
+[>] generate component AEOFF_RESULT_ENTRY
+[>] generate component AE_OFF_RESULT_ENTRY2
+[>] generate component AEOFF_RESULT_ENTRY_HMSI
+[>] generate component AEOFF_RESULT_ENTRY2
+[>] generate component ERROR_MESSAGE
+[>] generate component AEOFFRESULTENTRY
+[>] generate component AE_OFF_RESULT_ENTRY2
+[>] generate component MESSAGE
 [>] Step 4: components-list.
- Total old components: 17, added components: 2. 
+ Total old components: 19, added components: 9. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/GENERALMENU.mg.controls.g.ts (2034 bytes)
-[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/GENERALMENU.component.ts (752 bytes)
-[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/GENERALMENU.component.html (3472 bytes)
-[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/FactoryConfirmation/FactoryConfirmation.mg.controls.g.ts (739 bytes)
-[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/FactoryConfirmation/FactoryConfirmation.component.ts (2199 bytes)
-[32mCREATE[39m src/app/magic/VMNUO001_GENERAL_MENU/FactoryConfirmation/FactoryConfirmation.component.html (545 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (6764 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY.mg.controls.g.ts (1946 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY.component.ts (2167 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY.component.html (3558 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY.mg.controls.g.ts (2931 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY.component.ts (2359 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY.component.html (24015 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.mg.controls.g.ts (2245 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.component.ts (2234 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.component.html (4645 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY_HMSI.mg.controls.g.ts (2530 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY_HMSI.component.ts (2446 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY_HMSI.component.html (20208 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY2/AEOFF_RESULT_ENTRY2.mg.controls.g.ts (2302 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY2/AEOFF_RESULT_ENTRY2.component.ts (2226 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY2/AEOFF_RESULT_ENTRY2.component.html (4803 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/ERROR_MESSAGE/ERROR_MESSAGE.mg.controls.g.ts (960 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/ERROR_MESSAGE/ERROR_MESSAGE.component.ts (2106 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/ERROR_MESSAGE/ERROR_MESSAGE.component.html (1046 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AEOFFRESULTENTRY.mg.controls.g.ts (2516 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AEOFFRESULTENTRY.component.ts (973 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AEOFFRESULTENTRY.component.html (20201 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AE_OFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.mg.controls.g.ts (2272 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AE_OFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.component.ts (837 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AE_OFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.component.html (4780 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/CONFIRMATION_MESSAGE/MESSAGE.mg.controls.g.ts (1037 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/CONFIRMATION_MESSAGE/MESSAGE.component.ts (2023 bytes)
+[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/CONFIRMATION_MESSAGE/MESSAGE.component.html (1791 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (10474 bytes)
 
 
 

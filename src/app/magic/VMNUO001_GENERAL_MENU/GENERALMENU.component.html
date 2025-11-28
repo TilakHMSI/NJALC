@@ -80,7 +80,7 @@
                                 fill="#000000" opacity="0.3"></path>
                         </g>
                     </svg>
-                </span><img src="assets/media/logos/logo.png" class="max-h-70px" alt="">
+                </span>
                 <h5 class="text-dark font-weight-bold mt-5 mb-5 mr-5"><label [magic]="mgc.Label2">
                         PGM=VMNUO001
                     </label></h5>
@@ -100,8 +100,9 @@
                             <label [magic]="mgc.Label9" class="lable_overflow mb-0">
                                 LAST UPDATED DATE: 01/01/2026
                             </label>
-
-                            <div class="d-flex">
+                            
+                            <h1 style="color: brown;">{{mg.getValue(mgc.v_Factory_Code) }}</h1>
+                            <div class="d-flex align-items-center">
                                 <label [magic]="mgc.Edit7" class="mb-0 mr-3">
                                     {{mg.getValue(mgc.Edit7)
                                     | magicDate : mgc.Edit7}}
@@ -110,6 +111,7 @@
                                     {{mg.getValue(mgc.Edit8)
                                     | magicTime : mgc.Edit8}}
                                 </label>
+                                <img src="assets/media/logos/logo.png" class="max-h-50px" alt="">
                             </div>
                         </div>
                     </div>

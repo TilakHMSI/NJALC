@@ -1,16 +1,22 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Label2",
-		"text":	"PGM=VMNUO001"
+		"id":	"V_DB_NAME1_P",
+		"enabled":	{
+			"value":	null,
+			"has_exp":	true
+		},
+		"mgformat":	"mgFormat",
+		"format":	"XXXXXX",
+		"attribute":	"A"
 	},
 	"coordinates":	{
-		"x":	494,
-		"y":	3,
-		"width":	60,
-		"height":	13
+		"x":	95,
+		"y":	13,
+		"width":	23,
+		"height":	10
 	},
 	"hint":	null,
-	"controlType":	"L",
+	"controlType":	"T",
 	"children":	null
 }
