@@ -9,7 +9,6 @@ export enum MgControlName {
     AEOFF_RESULT_ENTRY = "AEOFF_RESULT_ENTRY",
         Label3 = "Label3",
         V_VDharamTime = "V_VDharamTime",
-        V_LOCATE_P = "V_LOCATE_P",
         Label2 = "Label2",
         Edit5 = "Edit5",
         Edit6 = "Edit6",
@@ -30,9 +29,6 @@ export class MgFormControlsAccessor {
         return this.fg.controls[MgControlName.V_VDharamTime] as FormControl;
     }
 
-    get V_LOCATE_P(): FormControl {
-        return this.fg.controls[MgControlName.V_LOCATE_P] as FormControl;
-    }
 
     get Edit5(): FormControl {
         return this.fg.controls[MgControlName.Edit5] as FormControl;

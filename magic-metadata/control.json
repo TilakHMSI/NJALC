@@ -1,20 +1,17 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"V_DB_NAME1_P",
-		"enabled":	{
-			"value":	null,
-			"has_exp":	true
-		},
+		"id":	"V_VEngine",
+		"modifiable":	false,
 		"mgformat":	"mgFormat",
-		"format":	"XXXXXX",
+		"format":	"XXXXXXXXXXXXXXXXXX",
 		"attribute":	"A"
 	},
 	"coordinates":	{
-		"x":	95,
-		"y":	13,
-		"width":	23,
-		"height":	10
+		"x":	119,
+		"y":	99,
+		"width":	414,
+		"height":	41
 	},
 	"hint":	null,
 	"controlType":	"T",

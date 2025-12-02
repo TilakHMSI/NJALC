@@ -27,66 +27,108 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.json
-[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY_HMSI.json
-[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY2/AEOFF_RESULT_ENTRY2.json
-[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/ERROR_MESSAGE/ERROR_MESSAGE.json
-[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AEOFFRESULTENTRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AE_OFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.json
-[>] Loading JSON file .//magic-metadata/VPRDO041DISPAE_OFF_ENTRY/CONFIRMATION_MESSAGE/MESSAGE.json
-*** Step 2: Processing JSON files -  (9 components) ***
-[>] Processing JSON file for component AEOFF_RESULT_ENTRY
-[>] Processing JSON file for component AEOFF_RESULT_ENTRY
-[>] Processing JSON file for component AE_OFF_RESULT_ENTRY2
-[>] Processing JSON file for component AEOFF_RESULT_ENTRY_HMSI
-[>] Processing JSON file for component AEOFF_RESULT_ENTRY2
-[>] Processing JSON file for component ERROR_MESSAGE
-[>] Processing JSON file for component AEOFFRESULTENTRY
-[>] Processing JSON file for component AE_OFF_RESULT_ENTRY2
-[>] Processing JSON file for component MESSAGE
-*** Step 3: generate components. (9 components) ***
-[>] generate component AEOFF_RESULT_ENTRY
-[>] generate component AEOFF_RESULT_ENTRY
-[>] generate component AE_OFF_RESULT_ENTRY2
-[>] generate component AEOFF_RESULT_ENTRY_HMSI
-[>] generate component AEOFF_RESULT_ENTRY2
-[>] generate component ERROR_MESSAGE
-[>] generate component AEOFFRESULTENTRY
-[>] generate component AE_OFF_RESULT_ENTRY2
-[>] generate component MESSAGE
+[>] Loading JSON file .//magic-metadata/VPRDS004PrintingConfir/VPRDS004PrintingConfir.json
+[>] Loading JSON file .//magic-metadata/VPRDS005OKNO/VPRDS005OKNO.json
+[>] Loading JSON file .//magic-metadata/VPRDS012WARNING/VPRDS012WARNING.json
+[>] Loading JSON file .//magic-metadata/VPRDS024/PRDS024.json
+[>] Loading JSON file .//magic-metadata/VSHPO035ORATVCoupon/ATVCOUPONPRINT.json
+[>] Loading JSON file .//magic-metadata/VPRDG003PRD003_GUIDE/CHASSISNOGUIDE.json
+[>] Loading JSON file .//magic-metadata/VPRDB005_LPRDINDICATELIST/VPRDB005LTRUEISSUEPRO.json
+[>] Loading JSON file .//magic-metadata/VPRDS002PrintConfirmOkonly/VPRDS002PrintConfirmOkonly.json
+[>] Loading JSON file .//magic-metadata/VPRDB004ORFVISPRINTHSC/VPRDB004ORKANKENSYOHSC.json
+[>] Loading JSON file .//magic-metadata/VPRDB066_RFIVSPRINTHMSI/VPRDB066RTRUEISSUEPRO.json
+[>] Loading JSON file .//magic-metadata/VPRDB052PEBARCDPRINTPE/VPRDB052ENGFRMBARCDLABEL.json
+[>] Loading JSON file .//magic-metadata/VPRDB062FIVSPRINTHPE/VPRDB062HPEFIVSPRINT.json
+[>] Loading JSON file .//magic-metadata/VPRDB007_RENGPRINTHVNetc/VPRDB007RTRUEISSUEPRO.json
+[>] Loading JSON file .//magic-metadata/VPRDB034ENGPRINTHSC/VPRDB034ENGINECARDISSUE.json
+[>] Loading JSON file .//magic-metadata/VPRDB040STAMPINGMASTERINFO/VPRDB040STAMPINGMASTERINFO.json
+[>] Loading JSON file .//magic-metadata/VPRDB008_LFRAMESEALPRINT/VPRDB008LTRUEISSUEPRO.json
+*** Step 2: Processing JSON files -  (16 components) ***
+[>] Processing JSON file for component VPRDS004PrintingConfir
+[>] Processing JSON file for component VPRDS005OKNO
+[>] Processing JSON file for component VPRDS012WARNING
+[>] Processing JSON file for component PRDS024
+[>] Processing JSON file for component ATVCOUPONPRINT
+[>] Processing JSON file for component CHASSISNOGUIDE
+[>] Processing JSON file for component VPRDB005LTRUEISSUEPRO
+[>] Processing JSON file for component VPRDS002PrintConfirmOkonly
+[>] Processing JSON file for component VPRDB004ORKANKENSYOHSC
+[>] Processing JSON file for component VPRDB066RTRUEISSUEPRO
+[>] Processing JSON file for component VPRDB052ENGFRMBARCDLABEL
+[>] Processing JSON file for component VPRDB062HPEFIVSPRINT
+[>] Processing JSON file for component VPRDB007RTRUEISSUEPRO
+[>] Processing JSON file for component VPRDB034ENGINECARDISSUE
+[>] Processing JSON file for component VPRDB040STAMPINGMASTERINFO
+[>] Processing JSON file for component VPRDB008LTRUEISSUEPRO
+*** Step 3: generate components. (16 components) ***
+[>] generate component VPRDS004PrintingConfir
+[>] generate component VPRDS005OKNO
+[>] generate component VPRDS012WARNING
+[>] generate component PRDS024
+[>] generate component ATVCOUPONPRINT
+[>] generate component CHASSISNOGUIDE
+[>] generate component VPRDB005LTRUEISSUEPRO
+[>] generate component VPRDS002PrintConfirmOkonly
+[>] generate component VPRDB004ORKANKENSYOHSC
+[>] generate component VPRDB066RTRUEISSUEPRO
+[>] generate component VPRDB052ENGFRMBARCDLABEL
+[>] generate component VPRDB062HPEFIVSPRINT
+[>] generate component VPRDB007RTRUEISSUEPRO
+[>] generate component VPRDB034ENGINECARDISSUE
+[>] generate component VPRDB040STAMPINGMASTERINFO
+[>] generate component VPRDB008LTRUEISSUEPRO
 [>] Step 4: components-list.
- Total old components: 19, added components: 9. 
+ Total old components: 28, added components: 16. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY.mg.controls.g.ts (1946 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY.component.ts (2167 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY.component.html (3558 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY.mg.controls.g.ts (2931 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY.component.ts (2359 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY.component.html (24015 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.mg.controls.g.ts (2245 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.component.ts (2234 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFFRESULTENTRY/AEOFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.component.html (4645 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY_HMSI.mg.controls.g.ts (2530 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY_HMSI.component.ts (2446 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY_HMSI.component.html (20208 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY2/AEOFF_RESULT_ENTRY2.mg.controls.g.ts (2302 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY2/AEOFF_RESULT_ENTRY2.component.ts (2226 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI/AEOFF_RESULT_ENTRY2/AEOFF_RESULT_ENTRY2.component.html (4803 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/ERROR_MESSAGE/ERROR_MESSAGE.mg.controls.g.ts (960 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/ERROR_MESSAGE/ERROR_MESSAGE.component.ts (2106 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/ERROR_MESSAGE/ERROR_MESSAGE.component.html (1046 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AEOFFRESULTENTRY.mg.controls.g.ts (2516 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AEOFFRESULTENTRY.component.ts (973 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AEOFFRESULTENTRY.component.html (20201 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AE_OFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.mg.controls.g.ts (2272 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AE_OFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.component.ts (837 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/AEOFF_RESULT_ENTRY_HMSI2/AE_OFF_RESULT_ENTRY2/AE_OFF_RESULT_ENTRY2.component.html (4780 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/CONFIRMATION_MESSAGE/MESSAGE.mg.controls.g.ts (1037 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/CONFIRMATION_MESSAGE/MESSAGE.component.ts (2023 bytes)
-[32mCREATE[39m src/app/magic/VPRDO041DISPAE_OFF_ENTRY/CONFIRMATION_MESSAGE/MESSAGE.component.html (1791 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (10474 bytes)
+[32mCREATE[39m src/app/magic/VPRDS004PrintingConfir/VPRDS004PrintingConfir.mg.controls.g.ts (1300 bytes)
+[32mCREATE[39m src/app/magic/VPRDS004PrintingConfir/VPRDS004PrintingConfir.component.ts (2225 bytes)
+[32mCREATE[39m src/app/magic/VPRDS004PrintingConfir/VPRDS004PrintingConfir.component.html (1701 bytes)
+[32mCREATE[39m src/app/magic/VPRDS005OKNO/VPRDS005OKNO.mg.controls.g.ts (792 bytes)
+[32mCREATE[39m src/app/magic/VPRDS005OKNO/VPRDS005OKNO.component.ts (2065 bytes)
+[32mCREATE[39m src/app/magic/VPRDS005OKNO/VPRDS005OKNO.component.html (828 bytes)
+[32mCREATE[39m src/app/magic/VPRDS012WARNING/VPRDS012WARNING.mg.controls.g.ts (919 bytes)
+[32mCREATE[39m src/app/magic/VPRDS012WARNING/VPRDS012WARNING.component.ts (2113 bytes)
+[32mCREATE[39m src/app/magic/VPRDS012WARNING/VPRDS012WARNING.component.html (1645 bytes)
+[32mCREATE[39m src/app/magic/VPRDS024/PRDS024.mg.controls.g.ts (2246 bytes)
+[32mCREATE[39m src/app/magic/VPRDS024/PRDS024.component.ts (1986 bytes)
+[32mCREATE[39m src/app/magic/VPRDS024/PRDS024.component.html (4870 bytes)
+[32mCREATE[39m src/app/magic/VSHPO035ORATVCoupon/ATVCOUPONPRINT.mg.controls.g.ts (1434 bytes)
+[32mCREATE[39m src/app/magic/VSHPO035ORATVCoupon/ATVCOUPONPRINT.component.ts (2102 bytes)
+[32mCREATE[39m src/app/magic/VSHPO035ORATVCoupon/ATVCOUPONPRINT.component.html (2274 bytes)
+[32mCREATE[39m src/app/magic/VPRDG003PRD003_GUIDE/CHASSISNOGUIDE.mg.controls.g.ts (1145 bytes)
+[32mCREATE[39m src/app/magic/VPRDG003PRD003_GUIDE/CHASSISNOGUIDE.component.ts (2274 bytes)
+[32mCREATE[39m src/app/magic/VPRDG003PRD003_GUIDE/CHASSISNOGUIDE.component.html (6557 bytes)
+[32mCREATE[39m src/app/magic/VPRDB005_LPRDINDICATELIST/VPRDB005LTRUEISSUEPRO.mg.controls.g.ts (1391 bytes)
+[32mCREATE[39m src/app/magic/VPRDB005_LPRDINDICATELIST/VPRDB005LTRUEISSUEPRO.component.ts (2213 bytes)
+[32mCREATE[39m src/app/magic/VPRDB005_LPRDINDICATELIST/VPRDB005LTRUEISSUEPRO.component.html (2438 bytes)
+[32mCREATE[39m src/app/magic/VPRDS002PrintConfirmOkonly/VPRDS002PrintConfirmOkonly.mg.controls.g.ts (1225 bytes)
+[32mCREATE[39m src/app/magic/VPRDS002PrintConfirmOkonly/VPRDS002PrintConfirmOkonly.component.ts (2289 bytes)
+[32mCREATE[39m src/app/magic/VPRDS002PrintConfirmOkonly/VPRDS002PrintConfirmOkonly.component.html (1588 bytes)
+[32mCREATE[39m src/app/magic/VPRDB004ORFVISPRINTHSC/VPRDB004ORKANKENSYOHSC.mg.controls.g.ts (1657 bytes)
+[32mCREATE[39m src/app/magic/VPRDB004ORFVISPRINTHSC/VPRDB004ORKANKENSYOHSC.component.ts (2225 bytes)
+[32mCREATE[39m src/app/magic/VPRDB004ORFVISPRINTHSC/VPRDB004ORKANKENSYOHSC.component.html (2695 bytes)
+[32mCREATE[39m src/app/magic/VPRDB066_RFIVSPRINTHMSI/VPRDB066RTRUEISSUEPRO.mg.controls.g.ts (1655 bytes)
+[32mCREATE[39m src/app/magic/VPRDB066_RFIVSPRINTHMSI/VPRDB066RTRUEISSUEPRO.component.ts (2211 bytes)
+[32mCREATE[39m src/app/magic/VPRDB066_RFIVSPRINTHMSI/VPRDB066RTRUEISSUEPRO.component.html (2766 bytes)
+[32mCREATE[39m src/app/magic/VPRDB052PEBARCDPRINTPE/VPRDB052ENGFRMBARCDLABEL.mg.controls.g.ts (1661 bytes)
+[32mCREATE[39m src/app/magic/VPRDB052PEBARCDPRINTPE/VPRDB052ENGFRMBARCDLABEL.component.ts (2255 bytes)
+[32mCREATE[39m src/app/magic/VPRDB052PEBARCDPRINTPE/VPRDB052ENGFRMBARCDLABEL.component.html (2769 bytes)
+[32mCREATE[39m src/app/magic/VPRDB062FIVSPRINTHPE/VPRDB062HPEFIVSPRINT.mg.controls.g.ts (1637 bytes)
+[32mCREATE[39m src/app/magic/VPRDB062FIVSPRINTHPE/VPRDB062HPEFIVSPRINT.component.ts (2193 bytes)
+[32mCREATE[39m src/app/magic/VPRDB062FIVSPRINTHPE/VPRDB062HPEFIVSPRINT.component.html (2754 bytes)
+[32mCREATE[39m src/app/magic/VPRDB007_RENGPRINTHVNetc/VPRDB007RTRUEISSUEPRO.mg.controls.g.ts (1655 bytes)
+[32mCREATE[39m src/app/magic/VPRDB007_RENGPRINTHVNetc/VPRDB007RTRUEISSUEPRO.component.ts (2212 bytes)
+[32mCREATE[39m src/app/magic/VPRDB007_RENGPRINTHVNetc/VPRDB007RTRUEISSUEPRO.component.html (2766 bytes)
+[32mCREATE[39m src/app/magic/VPRDB034ENGPRINTHSC/VPRDB034ENGINECARDISSUE.mg.controls.g.ts (1659 bytes)
+[32mCREATE[39m src/app/magic/VPRDB034ENGPRINTHSC/VPRDB034ENGINECARDISSUE.component.ts (2237 bytes)
+[32mCREATE[39m src/app/magic/VPRDB034ENGPRINTHSC/VPRDB034ENGINECARDISSUE.component.html (2768 bytes)
+[32mCREATE[39m src/app/magic/VPRDB040STAMPINGMASTERINFO/VPRDB040STAMPINGMASTERINFO.mg.controls.g.ts (1196 bytes)
+[32mCREATE[39m src/app/magic/VPRDB040STAMPINGMASTERINFO/VPRDB040STAMPINGMASTERINFO.component.ts (2289 bytes)
+[32mCREATE[39m src/app/magic/VPRDB040STAMPINGMASTERINFO/VPRDB040STAMPINGMASTERINFO.component.html (1501 bytes)
+[32mCREATE[39m src/app/magic/VPRDB008_LFRAMESEALPRINT/VPRDB008LTRUEISSUEPRO.mg.controls.g.ts (1655 bytes)
+[32mCREATE[39m src/app/magic/VPRDB008_LFRAMESEALPRINT/VPRDB008LTRUEISSUEPRO.component.ts (2212 bytes)
+[32mCREATE[39m src/app/magic/VPRDB008_LFRAMESEALPRINT/VPRDB008LTRUEISSUEPRO.component.html (2766 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (14963 bytes)
 
 
 

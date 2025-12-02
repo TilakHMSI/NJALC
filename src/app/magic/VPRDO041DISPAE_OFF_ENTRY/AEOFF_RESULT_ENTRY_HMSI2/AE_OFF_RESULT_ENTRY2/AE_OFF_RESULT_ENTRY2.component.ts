@@ -11,6 +11,7 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
     selector: 'mga-VPRDO041DISPAE_OFF_ENTRY_AEOFF_RESULT_ENTRY_HMSI2_AE_OFF_RESULT_ENTRY2_AE_OFF_RESULT_ENTRY2',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./AE_OFF_RESULT_ENTRY2.component.css'],
     templateUrl: './AE_OFF_RESULT_ENTRY2.component.html'
 })
 export class AE_OFF_RESULT_ENTRY2 extends TaskBaseMagicComponent {

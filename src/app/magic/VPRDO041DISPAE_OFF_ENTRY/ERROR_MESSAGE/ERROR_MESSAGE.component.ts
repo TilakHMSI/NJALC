@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDO041DISPAE_OFF_ENTRY_ERROR_MESSAGE_ERROR_MESSAGE',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./ERROR_MESSAGE.component.css'],
     templateUrl: './ERROR_MESSAGE.component.html'
 })
 export class ERROR_MESSAGE extends TaskBaseMagicComponent implements MagicModalInterface {
@@ -23,15 +24,15 @@ export class ERROR_MESSAGE extends TaskBaseMagicComponent implements MagicModalI
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "ERROR_MESSAGE";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly formName: string = "ERROR MESSAGE";
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "500px";
+    private static readonly height: string = "250px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
-    private static readonly isResizable: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
+    private static readonly isResizable: boolean = false;
     private static readonly isMovable: boolean = true;
     X() {
         return ERROR_MESSAGE.x;

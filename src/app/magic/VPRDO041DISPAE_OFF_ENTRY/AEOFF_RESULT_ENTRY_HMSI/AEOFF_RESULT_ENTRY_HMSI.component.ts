@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDO041DISPAE_OFF_ENTRY_AEOFF_RESULT_ENTRY_HMSI_AEOFF_RESULT_ENTRY_HMSI',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./AEOFF_RESULT_ENTRY_HMSI.component.css'],
     templateUrl: './AEOFF_RESULT_ENTRY_HMSI.component.html'
 })
 export class AEOFF_RESULT_ENTRY_HMSI extends BaseMatTableMagicComponent implements MagicModalInterface {

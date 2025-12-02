@@ -1,106 +1,50 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.AEOFF_RESULT_ENTRY2"
-    >
+<div novalidate [formGroup]="screenFormGroup">
+    <!-- <div style="display: flex; flex-direction: column" [magic]="mgc.AEOFF_RESULT_ENTRY2">
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label1" class="lable_overflow">
             </label>
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label2" class="lable_overflow">
                 ENGINE NO.
             </label>
             <label [magic]="mgc.S5_ENGFRMTYPE">
                 {{mg.getValue(mgc.S5_ENGFRMTYPE) }}
             </label>
             <div>
-                <input
-                    [formControlName]="mgc.S5_CHASSIS_NO"
-                    currencyMask
-                    [options]="mg.getNumericPicture(mg.getPicture(mgc.S5_CHASSIS_NO))"
-                    [magic]="mgc.S5_CHASSIS_NO"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.S5_CHASSIS_NO" currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.S5_CHASSIS_NO))" [magic]="mgc.S5_CHASSIS_NO"
+                    mgFormat />
                 <mgError [magic]=mgc.S5_CHASSIS_NO> </mgError>
             </div>
-            <label
-                [magic]="mgc.Label3"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label3" class="lable_overflow">
                 MODEL CODE
             </label>
             <div>
-                <input
-                    [formControlName]="mgc.S5_MTO_CODE"
-                    [magic]="mgc.S5_MTO_CODE"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.S5_MTO_CODE" [magic]="mgc.S5_MTO_CODE" mgFormat />
                 <mgError [magic]=mgc.S5_MTO_CODE> </mgError>
             </div>
-            <label
-                [magic]="mgc.Label4"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label4" class="lable_overflow">
                 PROD.LINE
             </label>
             <div>
-                <input
-                    [formControlName]="mgc.S5_PRODLINE"
-                    [magic]="mgc.S5_PRODLINE"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.S5_PRODLINE" [magic]="mgc.S5_PRODLINE" mgFormat />
                 <mgError [magic]=mgc.S5_PRODLINE> </mgError>
             </div>
-            <label
-                [magic]="mgc.Label5"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label5" class="lable_overflow">
                 AE-OFF DATE
             </label>
-            <input
-                type="date"
-                [formControlName]="mgc.S5_AFOFF_DATE"
-                [magic]="mgc.S5_AFOFF_DATE"
-                [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE)"
-                dateInput
-            />
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
+            <input type="date" [formControlName]="mgc.S5_AFOFF_DATE" [magic]="mgc.S5_AFOFF_DATE"
+                [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE)" dateInput />
+            <label [magic]="mgc.Label6" class="lable_overflow">
                 AE-OFF TIME
             </label>
-            <input
-                type="time"
-                [formControlName]="mgc.S5_AFOFF_TIME"
-                [magic]="mgc.S5_AFOFF_TIME"
-                [style.visibility]="mg.getVisible(mgc.S5_AFOFF_TIME)"
-                step=1
-            />
-            <div
-                [magic]="mgc.Group13"
-                class="container_border"
-                style="display: flex; flex-direction: column"
-            >
+            <input type="time" [formControlName]="mgc.S5_AFOFF_TIME" [magic]="mgc.S5_AFOFF_TIME"
+                [style.visibility]="mg.getVisible(mgc.S5_AFOFF_TIME)" step=1 />
+            <div [magic]="mgc.Group13" class="container_border" style="display: flex; flex-direction: column">
                 <div style="display: flex; flex-direction: row">
-                    <label
-                        [magic]="mgc.Label15"
-                        class="lable_overflow"
-                    >
+                    <label [magic]="mgc.Label15" class="lable_overflow">
                         LINE
                     </label>
-                    <label
-                        [magic]="mgc.Label14"
-                        class="lable_overflow"
-                    >
+                    <label [magic]="mgc.Label14" class="lable_overflow">
                         TOTAL
                     </label>
                 </div>
@@ -109,32 +53,99 @@
                         {{mg.getValue(mgc.Edit17) }}
                     </label>
                     <div>
-                        <input
-                            [formControlName]="mgc.V_PROGRESS1TEST"
-                            type='number'
-                            [magic]="mgc.V_PROGRESS1TEST"
-                            mgFormat
-                        />
+                        <input [formControlName]="mgc.V_PROGRESS1TEST" type='number' [magic]="mgc.V_PROGRESS1TEST"
+                            mgFormat />
                         <mgError [magic]=mgc.V_PROGRESS1TEST> </mgError>
                     </div>
                 </div>
                 <div style="display: flex; flex-direction: row">
-                    <label
-                        [magic]="mgc.Label18"
-                        class="lable_overflow"
-                    >
+                    <label [magic]="mgc.Label18" class="lable_overflow">
                         MODEL/C TOTAL
                     </label>
                 </div>
                 <div style="display: flex; flex-direction: row">
                     <div>
-                        <input
-                            [formControlName]="mgc.V_PROGRESS2TEST"
-                            type='number'
-                            [magic]="mgc.V_PROGRESS2TEST"
-                            mgFormat
-                        />
+                        <input [formControlName]="mgc.V_PROGRESS2TEST" type='number' [magic]="mgc.V_PROGRESS2TEST"
+                            mgFormat />
                         <mgError [magic]=mgc.V_PROGRESS2TEST> </mgError>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="d-flex flex-column flex-column-fluid" [magic]="mgc.AEOFF_RESULT_ENTRY2">
+        <div class="row">
+            <div class="col-lg-12 col-xxl-12">
+                <div class="form-group row">
+                    <div class="col-lg-1">
+                        <div class="form-group-sm">
+                            <label class="lbl-sm">ENGINE NO.</label>
+                            <input [formControlName]="mgc.S5_ENGFRMTYPE" [magic]="mgc.S5_ENGFRMTYPE"
+                                class="form-control-sm" mgFormat />
+                            <mgError [magic]="mgc.S5_ENGFRMTYPE"> </mgError>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="form-group-sm">
+                            <label class="lbl-sm">.</label>
+                            <input [formControlName]="mgc.S5_CHASSIS_NO" [magic]="mgc.S5_CHASSIS_NO"
+                                class="form-control-sm" mgFormat />
+                            <mgError [magic]="mgc.S5_CHASSIS_NO"> </mgError>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group-sm">
+                            <label class="lbl-sm">MODEL CODE</label>
+                            <input [formControlName]="mgc.S5_MTO_CODE" [magic]="mgc.S5_MTO_CODE" class="form-control-sm"
+                                mgFormat />
+                            <mgError [magic]="mgc.S5_MTO_CODE"> </mgError>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="form-group-sm">
+                            <label class="lbl-sm">PROD.LINE</label>
+                            <input [formControlName]="mgc.S5_PRODLINE" [magic]="mgc.S5_PRODLINE" class="form-control-sm"
+                                mgFormat />
+                            <mgError [magic]="mgc.S5_MTO_CODE"> </mgError>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group-sm">
+                            <label class="lbl-sm">AE-OFF DATE</label>
+                            <input type="date" [formControlName]="mgc.S5_AFOFF_DATE" [magic]="mgc.S5_AFOFF_DATE"
+                                class="form-control-sm" *ngIf="mg.getVisible(mgc.S5_AFOFF_DATE)==='visible'"
+                                dateInput />
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group-sm">
+                            <label class="lbl-sm">AE-OFF TIME</label>
+                            <input type="time" [formControlName]="mgc.S5_AFOFF_TIME" [magic]="mgc.S5_AFOFF_TIME"
+                                class="form-control-sm" *ngIf="mg.getVisible(mgc.S5_AFOFF_DATE)==='visible'" step=1 />
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="form-group-sm">
+                            <label class="lbl-sm">LINE</label>
+                            <input class="form-control-sm" [formControlName]="mgc.Edit17" type='number'
+                                [magic]="mgc.Edit17" mgFormat />
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="form-group-sm">
+                            <label class="lbl-sm">TOTAL</label>
+                            <input class="form-control-sm" [formControlName]="mgc.V_PROGRESS1TEST" type='number'
+                                [magic]="mgc.V_PROGRESS1TEST" mgFormat />
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="form-group-sm">
+                            <label class="lbl-sm">MODEL/C TOTAL</label>
+                            <input class="form-control-sm" [formControlName]="mgc.V_PROGRESS2TEST" type='number'
+                                [magic]="mgc.V_PROGRESS2TEST" mgFormat />
+                        </div>
                     </div>
                 </div>
             </div>
