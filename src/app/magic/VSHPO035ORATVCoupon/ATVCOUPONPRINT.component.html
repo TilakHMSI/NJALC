@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -69,6 +69,107 @@
             <button [magic]="mgc.CANCEL_BUTTON">
                 C:Cancel
             </button>
+        </div>
+    </div>
+</div> -->
+<div novalidate [formGroup]="screenFormGroup">
+
+    <div class="container-fluid" [magic]="mgc.ATVCOUPONPRINT">
+        <div class="row">
+            <div class="col-lg-12 col-xxl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <h3><label class="lable_overflow mb-0">
+                                    PGM=VSHPO035
+                                </label></h3>
+                            <label></label>
+
+                            <input class="form-control" style="width:auto;background-color:transparent;border: none;"
+                                [formControlName]="mgc.V_LOCATE_P" [magic]="mgc.V_LOCATE_P" mgFormat />
+
+
+                            <div class="d-flex">
+                                <label [magic]="mgc.Edit3" class="mb-0 mr-3">
+                                    {{mg.getValue(mgc.Edit3)
+                                    | magicDate : mgc.Edit3}}
+                                </label>
+                                <label [magic]="mgc.Edit4" class="mb-0 mr-3">
+                                    {{mg.getValue(mgc.Edit4)
+                                    | magicTime : mgc.Edit4}}
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-12 col-xxl-12">
+                                <div class="form-group row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>FRAME No.</label>
+                                            <div class="input-group">
+                                                <input type="text" formControlName="{{mgc.ENGFRMTYPE_V}}"
+                                                    magic="{{mgc.ENGFRMTYPE_V}}" class="form-control">
+                                                <div class="input-group-append">
+                                                    <button type="button" class="btn btn-loanlist btn-icon"
+                                                        magic="{{mgc.btn_ENGFRMTYPE_V}}"
+                                                        [style.visibility]="mg.getVisible(mgc.btn_ENGFRMTYPE_V)">
+                                                        <span class="svg-icon svg-icon-lg"><svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                                height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none"
+                                                                    fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24" />
+                                                                    <path
+                                                                        d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                        fill="#000000" fill-rule="nonzero"
+                                                                        opacity="0.3" />
+                                                                    <path
+                                                                        d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                        fill="#000000" opacity="0.3" />
+                                                                </g>
+                                                            </svg></span></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>CHASIS No.</label>
+                                            <input class="form-control" style="width:auto;"
+                                                [formControlName]="mgc.CHASSIS_NO_V" [magic]="mgc.CHASSIS_NO_V"
+                                                mgFormat />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 text-center">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.EXEC_BUTTON"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                EXCEL
+                                            </button>
+                                            <button type="button" [magic]="mgc.CANCEL_BUTTON"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                CANCEL
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDS004PrintingConfir_VPRDS004PrintingConfir',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./VPRDS004PrintingConfir.component.css'],
     templateUrl: './VPRDS004PrintingConfir.component.html'
 })
 export class VPRDS004PrintingConfir extends TaskBaseMagicComponent implements MagicModalInterface {
@@ -23,12 +24,12 @@ export class VPRDS004PrintingConfir extends TaskBaseMagicComponent implements Ma
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "VPRDS004PrintingConfir";
+    private static readonly formName: string = "VPRDS004 Printing Confirm";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "600px";
+    private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;

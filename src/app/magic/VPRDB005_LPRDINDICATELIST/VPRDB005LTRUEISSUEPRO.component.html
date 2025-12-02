@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -76,6 +76,86 @@
                     mgFormat
                 />
                 <mgError [magic]=mgc.vX2_PLAN_SEQ_SUFFIX> </mgError>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+
+    <div class="container-fluid" [magic]="mgc.VPRDB005LTRUEISSUEPRO">
+        <div class="row">
+            <div class="col-lg-12 col-xxl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <h3><label class="lable_overflow mb-0">
+                                    PGM=VPRDB005
+                                </label></h3>
+                            <label></label>
+
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-12 col-xxl-12">
+                                <div class="form-group row">
+                                    <label
+                                        style="background-color: lightgrey;width: 100%; font-size: 1.5rem; font-weight: 600;text-align: center;">NOW
+                                        PRINTING ...</label>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+
+
+                                            <label>PLAN CODE:</label>
+                                            <div class="input-group">
+                                                <input type="text" formControlName="{{mgc.vX2_PLAN_CODE}}"
+                                                    magic="{{mgc.vX2_PLAN_CODE}}" class="form-control">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>PLAN DATE:</label>
+                                            <input matInput [matDatepicker]="picker"
+                                                [formControlName]="mgc.vX2_PLAN_DATE">
+                                            <mat-datepicker #picker></mat-datepicker>
+                                            <!-- <input  class="form-control" style="width:auto;" [formControlName]="mgc.CHASSIS_NO_V"
+                                        [magic]="mgc.CHASSIS_NO_V" mgFormat /> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>PLAN SEQ:</label>
+                                            <input class="form-control" style="width:auto;"
+                                                [formControlName]="mgc.vX2_PLAN_SEQ" [magic]="mgc.vX2_PLAN_SEQ"
+                                                mgFormat />
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label></label>
+                                            <input class="form-control" style="width:auto;"
+                                                [formControlName]="mgc.vX2_PLAN_SEQ_SUFFIX"
+                                                [magic]="mgc.vX2_PLAN_SEQ_SUFFIX" mgFormat />
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

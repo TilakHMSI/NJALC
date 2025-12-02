@@ -23,12 +23,12 @@ export class VPRDB062HPEFIVSPRINT extends TaskBaseMagicComponent implements Magi
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "VPRDB062HPEFIVSPRINT";
+    private static readonly formName: string = "VPRDB062 HPEFIVS PRINT";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "600px";
+    private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;
