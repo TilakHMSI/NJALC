@@ -1,8 +1,4 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
+<!-- <div
         style="display: flex; flex-direction: column"
         [magic]="mgc.VPRDS002PrintConfirmOkonly"
     >
@@ -49,6 +45,78 @@
             <button [magic]="mgc.BUTTON_OK">
                 OK
             </button>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container-fluid" [magic]="mgc.VPRDS002PrintConfirmOkonly">
+    <div class="row">
+        <div class="col-lg-12 col-xxl-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <h3><label class="lable_overflow mb-0">
+                                PGM=VPRDS002
+                            </label></h3>
+                        <label></label>
+
+                        <input class="form-control" style="width:auto;background-color:transparent;border: none;"
+                            [formControlName]="mgc.V_LOCATE_P" [magic]="mgc.V_LOCATE_P" mgFormat />
+
+
+                        <div class="d-flex">
+                            <label [magic]="mgc.Edit3" class="mb-0 mr-3">
+                                {{mg.getValue(mgc.Edit3)
+                                | magicDate : mgc.Edit3}}
+                            </label>
+                            <label [magic]="mgc.Edit4" class="mb-0 mr-3">
+                                {{mg.getValue(mgc.Edit4)
+                                | magicTime : mgc.Edit4}}
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12 col-xxl-12">
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+
+                                        <textarea [formControlName]="mgc.Edit5" [magic]="mgc.Edit5"
+                                            style="background-color: #f8f8f8;" class="form-control" rows="3"
+                                            mgFormat></textarea>
+                                        <mgError [magic]=mgc.Edit5> </mgError>
+
+                                    </div>
+                                    <label
+                                        style="background-color: lightgrey;width: 100%; font-size: 1.5rem; font-weight: 600;text-align: center;">READY
+                                        TO PRINT ?</label>
+
+                                </div>
+
+
+                                <div class="col-lg-12 text-center">
+                                    <div class="form-group d-flex justify-content-center">
+
+                                        <button type="button" [magic]="mgc.BUTTON_OK"
+                                            class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                            OK
+                                        </button>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

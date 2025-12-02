@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -23,6 +23,65 @@
             <button [magic]="mgc.CANCEL_BUTTON">
                 {{mg.getValue(mgc.CANCEL_BUTTON)}}
             </button>
+        </div>
+    </div>
+</div> -->
+
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+
+ <div class="container-fluid" [magic]="mgc.VPRDS005OKNO">
+        <div class="row">
+            <div class="col-lg-12 col-xxl-12">
+                <div class="card">
+                    <div class="card-header">
+                     <label></label>
+                    </div>
+                    <div class="card-body">
+                         <div class="row">
+            <div class="col-lg-12 col-xxl-12">
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                           
+                            <textarea [formControlName]="mgc.V_MESSAGE_P" [magic]="mgc.V_MESSAGE_P"
+                                style="background-color: #f8f8f8;" class="form-control" rows="3" mgFormat></textarea>
+                            <mgError [magic]=mgc.V_MESSAGE_P> </mgError>
+                            
+                        </div>
+                         
+
+                    </div>
+
+
+<div class="col-lg-12 text-center">
+    <div class="form-group d-flex justify-content-center">
+
+        <button type="button" 
+                [magic]="mgc.OK_BUTTON"
+                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+            OK
+        </button>
+          <button type="button" 
+                [magic]="mgc.CANCEL_BUTTON"
+                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+            NO
+        </button>
+
+    </div>
+</div> 
+
+
+                  
+                </div>
+
+            </div>
+        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

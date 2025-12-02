@@ -16,6 +16,7 @@ export enum MgControlName {
         CHASSIS_NO_V = "CHASSIS_NO_V",
         EXEC_BUTTON = "EXEC_BUTTON",
         CANCEL_BUTTON = "CANCEL_BUTTON",
+        btn_ENGFRMTYPE_V="btn_ENGFRMTYPE_V"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
