@@ -1,0 +1,91 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CONFIRM"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                STAMPING INFORMATION NOT FOUND!
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                CHECK MODEL MASTER & STAMPING MASTER, RETRY AGAIN.
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                PLAN CODE :
+            </label>
+            <label [magic]="mgc.V_DSP_PLAN_CODE_V">
+                {{mg.getValue(mgc.V_DSP_PLAN_CODE_V) }}
+            </label>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                PLAN SEQ :
+            </label>
+            <label [magic]="mgc.V_DSP_DATE_V">
+                {{mg.getValue(mgc.V_DSP_DATE_V)
+| magicDate : mgc.V_DSP_DATE_V}}
+            </label>
+            <label [magic]="mgc.V_DSP_PLAN_SEQ_V">
+                {{mg.getValue(mgc.V_DSP_PLAN_SEQ_V) }}
+            </label>
+            <label [magic]="mgc.V_DSP_PLAN_SEQ_SUFFIX_V">
+                {{mg.getValue(mgc.V_DSP_PLAN_SEQ_SUFFIX_V) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                MODEL CODE :
+            </label>
+            <label [magic]="mgc.V_DSP_MTO_CODE_V">
+                {{mg.getValue(mgc.V_DSP_MTO_CODE_V) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.V_DSP_MTO_NAME_V">
+                {{mg.getValue(mgc.V_DSP_MTO_NAME_V) }}
+            </label>
+            <label [magic]="mgc.V_DSP_COLOR_CODE_V">
+                {{mg.getValue(mgc.V_DSP_COLOR_CODE_V) }}
+            </label>
+            <label [magic]="mgc.V_DSP_COLOR_CODEINSIDE_V">
+                {{mg.getValue(mgc.V_DSP_COLOR_CODEINSIDE_V) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label14"
+                class="lable_overflow"
+            >
+                PLAN QTY :
+            </label>
+            <label [magic]="mgc.V_DSP_PLAN_RESULT_V">
+                {{mg.getValue(mgc.V_DSP_PLAN_RESULT_V) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

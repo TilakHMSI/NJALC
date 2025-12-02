@@ -1,0 +1,92 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"EXISTPRD010Open",
+		"window_type":	12,
+		"component_path":	"VPRDB039_PROD_INDICATE_GR/EXISTPRD010Open/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB039_PROD_INDICATE_GR_EXISTPRD010Open_EXISTPRD010Open"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	178,
+		"height":	91
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PLAN CODE:",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	38,
+				"y":	23,
+				"width":	50,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_SA_PLAN_CODE",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	91,
+				"y":	23,
+				"width":	30,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"DATE:",
+				"common_line_id":	"line46"
+			},
+			"coordinates":	{
+				"x":	38,
+				"y":	46,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_SA_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line46"
+			},
+			"coordinates":	{
+				"x":	91,
+				"y":	46,
+				"width":	50,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}

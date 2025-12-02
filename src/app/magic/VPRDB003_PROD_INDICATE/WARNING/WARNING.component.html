@@ -1,0 +1,31 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.WARNING"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                THE RANGE OF INDICATION DAY IS NOT CONTINUOUS.
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PLEASE CHECK CALENDAR.
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

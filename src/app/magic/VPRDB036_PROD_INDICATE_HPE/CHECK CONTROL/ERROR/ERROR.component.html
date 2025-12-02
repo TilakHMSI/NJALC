@@ -1,0 +1,65 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ERROR"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_DISP1_MSG_V"
+                    [magic]="mgc.V_DISP1_MSG_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_DISP1_MSG_V> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_DISP2_MSG_V"
+                    [magic]="mgc.V_DISP2_MSG_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_DISP2_MSG_V> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                PLAN CODE:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.pERR_PLAN_CODE_V"
+                    [magic]="mgc.pERR_PLAN_CODE_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.pERR_PLAN_CODE_V> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                PLAN DATE:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.pERR_PLAN_DATE_V"
+                [magic]="mgc.pERR_PLAN_DATE_V"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

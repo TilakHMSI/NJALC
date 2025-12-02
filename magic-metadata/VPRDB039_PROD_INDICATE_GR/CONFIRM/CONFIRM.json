@@ -1,0 +1,453 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CONFIRM",
+		"window_type":	12,
+		"component_path":	"VPRDB039_PROD_INDICATE_GR/CONFIRM/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB039_PROD_INDICATE_GR_CONFIRM_CONFIRM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	280,
+		"height":	174
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit1",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line10"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	10,
+				"width":	199,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line10"
+			},
+			"coordinates":	{
+				"x":	204,
+				"y":	10,
+				"width":	71,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"CHECK MODEL MASTER \u0026 STAMPING MASTER, RETRY AGAIN.",
+				"common_line_id":	"line26"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	26,
+				"width":	270,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"PLAN CODE :",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	49,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DSP_PLAN_CODE_V",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	70,
+				"y":	49,
+				"width":	35,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"PLAN SEQ :",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	115,
+				"y":	49,
+				"width":	51,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DSP_DATE_V",
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"attribute":	"D",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	49,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DSP_PLAN_SEQ_V",
+				"mgformat":	"mgFormat",
+				"format":	"###",
+				"modifiable":	false,
+				"attribute":	"N",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	228,
+				"y":	49,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DSP_PLAN_SEQ_SUFFIX_V",
+				"mgformat":	"mgFormat",
+				"format":	"#",
+				"modifiable":	false,
+				"attribute":	"N",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	251,
+				"y":	49,
+				"width":	10,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"text":	"MODEL CODE  :",
+				"common_line_id":	"line62"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	62,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DSP_MTO_CODE_V",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line62"
+			},
+			"coordinates":	{
+				"x":	70,
+				"y":	62,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"text":	"MODEL NAME  :",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	75,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DSP_MTO_NAME_V",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	70,
+				"y":	75,
+				"width":	95,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DSP_COLOR_CODE_V",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	75,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DSP_COLOR_CODEINSIDE_V",
+				"mgformat":	"mgFormat",
+				"format":	"XX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	226,
+				"y":	75,
+				"width":	15,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label16",
+				"text":	"PLAN QTY  :",
+				"common_line_id":	"line88"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	88,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DSP_PLAN_RESULT_V",
+				"mgformat":	"mgFormat",
+				"format":	"######",
+				"modifiable":	false,
+				"attribute":	"N",
+				"common_line_id":	"line88"
+			},
+			"coordinates":	{
+				"x":	70,
+				"y":	88,
+				"width":	35,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label18",
+				"text":	"STAMPING GROUP :",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	111,
+				"width":	85,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_STAMPING_GROUP_V",
+				"mgformat":	"mgFormat",
+				"format":	"XXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	128,
+				"y":	111,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label20",
+				"text":	"STAMPING INFORMATION :",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	123,
+				"width":	115,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_STAMPING_INFORMATION1_V",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	128,
+				"y":	123,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_STAMPING_INFORMATION2_V",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"modifiable":	false,
+				"attribute":	"N",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	191,
+				"y":	123,
+				"width":	40,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"attribute":	"A",
+				"common_line_id":	"line145"
+			},
+			"coordinates":	{
+				"x":	108,
+				"y":	145,
+				"width":	66,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

@@ -1,0 +1,71 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"WARNING",
+		"window_type":	12,
+		"component_path":	"VPRDB039_PROD_INDICATE_GR/WARNING/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB039_PROD_INDICATE_GR_WARNING_WARNING"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	261,
+		"height":	109
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"THE RANGE OF INDICATION DAY IS NOT CONTINUOUS.",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	20,
+				"width":	240,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	" PLEASE CHECK CALENDAR.",
+				"common_line_id":	"line39"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	39,
+				"width":	240,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"attribute":	"A",
+				"common_line_id":	"line80"
+			},
+			"coordinates":	{
+				"x":	98,
+				"y":	80,
+				"width":	66,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

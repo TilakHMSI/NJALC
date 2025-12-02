@@ -1,0 +1,40 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.SELECTPRD010Open"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PLAN CODE:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_SA_PLAN_CODE"
+                    [magic]="mgc.V_SA_PLAN_CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_SA_PLAN_CODE> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                DATE:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.V_SA_DATE"
+                [magic]="mgc.V_SA_DATE"
+                dateInput
+            />
+        </div>
+    </div>
+</div>

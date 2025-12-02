@@ -1,0 +1,135 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.VPRDB038PRODINDICATE"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.OPT_ISSUEREPRINT_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.OPT_ISSUEREPRINT_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.OPT_ISSUEREPRINT_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.OPT_ISSUEREPRINT_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VPRDB038
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <div>
+                <div>
+                    <input
+                        type="checkbox"
+                        [formControlName]="mgc.CBX_INDCHASSIS_NO_PRN_V"
+                        [magic]="mgc.CBX_INDCHASSIS_NO_PRN_V"
+                        id="CBX_INDCHASSIS_NO_PRN_V"
+                    />
+                    <label for="CBX_INDCHASSIS_NO_PRN_V">
+                        IND.FRAME NO. PRN
+                    </label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input
+                        type="checkbox"
+                        [formControlName]="mgc.CBX_FINVEHICLE_INSPSHEET_V"
+                        [magic]="mgc.CBX_FINVEHICLE_INSPSHEET_V"
+                        id="CBX_FINVEHICLE_INSPSHEET_V"
+                    />
+                    <label for="CBX_FINVEHICLE_INSPSHEET_V">
+                        FIN.VEHICLE INSP.SHEET
+                    </label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input
+                        type="checkbox"
+                        [formControlName]="mgc.CBX_ENGINE_NOSEAL_PRN_V"
+                        [magic]="mgc.CBX_ENGINE_NOSEAL_PRN_V"
+                        id="CBX_ENGINE_NOSEAL_PRN_V"
+                    />
+                    <label for="CBX_ENGINE_NOSEAL_PRN_V">
+                        ENGINE NO.SEAL PRN
+                    </label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input
+                        type="checkbox"
+                        [formControlName]="mgc.V_CBX_CHASSIS_NOSEAL_PRN_V"
+                        [magic]="mgc.V_CBX_CHASSIS_NOSEAL_PRN_V"
+                        id="V_CBX_CHASSIS_NOSEAL_PRN_V"
+                    />
+                    <label for="V_CBX_CHASSIS_NOSEAL_PRN_V">
+                        FRAME NO.SEAL PRN
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <button [magic]="mgc.EXEC_BUTTON">
+                E:Exec
+            </button>
+            <button [magic]="mgc.CANCEL_BUTTON">
+                C:Cancel
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ERRORMESSAGE"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                FRAME LINE CALENDER AND ENGINE LINE CALENDER IS NOT MATCH
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                ENGINE PLAN CODE
+            </label>
+            <label [magic]="mgc.V_VSA_PLAN_CODE_AE">
+                {{mg.getValue(mgc.V_VSA_PLAN_CODE_AE) }}
+            </label>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                ENGINE INDICATION DATE
+            </label>
+            <label [magic]="mgc.V_VSA_DATE_AE">
+                {{mg.getValue(mgc.V_VSA_DATE_AE)
+| magicDate : mgc.V_VSA_DATE_AE}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                FRAME PLAN CODE
+            </label>
+            <label [magic]="mgc.V_VSA_PLAN_CODE_AF">
+                {{mg.getValue(mgc.V_VSA_PLAN_CODE_AF) }}
+            </label>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                FRAME INDICATION DATE
+            </label>
+            <label [magic]="mgc.V_VSA_DATE_AF">
+                {{mg.getValue(mgc.V_VSA_DATE_AF)
+| magicDate : mgc.V_VSA_DATE_AF}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                PLEASE CHECK LINE CALENDAR
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

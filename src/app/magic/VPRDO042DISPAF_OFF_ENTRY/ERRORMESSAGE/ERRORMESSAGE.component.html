@@ -1,0 +1,32 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ERRORMESSAGE"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                WARNING
+            </label>
+            <label [magic]="mgc.V_MESSAGE_P">
+                {{mg.getValue(mgc.V_MESSAGE_P) }}
+            </label>
+            <button [magic]="mgc.btn_Exit">
+                OK
+            </button>
+            <label [magic]="mgc.V_OK">
+                {{mg.getValue(mgc.V_OK) }}
+            </label>
+        </div>
+    </div>
+</div>

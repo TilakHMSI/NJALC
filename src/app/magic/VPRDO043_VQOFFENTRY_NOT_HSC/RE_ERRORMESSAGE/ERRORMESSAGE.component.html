@@ -1,0 +1,97 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ERRORMESSAGE"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                WARNING
+            </label>
+            <div *ngIf="mg.isImageExists(mgc.Image3)">
+                <img
+                    [magic]="mgc.Image3"
+                    [src]="mg.getImage(mgc.Image3)"
+                />
+            </div>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                THIS FRAME :
+            </label>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                VQ-OFF ALREADY DONE WITH
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                ENGINE NO :
+            </label>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                DATE :
+            </label>
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                TIME :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_VENGINE_TYPE"
+                    [magic]="mgc.V_VENGINE_TYPE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_VENGINE_TYPE> </mgError>
+            </div>
+            <input
+                type="date"
+                [formControlName]="mgc.V_VVQ_OFF_DATE"
+                [magic]="mgc.V_VVQ_OFF_DATE"
+                dateInput
+            />
+            <input
+                type="time"
+                [formControlName]="mgc.V_VVQ_OFF_TIME"
+                [magic]="mgc.V_VVQ_OFF_TIME"
+                step=1
+            />
+            <button [magic]="mgc.btn_Exit">
+                OK
+            </button>
+            <label [magic]="mgc.V_MESSAGE_P">
+                {{mg.getValue(mgc.V_MESSAGE_P) }}
+            </label>
+            <label [magic]="mgc.V_OK">
+                {{mg.getValue(mgc.V_OK) }}
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_VENGINE_NO"
+                    type='number'
+                    [magic]="mgc.V_VENGINE_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_VENGINE_NO> </mgError>
+            </div>
+        </div>
+    </div>
+</div>

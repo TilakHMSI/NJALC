@@ -1,0 +1,66 @@
+import { Component } from '@angular/core';
+
+import { FormGroup } from "@angular/forms";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./WARNING.mg.controls.g";
+
+
+import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
+
+
+import { MagicModalInterface } from "@magic-xpa/angular";
+
+@Component({
+    selector: 'mga-VPRDB003_PROD_INDICATE_WARNING_WARNING',
+    providers: [...magicProviders],
+    standalone: false,
+    templateUrl: './WARNING.component.html'
+})
+export class WARNING extends TaskBaseMagicComponent implements MagicModalInterface {
+
+    mgc = MgControlName;
+    mgcp = MgCustomProperties;
+    mgfc!: MgFormControlsAccessor;
+    override createFormControlsAccessor(formGroup: FormGroup) {
+        this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
+    }
+    private static readonly formName: string = "WARNING";
+    private static readonly showTitleBar: boolean = true;
+    private static readonly x: number = 0;
+    private static readonly y: number = 0;
+    private static readonly width: string = "300px";
+    private static readonly height: string = "300px";
+    private static readonly isCenteredToWindow: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly isResizable: boolean = true;
+    private static readonly isMovable: boolean = true;
+    X() {
+        return WARNING.x;
+    }
+    Y() {
+        return WARNING.y;
+    }
+    Width(): string {
+        return WARNING.width;
+    }
+    Height(): string {
+        return WARNING.height;
+    }
+    IsCenteredToWindow() {
+        return WARNING.isCenteredToWindow;
+    }
+    FormName() {
+        return WARNING.formName;
+    }
+    ShowTitleBar() {
+        return WARNING.showTitleBar;
+    }
+    ShouldCloseOnBackgroundClick() {
+        return WARNING.shouldCloseOnBackgroundClick;
+    }
+    IsResizable() {
+        return WARNING.isResizable;
+    }
+    IsMovable() {
+        return WARNING.isMovable;
+    }
+}

@@ -1,0 +1,58 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ERROR"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_DISP_MESSAGE_P"
+                    [magic]="mgc.V_DISP_MESSAGE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_DISP_MESSAGE_P> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_DISP_MESSAGE_2_P"
+                    [magic]="mgc.V_DISP_MESSAGE_2_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_DISP_MESSAGE_2_P> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                PLAN CODE:
+            </label>
+            <label [magic]="mgc.V_ERR_PLAN_CODE_V">
+                {{mg.getValue(mgc.V_ERR_PLAN_CODE_V) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                PLAN DATE:
+            </label>
+            <label [magic]="mgc.V_ERR_DATE_V">
+                {{mg.getValue(mgc.V_ERR_DATE_V)
+| magicDate : mgc.V_ERR_DATE_V}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

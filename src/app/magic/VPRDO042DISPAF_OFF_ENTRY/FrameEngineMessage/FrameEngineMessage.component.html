@@ -1,0 +1,62 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.FrameEngineMessage"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                FRAME
+            </label>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                ENGINE
+            </label>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                Message
+            </label>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+            </label>
+            <label [magic]="mgc.CHASSIS_NO_V">
+                {{mg.getValue(mgc.CHASSIS_NO_V) }}
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+            </label>
+            <label [magic]="mgc.S5_ENGTYPE">
+                {{mg.getValue(mgc.S5_ENGTYPE) }}
+            </label>
+            <button [magic]="mgc.VOK_0001">
+                {{mg.getValue(mgc.VOK_0001)}}
+            </button>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+            </label>
+            <label [magic]="mgc.S5_ENGNO">
+                {{mg.getValue(mgc.S5_ENGNO) }}
+            </label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,221 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"ERRORMESSAGE",
+		"window_type":	12,
+		"component_path":	"VPRDB039_PROD_INDICATE_GR/ERRORINDICATINCHECKING/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB039_PROD_INDICATE_GR_ERRORINDICATINCHECKING_ERRORMESSAGE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	310,
+		"height":	163
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"FRAME LINE CALENDER AND ENGINE LINE CALENDER IS NOT MATCH",
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	16,
+				"width":	290,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"ENGINE PLAN CODE",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	42,
+				"width":	85,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_VSA_PLAN_CODE_AE",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	42,
+				"width":	36,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"ENGINE INDICATION DATE",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	133,
+				"y":	42,
+				"width":	115,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_VSA_DATE_AE",
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"attribute":	"D",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	251,
+				"y":	42,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"FRAME PLAN CODE",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	68,
+				"width":	80,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_VSA_PLAN_CODE_AF",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	68,
+				"width":	36,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"FRAME INDICATION DATE",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	133,
+				"y":	68,
+				"width":	115,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_VSA_DATE_AF",
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"attribute":	"D",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	251,
+				"y":	68,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"text":	" PLEASE CHECK LINE CALENDAR",
+				"common_line_id":	"line94"
+			},
+			"coordinates":	{
+				"x":	35,
+				"y":	94,
+				"width":	240,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"attribute":	"A",
+				"common_line_id":	"line125"
+			},
+			"coordinates":	{
+				"x":	123,
+				"y":	125,
+				"width":	66,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

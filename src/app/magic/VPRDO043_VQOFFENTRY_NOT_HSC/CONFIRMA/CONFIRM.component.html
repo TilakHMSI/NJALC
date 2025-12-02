@@ -1,0 +1,64 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CONFIRM"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                KEY NO. DIFFERENT
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                VQ-ON :
+            </label>
+            <label [magic]="mgc.V_KEY_NO_V">
+                {{mg.getValue(mgc.V_KEY_NO_V) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                VQ-OFF :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.KEY_NO_V1"
+                    [magic]="mgc.KEY_NO_V1"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.KEY_NO_V1> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                OVERWRITE BY VQ-OFF
+            </label>
+            <button [magic]="mgc.OK_BUTTON">
+                {{mg.getValue(mgc.OK_BUTTON)}}
+            </button>
+            <button [magic]="mgc.NO_BUTTON">
+                {{mg.getValue(mgc.NO_BUTTON)}}
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,308 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VPRDB038PRODINDICATE",
+		"window_type":	12,
+		"component_path":	"VPRDB038_PROD_INDICATE_HMSI/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB038_PROD_INDICATE_HMSI_VPRDB038PRODINDICATE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	210,
+		"height":	143
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"OPT_ISSUEREPRINT_V",
+				"items_list":	"ISSUE,REPRINT",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	19,
+				"y":	0,
+				"width":	59,
+				"height":	46
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	42,
+				"width":	78,
+				"height":	0
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	105,
+				"y":	13,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	119,
+				"y":	0,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PGM=VPRDB038",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	141,
+				"y":	0,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	159,
+				"y":	13,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	35,
+				"y":	49,
+				"width":	0,
+				"height":	68
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CBX_INDCHASSIS_NO_PRN_V",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"IND.FRAME NO. PRN",
+				"attribute":	"B",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	39,
+				"y":	52,
+				"width":	109,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CBX_FINVEHICLE_INSPSHEET_V",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"FIN.VEHICLE INSP.SHEET",
+				"attribute":	"B",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	39,
+				"y":	67,
+				"width":	129,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CBX_ENGINE_NOSEAL_PRN_V",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"ENGINE NO.SEAL PRN",
+				"attribute":	"B",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	39,
+				"y":	81,
+				"width":	105,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CBX_CHASSIS_NOSEAL_PRN_V",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"FRAME NO.SEAL PRN",
+				"attribute":	"B",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	39,
+				"y":	98,
+				"width":	109,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	42,
+				"width":	0,
+				"height":	75
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	35,
+				"y":	117,
+				"width":	136,
+				"height":	0
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"EXEC_BUTTON",
+				"format":	"E:Exec",
+				"attribute":	"A",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	85,
+				"y":	123,
+				"width":	54,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CANCEL_BUTTON",
+				"format":	"C:Cancel",
+				"attribute":	"A",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	143,
+				"y":	123,
+				"width":	54,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}
