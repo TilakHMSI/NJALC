@@ -20,6 +20,7 @@ export enum MgControlName {
         ENGINE_NO_DSP = "ENGINE_NO_DSP",
         Label11 = "Label11",
         MISSION_DSP = "MISSION_DSP",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

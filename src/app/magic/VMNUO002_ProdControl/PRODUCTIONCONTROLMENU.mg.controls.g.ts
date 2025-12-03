@@ -18,6 +18,7 @@ export enum MgControlName {
         BUTTONPRODUCTION_SCEDULE = "BUTTONPRODUCTION_SCEDULE",
         BUTTONPRODUCTION_RESULT = "BUTTONPRODUCTION_RESULT",
         BUTTONPRODUCTION_ENTRY = "BUTTONPRODUCTION_ENTRY",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

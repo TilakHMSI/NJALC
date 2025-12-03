@@ -24,7 +24,7 @@ export class PRODUCTIONRESULTENTRYMENU extends TaskBaseMagicComponent implements
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "PRODUCTION RESULT ENTRY MENU";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "1200px";

@@ -24,7 +24,7 @@ export class AEOFF_RESULT_ENTRY extends TaskBaseMagicComponent implements MagicM
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "AE-OFF RESULT ENTRY";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "1250px";

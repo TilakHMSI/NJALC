@@ -646,6 +646,7 @@ pre code {
 
 .container,
 .container-fluid,
+.container-fluid-ov,
 .container-sm,
 .container-md,
 .container-lg,
@@ -2896,7 +2897,7 @@ pre code {
 }
 
 .lbl-sm {
-  font-size: .725rem ! important;
+  font-size: .825rem ! important;
   font-weight: 400;
   color: #3F4254;
 }
@@ -2906,7 +2907,7 @@ pre code {
   width: 100%;
   height: calc(1em + 1rem + 1px);
   padding: 0.5rem 0.7rem;
-  font-size: .725rem ! important;
+  font-size: .825rem ! important;
   font-weight: 300;
   line-height: 1;
   color: #3F4254;
@@ -2932,6 +2933,27 @@ pre code {
   line-height: 1.5;
   color: #3F4254;
   background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #d5d7de;
+  border-radius: 0.42rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form-control-ent {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1.3rem + 2px);
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3F4254;
+  background-color: yellow;
   background-clip: padding-box;
   border: 1px solid #d5d7de;
   border-radius: 0.42rem;
@@ -3060,7 +3082,7 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-sm {
-  height: calc(1.35em + 1.1rem + 2px);
+  height: calc(1em + 1rem + 1px);
   padding: 0.55rem 0.75rem;
   font-size: 0.925rem;
   line-height: 1.35;
@@ -5670,6 +5692,7 @@ input[type="button"].btn-block {
 
 .navbar .container,
 .navbar .container-fluid,
+.navbar .container-fluid-ov,
 .navbar .container-sm,
 .navbar .container-md,
 .navbar .container-lg,
@@ -95323,7 +95346,10 @@ body {
   .aside-fixed.aside-minimize:not(.aside-minimize-hover) .wrapper {
     padding-left: 70px;
   }
-
+  
+  .container-fluid-ov {
+    padding: 0;
+  }
   .container,
   .container-fluid,
   .container-sm,
@@ -95331,7 +95357,7 @@ body {
   .container-lg,
   .container-xl,
   .container-xxl {
-    padding: 0 25px;
+    padding: 0 15px;
   }
 }
 
@@ -95344,6 +95370,10 @@ body {
     padding-top: 120px;
   }
 
+.container-fluid-ov {
+  max-width: none;
+    padding: 0;
+  }
   .container,
   .container-fluid,
   .container-sm,

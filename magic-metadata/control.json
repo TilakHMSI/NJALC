@@ -1,19 +1,19 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"V_VEngine",
-		"modifiable":	false,
-		"mgformat":	"mgFormat",
-		"format":	"XXXXXXXXXXXXXXXXXX",
-		"attribute":	"A"
+		"id":	"Label6",
+		"text":	{
+			"value":	"PGM=VPRDO042",
+			"has_exp":	true
+		}
 	},
 	"coordinates":	{
-		"x":	119,
-		"y":	99,
-		"width":	414,
-		"height":	41
+		"x":	458,
+		"y":	14,
+		"width":	61,
+		"height":	11
 	},
 	"hint":	null,
-	"controlType":	"T",
+	"controlType":	"L",
 	"children":	null
 }
