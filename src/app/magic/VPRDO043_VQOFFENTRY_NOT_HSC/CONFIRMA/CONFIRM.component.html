@@ -1,24 +1,12 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.CONFIRM"
-    >
+<!-- <div style="background-color: rgb(170, 197, 170);" novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.CONFIRM">
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label1" class="lable_overflow">
                 KEY NO. DIFFERENT
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label2" class="lable_overflow">
                 VQ-ON :
             </label>
             <label [magic]="mgc.V_KEY_NO_V">
@@ -26,31 +14,18 @@
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label4"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label4" class="lable_overflow">
                 VQ-OFF :
             </label>
             <div>
-                <input
-                    [formControlName]="mgc.KEY_NO_V1"
-                    [magic]="mgc.KEY_NO_V1"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.KEY_NO_V1" [magic]="mgc.KEY_NO_V1" mgFormat />
                 <mgError [magic]=mgc.KEY_NO_V1> </mgError>
             </div>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label6" class="lable_overflow">
             </label>
-            <label
-                [magic]="mgc.Label7"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label7" class="lable_overflow">
                 OVERWRITE BY VQ-OFF
             </label>
             <button [magic]="mgc.OK_BUTTON">
@@ -59,6 +34,63 @@
             <button [magic]="mgc.NO_BUTTON">
                 {{mg.getValue(mgc.NO_BUTTON)}}
             </button>
+        </div>
+    </div>
+</div> -->
+
+<div style="background-color: rgb(192, 199, 202);" novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex flex-column flex-column-fluid" [magic]="mgc.CONFIRM">
+        <div class="row">
+            <div class="col-lg-12 col-xxl-12">
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <label style="background-color: rgb(49, 84, 238); text-align: center; width: 100%;"
+                            class="font-weight-bolder font-size-h2 text-white">
+                            Confirm
+                        </label>
+                    </div>
+                    <div class="col-lg-6">
+                        <label [magic]="mgc.Label7" class="lbl_title">
+                            KEY NO. DIFFERENT
+                        </label>
+                    </div>
+                    <div class="col-lg-6">
+                    </div>
+                    <div class="col-lg-4">
+                        <label class="lbl_errmessage" [magic]="mgc.Label2">
+                            VQ-ON :
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_title" [magic]="mgc.V_KEY_NO_V">
+                            {{mg.getValue(mgc.V_KEY_NO_V) }}
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                        <label class="lbl_errmessage" [magic]="mgc.Label4">
+                            VQ-OFF :
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <input class="form-control font-size-h3" [formControlName]="mgc.KEY_NO_V1" [magic]="mgc.KEY_NO_V1" mgFormat />
+                        <mgError [magic]=mgc.KEY_NO_V1> </mgError>
+                    </div>
+                    <div class="col-lg-12  text-center mt-10">
+                        <label class="lbl_errmessage">
+                            OVERWRITE BY VQ-OFF
+                        </label>
+                    </div>
+                    <div class="col-lg-6">
+                        <button type="button" [magic]="mgc.OK_BUTTON"
+                            class="btn btn-success font-weight-bold mr-3 btn-wdth">OK</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <button type="button" [magic]="mgc.NO_BUTTON"
+                            class="btn btn-danger font-weight-bold ml-3 btn-wdth">NO</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

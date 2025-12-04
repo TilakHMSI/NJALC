@@ -1,0 +1,70 @@
+<div style="background-color: rgb(243, 243, 146);" novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex flex-column flex-column-fluid" [magic]="mgc.ERRORMESSAGE">
+        <div class="row">
+            <div class="col-lg-12 col-xxl-12">
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <label style="background-color: red; text-align: center; width: 100%;" class="font-weight-bolder font-size-h2 text-white">
+                            WARNING
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                        <label [magic]="mgc.Label7" class="lbl_title">
+                            THIS FRAME:
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_errmessage" [magic]="mgc.V_CHASSIS_NO_DSP">
+                            {{mg.getValue(mgc.V_CHASSIS_NO_DSP) }}
+                             
+                        </label>
+                    </div>
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-10">
+                        <label [magic]="mgc.Label7" class="lbl_title">
+                            VQ-ON ALREADY DONE WITH
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                        <label  [magic]="mgc.Label7" class="lbl_title">
+                            ENGINE NO :
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_errmessage mr-10">
+                            {{mg.getValue(mgc.V_VENGINE_TYPE) }}
+                        </label>
+                        <label class="lbl_errmessage">
+                            {{mg.getValue(mgc.V_VENGINE_NO) }}
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                        <label [magic]="mgc.Label7" class="lbl_title">
+                            DATE TIME:
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_errmessage mr-5" [magic]="mgc.V_VPDI_DATE">
+                            {{mg.getValue(mgc.V_VPDI_DATE)
+                            | magicDate : mgc.V_VPDI_DATE}}
+                        </label>
+                        <label class="lbl_errmessage" [magic]="mgc.V_VPDI_TIME">
+                            {{mg.getValue(mgc.V_VPDI_TIME)
+                            | magicTime : mgc.V_VPDI_TIME}}
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="form-group">
+                            <button type="button" [magic]="mgc.btn_Exit"
+                                class="btn btn-danger font-weight-bold mr-3 btn-wdth">OK</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

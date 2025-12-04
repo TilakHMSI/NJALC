@@ -1,0 +1,33 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex justify-content-center align-items-center" [magic]="mgc.Confirmation">
+        <div class="message-box text-center p-3">
+            <!-- Top title -->
+            <div class="message-title mb-2">Message</div>
+
+            <!-- Main code -->
+            <div class="message-code text-primary mb-3" *ngIf="mg.getVisible(mgc.Message2_0001)==='visible'">{{mg.getValue(mgc.Message2_0001) }}</div>
+            <div class="message-code text-primary mb-3" *ngIf="mg.getVisible(mgc.Message1)==='visible'">{{mg.getValue(mgc.Message1) }}</div>
+
+            <!-- Engine and Frame row -->
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <span class="engine-label me-2">FRAME NO -</span>
+                <span class="engine-no text-primary">{{mg.getValue(mgc.CHASSIS_NO_DSP) }}</span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <span class="engine-label me-2">ENGINE NO-</span>
+                <span class="engine-no text-primary">{{mg.getValue(mgc.ENGINE_NODISP) }}</span>
+            </div>
+           
+
+            <!-- Status line -->
+            <div class="status-box mx-auto py-2 px-3">
+                <label class="lbl_Status" [magic]="mgc.Label6" *ngIf="mg.getVisible(mgc.Label6)==='visible'" class="lable_overflow">
+                    Cancelled successfully!!!
+                </label>
+                <label class="lbl_Status" [magic]="mgc.Label7" *ngIf="mg.getVisible(mgc.Label7)==='visible'" class="lable_overflow">
+                    Scanned successfully!!!
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

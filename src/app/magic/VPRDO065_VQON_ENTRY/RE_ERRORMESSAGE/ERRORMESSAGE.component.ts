@@ -29,7 +29,7 @@ export class ERRORMESSAGE extends TaskBaseMagicComponent implements MagicModalIn
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "510px";
-    private static readonly height: string = "240px";
+    private static readonly height: string = "284px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = false;

@@ -1,0 +1,177 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.PDIOFFRESULTENTRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PGM=VPRDO066
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicDate : mgc.Edit2}}
+            </label>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicTime : mgc.Edit3}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.PDIOFF_RESULT_ENTRY">
+            </magic-subform>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                FRAME NUMBER
+            </label>
+            <label [magic]="mgc.Edit12">
+                {{mg.getValue(mgc.Edit12) }}
+            </label>
+            <label [magic]="mgc.Edit13">
+                {{mg.getValue(mgc.Edit13) }}
+            </label>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                MODEL CODE
+            </label>
+            <label [magic]="mgc.Edit14">
+                {{mg.getValue(mgc.Edit14) }}
+            </label>
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                PDI-OFF DATE
+            </label>
+            <label
+                [magic]="mgc.Edit15"
+                [style.visibility]="mg.getVisible(mgc.Edit15)"
+            >
+                {{mg.getValue(mgc.Edit15)
+| magicDate : mgc.Edit15}}
+            </label>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                PDI-OFF TIME
+            </label>
+            <label
+                [magic]="mgc.Edit16"
+                [style.visibility]="mg.getVisible(mgc.Edit16)"
+            >
+                {{mg.getValue(mgc.Edit16)
+| magicTime : mgc.Edit16}}
+            </label>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label11"
+                class="lable_overflow"
+            >
+                TODAY RESULT
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_PROGRESS"
+                    type='number'
+                    [magic]="mgc.V_PROGRESS"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_PROGRESS> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label18"
+                class="lable_overflow"
+            >
+            </label>
+            <div
+                [magic]="mgc.MODE_DSP"
+                (change)="task.mgOnRadioSelectionChanged(mgc.MODE_DSP)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.MODE_DSP);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.MODE_DSP"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label19"
+                class="lable_overflow"
+            >
+                PASS TYPE
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PASS_DESC"
+                    [magic]="mgc.PASS_DESC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PASS_DESC> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.CHASSIS_NO_DSP"
+                    [magic]="mgc.CHASSIS_NO_DSP"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.CHASSIS_NO_DSP> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label21"
+                class="lable_overflow"
+            >
+                FRAME NO.
+            </label>
+            <label
+                [magic]="mgc.Label22"
+                [style.visibility]="mg.getVisible(mgc.Label22)"
+                class="lable_overflow"
+            >
+                ENGINE NO.
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.ENGINE_NODISP"
+                    [magic]="mgc.ENGINE_NODISP"
+                    [style.visibility]="mg.getVisible(mgc.ENGINE_NODISP)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.ENGINE_NODISP> </mgError>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,249 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Confirmation",
+		"window_type":	12,
+		"component_path":	"VPRDO066_PDIOFF_ENTRY/Confirmation/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO066_PDIOFF_ENTRY_Confirmation_Confirmation"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	545,
+		"height":	219
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	0,
+				"width":	545,
+				"height":	218
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"Message",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	0,
+				"width":	545,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	64,
+				"y":	98,
+				"width":	428,
+				"height":	49
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Cancelled successfully!!!",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	99,
+				"y":	106,
+				"width":	358,
+				"height":	34
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	103,
+				"y":	154,
+				"width":	344,
+				"height":	54
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Scanned successfully!!!",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	108,
+				"y":	106,
+				"width":	341,
+				"height":	34
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"text":	"ENGINE NO-",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	109,
+				"y":	184,
+				"width":	98,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Message2_0001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	110,
+				"y":	52,
+				"width":	299,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Message1",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	110,
+				"y":	52,
+				"width":	299,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"FRAME NO -",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	111,
+				"y":	161,
+				"width":	95,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CHASSIS_NO_DSP",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	251,
+				"y":	161,
+				"width":	188,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ENGINE_NODISP",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	255,
+				"y":	185,
+				"width":	188,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}

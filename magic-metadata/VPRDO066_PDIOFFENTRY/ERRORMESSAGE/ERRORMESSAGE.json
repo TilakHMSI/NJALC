@@ -1,0 +1,141 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"ERRORMESSAGE",
+		"window_type":	12,
+		"component_path":	"VPRDO066_PDIOFFENTRY/ERRORMESSAGE/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO066_PDIOFFENTRY_ERRORMESSAGE_ERRORMESSAGE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	548,
+		"height":	206
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	0,
+				"width":	548,
+				"height":	205
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	6,
+				"width":	535,
+				"height":	194
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"ERROR",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	16,
+				"width":	526,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	22,
+				"y":	77,
+				"width":	519,
+				"height":	82
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MESSAGE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	30,
+				"y":	83,
+				"width":	504,
+				"height":	72
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"format":	"Exit",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	226,
+				"y":	171,
+				"width":	96,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_OK",
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	300,
+				"y":	172,
+				"width":	5,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}
