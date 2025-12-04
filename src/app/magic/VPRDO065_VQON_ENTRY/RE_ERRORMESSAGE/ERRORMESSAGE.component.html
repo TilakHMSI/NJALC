@@ -1,82 +1,38 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.ERRORMESSAGE"
-    >
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.ERRORMESSAGE">
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label1" class="lable_overflow">
             </label>
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label2" class="lable_overflow">
                 WARNING
             </label>
             <div *ngIf="mg.isImageExists(mgc.Image3)">
-                <img
-                    [magic]="mgc.Image3"
-                    [src]="mg.getImage(mgc.Image3)"
-                />
+                <img [magic]="mgc.Image3" [src]="mg.getImage(mgc.Image3)" />
             </div>
-            <label
-                [magic]="mgc.Label7"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label7" class="lable_overflow">
                 ENGINE NO :
             </label>
-            <label
-                [magic]="mgc.Label12"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label12" class="lable_overflow">
                 TIME :
             </label>
-            <label
-                [magic]="mgc.Label4"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label4" class="lable_overflow">
                 THIS FRAME:
             </label>
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label6" class="lable_overflow">
                 VQ-ON ALREADY DONE WITH
             </label>
-            <label
-                [magic]="mgc.Label10"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label10" class="lable_overflow">
                 DATE :
             </label>
             <button [magic]="mgc.btn_Exit">
                 OK
             </button>
-            <input
-                type="date"
-                [formControlName]="mgc.V_VAE_DATE"
-                [magic]="mgc.V_VAE_DATE"
-                dateInput
-            />
+            <input type="date" [formControlName]="mgc.V_VAE_DATE" [magic]="mgc.V_VAE_DATE" dateInput />
             <div>
-                <input
-                    [formControlName]="mgc.V_VENGINE_TYPE"
-                    [magic]="mgc.V_VENGINE_TYPE"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.V_VENGINE_TYPE" [magic]="mgc.V_VENGINE_TYPE" mgFormat />
                 <mgError [magic]=mgc.V_VENGINE_TYPE> </mgError>
             </div>
-            <input
-                type="time"
-                [formControlName]="mgc.V_VAE_TIME"
-                [magic]="mgc.V_VAE_TIME"
-                step=1
-            />
+            <input type="time" [formControlName]="mgc.V_VAE_TIME" [magic]="mgc.V_VAE_TIME" step=1 />
             <label [magic]="mgc.V_MESSAGE_P">
                 {{mg.getValue(mgc.V_MESSAGE_P) }}
             </label>
@@ -84,13 +40,74 @@
                 {{mg.getValue(mgc.V_OK) }}
             </label>
             <div>
-                <input
-                    [formControlName]="mgc.V_VENGINE_NO"
-                    type='number'
-                    [magic]="mgc.V_VENGINE_NO"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.V_VENGINE_NO" type='number' [magic]="mgc.V_VENGINE_NO" mgFormat />
                 <mgError [magic]=mgc.V_VENGINE_NO> </mgError>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div style="background-color: rgb(243, 243, 146);" novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex flex-column flex-column-fluid" [magic]="mgc.ERRORMESSAGE">
+        <div class="row">
+            <div class="col-lg-12 col-xxl-12">
+                <div class="form-group row">
+                    <div class="col-lg-4">
+                        <label  [magic]="mgc.Label7" class="lbl_title">
+                            ENGINE NO :
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_errmessage" [magic]="mgc.V_MESSAGE_P">
+                            {{mg.getValue(mgc.V_MESSAGE_P) }}
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                    </div>
+                    <div class="col-lg-8">
+                        <label [magic]="mgc.Label7" class="lbl_title">
+                            VQ-ON ALREADY DONE WITH
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                        <label [magic]="mgc.Label7" class="lbl_title">
+                            THIS FRAME:
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_errmessage">
+                            {{mg.getValue(mgc.V_VENGINE_TYPE) }}
+                        </label>
+                        <label class="lbl_errmessage">
+                            {{mg.getValue(mgc.V_VENGINE_NO) }}
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                        <label [magic]="mgc.Label7" class="lbl_title">
+                            DATE TIME:
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_errmessage" [magic]="mgc.V_VAE_DATE">
+                            {{mg.getValue(mgc.V_VAE_DATE)
+                            | magicDate : mgc.V_VAE_DATE}}
+                        </label>
+                        <label class="lbl_errmessage" [magic]="mgc.V_VAE_TIME">
+                            {{mg.getValue(mgc.V_VAE_TIME)
+                            | magicTime : mgc.V_VAE_TIME}}
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="form-group">
+                            <button type="button" [magic]="mgc.btn_Exit"
+                                class="btn btn-danger font-weight-bold mr-3 btn-wdth">OK</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

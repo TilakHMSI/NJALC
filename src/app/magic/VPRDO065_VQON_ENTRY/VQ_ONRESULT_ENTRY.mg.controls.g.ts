@@ -7,6 +7,7 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     VQ_ONRESULT_ENTRY = "VQ_ONRESULT_ENTRY",
+        btnexit = "btnexit",
         V_LOCATE_P = "V_LOCATE_P",
         Label2 = "Label2",
         Edit3 = "Edit3",

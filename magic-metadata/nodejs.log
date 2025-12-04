@@ -27,204 +27,34 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY1/AF_OFF_RESULT_ENTRY1.json
-[>] Loading JSON file .//magic-metadata/VPRDO042DISPAF_OFF_ENTRY/ERRORMESSAGE/ERRORMESSAGE.json
-[>] Loading JSON file .//magic-metadata/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY2/AF_OFF_RESULT_ENTRY2.json
-[>] Loading JSON file .//magic-metadata/VPRDO042DISPAF_OFF_ENTRY/CONFIRMATIONMESSAGE/Message.json
-[>] Loading JSON file .//magic-metadata/VPRDO042DISPAF_OFF_ENTRY/FrameEngineMessage/FrameEngineMessage.json
 [>] Loading JSON file .//magic-metadata/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.json
 [>] Loading JSON file .//magic-metadata/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.json
 [>] Loading JSON file .//magic-metadata/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.json
 [>] Loading JSON file .//magic-metadata/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.json
-[>] Loading JSON file .//magic-metadata/VPRDO043_VQOFFENTRY_NOT_HSC/VQ_OFFRESULT_ENTRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO043_VQOFFENTRY_NOT_HSC/VQ_OFF_RESULT_ENTRY/VQ_OFF_RESULT_ENTRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO043_VQOFFENTRY_NOT_HSC/CONFIRMA/CONFIRM.json
-[>] Loading JSON file .//magic-metadata/VPRDO043_VQOFFENTRY_NOT_HSC/ERRORMESSAGE/ERRORMESSAGE.json
-[>] Loading JSON file .//magic-metadata/VPRDO043_VQOFFENTRY_NOT_HSC/RE_ERRORMESSAGE/ERRORMESSAGE.json
-[>] Loading JSON file .//magic-metadata/VPRDB003_PROD_INDICATE/VPRDB003_PROD_INDICATE.json
-[>] Loading JSON file .//magic-metadata/VPRDB003_PROD_INDICATE/ERROR/ERROR.json
-[>] Loading JSON file .//magic-metadata/VPRDB003_PROD_INDICATE/WARNING/WARNING.json
-[>] Loading JSON file .//magic-metadata/VPRDB036_PROD_INDICATE_HPE/PRODINDICATEforHPE.json
-[>] Loading JSON file .//magic-metadata/VPRDB036_PROD_INDICATE_HPE/ERROR/ERROR.json
-[>] Loading JSON file .//magic-metadata/VPRDB036_PROD_INDICATE_HPE/CHECK CONTROL/ERROR/ERROR.json
-[>] Loading JSON file .//magic-metadata/VPRDB038_PROD_INDICATE_HMSI/VPRDB038PRODINDICATE.json
-[>] Loading JSON file .//magic-metadata/VPRDB038_PROD_INDICATE_HMSI/ERROR/ERROR.json
-[>] Loading JSON file .//magic-metadata/VPRDB038_PROD_INDICATE_HMSI/CONFIRM/CONFIRM.json
-[>] Loading JSON file .//magic-metadata/VPRDB038_PROD_INDICATE_HMSI/WARNING/WARNING.json
-[>] Loading JSON file .//magic-metadata/VPRDB039_PROD_INDICATE_GR/VPRDB039_PROD_INDICATE_GR.json
-[>] Loading JSON file .//magic-metadata/VPRDB039_PROD_INDICATE_GR/EXISTPRD010Open/EXISTPRD010Open.json
-[>] Loading JSON file .//magic-metadata/VPRDB039_PROD_INDICATE_GR/SELECTPRD010Open/SELECTPRD010Open.json
-[>] Loading JSON file .//magic-metadata/VPRDB039_PROD_INDICATE_GR/ERROR/ERROR.json
-[>] Loading JSON file .//magic-metadata/VPRDB039_PROD_INDICATE_GR/CONFIRM/CONFIRM.json
-[>] Loading JSON file .//magic-metadata/VPRDB039_PROD_INDICATE_GR/WARNING/WARNING.json
-[>] Loading JSON file .//magic-metadata/VPRDB039_PROD_INDICATE_GR/ERRORINDICATINCHECKING/ERRORMESSAGE.json
-*** Step 2: Processing JSON files -  (32 components) ***
-[>] Processing JSON file for component AF_OFF_RESULT_ENTRY
-[>] Processing JSON file for component AF_OFF_RESULT_ENTRY1
-[>] Processing JSON file for component ERRORMESSAGE
-[>] Processing JSON file for component AF_OFF_RESULT_ENTRY2
-[>] Processing JSON file for component Message
-[>] Processing JSON file for component FrameEngineMessage
+*** Step 2: Processing JSON files -  (4 components) ***
 [>] Processing JSON file for component VQ_ONRESULT_ENTRY
 [>] Processing JSON file for component VQ_ON_RESULT_ENTRY
 [>] Processing JSON file for component ERRORMESSAGE
 [>] Processing JSON file for component ERRORMESSAGE
-[>] Processing JSON file for component VQ_OFFRESULT_ENTRY
-[>] Processing JSON file for component VQ_OFF_RESULT_ENTRY
-[>] Processing JSON file for component CONFIRM
-[>] Processing JSON file for component ERRORMESSAGE
-[>] Processing JSON file for component ERRORMESSAGE
-[>] Processing JSON file for component VPRDB003_PROD_INDICATE
-[>] Processing JSON file for component ERROR
-[>] Processing JSON file for component WARNING
-[>] Processing JSON file for component PRODINDICATEforHPE
-[>] Processing JSON file for component ERROR
-[>] Processing JSON file for component ERROR
-[>] Processing JSON file for component VPRDB038PRODINDICATE
-[>] Processing JSON file for component ERROR
-[>] Processing JSON file for component CONFIRM
-[>] Processing JSON file for component WARNING
-[>] Processing JSON file for component VPRDB039_PROD_INDICATE_GR
-[>] Processing JSON file for component EXISTPRD010Open
-[>] Processing JSON file for component SELECTPRD010Open
-[>] Processing JSON file for component ERROR
-[>] Processing JSON file for component CONFIRM
-[>] Processing JSON file for component WARNING
-[>] Processing JSON file for component ERRORMESSAGE
-*** Step 3: generate components. (32 components) ***
-[>] generate component AF_OFF_RESULT_ENTRY
-[>] generate component AF_OFF_RESULT_ENTRY1
-[>] generate component ERRORMESSAGE
-[>] generate component AF_OFF_RESULT_ENTRY2
-[>] generate component Message
-[>] generate component FrameEngineMessage
+*** Step 3: generate components. (4 components) ***
 [>] generate component VQ_ONRESULT_ENTRY
 [>] generate component VQ_ON_RESULT_ENTRY
 [>] generate component ERRORMESSAGE
 [>] generate component ERRORMESSAGE
-[>] generate component VQ_OFFRESULT_ENTRY
-[>] generate component VQ_OFF_RESULT_ENTRY
-[>] generate component CONFIRM
-[>] generate component ERRORMESSAGE
-[>] generate component ERRORMESSAGE
-[>] generate component VPRDB003_PROD_INDICATE
-[>] generate component ERROR
-[>] generate component WARNING
-[>] generate component PRODINDICATEforHPE
-[>] generate component ERROR
-[>] generate component ERROR
-[>] generate component VPRDB038PRODINDICATE
-[>] generate component ERROR
-[>] generate component CONFIRM
-[>] generate component WARNING
-[>] generate component VPRDB039_PROD_INDICATE_GR
-[>] generate component EXISTPRD010Open
-[>] generate component SELECTPRD010Open
-[>] generate component ERROR
-[>] generate component CONFIRM
-[>] generate component WARNING
-[>] generate component ERRORMESSAGE
 [>] Step 4: components-list.
- Total old components: 44, added components: 32. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY.mg.controls.g.ts (3720 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY.component.ts (2182 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY.component.html (8261 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY1/AF_OFF_RESULT_ENTRY1.mg.controls.g.ts (3046 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY1/AF_OFF_RESULT_ENTRY1.component.ts (989 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY1/AF_OFF_RESULT_ENTRY1.component.html (24783 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (931 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/ERRORMESSAGE/ERRORMESSAGE.component.ts (2090 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/ERRORMESSAGE/ERRORMESSAGE.component.html (838 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY2/AF_OFF_RESULT_ENTRY2.mg.controls.g.ts (3046 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY2/AF_OFF_RESULT_ENTRY2.component.ts (989 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/AF_OFF_RESULT_ENTRY2/AF_OFF_RESULT_ENTRY2.component.html (24755 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/CONFIRMATIONMESSAGE/Message.mg.controls.g.ts (1048 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/CONFIRMATIONMESSAGE/Message.component.ts (2022 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/CONFIRMATIONMESSAGE/Message.component.html (1939 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/FrameEngineMessage/FrameEngineMessage.mg.controls.g.ts (1250 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/FrameEngineMessage/FrameEngineMessage.component.ts (2186 bytes)
-[32mCREATE[39m src/app/magic/VPRDO042DISPAF_OFF_ENTRY/FrameEngineMessage/FrameEngineMessage.component.html (1691 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.mg.controls.g.ts (2653 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.component.ts (2147 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.component.html (4964 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.mg.controls.g.ts (2477 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.component.ts (972 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.component.html (18758 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (958 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.component.ts (2085 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.component.html (1045 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (1729 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.component.ts (2088 bytes)
-[32mCREATE[39m src/app/magic/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.component.html (2784 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/VQ_OFFRESULT_ENTRY.mg.controls.g.ts (2633 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/VQ_OFFRESULT_ENTRY.component.ts (2170 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/VQ_OFFRESULT_ENTRY.component.html (4950 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/VQ_OFF_RESULT_ENTRY/VQ_OFF_RESULT_ENTRY.mg.controls.g.ts (2705 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/VQ_OFF_RESULT_ENTRY/VQ_OFF_RESULT_ENTRY.component.ts (986 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/VQ_OFF_RESULT_ENTRY/VQ_OFF_RESULT_ENTRY.component.html (21156 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/CONFIRMA/CONFIRM.mg.controls.g.ts (1053 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/CONFIRMA/CONFIRM.component.ts (2014 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/CONFIRMA/CONFIRM.component.html (1837 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (958 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/ERRORMESSAGE/ERRORMESSAGE.component.ts (2093 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/ERRORMESSAGE/ERRORMESSAGE.component.html (1045 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/RE_ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (1761 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/RE_ERRORMESSAGE/ERRORMESSAGE.component.ts (2096 bytes)
-[32mCREATE[39m src/app/magic/VPRDO043_VQOFFENTRY_NOT_HSC/RE_ERRORMESSAGE/ERRORMESSAGE.component.html (2802 bytes)
-[32mCREATE[39m src/app/magic/VPRDB003_PROD_INDICATE/VPRDB003_PROD_INDICATE.mg.controls.g.ts (2235 bytes)
-[32mCREATE[39m src/app/magic/VPRDB003_PROD_INDICATE/VPRDB003_PROD_INDICATE.component.ts (2225 bytes)
-[32mCREATE[39m src/app/magic/VPRDB003_PROD_INDICATE/VPRDB003_PROD_INDICATE.component.html (4542 bytes)
-[32mCREATE[39m src/app/magic/VPRDB003_PROD_INDICATE/ERROR/ERROR.mg.controls.g.ts (1333 bytes)
-[32mCREATE[39m src/app/magic/VPRDB003_PROD_INDICATE/ERROR/ERROR.component.ts (1976 bytes)
-[32mCREATE[39m src/app/magic/VPRDB003_PROD_INDICATE/ERROR/ERROR.component.html (1812 bytes)
-[32mCREATE[39m src/app/magic/VPRDB003_PROD_INDICATE/WARNING/WARNING.mg.controls.g.ts (637 bytes)
-[32mCREATE[39m src/app/magic/VPRDB003_PROD_INDICATE/WARNING/WARNING.component.ts (2008 bytes)
-[32mCREATE[39m src/app/magic/VPRDB003_PROD_INDICATE/WARNING/WARNING.component.html (862 bytes)
-[32mCREATE[39m src/app/magic/VPRDB036_PROD_INDICATE_HPE/PRODINDICATEforHPE.mg.controls.g.ts (2509 bytes)
-[32mCREATE[39m src/app/magic/VPRDB036_PROD_INDICATE_HPE/PRODINDICATEforHPE.component.ts (2169 bytes)
-[32mCREATE[39m src/app/magic/VPRDB036_PROD_INDICATE_HPE/PRODINDICATEforHPE.component.html (6027 bytes)
-[32mCREATE[39m src/app/magic/VPRDB036_PROD_INDICATE_HPE/ERROR/ERROR.mg.controls.g.ts (1313 bytes)
-[32mCREATE[39m src/app/magic/VPRDB036_PROD_INDICATE_HPE/ERROR/ERROR.component.ts (1980 bytes)
-[32mCREATE[39m src/app/magic/VPRDB036_PROD_INDICATE_HPE/ERROR/ERROR.component.html (1988 bytes)
-[32mCREATE[39m src/app/magic/VPRDB036_PROD_INDICATE_HPE/CHECK CONTROL/ERROR/ERROR.mg.controls.g.ts (1313 bytes)
-[32mCREATE[39m src/app/magic/VPRDB036_PROD_INDICATE_HPE/CHECK CONTROL/ERROR/ERROR.component.ts (1994 bytes)
-[32mCREATE[39m src/app/magic/VPRDB036_PROD_INDICATE_HPE/CHECK CONTROL/ERROR/ERROR.component.html (1988 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/VPRDB038PRODINDICATE.mg.controls.g.ts (2231 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/VPRDB038PRODINDICATE.component.ts (2200 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/VPRDB038PRODINDICATE.component.html (4540 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/ERROR/ERROR.mg.controls.g.ts (1333 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/ERROR/ERROR.component.ts (1981 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/ERROR/ERROR.component.html (1812 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/CONFIRM/CONFIRM.mg.controls.g.ts (2399 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/CONFIRM/CONFIRM.component.ts (2013 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/CONFIRM/CONFIRM.component.html (3002 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/WARNING/WARNING.mg.controls.g.ts (637 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/WARNING/WARNING.component.ts (2013 bytes)
-[32mCREATE[39m src/app/magic/VPRDB038_PROD_INDICATE_HMSI/WARNING/WARNING.component.html (862 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/VPRDB039_PROD_INDICATE_GR.mg.controls.g.ts (2241 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/VPRDB039_PROD_INDICATE_GR.component.ts (2273 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/VPRDB039_PROD_INDICATE_GR.component.html (4545 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/EXISTPRD010Open/EXISTPRD010Open.mg.controls.g.ts (938 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/EXISTPRD010Open/EXISTPRD010Open.component.ts (2139 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/EXISTPRD010Open/EXISTPRD010Open.component.html (1091 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/SELECTPRD010Open/SELECTPRD010Open.mg.controls.g.ts (940 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/SELECTPRD010Open/SELECTPRD010Open.component.ts (2155 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/SELECTPRD010Open/SELECTPRD010Open.component.html (1092 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/ERROR/ERROR.mg.controls.g.ts (1333 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/ERROR/ERROR.component.ts (1979 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/ERROR/ERROR.component.html (1812 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/CONFIRM/CONFIRM.mg.controls.g.ts (3333 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/CONFIRM/CONFIRM.component.ts (2011 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/CONFIRM/CONFIRM.component.html (4094 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/WARNING/WARNING.mg.controls.g.ts (637 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/WARNING/WARNING.component.ts (2011 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/WARNING/WARNING.component.html (862 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/ERRORINDICATINCHECKING/ERRORMESSAGE.mg.controls.g.ts (1453 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/ERRORINDICATINCHECKING/ERRORMESSAGE.component.ts (2101 bytes)
-[32mCREATE[39m src/app/magic/VPRDB039_PROD_INDICATE_GR/ERRORINDICATINCHECKING/ERRORMESSAGE.component.html (2255 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (25031 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.mg.controls.g.ts (2682 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.component.ts (2147 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.component.html (5061 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.mg.controls.g.ts (2477 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.component.ts (972 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.component.html (18758 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (958 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.component.ts (2085 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.component.html (1045 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (1729 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.component.ts (2088 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.component.html (2784 bytes)
 
 
 

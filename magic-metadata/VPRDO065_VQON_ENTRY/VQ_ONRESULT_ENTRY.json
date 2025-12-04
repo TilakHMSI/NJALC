@@ -19,6 +19,23 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"btnexit",
+				"format":	"X",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	407,
+				"y":	6,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"V_LOCATE_P",
 				"mgformat":	"mgFormat",
 				"format":	"XXX",
@@ -39,7 +56,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"Label2",
-				"text":	"PGM=VPRDO065",
+				"text":	{
+					"value":	"PGM=VPRDO065",
+					"has_exp":	true
+				},
 				"common_line_id":	"line0"
 			},
 			"coordinates":	{
@@ -147,6 +167,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"Edit12",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"dataexp":	true,
 				"format":	"UUUUUUUUUUU",
 				"modifiable":	false,
@@ -166,6 +190,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"Edit13",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"dataexp":	true,
 				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
 				"modifiable":	false,
@@ -202,6 +230,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"Edit14",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"dataexp":	true,
 				"format":	"UUUUUUUUUUU",
 				"modifiable":	false,
@@ -239,6 +271,10 @@
 			"props":	{
 				"id":	"Edit15",
 				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
@@ -281,6 +317,10 @@
 			"props":	{
 				"id":	"Edit16",
 				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"enabled":	{
 					"value":	null,
 					"has_exp":	true
 				},
@@ -338,6 +378,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"V_PROGRESS",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"#####",
 				"attribute":	"N",

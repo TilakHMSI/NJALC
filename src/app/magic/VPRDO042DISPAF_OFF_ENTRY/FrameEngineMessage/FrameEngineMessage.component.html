@@ -1,35 +1,25 @@
 <div novalidate [formGroup]="screenFormGroup">
-    <div style="display: flex; flex-direction: column" [magic]="mgc.FrameEngineMessage">
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Label1" class="lable_overflow">
-            </label>
-            <label [magic]="mgc.Label3" class="lable_overflow">
-                FRAME
-            </label>
-            <label [magic]="mgc.Label6" class="lable_overflow">
-                ENGINE
-            </label>
-            <label [magic]="mgc.Label2" class="lable_overflow">
-                Message
-            </label>
-            <label [magic]="mgc.Label4" class="lable_overflow">
-            </label>
-            <label [magic]="mgc.CHASSIS_NO_V">
-                {{mg.getValue(mgc.CHASSIS_NO_V) }}
-            </label>
-            <label [magic]="mgc.Label7" class="lable_overflow">
-            </label>
-            <label [magic]="mgc.S5_ENGTYPE">
-                {{mg.getValue(mgc.S5_ENGTYPE) }}
-            </label>
-            <button [magic]="mgc.VOK_0001">
-                {{mg.getValue(mgc.VOK_0001)}}
-            </button>
-            <label [magic]="mgc.Label8" class="lable_overflow">
-            </label>
-            <label [magic]="mgc.S5_ENGNO">
-                {{mg.getValue(mgc.S5_ENGNO) }}
-            </label>
+    <div class="d-flex justify-content-center align-items-center" [magic]="mgc.FrameEngineMessage">
+        <div class="message-box text-center p-3">
+            <!-- Top title -->
+            <div class="message-title mb-2">Message</div>
+            <!-- Engine and Frame row -->
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <span class="engine-label me-2">FRAME -</span>
+                <span class="engine-no text-primary">{{mg.getValue(mgc.CHASSIS_NO_V) }}</span>
+                <!-- <span class="engine-no text-primary">ME4KC407LSA117659</span> -->
+            </div>
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <span class="engine-label me-2">ENGINE -</span>
+                <span class="engine-no text-primary mr-5">{{mg.getValue(mgc.S5_ENGTYPE) }}</span>
+                <span class="engine-no text-primary">{{mg.getValue(mgc.S5_ENGNO) }}</span>
+                <!-- <span class="engine-no text-primary mr-5">KC40EA</span>
+                <span class="engine-no text-primary">4115665</span> -->
+            </div>
+
+            <div class="message-title mt-2"><button class="btn btn-success btn-sm p-3" [magic]="mgc.VOK_0001">
+                    {{mg.getValue(mgc.VOK_0001)}}
+                </button></div>
         </div>
     </div>
 </div>

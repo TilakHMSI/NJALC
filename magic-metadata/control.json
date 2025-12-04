@@ -1,19 +1,20 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Label6",
-		"text":	{
-			"value":	"PGM=VPRDO042",
-			"has_exp":	true
-		}
+		"id":	"V_VAE_DATE",
+		"modifiable":	false,
+		"formatter":	"magicDate",
+		"mgformat":	"mgFormat",
+		"format":	"DD-MM-YYYY",
+		"attribute":	"D"
 	},
 	"coordinates":	{
-		"x":	458,
-		"y":	14,
-		"width":	61,
-		"height":	11
+		"x":	299,
+		"y":	116,
+		"width":	121,
+		"height":	19
 	},
 	"hint":	null,
-	"controlType":	"L",
+	"controlType":	"T",
 	"children":	null
 }
