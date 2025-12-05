@@ -33,6 +33,7 @@ export enum MgControlName {
         Label21 = "Label21",
         Label22 = "Label22",
         ENGINE_NODISP = "ENGINE_NODISP",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {
     PDI_OFFRESULT_ENTRY_FormName = 'PDI_OFFRESULT_ENTRY~FormName',

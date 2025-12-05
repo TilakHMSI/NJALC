@@ -101,6 +101,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"PDIOFF_RESULT_ENTRY",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"common_line_id":	"line47"
 			},
 			"coordinates":	{

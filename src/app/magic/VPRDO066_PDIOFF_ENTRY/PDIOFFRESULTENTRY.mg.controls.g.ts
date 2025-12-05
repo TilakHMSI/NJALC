@@ -33,6 +33,7 @@ export enum MgControlName {
         Label21 = "Label21",
         Label22 = "Label22",
         ENGINE_NODISP = "ENGINE_NODISP",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
