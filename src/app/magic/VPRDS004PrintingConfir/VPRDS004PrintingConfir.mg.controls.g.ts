@@ -15,6 +15,7 @@ export enum MgControlName {
         Label6 = "Label6",
         BUTTON_OK = "BUTTON_OK",
         btn_Quit = "btn_Quit",
+        btn_Close="btn_Close"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

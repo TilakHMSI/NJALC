@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -130,6 +130,141 @@
             <button [magic]="mgc.CANCEL_BUTTON">
                 C:Cancel
             </button>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.VPRDB039_PROD_INDICATE_GR">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            PGM=VPRDB039
+                        </label></h3>
+                    <input class="form-control" style="width:auto;background-color:transparent;border: none;"
+                        [formControlName]="mgc.V_LOCATE_P" [magic]="mgc.V_LOCATE_P" mgFormat />
+                    <div class="d-flex align-items-center">
+                        <label [magic]="mgc.Edit3" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit3)
+                            | magicDate : mgc.Edit3}}
+                        </label>
+                        <label [magic]="mgc.Edit4" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit4)
+                            | magicTime : mgc.Edit4}}
+                        </label>
+                        <button type="button" [magic]="mgc.btn_Close"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">X</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>SELECT</label>
+                                    <div [magic]="mgc.OPT_ISSUEREPRINT_V"
+                                        (change)="task.mgOnRadioSelectionChanged(mgc.OPT_ISSUEREPRINT_V)">
+                                        <div style="margin-top: 10%;"
+                                            *ngFor="let o of mg.getItemListValues(mgc.OPT_ISSUEREPRINT_V);">
+                                            <label>
+                                                <input type="radio" [formControlName]="mgc.OPT_ISSUEREPRINT_V"
+                                                    [value]="o.index" />
+                                                {{o.displayValue}}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+         <div class="col-lg-12">
+                                <div class="form-group row">
+                                    <div class="col-lg-1">
+                                        <div class="checkbox-inline">
+
+                                            <input style="width: 22px;height: 22px;" type="checkbox"
+                                                id="CBX_INDCHASSIS_NO_PRN_V"
+                                                formControlName="{{mgc.CBX_INDCHASSIS_NO_PRN_V}}"
+                                                magic="{{mgc.CBX_INDCHASSIS_NO_PRN_V}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <label>
+                                            IND.FRAME NO. PRN
+                                        </label>
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <div class="checkbox-inline">
+
+                                            <input style="width: 22px;height: 22px;" type="checkbox"
+                                                id="CBX_FINVEHICLE_INSPSHEET_V"
+                                                formControlName="{{mgc.CBX_FINVEHICLE_INSPSHEET_V}}"
+                                                magic="{{mgc.CBX_FINVEHICLE_INSPSHEET_V}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+
+                                        <label>
+                                            FIN. VEHICLE INSP. SHEET
+                                        </label>
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <div class="checkbox-inline">
+
+                                            <input style="width: 22px;height: 22px;" type="checkbox"
+                                                id="CBX_ENGINE_NOSEAL_PRN_V"
+                                                formControlName="{{mgc.CBX_ENGINE_NOSEAL_PRN_V}}"
+                                                magic="{{mgc.CBX_ENGINE_NOSEAL_PRN_V}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+
+                                        <label>
+                                            ENGINE NO.SEAL PRN
+                                        </label>
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <div class="checkbox-inline">
+
+                                            <input style="width: 22px;height: 22px;" type="checkbox"
+                                                id="V_CBX_CHASSIS_NOSEAL_PRN_V"
+                                                formControlName="{{mgc.V_CBX_CHASSIS_NOSEAL_PRN_V}}"
+                                                magic="{{mgc.V_CBX_CHASSIS_NOSEAL_PRN_V}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+
+                                        <label>
+                                            FRAME NO.SEAL PRN
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+   <div class="col-lg-12 text-center">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.EXEC_BUTTON"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                E:Exec
+                                            </button>
+                                            <button type="button" [magic]="mgc.CANCEL_BUTTON"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                           C:Cancel
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

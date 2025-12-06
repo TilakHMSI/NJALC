@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDB039_PROD_INDICATE_GR_WARNING_WARNING',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './WARNING.component.html'
+    templateUrl: './WARNING.component.html',
+    styleUrl: './WARNING.component.css'
 })
 export class WARNING extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -24,11 +25,11 @@ export class WARNING extends TaskBaseMagicComponent implements MagicModalInterfa
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "WARNING";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "600px";
+    private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;

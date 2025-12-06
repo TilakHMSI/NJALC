@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -86,6 +86,112 @@
             <button [magic]="mgc.btn_Exit">
                 {{mg.getValue(mgc.btn_Exit)}}
             </button>
+        </div>
+    </div>
+</div> -->
+
+
+
+<div style="background-color: rgb(192, 199, 202);" novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex flex-column flex-column-fluid" [magic]="mgc.CONFIRM">
+        <div class="row">
+            <div class="col-lg-12 col-xxl-12">
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <label style="background-color: rgb(49, 84, 238); text-align: center; width: 100%;"
+                            class="font-weight-bolder font-size-h2 text-white">
+                           CONFIRM
+                        </label>
+                    </div>
+                    <div class="col-lg-12">
+                        <label [magic]="mgc.Label1" class="lbl_title">
+                            STAMPING INFORMATION NOT FOUND!
+                        </label>
+                    </div>
+                    <div class="col-lg-12">
+                         <label [magic]="mgc.Label2" class="lbl_title">
+                            CHECK MODEL MASTER & STAMPING MASTER, RETRY AGAIN.
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                        <label class="lbl_errmessage" [magic]="mgc.Label3">
+                            PLAN CODE :
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_title" [magic]="mgc.V_DSP_PLAN_CODE_V">
+                            {{mg.getValue(mgc.V_DSP_PLAN_CODE_V) }}
+                        </label>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <label class="lbl_errmessage" [magic]="mgc.Label5">
+                           PLAN SEQ :
+                        </label>
+                    </div>
+                      <div class="col-lg-3">
+                       <label class="lbl_title" [magic]="mgc.V_DSP_DATE_V">
+                            {{mg.getValue(mgc.V_DSP_DATE_V)
+                            | magicDate : mgc.V_DSP_DATE_V}}
+                        </label>
+                    </div>
+                      <div class="col-lg-3">
+                        <label class="lbl_title" [magic]="mgc.V_DSP_PLAN_SEQ_V">
+                            {{mg.getValue(mgc.V_DSP_PLAN_SEQ_V) }}
+                        </label>
+                    </div>
+                      <div class="col-lg-2">
+                        <label class="lbl_title" [magic]="mgc.V_DSP_PLAN_SEQ_SUFFIX_V">
+                            {{mg.getValue(mgc.V_DSP_PLAN_SEQ_SUFFIX_V) }}
+                        </label>
+                    </div>
+
+                     <div class="col-lg-4">
+                        <label class="lbl_errmessage" [magic]="mgc.Label9">
+                            MODEL CODE :
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_title" [magic]="mgc.V_DSP_MTO_CODE_V">
+                            {{mg.getValue(mgc.V_DSP_MTO_CODE_V) }}
+                        </label>
+                    </div>
+                     <div class="col-lg-4">
+                        
+                    </div>
+                       <div class="col-lg-3">
+                        <label class="lbl_title" [magic]="mgc.V_DSP_MTO_NAME_V">
+                            {{mg.getValue(mgc.V_DSP_MTO_NAME_V) }}
+                        </label>
+                    </div>
+                       <div class="col-lg-3">
+                        <label class="lbl_title" [magic]="mgc.V_DSP_COLOR_CODE_V">
+                            {{mg.getValue(mgc.V_DSP_COLOR_CODE_V) }}
+                        </label>
+                    </div>
+                       <div class="col-lg-2">
+                        <label class="lbl_title" [magic]="mgc.V_DSP_COLOR_CODEINSIDE_V">
+                            {{mg.getValue(mgc.V_DSP_COLOR_CODEINSIDE_V) }}
+                        </label>
+                    </div>
+                        <div class="col-lg-4">
+                        <label class="lbl_errmessage" [magic]="mgc.Label14">
+                            PLAN QTY :
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_title" [magic]="mgc.V_DSP_PLAN_RESULT_V">
+                            {{mg.getValue(mgc.V_DSP_PLAN_RESULT_V) }}
+                        </label>
+                    </div>
+                    <div class="col-lg-12">
+                        <button type="button" [magic]="mgc.btn_Exit"
+                            class="btn btn-success font-weight-bold mr-3 btn-wdth">OK</button>
+                    </div>
+                 
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

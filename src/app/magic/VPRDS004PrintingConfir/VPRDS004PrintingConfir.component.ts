@@ -25,7 +25,7 @@ export class VPRDS004PrintingConfir extends TaskBaseMagicComponent implements Ma
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "VPRDS004 Printing Confirm";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";

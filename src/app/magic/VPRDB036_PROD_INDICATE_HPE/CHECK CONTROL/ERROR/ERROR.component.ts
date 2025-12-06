@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDB036_PROD_INDICATE_HPE_CHECK CONTROL_ERROR_ERROR',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './ERROR.component.html'
+    templateUrl: './ERROR.component.html',
+    styleUrl: './CHECK.component.css'
 })
 export class ERROR extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -24,11 +25,11 @@ export class ERROR extends TaskBaseMagicComponent implements MagicModalInterface
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "ERROR";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "600px";
+    private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;

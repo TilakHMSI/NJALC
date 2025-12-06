@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDS024_PRDS024',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './PRDS024.component.html'
+    templateUrl: './PRDS024.component.html',
+    styleUrl:'./VPRDS024.component.css'
 })
 export class PRDS024 extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -24,7 +25,7 @@ export class PRDS024 extends TaskBaseMagicComponent implements MagicModalInterfa
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "PRDS024";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "900px";

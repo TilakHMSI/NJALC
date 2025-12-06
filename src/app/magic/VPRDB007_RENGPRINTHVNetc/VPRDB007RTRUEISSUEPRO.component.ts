@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDB007_RENGPRINTHVNetc_VPRDB007RTRUEISSUEPRO',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './VPRDB007RTRUEISSUEPRO.component.html'
+    templateUrl: './VPRDB007RTRUEISSUEPRO.component.html',
+    styleUrl: './VPRDB007.component.css'
 })
 export class VPRDB007RTRUEISSUEPRO extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -24,7 +25,7 @@ export class VPRDB007RTRUEISSUEPRO extends TaskBaseMagicComponent implements Mag
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "VPRDB007RTRUEISSUEPRO";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";

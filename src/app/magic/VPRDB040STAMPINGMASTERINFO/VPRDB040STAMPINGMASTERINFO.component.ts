@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDB040STAMPINGMASTERINFO_VPRDB040STAMPINGMASTERINFO',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './VPRDB040STAMPINGMASTERINFO.component.html'
+    templateUrl: './VPRDB040STAMPINGMASTERINFO.component.html',
+    styleUrl: './VPRDB040.component.css'
 })
 export class VPRDB040STAMPINGMASTERINFO extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -24,7 +25,7 @@ export class VPRDB040STAMPINGMASTERINFO extends TaskBaseMagicComponent implement
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "VPRDB040 STAMPING MASTER INFO";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";

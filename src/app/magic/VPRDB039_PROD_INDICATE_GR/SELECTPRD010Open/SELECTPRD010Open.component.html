@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -37,4 +37,50 @@
             />
         </div>
     </div>
+</div> -->
+
+<div style="background-color: rgb(192, 199, 202);" novalidate [formGroup]="screenFormGroup">
+
+  <div class="d-flex flex-column flex-column-fluid" [magic]="mgc.SELECTPRD010Open">
+    <div class="row">
+      <div class="col-lg-12 col-xxl-12">
+
+        <div class="form-group row">
+
+          <div class="col-lg-12">
+            <label
+              style="background-color: rgb(49, 84, 238); text-align: center; width: 100%;"
+              class="font-weight-bolder font-size-h2 text-white">
+              SELECT PRD010 Open
+            </label>
+          </div>
+
+          <div class="col-lg-4">
+            <label class="lbl_errmessage" [magic]="mgc.Label1">
+              PLAN CODE :
+            </label>
+          </div>
+
+          <div class="col-lg-8">
+            <label class="lbl_title" [magic]="mgc.V_SA_PLAN_CODE">
+              {{ mg.getValue(mgc.V_SA_PLAN_CODE) }}
+            </label>
+          </div>
+
+          <div class="col-lg-4">
+            <label class="lbl_errmessage" [magic]="mgc.Label3">
+              DATE :
+            </label>
+          </div>
+          <div class="col-lg-3">
+            <label class="lbl_title" [magic]="mgc.V_SA_DATE">
+              {{ mg.getValue(mgc.V_SA_DATE) | magicDate : mgc.V_SA_DATE }}
+            </label>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 </div>

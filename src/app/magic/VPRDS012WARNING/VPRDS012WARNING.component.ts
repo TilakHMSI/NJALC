@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDS012WARNING_VPRDS012WARNING',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './VPRDS012WARNING.component.html'
+    templateUrl: './VPRDS012WARNING.component.html',
+    styleUrl: './WARNING.component.css'
 })
 export class VPRDS012WARNING extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -24,7 +25,7 @@ export class VPRDS012WARNING extends TaskBaseMagicComponent implements MagicModa
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "VPRDS012 WARNING";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";

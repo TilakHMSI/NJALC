@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDS005OKNO_VPRDS005OKNO',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './VPRDS005OKNO.component.html'
+    templateUrl: './VPRDS005OKNO.component.html',
+    styleUrl: './OKNO.component.css'
 })
 export class VPRDS005OKNO extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -24,7 +25,7 @@ export class VPRDS005OKNO extends TaskBaseMagicComponent implements MagicModalIn
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "VPRDS005 OK NO";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";

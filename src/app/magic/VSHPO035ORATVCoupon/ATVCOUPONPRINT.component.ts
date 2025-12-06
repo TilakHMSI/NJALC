@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VSHPO035ORATVCoupon_ATVCOUPONPRINT',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './ATVCOUPONPRINT.component.html'
+    templateUrl: './ATVCOUPONPRINT.component.html',
+    styleUrl: './ATVCOUPON.component.css'
 })
 export class ATVCOUPONPRINT extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -24,7 +25,7 @@ export class ATVCOUPONPRINT extends TaskBaseMagicComponent implements MagicModal
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "ATVCOUPON PRINT";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";

@@ -91,91 +91,75 @@
     </div>
 </div> -->
 
-<div novalidate [formGroup]="screenFormGroup">
 
-    <div class="container-fluid" [magic]="mgc.VPRDB034ENGINECARDISSUE">
+<div style="background-color: rgb(192, 199, 202);" novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex flex-column flex-column-fluid" [magic]="mgc.VPRDB034ENGINECARDISSUE">
         <div class="row">
             <div class="col-lg-12 col-xxl-12">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="d-flex justify-content-between align-items-center w-100">
-                            <h3><label class="lable_overflow mb-0">
-                                    PGM=VPRDB034
-                                </label></h3>
-                            <label></label>
-                            <div class="d-flex">
-                                <label [magic]="mgc.Edit2" class="mb-0 mr-3">
-                                    {{mg.getValue(mgc.Edit2)
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <label style="background-color: rgb(49, 84, 238); text-align: center; width: 100%;"
+                            class="font-weight-bolder font-size-h2 text-white">
+                            PGM=VPRDB034
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             {{mg.getValue(mgc.Edit2)
                                     | magicDate : mgc.Edit2}}
-                                </label>
-                                <label [magic]="mgc.Edit4" class="mb-0 mr-3">
-                                    {{mg.getValue(mgc.Edit4)
+
+                                     {{mg.getValue(mgc.Edit4)
                                     | magicTime : mgc.Edit4}}
-                                </label>
-
-                            </div>
-                        </div>
+                        </label>
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-12 col-xxl-12">
-                                <div class="form-group row">
-                                    <label
-                                        style="background-color: lightgrey;width: 100%; font-size: 1.5rem; font-weight: 600;text-align: center;">NOW
-                                        PRINTING ...</label>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-
-
-                                            <label>PLAN CODE:</label>
-                                            <div class="input-group">
-                                                <input type="text" formControlName="{{mgc.vX2_PLAN_CODE}}"
-                                                    magic="{{mgc.vX2_PLAN_CODE}}" class="form-control">
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label>PLAN DATE:</label>
-                                            <input matInput [matDatepicker]="picker"
-                                                [formControlName]="mgc.vX2_PLAN_DATE">
-                                            <mat-datepicker #picker></mat-datepicker>
-                                            <!-- <input  class="form-control" style="width:auto;" [formControlName]="mgc.CHASSIS_NO_V"
-                                        [magic]="mgc.CHASSIS_NO_V" mgFormat /> -->
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label>PLAN SEQ:</label>
-                                            <input class="form-control" style="width:auto;"
-                                                [formControlName]="mgc.vX2_PLAN_SEQ" [magic]="mgc.vX2_PLAN_SEQ"
-                                                mgFormat />
-
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label></label>
-                                            <input class="form-control" style="width:auto;"
-                                                [formControlName]="mgc.vX2_PLAN_SEQ_SUFFIX"
-                                                [magic]="mgc.vX2_PLAN_SEQ_SUFFIX" mgFormat />
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-
-                                </div>
-
-                            </div>
-                        </div>
+                
+                    <div class="col-lg-12">
+                        <label style="width: 100%; font-size: 1.5rem; font-weight: 600;text-align: center;">NOW
+                            PRINTING ...</label>
                     </div>
+                    <div class="col-lg-4">
+                        <label [magic]="mgc.Label3" class="lbl_title">
+                            PLAN CODE:
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+
+                        <label class="lbl_errmessage">
+                            {{mg.getValue(mgc.vX2_PLAN_CODE) }}
+                        </label>
+
+                    </div>
+                    <div class="col-lg-4">
+
+                        <label [magic]="mgc.Label5" class="lbl_title">
+                            PLAN DATE:
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_errmessage" [magic]="mgc.vX2_PLAN_DATE">
+                            {{mg.getValue(mgc.vX2_PLAN_DATE)
+                            | magicDate : mgc.vX2_PLAN_DATE}}
+                        </label>
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <label [magic]="mgc.Label7" class="lbl_title">
+                            PLAN SEQ:
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                        <label class="lbl_errmessage">
+                            {{mg.getValue(mgc.vX2_PLAN_SEQ) }}
+                        </label>
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="lbl_errmessage">
+                            {{mg.getValue(mgc.vX2_PLAN_SEQ_SUFFIX) }}
+                        </label>
+                    </div>
+
+
+
                 </div>
+
             </div>
         </div>
     </div>

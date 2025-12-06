@@ -14,6 +14,7 @@ export enum MgControlName {
         Column4 = "Column4",
         S3_PROD1ST_CHASSIS_NO = "S3_PROD1ST_CHASSIS_NO",
         Label7 = "Label7",
+        btn_Close="btn_Close"
 }
 export enum MgCustomProperties {}
 export var

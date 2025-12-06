@@ -23,6 +23,7 @@ export enum MgControlName {
         Label14 = "Label14",
         V_DSP_PLAN_RESULT_V = "V_DSP_PLAN_RESULT_V",
         btn_Exit = "btn_Exit",
+        btn_Close="btn_Close"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

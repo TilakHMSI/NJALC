@@ -14,7 +14,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDG003PRD003_GUIDE_CHASSISNOGUIDE',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './CHASSISNOGUIDE.component.html'
+    templateUrl: './CHASSISNOGUIDE.component.html',
+    styleUrl: './PRD003.component.css'
 })
 export class CHASSISNOGUIDE extends BaseMatTableMagicComponent implements MagicModalInterface {
 
@@ -26,7 +27,7 @@ export class CHASSISNOGUIDE extends BaseMatTableMagicComponent implements MagicM
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "CHASSIS NO GUIDE";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";

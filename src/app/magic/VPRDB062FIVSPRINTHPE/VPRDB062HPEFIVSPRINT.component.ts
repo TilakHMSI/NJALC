@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDB062FIVSPRINTHPE_VPRDB062HPEFIVSPRINT',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './VPRDB062HPEFIVSPRINT.component.html'
+    templateUrl: './VPRDB062HPEFIVSPRINT.component.html',
+    styleUrl: './VPRDB062.component.css'
 })
 export class VPRDB062HPEFIVSPRINT extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -24,7 +25,7 @@ export class VPRDB062HPEFIVSPRINT extends TaskBaseMagicComponent implements Magi
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "VPRDB062 HPEFIVS PRINT";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";

@@ -27,60 +27,36 @@
     </div>
 </div> -->
 
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
 
- <div class="container-fluid" [magic]="mgc.VPRDS005OKNO">
+<div style="background-color: rgb(192, 199, 202);" novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex flex-column flex-column-fluid" [magic]="mgc.VPRDS005OKNO">
         <div class="row">
-            <div class="col-lg-12 col-xxl-12">
-                <div class="card">
-                    <div class="card-header">
-                     <label></label>
-                    </div>
-                    <div class="card-body">
-                         <div class="row">
             <div class="col-lg-12 col-xxl-12">
                 <div class="form-group row">
                     <div class="col-lg-12">
-                        <div class="form-group">
-                           
-                            <textarea [formControlName]="mgc.V_MESSAGE_P" [magic]="mgc.V_MESSAGE_P"
-                                style="background-color: #f8f8f8;" class="form-control" rows="3" mgFormat></textarea>
-                            <mgError [magic]=mgc.V_MESSAGE_P> </mgError>
-                            
-                        </div>
-                         
-
+                        <label style="background-color: rgb(49, 84, 238); text-align: center; width: 100%;"
+                            class="font-weight-bolder font-size-h2 text-white">
+                           VPRDS005 OK NO
+                        </label>
+                    </div>
+                   
+                    <div class="col-lg-8">
+                        <label class="lbl_title" [magic]="mgc.V_MESSAGE_P">
+                            {{mg.getValue(mgc.V_MESSAGE_P) }}
+                        </label>
                     </div>
 
-
-<div class="col-lg-12 text-center">
-    <div class="form-group d-flex justify-content-center">
-
-        <button type="button" 
-                [magic]="mgc.OK_BUTTON"
-                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
-            OK
-        </button>
-          <button type="button" 
-                [magic]="mgc.CANCEL_BUTTON"
-                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
-            NO
-        </button>
-
-    </div>
-</div> 
-
-
-                  
-                </div>
-
-            </div>
-        </div>
+                    <div class="col-lg-6">
+                        <button type="button" [magic]="mgc.OK_BUTTON"
+                            class="btn btn-success font-weight-bold mr-3 btn-wdth">OK</button>
                     </div>
+                       <div class="col-lg-6">
+                        <button type="button" [magic]="mgc.CANCEL_BUTTON"
+                            class="btn btn-success font-weight-bold mr-3 btn-wdth">NO</button>
+                    </div>
+                 
                 </div>
+
             </div>
         </div>
     </div>

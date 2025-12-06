@@ -10,6 +10,7 @@ export enum MgControlName {
         Label1 = "Label1",
         Label2 = "Label2",
         btn_Exit = "btn_Exit",
+      
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

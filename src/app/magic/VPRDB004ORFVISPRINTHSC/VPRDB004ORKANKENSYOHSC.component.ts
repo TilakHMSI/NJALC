@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDB004ORFVISPRINTHSC_VPRDB004ORKANKENSYOHSC',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './VPRDB004ORKANKENSYOHSC.component.html'
+    templateUrl: './VPRDB004ORKANKENSYOHSC.component.html',
+    styleUrl: './VPRDB004.component.css'
 })
 export class VPRDB004ORKANKENSYOHSC extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -24,7 +25,7 @@ export class VPRDB004ORKANKENSYOHSC extends TaskBaseMagicComponent implements Ma
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "VPRDB004ORKANKENSYOHSC";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";

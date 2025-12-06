@@ -14,6 +14,7 @@ export enum MgControlName {
         Label5 = "Label5",
         V_ERR_DATE_V = "V_ERR_DATE_V",
         btn_Exit = "btn_Exit",
+        
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
