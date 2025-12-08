@@ -30,6 +30,7 @@ export enum MgControlName {
         Label12 = "Label12",
         BUTTONPROD_SEQ_PLANF = "BUTTONPROD_SEQ_PLANF",
         BUTTONPROD_SEQ_PLANH = "BUTTONPROD_SEQ_PLANH",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

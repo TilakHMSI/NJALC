@@ -151,12 +151,9 @@
                             class="btn btn-danger btn-sm font-weight-bold ml-2">X</button>
                     </div>
                 </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-lg-12 col-xxl-12">
-                            <div class="form-group row">
-
-                                <div style="display: flex; flex-direction: row">
+                <div class="card-body">    
+                           <div class="m-tablewrapper pl-0 pr-0">
+                                
                                     <div class="example-container mat-elevation-z8 Table1TableContainerProps">
                                         <mat-table #table [dataSource]="dataSource" class="container_border" matSort
                                             matSortDisableClear (matSortChange)="tableService.sortData($event)">
@@ -224,12 +221,6 @@
                                                     </div>
                                                 </mat-cell>
                                             </ng-container>
-
-
-
-
-
-
                                             <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
                                             <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
                                                 [ngClass]="{ 'selected': selection.isSelected(row)}"
@@ -237,16 +228,11 @@
                                                 (click)="row? tableService.selectRow(row.rowId) : null">
                                             </mat-row>
                                         </mat-table>
-                                        <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]"
+                                        <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5,10, 20]"
                                             (page)="tableService.mgOnPaginateChange($event)">
                                         </mat-paginator>
                                     </div>
                                 </div>
-
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
