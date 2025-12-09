@@ -26,7 +26,7 @@ export class EXISTPRD010Open extends TaskBaseMagicComponent implements MagicModa
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "EXISTPRD010Open";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "600px";
