@@ -27,34 +27,40 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.json
-[>] Loading JSON file .//magic-metadata/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.json
-*** Step 2: Processing JSON files -  (4 components) ***
-[>] Processing JSON file for component VQ_ONRESULT_ENTRY
-[>] Processing JSON file for component VQ_ON_RESULT_ENTRY
+[>] Loading JSON file .//magic-metadata/VPRDO066_PDIOFFENTRY/PDI_OFFRESULT_ENTRY.json
+[>] Loading JSON file .//magic-metadata/VPRDO066_PDIOFFENTRY/PDIOFFRESULTENTRY/PDIOFFRESULTENTRY.json
+[>] Loading JSON file .//magic-metadata/VPRDO066_PDIOFFENTRY/ERRORMESSAGE/ERRORMESSAGE.json
+[>] Loading JSON file .//magic-metadata/VPRDO066_PDIOFFENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.json
+[>] Loading JSON file .//magic-metadata/VPRDO066_PDIOFFENTRY/Confirmation/Confirmation.json
+*** Step 2: Processing JSON files -  (5 components) ***
+[>] Processing JSON file for component PDI_OFFRESULT_ENTRY
+[>] Processing JSON file for component PDIOFFRESULTENTRY
 [>] Processing JSON file for component ERRORMESSAGE
 [>] Processing JSON file for component ERRORMESSAGE
-*** Step 3: generate components. (4 components) ***
-[>] generate component VQ_ONRESULT_ENTRY
-[>] generate component VQ_ON_RESULT_ENTRY
+[>] Processing JSON file for component Confirmation
+*** Step 3: generate components. (5 components) ***
+[>] generate component PDI_OFFRESULT_ENTRY
+[>] generate component PDIOFFRESULTENTRY
 [>] generate component ERRORMESSAGE
 [>] generate component ERRORMESSAGE
+[>] generate component Confirmation
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.mg.controls.g.ts (2682 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.component.ts (2147 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ONRESULT_ENTRY.component.html (5061 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.mg.controls.g.ts (2477 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.component.ts (972 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/VQ_ON_RESULT_ENTRY/VQ_ON_RESULT_ENTRY.component.html (18758 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (958 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.component.ts (2085 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/ERRORMESSAGE/ERRORMESSAGE.component.html (1045 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (1729 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.component.ts (2088 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO065_VQON_ENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.component.html (2784 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDI_OFFRESULT_ENTRY.mg.controls.g.ts (2885 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDI_OFFRESULT_ENTRY.component.ts (2178 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDI_OFFRESULT_ENTRY.component.html (5585 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDIOFFRESULTENTRY/PDIOFFRESULTENTRY.mg.controls.g.ts (2483 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDIOFFRESULTENTRY/PDIOFFRESULTENTRY.component.ts (967 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDIOFFRESULTENTRY/PDIOFFRESULTENTRY.component.html (19966 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (977 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/ERRORMESSAGE/ERRORMESSAGE.component.ts (2086 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/ERRORMESSAGE/ERRORMESSAGE.component.html (1246 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (1757 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.component.ts (2089 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.component.html (2798 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/Confirmation/Confirmation.mg.controls.g.ts (1420 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/Confirmation/Confirmation.component.ts (2086 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/Confirmation/Confirmation.component.html (2245 bytes)
 
 
 
