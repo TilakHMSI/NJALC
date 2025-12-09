@@ -1,18 +1,26 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"V_VAE_DATE",
-		"modifiable":	false,
-		"formatter":	"magicDate",
-		"mgformat":	"mgFormat",
-		"format":	"DD-MM-YYYY",
-		"attribute":	"D"
+		"id":	"Edit16",
+		"visible":	{
+			"value":	null,
+			"has_exp":	true
+		},
+		"enabled":	{
+			"value":	null,
+			"has_exp":	true
+		},
+		"dataexp":	true,
+		"formatter":	"magicTime",
+		"showsecs":	true,
+		"format":	"HH:MM:SS",
+		"modifiable":	false
 	},
 	"coordinates":	{
-		"x":	299,
-		"y":	116,
-		"width":	121,
-		"height":	19
+		"x":	379,
+		"y":	325,
+		"width":	65,
+		"height":	24
 	},
 	"hint":	null,
 	"controlType":	"T",

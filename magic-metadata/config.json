@@ -2,7 +2,7 @@
 	"create_route_map":	false,
 	"create_new_project":	false,
 	"created_menu":	false,
-	"created_views":	true,
+	"created_views":	false,
 	"theme":	"basicHTML",
 	"output_folder":	"C:\\MagicXPA412\\Projects\\HondaALC\\output",
 	"backup_current":	false,
@@ -16,11 +16,7 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"VPRDO066_PDIOFFENTRY/PDI_OFFRESULT_ENTRY",
-				"VPRDO066_PDIOFFENTRY/PDIOFFRESULTENTRY/PDIOFFRESULTENTRY",
-				"VPRDO066_PDIOFFENTRY/ERRORMESSAGE/ERRORMESSAGE",
-				"VPRDO066_PDIOFFENTRY/RE_ERRORMESSAGE/ERRORMESSAGE",
-				"VPRDO066_PDIOFFENTRY/Confirmation/Confirmation"
+				"control"
 			]
 		}
 	],
