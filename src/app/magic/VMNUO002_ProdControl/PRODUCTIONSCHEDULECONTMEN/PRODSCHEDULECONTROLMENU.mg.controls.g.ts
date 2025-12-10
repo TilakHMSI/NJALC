@@ -29,7 +29,7 @@ export enum MgControlName {
         Label13 = "Label13",
         Label14 = "Label14",
         BUTTONFILE_REORGANIZE = "BUTTONFILE_REORGANIZE",
-        btnexit="mgc.btnexit"
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
