@@ -20,16 +20,23 @@ export enum MgControlName {
         PrintDetails_PrintType = "PrintDetails_PrintType",
         Column16 = "Column16",
         PrintDetails_PrinterType = "PrintDetails_PrinterType",
+        btn_Close="btn_Close",
+        Column17="Column17",
+        btn_download="btn_download",
+        vBlobResponseBase64="vBlobResponseBase64",
+       
 }
 export enum MgCustomProperties {}
 export var
     MgDisplayedColumns = [
+        'Column16',
+        'Column15',
+        'Column14',
+        'Column13',
         'Column11',
         'Column12',
-        'Column13',
-        'Column14',
-        'Column15',
-        'Column16',
+        'Column17',
+        
     ];
 
 export class MgFormControlsAccessor {
@@ -59,6 +66,9 @@ export class MgFormControlsAccessor {
         return this.getTableChildFormControl(MgControlName.PrintDetails_PrinterType);
     }
 
+    get vBlobResponseBase64(): FormControl {
+        return this.getTableChildFormControl(MgControlName.vBlobResponseBase64);
+    }
     getTableChildFormControl(name: MgControlName): FormControl {
         return this.magicServices.mgAccessorService.getFormGroupByRow(this.magicServices.tableService.getSelectedRow()).controls[name] as FormControl;
     }

@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -277,6 +277,227 @@
                     (page)="tableService.mgOnPaginateChange($event)"
                 >
                 </mat-paginator>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.PrintScreen">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            PRINT DETAILS
+                        </label></h3>
+                    <label></label>
+                    <button type="button" [magic]="mgc.btn_Close"
+                        class="btn btn-danger btn-sm font-weight-bold ml-2">X</button>
+                </div>
+            </div>
+               
+                 <input style="display:none"
+                    [formControlName]="mgc.vBlobResponseBase64"
+                    [magic]="mgc.vBlobResponseBase64"
+                    mgFormat
+                />
+            <div class="card-body">
+                <div class="m-tablewrapper pl-0 pr-0">
+
+                    <div class="example-container mat-elevation-z8 Table1TableContainerProps">
+                        <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
+                            (matSortChange)="tableService.sortData($event)">
+                            <ng-container [magic]="mgc.Column16" [matColumnDef]="mgc.Column16">
+                                <mat-header-cell *matHeaderCellDef>
+                                    PRINTER TYPE
+                                </mat-header-cell>
+                                <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                                    <div style="display: flex; flex-direction: row;line-break: anywhere;" *ngIf="mg.ifRowCreated(row)">
+                                        <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                            <div>
+                                                <input [formControlName]="mgc.PrintDetails_PrinterType"
+                                                    *ngIf="mg.isRowInRowEditing(row)"
+                                                    [magic]="mgc.PrintDetails_PrinterType" [rowId]="row.rowId"
+                                                    mgFormat />
+                                                <mgError [magic]=mgc.PrintDetails_PrinterType [rowId]="row.rowId">
+                                                </mgError>
+                                                <label *ngIf="!mg.isRowInRowEditing(row)"
+                                                    [magic]="mgc.PrintDetails_PrinterType" [rowId]="row.rowId">
+                                                    {{mg.getValue(mgc.PrintDetails_PrinterType, row.rowId)
+                                                    }}
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </mat-cell>
+                            </ng-container>
+                            <ng-container [magic]="mgc.Column15" [matColumnDef]="mgc.Column15">
+                                <mat-header-cell *matHeaderCellDef>
+                                    PRINT TYPE
+                                </mat-header-cell>
+                                <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                                    <div style="display: flex; flex-direction: row ;line-break: anywhere;" *ngIf="mg.ifRowCreated(row)">
+                                        <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                            <div>
+                                                <input [formControlName]="mgc.PrintDetails_PrintType"
+                                                    *ngIf="mg.isRowInRowEditing(row)"
+                                                    [magic]="mgc.PrintDetails_PrintType" [rowId]="row.rowId" mgFormat />
+                                                <mgError [magic]=mgc.PrintDetails_PrintType [rowId]="row.rowId">
+                                                </mgError>
+                                                <label *ngIf="!mg.isRowInRowEditing(row)"
+                                                    [magic]="mgc.PrintDetails_PrintType" [rowId]="row.rowId">
+                                                    {{mg.getValue(mgc.PrintDetails_PrintType, row.rowId)
+                                                    }}
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </mat-cell>
+                            </ng-container>
+                            <ng-container [magic]="mgc.Column14" [matColumnDef]="mgc.Column14">
+                                <mat-header-cell *matHeaderCellDef>
+                                    PROGRAM NAME
+                                </mat-header-cell>
+                                <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                                    <div style="display: flex; flex-direction: row;line-break: anywhere;" *ngIf="mg.ifRowCreated(row)">
+                                        <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                            <div>
+                                                <input [formControlName]="mgc.PrintDetails_PRGName"
+                                                    *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PrintDetails_PRGName"
+                                                    [rowId]="row.rowId" mgFormat />
+                                                <mgError [magic]=mgc.PrintDetails_PRGName [rowId]="row.rowId">
+                                                </mgError>
+                                                <label *ngIf="!mg.isRowInRowEditing(row)"
+                                                    [magic]="mgc.PrintDetails_PRGName" [rowId]="row.rowId">
+                                                    {{mg.getValue(mgc.PrintDetails_PRGName, row.rowId)
+                                                    }}
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </mat-cell>
+                            </ng-container>
+                            <ng-container [magic]="mgc.Column13" [matColumnDef]="mgc.Column13">
+                                <mat-header-cell *matHeaderCellDef>
+                                    FILE NAME
+                                </mat-header-cell>
+                                <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                                    <div style="display: flex; flex-direction: row;line-break: anywhere;" *ngIf="mg.ifRowCreated(row)">
+                                        <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                            <div>
+                                                <input [formControlName]="mgc.PrintDetails_FileName"
+                                                    *ngIf="mg.isRowInRowEditing(row)"
+                                                    [magic]="mgc.PrintDetails_FileName" [rowId]="row.rowId" mgFormat />
+                                                <mgError [magic]=mgc.PrintDetails_FileName [rowId]="row.rowId">
+                                                </mgError>
+                                                <label *ngIf="!mg.isRowInRowEditing(row)"
+                                                    [magic]="mgc.PrintDetails_FileName" [rowId]="row.rowId">
+                                                    {{mg.getValue(mgc.PrintDetails_FileName, row.rowId)
+                                                    }}
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </mat-cell>
+                            </ng-container>
+                            <ng-container [magic]="mgc.Column11" [matColumnDef]="mgc.Column11">
+                                <mat-header-cell *matHeaderCellDef>
+                                    CREATED DATE
+                                </mat-header-cell>
+                                <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                                    <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                        <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                            <div *ngIf="mg.isRowInRowEditing(row)"
+                                                style="display: flex; flex-direction: row">
+                                                <input type="date" [formControlName]="mgc.PrintDetails_CreatedDate"
+                                                    [magic]="mgc.PrintDetails_CreatedDate" [rowId]="row.rowId"
+                                                    [style.visibility]="mg.getVisible(mgc.PrintDetails_CreatedDate, row.rowId)"
+                                                    dateInput />
+                                            </div>
+                                            <label *ngIf="!mg.isRowInRowEditing(row)"
+                                                [magic]="mgc.PrintDetails_CreatedDate" [rowId]="row.rowId"
+                                                [style.visibility]="mg.getVisible(mgc.PrintDetails_CreatedDate, row.rowId)">
+                                                {{mg.getValue(mgc.PrintDetails_CreatedDate, row.rowId)
+                                                | magicDate : mgc.PrintDetails_CreatedDate}}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </mat-cell>
+                            </ng-container>
+
+                            <ng-container [magic]="mgc.Column12" [matColumnDef]="mgc.Column12">
+                                <mat-header-cell *matHeaderCellDef>
+                                    CREATED TIME
+                                </mat-header-cell>
+                                <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                                    <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                        <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                            <div *ngIf="mg.isRowInRowEditing(row)"
+                                                style="display: flex; flex-direction: row">
+                                                <input type="time" [formControlName]="mgc.PrintDetails_CreatedTime"
+                                                    [magic]="mgc.PrintDetails_CreatedTime" [rowId]="row.rowId"
+                                                    [style.visibility]="mg.getVisible(mgc.PrintDetails_CreatedTime, row.rowId)"
+                                                    step=1 />
+                                            </div>
+                                            <label *ngIf="!mg.isRowInRowEditing(row)"
+                                                [magic]="mgc.PrintDetails_CreatedTime" [rowId]="row.rowId"
+                                                [style.visibility]="mg.getVisible(mgc.PrintDetails_CreatedTime, row.rowId)">
+                                                {{mg.getValue(mgc.PrintDetails_CreatedTime, row.rowId)
+                                                | magicTime : mgc.PrintDetails_CreatedTime}}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </mat-cell>
+                            </ng-container>
+
+           <ng-container [magic]="mgc.Column17" [matColumnDef]="mgc.Column17">
+    <mat-header-cell class="text-gray-800 min-w-100px" *matHeaderCellDef>
+        DOWNLOAD
+    </mat-header-cell>
+
+    <mat-cell class="text-gray-800 fw-semibold min-w-100px"
+              *matCellDef="let row"
+              magicMark="magicTableRowContainer">
+
+        <div style="display: flex; flex-direction: row"
+             *ngIf="mg.ifRowCreated(row)">
+        </div>
+
+        <button class="btn btn-primary btn-xsm me-2"
+                *ngIf="mg.getVisible(mgc.btn_download, row.rowId)==='visible'"
+                [magic]="mgc.btn_download"
+                [rowId]="row.rowId">
+                <i class="fa fa-download"></i>
+            <!-- {{ mg.getValue(mgc.btn_download, row.rowId) }} -->
+        </button>
+
+    </mat-cell>
+</ng-container>
+
+
+
+                            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                            <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
+                                [ngClass]="{ 'selected': selection.isSelected(row)}" [magicRow]="row?.rowId"
+                                (click)="row? tableService.selectRow(row.rowId) : null">
+                            </mat-row>
+                        </mat-table>
+                        <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5,10, 20]"
+                            (page)="tableService.mgOnPaginateChange($event)">
+                        </mat-paginator>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
