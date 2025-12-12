@@ -98,7 +98,8 @@
                     <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center w-100">
                             <label [magic]="mgc.Label9" class="lable_overflow mb-0">
-                                LAST UPDATED DATE: 01/01/2026
+                                <!-- LAST UPDATED DATE: 01/01/2026 -->
+                                {{mg.getText(mgc.Label9)}}
                             </label>
                             
                             <h1 style="color: brown;">{{mg.getValue(mgc.v_Factory_Code) }}</h1>
@@ -111,6 +112,7 @@
                                     {{mg.getValue(mgc.Edit8)
                                     | magicTime : mgc.Edit8}}
                                 </label>
+         
                                 <img src="assets/media/logos/logo.png" class="max-h-50px" alt="">
                             </div>
                         </div>
