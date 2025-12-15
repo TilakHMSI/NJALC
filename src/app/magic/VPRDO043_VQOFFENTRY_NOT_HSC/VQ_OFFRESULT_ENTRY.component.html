@@ -192,7 +192,7 @@
                             <div class="col-lg-5">
                                 <div class="form-group">
                                     <label>FRAME NO </label>
-                                    <input class="form-control-ent" [formControlName]="mgc.FRAME_NO"
+                                    <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.FRAME_NO"
                                         [magic]="mgc.FRAME_NO" mgFormat />
                                     <mgError [magic]=mgc.FRAME_NO> </mgError>
                                 </div>
@@ -200,7 +200,7 @@
                             <div class="col-lg-4" *ngIf="mg.getVisible(mgc.Edit21)==='visible'">
                                 <div class="form-group">
                                     <label>ENGINE NO.</label>
-                                    <input class="form-control-ent" [formControlName]="mgc.Edit21"
+                                    <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.Edit21"
                                         [magic]="mgc.Edit21" mgFormat />
                                     <mgError [magic]=mgc.Edit21> </mgError>
                                 </div>

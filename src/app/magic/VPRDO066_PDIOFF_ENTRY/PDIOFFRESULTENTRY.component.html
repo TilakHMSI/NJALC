@@ -95,7 +95,7 @@
                             <div class="col-lg-2">
                                 <div class="form-group">
                                     <label>PASS DESC </label>
-                                    <input class="form-control-ent" [formControlName]="mgc.PASS_DESC"
+                                    <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.PASS_DESC"
                                         [magic]="mgc.PASS_DESC" mgFormat />
                                     <mgError [magic]=mgc.PASS_DESC> </mgError>
                                 </div>
@@ -103,7 +103,7 @@
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>FRAME NO </label>
-                                    <input class="form-control-ent" [formControlName]="mgc.CHASSIS_NO_DSP"
+                                    <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.CHASSIS_NO_DSP"
                                         [magic]="mgc.CHASSIS_NO_DSP" mgFormat />
                                     <mgError [magic]=mgc.CHASSIS_NO_DSP> </mgError>
                                 </div>
@@ -111,7 +111,7 @@
                             <div class="col-lg-3" *ngIf="mg.getVisible(mgc.ENGINE_NODISP)==='visible'">
                                 <div class="form-group">
                                     <label>ENGINE NO.</label>
-                                    <input class="form-control-ent" [formControlName]="mgc.ENGINE_NODISP"
+                                    <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.ENGINE_NODISP"
                                         [magic]="mgc.ENGINE_NODISP" mgFormat />
                                     <mgError [magic]=mgc.ENGINE_NODISP> </mgError>
                                 </div>

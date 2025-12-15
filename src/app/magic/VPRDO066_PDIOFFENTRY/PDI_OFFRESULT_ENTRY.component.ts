@@ -63,4 +63,11 @@ export class PDI_OFFRESULT_ENTRY extends TaskBaseMagicComponent implements Magic
     IsMovable() {
         return PDI_OFFRESULT_ENTRY.isMovable;
     }
+    selectText(event: Event) {
+  const input = event.target as HTMLInputElement;
+  if (input.value) {
+    input.select();
+  }
+}
+
 }

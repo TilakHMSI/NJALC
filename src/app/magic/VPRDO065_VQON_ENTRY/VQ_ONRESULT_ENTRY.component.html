@@ -192,7 +192,7 @@
                             <div class="col-lg-5">
                                 <div class="form-group">
                                     <label>FRAME NO </label>
-                                    <input class="form-control-ent" [formControlName]="mgc.CHASSIS_NO_DSP"
+                                    <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.CHASSIS_NO_DSP"
                                         [magic]="mgc.CHASSIS_NO_DSP" mgFormat />
                                     <mgError [magic]=mgc.CHASSIS_NO_DSP> </mgError>
                                 </div>

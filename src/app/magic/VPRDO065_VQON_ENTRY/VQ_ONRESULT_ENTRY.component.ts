@@ -63,4 +63,10 @@ export class VQ_ONRESULT_ENTRY extends TaskBaseMagicComponent implements MagicMo
     IsMovable() {
         return VQ_ONRESULT_ENTRY.isMovable;
     }
+       selectText(event: Event) {
+  const input = event.target as HTMLInputElement;
+  if (input.value) {
+    input.select();
+  }
+}
 }
