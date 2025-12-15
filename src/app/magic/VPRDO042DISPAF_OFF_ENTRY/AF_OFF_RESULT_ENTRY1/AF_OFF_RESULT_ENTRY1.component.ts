@@ -12,7 +12,8 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO042DISPAF_OFF_ENTRY_AF_OFF_RESULT_ENTRY1_AF_OFF_RESULT_ENTRY1',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './AF_OFF_RESULT_ENTRY1.component.html'
+    templateUrl: './AF_OFF_RESULT_ENTRY1.component.html',
+    styleUrl: './AF_OFF_RESULT_ENTRY1.component.css'
 })
 export class AF_OFF_RESULT_ENTRY1 extends BaseMatTableMagicComponent {
 
