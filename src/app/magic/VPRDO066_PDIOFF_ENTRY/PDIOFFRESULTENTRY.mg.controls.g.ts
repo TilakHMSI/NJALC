@@ -34,6 +34,7 @@ export enum MgControlName {
         Label22 = "Label22",
         ENGINE_NODISP = "ENGINE_NODISP",
         btnexit = "btnexit",
+        LastScanned = "LastScanned",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

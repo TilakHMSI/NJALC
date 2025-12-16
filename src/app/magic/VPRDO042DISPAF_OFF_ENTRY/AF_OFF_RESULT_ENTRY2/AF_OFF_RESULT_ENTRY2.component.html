@@ -185,7 +185,7 @@
                                             [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE, row.rowId)"
                                             dateInput />
                                     </div>
-                                    <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_AFOFF_DATE"
+                                    <label class="text-danger" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_AFOFF_DATE"
                                         [rowId]="row.rowId"
                                         [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE, row.rowId)">
                                         {{mg.getValue(mgc.S5_AFOFF_DATE, row.rowId)
@@ -207,7 +207,7 @@
                                             [magic]="mgc.S5_AFOFF_TIME" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_AFOFF_TIME, row.rowId)" step=1 />
                                     </div>
-                                    <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_AFOFF_TIME"
+                                    <label class="text-danger" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_AFOFF_TIME"
                                         [rowId]="row.rowId"
                                         [style.visibility]="mg.getVisible(mgc.S5_AFOFF_TIME, row.rowId)">
                                         {{mg.getValue(mgc.S5_AFOFF_TIME, row.rowId)

@@ -1,25 +1,15 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Edit16",
-		"visible":	{
-			"value":	null,
-			"has_exp":	true
-		},
-		"enabled":	{
-			"value":	null,
-			"has_exp":	true
-		},
+		"id":	"LastScanned",
 		"dataexp":	true,
-		"formatter":	"magicTime",
-		"showsecs":	true,
-		"format":	"HH:MM:SS",
+		"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
 		"modifiable":	false
 	},
 	"coordinates":	{
-		"x":	379,
-		"y":	325,
-		"width":	65,
+		"x":	157,
+		"y":	465,
+		"width":	189,
 		"height":	24
 	},
 	"hint":	null,

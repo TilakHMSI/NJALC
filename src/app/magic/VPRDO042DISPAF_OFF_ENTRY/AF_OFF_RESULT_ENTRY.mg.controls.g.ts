@@ -41,7 +41,8 @@ export enum MgControlName {
         CHASSIS_NO_V = "CHASSIS_NO_V",
         Label13 = "Label13",
         ENGINE_NO_V = "ENGINE_NO_V",
-        btnexit = "btnexit"
+        btnexit = "btnexit",
+        LastScanned = "LastScanned",
 }
 export enum MgCustomProperties {
     AF_OFF_RESULT_ENTRY_FormName = 'AF_OFF_RESULT_ENTRY~FormName',

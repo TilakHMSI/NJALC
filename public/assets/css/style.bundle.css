@@ -2897,7 +2897,7 @@ pre code {
 }
 
 .lbl-sm {
-  font-size: .825rem ! important;
+  font-size: .875rem ! important;
   font-weight: 400;
   color: #3F4254;
 }
@@ -2907,7 +2907,7 @@ pre code {
   width: 100%;
   height: calc(1em + 1rem + 1px);
   padding: 0.5rem 0.7rem;
-  font-size: .825rem ! important;
+  font-size: 1.2rem ! important;
   font-weight: 300;
   line-height: 1;
   color: #3F4254;
@@ -2949,7 +2949,7 @@ pre code {
   width: 100%;
   height: calc(1.5em + 1.3rem + 2px);
   padding: 0.65rem 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
   color: #3F4254;

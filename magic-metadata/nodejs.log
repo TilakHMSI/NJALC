@@ -27,40 +27,18 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDO066_PDIOFFENTRY/PDI_OFFRESULT_ENTRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO066_PDIOFFENTRY/PDIOFFRESULTENTRY/PDIOFFRESULTENTRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO066_PDIOFFENTRY/ERRORMESSAGE/ERRORMESSAGE.json
-[>] Loading JSON file .//magic-metadata/VPRDO066_PDIOFFENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.json
-[>] Loading JSON file .//magic-metadata/VPRDO066_PDIOFFENTRY/Confirmation/Confirmation.json
-*** Step 2: Processing JSON files -  (5 components) ***
-[>] Processing JSON file for component PDI_OFFRESULT_ENTRY
-[>] Processing JSON file for component PDIOFFRESULTENTRY
-[>] Processing JSON file for component ERRORMESSAGE
-[>] Processing JSON file for component ERRORMESSAGE
-[>] Processing JSON file for component Confirmation
-*** Step 3: generate components. (5 components) ***
-[>] generate component PDI_OFFRESULT_ENTRY
-[>] generate component PDIOFFRESULTENTRY
-[>] generate component ERRORMESSAGE
-[>] generate component ERRORMESSAGE
-[>] generate component Confirmation
+[>] Loading JSON file .//magic-metadata/PrintScreen/PrintScreen.json
+*** Step 2: Processing JSON files -  (1 components) ***
+[>] Processing JSON file for component PrintScreen
+*** Step 3: generate components. (1 components) ***
+[>] generate component PrintScreen
 [>] Step 4: components-list.
+ Total old components: 86, added components: 1. 
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDI_OFFRESULT_ENTRY.mg.controls.g.ts (2885 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDI_OFFRESULT_ENTRY.component.ts (2178 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDI_OFFRESULT_ENTRY.component.html (5585 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDIOFFRESULTENTRY/PDIOFFRESULTENTRY.mg.controls.g.ts (2483 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDIOFFRESULTENTRY/PDIOFFRESULTENTRY.component.ts (967 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/PDIOFFRESULTENTRY/PDIOFFRESULTENTRY.component.html (19966 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (977 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/ERRORMESSAGE/ERRORMESSAGE.component.ts (2086 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/ERRORMESSAGE/ERRORMESSAGE.component.html (1246 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.mg.controls.g.ts (1757 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.component.ts (2089 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/RE_ERRORMESSAGE/ERRORMESSAGE.component.html (2798 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/Confirmation/Confirmation.mg.controls.g.ts (1420 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/Confirmation/Confirmation.component.ts (2086 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO066_PDIOFFENTRY/Confirmation/Confirmation.component.html (2245 bytes)
+[32mCREATE[39m src/app/magic/PrintScreen/PrintScreen.mg.controls.g.ts (2139 bytes)
+[32mCREATE[39m src/app/magic/PrintScreen/PrintScreen.component.ts (2217 bytes)
+[32mCREATE[39m src/app/magic/PrintScreen/PrintScreen.component.html (14233 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (28335 bytes)
 
 
 

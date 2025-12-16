@@ -126,7 +126,7 @@
                                             [magic]="mgc.S5_VQON_DATE" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_VQON_DATE, row.rowId)" dateInput />
                                     </div>
-                                    <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_VQON_DATE"
+                                    <label class="text-danger" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_VQON_DATE"
                                         [rowId]="row.rowId"
                                         [style.visibility]="mg.getVisible(mgc.S5_VQON_DATE, row.rowId)">
                                         {{mg.getValue(mgc.S5_VQON_DATE, row.rowId)
@@ -148,7 +148,7 @@
                                             [magic]="mgc.S5_VQON_TIME" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_VQON_TIME, row.rowId)" step=1 />
                                     </div>
-                                    <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_VQON_TIME"
+                                    <label class="text-danger" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_VQON_TIME"
                                         [rowId]="row.rowId"
                                         [style.visibility]="mg.getVisible(mgc.S5_VQON_TIME, row.rowId)">
                                         {{mg.getValue(mgc.S5_VQON_TIME, row.rowId)
