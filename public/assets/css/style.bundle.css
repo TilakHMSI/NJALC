@@ -2910,8 +2910,8 @@ pre code {
   font-size: 1.2rem ! important;
   font-weight: 300;
   line-height: 1;
-  color: #3F4254;
-  background-color: #ffffff;
+  color: #0d2ee4;
+  background-color: #ebedf3;
   background-clip: padding-box;
   border: 1px solid #d5d7de;
   border-radius: 0.42rem;
@@ -99221,4 +99221,9 @@ input:checked~.tab-content {
     color: #000000 ! important;
     font-size: 1.6rem ! important;
     font-weight: 600! important;
+}
+.lbl_table{
+    color: #2e49ed ! important;
+    font-size: 1.4rem ! important;
+    font-weight: 500! important;
 }
