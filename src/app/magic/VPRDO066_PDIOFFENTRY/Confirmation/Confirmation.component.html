@@ -10,23 +10,25 @@
 
             <!-- Engine and Frame row -->
               <div class="d-flex justify-content-center align-items-center mb-4">
-                <span class="engine-label me-2">FRAME NO -</span>
-                <span class="engine-no text-primary">{{mg.getValue(mgc.CHASSIS_NO_DSP) }}</span>
+                <span class="engine-label me-2">FRAME NO-</span>
+                <!-- <span class="engine-no text-primary">{{mg.getValue(mgc.CHASSIS_NO_DSP) }}</span> -->
+                 <span class="engine-no text-primary">ME4KC407MSA124750</span>
             </div>
             <div class="d-flex justify-content-center align-items-center mb-4">
                 <span class="engine-label me-2">ENGINE NO-</span>
-                <span class="engine-no text-primary">{{mg.getValue(mgc.ENGINE_NODISP) }}</span>
+                <!-- <span class="engine-no text-primary">{{mg.getValue(mgc.ENGINE_NODISP) }}</span> -->
+                 <span class="engine-no text-primary">KC40EA     4115665</span>
             </div>
            
 
             <!-- Status line -->
             <div class="status-box mx-auto py-2 px-3">
-                <label class="lbl_Status" [magic]="mgc.Label6" *ngIf="mg.getVisible(mgc.Label6)==='visible'" class="lable_overflow">
+                <label class="lbl_Status" [magic]="mgc.Label6"  class="lable_overflow">
                     Cancelled successfully!!!
                 </label>
-                <label class="lbl_Status" [magic]="mgc.Label7" *ngIf="mg.getVisible(mgc.Label7)==='visible'" class="lable_overflow">
+                <!-- <label class="lbl_Status" [magic]="mgc.Label7" *ngIf="mg.getVisible(mgc.Label7)==='visible'" class="lable_overflow">
                     Scanned successfully!!!
-                </label>
+                </label> -->
             </div>
         </div>
     </div>

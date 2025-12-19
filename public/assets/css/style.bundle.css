@@ -2947,12 +2947,12 @@ pre code {
 .form-control-ent {
   display: block;
   width: 100%;
-  height: calc(1.5em + 1.3rem + 2px);
-  padding: 0.65rem 1rem;
-  font-size: 1.5rem;
+  height: calc(1.5rem + 1.3rem + 2px);
+  padding: 0.3rem 0.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: #3F4254;
+  line-height: 1.3;
+  color: #131314;
   background-color: yellow;
   background-clip: padding-box;
   border: 1px solid #d5d7de;
@@ -3111,7 +3111,7 @@ textarea.form-control {
 }
 
 .form-group-sm {
-  margin: 0.5rem! important;
+  margin: 0.5rem ! important;
 }
 
 .form-text {
@@ -28447,7 +28447,7 @@ a.text-secondary:focus {
 }
 
 .text-success {
-  color: #1BC5BD !important;
+  color: #0ac131 !important;
 }
 
 a.text-success:hover,
@@ -52964,9 +52964,6 @@ a.text-hover-secondary:hover .svg-icon svg:hover g [fill],
   transition: fill 0.3s ease;
 }
 
-.text-success {
-  color: #1BC5BD !important;
-}
 
 .text-inverse-success {
   color: #ffffff !important;
@@ -72271,8 +72268,8 @@ code {
 }
 
 .form-group label {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: #3F4254;
 }
 
@@ -95346,10 +95343,11 @@ body {
   .aside-fixed.aside-minimize:not(.aside-minimize-hover) .wrapper {
     padding-left: 70px;
   }
-  
+
   .container-fluid-ov {
     padding: 0;
   }
+
   .container,
   .container-fluid,
   .container-sm,
@@ -95370,10 +95368,11 @@ body {
     padding-top: 120px;
   }
 
-.container-fluid-ov {
-  max-width: none;
+  .container-fluid-ov {
+    max-width: none;
     padding: 0;
   }
+
   .container,
   .container-fluid,
   .container-sm,
@@ -98980,15 +98979,15 @@ span.menu-text {
   border-radius: 9px;
 }
 
-.mat-header-row{
+.mat-header-row {
   background: none;
-  background-color: #008080! important;
+  background-color: #008080 ! important;
   color: #ffffff;
 }
 
-.table-header-row{
+.table-header-row {
   color: #ffffff;
-    background-color: #008080;
+  background-color: #008080;
 }
 
 .table th {
@@ -98999,7 +98998,7 @@ span.menu-text {
 }
 
 .mat-mdc-row {
-  border-bottom: 1px #d9dfe4 solid;
+  border-bottom: 1px #43494e solid ! important;
 }
 
 .mat-mdc-table label {
@@ -99021,36 +99020,39 @@ span.menu-text {
 } */
 
 .mat-mdc-header-cell {
-    border-bottom-color: var(--mat-table-row-item-outline-color, var(--mat-sys-outline, rgba(0, 0, 0, 0.12)));
-    border-bottom-width: var(--mat-table-row-item-outline-width, 1px);
-    border-bottom-style: solid;
-    letter-spacing: var(--mat-table-header-headline-tracking, var(--mat-sys-title-small-tracking));
-    font-weight: inherit;
-    line-height: inherit;
-    box-sizing: border-box;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    outline: none;
-    text-align: left;
-    font-weight: 600! important;
-    background-color: #008080! important;
-    color: #ffffff! important;
+  border-bottom-color: var(--mat-table-row-item-outline-color, var(--mat-sys-outline, rgba(0, 0, 0, 0.12)));
+  border-bottom-width: var(--mat-table-row-item-outline-width, 1px);
+  border-bottom-style: solid;
+  letter-spacing: var(--mat-table-header-headline-tracking, var(--mat-sys-title-small-tracking));
+  font-weight: inherit;
+  line-height: inherit;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  outline: none;
+  text-align: left;
+  font-weight: 600 ! important;
+  background-color: #008080 ! important;
+  color: #ffffff ! important;
 }
 
 .mat-mdc-cell {
   padding: .75rem;
 }
 
-.mat-cell, .mat-header-cell {
+.mat-cell,
+.mat-header-cell {
   padding-top: 0;
   padding-bottom: 0;
 }
+
 .table_row {
-  min-height: 24px;     /* or any value you want */
+  min-height: 24px;
+  /* or any value you want */
   height: 24px;
 }
 
-.header-row{
+.header-row {
   background-color: #008080;
 }
 
@@ -99212,18 +99214,21 @@ input:checked~.tab-content {
   background-color: var(--cui-danger, #d93737);
   background-image: linear-gradient(45deg, var(--cui-danger-start, #e55353) 0%, var(--cui-danger-stop, #d93737 100%));
 }
-.lbl_errmessage{
-    color: #c43539 ! important;
-    font-size: 1.8rem ! important;
-    font-weight: 600! important;
+
+.lbl_errmessage {
+  color: #c43539 ! important;
+  font-size: 1.8rem ! important;
+  font-weight: 600 ! important;
 }
-.lbl_title{
-    color: #000000 ! important;
-    font-size: 1.6rem ! important;
-    font-weight: 600! important;
+
+.lbl_title {
+  color: #000000 ! important;
+  font-size: 1.6rem ! important;
+  font-weight: 600 ! important;
 }
-.lbl_table{
-    color: #2e49ed ! important;
-    font-size: 1.4rem ! important;
-    font-weight: 500! important;
+
+.lbl_table {
+  color: #2e49ed ! important;
+  font-size: 1.4rem ! important;
+  font-weight: 500 ! important;
 }

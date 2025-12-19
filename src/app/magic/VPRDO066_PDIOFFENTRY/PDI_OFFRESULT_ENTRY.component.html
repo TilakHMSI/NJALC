@@ -55,7 +55,7 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="form-group-sm">
-                                    <label class="lbl-sm">AF-OFF DATE</label>
+                                    <label class="lbl-sm">PDI-OFF DATE</label>
                                     <input type="date" [formControlName]="mgc.Edit15" [magic]="mgc.Edit15"
                                         class="form-control-sm" *ngIf="mg.getVisible(mgc.Edit15)==='visible'"
                                         dateInput />
@@ -63,7 +63,7 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="form-group-sm">
-                                    <label class="lbl-sm">AF-OFF TIME</label>
+                                    <label class="lbl-sm">PDI-OFF TIME</label>
                                     <input type="time" [formControlName]="mgc.Edit16" [magic]="mgc.Edit16"
                                         class="form-control-sm" *ngIf="mg.getVisible(mgc.Edit16)==='visible'" step=1 />
                                 </div>
@@ -92,7 +92,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-3">
                                 <div class="form-group">
                                     <label>PASS DESC </label>
                                     <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.PASS_DESC"
@@ -100,7 +100,7 @@
                                     <mgError [magic]=mgc.PASS_DESC> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>FRAME NO </label>
                                     <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.CHASSIS_NO_DSP"
@@ -117,10 +117,6 @@
                                 </div>
                             </div>
                           
-                         <div class="col-lg-12 text-center">
-                                <h2 class="text-success font-weight-bolder">
-                                    {{mg.getValue(mgc.LastScanned) }}</h2>
-                            </div>
                         </div>
                     </div>
                 </div>

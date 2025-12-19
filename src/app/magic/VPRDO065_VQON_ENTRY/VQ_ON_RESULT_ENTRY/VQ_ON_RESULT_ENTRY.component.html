@@ -2,7 +2,7 @@
     <div [magic]="mgc.VQ_ON_RESULT_ENTRY">
         <div class="m-tablewrapper pl-0 pr-0">
             <div class="example-container mat-elevation-z8 Table1TableContainerProps">
-                <mat-table #table [dataSource]="dataSource" class="table container_border" matSort matSortDisableClear
+                <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
                     (matSortChange)="tableService.sortData($event)">
                     <ng-container [magic]="mgc.Column2" [matColumnDef]="mgc.Column2">
                         <mat-header-cell class="header-row" *matHeaderCellDef>
@@ -11,18 +11,13 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer" class="table_row">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <label [magic]="mgc.Edit9" [rowId]="row.rowId">
+                                    <label class="lbl_table" [magic]="mgc.Edit9" [rowId]="row.rowId">
                                         {{mg.getValue(mgc.Edit9, row.rowId)
                                         }}
                                     </label>
                                 </div>
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.S5_CHASSIS_NO" *ngIf="mg.isRowInRowEditing(row)"
-                                            currencyMask
-                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.S5_CHASSIS_NO))"
-                                            [magic]="mgc.S5_CHASSIS_NO" [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.S5_CHASSIS_NO [rowId]="row.rowId"> </mgError>
                                         <label class="lbl_table" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_CHASSIS_NO"
                                             [rowId]="row.rowId">
                                             {{mg.getFormattedValue(mgc.S5_CHASSIS_NO, row.rowId)

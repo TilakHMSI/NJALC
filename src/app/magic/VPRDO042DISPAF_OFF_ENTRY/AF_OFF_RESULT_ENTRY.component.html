@@ -1,147 +1,3 @@
-<!-- <div novalidate [formGroup]="screenFormGroup">
-    <div style="display: flex; flex-direction: column" [magic]="mgc.AF_OFF_RESULT_ENTRY">
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Label3" class="lable_overflow">
-                Last Export Report Time
-            </label>
-            <input type="time" [formControlName]="mgc.V_VDharamTime" [magic]="mgc.V_VDharamTime" step=1 />
-            <label [magic]="mgc.Edit1">
-                {{mg.getValue(mgc.Edit1)
-                | magicDate : mgc.Edit1}}
-            </label>
-            <label [magic]="mgc.Edit2">
-                {{mg.getValue(mgc.Edit2)
-                | magicTime : mgc.Edit2}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div>
-                <input [formControlName]="mgc.V_LOCATE_P" [magic]="mgc.V_LOCATE_P" mgFormat />
-                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
-            </div>
-            <label [magic]="mgc.Label6" class="lable_overflow">
-                PGM=VPRDO042
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit7">
-                {{mg.getValue(mgc.Edit7) }}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <magic-subform [magic]="mgc.AFOFF_RESULT_ENTRY">
-            </magic-subform>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div [magic]="mgc.Group25" class="container_border" style="display: flex; flex-direction: column">
-                <div style="display: flex; flex-direction: row">
-                    <label [magic]="mgc.Label26" class="lable_overflow">
-                        FRAME NUMBER
-                    </label>
-                    <label [magic]="mgc.Label27" class="lable_overflow">
-                        MODEL CODE
-                    </label>
-                    <label [magic]="mgc.Label28" class="lable_overflow">
-                        AF-OFF DATE
-                    </label>
-                    <label [magic]="mgc.Label29" class="lable_overflow">
-                        AF-OFF TIME
-                    </label>
-                </div>
-                <div style="display: flex; flex-direction: row">
-                    <label [magic]="mgc.Edit30">
-                        {{mg.getValue(mgc.Edit30) }}
-                    </label>
-                    <label [magic]="mgc.Edit31">
-                        {{mg.getValue(mgc.Edit31) }}
-                    </label>
-                    <label [magic]="mgc.Edit32">
-                        {{mg.getValue(mgc.Edit32) }}
-                    </label>
-                    <label [magic]="mgc.Edit33" [style.visibility]="mg.getVisible(mgc.Edit33)">
-                        {{mg.getValue(mgc.Edit33)
-                        | magicDate : mgc.Edit33}}
-                    </label>
-                    <label [magic]="mgc.Edit34" [style.visibility]="mg.getVisible(mgc.Edit34)">
-                        {{mg.getValue(mgc.Edit34)
-                        | magicTime : mgc.Edit34}}
-                    </label>
-                </div>
-            </div>
-            <div [magic]="mgc.Group18" class="container_border" style="display: flex; flex-direction: column">
-                <div style="display: flex; flex-direction: row">
-                    <label [magic]="mgc.Label20" class="lable_overflow">
-                        LINE
-                    </label>
-                    <label [magic]="mgc.Label19" class="lable_overflow">
-                        TOTAL
-                    </label>
-                </div>
-                <div style="display: flex; flex-direction: row">
-                    <label [magic]="mgc.Edit22">
-                        {{mg.getValue(mgc.Edit22) }}
-                    </label>
-                    <div>
-                        <input [formControlName]="mgc.V_PROGRESS1_V" type='number' [magic]="mgc.V_PROGRESS1_V"
-                            mgFormat />
-                        <mgError [magic]=mgc.V_PROGRESS1_V> </mgError>
-                    </div>
-                </div>
-                <div style="display: flex; flex-direction: row">
-                    <label [magic]="mgc.Label23" class="lable_overflow">
-                        MODEL/C TOTAL
-                    </label>
-                </div>
-                <div style="display: flex; flex-direction: row">
-                    <div>
-                        <input [formControlName]="mgc.V_PROGRESS2_V" type='number' [magic]="mgc.V_PROGRESS2_V"
-                            mgFormat />
-                        <mgError [magic]=mgc.V_PROGRESS2_V> </mgError>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Label9" class="lable_overflow">
-            </label>
-            <label [magic]="mgc.Edit10" [style.visibility]="mg.getVisible(mgc.Edit10)">
-                {{mg.getValue(mgc.Edit10) }}
-            </label>
-            <div [magic]="mgc.MODE_V" [style.visibility]="mg.getVisible(mgc.MODE_V)"
-                (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)">
-                <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
-                    <label>
-                        <input type="radio" [formControlName]="mgc.MODE_V" [value]="o.index" />
-                        {{o.displayValue}}
-                    </label>
-                </div>
-            </div>
-            <label [magic]="mgc.Label11" class="lable_overflow">
-                TIRE LOT
-            </label>
-            <div>
-                <input [formControlName]="mgc.TYRE_LOT_V" [magic]="mgc.TYRE_LOT_V" mgFormat />
-                <mgError [magic]=mgc.TYRE_LOT_V> </mgError>
-            </div>
-            <label [magic]="mgc.Label12" class="lable_overflow">
-                FRAME NO.
-            </label>
-            <div>
-                <input [formControlName]="mgc.CHASSIS_NO_V" [magic]="mgc.CHASSIS_NO_V" mgFormat />
-                <mgError [magic]=mgc.CHASSIS_NO_V> </mgError>
-            </div>
-            <label [magic]="mgc.Label13" class="lable_overflow">
-                ENGINE NO.
-            </label>
-            <div>
-                <input [formControlName]="mgc.ENGINE_NO_V" [magic]="mgc.ENGINE_NO_V" mgFormat />
-                <mgError [magic]=mgc.ENGINE_NO_V> </mgError>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-
 <div novalidate [formGroup]="screenFormGroup">
     <div class="container-fluid-ov" [magic]="mgc.AF_OFF_RESULT_ENTRY">
         <div class="card">
@@ -174,16 +30,16 @@
                         </magic-subform>
                     </div>
                     <div class="col-lg-12 col-xxl-12">
-                        <div class="form-group row">                        
+                        <div class="form-group row">
                             <div class="col-lg-2">
                                 <div class="form-group-sm">
-                                    <label class="lbl-sm">ENGINE NO.</label>
+                                    <label class="lbl-sm">FRAME NUMBER</label>
                                     <input [formControlName]="mgc.Edit30" [magic]="mgc.Edit30" class="form-control-sm"
                                         mgFormat />
                                     <mgError [magic]="mgc.Edit30"> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-1">
+                            <!-- <div class="col-lg-1">
                                 <div class="form-group-sm">
                                     <label class="lbl-sm">.</label>
                                     <input [formControlName]="mgc.Edit31" [magic]="mgc.Edit31" class="form-control-sm"
@@ -191,7 +47,7 @@
                                     <mgError [magic]="mgc.Edit31"> </mgError>
                                 </div>
 
-                            </div>
+                            </div> -->
                             <div class="col-lg-2">
                                 <div class="form-group-sm">
                                     <label class="lbl-sm">MODEL CODE</label>
@@ -200,7 +56,7 @@
                                     <mgError [magic]="mgc.Edit32"> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-1">
+                            <div class="col-lg-2">
                                 <div class="form-group-sm">
                                     <label class="lbl-sm">AF-OFF DATE</label>
                                     <input type="date" [formControlName]="mgc.Edit33" [magic]="mgc.Edit33"
@@ -266,9 +122,9 @@
                                     <mgError [magic]=mgc.TYRE_LOT_V> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-4">
                                 <div class="form-group">
-                                    <label>FRAME NO </label>
+                                    <label>FRAME NUMBER </label>
                                     <input class="form-control-ent" [formControlName]="mgc.CHASSIS_NO_V"
                                         [magic]="mgc.CHASSIS_NO_V" mgFormat />
                                     <mgError [magic]=mgc.CHASSIS_NO_V> </mgError>
@@ -281,14 +137,15 @@
                                         [magic]="mgc.ENGINE_NO_V" mgFormat />
                                     <mgError [magic]=mgc.ENGINE_NO_V> </mgError>
                                 </div>
-                            </div>  <div class="col-lg-2" *ngIf="mg.getVisible(mgc.ENGINE_NO_V)==='visible'">
-                         
                             </div>
-                             <div class="col-lg-12 text-center">
+                            <div class="col-lg-1" *ngIf="mg.getVisible(mgc.ENGINE_NO_V)==='visible'">
+
+                            </div>
+                            <div class="col-lg-12 text-center">
                                 <h2 class="text-success font-weight-bolder">
                                     {{mg.getValue(mgc.LastScanned) }}</h2>
                             </div>
-                    
+
                         </div>
                     </div>
                 </div>
