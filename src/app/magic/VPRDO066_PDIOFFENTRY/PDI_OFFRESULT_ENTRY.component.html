@@ -79,7 +79,7 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <div [magic]="mgc.MODE_DSP" *ngIf="mg.getVisible(mgc.MODE_DSP)==='visible'"
                                         (change)="task.mgOnRadioSelectionChanged(mgc.MODE_DSP)">
@@ -100,7 +100,7 @@
                                     <mgError [magic]=mgc.PASS_DESC> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-3">
                                 <div class="form-group">
                                     <label>FRAME NO </label>
                                     <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.CHASSIS_NO_DSP"
@@ -116,8 +116,9 @@
                                     <mgError [magic]=mgc.ENGINE_NODISP> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-12 text-center">
-                                <h2 class="text-danger font-weight-bolder">
+                          
+                         <div class="col-lg-12 text-center">
+                                <h2 class="text-success font-weight-bolder">
                                     {{mg.getValue(mgc.LastScanned) }}</h2>
                             </div>
                         </div>

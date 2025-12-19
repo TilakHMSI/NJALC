@@ -12,7 +12,8 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO065_VQON_ENTRY_VQ_ON_RESULT_ENTRY_VQ_ON_RESULT_ENTRY',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './VQ_ON_RESULT_ENTRY.component.html'
+    templateUrl: './VQ_ON_RESULT_ENTRY.component.html',
+    styleUrl: './VQ_ON_RESULT_ENTRY.component.css'
 })
 export class VQ_ON_RESULT_ENTRY extends BaseMatTableMagicComponent {
 

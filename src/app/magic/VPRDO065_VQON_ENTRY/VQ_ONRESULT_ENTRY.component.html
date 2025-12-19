@@ -176,7 +176,7 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <div [magic]="mgc.MODE_DSP" *ngIf="mg.getVisible(mgc.MODE_DSP)==='visible'"
                                         (change)="task.mgOnRadioSelectionChanged(mgc.MODE_DSP)">
@@ -189,7 +189,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-3">
                                 <div class="form-group">
                                     <label>FRAME NO </label>
                                     <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.CHASSIS_NO_DSP"
@@ -197,18 +197,22 @@
                                     <mgError [magic]=mgc.CHASSIS_NO_DSP> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-4" *ngIf="mg.getVisible(mgc.Edit21)==='visible'">
+                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.Edit21)==='visible'">
                                 <div class="form-group">
                                     <label>ENGINE NO.</label>
-                                    <input class="form-control" [formControlName]="mgc.Edit21"
+                                    <input class="form-control-ent" [formControlName]="mgc.Edit21"
                                         [magic]="mgc.Edit21" mgFormat />
                                     <mgError [magic]=mgc.Edit21> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-12 text-center">
-                                <h2 class="text-danger font-weight-bolder">
+                                <div class="col-lg-3" *ngIf="mg.getVisible(mgc.Edit21)==='visible'">
+                             
+                            </div>
+                          <div class="col-lg-12 text-center">
+                                <h2 class="text-success font-weight-bolder">
                                     {{mg.getValue(mgc.LastScanned) }}</h2>
                             </div>
+                    
                         </div>
                     </div>
                 </div>

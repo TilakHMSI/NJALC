@@ -14,7 +14,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDO041DISPAE_OFF_ENTRY_AEOFFRESULTENTRY_AEOFF_RESULT_ENTRY',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './AEOFF_RESULT_ENTRY.component.html'
+    templateUrl: './AEOFF_RESULT_ENTRY.component.html',
+    styleUrl: './AEOFFRESULTENTRY.component.css'
 })
 export class AEOFF_RESULT_ENTRY extends BaseMatTableMagicComponent implements MagicModalInterface {
 
@@ -26,7 +27,7 @@ export class AEOFF_RESULT_ENTRY extends BaseMatTableMagicComponent implements Ma
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "AEOFF_RESULT_ENTRY";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "300px";

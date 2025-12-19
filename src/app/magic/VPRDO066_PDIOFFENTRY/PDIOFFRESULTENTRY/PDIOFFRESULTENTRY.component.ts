@@ -12,7 +12,8 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO066_PDIOFFENTRY_PDIOFFRESULTENTRY_PDIOFFRESULTENTRY',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './PDIOFFRESULTENTRY.component.html'
+    templateUrl: './PDIOFFRESULTENTRY.component.html',
+    styleUrl: './PDIOFFRESULTENTRY.component.css'
 })
 export class PDIOFFRESULTENTRY extends BaseMatTableMagicComponent {
 

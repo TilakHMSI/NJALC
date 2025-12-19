@@ -23,7 +23,7 @@
                                             [options]="mg.getNumericPicture(mg.getPicture(mgc.S5_CHASSIS_NO))"
                                             [magic]="mgc.S5_CHASSIS_NO" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.S5_CHASSIS_NO [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_CHASSIS_NO"
+                                        <label class="lbl_table" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_CHASSIS_NO"
                                             [rowId]="row.rowId">
                                             {{mg.getFormattedValue(mgc.S5_CHASSIS_NO, row.rowId)
                                             }}
@@ -48,7 +48,7 @@
                                             mgFormat />
                                         <mgError [magic]=mgc.PRD005FRAMEENGINE_NO_S5_KEY_NO [rowId]="row.rowId">
                                         </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)"
+                                        <label class="lbl_table" *ngIf="!mg.isRowInRowEditing(row)"
                                             [magic]="mgc.PRD005FRAMEENGINE_NO_S5_KEY_NO" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.PRD005FRAMEENGINE_NO_S5_KEY_NO, row.rowId)">
                                             {{mg.getValue(mgc.PRD005FRAMEENGINE_NO_S5_KEY_NO, row.rowId)
@@ -70,7 +70,7 @@
                                         <input [formControlName]="mgc.S5_MTO_CODE" *ngIf="mg.isRowInRowEditing(row)"
                                             [magic]="mgc.S5_MTO_CODE" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.S5_MTO_CODE [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_MTO_CODE"
+                                        <label class="lbl_table" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_MTO_CODE"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.S5_MTO_CODE, row.rowId)
                                             }}
@@ -91,7 +91,7 @@
                                         <input [formControlName]="mgc.S5_COLOR_CODE" *ngIf="mg.isRowInRowEditing(row)"
                                             [magic]="mgc.S5_COLOR_CODE" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.S5_COLOR_CODE [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_COLOR_CODE"
+                                        <label class="lbl_table" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_COLOR_CODE"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.S5_COLOR_CODE, row.rowId)
                                             }}
@@ -104,7 +104,7 @@
                                             *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.S5_COLOR_CODEINSIDE"
                                             [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.S5_COLOR_CODEINSIDE [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_COLOR_CODEINSIDE"
+                                        <label class="lbl_table" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_COLOR_CODEINSIDE"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.S5_COLOR_CODEINSIDE, row.rowId)
                                             }}
@@ -126,7 +126,7 @@
                                             [magic]="mgc.S5_VQON_DATE" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_VQON_DATE, row.rowId)" dateInput />
                                     </div>
-                                    <label class="text-danger" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_VQON_DATE"
+                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_VQON_DATE"
                                         [rowId]="row.rowId"
                                         [style.visibility]="mg.getVisible(mgc.S5_VQON_DATE, row.rowId)">
                                         {{mg.getValue(mgc.S5_VQON_DATE, row.rowId)
@@ -148,7 +148,7 @@
                                             [magic]="mgc.S5_VQON_TIME" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_VQON_TIME, row.rowId)" step=1 />
                                     </div>
-                                    <label class="text-danger" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_VQON_TIME"
+                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_VQON_TIME"
                                         [rowId]="row.rowId"
                                         [style.visibility]="mg.getVisible(mgc.S5_VQON_TIME, row.rowId)">
                                         {{mg.getValue(mgc.S5_VQON_TIME, row.rowId)
@@ -169,7 +169,7 @@
                                         <input [formControlName]="mgc.S5_MTO_NAME" *ngIf="mg.isRowInRowEditing(row)"
                                             [magic]="mgc.S5_MTO_NAME" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.S5_MTO_NAME [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_MTO_NAME"
+                                        <label class="lbl_table" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_MTO_NAME"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.S5_MTO_NAME, row.rowId)
                                             }}
