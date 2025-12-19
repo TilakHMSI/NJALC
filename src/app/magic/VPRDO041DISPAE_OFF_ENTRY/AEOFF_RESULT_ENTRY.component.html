@@ -95,7 +95,7 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-2">
                                 <div class="form-group">
                                     <div [magic]="mgc.MODE_DSP" *ngIf="mg.getVisible(mgc.MODE_DSP)==='visible'"
                                         (change)="task.mgOnRadioSelectionChanged(mgc.MODE_DSP)">
@@ -117,7 +117,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-3">
                                 <div class="form-group">
                                     <label>ENGINE NO </label>
                                     <input class="form-control-ent" [formControlName]="mgc.ENGINE_NO_DSP"
@@ -125,12 +125,17 @@
                                     <mgError [magic]=mgc.ENGINE_NO_DSP> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-4" *ngIf="mg.getVisible(mgc.MISSION_DSP)==='visible'">
+                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.MISSION_DSP)==='visible'">
                                 <div class="form-group">
                                     <label>MISSION NO.</label>
                                     <input class="form-control-ent" [formControlName]="mgc.MISSION_DSP"
                                         [magic]="mgc.MISSION_DSP" mgFormat />
                                     <mgError [magic]=mgc.MISSION_DSP> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" *ngIf="mg.getVisible(mgc.MISSION_DSP)==='visible'">
+                                <div class="form-group">
+                                   
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center">
