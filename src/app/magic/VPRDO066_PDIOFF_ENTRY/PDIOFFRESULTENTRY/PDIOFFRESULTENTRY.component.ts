@@ -13,7 +13,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     providers: [...matMagicProviders],
     standalone: false,
     templateUrl: './PDIOFFRESULTENTRY.component.html',
-    styleUrl: './PDIRESULTNENTRY.component.css'
+    styleUrl: './PDIOFFRESULTENTRY.component.css'
 })
 export class PDIOFFRESULTENTRY extends BaseMatTableMagicComponent {
 

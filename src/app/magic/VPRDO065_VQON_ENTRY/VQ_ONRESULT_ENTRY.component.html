@@ -161,8 +161,8 @@
                             <div class="col-lg-2">
                                 <div class="form-group-sm">
                                     <label class="lbl-sm">VQ-OFF TIME</label>
-                                    <input [formControlName]="mgc.Edit16" [magic]="mgc.Edit16"
-                                        class="form-control-sm" *ngIf="mg.getVisible(mgc.Edit16)==='visible'"/>
+                                    <input [formControlName]="mgc.Edit16" [magic]="mgc.Edit16" class="form-control-sm"
+                                        *ngIf="mg.getVisible(mgc.Edit16)==='visible'" />
                                 </div>
                             </div>
                             <div class="col-lg-2">
@@ -182,7 +182,8 @@
                                         (change)="task.mgOnRadioSelectionChanged(mgc.MODE_DSP)">
                                         <div *ngFor="let o of mg.getItemListValues(mgc.MODE_DSP);">
                                             <label>
-                                                <input type="radio" [formControlName]="mgc.MODE_DSP" [value]="o.index" />
+                                                <input type="radio" [formControlName]="mgc.MODE_DSP"
+                                                    [value]="o.index" />
                                                 {{o.displayValue}}
                                             </label>
                                         </div>
@@ -192,27 +193,27 @@
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>FRAME NUMBER </label>
-                                    <input (click)="selectText($event)" class="form-control-ent" [formControlName]="mgc.CHASSIS_NO_DSP"
-                                        [magic]="mgc.CHASSIS_NO_DSP" mgFormat />
+                                    <input (click)="selectText($event)" class="form-control-ent"
+                                        [formControlName]="mgc.CHASSIS_NO_DSP" [magic]="mgc.CHASSIS_NO_DSP" mgFormat />
                                     <mgError [magic]=mgc.CHASSIS_NO_DSP> </mgError>
                                 </div>
                             </div>
                             <div class="col-lg-3" *ngIf="mg.getVisible(mgc.Edit21)==='visible'">
                                 <div class="form-group">
                                     <label>ENGINE NO.</label>
-                                    <input class="form-control-ent" [formControlName]="mgc.Edit21"
-                                        [magic]="mgc.Edit21" mgFormat />
+                                    <input class="form-control-ent" [formControlName]="mgc.Edit21" [magic]="mgc.Edit21"
+                                        mgFormat />
                                     <mgError [magic]=mgc.Edit21> </mgError>
                                 </div>
                             </div>
-                                <div class="col-lg-2" *ngIf="mg.getVisible(mgc.Edit21)==='visible'">
-                             
+                            <div class="col-lg-2" *ngIf="mg.getVisible(mgc.Edit21)==='visible'">
+
                             </div>
-                          <div class="col-lg-12 text-center">
+                            <div class="col-lg-12 text-center">
                                 <h2 class="text-success font-weight-bolder">
                                     {{mg.getValue(mgc.LastScanned) }}</h2>
                             </div>
-                    
+
                         </div>
                     </div>
                 </div>
