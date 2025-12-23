@@ -95,7 +95,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                         <div class="form-group-sm">
                             <label class="lbl-sm">MODEL CODE</label>
                             <input [formControlName]="mgc.S5_MTO_CODE" [magic]="mgc.S5_MTO_CODE" class="form-control-sm"
@@ -111,7 +111,16 @@
                             <mgError [magic]="mgc.S5_MTO_CODE"> </mgError>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                     <div class="col-lg-3">
+                        <div class="form-group-sm">
+                            <label class="lbl-sm" style="width: 100%;">AE-OFF DATE - TIME</label>
+                            <label class="text-danger font-size-h4 mr-8" style="background-color: #ebedf3;"> {{mg.getValue(mgc.S5_AFOFF_DATE)
+                                | magicDate : mgc.S5_AFOFF_DATE}}</label>
+                            <label class="text-danger font-size-h4" style="background-color: #ebedf3;"> {{mg.getValue(mgc.S5_AFOFF_TIME)
+                                | magicTime : mgc.S5_AFOFF_TIME}}</label>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-2">
                         <div class="form-group-sm">
                             <label class="lbl-sm">AE-OFF DATE</label>
                             <input type="date" [formControlName]="mgc.S5_AFOFF_DATE" [magic]="mgc.S5_AFOFF_DATE"
@@ -125,15 +134,8 @@
                             <input type="time" [formControlName]="mgc.S5_AFOFF_TIME" [magic]="mgc.S5_AFOFF_TIME"
                                 class="form-control-sm" *ngIf="mg.getVisible(mgc.S5_AFOFF_DATE)==='visible'" step=1 />
                         </div>
-                    </div>
-                    <div class="col-lg-1">
-                        <div class="form-group-sm">
-                            <label class="lbl-sm">LINE</label>
-                            <input class="form-control-sm" [formControlName]="mgc.Edit17" type='number'
-                                [magic]="mgc.Edit17" mgFormat />
-                        </div>
-                    </div>
-                    <div class="col-lg-1">
+                    </div> -->
+                    <div class="col-lg-2">
                         <div class="form-group-sm">
                             <label class="lbl-sm">TOTAL</label>
                             <input class="form-control-sm" [formControlName]="mgc.V_PROGRESS1TEST" type='number'

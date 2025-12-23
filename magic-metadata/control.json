@@ -1,16 +1,26 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"LastScanned",
+		"id":	"Edit34",
+		"visible":	{
+			"value":	null,
+			"has_exp":	true
+		},
+		"enabled":	{
+			"value":	null,
+			"has_exp":	true
+		},
 		"dataexp":	true,
-		"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+		"formatter":	"magicTime",
+		"showsecs":	true,
+		"format":	"HH:MM:SS",
 		"modifiable":	false
 	},
 	"coordinates":	{
-		"x":	157,
-		"y":	465,
-		"width":	189,
-		"height":	24
+		"x":	385,
+		"y":	346,
+		"width":	74,
+		"height":	21
 	},
 	"hint":	null,
 	"controlType":	"T",
