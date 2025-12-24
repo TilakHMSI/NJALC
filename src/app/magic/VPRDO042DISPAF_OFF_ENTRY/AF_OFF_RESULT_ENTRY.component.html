@@ -108,9 +108,9 @@
                                         [formControlName]="mgc.Edit10" [magic]="mgc.Edit10" mgFormat />
                                 </div>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-2" *ngIf="mg.getVisible(mgc.TYRE_LOT_V)==='visible'">
                                 <div class="form-group">
-                                    <label>TYRE LOT</label>
+                                    <label>TIRE LOT</label>
                                     <input class="form-control-ent" [formControlName]="mgc.TYRE_LOT_V"
                                         [magic]="mgc.TYRE_LOT_V" mgFormat />
                                     <mgError [magic]=mgc.TYRE_LOT_V> </mgError>
@@ -124,6 +124,7 @@
                                     <mgError [magic]=mgc.CHASSIS_NO_V> </mgError>
                                 </div>
                             </div>
+                            
                             <div class="col-lg-3" *ngIf="mg.getVisible(mgc.ENGINE_NO_V)==='visible'">
                                 <div class="form-group">
                                     <label>ENGINE NO.</label>
