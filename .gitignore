@@ -2,10 +2,10 @@
 
 # Compiled output
 /dist
+/public
 /tmp
 /out-tsc
 /bazel-out
-/public/assets/cache
 # Node
 /node_modules
 npm-debug.log
