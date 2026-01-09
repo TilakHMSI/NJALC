@@ -37,11 +37,11 @@ body {
     color: #1a17d4;
 }
 
+
 .engine-no {
     font-size: 2.75rem;
     font-weight: 600;
-    letter-spacing: 6px;
-    /* background-color: #1a17d4; */
+    letter-spacing: 2px;
 }
 
 .status-box {
