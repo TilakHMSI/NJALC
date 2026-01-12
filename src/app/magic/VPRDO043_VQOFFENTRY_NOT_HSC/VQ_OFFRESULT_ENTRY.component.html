@@ -127,7 +127,7 @@
                         <div class="form-group row">
                             <div class="col-lg-2">
                                 <div class="form-group-sm">
-                                    <label class="lbl-sm">ENGINE NO.</label>
+                                    <label class="lbl-sm">FRAME NUMBER</label>
                                     <input [formControlName]="mgc.Edit12" [magic]="mgc.Edit12" class="form-control-sm"
                                         mgFormat />
                                     <mgError [magic]="mgc.Edit12"> </mgError>
@@ -154,15 +154,15 @@
                                 <div class="form-group-sm">
                                     <label class="lbl-sm">VQ-OFF DATE</label>
                                     <input type="date" [formControlName]="mgc.Edit15" [magic]="mgc.Edit15"
-                                        class="form-control-sm" *ngIf="mg.getVisible(mgc.Edit15)==='visible'"
+                                        class="form-control-sm text-danger" *ngIf="mg.getVisible(mgc.Edit15)==='visible'"
                                         dateInput />
                                 </div>
                             </div>
                             <div class="col-lg-2">
                                 <div class="form-group-sm">
                                     <label class="lbl-sm">VQ-OFF TIME</label>
-                                    <input [formControlName]="mgc.Edit16" [magic]="mgc.Edit16"
-                                        class="form-control-sm" *ngIf="mg.getVisible(mgc.Edit16)==='visible'"/>
+                                    <input  type="time" [formControlName]="mgc.Edit16" [magic]="mgc.Edit16" class="form-control-sm text-danger"
+                                        *ngIf="mg.getVisible(mgc.Edit16)==='visible'" />
                                 </div>
                             </div>
                             <div class="col-lg-2">

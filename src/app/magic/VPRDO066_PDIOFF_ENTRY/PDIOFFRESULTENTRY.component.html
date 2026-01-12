@@ -57,7 +57,7 @@
                                 <div class="form-group-sm">
                                     <label class="lbl-sm">PDI-OFF DATE</label>
                                     <input type="date" [formControlName]="mgc.Edit15" [magic]="mgc.Edit15"
-                                        class="form-control-sm" *ngIf="mg.getVisible(mgc.Edit15)==='visible'"
+                                        class="form-control-sm text-danger" *ngIf="mg.getVisible(mgc.Edit15)==='visible'"
                                         dateInput />
                                 </div>
                             </div>
@@ -65,7 +65,7 @@
                                 <div class="form-group-sm">
                                     <label class="lbl-sm">PDI-OFF TIME</label>
                                     <input type="time" [formControlName]="mgc.Edit16" [magic]="mgc.Edit16"
-                                        class="form-control-sm" *ngIf="mg.getVisible(mgc.Edit16)==='visible'" step=1 />
+                                        class="form-control-sm text-danger" *ngIf="mg.getVisible(mgc.Edit16)==='visible'" step=1 />
                                 </div>
                             </div>
                             <div class="col-lg-2">
