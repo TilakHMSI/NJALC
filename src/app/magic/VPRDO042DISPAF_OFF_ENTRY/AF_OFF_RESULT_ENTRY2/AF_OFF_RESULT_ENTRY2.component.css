@@ -19,17 +19,17 @@
   flex: 0 0 14%;
 }
 .mat-mdc-cell:nth-child(3){
-  flex: 0 0 7%;
+  flex: 0 0 5%;
 }
 .mat-mdc-header-cell:nth-child(3){
-  flex: 0 0 7%;
+  flex: 0 0 5%;
 }
 
 .mat-mdc-cell:nth-child(4){
-  flex: 0 0 10%;
+  flex: 0 0 12%;
 }
 .mat-mdc-header-cell:nth-child(4){
-  flex: 0 0 10%;
+  flex: 0 0 12%;
 }
 
 .mat-mdc-cell:nth-child(5){
