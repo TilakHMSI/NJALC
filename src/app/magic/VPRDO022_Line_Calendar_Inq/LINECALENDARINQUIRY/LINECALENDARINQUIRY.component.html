@@ -1,0 +1,270 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.LINECALENDARINQUIRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table1TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="container_border"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        [magic]="mgc.Column2"
+                        [matColumnDef]="mgc.Column2"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            DATE
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div
+                                        *ngIf="mg.isRowInRowEditing(row)"
+                                        style="display: flex; flex-direction: row"
+                                    >
+                                        <input
+                                            type="date"
+                                            [formControlName]="mgc.PRD010CALENDAR_TABLE_SA_DATE"
+                                            [magic]="mgc.PRD010CALENDAR_TABLE_SA_DATE"
+                                            [rowId]="row.rowId"
+                                            dateInput
+                                        />
+                                    </div>
+                                    <label
+                                        *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.PRD010CALENDAR_TABLE_SA_DATE"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue(mgc.PRD010CALENDAR_TABLE_SA_DATE, row.rowId)
+| magicDate : mgc.PRD010CALENDAR_TABLE_SA_DATE}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column3"
+                        [matColumnDef]="mgc.Column3"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            WEEK
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.SA_DAY_OF_THE_WEEK"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SA_DAY_OF_THE_WEEK"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.SA_DAY_OF_THE_WEEK
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SA_DAY_OF_THE_WEEK"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.SA_DAY_OF_THE_WEEK, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column4"
+                        [matColumnDef]="mgc.Column4"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            OPERATION TYPE
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div *ngIf="mg.isRowInRowEditing(row)">
+                                        <select
+                                            [magic]="mgc.SA_OPERAITION_TYPE"
+                                            [rowId]="row.rowId"
+                                            [formControlName]="mgc.SA_OPERAITION_TYPE"
+                                        >
+                                            <option
+                                                *ngFor="let o of mg.getItemListValues(mgc.SA_OPERAITION_TYPE, row.rowId);"
+                                                [selected]="o.index == mg.getValue(mgc.SA_OPERAITION_TYPE, row.rowId)"
+                                                [value]="o.index"
+                                            >
+                                                {{o.displayValue}}
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div *ngIf="!mg.isRowInRowEditing(row)">
+                                        <label
+                                            [magic]="mgc.SA_OPERAITION_TYPE"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{ mg.getDisplayValue(mgc.SA_OPERAITION_TYPE, row.rowId) }}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column5"
+                        [matColumnDef]="mgc.Column5"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            WEEK NO.
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.SA_WEEK_NO"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            type='number'
+                                            [magic]="mgc.SA_WEEK_NO"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.SA_WEEK_NO
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SA_WEEK_NO"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.SA_WEEK_NO, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column6"
+                        [matColumnDef]="mgc.Column6"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            PROD.INDICATION
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div *ngIf="mg.isRowInRowEditing(row)">
+                                        <select
+                                            [magic]="mgc.SA_PRODINDCATE"
+                                            [rowId]="row.rowId"
+                                            [formControlName]="mgc.SA_PRODINDCATE"
+                                        >
+                                            <option
+                                                *ngFor="let o of mg.getItemListValues(mgc.SA_PRODINDCATE, row.rowId);"
+                                                [selected]="o.index == mg.getValue(mgc.SA_PRODINDCATE, row.rowId)"
+                                                [value]="o.index"
+                                            >
+                                                {{o.displayValue}}
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div *ngIf="!mg.isRowInRowEditing(row)">
+                                        <label
+                                            [magic]="mgc.SA_PRODINDCATE"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{ mg.getDisplayValue(mgc.SA_PRODINDCATE, row.rowId) }}
+                                        </label>
+                                    </div>
+                                </div>
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div
+                                        *ngIf="mg.isRowInRowEditing(row)"
+                                        style="display: flex; flex-direction: row"
+                                    >
+                                        <input
+                                            type="date"
+                                            [formControlName]="mgc.SA_PRODINDDATE"
+                                            [magic]="mgc.SA_PRODINDDATE"
+                                            [rowId]="row.rowId"
+                                            dateInput
+                                        />
+                                    </div>
+                                    <label
+                                        *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.SA_PRODINDDATE"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue(mgc.SA_PRODINDDATE, row.rowId)
+| magicDate : mgc.SA_PRODINDDATE}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+        </div>
+    </div>
+</div>

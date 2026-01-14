@@ -1,0 +1,246 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VPRDG000_PRD001_GUIDE",
+		"window_type":	1,
+		"component_path":	"VPRDG000_PRD001_GUIDE_51/VPRDG000_PRD001_GUIDE/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDG000_PRD001_GUIDE_51_VPRDG000_PRD001_GUIDE_VPRDG000_PRD001_GUIDE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	353,
+		"height":	323
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	20,
+				"table_title_height":	20,
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	0,
+				"width":	341,
+				"height":	281
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"EFM",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	19
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD001_S1_EFM",
+								"items_list":	"E:ENGINE,F:FRAME,M:MISSION",
+								"mgformat":	"mgFormat",
+								"validator":	"rangevalidator",
+								"format":	"U",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	10,
+								"y":	23,
+								"width":	10,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"MTO CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	66
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD001_S1_MTO_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	29,
+								"y":	23,
+								"width":	60,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"MTO NAME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	100
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD001_S1_MTO_NAME",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	94,
+								"y":	23,
+								"width":	95,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"BOM CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	66
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD001_S1_PARTS_MTO_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	195,
+								"y":	23,
+								"width":	60,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"PROD.CLOSE DATE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	75
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD001_S1_PRODCLOSE_DATE",
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"DD-MM-YYYY",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	261,
+								"y":	23,
+								"width":	55,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSelect",
+				"format":	"Select",
+				"common_line_id":	"line287"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	287,
+				"width":	95,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

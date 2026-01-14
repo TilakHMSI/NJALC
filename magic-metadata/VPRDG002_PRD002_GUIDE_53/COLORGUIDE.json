@@ -1,0 +1,149 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"COLORGUIDE",
+		"window_type":	12,
+		"component_path":	"VPRDG002_PRD002_GUIDE_53/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDG002_PRD002_GUIDE_53_COLORGUIDE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	223,
+		"height":	359
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VPRDG002",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	125,
+				"y":	0,
+				"width":	92,
+				"height":	19
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	19,
+				"table_title_height":	20,
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	37,
+				"width":	212,
+				"height":	288
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"COLOR CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	60
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD002_S2_COLOR_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line60"
+							},
+							"coordinates":	{
+								"x":	8,
+								"y":	60,
+								"width":	55,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"COLOR CODE(INSIDE)",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	118
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD002_S2_COLOR_CODEINSIDE",
+								"mgformat":	"mgFormat",
+								"format":	"UU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line60"
+							},
+							"coordinates":	{
+								"x":	68,
+								"y":	60,
+								"width":	68,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSelect",
+				"format":	"Select",
+				"common_line_id":	"line331"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	331,
+				"width":	64,
+				"height":	25
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

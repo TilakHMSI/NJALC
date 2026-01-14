@@ -1,0 +1,58 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.VPRDG000_PRD001_GUIDE_51"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                SELECT
+            </label>
+            <div
+                [magic]="mgc.V_SELECT_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.V_SELECT_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_SELECT_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.V_SELECT_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PGM=VPRDG000
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <div>
+                    <input
+                        type="checkbox"
+                        [formControlName]="mgc.V_DISP_FLG_V"
+                        [magic]="mgc.V_DISP_FLG_V"
+                        id="V_DISP_FLG_V"
+                    />
+                    <label for="V_DISP_FLG_V">
+                        PROD.CLOSE : NON DISPLAYED
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.SubFormDisplay">
+            </magic-subform>
+        </div>
+    </div>
+</div>

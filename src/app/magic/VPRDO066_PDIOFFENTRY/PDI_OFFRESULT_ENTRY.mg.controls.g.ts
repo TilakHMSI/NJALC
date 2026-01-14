@@ -35,6 +35,7 @@ export enum MgControlName {
         ENGINE_NODISP = "ENGINE_NODISP",
         btnexit = "btnexit",
         LastScanned = "LastScanned",
+        LastScannedEngine = "LastScannedEngine",
 }
 export enum MgCustomProperties {
     PDI_OFFRESULT_ENTRY_FormName = 'PDI_OFFRESULT_ENTRY~FormName',

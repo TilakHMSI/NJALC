@@ -1,0 +1,185 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"COLOR_TABLE_MAINTENANCE_HSC",
+		"window_type":	12,
+		"component_path":	"VPRDO016_Color_Table_MTN_HSC/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO016_Color_Table_MTN_HSC_COLOR_TABLE_MAINTENANCE_HSC"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MODE_V",
+				"items_list":	"ADDITION,UPDATE,INQUIRY",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	71,
+				"y":	0,
+				"width":	166,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	470,
+				"y":	3,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PGM=VPRDO016",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	494,
+				"y":	3,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	71,
+				"y":	26,
+				"width":	159,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"COLOR_CODE_V",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	164,
+				"y":	29,
+				"width":	51,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	454,
+				"y":	20,
+				"width":	55,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	510,
+				"y":	20,
+				"width":	45,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"SELECT COLOR CODE",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	74,
+				"y":	31,
+				"width":	85,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line89"
+			},
+			"coordinates":	{
+				"x":	39,
+				"y":	89,
+				"width":	490,
+				"height":	338
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

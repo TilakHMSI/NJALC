@@ -1,0 +1,92 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"DELETEDIALOG",
+		"window_type":	1,
+		"component_path":	"VPRDO021_Line_Calendar_Maint/DELETEDIALOG/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO021_Line_Calendar_Maint_DELETEDIALOG_DELETEDIALOG"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	200,
+		"height":	91
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"DELETE MM-YYYY",
+				"common_line_id":	"line21"
+			},
+			"coordinates":	{
+				"x":	43,
+				"y":	23,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DELETE_MMYYYY_V",
+				"mgformat":	"mgFormat",
+				"format":	"MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line21"
+			},
+			"coordinates":	{
+				"x":	118,
+				"y":	21,
+				"width":	65,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"OK_BUTTON_V",
+				"format":	"10",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	44,
+				"y":	55,
+				"width":	50,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"NO_BUTTON_V",
+				"format":	"10",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	106,
+				"y":	55,
+				"width":	50,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

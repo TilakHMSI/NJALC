@@ -1,0 +1,32 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DELETEDIALOG"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                DELETE MM-YYYY
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.V_DELETE_MMYYYY_V"
+                [magic]="mgc.V_DELETE_MMYYYY_V"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.OK_BUTTON_V">
+                10
+            </button>
+            <button [magic]="mgc.NO_BUTTON_V">
+                10
+            </button>
+        </div>
+    </div>
+</div>

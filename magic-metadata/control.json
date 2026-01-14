@@ -1,20 +1,17 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Edit16",
-		"enabled":	{
-			"value":	null,
-			"has_exp":	true
-		},
-		"showsecs":	true,
-		"format":	"HH:MM:SS",
-		"attribute":	"T"
+		"id":	"PLAN_CODE_V",
+		"show_zoom_button":	true,
+		"mgformat":	"mgFormat",
+		"format":	"UUUUUU",
+		"attribute":	"A"
 	},
 	"coordinates":	{
-		"x":	379,
-		"y":	325,
-		"width":	65,
-		"height":	24
+		"x":	78,
+		"y":	29,
+		"width":	63,
+		"height":	20
 	},
 	"hint":	null,
 	"controlType":	"T",

@@ -1,0 +1,145 @@
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.LINECALENDARMAINTENANCE">
+        <div style="display: flex; flex-direction: row">
+            <div [magic]="mgc.MODE_V" (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)">
+                <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
+                    <label>
+                        <input type="radio" [formControlName]="mgc.MODE_V" [value]="o.index" />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <div>
+                <input [formControlName]="mgc.V_LOCATE_P" [magic]="mgc.V_LOCATE_P" mgFormat />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label [magic]="mgc.Label2" class="lable_overflow">
+                {{mg.getText(mgc.Label2)}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label5" class="lable_overflow">
+            </label>
+            <div>
+                <input style="width: 70%" [formControlName]="mgc.PLAN_CODE_V" [magic]="mgc.PLAN_CODE_V" mgFormat />
+                <mgError [magic]=mgc.PLAN_CODE_V> </mgError>
+                <button style="min-width: auto; margin: auto" [magic]="mgc.PLAN_CODE_V">...</button>
+            </div>
+            <input style="width: 70%" type="date" [formControlName]="mgc.MMYYYY_V" [magic]="mgc.MMYYYY_V" dateInput />
+            <button style="min-width: auto; margin: auto" [magic]="mgc.MMYYYY_V">...</button>
+            <label [magic]="mgc.Label6" class="lable_overflow">
+            </label>
+            <div>
+                <input [formControlName]="mgc.V_OPERATION_DAYS_V" type='number' [magic]="mgc.V_OPERATION_DAYS_V"
+                    mgFormat />
+                <mgError [magic]=mgc.V_OPERATION_DAYS_V> </mgError>
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+                | magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+                | magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label10" class="lable_overflow">
+                PLAN CODE
+            </label>
+            <label [magic]="mgc.Label11" class="lable_overflow">
+                MMYYYY
+            </label>
+            <label [magic]="mgc.Label12" class="lable_overflow">
+                OPERATION DAYS
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Exit
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.SubTaskForm">
+            </magic-subform>
+        </div>
+    </div>
+</div> -->
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.LINECALENDARMAINTENANCE">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label2)}}
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <label [magic]="mgc.Edit3" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit3)
+                            | magicDate : mgc.Edit3}}
+                        </label>
+                        <label [magic]="mgc.Edit4" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit4)
+                            | magicTime : mgc.Edit4}}
+                        </label>
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">X</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <div [magic]="mgc.MODE_V" *ngIf="mg.getVisible(mgc.MODE_V)==='visible'"
+                                        (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)">
+                                        <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
+                                            <label>
+                                                <input type="radio" [formControlName]="mgc.MODE_V" [value]="o.index" />
+                                                {{o.displayValue}}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>PLAN CODE </label>
+                                    <input style="width: 70%" [formControlName]="mgc.PLAN_CODE_V"
+                                        [magic]="mgc.PLAN_CODE_V" mgFormat />
+                                    <mgError [magic]=mgc.PLAN_CODE_V> </mgError>
+                                    <button style="min-width: auto; margin: auto" [magic]="mgc.PLAN_CODE_V">...</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>MMYYYY</label>
+                                    <input style="width: 70%" type="text" [formControlName]="mgc.MMYYYY_V"
+                                        [magic]="mgc.MMYYYY_V" mmYyyyMask placeholder="MM-YYYY" maxlength="7" />
+                                    <button style="min-width: auto; margin: auto" [magic]="mgc.MMYYYY_V">...</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label>OPERATION DAYS</label>
+                                    <input [formControlName]="mgc.V_OPERATION_DAYS_V" type='number'
+                                        [magic]="mgc.V_OPERATION_DAYS_V" mgFormat />
+                                    <mgError [magic]=mgc.V_OPERATION_DAYS_V> </mgError>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <magic-subform [magic]="mgc.SubTaskForm">
+                        </magic-subform>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

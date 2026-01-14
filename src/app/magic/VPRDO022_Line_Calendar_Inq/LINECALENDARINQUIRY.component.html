@@ -1,0 +1,103 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.LINECALENDARINQUIRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                {{mg.getText(mgc.Label2)}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.PLAN_CODE_V"
+                    [magic]="mgc.PLAN_CODE_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PLAN_CODE_V> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.PLAN_CODE_V"
+                >...</button>
+            </div>
+            <input
+                style="width: 70%"
+                type="date"
+                [formControlName]="mgc.MMYYYY_V"
+                [magic]="mgc.MMYYYY_V"
+                dateInput
+            />
+            <button
+                style="min-width: auto; margin: auto"
+                [magic]="mgc.MMYYYY_V"
+            >...</button>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_OPERATION_DAYS_V"
+                    type='number'
+                    [magic]="mgc.V_OPERATION_DAYS_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_OPERATION_DAYS_V> </mgError>
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                PLAN CODE
+            </label>
+            <label
+                [magic]="mgc.Label11"
+                class="lable_overflow"
+            >
+                MMYYYY
+            </label>
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                OPERATION DAYS
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.SubTaskForm">
+            </magic-subform>
+        </div>
+    </div>
+</div>

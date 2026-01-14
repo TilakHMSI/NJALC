@@ -116,9 +116,13 @@
                                     <mgError [magic]=mgc.ENGINE_NODISP> </mgError>
                                 </div>
                             </div>
-                          <div class="col-lg-12 text-center">
-                                <h2 class="text-success font-weight-bolder">
-                                    {{mg.getValue(mgc.LastScanned) }}</h2>
+                           <div class="col-lg-12 text-center">
+                                <label class="LastScanned mr-8">
+                                    {{mg.getValue(mgc.LastScanned) }}</label>
+                                <label class="LastScanned ml-5 mr-8">
+                                    | | </label>
+                                <label class="LastScanned ml-5">
+                                    {{mg.getValue(mgc.LastScannedEngine) }}</label>
                             </div>
                         </div>
                     </div>

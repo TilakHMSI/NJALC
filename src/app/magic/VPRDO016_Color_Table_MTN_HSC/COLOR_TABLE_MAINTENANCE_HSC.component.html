@@ -1,0 +1,81 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.COLOR_TABLE_MAINTENANCE_HSC"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.MODE_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.MODE_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VPRDO016
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.COLOR_CODE_V"
+                    [magic]="mgc.COLOR_CODE_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.COLOR_CODE_V> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.COLOR_CODE_V"
+                >...</button>
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                SELECT COLOR CODE
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.Sub1">
+            </magic-subform>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VPRDG000_PRD001_GUIDE_51",
+		"window_type":	12,
+		"component_path":	"VPRDG000_PRD001_GUIDE_51/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDG000_PRD001_GUIDE_51_VPRDG000_PRD001_GUIDE_51"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	349,
+		"height":	330
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"SELECT",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	8,
+				"width":	35,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_SELECT_V",
+				"items_list":	"ENGINE,FRAME,ALL",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	46,
+				"y":	2,
+				"width":	136,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VPRDG000",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	280,
+				"y":	0,
+				"width":	65,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DISP_FLG_V",
+				"text":	"PROD.CLOSE : NON DISPLAYED",
+				"attribute":	"B",
+				"common_line_id":	"line29"
+			},
+			"coordinates":	{
+				"x":	46,
+				"y":	29,
+				"width":	148,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SubFormDisplay",
+				"common_line_id":	"line57"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	57,
+				"width":	324,
+				"height":	260
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

@@ -1,0 +1,112 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VPRDG005_PRD015_GUIDE_56",
+		"window_type":	12,
+		"component_path":	"VPRDG005_PRD015_GUIDE_56/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDG005_PRD015_GUIDE_56_VPRDG005_PRD015_GUIDE_56"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	220,
+		"height":	356
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VPRDG005",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	125,
+				"y":	0,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	23,
+				"table_title_height":	20,
+				"common_line_id":	"line47"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	47,
+				"width":	198,
+				"height":	250
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"P/S CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	88
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_P15_PS_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line70"
+							},
+							"coordinates":	{
+								"x":	14,
+								"y":	70,
+								"width":	54,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSelect",
+				"format":	"Select",
+				"common_line_id":	"line310"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	310,
+				"width":	74,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

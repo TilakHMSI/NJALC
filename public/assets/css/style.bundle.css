@@ -99232,3 +99232,9 @@ input:checked~.tab-content {
   font-size: 1.4rem ! important;
   font-weight: 500 ! important;
 }
+
+.LastScanned {
+  font-weight: 700 ! important;
+  font-size: 3rem! important;
+  color: black;
+}

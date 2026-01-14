@@ -43,6 +43,7 @@ export enum MgControlName {
         ENGINE_NO_V = "ENGINE_NO_V",
         btnexit = "btnexit",
         LastScanned = "LastScanned",
+        LastScannedEngine = "LastScannedEngine",
 }
 export enum MgCustomProperties {
     AF_OFF_RESULT_ENTRY_FormName = 'AF_OFF_RESULT_ENTRY~FormName',
