@@ -1,0 +1,327 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"LINECALENDERMAINTENANCE_EDIT",
+		"window_type":	1,
+		"component_path":	"VPRDO021_Line_Calendar_Maint/LINECALENDERMAINTENANCE_EDIT/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO021_Line_Calendar_Maint_LINECALENDERMAINTENANCE_EDIT_LINECALENDERMAINTENANCE_EDIT"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	871,
+		"height":	428
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	78,
+				"table_title_height":	20,
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	0,
+				"width":	514,
+				"height":	189
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"DATE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	26
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD010CALENDAR_TABLE_SA_DATE",
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"DD",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	58,
+								"y":	23,
+								"width":	13,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"WEEK",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	26
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SA_DAY_OF_THE_WEEK",
+								"mgformat":	"mgFormat",
+								"format":	"XX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	84,
+								"y":	23,
+								"width":	13,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"OPERATION TYPE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	84
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SA_OPERAITION_TYPE",
+								"items_list":	"0:HOLIDAY,1:1S,2:2S,3:3S",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line21"
+							},
+							"coordinates":	{
+								"x":	110,
+								"y":	21,
+								"width":	71,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"D",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"WEEK NO.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	45
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SA_WEEK_NO",
+								"mgformat":	"mgFormat",
+								"format":	"######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	194,
+								"y":	23,
+								"width":	39,
+								"height":	19
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"PROD. INDICATION",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	255
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SA_PRODINDCATE",
+								"modifiable":	{
+									"value":	false,
+									"has_exp":	true
+								},
+								"items_list":	" : ,X:INDICATE",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line21"
+							},
+							"coordinates":	{
+								"x":	239,
+								"y":	21,
+								"width":	66,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"D",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SA_PRODINDDATE",
+								"modifiable":	false,
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"DD-MM-YYYY",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line21"
+							},
+							"coordinates":	{
+								"x":	309,
+								"y":	24,
+								"width":	81,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column13",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	68
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"EnterRowEditing",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	1,
+								"common_line_id":	"line24"
+							},
+							"coordinates":	{
+								"x":	495,
+								"y":	24,
+								"width":	60,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SaveRowEditing",
+								"format":	"Save",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	3,
+								"common_line_id":	"line50"
+							},
+							"coordinates":	{
+								"x":	495,
+								"y":	50,
+								"width":	60,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CancelRowEditing",
+								"format":	"Cancel",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	495,
+								"y":	76,
+								"width":	60,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

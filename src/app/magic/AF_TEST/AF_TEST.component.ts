@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./VPRDS012WARNING.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./AF_TEST.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,13 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDS012WARNING_VPRDS012WARNING',
+    selector: 'mga-AF_TEST_AF_TEST',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './VPRDS012WARNING.component.html',
-    styleUrl: './WARNING.component.css'
+    templateUrl: './AF_TEST.component.html'
 })
-export class VPRDS012WARNING extends TaskBaseMagicComponent implements MagicModalInterface {
+export class AF_TEST extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -24,44 +23,44 @@ export class VPRDS012WARNING extends TaskBaseMagicComponent implements MagicModa
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "VPRDS012 WARNING";
-    private static readonly showTitleBar: boolean = false;
+    private static readonly formName: string = "AF VISION TEST";
+    private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "600px";
-    private static readonly height: string = "200px";
+    private static readonly width: string = "800px";
+    private static readonly height: string = "600px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return VPRDS012WARNING.x;
+        return AF_TEST.x;
     }
     Y() {
-        return VPRDS012WARNING.y;
+        return AF_TEST.y;
     }
     Width(): string {
-        return VPRDS012WARNING.width;
+        return AF_TEST.width;
     }
     Height(): string {
-        return VPRDS012WARNING.height;
+        return AF_TEST.height;
     }
     IsCenteredToWindow() {
-        return VPRDS012WARNING.isCenteredToWindow;
+        return AF_TEST.isCenteredToWindow;
     }
     FormName() {
-        return VPRDS012WARNING.formName;
+        return AF_TEST.formName;
     }
     ShowTitleBar() {
-        return VPRDS012WARNING.showTitleBar;
+        return AF_TEST.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return VPRDS012WARNING.shouldCloseOnBackgroundClick;
+        return AF_TEST.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return VPRDS012WARNING.isResizable;
+        return AF_TEST.isResizable;
     }
     IsMovable() {
-        return VPRDS012WARNING.isMovable;
+        return AF_TEST.isMovable;
     }
 }

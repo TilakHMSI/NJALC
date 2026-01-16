@@ -160,6 +160,12 @@
                                 {{mg.getValue(mgc.New_PDIOFF_RESULT_ENTVPRDO066)}}
                             </button>
                         </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.AF_TEST)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                                [magic]="mgc.AF_TEST">
+                                {{mg.getValue(mgc.AF_TEST)}}
+                            </button>
+                        </div>
                     </div>
                     <div class="col-lg-2">
 

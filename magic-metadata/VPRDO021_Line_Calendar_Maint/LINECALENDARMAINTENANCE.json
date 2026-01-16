@@ -149,6 +149,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"V_OPERATION_DAYS_V",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"##",
 				"attribute":	"N",

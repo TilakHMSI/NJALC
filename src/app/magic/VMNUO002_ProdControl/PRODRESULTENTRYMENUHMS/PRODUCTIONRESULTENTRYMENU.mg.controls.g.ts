@@ -27,6 +27,7 @@ export enum MgControlName {
         EXC_OUTGO_RESULTVPRDO047 = "EXC_OUTGO_RESULTVPRDO047",
         BJPN_ENGINE_NO_ENTRY = "BJPN_ENGINE_NO_ENTRY",
         btnexit = "btnexit",
+        AF_TEST = "AF_TEST",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

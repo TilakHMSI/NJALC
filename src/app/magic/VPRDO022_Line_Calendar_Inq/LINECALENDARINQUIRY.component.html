@@ -1,103 +1,81 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.LINECALENDARINQUIRY"
-    >
-        <div style="display: flex; flex-direction: row">
-            <div>
-                <input
-                    [formControlName]="mgc.V_LOCATE_P"
-                    [magic]="mgc.V_LOCATE_P"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.LINECALENDARINQUIRY">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label2)}}
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <label [magic]="mgc.Edit3" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit3)
+                            | magicDate : mgc.Edit3}}
+                        </label>
+                        <label [magic]="mgc.Edit4" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit4)
+                            | magicTime : mgc.Edit4}}
+                        </label>
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">X</button>
+                    </div>
+                </div>
             </div>
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
-                {{mg.getText(mgc.Label2)}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label5"
-                class="lable_overflow"
-            >
-            </label>
-            <div>
-                <input
-                    style="width: 70%"
-                    [formControlName]="mgc.PLAN_CODE_V"
-                    [magic]="mgc.PLAN_CODE_V"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.PLAN_CODE_V> </mgError>
-                <button
-                    style="min-width: auto; margin: auto"
-                    [magic]="mgc.PLAN_CODE_V"
-                >...</button>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label>PLAN CODE </label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.PLAN_CODE_V"
+                                        [magic]="mgc.PLAN_CODE_V" class="form-control"
+                                            placeholder="Select Plan Code" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                               [magic]="mgc.PLAN_CODE_V">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label>MMYYYY</label>
+                                    <input class="form-control" type="date" [formControlName]="mgc.MMYYYY_V"
+                                        [magic]="mgc.MMYYYY_V" dateInput />
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label>OPERATION DAYS</label>
+                                    <input class="form-control" [formControlName]="mgc.V_OPERATION_DAYS_V"
+                                        [magic]="mgc.V_OPERATION_DAYS_V" mgFormat />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <magic-subform [magic]="mgc.SubTaskForm">
+                        </magic-subform>
+                    </div>
+                </div>
             </div>
-            <input
-                style="width: 70%"
-                type="date"
-                [formControlName]="mgc.MMYYYY_V"
-                [magic]="mgc.MMYYYY_V"
-                dateInput
-            />
-            <button
-                style="min-width: auto; margin: auto"
-                [magic]="mgc.MMYYYY_V"
-            >...</button>
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.V_OPERATION_DAYS_V"
-                    type='number'
-                    [magic]="mgc.V_OPERATION_DAYS_V"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_OPERATION_DAYS_V> </mgError>
-            </div>
-            <label [magic]="mgc.Edit3">
-                {{mg.getValue(mgc.Edit3)
-| magicDate : mgc.Edit3}}
-            </label>
-            <label [magic]="mgc.Edit4">
-                {{mg.getValue(mgc.Edit4)
-| magicTime : mgc.Edit4}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label10"
-                class="lable_overflow"
-            >
-                PLAN CODE
-            </label>
-            <label
-                [magic]="mgc.Label11"
-                class="lable_overflow"
-            >
-                MMYYYY
-            </label>
-            <label
-                [magic]="mgc.Label12"
-                class="lable_overflow"
-            >
-                OPERATION DAYS
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <magic-subform [magic]="mgc.SubTaskForm">
-            </magic-subform>
         </div>
     </div>
 </div>
