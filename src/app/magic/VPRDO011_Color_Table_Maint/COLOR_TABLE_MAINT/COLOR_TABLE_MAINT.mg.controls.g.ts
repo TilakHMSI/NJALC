@@ -18,6 +18,10 @@ export enum MgControlName {
         S9_START_DATE = "S9_START_DATE",
         Column6 = "Column6",
         S9_ABOLITION_DATE = "S9_ABOLITION_DATE",
+        Column12 = "Column12",
+        EnterRowEditing = "EnterRowEditing",
+        SaveRowEditing = "SaveRowEditing",
+        CancelRowEditing = "CancelRowEditing",
 }
 export enum MgCustomProperties {}
 export var
@@ -27,6 +31,7 @@ export var
         'Column4',
         'Column5',
         'Column6',
+        'Column12',
     ];
 
 export class MgFormControlsAccessor {

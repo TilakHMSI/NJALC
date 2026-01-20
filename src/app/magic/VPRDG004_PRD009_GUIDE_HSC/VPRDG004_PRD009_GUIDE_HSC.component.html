@@ -1,105 +1,45 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.VPRDG004_PRD009_GUIDE_HSC"
-    >
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
-                PGM=VPRDG004
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div class="example-container mat-elevation-z8 Table4TableContainerProps">
-                <mat-table
-                    #table
-                    [dataSource]="dataSource"
-                    class="container_border"
-                    matSort
-                    matSortDisableClear
-                    (matSortChange)="tableService.sortData($event)"
-                >
-                    <ng-container
-                        [magic]="mgc.Column5"
-                        [matColumnDef]="mgc.Column5"
-                    >
+<div novalidate [formGroup]="screenFormGroup">
+    <div  [magic]="mgc.VPRDG004_PRD009_GUIDE_HSC">
+        <div class="m-tablewrapper pl-0 pr-0">
+            <div class="example-container mat-elevation-z8 Table1TableContainerProps">
+                <mat-table #table [dataSource]="dataSource" class="table container_border" matSort matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)">
+                    <ng-container [magic]="mgc.Column5" [matColumnDef]="mgc.Column5">
                         <mat-header-cell *matHeaderCellDef>
                             COLOR CODE
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.S9_COLOR_CODE"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.S9_COLOR_CODE"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.S9_COLOR_CODE
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.S9_COLOR_CODE"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input [formControlName]="mgc.S9_COLOR_CODE" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.S9_COLOR_CODE" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.S9_COLOR_CODE [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S9_COLOR_CODE"
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.S9_COLOR_CODE, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column6"
-                        [matColumnDef]="mgc.Column6"
-                    >
+                    <ng-container [magic]="mgc.Column6" [matColumnDef]="mgc.Column6">
                         <mat-header-cell *matHeaderCellDef>
                             COLOR NAME
                         </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input
-                                            [formControlName]="mgc.S9_COLOR_NAME"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.S9_COLOR_NAME"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.S9_COLOR_NAME
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.S9_COLOR_NAME"
-                                            [rowId]="row.rowId"
-                                        >
+                                        <input [formControlName]="mgc.S9_COLOR_NAME" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.S9_COLOR_NAME" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.S9_COLOR_NAME [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S9_COLOR_NAME"
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.S9_COLOR_NAME, row.rowId)
-}}
+                                            }}
                                         </label>
                                     </div>
                                 </div>
@@ -107,35 +47,21 @@
                         </mat-cell>
                     </ng-container>
                     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-                    <mat-row
-                        *matRowDef="let row; columns: displayedColumns;"
-                        class="table_row"
-                        [ngClass]="{ 'selected': selection.isSelected(row)}"
-                        [magicRow]="row?.rowId"
-                        (click)="row? tableService.selectRow(row.rowId) : null"
-                    >
+                    <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}" [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator
-                    #paginator
-                    [pageSize]="10"
-                    [pageSizeOptions]="[5, 10, 20]"
-                    (page)="tableService.mgOnPaginateChange($event)"
-                >
+                <mat-paginator #paginator [pageSize]="10" [hidePageSize]="true" showFirstLastButtons
+                    (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
             </div>
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label2" class="lable_overflow" *ngIf="mg.getVisible(mgc.SP111_IMAGE)==='visible'">
                 Color image
             </label>
             <div *ngIf="mg.isImageExists(mgc.SP111_IMAGE)">
-                <img
-                    [magic]="mgc.SP111_IMAGE"
-                    [style.visibility]="mg.getVisible(mgc.SP111_IMAGE)"
-                    [src]="mg.getImage(mgc.SP111_IMAGE)"
-                />
+                <img [magic]="mgc.SP111_IMAGE" class="max-h-70px" *ngIf="mg.getVisible(mgc.SP111_IMAGE)==='visible'"
+                    [src]="mg.getImage(mgc.SP111_IMAGE)" />
             </div>
         </div>
     </div>

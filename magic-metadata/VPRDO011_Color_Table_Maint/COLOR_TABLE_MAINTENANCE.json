@@ -168,6 +168,23 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"btnexit",
+				"format":	"X",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	483,
+				"y":	52,
+				"width":	57,
+				"height":	25
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"Sub1",
 				"common_line_id":	"line94"
 			},

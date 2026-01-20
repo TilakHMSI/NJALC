@@ -27,18 +27,16 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/PrintScreen/PrintScreen.json
+[>] Loading JSON file .//magic-metadata/AF_TEST/AF_TEST.json
 *** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component PrintScreen
+[>] Processing JSON file for component AF_TEST
 *** Step 3: generate components. (1 components) ***
-[>] generate component PrintScreen
+[>] generate component AF_TEST
 [>] Step 4: components-list.
- Total old components: 86, added components: 1. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/PrintScreen/PrintScreen.mg.controls.g.ts (2139 bytes)
-[32mCREATE[39m src/app/magic/PrintScreen/PrintScreen.component.ts (2217 bytes)
-[32mCREATE[39m src/app/magic/PrintScreen/PrintScreen.component.html (14233 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (28335 bytes)
+[36mUPDATE[39m src/app/magic/AF_TEST/AF_TEST.mg.controls.g.ts (1422 bytes)
+[36mUPDATE[39m src/app/magic/AF_TEST/AF_TEST.component.ts (1985 bytes)
+[36mUPDATE[39m src/app/magic/AF_TEST/AF_TEST.component.html (2962 bytes)
 
 
 

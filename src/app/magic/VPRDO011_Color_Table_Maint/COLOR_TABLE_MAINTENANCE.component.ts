@@ -23,14 +23,14 @@ export class COLOR_TABLE_MAINTENANCE extends TaskBaseMagicComponent implements M
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "COLOR_TABLE_MAINTENANCE";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly formName: string = "COLOR TABLE MAINTENANCE";
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "1100px";
+    private static readonly height: string = "675px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {

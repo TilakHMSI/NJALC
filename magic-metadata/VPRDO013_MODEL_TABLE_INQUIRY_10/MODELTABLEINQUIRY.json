@@ -1,0 +1,213 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"MODELTABLEINQUIRY",
+		"window_type":	12,
+		"component_path":	"VPRDO013_MODEL_TABLE_INQUIRY_10/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO013_MODEL_TABLE_INQUIRY_10_MODELTABLEINQUIRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	570,
+		"height":	533
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	1,
+				"y":	2,
+				"width":	176,
+				"height":	49
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"SELECT",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	10,
+				"width":	31,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SELECT_V",
+				"items_list":	"MODEL CODE,BOM CODE",
+				"attribute":	"A",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	41,
+				"y":	5,
+				"width":	70,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MTO_CODE_V",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	116,
+				"y":	10,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BOM_CODE_V",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	116,
+				"y":	31,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	363,
+				"y":	5,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"PGM=VPRDO013",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	386,
+				"y":	5,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	451,
+				"y":	3,
+				"width":	55,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	507,
+				"y":	3,
+				"width":	45,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line76"
+			},
+			"coordinates":	{
+				"x":	16,
+				"y":	76,
+				"width":	536,
+				"height":	434
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

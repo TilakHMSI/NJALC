@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO011_Color_Table_Maint_COLOR_TABLE_MAINT_COLOR_TABLE_MAINT',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./COLOR_TABLE_MAINT.component.css'],
     templateUrl: './COLOR_TABLE_MAINT.component.html'
 })
 export class COLOR_TABLE_MAINT extends BaseMatTableMagicComponent {

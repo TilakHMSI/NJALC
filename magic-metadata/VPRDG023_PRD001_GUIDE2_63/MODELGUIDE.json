@@ -1,0 +1,106 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"MODELGUIDE",
+		"window_type":	12,
+		"component_path":	"VPRDG023_PRD001_GUIDE2_63/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDG023_PRD001_GUIDE2_63_MODELGUIDE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	354,
+		"height":	330
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_SELECT_V",
+				"items_list":	"ENGINE,FRAME,ALL",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	46,
+				"y":	3,
+				"width":	136,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VPRDG023",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	269,
+				"y":	0,
+				"width":	65,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"SELECT",
+				"common_line_id":	"line10"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	10,
+				"width":	35,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DISP_FLG_V",
+				"text":	"PROD.CLOSE : NON DISPLAYED",
+				"attribute":	"B",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	46,
+				"y":	31,
+				"width":	148,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line76"
+			},
+			"coordinates":	{
+				"x":	13,
+				"y":	76,
+				"width":	320,
+				"height":	237
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

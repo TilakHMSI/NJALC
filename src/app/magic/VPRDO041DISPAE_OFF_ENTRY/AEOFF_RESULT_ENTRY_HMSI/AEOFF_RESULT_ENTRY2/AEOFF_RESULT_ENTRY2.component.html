@@ -120,32 +120,17 @@
                                 | magicTime : mgc.S5_AFOFF_TIME}}</label>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-2">
-                        <div class="form-group-sm">
-                            <label class="lbl-sm">AE-OFF DATE</label>
-                            <input type="date" [formControlName]="mgc.S5_AFOFF_DATE" [magic]="mgc.S5_AFOFF_DATE"
-                                class="form-control-sm" *ngIf="mg.getVisible(mgc.S5_AFOFF_DATE)==='visible'"
-                                dateInput />
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="form-group-sm">
-                            <label class="lbl-sm">AE-OFF TIME</label>
-                            <input type="time" [formControlName]="mgc.S5_AFOFF_TIME" [magic]="mgc.S5_AFOFF_TIME"
-                                class="form-control-sm" *ngIf="mg.getVisible(mgc.S5_AFOFF_DATE)==='visible'" step=1 />
-                        </div>
-                    </div> -->
                     <div class="col-lg-2">
                         <div class="form-group-sm">
                             <label class="lbl-sm">TOTAL</label>
-                            <input class="form-control-sm" [formControlName]="mgc.V_PROGRESS1TEST" type='number'
+                            <input class="form-control-cnt" [formControlName]="mgc.V_PROGRESS1TEST" type='number'
                                 [magic]="mgc.V_PROGRESS1TEST" mgFormat />
                         </div>
                     </div>
                     <div class="col-lg-2">
                         <div class="form-group-sm">
                             <label class="lbl-sm">MODEL/C TOTAL</label>
-                            <input class="form-control-sm" [formControlName]="mgc.V_PROGRESS2TEST" type='number'
+                            <input class="form-control-cnt" [formControlName]="mgc.V_PROGRESS2TEST" type='number'
                                 [magic]="mgc.V_PROGRESS2TEST" mgFormat />
                         </div>
                     </div>

@@ -1,19 +1,286 @@
 {
-	"style":	null,
+	"style":	{
+		"line_divider":	true
+	},
 	"props":	{
-		"id":	"PLAN_CODE_V",
-		"show_zoom_button":	true,
-		"mgformat":	"mgFormat",
-		"format":	"UUUUUU",
-		"attribute":	"A"
+		"id":	"Table1",
+		"table_row_height":	78,
+		"table_title_height":	20
 	},
 	"coordinates":	{
-		"x":	78,
-		"y":	29,
-		"width":	63,
-		"height":	20
+		"x":	71,
+		"y":	0,
+		"width":	491,
+		"height":	393
 	},
 	"hint":	null,
-	"controlType":	"T",
-	"children":	null
+	"controlType":	"A",
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column2",
+				"column_title":	"MODEL COLOR",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	62
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"S9_COLOR_CODE",
+						"modifiable":	{
+							"value":	false,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"format":	"UUUUUUUUUU",
+						"attribute":	"A",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	74,
+						"y":	23,
+						"width":	50,
+						"height":	21
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column3",
+				"column_title":	"MODEL COLOR NAME",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	148
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"S9_COLOR_NAME",
+						"mgformat":	"mgFormat",
+						"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+						"attribute":	"A",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	135,
+						"y":	23,
+						"width":	144,
+						"height":	21
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column4",
+				"column_title":	"MAIN COLOR",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	66
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"S9_MAIN_COLOR",
+						"mgformat":	"mgFormat",
+						"format":	"UUUUUUUUUUUU",
+						"attribute":	"A",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	284,
+						"y":	23,
+						"width":	60,
+						"height":	21
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column5",
+				"column_title":	"START DATE",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	75
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"S9_START_DATE",
+						"formatter":	"magicDate",
+						"mgformat":	"mgFormat",
+						"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+						"attribute":	"D",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	350,
+						"y":	23,
+						"width":	67,
+						"height":	21
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column6",
+				"column_title":	"ABOLITION DATE",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	85
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"S9_ABOLITION_DATE",
+						"formatter":	"magicDate",
+						"mgformat":	"mgFormat",
+						"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+						"attribute":	"D",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	423,
+						"y":	23,
+						"width":	70,
+						"height":	21
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column12",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	51
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"EnterRowEditing",
+						"format":	"Edit",
+						"is_table_child":	true,
+						"web_style":	2,
+						"row_editing_type":	1,
+						"common_line_id":	"line24"
+					},
+					"coordinates":	{
+						"x":	511,
+						"y":	24,
+						"width":	28,
+						"height":	22
+					},
+					"hint":	null,
+					"controlType":	"B",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"SaveRowEditing",
+						"format":	"Save",
+						"is_table_child":	true,
+						"web_style":	2,
+						"row_editing_type":	3,
+						"common_line_id":	"line50"
+					},
+					"coordinates":	{
+						"x":	511,
+						"y":	50,
+						"width":	35,
+						"height":	22
+					},
+					"hint":	null,
+					"controlType":	"B",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"CancelRowEditing",
+						"format":	"Cancel",
+						"is_table_child":	true,
+						"web_style":	2,
+						"row_editing_type":	2,
+						"common_line_id":	"line76"
+					},
+					"coordinates":	{
+						"x":	511,
+						"y":	76,
+						"width":	43,
+						"height":	22
+					},
+					"hint":	null,
+					"controlType":	"B",
+					"children":	null
+				}
+			]
+		}
+	]
 }
