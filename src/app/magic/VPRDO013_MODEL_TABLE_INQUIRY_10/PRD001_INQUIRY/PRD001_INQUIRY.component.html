@@ -1,727 +1,304 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.PRD001_INQUIRY"
-    >
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label3"
-                class="lable_overflow"
-            >
-                MODEL CODE
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_MTO_CODE"
-                    [magic]="mgc.S1_MTO_CODE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_MTO_CODE> </mgError>
+<div novalidate [formGroup]="screenFormGroup">
+    <div [magic]="mgc.PRD001_INQUIRY">
+        <div class="col-lg-12 col-xxl-12">
+            <div class="form-group row">
+                <div class="col-lg-2">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">EFM</label>
+                        <select class="form-control-ed" [magic]="mgc.S1_EFM" [formControlName]="mgc.S1_EFM">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.S1_EFM);"
+                                [selected]="o.index == mg.getValue(mgc.S1_EFM)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">MODEL CODE</label>
+                        <input [formControlName]="mgc.S1_MTO_CODE" [magic]="mgc.S1_MTO_CODE" class="form-control-ed"
+                            mgFormat />
+                        <mgError [magic]="mgc.S1_MTO_CODE"> </mgError>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">MODEL NAME</label>
+                        <input class="form-control-ed" [formControlName]="mgc.S1_MTO_NAME" [magic]="mgc.S1_MTO_NAME"
+                            mgFormat />
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">BOM CODE</label>
+                        <input class="form-control-ed" [formControlName]="mgc.S1_PARTS_MTO_CODE"
+                            [magic]="mgc.S1_PARTS_MTO_CODE" mgFormat />
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">24G</label>
+                        <select class="form-control-ed" [magic]="mgc.S1_24G" [formControlName]="mgc.S1_24G">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.S1_24G);"
+                                [selected]="o.index == mg.getValue(mgc.S1_24G)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <label
-                [magic]="mgc.Label5"
-                class="lable_overflow"
-            >
-                EFM
-            </label>
-            <div>
-                <select
-                    [magic]="mgc.S1_EFM"
-                    [formControlName]="mgc.S1_EFM"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.S1_EFM);"
-                        [selected]="o.index == mg.getValue(mgc.S1_EFM)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
+            <hr class="alert-primary hr">
+            <div class="form-group row">
+
+                <div class="col-lg-3">
+                    <label class="text-primary"> UNITED ENGINE</label>
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-3">
+                                <label class="lbl-sm">EFM</label>
+                                <input class="form-control" [formControlName]="mgc.S1_ENGEFM" [magic]="mgc.S1_ENGEFM"
+                                    class="form-control-ed">
+                            </div>
+                            <div class="form-group col-lg-8">
+                                <label class="lbl-sm">MODEL CODE</label>
+                                <input [formControlName]="mgc.S1_ENGMTO_CODE" [magic]="mgc.S1_ENGMTO_CODE"
+                                    class="form-control-ed" mgFormat />
+                                <mgError [magic]="mgc.S1_ENGMTO_CODE"> </mgError>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">BASIC MODEL CODE</label>
+                        <input class="form-control-ed" [formControlName]="mgc.S1_BASIC_MTO_CODE"
+                            [magic]="mgc.S1_BASIC_MTO_CODE" mgFormat />
+                    </div>
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">COOL</label>
+                                <select class="form-control-ed" [magic]="mgc.S1_COOL" [formControlName]="mgc.S1_COOL">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.S1_COOL);"
+                                        [selected]="o.index == mg.getValue(mgc.S1_COOL)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">CYCLE</label>
+                                <select class="form-control-ed" [magic]="mgc.S1_CYCLE" [formControlName]="mgc.S1_CYCLE">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.S1_CYCLE);"
+                                        [selected]="o.index == mg.getValue(mgc.S1_CYCLE)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">OEM ENG</label>
+                                <select class="form-control-ed" [magic]="mgc.S1_OEM_CATEGORY"
+                                    [formControlName]="mgc.S1_OEM_CATEGORY">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.S1_OEM_CATEGORY);"
+                                        [selected]="o.index == mg.getValue(mgc.S1_OEM_CATEGORY)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">SHORT BK ENG</label>
+                                <select class="form-control-ed" [magic]="mgc.S1_SHORT_BLOCK"
+                                    [formControlName]="mgc.S1_SHORT_BLOCK">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.S1_SHORT_BLOCK);"
+                                        [selected]="o.index == mg.getValue(mgc.S1_SHORT_BLOCK)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">DUMMY MODEL TYPE</label>
+                        <select class="form-control-ed" [magic]="mgc.S1_DUMMY_MODEL_TYPE"
+                            [formControlName]="mgc.S1_DUMMY_MODEL_TYPE">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.S1_DUMMY_MODEL_TYPE);"
+                                [selected]="o.index == mg.getValue(mgc.S1_DUMMY_MODEL_TYPE)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="lbl-sm">PROD.LINE MAIN</label>
+                                <input class="form-control" [formControlName]="mgc.S1_PRODLINEMAIN"
+                                    [magic]="mgc.S1_PRODLINEMAIN" class="form-control-ed">
+                            </div>
+                            <div class="form-group col-lg-3">
+                                <label class="lbl-sm">SUB</label>
+                                <input [formControlName]="mgc.S1_PRODLINESUB" [magic]="mgc.S1_PRODLINESUB"
+                                    class="form-control-ed" mgFormat />
+                                <mgError [magic]="mgc.S1_PRODLINESUB"> </mgError>
+                            </div>
+                            <div class="form-group col-lg-3">
+                                <label class="lbl-sm">USE</label>
+                                <input [formControlName]="mgc.S1_USE" [magic]="mgc.S1_USE" class="form-control-ed"
+                                    mgFormat />
+                                <mgError [magic]="mgc.S1_USE"> </mgError>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">CATEGORY</label>
+                        <input class="form-control-ed" [formControlName]="mgc.S1_CATEGORY" [magic]="mgc.S1_CATEGORY"
+                            mgFormat />
+                    </div>
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">FAMILY</label>
+                        <input class="form-control-ed" [formControlName]="mgc.S1_FAMILY" [magic]="mgc.S1_FAMILY"
+                            mgFormat />
+                    </div>
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">PACKING LOT</label>
+                        <input class="form-control-ed" [formControlName]="mgc.S1_PACKING_LOT"
+                            [magic]="mgc.S1_PACKING_LOT" mgFormat />
+                    </div>
+
+                    <div class="form-group-sm">
+
+                    </div>
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-7">
+                                <label class="lbl-sm">KD LOT SIZE</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_KD_PACKING_LOT"
+                                    [magic]="mgc.S1_KD_PACKING_LOT" mgFormat />
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label class="lbl-sm">SRS</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_SRS" [magic]="mgc.S1_SRS"
+                                    mgFormat />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">KD MOTHER FACTORY</label>
+                        <input class="form-control-ed" [formControlName]="mgc.S1_KD_MOTHER_FACTORY"
+                            [magic]="mgc.S1_KD_MOTHER_FACTORY" mgFormat />
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">TRIAL PARTS TBL CRE.DATE</label>
+                        <input class="form-control-ed" type="date" [formControlName]="mgc.S1_TRIAL_PARTS_TBL_CREDATE"
+                            [magic]="mgc.S1_TRIAL_PARTS_TBL_CREDATE" dateInput />
+                    </div>
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">MASS PROD. ORDER DATE</label>
+                        <input class="form-control-ed" type="date" [formControlName]="mgc.S1_MASS_PRODORDER_DATE"
+                            [magic]="mgc.S1_MASS_PRODORDER_DATE" dateInput />
+                    </div>
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">MASS PROD. DATE</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.S1_MASS_PRODDATE"
+                                    [magic]="mgc.S1_MASS_PRODDATE" dateInput />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">PROD. CLOSE DATE</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.S1_PRODCLOSE_DATE"
+                                    [magic]="mgc.S1_PRODCLOSE_DATE" dateInput />
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="text-primary"> DESIGNATION INFORMATION </label>
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">NOISE</label>
+                        <input class="form-control-ed" [formControlName]="mgc.S1_DESIGNNOISE"
+                            [magic]="mgc.S1_DESIGNNOISE" mgFormat />
+                    </div>
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">DESIGN NO</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_DESIGNNO"
+                                    [magic]="mgc.S1_DESIGNNO" mgFormat />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">VARIANT NO</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_VARIANT_NO"
+                                    [magic]="mgc.S1_VARIANT_NO" mgFormat />
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">COST CONTROL</label>
+                        <select class="form-control-ed" [magic]="mgc.S1_COST_CONTROL"
+                            [formControlName]="mgc.S1_COST_CONTROL">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.S1_COST_CONTROL);"
+                                [selected]="o.index == mg.getValue(mgc.S1_COST_CONTROL)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group-sm">
+                        <input class="form-control-ed" [formControlName]="mgc.S1_ENGFRMTYPE" [magic]="mgc.S1_ENGFRMTYPE"
+                            mgFormat />
+                    </div>
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="lbl-sm">TACT</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_TACT" [magic]="mgc.S1_TACT"
+                                    mgFormat />
+                            </div>
+                            <div class="form-group col-lg-7">
+                                <label class="lbl-sm">PORT PROD LEAD TIME</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_PORTPRODLEAD_TIME"
+                                    [magic]="mgc.S1_PORTPRODLEAD_TIME" mgFormat />
+                            </div>
+                        </div>
+                    </div>
+                    <label class="text-info"> AT/M</label>
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-3">
+                                <label class="lbl-sm">EFM</label>
+                                <input class="form-control" [formControlName]="mgc.S1_ATM_EFM" [magic]="mgc.S1_ATM_EFM"
+                                    class="form-control-ed">
+                            </div>
+                            <div class="form-group col-lg-8">
+                                <label class="lbl-sm">MODEL CODE</label>
+                                <input [formControlName]="mgc.S1_ATM_MTO_CODE" [magic]="mgc.S1_ATM_MTO_CODE"
+                                    class="form-control-ed" mgFormat />
+                                <mgError [magic]="mgc.S1_ATM_MTO_CODE"> </mgError>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">METHOD / VARIANT</label>
+                        <input class="form-control-ed" [formControlName]="mgc.S1_ATM_METHODVARIANT"
+                            [magic]="mgc.S1_ATM_METHODVARIANT" mgFormat />
+                    </div>
+                </div>
             </div>
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
-                MODEL NAME
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_MTO_NAME"
-                    [magic]="mgc.S1_MTO_NAME"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_MTO_NAME> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label7"
-                class="lable_overflow"
-            >
-                BOM CODE
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_PARTS_MTO_CODE"
-                    [magic]="mgc.S1_PARTS_MTO_CODE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_PARTS_MTO_CODE> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label9"
-                class="lable_overflow"
-            >
-                24H
-            </label>
-            <div>
-                <select
-                    [magic]="mgc.S1_24G"
-                    [formControlName]="mgc.S1_24G"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.S1_24G);"
-                        [selected]="o.index == mg.getValue(mgc.S1_24G)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label10"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label21"
-                class="lable_overflow"
-            >
-                PROD.1ST ENG/FRM NO.
-            </label>
-            <label
-                [magic]="mgc.Label17"
-                class="lable_overflow"
-            >
-                ENG/FRM TYPE
-            </label>
-            <label
-                [magic]="mgc.Label31"
-                class="lable_overflow"
-            >
-                VIN TYPE
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_ENGFRMTYPE"
-                    [magic]="mgc.S1_ENGFRMTYPE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_ENGFRMTYPE> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_PROD1ST_CHASSIS_NO"
-                    currencyMask
-                    [options]="mg.getNumericPicture(mg.getPicture(mgc.S1_PROD1ST_CHASSIS_NO))"
-                    [magic]="mgc.S1_PROD1ST_CHASSIS_NO"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_PROD1ST_CHASSIS_NO> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_VIN_TYPE"
-                    [magic]="mgc.S1_VIN_TYPE"
-                    mgFormat
-                    rangevalidator
-                />
-                <mgError [magic]=mgc.S1_VIN_TYPE> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label11"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label27"
-                class="lable_overflow"
-            >
-                CYCLE
-            </label>
-            <label
-                [magic]="mgc.Label20"
-                class="lable_overflow"
-            >
-                COOL
-            </label>
-            <label
-                [magic]="mgc.Label14"
-                class="lable_overflow"
-            >
-                CHARACTERISTIC
-            </label>
-            <label
-                [magic]="mgc.Label34"
-                class="lable_overflow"
-            >
-                USE
-            </label>
-            <div>
-                <select
-                    [magic]="mgc.S1_COOL"
-                    [formControlName]="mgc.S1_COOL"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.S1_COOL);"
-                        [selected]="o.index == mg.getValue(mgc.S1_COOL)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
-            </div>
-            <div>
-                <select
-                    [magic]="mgc.S1_CYCLE"
-                    [formControlName]="mgc.S1_CYCLE"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.S1_CYCLE);"
-                        [selected]="o.index == mg.getValue(mgc.S1_CYCLE)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_USE"
-                    [magic]="mgc.S1_USE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_USE> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.PRD090USE_NOTICE_090_NOTICE"
-                    [magic]="mgc.PRD090USE_NOTICE_090_NOTICE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.PRD090USE_NOTICE_090_NOTICE> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label12"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label15"
-                class="lable_overflow"
-            >
-                PROD.LINE
-            </label>
-            <label
-                [magic]="mgc.Label23"
-                class="lable_overflow"
-            >
-                MAIN
-            </label>
-            <label
-                [magic]="mgc.Label28"
-                class="lable_overflow"
-            >
-                SUB
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_PRODLINEMAIN"
-                    [magic]="mgc.S1_PRODLINEMAIN"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_PRODLINEMAIN> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_PRODLINESUB"
-                    [magic]="mgc.S1_PRODLINESUB"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_PRODLINESUB> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label13"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label19"
-                class="lable_overflow"
-            >
-                TRIAL PARTS TBL CRE.DATE
-            </label>
-            <label
-                [magic]="mgc.Label26"
-                class="lable_overflow"
-            >
-                MASS PROD.ORDER DATE
-            </label>
-            <label
-                [magic]="mgc.Label38"
-                class="lable_overflow"
-            >
-                PROD.CLOSE DATE
-            </label>
-            <label
-                [magic]="mgc.Label33"
-                class="lable_overflow"
-            >
-                MASS PROD.DATE
-            </label>
-            <input
-                type="date"
-                [formControlName]="mgc.S1_TRIAL_PARTS_TBL_CREDATE"
-                [magic]="mgc.S1_TRIAL_PARTS_TBL_CREDATE"
-                dateInput
-            />
-            <input
-                type="date"
-                [formControlName]="mgc.S1_MASS_PRODORDER_DATE"
-                [magic]="mgc.S1_MASS_PRODORDER_DATE"
-                dateInput
-            />
-            <input
-                type="date"
-                [formControlName]="mgc.S1_MASS_PRODDATE"
-                [magic]="mgc.S1_MASS_PRODDATE"
-                dateInput
-            />
-            <input
-                type="date"
-                [formControlName]="mgc.S1_PRODCLOSE_DATE"
-                [magic]="mgc.S1_PRODCLOSE_DATE"
-                dateInput
-            />
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label43"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label42"
-                class="lable_overflow"
-            >
-                CC
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_CC"
-                    type='number'
-                    [magic]="mgc.S1_CC"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_CC> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label40"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label44"
-                class="lable_overflow"
-            >
-                OEM ENG
-            </label>
-            <div>
-                <select
-                    [magic]="mgc.S1_OEM_CATEGORY"
-                    [formControlName]="mgc.S1_OEM_CATEGORY"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.S1_OEM_CATEGORY);"
-                        [selected]="o.index == mg.getValue(mgc.S1_OEM_CATEGORY)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
-            </div>
-            <label
-                [magic]="mgc.Label41"
-                class="lable_overflow"
-            >
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label45"
-                class="lable_overflow"
-            >
-                DUMMY MODEL TYPE
-            </label>
-            <div>
-                <select
-                    [magic]="mgc.S1_DUMMY_MODEL_TYPE"
-                    [formControlName]="mgc.S1_DUMMY_MODEL_TYPE"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.S1_DUMMY_MODEL_TYPE);"
-                        [selected]="o.index == mg.getValue(mgc.S1_DUMMY_MODEL_TYPE)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label48"
-                class="lable_overflow"
-            >
-                BASIC MODEL CODE
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_BASIC_MTO_CODE"
-                    [magic]="mgc.S1_BASIC_MTO_CODE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_BASIC_MTO_CODE> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label49"
-                class="lable_overflow"
-            >
-                CATEGORY
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_CATEGORY"
-                    [magic]="mgc.S1_CATEGORY"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_CATEGORY> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label50"
-                class="lable_overflow"
-            >
-                SHORT BK ENG
-            </label>
-            <div>
-                <select
-                    [magic]="mgc.S1_SHORT_BLOCK"
-                    [formControlName]="mgc.S1_SHORT_BLOCK"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.S1_SHORT_BLOCK);"
-                        [selected]="o.index == mg.getValue(mgc.S1_SHORT_BLOCK)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label52"
-                class="lable_overflow"
-            >
-                PACKING LOT
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_PACKING_LOT"
-                    type='number'
-                    [magic]="mgc.S1_PACKING_LOT"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_PACKING_LOT> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label51"
-                class="lable_overflow"
-            >
-                COST CONTROL
-            </label>
-            <div>
-                <select
-                    [magic]="mgc.S1_COST_CONTROL"
-                    [formControlName]="mgc.S1_COST_CONTROL"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.S1_COST_CONTROL);"
-                        [selected]="o.index == mg.getValue(mgc.S1_COST_CONTROL)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label54"
-                class="lable_overflow"
-            >
-                FAMILY
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_FAMILY"
-                    [magic]="mgc.S1_FAMILY"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_FAMILY> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label56"
-                class="lable_overflow"
-            >
-                KD LOT SIZE
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_KD_PACKING_LOT"
-                    type='number'
-                    [magic]="mgc.S1_KD_PACKING_LOT"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_KD_PACKING_LOT> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label58"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label62"
-                class="lable_overflow"
-            >
-                ENGINE
-            </label>
-            <label
-                [magic]="mgc.Label67"
-                class="lable_overflow"
-            >
-                MODEL CODE
-            </label>
-            <label
-                [magic]="mgc.Label81"
-                class="lable_overflow"
-            >
-                EFM
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_ENGEFM"
-                    [magic]="mgc.S1_ENGEFM"
-                    mgFormat
-                    rangevalidator
-                />
-                <mgError [magic]=mgc.S1_ENGEFM> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_ENGMTO_CODE"
-                    [magic]="mgc.S1_ENGMTO_CODE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_ENGMTO_CODE> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label59"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label63"
-                class="lable_overflow"
-            >
-                MISSION
-            </label>
-            <label
-                [magic]="mgc.Label83"
-                class="lable_overflow"
-            >
-                METHOD/VARIANT
-            </label>
-            <label
-                [magic]="mgc.Label68"
-                class="lable_overflow"
-            >
-                MODEL CODE
-            </label>
-            <label
-                [magic]="mgc.Label75"
-                class="lable_overflow"
-            >
-                EFM
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_ATM_MTO_CODE"
-                    [magic]="mgc.S1_ATM_MTO_CODE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_ATM_MTO_CODE> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_ATM_EFM"
-                    [magic]="mgc.S1_ATM_EFM"
-                    mgFormat
-                    rangevalidator
-                />
-                <mgError [magic]=mgc.S1_ATM_EFM> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_ATM_METHODVARIANT"
-                    [magic]="mgc.S1_ATM_METHODVARIANT"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_ATM_METHODVARIANT> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label60"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label77"
-                class="lable_overflow"
-            >
-                PORT-PROD.LEAD TIME
-            </label>
-            <label
-                [magic]="mgc.Label70"
-                class="lable_overflow"
-            >
-                KD MOTHER FACTORY
-            </label>
-            <label
-                [magic]="mgc.Label64"
-                class="lable_overflow"
-            >
-                TACT
-            </label>
-            <label
-                [magic]="mgc.Label85"
-                class="lable_overflow"
-            >
-                SRS
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_TACT"
-                    type='number'
-                    [magic]="mgc.S1_TACT"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_TACT> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_KD_MOTHER_FACTORY"
-                    [magic]="mgc.S1_KD_MOTHER_FACTORY"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_KD_MOTHER_FACTORY> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_PORTPRODLEAD_TIME"
-                    type='number'
-                    [magic]="mgc.S1_PORTPRODLEAD_TIME"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_PORTPRODLEAD_TIME> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_SRS"
-                    [magic]="mgc.S1_SRS"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_SRS> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label61"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label66"
-                class="lable_overflow"
-            >
-                DESIGNATION INFORMATION
-            </label>
-            <label
-                [magic]="mgc.Label87"
-                class="lable_overflow"
-            >
-                VARIANT NO.
-            </label>
-            <label
-                [magic]="mgc.Label79"
-                class="lable_overflow"
-            >
-                DESIGN.NO.
-            </label>
-            <label
-                [magic]="mgc.Label72"
-                class="lable_overflow"
-            >
-                NOISE
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_DESIGNNOISE"
-                    [magic]="mgc.S1_DESIGNNOISE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_DESIGNNOISE> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_DESIGNNO"
-                    [magic]="mgc.S1_DESIGNNO"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_DESIGNNO> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S1_VARIANT_NO"
-                    type='number'
-                    [magic]="mgc.S1_VARIANT_NO"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S1_VARIANT_NO> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <magic-subform [magic]="mgc.Sub2">
-            </magic-subform>
         </div>
     </div>
+    <magic-subform [magic]="mgc.Sub2">
+    </magic-subform>
 </div>

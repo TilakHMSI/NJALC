@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDO020_MTOC_TABLE_INQUIRY_14_MTOCTABLEINQUIRY',
     providers: [...magicProviders],
     standalone: false,
+    styleUrl: './MTOCTABLEINQUIRY.component.css',
     templateUrl: './MTOCTABLEINQUIRY.component.html'
 })
 export class MTOCTABLEINQUIRY extends TaskBaseMagicComponent implements MagicModalInterface {
@@ -23,7 +24,7 @@ export class MTOCTABLEINQUIRY extends TaskBaseMagicComponent implements MagicMod
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "MTOC TABLE INQUIRY_14";
+    private static readonly formName: string = "MTOC TABLE INQUIRY";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;

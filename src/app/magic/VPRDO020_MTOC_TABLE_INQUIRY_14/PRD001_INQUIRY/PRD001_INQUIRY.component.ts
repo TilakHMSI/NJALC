@@ -11,6 +11,7 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
     selector: 'mga-VPRDO020_MTOC_TABLE_INQUIRY_14_PRD001_INQUIRY_PRD001_INQUIRY',
     providers: [...magicProviders],
     standalone: false,
+    styleUrl: './PRD001_INQUIRY.component.css',
     templateUrl: './PRD001_INQUIRY.component.html'
 })
 export class PRD001_INQUIRY extends TaskBaseMagicComponent {

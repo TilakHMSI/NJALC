@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO020_MTOC_TABLE_INQUIRY_14_PRD001_INQUIRY_PRD026_INQUIRY_PRD026_INQUIRY',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrl: './PRD026_INQUIRY.component.css',
     templateUrl: './PRD026_INQUIRY.component.html'
 })
 export class PRD026_INQUIRY extends BaseMatTableMagicComponent {

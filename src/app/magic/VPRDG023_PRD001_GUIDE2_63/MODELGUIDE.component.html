@@ -1,51 +1,28 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.MODELGUIDE"
-    >
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.MODELGUIDE">
         <div style="display: flex; flex-direction: row">
-            <div
-                [magic]="mgc.V_SELECT_V"
-                (change)="task.mgOnRadioSelectionChanged(mgc.V_SELECT_V)"
-            >
+            <div [magic]="mgc.V_SELECT_V" (change)="task.mgOnRadioSelectionChanged(mgc.V_SELECT_V)">
                 <div *ngFor="let o of mg.getItemListValues(mgc.V_SELECT_V);">
                     <label>
-                        <input
-                            type="radio"
-                            [formControlName]="mgc.V_SELECT_V"
-                            [value]="o.index"
-                        />
+                        <input type="radio" [formControlName]="mgc.V_SELECT_V" [value]="o.index" />
                         {{o.displayValue}}
                     </label>
                 </div>
             </div>
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label1" class="lable_overflow">
                 PGM=VPRDG023
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label2" class="lable_overflow">
                 SELECT
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
             <div>
                 <div>
-                    <input
-                        type="checkbox"
-                        [formControlName]="mgc.V_DISP_FLG_V"
-                        [magic]="mgc.V_DISP_FLG_V"
-                        id="V_DISP_FLG_V"
-                    />
+                    <input type="checkbox" [formControlName]="mgc.V_DISP_FLG_V" [magic]="mgc.V_DISP_FLG_V"
+                        id="V_DISP_FLG_V" />
                     <label for="V_DISP_FLG_V">
                         PROD.CLOSE : NON DISPLAYED
                     </label>
@@ -55,6 +32,46 @@
         <div style="display: flex; flex-direction: row">
             <magic-subform [magic]="mgc.Sub1">
             </magic-subform>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.MODELGUIDE">
+        <div class="card-body">
+            <div class="form-group row" style="margin: 0rem;">
+                <div class="col-lg-12">
+                    <div class="form-group row">
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <div [magic]="mgc.V_SELECT_V" *ngIf="mg.getVisible(mgc.V_SELECT_V)==='visible'"
+                                    (change)="task.mgOnRadioSelectionChanged(mgc.V_SELECT_V)">
+                                    <div *ngFor="let o of mg.getItemListValues(mgc.V_SELECT_V);">
+                                        <label>
+                                            <input type="radio" [formControlName]="mgc.V_SELECT_V" [value]="o.index" />
+                                            {{o.displayValue}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="checkbox" [formControlName]="mgc.V_DISP_FLG_V" [magic]="mgc.V_DISP_FLG_V"
+                                    id="V_DISP_FLG_V" />
+                                <label for="V_DISP_FLG_V">
+                                     PROD.CLOSE : NON DISPLAYED
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <magic-subform [magic]="mgc.Sub1">
+                </magic-subform>
+            </div>
         </div>
     </div>
 </div>

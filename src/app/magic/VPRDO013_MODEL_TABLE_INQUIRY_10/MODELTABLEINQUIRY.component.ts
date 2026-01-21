@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDO013_MODEL_TABLE_INQUIRY_10_MODELTABLEINQUIRY',
     providers: [...magicProviders],
     standalone: false,
+    styleUrl: './MODELTABLEINQUIRY.component.css',
     templateUrl: './MODELTABLEINQUIRY.component.html'
 })
 export class MODELTABLEINQUIRY extends TaskBaseMagicComponent implements MagicModalInterface {
@@ -23,7 +24,7 @@ export class MODELTABLEINQUIRY extends TaskBaseMagicComponent implements MagicMo
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "MODEL TABLE INQUIRY 10";
+    private static readonly formName: string = "MODEL TABLE INQUIRY";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;

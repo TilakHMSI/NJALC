@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDG023_PRD001_GUIDE2_63_VPRDG023PRD001_GUIDE2_MODELGUIDE',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrl: './MODELGUIDE.component.css',
     templateUrl: './MODELGUIDE.component.html'
 })
 export class MODELGUIDE extends BaseMatTableMagicComponent {
