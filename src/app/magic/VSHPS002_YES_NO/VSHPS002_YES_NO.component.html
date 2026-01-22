@@ -1,0 +1,70 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.VSHPS002_YES_NO"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_DATE_FLAG_P"
+                    [magic]="mgc.V_DATE_FLAG_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_DATE_FLAG_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_SOURCE_ID"
+                    [magic]="mgc.V_SOURCE_ID"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_SOURCE_ID> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicDate : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                Are you sure ?
+            </label>
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5)
+| magicTime : mgc.Edit5}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.SUMMY"
+                    [magic]="mgc.SUMMY"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SUMMY> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.EXEC_BUTTON">
+                E:Exec
+            </button>
+            <button [magic]="mgc.CANCEL_BUTTON">
+                C:Cancel
+            </button>
+        </div>
+    </div>
+</div>

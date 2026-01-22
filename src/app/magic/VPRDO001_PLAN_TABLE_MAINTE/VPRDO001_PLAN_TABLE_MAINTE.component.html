@@ -1,0 +1,130 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.VPRDO001_PLAN_TABLE_MAINTE">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <label [magic]="mgc.Edit3" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit3)
+                            | magicDate : mgc.Edit3}}
+                        </label>
+                        <label [magic]="mgc.Edit4" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit4)
+                            | magicTime : mgc.Edit4}}
+                        </label>
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">X</button>
+                    </div>
+                </div>
+            </div>
+            <div class="m-tablewrapper pl-0 pr-0">
+                <div class="example-container mat-elevation-z8 Table1TableContainerProps">
+                    <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
+                        (matSortChange)="tableService.sortData($event)">
+                        <ng-container [magic]="mgc.Column6" [matColumnDef]="mgc.Column6">
+                            <mat-header-cell *matHeaderCellDef>
+                                P/S CODE
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                                <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                    <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                        <div>
+                                            <input [formControlName]="mgc.P15_PS_CODE" *ngIf="mg.isRowInRowEditing(row)"
+                                                [magic]="mgc.P15_PS_CODE" [rowId]="row.rowId" mgFormat />
+                                            <mgError [magic]=mgc.P15_PS_CODE [rowId]="row.rowId"> </mgError>
+                                            <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.P15_PS_CODE"
+                                                [rowId]="row.rowId">
+                                                {{mg.getValue(mgc.P15_PS_CODE, row.rowId)
+                                                }}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-cell>
+                        </ng-container>
+                        <ng-container [magic]="mgc.Column7" [matColumnDef]="mgc.Column7">
+                            <mat-header-cell *matHeaderCellDef>
+                                APPL MODEL/TYPE
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                                <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                    <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                        <div>
+                                            <div class="input-group" *ngIf="mg.isRowInRowEditing(row)">
+                                                <input type="text" [formControlName]="mgc.P15_APPL_MODELTYPE"
+                                                    *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.P15_APPL_MODELTYPE"
+                                                    [rowId]="row.rowId" class="form-control-sm"
+                                                    placeholder="SELECT MODEL TYPE" mgFormat />
+                                                <div class="input-group-append">
+                                                    <button type="button" class="btn btn-loanlist btn-icon-sm"
+                                                        [magic]="mgc.P15_APPL_MODELTYPE" [rowId]="row.rowId">
+                                                        <span class="svg-icon svg-icon-lg"><svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                                height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                <g stroke="none" stroke-width="1" fill="none"
+                                                                    fill-rule="evenodd">
+                                                                    <rect x="0" y="0" width="24" height="24" />
+                                                                    <path
+                                                                        d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                        fill="#000000" fill-rule="nonzero"
+                                                                        opacity="0.3" />
+                                                                    <path
+                                                                        d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                        fill="#000000" opacity="0.3" />
+                                                                </g>
+                                                            </svg></span></button>
+                                                </div>
+                                            </div>
+
+                                            <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.P15_APPL_MODELTYPE"
+                                                [rowId]="row.rowId">
+                                                {{mg.getValue(mgc.P15_APPL_MODELTYPE, row.rowId)
+                                                }}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-cell>
+                        </ng-container>
+                        <ng-container [magic]="mgc.Column12" [matColumnDef]="mgc.Column12">
+                            <mat-header-cell *matHeaderCellDef>
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                                <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                    <button class="btn-tbl" *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.EnterRowEditing" [rowId]="row.rowId">
+                                        <i class="icon-xl far fa-edit text-info" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                    <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.SaveRowEditing" [rowId]="row.rowId">
+                                        <i class="icon-xl far fa-save text-success" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                    <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.CancelRowEditing" [rowId]="row.rowId">
+                                        <i class="icon-xl fas fa-eraser text-danger" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </mat-cell>
+                        </ng-container>
+                        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                        <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
+                            [ngClass]="{ 'selected': selection.isSelected(row)}" [magicRow]="row?.rowId"
+                            (click)="row? tableService.selectRow(row.rowId) : null">
+                        </mat-row>
+                    </mat-table>
+                    <mat-paginator #paginator [pageSize]="10" [hidePageSize]="true" showFirstLastButtons
+                        (page)="tableService.mgOnPaginateChange($event)">
+                    </mat-paginator>
+                </div>
+
+            </div>
+        </div>
+    </div>

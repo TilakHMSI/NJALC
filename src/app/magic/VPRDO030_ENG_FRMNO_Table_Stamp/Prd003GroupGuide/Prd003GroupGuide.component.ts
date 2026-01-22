@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./MODELGUIDE.mg.controls.g";
-import { MgDisplayedColumns } from "./MODELGUIDE.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./Prd003GroupGuide.mg.controls.g";
+import { MgDisplayedColumns } from "./Prd003GroupGuide.mg.controls.g";
 
 
 import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
@@ -11,12 +11,12 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDG001_PRD001_GUIDE2_MODELGUIDE',
+    selector: 'mga-VPRDO030_ENG_FRMNO_Table_Stamp_Prd003GroupGuide_Prd003GroupGuide',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './MODELGUIDE.component.html'
+    templateUrl: './Prd003GroupGuide.component.html'
 })
-export class MODELGUIDE extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class Prd003GroupGuide extends BaseMatTableMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -25,45 +25,45 @@ export class MODELGUIDE extends BaseMatTableMagicComponent implements MagicModal
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "PGM=VPRDG001 - MODEL GUIDE";
+    private static readonly formName: string = "Prd003GroupGuide";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "600px";
-    private static readonly height: string = "450px";
+    private static readonly width: string = "300px";
+    private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
-    private static readonly isResizable: boolean = false;
+    private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return MODELGUIDE.x;
+        return Prd003GroupGuide.x;
     }
     Y() {
-        return MODELGUIDE.y;
+        return Prd003GroupGuide.y;
     }
     Width(): string {
-        return MODELGUIDE.width;
+        return Prd003GroupGuide.width;
     }
     Height(): string {
-        return MODELGUIDE.height;
+        return Prd003GroupGuide.height;
     }
     IsCenteredToWindow() {
-        return MODELGUIDE.isCenteredToWindow;
+        return Prd003GroupGuide.isCenteredToWindow;
     }
     FormName() {
-        return MODELGUIDE.formName;
+        return Prd003GroupGuide.formName;
     }
     ShowTitleBar() {
-        return MODELGUIDE.showTitleBar;
+        return Prd003GroupGuide.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return MODELGUIDE.shouldCloseOnBackgroundClick;
+        return Prd003GroupGuide.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return MODELGUIDE.isResizable;
+        return Prd003GroupGuide.isResizable;
     }
     IsMovable() {
-        return MODELGUIDE.isMovable;
+        return Prd003GroupGuide.isMovable;
     }
     override displayedColumns = this.mgdp;
 }

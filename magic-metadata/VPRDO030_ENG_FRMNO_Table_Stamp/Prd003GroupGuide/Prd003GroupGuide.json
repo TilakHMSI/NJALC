@@ -1,0 +1,78 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Prd003GroupGuide",
+		"window_type":	12,
+		"component_path":	"VPRDO030_ENG_FRMNO_Table_Stamp/Prd003GroupGuide/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO030_ENG_FRMNO_Table_Stamp_Prd003GroupGuide_Prd003GroupGuide"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	103,
+		"height":	179
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	18,
+				"table_title_height":	15,
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	21,
+				"y":	5,
+				"width":	55,
+				"height":	169
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"GROUP",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	36
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_GR",
+								"mgformat":	"mgFormat",
+								"format":	"UUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	24,
+								"y":	23,
+								"width":	38,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}
