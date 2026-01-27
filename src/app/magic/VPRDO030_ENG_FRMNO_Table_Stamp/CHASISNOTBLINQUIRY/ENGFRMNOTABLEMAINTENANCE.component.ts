@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO030_ENG_FRMNO_Table_Stamp_CHASISNOTBLINQUIRY_ENGFRMNOTABLEMAINTENANCE',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrl: './ENGFRMNOTABLEMAINTENANCE.component.css',
     templateUrl: './ENGFRMNOTABLEMAINTENANCE.component.html'
 })
 export class ENGFRMNOTABLEMAINTENANCE extends BaseMatTableMagicComponent {

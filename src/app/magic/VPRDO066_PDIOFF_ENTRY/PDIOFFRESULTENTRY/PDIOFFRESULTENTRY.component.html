@@ -170,7 +170,7 @@
                                         <input [style.visibility]="mg.getVisible(mgc.S5_MTO_NAME, row.rowId)" [formControlName]="mgc.S5_MTO_NAME" *ngIf="mg.isRowInRowEditing(row)"
                                             [magic]="mgc.S5_MTO_NAME" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.S5_MTO_NAME [rowId]="row.rowId"> </mgError>
-                                        <label class="lbl_table" [style.visibility]="mg.getVisible(mgc.S5_MTO_NAME, row.rowId)" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_MTO_NAME"
+                                        <label class="lbl_table-model" [style.visibility]="mg.getVisible(mgc.S5_MTO_NAME, row.rowId)" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_MTO_NAME"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.S5_MTO_NAME, row.rowId)
                                             }}

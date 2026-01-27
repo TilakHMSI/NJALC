@@ -99335,8 +99335,19 @@ input:checked~.tab-content {
   font-weight: 500 ! important;
 }
 
+.lbl_table-model {
+  color: #2e49ed ! important;
+  font-size: 1.2rem ! important;
+  font-weight: 500 ! important;
+}
+
 .LastScanned {
   font-weight: 700 ! important;
   font-size: 3rem! important;
   color: black;
+}
+
+.brown-right-border {
+  border-right: 1px solid brown !important;
+  position: relative;
 }

@@ -158,7 +158,7 @@
                                         <input [formControlName]="mgc.S5_MTO_NAME" *ngIf="mg.isRowInRowEditing(row)"
                                             [magic]="mgc.S5_MTO_NAME" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.S5_MTO_NAME [rowId]="row.rowId"> </mgError>
-                                        <label class="lbl_table" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_MTO_NAME"
+                                        <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_MTO_NAME"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.S5_MTO_NAME, row.rowId)
                                             }}
