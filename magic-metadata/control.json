@@ -1,19 +1,23 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"ENGFRMTYPE_V",
-		"show_zoom_button":	true,
-		"mgformat":	"mgFormat",
-		"format":	"UUUUUUUUUUU",
-		"attribute":	"A"
+		"id":	"EnterRowEditing",
+		"visible":	{
+			"value":	null,
+			"has_exp":	true
+		},
+		"format":	"Edit",
+		"is_table_child":	true,
+		"web_style":	2,
+		"row_editing_type":	1
 	},
 	"coordinates":	{
-		"x":	101,
-		"y":	29,
-		"width":	56,
-		"height":	15
+		"x":	520,
+		"y":	40,
+		"width":	28,
+		"height":	22
 	},
 	"hint":	null,
-	"controlType":	"T",
+	"controlType":	"B",
 	"children":	null
 }

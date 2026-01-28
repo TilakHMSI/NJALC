@@ -27,54 +27,30 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VSHPS002_YES_NO/VSHPS002_YES_NO.json
-[>] Loading JSON file .//magic-metadata/VPRDO068_ENG_FRMNO_Table/ENGFRMNOTABLEINQUIRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO068_ENG_FRMNO_Table/CHASISNOTABLEINQUIRY/CHASISNOTABLEINQUIRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO068_ENG_FRMNO_Table/CHASISNOTABLEINQUIRY2/CHASISNOTABLEINQUIRY2.json
-[>] Loading JSON file .//magic-metadata/VPRDO030_ENG_FRMNO_Table_Stamp/ENGFRMNOTABLEINQUIRY.json
-[>] Loading JSON file .//magic-metadata/VPRDO030_ENG_FRMNO_Table_Stamp/CHASISNOTBLINQUIRY/ENGFRMNOTABLEMAINTENANCE.json
-[>] Loading JSON file .//magic-metadata/VPRDO030_ENG_FRMNO_Table_Stamp/Prd003GroupGuide/Prd003GroupGuide.json
-*** Step 2: Processing JSON files -  (7 components) ***
-[>] Processing JSON file for component VSHPS002_YES_NO
-[>] Processing JSON file for component ENGFRMNOTABLEINQUIRY
-[>] Processing JSON file for component CHASISNOTABLEINQUIRY
-[>] Processing JSON file for component CHASISNOTABLEINQUIRY2
-[>] Processing JSON file for component ENGFRMNOTABLEINQUIRY
+[>] Loading JSON file .//magic-metadata/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.json
+[>] Loading JSON file .//magic-metadata/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.json
+[>] Loading JSON file .//magic-metadata/GROUP_TABLE_SELECTION/GROUP_TABLE_SELECTION.json
+*** Step 2: Processing JSON files -  (3 components) ***
+[>] Processing JSON file for component GROUPTABLEMAINTENANCE
 [>] Processing JSON file for component ENGFRMNOTABLEMAINTENANCE
-[>] Processing JSON file for component Prd003GroupGuide
-*** Step 3: generate components. (7 components) ***
-[>] generate component VSHPS002_YES_NO
-[>] generate component ENGFRMNOTABLEINQUIRY
-[>] generate component CHASISNOTABLEINQUIRY
-[>] generate component CHASISNOTABLEINQUIRY2
-[>] generate component ENGFRMNOTABLEINQUIRY
+[>] Processing JSON file for component GROUP_TABLE_SELECTION
+*** Step 3: generate components. (3 components) ***
+[>] generate component GROUPTABLEMAINTENANCE
 [>] generate component ENGFRMNOTABLEMAINTENANCE
-[>] generate component Prd003GroupGuide
+[>] generate component GROUP_TABLE_SELECTION
 [>] Step 4: components-list.
- Total old components: 118, added components: 7. 
+ Total old components: 125, added components: 3. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VSHPS002_YES_NO/VSHPS002_YES_NO.mg.controls.g.ts (1416 bytes)
-[32mCREATE[39m src/app/magic/VSHPS002_YES_NO/VSHPS002_YES_NO.component.ts (2113 bytes)
-[32mCREATE[39m src/app/magic/VSHPS002_YES_NO/VSHPS002_YES_NO.component.html (2097 bytes)
-[32mCREATE[39m src/app/magic/VPRDO068_ENG_FRMNO_Table/ENGFRMNOTABLEINQUIRY.mg.controls.g.ts (1473 bytes)
-[32mCREATE[39m src/app/magic/VPRDO068_ENG_FRMNO_Table/ENGFRMNOTABLEINQUIRY.component.ts (2197 bytes)
-[32mCREATE[39m src/app/magic/VPRDO068_ENG_FRMNO_Table/ENGFRMNOTABLEINQUIRY.component.html (2496 bytes)
-[32mCREATE[39m src/app/magic/VPRDO068_ENG_FRMNO_Table/CHASISNOTABLEINQUIRY/CHASISNOTABLEINQUIRY.mg.controls.g.ts (2855 bytes)
-[32mCREATE[39m src/app/magic/VPRDO068_ENG_FRMNO_Table/CHASISNOTABLEINQUIRY/CHASISNOTABLEINQUIRY.component.ts (989 bytes)
-[32mCREATE[39m src/app/magic/VPRDO068_ENG_FRMNO_Table/CHASISNOTABLEINQUIRY/CHASISNOTABLEINQUIRY.component.html (22086 bytes)
-[32mCREATE[39m src/app/magic/VPRDO068_ENG_FRMNO_Table/CHASISNOTABLEINQUIRY2/CHASISNOTABLEINQUIRY2.mg.controls.g.ts (2857 bytes)
-[32mCREATE[39m src/app/magic/VPRDO068_ENG_FRMNO_Table/CHASISNOTABLEINQUIRY2/CHASISNOTABLEINQUIRY2.component.ts (995 bytes)
-[32mCREATE[39m src/app/magic/VPRDO068_ENG_FRMNO_Table/CHASISNOTABLEINQUIRY2/CHASISNOTABLEINQUIRY2.component.html (22087 bytes)
-[32mCREATE[39m src/app/magic/VPRDO030_ENG_FRMNO_Table_Stamp/ENGFRMNOTABLEINQUIRY.mg.controls.g.ts (1669 bytes)
-[32mCREATE[39m src/app/magic/VPRDO030_ENG_FRMNO_Table_Stamp/ENGFRMNOTABLEINQUIRY.component.ts (2203 bytes)
-[32mCREATE[39m src/app/magic/VPRDO030_ENG_FRMNO_Table_Stamp/ENGFRMNOTABLEINQUIRY.component.html (3250 bytes)
-[32mCREATE[39m src/app/magic/VPRDO030_ENG_FRMNO_Table_Stamp/CHASISNOTBLINQUIRY/ENGFRMNOTABLEMAINTENANCE.mg.controls.g.ts (3270 bytes)
-[32mCREATE[39m src/app/magic/VPRDO030_ENG_FRMNO_Table_Stamp/CHASISNOTBLINQUIRY/ENGFRMNOTABLEMAINTENANCE.component.ts (1013 bytes)
-[32mCREATE[39m src/app/magic/VPRDO030_ENG_FRMNO_Table_Stamp/CHASISNOTBLINQUIRY/ENGFRMNOTABLEMAINTENANCE.component.html (24411 bytes)
-[32mCREATE[39m src/app/magic/VPRDO030_ENG_FRMNO_Table_Stamp/Prd003GroupGuide/Prd003GroupGuide.mg.controls.g.ts (817 bytes)
-[32mCREATE[39m src/app/magic/VPRDO030_ENG_FRMNO_Table_Stamp/Prd003GroupGuide/Prd003GroupGuide.component.ts (2333 bytes)
-[32mCREATE[39m src/app/magic/VPRDO030_ENG_FRMNO_Table_Stamp/Prd003GroupGuide/Prd003GroupGuide.component.html (3502 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (41769 bytes)
+[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.mg.controls.g.ts (1378 bytes)
+[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.component.ts (2214 bytes)
+[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.component.html (2550 bytes)
+[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.mg.controls.g.ts (2755 bytes)
+[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.component.ts (1014 bytes)
+[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.component.html (21626 bytes)
+[32mCREATE[39m src/app/magic/GROUP_TABLE_SELECTION/GROUP_TABLE_SELECTION.mg.controls.g.ts (1069 bytes)
+[32mCREATE[39m src/app/magic/GROUP_TABLE_SELECTION/GROUP_TABLE_SELECTION.component.ts (2387 bytes)
+[32mCREATE[39m src/app/magic/GROUP_TABLE_SELECTION/GROUP_TABLE_SELECTION.component.html (5650 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (42844 bytes)
 
 
 

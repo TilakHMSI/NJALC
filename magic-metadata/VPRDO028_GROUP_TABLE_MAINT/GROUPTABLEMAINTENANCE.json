@@ -1,0 +1,186 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"GROUPTABLEMAINTENANCE",
+		"window_type":	12,
+		"component_path":	"VPRDO028_GROUP_TABLE_MAINT/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO028_GROUP_TABLE_MAINT_GROUPTABLEMAINTENANCE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"GROUP",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	241,
+				"y":	0,
+				"width":	55,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	471,
+				"y":	3,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PGM=VPRDO028",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	494,
+				"y":	3,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MODE_V",
+				"items_list":	"ADDITION,UPDATE,INQUIRY",
+				"attribute":	"A",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	12,
+				"width":	166,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	453,
+				"y":	20,
+				"width":	55,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	509,
+				"y":	20,
+				"width":	45,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"GROUP_V",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUU",
+				"attribute":	"A",
+				"common_line_id":	"line29"
+			},
+			"coordinates":	{
+				"x":	241,
+				"y":	29,
+				"width":	142,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"X",
+				"common_line_id":	"line47"
+			},
+			"coordinates":	{
+				"x":	505,
+				"y":	47,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line72"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	72,
+				"width":	538,
+				"height":	392
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}
