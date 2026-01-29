@@ -1,0 +1,67 @@
+import { Component } from '@angular/core';
+
+import { FormGroup } from "@angular/forms";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./MESSAGE_PDI.mg.controls.g";
+
+
+import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
+
+
+import { MagicModalInterface } from "@magic-xpa/angular";
+
+@Component({
+    selector: 'mga-CONFIRMATION_MESSAGE_PDI_MESSAGE_PDI',
+    providers: [...magicProviders],
+    standalone: false,
+    styleUrls: ['./MESSAGE_PDI.component.css'],
+    templateUrl: './MESSAGE_PDI.component.html'
+})
+export class MESSAGE_PDI extends TaskBaseMagicComponent implements MagicModalInterface {
+
+    mgc = MgControlName;
+    mgcp = MgCustomProperties;
+    mgfc!: MgFormControlsAccessor;
+    override createFormControlsAccessor(formGroup: FormGroup) {
+        this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
+    }
+    private static readonly formName: string = "MESSAGE_PDI";
+    private static readonly showTitleBar: boolean = false;
+    private static readonly x: number = 0;
+    private static readonly y: number = 0;
+    private static readonly width: string = "580px";
+    private static readonly height: string = "262px";
+    private static readonly isCenteredToWindow: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
+    private static readonly isResizable: boolean = false;
+    private static readonly isMovable: boolean = true;
+    X() {
+        return MESSAGE_PDI.x;
+    }
+    Y() {
+        return MESSAGE_PDI.y;
+    }
+    Width(): string {
+        return MESSAGE_PDI.width;
+    }
+    Height(): string {
+        return MESSAGE_PDI.height;
+    }
+    IsCenteredToWindow() {
+        return MESSAGE_PDI.isCenteredToWindow;
+    }
+    FormName() {
+        return MESSAGE_PDI.formName;
+    }
+    ShowTitleBar() {
+        return MESSAGE_PDI.showTitleBar;
+    }
+    ShouldCloseOnBackgroundClick() {
+        return MESSAGE_PDI.shouldCloseOnBackgroundClick;
+    }
+    IsResizable() {
+        return MESSAGE_PDI.isResizable;
+    }
+    IsMovable() {
+        return MESSAGE_PDI.isMovable;
+    }
+}

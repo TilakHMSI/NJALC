@@ -16,7 +16,7 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"CONFIRMATION_MESSAGE_AF/MESSAGE"
+				"CONFIRMATION_MESSAGE_PDI/MESSAGE_PDI"
 			]
 		}
 	],
