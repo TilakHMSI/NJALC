@@ -12,11 +12,11 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div class="input-group" *ngIf="mg.isRowInRowEditing(row)">
-                                        <input type="text" [formControlName]="mgc.PR27_GROUP" class="form-control-sm"
+                                        <input type="text" [formControlName]="mgc.PR27_GROUP" class="form-control-edsm"
                                             placeholder="SELECT GROUP" [magic]="mgc.PR27_GROUP" [rowId]="row.rowId"
                                             mgFormat />
                                         <div class="input-group-append">
-                                            <button type="button" class="btn btn-loanlist btn-icon-sm"
+                                            <button type="button" class="btn btn-loanlist btn-icon-edsm"
                                                 [magic]="mgc.PR27_GROUP" [rowId]="row.rowId">
                                                 <span class="svg-icon svg-icon-lg"><svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <input [formControlName]="mgc.PR27_GROUP_NAME" *ngIf="mg.isRowInRowEditing(row)"
-                                        class="form-control-tbl" [magic]="mgc.PR27_GROUP_NAME" [rowId]="row.rowId"
+                                        class="form-control-edsm" [magic]="mgc.PR27_GROUP_NAME" [rowId]="row.rowId"
                                         mgFormat />
                                     <mgError [magic]=mgc.PR27_GROUP_NAME [rowId]="row.rowId"> </mgError>
                                     <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PR27_GROUP_NAME"
@@ -73,7 +73,7 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div *ngIf="mg.isRowInRowEditing(row)">
-                                        <select [magic]="mgc.PR27_DIGIT" [rowId]="row.rowId" class="form-control-tbl"
+                                        <select [magic]="mgc.PR27_DIGIT" [rowId]="row.rowId" class="form-control-edsm"
                                             [formControlName]="mgc.PR27_DIGIT">
                                             <option *ngFor="let o of mg.getItemListValues(mgc.PR27_DIGIT, row.rowId);"
                                                 [selected]="o.index == mg.getValue(mgc.PR27_DIGIT, row.rowId)"
@@ -98,7 +98,7 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input [formControlName]="mgc.PR27_PROD1ST_CHASSIS_NO" class="form-control-tbl"
+                                    <input [formControlName]="mgc.PR27_PROD1ST_CHASSIS_NO" class="form-control-edsm"
                                         *ngIf="mg.isRowInRowEditing(row)" currencyMask
                                         [options]="mg.getNumericPicture(mg.getPicture(mgc.PR27_PROD1ST_CHASSIS_NO))"
                                         [magic]="mgc.PR27_PROD1ST_CHASSIS_NO" [rowId]="row.rowId" mgFormat />

@@ -1,54 +1,3 @@
-<!-- <div novalidate [formGroup]="screenFormGroup">
-    <div style="display: flex; flex-direction: column" [magic]="mgc.GROUPTABLEMAINTENANCE">
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Label7" class="lable_overflow">
-                GROUP
-            </label>
-            <div>
-                <input [formControlName]="mgc.V_LOCATE_P" [magic]="mgc.V_LOCATE_P" mgFormat />
-                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
-            </div>
-            <label [magic]="mgc.Label2" class="lable_overflow">
-                PGM=VPRDO028
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div [magic]="mgc.MODE_V" (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)">
-                <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
-                    <label>
-                        <input type="radio" [formControlName]="mgc.MODE_V" [value]="o.index" />
-                        {{o.displayValue}}
-                    </label>
-                </div>
-            </div>
-            <label [magic]="mgc.Edit3">
-                {{mg.getValue(mgc.Edit3)
-                | magicDate : mgc.Edit3}}
-            </label>
-            <label [magic]="mgc.Edit4">
-                {{mg.getValue(mgc.Edit4)
-                | magicTime : mgc.Edit4}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div>
-                <input style="width: 70%" [formControlName]="mgc.GROUP_V" [magic]="mgc.GROUP_V" mgFormat />
-                <mgError [magic]=mgc.GROUP_V> </mgError>
-                <button style="min-width: auto; margin: auto" [magic]="mgc.GROUP_V">...</button>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.btnexit">
-                X
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <magic-subform [magic]="mgc.Sub1">
-            </magic-subform>
-        </div>
-    </div>
-</div> -->
-
 <div novalidate [formGroup]="screenFormGroup">
     <div class="container-fluid-ov" [magic]="mgc.GROUPTABLEMAINTENANCE">
         <div class="card">
@@ -71,7 +20,7 @@
                                 <div [magic]="mgc.MODE_V" *ngIf="mg.getVisible(mgc.MODE_V)==='visible'"
                                     (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)">
                                     <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
-                                        <label>
+                                        <label class="lbl-sm">
                                             <input type="radio" [formControlName]="mgc.MODE_V" [value]="o.index" />
                                             {{o.displayValue}}
                                         </label>
@@ -81,7 +30,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="form-group">
-                                <label>GROUP</label>
+                                <label class="lbl-sm">GROUP</label>
                                 <div class="input-group">
                                     <input type="text" [formControlName]="mgc.GROUP_V" [magic]="mgc.GROUP_V"
                                         class="form-control" placeholder="SELECT COLOR CODE" mgFormat />

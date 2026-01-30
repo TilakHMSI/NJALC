@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                    <h3><label class="lable_overflow mb-0">
+                    <h3><label class="lbl-sm" class="lable_overflow mb-0">
                             {{mg.getText(mgc.Label2)}}
                         </label></h3>
                     <button type="button" [magic]="mgc.btnexit"
@@ -20,7 +20,7 @@
                                 <div [magic]="mgc.MODE_V" *ngIf="mg.getVisible(mgc.MODE_V)==='visible'"
                                     (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)">
                                     <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
-                                        <label>
+                                        <label class="lbl-sm">
                                             <input type="radio" [formControlName]="mgc.MODE_V" [value]="o.index" />
                                             {{o.displayValue}}
                                         </label>
@@ -30,7 +30,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="form-group">
-                                <label>COLOR CODE</label>
+                                <label class="lbl-sm">COLOR CODE</label>
                                 <div class="input-group">
                                     <input type="text" [formControlName]="mgc.COLOR_CODE_V" [magic]="mgc.COLOR_CODE_V"
                                         class="form-control" placeholder="SELECT COLOR CODE" mgFormat />

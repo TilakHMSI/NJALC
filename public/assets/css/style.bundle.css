@@ -2986,6 +2986,27 @@ pre code {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
+.form-control-edsm {
+  display: block;
+  width: 100%;
+  height: calc(0.8em + 0.8rem + 1px);
+  /* padding: 0.5rem 0.7rem; */
+  font-size: 1rem ! important;
+  font-weight: 400;
+  line-height: 1;
+  color: #0d2ee4;
+  background-color: yellow;
+  background-clip: padding-box;
+  border: 1px solid #d5d7de;
+  border-radius: 0.42rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
 .form-control {
   display: block;
   width: 100%;
@@ -3031,9 +3052,9 @@ pre code {
 .table-control-ent {
   display: block;
   width: 100%;
-  height: calc(1.2rem + 1.2rem + 2px);
+  height: calc(1rem + 1rem + 1px);
   padding: 0.1rem 0.2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1;
   color: #131314;
@@ -4985,6 +5006,7 @@ input[type="button"].btn-block {
 
 .input-group>.form-control,
 .input-group>.form-control-sm,
+.input-group>.form-control-edsm,
 .input-group>.form-control-plaintext,
 .input-group>.custom-select,
 .input-group>.custom-file {
@@ -4999,6 +5021,7 @@ input[type="button"].btn-block {
 
 .input-group>.form-control+.form-control,
 .input-group>.form-control-sm+.form-control-sm,
+.input-group>.form-control-edsm+.form-control-edsm,
 .input-group>.form-control+.custom-select,
 .input-group>.form-control+.custom-file,
 .input-group>.form-control-plaintext+.form-control,
@@ -59212,6 +59235,21 @@ button {
   padding: 0;
   height: calc(1em + 1.2rem + 2px);
   width: calc(1.5em + 1.3rem + 2px);
+}
+
+.btn.btn-icon-edsm {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+  height: calc(0.8em + 0.8rem + 1px);
+  width: calc(1.2em + 1rem + 2px);
 }
 
 .btn.btn-icon.btn-xs {
