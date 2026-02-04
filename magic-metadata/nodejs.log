@@ -27,30 +27,30 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.json
-[>] Loading JSON file .//magic-metadata/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.json
-[>] Loading JSON file .//magic-metadata/GROUP_TABLE_SELECTION/GROUP_TABLE_SELECTION.json
+[>] Loading JSON file .//magic-metadata/EV_MODEL_MASTER/EV_MODEL_MASTER.json
+[>] Loading JSON file .//magic-metadata/EV_MODEL_MASTER/Details/Details.json
+[>] Loading JSON file .//magic-metadata/EV_MODEL_MASTER/Details/MODEL_PICKLIST/MODEL_PICKLIST.json
 *** Step 2: Processing JSON files -  (3 components) ***
-[>] Processing JSON file for component GROUPTABLEMAINTENANCE
-[>] Processing JSON file for component ENGFRMNOTABLEMAINTENANCE
-[>] Processing JSON file for component GROUP_TABLE_SELECTION
+[>] Processing JSON file for component EV_MODEL_MASTER
+[>] Processing JSON file for component Details
+[>] Processing JSON file for component MODEL_PICKLIST
 *** Step 3: generate components. (3 components) ***
-[>] generate component GROUPTABLEMAINTENANCE
-[>] generate component ENGFRMNOTABLEMAINTENANCE
-[>] generate component GROUP_TABLE_SELECTION
+[>] generate component EV_MODEL_MASTER
+[>] generate component Details
+[>] generate component MODEL_PICKLIST
 [>] Step 4: components-list.
- Total old components: 125, added components: 3. 
+ Total old components: 137, added components: 3. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.mg.controls.g.ts (1378 bytes)
-[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.component.ts (2214 bytes)
-[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.component.html (2550 bytes)
-[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.mg.controls.g.ts (2755 bytes)
-[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.component.ts (1014 bytes)
-[32mCREATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.component.html (21626 bytes)
-[32mCREATE[39m src/app/magic/GROUP_TABLE_SELECTION/GROUP_TABLE_SELECTION.mg.controls.g.ts (1069 bytes)
-[32mCREATE[39m src/app/magic/GROUP_TABLE_SELECTION/GROUP_TABLE_SELECTION.component.ts (2387 bytes)
-[32mCREATE[39m src/app/magic/GROUP_TABLE_SELECTION/GROUP_TABLE_SELECTION.component.html (5650 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (42844 bytes)
+[32mCREATE[39m src/app/magic/EV_MODEL_MASTER/EV_MODEL_MASTER.mg.controls.g.ts (915 bytes)
+[32mCREATE[39m src/app/magic/EV_MODEL_MASTER/EV_MODEL_MASTER.component.ts (2113 bytes)
+[32mCREATE[39m src/app/magic/EV_MODEL_MASTER/EV_MODEL_MASTER.component.html (1394 bytes)
+[32mCREATE[39m src/app/magic/EV_MODEL_MASTER/Details/Details.mg.controls.g.ts (1820 bytes)
+[32mCREATE[39m src/app/magic/EV_MODEL_MASTER/Details/Details.component.ts (902 bytes)
+[32mCREATE[39m src/app/magic/EV_MODEL_MASTER/Details/Details.component.html (12856 bytes)
+[32mCREATE[39m src/app/magic/EV_MODEL_MASTER/Details/MODEL_PICKLIST/MODEL_PICKLIST.mg.controls.g.ts (872 bytes)
+[32mCREATE[39m src/app/magic/EV_MODEL_MASTER/Details/MODEL_PICKLIST/MODEL_PICKLIST.component.ts (2292 bytes)
+[32mCREATE[39m src/app/magic/EV_MODEL_MASTER/Details/MODEL_PICKLIST/MODEL_PICKLIST.component.html (3822 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (46761 bytes)
 
 
 

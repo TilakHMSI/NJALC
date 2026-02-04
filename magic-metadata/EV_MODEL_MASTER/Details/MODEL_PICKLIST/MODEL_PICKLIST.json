@@ -1,0 +1,94 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"MODEL_PICKLIST",
+		"window_type":	12,
+		"component_path":	"EV_MODEL_MASTER/Details/MODEL_PICKLIST/",
+		"module_name":	"",
+		"component_uniquename":	"EV_MODEL_MASTER_Details_MODEL_PICKLIST_MODEL_PICKLIST"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	128,
+		"height":	361
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	21,
+				"table_title_height":	20,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	13,
+				"width":	111,
+				"height":	296
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"S1_MTO CODE",
+						"sortable":	true,
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	90
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S1_MTO_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line37"
+							},
+							"coordinates":	{
+								"x":	15,
+								"y":	37,
+								"width":	81,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Select",
+				"attribute":	"A",
+				"common_line_id":	"line325"
+			},
+			"coordinates":	{
+				"x":	20,
+				"y":	325,
+				"width":	80,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

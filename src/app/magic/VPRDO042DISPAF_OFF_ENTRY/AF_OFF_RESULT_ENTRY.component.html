@@ -19,7 +19,7 @@
                             | magicTime : mgc.Edit2}}
                         </label>
                         <button type="button" [magic]="mgc.btnexit"
-                            class="btn btn-danger btn-sm font-weight-bold ml-2">X</button>
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
                     </div>
                 </div>
             </div>
@@ -102,9 +102,14 @@
                             <div class="col-lg-2" *ngIf="mg.getVisible(mgc.TYRE_LOT_V)==='visible'">
                                 <div class="form-group">
                                     <label>TIRE LOT</label>
-                                    <input class="form-control-ent" [formControlName]="mgc.TYRE_LOT_V"
-                                        [magic]="mgc.TYRE_LOT_V" mgFormat />
+                                    <select class="form-control-ent" [magic]="mgc.TYRE_LOT_V" [formControlName]="mgc.TYRE_LOT_V">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.TYRE_LOT_V);"
+                                        [selected]="o.index == mg.getValue(mgc.TYRE_LOT_V)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
                                     <mgError [magic]=mgc.TYRE_LOT_V> </mgError>
+
                                 </div>
                             </div>
                             <div class="col-lg-4">

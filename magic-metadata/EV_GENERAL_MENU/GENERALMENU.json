@@ -1,0 +1,321 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"GENERALMENU",
+		"window_type":	12,
+		"component_path":	"EV_GENERAL_MENU/",
+		"module_name":	"",
+		"component_uniquename":	"EV_GENERAL_MENU_GENERALMENU"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	533
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	{
+					"value":	"PGM=VMNUO001",
+					"has_exp":	true
+				},
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	443,
+				"y":	3,
+				"width":	111,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"LAST UPDATED DATE:29/03/2011\r\n\r\n",
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	95,
+				"y":	28,
+				"width":	78,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	473,
+				"y":	33,
+				"width":	70,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"format":	"XXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	496,
+				"y":	44,
+				"width":	20,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	59,
+				"width":	393,
+				"height":	413
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONEV_ACTIVE_MODEL",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	80,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONPUOFF_ENTRY_0001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	114,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONPCUOFF_ENTRY_0001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	151,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONGPSOFF_ENTRY_0001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	192,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONIVIOFF_ENTRY",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	232,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONSCUOFF_ENTRY_0001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	270,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONAFOFF_ENTRY_0001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	307,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONPDIOFFENTRY_0001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	346,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONBATTERYOFFENTRY_0001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	380,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONCHARGEROFFENTRY_0001",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	414,
+				"width":	250,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

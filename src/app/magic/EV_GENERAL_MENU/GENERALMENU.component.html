@@ -1,0 +1,85 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.GENERALMENU">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+
+                    <div class="d-flex align-items-center">
+                        <!-- <label [magic]="mgc.Edit3" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit3)
+                            | magicDate : mgc.Edit3}}
+                        </label>
+                        <label [magic]="mgc.Edit4" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit4)
+                            | magicTime : mgc.Edit4}}
+                        </label> -->
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONEV_ACTIVE_MODEL)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONEV_ACTIVE_MODEL">
+                                {{mg.getValue(mgc.BUTTONEV_ACTIVE_MODEL)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONPUOFF_ENTRY_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONPUOFF_ENTRY_0001">
+                                {{mg.getValue(mgc.BUTTONPUOFF_ENTRY_0001)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONPCUOFF_ENTRY_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONPCUOFF_ENTRY_0001" >
+                                {{mg.getValue(mgc.BUTTONPCUOFF_ENTRY_0001)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONGPSOFF_ENTRY_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONGPSOFF_ENTRY_0001">
+                                {{mg.getValue(mgc.BUTTONGPSOFF_ENTRY_0001)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONIVIOFF_ENTRY)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONIVIOFF_ENTRY" >
+                                {{mg.getValue(mgc.BUTTONIVIOFF_ENTRY)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONSCUOFF_ENTRY_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONSCUOFF_ENTRY_0001">
+                                {{mg.getValue(mgc.BUTTONSCUOFF_ENTRY_0001)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONBATTERYOFFENTRY_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONBATTERYOFFENTRY_0001">
+                                {{mg.getValue(mgc.BUTTONBATTERYOFFENTRY_0001)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONCHARGEROFFENTRY_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONCHARGEROFFENTRY_0001">
+                                {{mg.getValue(mgc.BUTTONCHARGEROFFENTRY_0001)}}
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

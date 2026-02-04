@@ -1,0 +1,110 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"EV_MODEL_MASTER",
+		"window_type":	12,
+		"component_path":	"EV_MODEL_MASTER/",
+		"module_name":	"",
+		"component_uniquename":	"EV_MODEL_MASTER_EV_MODEL_MASTER"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	906,
+		"height":	555
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit1",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	283,
+				"y":	2,
+				"width":	324,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	{
+					"value":	"Text",
+					"has_exp":	true
+				},
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	644,
+				"y":	4,
+				"width":	114,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MODE_V",
+				"items_list":	"ADDITION,UPDATE,INQUIRY",
+				"attribute":	"A",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	21,
+				"y":	12,
+				"width":	243,
+				"height":	75
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	796,
+				"y":	25,
+				"width":	79,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line100"
+			},
+			"coordinates":	{
+				"x":	21,
+				"y":	100,
+				"width":	854,
+				"height":	357
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}
