@@ -1,0 +1,58 @@
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.MESSAGE">
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label1" class="lable_overflow">
+            </label>
+            <label [magic]="mgc.Label2" class="lable_overflow">
+                Message
+            </label>
+            <label [magic]="mgc.Label12" class="lable_overflow">
+                {{mg.getText(mgc.Label12)}}
+            </label>
+            <label [magic]="mgc.Label7" class="lable_overflow">
+            </label>
+            <label [magic]="mgc.Label4" [style.visibility]="mg.getVisible(mgc.Label4)" class="lable_overflow">
+                Cancelled successfully!!!
+            </label>
+            <div>
+                <input [formControlName]="mgc.Edit10" [magic]="mgc.Edit10" mgFormat />
+                <mgError [magic]=mgc.Edit10> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.V_VFrame" [magic]="mgc.V_VFrame" mgFormat />
+                <mgError [magic]=mgc.V_VFrame> </mgError>
+            </div>
+            <label [magic]="mgc.Label5" [style.visibility]="mg.getVisible(mgc.Label5)" class="lable_overflow">
+                Scanned successfully!!!
+            </label>
+        </div>
+    </div>
+</div> -->
+
+<div style="background-color: #00ff00" novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex justify-content-center align-items-center" [magic]="mgc.MESSAGE">
+        <div class="message-box text-center p-3">
+            <!-- Top title -->
+            <div class="message-title mb-2">Message</div>
+
+            <!-- Main code -->
+            <div class="message-code text-primary mb-3">{{mg.getValue(mgc.Edit10) }}</div>
+
+            <!-- Engine row -->
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <span class="engine-label me-2">{{mg.getText(mgc.Label12)}}</span>
+                <span class="engine-no text-primary">{{mg.getValue(mgc.V_VFrame) }}</span>
+            </div>
+
+            <!-- Status line -->
+            <div class="status-box mx-auto py-2 px-3">
+                <label class="lbl_Status" [magic]="mgc.Label4" *ngIf="mg.getVisible(mgc.Label4)==='visible'" class="lable_overflow">
+                    Cancelled successfully!!!
+                </label>
+                <label class="lbl_Status" [magic]="mgc.Label5" *ngIf="mg.getVisible(mgc.Label5)==='visible'" class="lable_overflow">
+                    Scanned successfully!!!
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

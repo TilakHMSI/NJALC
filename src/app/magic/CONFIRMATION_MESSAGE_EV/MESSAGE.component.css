@@ -1,0 +1,56 @@
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.message-wrapper {
+    height: 100vh;
+}
+
+.message-box {
+    background-color: #00ff00;
+    /* bright green */
+    border: 3px solid #008000;
+    max-width: 700px;
+}
+
+.message-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: red;
+}
+
+.message-code {
+    font-size: 2.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* background-color: #1a17d4; */
+}
+
+.engine-label {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a17d4;
+}
+
+.engine-no {
+    font-size: 2.75rem;
+    font-weight: 600;
+    letter-spacing: 6px;
+    /* background-color: #1a17d4; */
+}
+
+.status-box {
+    background-color: #00ff00;
+    border: 2px solid #008000;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.lbl_Status {
+    color: #1a17d4;
+}

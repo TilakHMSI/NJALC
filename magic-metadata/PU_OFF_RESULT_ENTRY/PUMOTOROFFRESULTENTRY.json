@@ -1,0 +1,326 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PUMOTOROFFRESULTENTRY",
+		"window_type":	12,
+		"component_path":	"PU_OFF_RESULT_ENTRY/",
+		"module_name":	"",
+		"component_uniquename":	"PU_OFF_RESULT_ENTRY_PUMOTOROFFRESULTENTRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	564,
+		"height":	513
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	473,
+				"y":	0,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	{
+					"value":	"PGM=VPRDO041",
+					"has_exp":	true
+				},
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	495,
+				"y":	0,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	455,
+				"y":	13,
+				"width":	55,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	511,
+				"y":	13,
+				"width":	45,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line34"
+			},
+			"coordinates":	{
+				"x":	473,
+				"y":	34,
+				"width":	79,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line57"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	57,
+				"width":	546,
+				"height":	320
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	387,
+				"width":	541,
+				"height":	72
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit6",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	387,
+				"width":	79,
+				"height":	72
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MODE_DSP",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"items_list":	{
+					"value":	"ADDITION,CANCEL,INQUIRY",
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	16,
+				"y":	388,
+				"width":	66,
+				"height":	68
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"ENGINE/MOTOR NO.",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	93,
+				"y":	392,
+				"width":	131,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ENGINE_NO_DSP",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	140,
+				"y":	408,
+				"width":	169,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"MISSION NO.",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	315,
+				"y":	406,
+				"width":	59,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MISSION_DSP",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	399,
+				"y":	406,
+				"width":	135,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"LastScanned",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line467"
+			},
+			"coordinates":	{
+				"x":	139,
+				"y":	467,
+				"width":	84,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"LastScannedEngine",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line467"
+			},
+			"coordinates":	{
+				"x":	235,
+				"y":	467,
+				"width":	84,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}

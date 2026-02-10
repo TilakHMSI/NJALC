@@ -1,0 +1,66 @@
+import {
+    FormControl,
+    FormGroup
+} from "@angular/forms";
+import {
+    MagicServices
+} from "@magic-xpa/angular";
+export enum MgControlName {
+    AEOFFRESULTENTRY2 = "AEOFFRESULTENTRY2",
+        Label1 = "Label1",
+        Label14 = "Label14",
+        Label2 = "Label2",
+        Label3 = "Label3",
+        Label4 = "Label4",
+        Label5 = "Label5",
+        Label6 = "Label6",
+        V_PROGRESS1 = "V_PROGRESS1",
+        S5_ENGFRMTYPE = "S5_ENGFRMTYPE",
+        S5_CHASSIS_NO = "S5_CHASSIS_NO",
+        S5_MTO_CODE = "S5_MTO_CODE",
+        S5_PRODLINE = "S5_PRODLINE",
+        S5_AFOFF_DATE = "S5_AFOFF_DATE",
+        S5_AFOFF_TIME = "S5_AFOFF_TIME",
+        Label18 = "Label18",
+        V_PROGRESS2 = "V_PROGRESS2",
+}
+export enum MgCustomProperties {}
+export class MgFormControlsAccessor {
+    constructor(private fg: FormGroup, private magicServices: MagicServices) {}
+
+    get V_PROGRESS1(): FormControl {
+        return this.fg.controls[MgControlName.V_PROGRESS1] as FormControl;
+    }
+
+    get S5_ENGFRMTYPE(): FormControl {
+        return this.fg.controls[MgControlName.S5_ENGFRMTYPE] as FormControl;
+    }
+
+    get S5_CHASSIS_NO(): FormControl {
+        return this.fg.controls[MgControlName.S5_CHASSIS_NO] as FormControl;
+    }
+
+    get S5_MTO_CODE(): FormControl {
+        return this.fg.controls[MgControlName.S5_MTO_CODE] as FormControl;
+    }
+
+    get S5_PRODLINE(): FormControl {
+        return this.fg.controls[MgControlName.S5_PRODLINE] as FormControl;
+    }
+
+    get S5_AFOFF_DATE(): FormControl {
+        return this.fg.controls[MgControlName.S5_AFOFF_DATE] as FormControl;
+    }
+
+    get S5_AFOFF_TIME(): FormControl {
+        return this.fg.controls[MgControlName.S5_AFOFF_TIME] as FormControl;
+    }
+
+    get V_PROGRESS2(): FormControl {
+        return this.fg.controls[MgControlName.V_PROGRESS2] as FormControl;
+    }
+
+    getTableChildFormControl(name: MgControlName): FormControl {
+        return this.magicServices.mgAccessorService.getFormGroupByRow(this.magicServices.tableService.getSelectedRow()).controls[name] as FormControl;
+    }
+}

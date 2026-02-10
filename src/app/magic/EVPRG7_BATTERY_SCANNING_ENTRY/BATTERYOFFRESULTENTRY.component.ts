@@ -1,0 +1,66 @@
+import { Component } from '@angular/core';
+
+import { FormGroup } from "@angular/forms";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./BATTERYOFFRESULTENTRY.mg.controls.g";
+
+
+import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
+
+
+import { MagicModalInterface } from "@magic-xpa/angular";
+
+@Component({
+    selector: 'mga-EVPRG7_BATTERY_SCANNING_ENTRY_BATTERYOFFRESULTENTRY',
+    providers: [...magicProviders],
+    standalone: false,
+    templateUrl: './BATTERYOFFRESULTENTRY.component.html'
+})
+export class BATTERYOFFRESULTENTRY extends TaskBaseMagicComponent implements MagicModalInterface {
+
+    mgc = MgControlName;
+    mgcp = MgCustomProperties;
+    mgfc!: MgFormControlsAccessor;
+    override createFormControlsAccessor(formGroup: FormGroup) {
+        this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
+    }
+    private static readonly formName: string = "BATTERYOFFRESULTENTRY";
+    private static readonly showTitleBar: boolean = false;
+    private static readonly x: number = 0;
+    private static readonly y: number = 0;
+    private static readonly width: string = "1250px";
+    private static readonly height: string = "720px";
+    private static readonly isCenteredToWindow: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
+    private static readonly isResizable: boolean = true;
+    private static readonly isMovable: boolean = true;
+    X() {
+        return BATTERYOFFRESULTENTRY.x;
+    }
+    Y() {
+        return BATTERYOFFRESULTENTRY.y;
+    }
+    Width(): string {
+        return BATTERYOFFRESULTENTRY.width;
+    }
+    Height(): string {
+        return BATTERYOFFRESULTENTRY.height;
+    }
+    IsCenteredToWindow() {
+        return BATTERYOFFRESULTENTRY.isCenteredToWindow;
+    }
+    FormName() {
+        return BATTERYOFFRESULTENTRY.formName;
+    }
+    ShowTitleBar() {
+        return BATTERYOFFRESULTENTRY.showTitleBar;
+    }
+    ShouldCloseOnBackgroundClick() {
+        return BATTERYOFFRESULTENTRY.shouldCloseOnBackgroundClick;
+    }
+    IsResizable() {
+        return BATTERYOFFRESULTENTRY.isResizable;
+    }
+    IsMovable() {
+        return BATTERYOFFRESULTENTRY.isMovable;
+    }
+}

@@ -1,0 +1,345 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PCUOFFRESULTENTRY2",
+		"window_type":	1,
+		"component_path":	"EVPRG1_PCU_OFF_ENTRY/PCUOFFRESULTENTRYHMSI/PCUOFFRESULTENTRY2/",
+		"module_name":	"",
+		"component_uniquename":	"EVPRG1_PCU_OFF_ENTRY_PCUOFFRESULTENTRYHMSI_PCUOFFRESULTENTRY2_PCUOFFRESULTENTRY2"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	537,
+		"height":	112
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"ENGINE NO.",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	13,
+				"y":	33,
+				"width":	53,
+				"height":	8
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"MODEL CODE",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	33,
+				"width":	56,
+				"height":	8
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"PROD.LINE",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	256,
+				"y":	33,
+				"width":	49,
+				"height":	8
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"AE-OFF DATE",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	308,
+				"y":	33,
+				"width":	61,
+				"height":	8
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"AE-OFF TIME",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	391,
+				"y":	33,
+				"width":	60,
+				"height":	8
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label14",
+				"text":	"TOTAL",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	492,
+				"y":	31,
+				"width":	30,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S5_ENGFRMTYPE",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	13,
+				"y":	44,
+				"width":	83,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S5_CHASSIS_NO",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"attribute":	"N",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	98,
+				"y":	44,
+				"width":	56,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S5_MTO_CODE",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	44,
+				"width":	83,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S5_PRODLINE",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"XX",
+				"attribute":	"A",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	256,
+				"y":	44,
+				"width":	21,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S5_AFOFF_DATE",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	308,
+				"y":	44,
+				"width":	76,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S5_AFOFF_TIME",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"attribute":	"T",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	391,
+				"y":	44,
+				"width":	62,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PROGRESS1",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"####",
+				"attribute":	"N",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	491,
+				"y":	52,
+				"width":	33,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label18",
+				"text":	"MODEL/C TOTAL",
+				"common_line_id":	"line63"
+			},
+			"coordinates":	{
+				"x":	468,
+				"y":	63,
+				"width":	55,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PROGRESS2",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"####",
+				"attribute":	"N",
+				"common_line_id":	"line84"
+			},
+			"coordinates":	{
+				"x":	491,
+				"y":	84,
+				"width":	33,
+				"height":	10
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}

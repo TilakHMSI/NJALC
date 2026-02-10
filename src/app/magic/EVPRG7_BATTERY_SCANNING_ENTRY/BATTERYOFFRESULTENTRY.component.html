@@ -1,22 +1,19 @@
 <div novalidate [formGroup]="screenFormGroup">
-    <div class="container-fluid-ov" [magic]="mgc.AEOFF_RESULT_ENTRY">
+    <div class="container-fluid-ov" [magic]="mgc.BATTERYOFFRESULTENTRY">
         <div class="card">
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <h3><label class="lable_overflow mb-0">
                             {{mg.getText(mgc.Label2)}}
                         </label></h3>
-                    <h5 style="background-color: #008080; color: #ffffff;">Last Export Report Time : <input type="time"
-                            [formControlName]="mgc.V_VDharamTime" [magic]="mgc.V_VDharamTime"
-                            style="background-color: #008080; color: #ffffff; border:0" step=1 /></h5>
                     <div class="d-flex align-items-center">
-                        <label [magic]="mgc.Edit5" class="mb-0 mr-3">
-                            {{mg.getValue(mgc.Edit5)
-                            | magicDate : mgc.Edit5}}
+                        <label [magic]="mgc.Edit3" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit3)
+                            | magicDate : mgc.Edit3}}
                         </label>
-                        <label [magic]="mgc.Edit6" class="mb-0 mr-1">
-                            {{mg.getValue(mgc.Edit6)
-                            | magicTime : mgc.Edit6}}
+                        <label [magic]="mgc.Edit4" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit4)
+                            | magicTime : mgc.Edit4}}
                         </label>
                         <button type="button" [magic]="mgc.btnexit"
                             class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
@@ -26,7 +23,7 @@
             <div class="card-body">
                 <div class="form-group row" style="margin: 0rem;">
                     <div class="col-lg-12">
-                        <magic-subform [magic]="mgc.AEOFF_RESULT_ENTRYHMSI">
+                        <magic-subform [magic]="mgc.Sub1">
                         </magic-subform>
                     </div>
                     <div class="col-lg-12">
@@ -44,39 +41,43 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group" *ngIf="mg.getVisible(mgc.Edit8)==='visible'">
+                                    <div class="form-group" *ngIf="mg.getVisible(mgc.Edit5)==='visible'">
                                         <label>.</label>
-                                        <input *ngIf="mg.getVisible(mgc.Edit8)==='visible'" class="form-control"
-                                            [formControlName]="mgc.Edit8" [magic]="mgc.Edit8" mgFormat />
-                                        <mgError [magic]=mgc.Edit8> </mgError>
+                                        <input  class="form-control"
+                                            [formControlName]="mgc.Edit5" [magic]="mgc.Edit5" mgFormat />
+                                        <mgError [magic]=mgc.Edit5> </mgError>
                                     </div>
 
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="form-group">
-                                    <label>ENGINE NO </label>
-                                    <input class="form-control-ent" [formControlName]="mgc.ENGINE_NO_DSP"
-                                        [magic]="mgc.ENGINE_NO_DSP" mgFormat />
-                                    <mgError [magic]=mgc.ENGINE_NO_DSP> </mgError>
+                                    <label>FRAME Number </label>
+                                    <input class="form-control-ent" [formControlName]="mgc.FRAME_NO_DSP"
+                                        [magic]="mgc.FRAME_NO_DSP" mgFormat />
+                                    <mgError [magic]=mgc.FRAME_NO_DSP> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.MISSION_DSP)==='visible'">
+                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.MOTOR_NO_DSP)==='visible'">
                                 <div class="form-group">
-                                    <label>MISSION NO.</label>
-                                    <input class="form-control-ent" [formControlName]="mgc.MISSION_DSP"
-                                        [magic]="mgc.MISSION_DSP" mgFormat />
-                                    <mgError [magic]=mgc.MISSION_DSP> </mgError>
+                                    <label>GPS Number</label>
+                                    <input class="form-control-ent" [formControlName]="mgc.MOTOR_NO_DSP"
+                                        [magic]="mgc.MOTOR_NO_DSP" mgFormat />
+                                    <mgError [magic]=mgc.MOTOR_NO_DSP> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-4" *ngIf="mg.getVisible(mgc.MISSION_DSP)==='visible'">
+                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.MOTOR_NO_DSP)==='visible'">
                                 <div class="form-group">
                                    
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center">
-                                <label class="LastScanned">
+                                <label class="LastScanned mr-8">
                                     {{mg.getValue(mgc.LastScanned) }}</label>
+                                <label class="LastScanned ml-5 mr-8">
+                                    | | </label>
+                                <label class="LastScanned ml-5">
+                                    {{mg.getValue(mgc.LastScannedEngine) }}</label>
                             </div>
                     
                         </div>

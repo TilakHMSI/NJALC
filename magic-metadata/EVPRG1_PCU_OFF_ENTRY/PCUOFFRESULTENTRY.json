@@ -1,0 +1,306 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PCUOFFRESULTENTRY",
+		"window_type":	12,
+		"component_path":	"EVPRG1_PCU_OFF_ENTRY/",
+		"module_name":	"",
+		"component_uniquename":	"EVPRG1_PCU_OFF_ENTRY_PCUOFFRESULTENTRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	483
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	473,
+				"y":	0,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	{
+					"value":	"PGM=VPRDO041",
+					"has_exp":	true
+				},
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	495,
+				"y":	0,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	455,
+				"y":	13,
+				"width":	55,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	511,
+				"y":	13,
+				"width":	45,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line34"
+			},
+			"coordinates":	{
+				"x":	473,
+				"y":	34,
+				"width":	79,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line63"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	63,
+				"width":	543,
+				"height":	305
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit5",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	387,
+				"width":	73,
+				"height":	78
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MODE_DSP",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"items_list":	{
+					"value":	"ADDITION,CANCEL,INQUIRY",
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	390,
+				"width":	71,
+				"height":	68
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	84,
+				"y":	387,
+				"width":	473,
+				"height":	51
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"FRAME Number",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	88,
+				"y":	406,
+				"width":	64,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"FRAME_NO_DSP",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	154,
+				"y":	406,
+				"width":	169,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"PCU Number",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	329,
+				"y":	406,
+				"width":	50,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PCU_NO_DSP",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	383,
+				"y":	406,
+				"width":	169,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"LastScanned",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line451"
+			},
+			"coordinates":	{
+				"x":	155,
+				"y":	451,
+				"width":	84,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"LastScannedEngine",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line451"
+			},
+			"coordinates":	{
+				"x":	251,
+				"y":	451,
+				"width":	84,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}
