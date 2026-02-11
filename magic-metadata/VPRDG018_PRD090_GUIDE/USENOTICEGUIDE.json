@@ -1,0 +1,132 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"USENOTICEGUIDE",
+		"window_type":	12,
+		"component_path":	"VPRDG018_PRD090_GUIDE/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDG018_PRD090_GUIDE_USENOTICEGUIDE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	180,
+		"height":	307
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VPRDG018",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	114,
+				"y":	0,
+				"width":	65,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	20,
+				"table_title_height":	20,
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	14,
+				"y":	31,
+				"width":	154,
+				"height":	262
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"USE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	25
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD090USE_NOTICE_090_USE",
+								"mgformat":	"mgFormat",
+								"format":	"X",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line54"
+							},
+							"coordinates":	{
+								"x":	19,
+								"y":	54,
+								"width":	16,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"USE NOTICE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	114
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD090USE_NOTICE_090_NOTICE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line54"
+							},
+							"coordinates":	{
+								"x":	43,
+								"y":	54,
+								"width":	110,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

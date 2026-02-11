@@ -1,0 +1,351 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.SALESMODELCODEENTRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.ENTRY_MODE_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.ENTRY_MODE_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.ENTRY_MODE_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.ENTRY_MODE_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_1_V"
+                    [magic]="mgc.SALES_MTO_2_1_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_1_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_1_111_V"
+                    [magic]="mgc.SALES_MTO_1_111_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_1_111_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_2_V"
+                    [magic]="mgc.SALES_MTO_2_2_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_2_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_3_V"
+                    [magic]="mgc.SALES_MTO_2_3_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_3_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_4_V"
+                    [magic]="mgc.SALES_MTO_2_4_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_4_V> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                5
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_5_V"
+                    [magic]="mgc.SALES_MTO_2_5_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_5_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_6_V"
+                    [magic]="mgc.SALES_MTO_2_6_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_6_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_7_V"
+                    [magic]="mgc.SALES_MTO_2_7_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_7_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_1_24_V"
+                    [magic]="mgc.SALES_MTO_1_24_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_1_24_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_8_V"
+                    [magic]="mgc.SALES_MTO_2_8_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_8_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_9_V"
+                    [magic]="mgc.SALES_MTO_2_9_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_9_V> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                10
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_10_V"
+                    [magic]="mgc.SALES_MTO_2_10_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_10_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_1_33_V"
+                    [magic]="mgc.SALES_MTO_1_33_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_1_33_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_11_V"
+                    [magic]="mgc.SALES_MTO_2_11_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_11_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_12_V"
+                    [magic]="mgc.SALES_MTO_2_12_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_12_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_13_V"
+                    [magic]="mgc.SALES_MTO_2_13_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_13_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_1_411_V"
+                    [magic]="mgc.SALES_MTO_1_411_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_1_411_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_14_V"
+                    [magic]="mgc.SALES_MTO_2_14_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_14_V> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                15
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_15_V"
+                    [magic]="mgc.SALES_MTO_2_15_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_15_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_16_V"
+                    [magic]="mgc.SALES_MTO_2_16_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_16_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_17_V"
+                    [magic]="mgc.SALES_MTO_2_17_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_17_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_18_V"
+                    [magic]="mgc.SALES_MTO_2_18_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_18_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_19_V"
+                    [magic]="mgc.SALES_MTO_2_19_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_19_V> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                20
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_20_V"
+                    [magic]="mgc.SALES_MTO_2_20_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_20_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_21_V"
+                    [magic]="mgc.SALES_MTO_2_21_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_21_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_22_V"
+                    [magic]="mgc.SALES_MTO_2_22_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_22_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_23_V"
+                    [magic]="mgc.SALES_MTO_2_23_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_23_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_24_V"
+                    [magic]="mgc.SALES_MTO_2_24_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_24_V> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                25
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_25_V"
+                    [magic]="mgc.SALES_MTO_2_25_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_25_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_26_V"
+                    [magic]="mgc.SALES_MTO_2_26_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_26_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_27_V"
+                    [magic]="mgc.SALES_MTO_2_27_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_27_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_28_V"
+                    [magic]="mgc.SALES_MTO_2_28_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_28_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_29_V"
+                    [magic]="mgc.SALES_MTO_2_29_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_29_V> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                30
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_30_V"
+                    [magic]="mgc.SALES_MTO_2_30_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_30_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_31_V"
+                    [magic]="mgc.SALES_MTO_2_31_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_31_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.SALES_MTO_2_32_V"
+                    [magic]="mgc.SALES_MTO_2_32_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.SALES_MTO_2_32_V> </mgError>
+            </div>
+        </div>
+    </div>
+</div>
