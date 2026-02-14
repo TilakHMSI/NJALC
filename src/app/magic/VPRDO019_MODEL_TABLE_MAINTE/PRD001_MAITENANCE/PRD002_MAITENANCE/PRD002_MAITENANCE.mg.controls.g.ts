@@ -21,6 +21,11 @@ export enum MgControlName {
         COLOR_DRAWING_NO = "COLOR_DRAWING_NO",
         Column7 = "Column7",
         S2_POS_CODE = "S2_POS_CODE",
+        CancelRowEditing="CancelRowEditing",
+        EnterRowEditing="EnterRowEditing",
+        SaveRowEditing="SaveRowEditing",
+        Column15="Column15"
+
 }
 export enum MgCustomProperties {}
 export var
@@ -31,6 +36,7 @@ export var
         'Column5',
         'Column6',
         'Column7',
+        'Column15',
     ];
 
 export class MgFormControlsAccessor {

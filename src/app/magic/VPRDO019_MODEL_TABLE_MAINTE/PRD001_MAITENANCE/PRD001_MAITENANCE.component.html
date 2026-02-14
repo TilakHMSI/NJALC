@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -773,4 +773,484 @@
             </div>
         </div>
     </div>
+</div> -->
+
+
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div [magic]="mgc.PRD001_MAITENANCE">
+        <div class="col-lg-12 col-xxl-12">
+            <div class="form-group row">
+                <div class="col-lg-2">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">EFM</label>
+                        <select class="form-control-ed" [magic]="mgc.S1_EFM" [formControlName]="mgc.S1_EFM">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.S1_EFM);"
+                                [selected]="o.index == mg.getValue(mgc.S1_EFM)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">MODEL CODE</label>
+                        <input [formControlName]="mgc.S1_MTO_CODE" [magic]="mgc.S1_MTO_CODE" class="form-control-ed"
+                            mgFormat />
+                        <mgError [magic]="mgc.S1_MTO_CODE"> </mgError>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">MODEL NAME</label>
+                        <input class="form-control-ed" [formControlName]="mgc.MTO_NAMEM_V" [magic]="mgc.MTO_NAMEM_V"
+                            mgFormat />
+                            
+                            
+                    </div>
+                </div>
+                   <div class="col-lg-1">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm"></label>
+                         <input class="form-control-ed" style="margin-top: 6px;" [formControlName]="mgc.MTO_NAMET_V" [magic]="mgc.MTO_NAMET_V"
+                            mgFormat />
+                    </div>
+                </div>
+                  <div class="col-lg-1">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm"></label>
+                         <input class="form-control-ed" style="margin-top: 6px;" [formControlName]="mgc.MTO_NAMEO_V" [magic]="mgc.MTO_NAMEO_V"
+                            mgFormat />
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">BOM CODE</label>
+                        <input class="form-control-ed"  [formControlName]="mgc.S1_PARTS_MTO_CODE"
+                            [magic]="mgc.S1_PARTS_MTO_CODE" mgFormat />
+                    </div>
+                </div>
+                   <div class="col-lg-2">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">24H</label>
+                         <select class="form-control-ed" [magic]="mgc.S1_24G" [formControlName]="mgc.S1_24G">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.S1_24G);"
+                                [selected]="o.index == mg.getValue(mgc.S1_24G)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+           <hr class="alert-primary hr">
+            <div class="form-group row">
+
+                <div class="col-lg-4 brown-right-border">
+                    <label class="text-primary">   UNITED ENGINE </label>
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                           
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">EFM</label>
+                                <input [formControlName]="mgc.S1_ENGEFM" [magic]="mgc.S1_ENGEFM"
+                                    class="form-control-ed" mgFormat />
+                                <mgError [magic]="mgc.S1_ENGEFM"> </mgError>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+  <div class="form-group-sm">
+                             <label class="lbl-sm">MODEL CODE</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.S1_ENGMTO_CODE" [magic]="mgc.S1_ENGMTO_CODE"
+                                            class="form-control" placeholder="SELECT MODEL CODE" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.S1_ENGMTO_CODE">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                    </div> 
+
+                 
+                            
+  <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                           
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">BASIC MODEL CODE</label>
+                                <input [formControlName]="mgc.S1_BASIC_MTO_CODE" [magic]="mgc.S1_BASIC_MTO_CODE"
+                                    class="form-control-ed" mgFormat />
+                                <mgError [magic]="mgc.S1_BASIC_MTO_CODE"> </mgError>
+                            </div>
+
+                            
+                            <div class="form-group col-lg-5">
+                                     <label class="lbl-sm">COOL</label>
+                             <select class="form-control-ed" [magic]="mgc.S1_COOL"
+                                    [formControlName]="mgc.S1_COOL">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.S1_COOL);"
+                                        [selected]="o.index == mg.getValue(mgc.S1_COOL)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
+                            </div>
+                          
+                        </div>
+                    </div>
+                        
+                        </div>
+                    </div>
+                 
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">CYCLE</label>
+                                   <select class="form-control-ed" [magic]="mgc.S1_CYCLE"
+                                    [formControlName]="mgc.S1_CYCLE">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.S1_CYCLE);"
+                                        [selected]="o.index == mg.getValue(mgc.S1_CYCLE)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">CC</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_CC"
+                            [magic]="mgc.S1_CC" mgFormat />
+                            </div>
+                          
+                        </div>
+               
+
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">OEM ENG</label>
+                                   <select class="form-control-ed" [magic]="mgc.S1_OEM_CATEGORY"
+                                    [formControlName]="mgc.S1_OEM_CATEGORY">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.S1_OEM_CATEGORY);"
+                                        [selected]="o.index == mg.getValue(mgc.S1_OEM_CATEGORY)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">SHORT BK ENG</label>
+                                <select class="form-control-ed" [magic]="mgc.S1_SHORT_BLOCK"
+                                    [formControlName]="mgc.S1_SHORT_BLOCK">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.S1_SHORT_BLOCK);"
+                                        [selected]="o.index == mg.getValue(mgc.S1_SHORT_BLOCK)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="row">
+
+                            <div class="col-lg-5" >
+                                <div class="form-group">
+                                   <label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Edit64)}}
+                        </label>
+                                    <div class="input-group">
+                                     <input [formControlName]="mgc.S1_DUMMY_MODEL_TYPE" [magic]="mgc.S1_DUMMY_MODEL_TYPE"
+                                    class="form-control-ed" mgFormat />
+                                <mgError [magic]="mgc.S1_DUMMY_MODEL_TYPE"> </mgError>
+                                    </div>
+                                </div>
+                            </div>               
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">COST CONTROL</label>
+                                   <select class="form-control-ed" [magic]="mgc.S1_COST_CONTROL"
+                                    [formControlName]="mgc.S1_COST_CONTROL">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.S1_COST_CONTROL);"
+                                        [selected]="o.index == mg.getValue(mgc.S1_COST_CONTROL)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
+                            
+                            </div>
+                        </div>
+
+                         <div class="row">
+
+                            <div class="col-lg-5" >
+                                <div class="form-group">
+                                      <label class="lbl-sm"></label>
+                                         <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.S1_ENGFRMTYPE" [magic]="mgc.S1_ENGFRMTYPE"
+                                            class="form-control" placeholder="SELECT MODEL CODE" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.S1_ENGFRMTYPE">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>               
+                            <div class="form-group col-lg-4">
+                                <label class="lbl-sm"></label>
+                                <input [formControlName]="mgc.S1_PROD1ST_CHASSIS_NO" [magic]="mgc.S1_PROD1ST_CHASSIS_NO"
+                                    class="form-control-ed" mgFormat />
+                                <mgError [magic]="mgc.S1_PROD1ST_CHASSIS_NO"> </mgError>
+                            </div>
+                             <div class="form-group col-lg-2">
+                                <label class="lbl-sm"></label>
+                                <input [formControlName]="mgc.S1_VIN_TYPE" [magic]="mgc.S1_VIN_TYPE"
+                                    class="form-control-ed" mgFormat />
+                                <mgError [magic]="mgc.S1_VIN_TYPE"> </mgError>
+                            </div>
+                        </div>
+
+                </div>
+
+           </div> 
+
+                <div class="col-lg-4 brown-right-border">
+                    <div class="form-group-sm">
+                        <label class="text-primary"> PROD.LINE </label>
+                    </div>
+                   <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">MAIN</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_PRODLINEMAIN"
+                                    [magic]="mgc.S1_PRODLINEMAIN" mgFormat />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">SU</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_PRODLINESUB"
+                                    [magic]="mgc.S1_PRODLINESUB" mgFormat />
+                            </div>
+                        </div>
+                           <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">USE</label>
+                                <input class="form-control-ed" [formControlName]="mgc.PRD090USE_NOTICE_090_NOTICE"
+                                    [magic]="mgc.PRD090USE_NOTICE_090_NOTICE" mgFormat />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm"></label>
+
+                                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.S1_USE"
+                >...</button>
+                             
+                            </div>
+                        </div>
+             
+
+                   
+                    
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">CATEGORY</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_CATEGORY"
+                                    [magic]="mgc.S1_CATEGORY" mgFormat />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">FAMILY</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_FAMILY"
+                                    [magic]="mgc.S1_FAMILY" mgFormat />
+                            </div>
+                        </div>
+                    </div>
+                        <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">PACKING LOT</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_PACKING_LOT"
+                                    [magic]="mgc.S1_PACKING_LOT" mgFormat />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">KD LOT SIZE</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_KD_PACKING_LOT"
+                                    [magic]="mgc.S1_KD_PACKING_LOT" mgFormat />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">KD MOTHER FACTORY</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_KD_MOTHER_FACTORY"
+                                    [magic]="mgc.S1_KD_MOTHER_FACTORY" mgFormat />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">TACT</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_TACT"
+                                    [magic]="mgc.S1_TACT" mgFormat />
+                            </div>
+                        </div>
+                    </div>
+                        <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">PORT-PROD.LEAD TIME</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_PORTPRODLEAD_TIME"
+                                    [magic]="mgc.S1_PORTPRODLEAD_TIME" mgFormat />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">SRS</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_SRS"
+                                    [magic]="mgc.S1_SRS" mgFormat />
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">Global Standard Selection</label>
+                                 <input
+                    type="checkbox"
+                    id="CHAR_TYPE"
+                    [formControlName]="mgc.CHAR_TYPE"
+                    [magic]="mgc.CHAR_TYPE"
+                />
+                            </div>
+                         
+                        </div>
+                    </div>
+
+             
+
+                </div>
+                <div class="col-lg-4 brown-right-border">
+
+                       <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">TRIAL PARTS TBL CRE.DATE</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.S1_TRIAL_PARTS_TBL_CREDATE"
+                            [magic]="mgc.S1_TRIAL_PARTS_TBL_CREDATE" dateInput />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">MASS PROD.ORDER DATE</label>
+                                 <input class="form-control-ed" type="date" [formControlName]="mgc.S1_MASS_PRODORDER_DATE"
+                            [magic]="mgc.S1_MASS_PRODORDER_DATE" dateInput />
+                            </div>
+                        </div>
+                    </div>
+
+                      <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">MASS PROD.DATE</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.S1_MASS_PRODDATE"
+                            [magic]="mgc.S1_MASS_PRODDATE" dateInput />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">PROD.CLOSE DATE</label>
+                                 <input class="form-control-ed" type="date" [formControlName]="mgc.S1_PRODCLOSE_DATE"
+                            [magic]="mgc.S1_PRODCLOSE_DATE" dateInput />
+                            </div>
+                        </div>
+                    </div>
+
+               
+  <label class="text-primary mt-2"> DESIGNATION INFORMATION </label> 
+
+   <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label class="lbl-sm">NOISE</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_DESIGNNOISE"
+                                    [magic]="mgc.S1_DESIGNNOISE" mgFormat />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="lbl-sm">DESIGN.NO.</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_DESIGNNO"
+                                    [magic]="mgc.S1_DESIGNNO" mgFormat />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">VARIANT NO.</label>
+                     <input class="form-control-ed" [formControlName]="mgc.S1_VARIANT_NO"
+                                    [magic]="mgc.S1_VARIANT_NO" mgFormat />
+                    </div>
+
+                     <label class="text-primary mt-2">   AT/M </label> 
+          <div class="container_border" style="display: flex; flex-direction: column">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="lbl-sm">EFM</label>
+                                <input class="form-control-ed" [formControlName]="mgc.S1_ATM_EFM"
+                                    [magic]="mgc.S1_ATM_EFM" mgFormat />
+                            </div>
+                            <div class="form-group col-lg-7">
+                                <label class="lbl-sm">MODEL CODE</label>
+                                     <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.S1_ATM_MTO_CODE" [magic]="mgc.S1_ATM_MTO_CODE"
+                                            class="form-control" placeholder="SELECT MODEL CODE" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.S1_ATM_MTO_CODE">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="form-group-sm">
+                        <label class="lbl-sm">METHOD/VARIANT</label>
+                     <input class="form-control-ed" [formControlName]="mgc.S1_ATM_METHODVARIANT"
+                                    [magic]="mgc.S1_ATM_METHODVARIANT" mgFormat />
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+    <magic-subform [magic]="mgc.Sub2">
+    </magic-subform> 
 </div>

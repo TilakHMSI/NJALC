@@ -11,7 +11,8 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
     selector: 'mga-VPRDO012_MODEL_TABLE_MAINTE_PRD001_MAITENANCE_PRD001_MAITENANCE',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './PRD001_MAITENANCE.component.html'
+    templateUrl: './PRD001_MAITENANCE.component.html',
+    styleUrl: './PRD001MAINTENANCE.component.css',
 })
 export class PRD001_MAITENANCE extends TaskBaseMagicComponent {
 

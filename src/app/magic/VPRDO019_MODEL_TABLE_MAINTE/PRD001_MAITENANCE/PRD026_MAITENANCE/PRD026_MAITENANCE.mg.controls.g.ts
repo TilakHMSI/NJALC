@@ -26,6 +26,10 @@ export enum MgControlName {
         PR27_GROUP = "PR27_GROUP",
         Column10 = "Column10",
         PR27_GROUP_NAME = "PR27_GROUP_NAME",
+        CancelRowEditing="CancelRowEditing",
+        SaveRowEditing="SaveRowEditing",
+        EnterRowEditing="EnterRowEditing",
+        Column20="Column20"
 }
 export enum MgCustomProperties {}
 export var
@@ -39,6 +43,9 @@ export var
         'Column8',
         'Column9',
         'Column10',
+        'Column20'
+        
+
     ];
 
 export class MgFormControlsAccessor {

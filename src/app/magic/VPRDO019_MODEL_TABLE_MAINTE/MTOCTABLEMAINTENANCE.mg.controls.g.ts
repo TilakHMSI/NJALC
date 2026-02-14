@@ -21,6 +21,7 @@ export enum MgControlName {
         BOM_CODE_V = "BOM_CODE_V",
         Export = "Export",
         Sub1 = "Sub1",
+        btn_Exit="btn_Exit"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
