@@ -50,7 +50,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>FRAME Number </label>
                                     <input class="form-control-ent" [formControlName]="mgc.FRAME_NO_DSP"
@@ -60,7 +60,7 @@
                             </div>
                             <div class="col-lg-3" *ngIf="mg.getVisible(mgc.MOTOR_NO_DSP)==='visible'">
                                 <div class="form-group">
-                                    <label>GPS Number</label>
+                                    <label>BATTERY Number</label>
                                     <input class="form-control-ent" [formControlName]="mgc.MOTOR_NO_DSP"
                                         [magic]="mgc.MOTOR_NO_DSP" mgFormat />
                                     <mgError [magic]=mgc.MOTOR_NO_DSP> </mgError>
