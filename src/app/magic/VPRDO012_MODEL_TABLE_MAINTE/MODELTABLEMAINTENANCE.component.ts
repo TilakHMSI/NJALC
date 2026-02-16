@@ -13,7 +13,8 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDO012_MODEL_TABLE_MAINTE_MODELTABLEMAINTENANCE',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './MODELTABLEMAINTENANCE.component.html'
+    templateUrl: './MODELTABLEMAINTENANCE.component.html',
+    styleUrl: './MODELTABLEMAINTENANCE.component.css',
 })
 export class MODELTABLEMAINTENANCE extends TaskBaseMagicComponent implements MagicModalInterface {
 
@@ -23,12 +24,12 @@ export class MODELTABLEMAINTENANCE extends TaskBaseMagicComponent implements Mag
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "MODELTABLEMAINTENANCE";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly formName: string = "MODEL TABLE MAINTENANCE";
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "1250px";
+    private static readonly height: string = "720px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;

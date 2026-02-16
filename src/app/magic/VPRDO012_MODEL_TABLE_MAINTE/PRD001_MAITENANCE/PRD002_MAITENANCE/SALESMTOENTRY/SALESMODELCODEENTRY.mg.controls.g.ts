@@ -50,6 +50,7 @@ export enum MgControlName {
         SALES_MTO_2_30_V = "SALES_MTO_2_30_V",
         SALES_MTO_2_31_V = "SALES_MTO_2_31_V",
         SALES_MTO_2_32_V = "SALES_MTO_2_32_V",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
