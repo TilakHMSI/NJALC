@@ -1,0 +1,370 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PRODUCTPLANINQUIRY",
+		"window_type":	12,
+		"component_path":	"VPRDO182_MONTHLY_SCHD_INQUIRY/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO182_MONTHLY_SCHD_INQUIRY_PRODUCTPLANINQUIRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	555,
+		"height":	487
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	359,
+				"y":	2,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	{
+					"value":	"PRG=VPRDO182",
+					"has_exp":	true
+				},
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	383,
+				"y":	2,
+				"width":	61,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	449,
+				"y":	2,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	507,
+				"y":	2,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"text":	"PLAN CODE",
+				"common_line_id":	"line34"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	37,
+				"width":	50,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"text":	"PLAN MONTH YEAR",
+				"common_line_id":	"line34"
+			},
+			"coordinates":	{
+				"x":	120,
+				"y":	37,
+				"width":	80,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"MODEL",
+				"common_line_id":	"line34"
+			},
+			"coordinates":	{
+				"x":	299,
+				"y":	34,
+				"width":	30,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"TYPE",
+				"common_line_id":	"line34"
+			},
+			"coordinates":	{
+				"x":	332,
+				"y":	34,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"OPTION",
+				"common_line_id":	"line34"
+			},
+			"coordinates":	{
+				"x":	356,
+				"y":	34,
+				"width":	35,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"COLOR CODE",
+				"common_line_id":	"line34"
+			},
+			"coordinates":	{
+				"x":	399,
+				"y":	34,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PLAN_CODE_V",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	55,
+				"width":	30,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PLAN_MONTH_YEAR",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	55,
+				"width":	64,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label14",
+				"text":	"RANGE",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	243,
+				"y":	55,
+				"width":	49,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MODEL",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	301,
+				"y":	55,
+				"width":	28,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"TYPE",
+				"mgformat":	"mgFormat",
+				"format":	"UUU",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	336,
+				"y":	55,
+				"width":	16,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"OPTION",
+				"mgformat":	"mgFormat",
+				"format":	"UUU",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	358,
+				"y":	55,
+				"width":	16,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"COLOR_CODE",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	401,
+				"y":	55,
+				"width":	50,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"COLOR_CODEINSIDE",
+				"mgformat":	"mgFormat",
+				"format":	"UU",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	454,
+				"y":	55,
+				"width":	11,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SubTaskForm",
+				"common_line_id":	"line74"
+			},
+			"coordinates":	{
+				"x":	33,
+				"y":	74,
+				"width":	481,
+				"height":	387
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}
