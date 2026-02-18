@@ -1,0 +1,21 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div [magic]="mgc.MODE_GET">
+        <div style="display: flex; flex-direction: row">
+            <div [magic]="mgc.MODE_V1" (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V1)" class="radio-horizontal ml-5">
+                <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V1);">
+                    <label>
+                        <input type="radio" [formControlName]="mgc.MODE_V1" [value]="o.index" />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <button class="btn btn-warning font-weight-bold ml-5" [magic]="mgc.SelectExcelFileButton" [disabled]="mg.isDisabled(mgc.SelectExcelFileButton )">
+                IMPORT
+            </button>
+        </div>
+        <div class="mt-2">
+            <magic-subform [magic]="mgc.SubFormOne">
+            </magic-subform>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.SelectExcelFile"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.Edit5"
+                    [magic]="mgc.Edit5"
+                />
+                <mgError [magic]=mgc.Edit5> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                Select Excel File
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.Select_Excel_File"
+                    [magic]="mgc.Select_Excel_File"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Select_Excel_File> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.Select_Excel_File"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.Execute">
+                Execute
+            </button>
+            <button [magic]="mgc.Cancel">
+                Cancel
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"INPUTPARA",
+		"window_type":	12,
+		"component_path":	"VPRDO181_MONTHLY_SCHD_ENTRY/INPUTPARA/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO181_MONTHLY_SCHD_ENTRY_INPUTPARA_INPUTPARA"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	311,
+		"height":	306
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"KD/ODR/PRD_V",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	41,
+				"y":	62,
+				"width":	62,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_KDODRPRD_V",
+				"items_list":	"04,16,17",
+				"attribute":	"A",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	123,
+				"y":	52,
+				"width":	66,
+				"height":	73
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		}
+	]
+}

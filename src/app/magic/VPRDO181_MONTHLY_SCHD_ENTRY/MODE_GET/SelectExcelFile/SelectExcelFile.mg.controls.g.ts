@@ -6,18 +6,23 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    MODELGUIDE = "MODELGUIDE",
+    SelectExcelFile = "SelectExcelFile",
+        Edit5 = "Edit5",
         Label1 = "Label1",
-        vSearch = "vSearch",
-        Subform9 = "Subform9",
-        btnSearch = "btnSearch",
+        Select_Excel_File = "Select_Excel_File",
+        Execute = "Execute",
+        Cancel = "Cancel",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get vSearch(): FormControl {
-        return this.fg.controls[MgControlName.vSearch] as FormControl;
+    get Edit5(): FormControl {
+        return this.fg.controls[MgControlName.Edit5] as FormControl;
+    }
+
+    get Select_Excel_File(): FormControl {
+        return this.fg.controls[MgControlName.Select_Excel_File] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

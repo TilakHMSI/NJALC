@@ -1,0 +1,33 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.INPUTPARA"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                KD/ODR/PRD_V
+            </label>
+            <div
+                [magic]="mgc.V_KDODRPRD_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.V_KDODRPRD_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_KDODRPRD_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.V_KDODRPRD_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

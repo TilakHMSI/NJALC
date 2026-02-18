@@ -1,0 +1,15 @@
+.form-group {
+    margin: 0.25rem! important;
+}
+
+.radio-horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust spacing between radios */
+}
+
+.radio-horizontal > div {
+    display: flex;
+    align-items: center;
+}

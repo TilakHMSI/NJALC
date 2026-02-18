@@ -1,20 +1,13 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"EnterRowEditing",
-		"visible":	{
-			"value":	null,
-			"has_exp":	true
-		},
-		"format":	"Edit",
-		"is_table_child":	true,
-		"web_style":	2,
-		"row_editing_type":	1
+		"id":	"btnSearch",
+		"format":	"Search"
 	},
 	"coordinates":	{
-		"x":	463,
-		"y":	73,
-		"width":	28,
+		"x":	255,
+		"y":	26,
+		"width":	41,
 		"height":	22
 	},
 	"hint":	null,

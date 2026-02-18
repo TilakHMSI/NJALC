@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./PRODUCTPLANINQUIRY.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./SelectExcelFile.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,13 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDO182_MONTHLY_SCHD_INQUIRY_PRODUCTPLANINQUIRY',
+    selector: 'mga-VPRDO181_MONTHLY_SCHD_ENTRY_MODE_GET_SelectExcelFile_SelectExcelFile',
     providers: [...magicProviders],
     standalone: false,
-    styleUrl: './PRODUCTPLANINQUIRY.component.css',
-    templateUrl: './PRODUCTPLANINQUIRY.component.html'
+    templateUrl: './SelectExcelFile.component.html'
 })
-export class PRODUCTPLANINQUIRY extends TaskBaseMagicComponent implements MagicModalInterface {
+export class SelectExcelFile extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -24,44 +23,44 @@ export class PRODUCTPLANINQUIRY extends TaskBaseMagicComponent implements MagicM
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "PRODUCTPLANINQUIRY";
+    private static readonly formName: string = "SelectExcelFile";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1250px";
-    private static readonly height: string = "720px";
+    private static readonly width: string = "850px";
+    private static readonly height: string = "600px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return PRODUCTPLANINQUIRY.x;
+        return SelectExcelFile.x;
     }
     Y() {
-        return PRODUCTPLANINQUIRY.y;
+        return SelectExcelFile.y;
     }
     Width(): string {
-        return PRODUCTPLANINQUIRY.width;
+        return SelectExcelFile.width;
     }
     Height(): string {
-        return PRODUCTPLANINQUIRY.height;
+        return SelectExcelFile.height;
     }
     IsCenteredToWindow() {
-        return PRODUCTPLANINQUIRY.isCenteredToWindow;
+        return SelectExcelFile.isCenteredToWindow;
     }
     FormName() {
-        return PRODUCTPLANINQUIRY.formName;
+        return SelectExcelFile.formName;
     }
     ShowTitleBar() {
-        return PRODUCTPLANINQUIRY.showTitleBar;
+        return SelectExcelFile.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return PRODUCTPLANINQUIRY.shouldCloseOnBackgroundClick;
+        return SelectExcelFile.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return PRODUCTPLANINQUIRY.isResizable;
+        return SelectExcelFile.isResizable;
     }
     IsMovable() {
-        return PRODUCTPLANINQUIRY.isMovable;
+        return SelectExcelFile.isMovable;
     }
 }

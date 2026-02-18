@@ -6,18 +6,17 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    MODELGUIDE = "MODELGUIDE",
-        Label1 = "Label1",
-        vSearch = "vSearch",
-        Subform9 = "Subform9",
-        btnSearch = "btnSearch",
+    MODE_GET = "MODE_GET",
+        MODE_V1 = "MODE_V1",
+        SelectExcelFileButton = "SelectExcelFileButton",
+        SubFormOne = "SubFormOne",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get vSearch(): FormControl {
-        return this.fg.controls[MgControlName.vSearch] as FormControl;
+    get MODE_V1(): FormControl {
+        return this.fg.controls[MgControlName.MODE_V1] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

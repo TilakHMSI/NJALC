@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./PRODUCTPLANINQUIRY.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./MonthlyPRODUCTIONSCHDmainte.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,13 +10,13 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDO182_MONTHLY_SCHD_INQUIRY_PRODUCTPLANINQUIRY',
+    selector: 'mga-VPRDO181_MONTHLY_SCHD_ENTRY_MonthlyPRODUCTIONSCHDmainte',
     providers: [...magicProviders],
     standalone: false,
-    styleUrl: './PRODUCTPLANINQUIRY.component.css',
-    templateUrl: './PRODUCTPLANINQUIRY.component.html'
+    styleUrl: './MonthlyPRODUCTIONSCHDmainte.component.css',
+    templateUrl: './MonthlyPRODUCTIONSCHDmainte.component.html'
 })
-export class PRODUCTPLANINQUIRY extends TaskBaseMagicComponent implements MagicModalInterface {
+export class MonthlyPRODUCTIONSCHDmainte extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -24,7 +24,7 @@ export class PRODUCTPLANINQUIRY extends TaskBaseMagicComponent implements MagicM
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "PRODUCTPLANINQUIRY";
+    private static readonly formName: string = "MonthlyPRODUCTIONSCHDmainte";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -35,33 +35,33 @@ export class PRODUCTPLANINQUIRY extends TaskBaseMagicComponent implements MagicM
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return PRODUCTPLANINQUIRY.x;
+        return MonthlyPRODUCTIONSCHDmainte.x;
     }
     Y() {
-        return PRODUCTPLANINQUIRY.y;
+        return MonthlyPRODUCTIONSCHDmainte.y;
     }
     Width(): string {
-        return PRODUCTPLANINQUIRY.width;
+        return MonthlyPRODUCTIONSCHDmainte.width;
     }
     Height(): string {
-        return PRODUCTPLANINQUIRY.height;
+        return MonthlyPRODUCTIONSCHDmainte.height;
     }
     IsCenteredToWindow() {
-        return PRODUCTPLANINQUIRY.isCenteredToWindow;
+        return MonthlyPRODUCTIONSCHDmainte.isCenteredToWindow;
     }
     FormName() {
-        return PRODUCTPLANINQUIRY.formName;
+        return MonthlyPRODUCTIONSCHDmainte.formName;
     }
     ShowTitleBar() {
-        return PRODUCTPLANINQUIRY.showTitleBar;
+        return MonthlyPRODUCTIONSCHDmainte.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return PRODUCTPLANINQUIRY.shouldCloseOnBackgroundClick;
+        return MonthlyPRODUCTIONSCHDmainte.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return PRODUCTPLANINQUIRY.isResizable;
+        return MonthlyPRODUCTIONSCHDmainte.isResizable;
     }
     IsMovable() {
-        return PRODUCTPLANINQUIRY.isMovable;
+        return MonthlyPRODUCTIONSCHDmainte.isMovable;
     }
 }

@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./VIEW_WORK.mg.controls.g";
-import { MgDisplayedColumns } from "./VIEW_WORK.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./MAIN_WINDOW.mg.controls.g";
+import { MgDisplayedColumns } from "./MAIN_WINDOW.mg.controls.g";
 
 
 import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
 
 
 @Component({
-    selector: 'mga-VPRDO182_MONTHLY_SCHD_INQUIRY_VIEW_WORK_VIEW_WORK',
+    selector: 'mga-VPRDO181_MONTHLY_SCHD_ENTRY_MODE_GET_PRODUCTIONSCHEDULEMAINTE_MAIN_WINDOW',
     providers: [...matMagicProviders],
     standalone: false,
-    styleUrl: './VIEW_WORK.component.css',
-    templateUrl: './VIEW_WORK.component.html'
+    styleUrl: './MAIN_WINDOW.component.css',
+    templateUrl: './MAIN_WINDOW.component.html'
 })
-export class VIEW_WORK extends BaseMatTableMagicComponent {
+export class MAIN_WINDOW extends BaseMatTableMagicComponent {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;

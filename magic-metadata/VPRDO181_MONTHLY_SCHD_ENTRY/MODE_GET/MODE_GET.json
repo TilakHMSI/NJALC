@@ -1,0 +1,79 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"MODE_GET",
+		"window_type":	1,
+		"component_path":	"VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO181_MONTHLY_SCHD_ENTRY_MODE_GET_MODE_GET"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	573,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MODE_V1",
+				"modifiable":	{
+					"value":	false,
+					"has_exp":	true
+				},
+				"items_list":	"ADDITION,UPDATE,SPLIT/MOVE",
+				"attribute":	"A",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	3,
+				"width":	208,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SelectExcelFileButton",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"IMPORT",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	239,
+				"y":	3,
+				"width":	80,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SubFormOne",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	37,
+				"width":	564,
+				"height":	439
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

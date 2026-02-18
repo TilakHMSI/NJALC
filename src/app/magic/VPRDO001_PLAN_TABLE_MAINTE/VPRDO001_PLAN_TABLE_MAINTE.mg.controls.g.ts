@@ -23,6 +23,7 @@ export enum MgControlName {
         BUTTON = "BUTTON",
         BUTTON2 = "BUTTON2",
         btnexit = "btnexit",
+        btnadd = "btnadd",
 }
 export enum MgCustomProperties {}
 export var

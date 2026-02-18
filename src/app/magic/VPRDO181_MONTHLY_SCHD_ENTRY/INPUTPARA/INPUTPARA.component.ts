@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./MODELGUIDE.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./INPUTPARA.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDG001_PRD001_GUIDE2_MODELGUIDE',
+    selector: 'mga-VPRDO181_MONTHLY_SCHD_ENTRY_INPUTPARA_INPUTPARA',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './MODELGUIDE.component.html'
+    templateUrl: './INPUTPARA.component.html'
 })
-export class MODELGUIDE extends TaskBaseMagicComponent implements MagicModalInterface {
+export class INPUTPARA extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,44 +23,44 @@ export class MODELGUIDE extends TaskBaseMagicComponent implements MagicModalInte
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "PGM=VPRDG001 - MODEL GUIDE";
+    private static readonly formName: string = "INPUTPARA";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "600px";
-    private static readonly height: string = "500px";
+    private static readonly width: string = "300px";
+    private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
-    private static readonly isResizable: boolean = false;
+    private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return MODELGUIDE.x;
+        return INPUTPARA.x;
     }
     Y() {
-        return MODELGUIDE.y;
+        return INPUTPARA.y;
     }
     Width(): string {
-        return MODELGUIDE.width;
+        return INPUTPARA.width;
     }
     Height(): string {
-        return MODELGUIDE.height;
+        return INPUTPARA.height;
     }
     IsCenteredToWindow() {
-        return MODELGUIDE.isCenteredToWindow;
+        return INPUTPARA.isCenteredToWindow;
     }
     FormName() {
-        return MODELGUIDE.formName;
+        return INPUTPARA.formName;
     }
     ShowTitleBar() {
-        return MODELGUIDE.showTitleBar;
+        return INPUTPARA.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return MODELGUIDE.shouldCloseOnBackgroundClick;
+        return INPUTPARA.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return MODELGUIDE.isResizable;
+        return INPUTPARA.isResizable;
     }
     IsMovable() {
-        return MODELGUIDE.isMovable;
+        return INPUTPARA.isMovable;
     }
 }

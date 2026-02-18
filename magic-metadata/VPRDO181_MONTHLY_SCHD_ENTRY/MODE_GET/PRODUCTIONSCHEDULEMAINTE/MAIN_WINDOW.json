@@ -1,0 +1,1214 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"MAIN_WINDOW",
+		"window_type":	1,
+		"component_path":	"VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/PRODUCTIONSCHEDULEMAINTE/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO181_MONTHLY_SCHD_ENTRY_MODE_GET_PRODUCTIONSCHEDULEMAINTE_MAIN_WINDOW"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	558,
+		"height":	410
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	34,
+				"table_title_height":	55,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	2,
+				"width":	553,
+				"height":	335
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"PLAN DATE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	58
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD004PLAN_TABLE_S4_PLAN_DATE",
+								"modifiable":	{
+									"value":	false,
+									"has_exp":	true
+								},
+								"mgformat":	"mgFormat",
+								"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	8,
+								"y":	59,
+								"width":	53,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"WEEK",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	25
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SA_DAY_OF_THE_WEEK",
+								"mgformat":	"mgFormat",
+								"format":	"XX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	68,
+								"y":	59,
+								"width":	15,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"WEEK\r\nNO.\r\nPLAN\r\nSEQ",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	39
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label17",
+								"text":	"PLAN SEQ",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line31"
+							},
+							"coordinates":	{
+								"x":	90,
+								"y":	31,
+								"width":	31,
+								"height":	26
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD004PLAN_TABLE_S4_WEEK_NO",
+								"mgformat":	"mgFormat",
+								"format":	"######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	90,
+								"y":	59,
+								"width":	35,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD004PLAN_TABLE_S4_PLAN_SEQ",
+								"mgformat":	"mgFormat",
+								"format":	"###",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line75"
+							},
+							"coordinates":	{
+								"x":	90,
+								"y":	75,
+								"width":	20,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S4_PLAN_SEQ_SUFFIX",
+								"mgformat":	"mgFormat",
+								"format":	"#",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line75"
+							},
+							"coordinates":	{
+								"x":	115,
+								"y":	75,
+								"width":	10,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"MODEL CODE  COLOR CODE\r\nMODEL NAME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	143
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label14",
+								"text":	"COLOR CODE",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line5"
+							},
+							"coordinates":	{
+								"x":	196,
+								"y":	5,
+								"width":	59,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label15",
+								"text":	"MODEL NAME",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line21"
+							},
+							"coordinates":	{
+								"x":	131,
+								"y":	21,
+								"width":	60,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD004PLAN_TABLE_S4_MTO_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	130,
+								"y":	59,
+								"width":	60,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD004PLAN_TABLE_S4_COLOR_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	195,
+								"y":	59,
+								"width":	55,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S4_COLOR_CODEINSIDE",
+								"mgformat":	"mgFormat",
+								"format":	"XX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	251,
+								"y":	59,
+								"width":	15,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD001_S1_MTO_NAME",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line75"
+							},
+							"coordinates":	{
+								"x":	130,
+								"y":	75,
+								"width":	95,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"PLAN\r\nRESULT",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	41
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S4_PLAN_RESULT",
+								"mgformat":	"mgFormat",
+								"format":	"######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	273,
+								"y":	59,
+								"width":	35,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column8",
+						"column_title":	"PROD.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	29
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S4_PRODCATEGORY",
+								"items_list":	" :OTHER,X:BRIAL",
+								"mgformat":	"mgFormat",
+								"validator":	"rangevalidator",
+								"format":	"U",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	320,
+								"y":	59,
+								"width":	10,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column9",
+						"column_title":	"STAMP",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	30
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S4_STAMP_CATEGORY",
+								"items_list":	" :OTHER,X:EXCEPTION",
+								"mgformat":	"mgFormat",
+								"validator":	"rangevalidator",
+								"format":	"U",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	349,
+								"y":	59,
+								"width":	10,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column10",
+						"column_title":	"EXIT",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	25
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S4_EXIT_CATEGORY",
+								"items_list":	" :OTHER,X:EXCEPTION",
+								"mgformat":	"mgFormat",
+								"validator":	"rangevalidator",
+								"format":	"U",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	376,
+								"y":	59,
+								"width":	10,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column11",
+						"column_title":	"OEM",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	21
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S4_OEM_CATEGORY",
+								"items_list":	" :OTHER,X:OEM",
+								"mgformat":	"mgFormat",
+								"validator":	"rangevalidator",
+								"format":	"X",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	400,
+								"y":	59,
+								"width":	10,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column12",
+						"column_title":	"REP",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	24
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S4_REPAIR_CATEGORY",
+								"items_list":	" :OTHER,X:REPLACE",
+								"mgformat":	"mgFormat",
+								"validator":	"rangevalidator",
+								"format":	"U",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	423,
+								"y":	59,
+								"width":	10,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column13",
+						"column_title":	"KD LOT NO.\r\nIND.1ST    ENG/FRM\r\nNO.TYPE        NO.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	104
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label16",
+								"text":	"IND.1ST ENG/FRM NO.TYPE",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line21"
+							},
+							"coordinates":	{
+								"x":	441,
+								"y":	21,
+								"width":	79,
+								"height":	29
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label18",
+								"text":	"NO.",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	505,
+								"y":	34,
+								"width":	36,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD004PLAN_TABLE_S4_KD_LOT_NO",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line59"
+							},
+							"coordinates":	{
+								"x":	443,
+								"y":	59,
+								"width":	76,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S4_IND1ST_CHASSIS_NOTYPE",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line75"
+							},
+							"coordinates":	{
+								"x":	443,
+								"y":	75,
+								"width":	60,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S4_IND1ST_CHASSIS_NO",
+								"mgformat":	"mgFormat",
+								"currency":	"currency",
+								"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line75"
+							},
+							"coordinates":	{
+								"x":	505,
+								"y":	75,
+								"width":	40,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"CATEGORY",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	311,
+				"y":	3,
+				"width":	128,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Group37",
+				"common_line_id":	"line338"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	338,
+				"width":	530,
+				"height":	29
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_DATA_V",
+						"mgformat":	"mgFormat",
+						"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+						"attribute":	"D",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	8,
+						"y":	349,
+						"width":	53,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"SA_DAY_OF_THE_WEEK1",
+						"mgformat":	"mgFormat",
+						"format":	"XX",
+						"attribute":	"A",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	68,
+						"y":	349,
+						"width":	15,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_SEQ_V",
+						"mgformat":	"mgFormat",
+						"format":	"###",
+						"attribute":	"N",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	90,
+						"y":	349,
+						"width":	20,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_SEQ_SUFFIX_V",
+						"mgformat":	"mgFormat",
+						"format":	"#",
+						"attribute":	"N",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	116,
+						"y":	349,
+						"width":	9,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"MTO_CODE_V",
+						"show_zoom_button":	true,
+						"mgformat":	"mgFormat",
+						"format":	"UUUUUUUUUUU",
+						"attribute":	"A",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	130,
+						"y":	349,
+						"width":	60,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"COLOR_CODE_V",
+						"show_zoom_button":	true,
+						"mgformat":	"mgFormat",
+						"format":	"UUUUUUUUUU",
+						"attribute":	"A",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	195,
+						"y":	349,
+						"width":	55,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"COLOR_CODEINSIDE_V",
+						"mgformat":	"mgFormat",
+						"format":	"UU",
+						"attribute":	"A",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	251,
+						"y":	349,
+						"width":	15,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_RESULT_V",
+						"mgformat":	"mgFormat",
+						"format":	"######",
+						"attribute":	"N",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	273,
+						"y":	349,
+						"width":	35,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_PROD_CATEGORY_V",
+						"items_list":	" :OTHER,X:BRIAL",
+						"mgformat":	"mgFormat",
+						"validator":	"rangevalidator",
+						"format":	"U",
+						"attribute":	"A",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	320,
+						"y":	349,
+						"width":	10,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_STAMP_CATEGORY_V",
+						"items_list":	" :OTHER,X:EXCEPTION",
+						"mgformat":	"mgFormat",
+						"validator":	"rangevalidator",
+						"format":	"U",
+						"attribute":	"A",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	349,
+						"y":	349,
+						"width":	10,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_EXIT_CATEGORY_V",
+						"items_list":	" :OTHER,X:EXCEPTION",
+						"mgformat":	"mgFormat",
+						"validator":	"rangevalidator",
+						"format":	"U",
+						"attribute":	"A",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	376,
+						"y":	349,
+						"width":	10,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"V_PLAN_OEM_CATEGORY_V",
+						"items_list":	" :OTHER,X:OEM",
+						"mgformat":	"mgFormat",
+						"validator":	"rangevalidator",
+						"format":	"U",
+						"attribute":	"A",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	400,
+						"y":	349,
+						"width":	10,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_AUX_CATEGORY_V",
+						"items_list":	" :OTHER,X:REPAIR",
+						"mgformat":	"mgFormat",
+						"validator":	"rangevalidator",
+						"format":	"U",
+						"attribute":	"A",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	423,
+						"y":	349,
+						"width":	10,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"KD_LOT_NO_V",
+						"mgformat":	"mgFormat",
+						"format":	"UUUUUUUUUUUUUU",
+						"attribute":	"A",
+						"common_line_id":	"line349"
+					},
+					"coordinates":	{
+						"x":	443,
+						"y":	349,
+						"width":	76,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Group52",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"common_line_id":	"line374"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	374,
+				"width":	423,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label53",
+						"visible":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"text":	"PLAN CODE",
+						"common_line_id":	"line374"
+					},
+					"coordinates":	{
+						"x":	376,
+						"y":	374,
+						"width":	49,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_DATE_V2",
+						"visible":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+						"attribute":	"D",
+						"common_line_id":	"line387"
+					},
+					"coordinates":	{
+						"x":	8,
+						"y":	387,
+						"width":	53,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"SA_DAY_OF_THE_WEEK2",
+						"visible":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"format":	"XX",
+						"attribute":	"A",
+						"common_line_id":	"line387"
+					},
+					"coordinates":	{
+						"x":	68,
+						"y":	387,
+						"width":	15,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_SEQ_V2",
+						"visible":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"format":	"###",
+						"attribute":	"N",
+						"common_line_id":	"line387"
+					},
+					"coordinates":	{
+						"x":	90,
+						"y":	387,
+						"width":	20,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_SEQ_SUFFIX_V2",
+						"visible":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"format":	"#",
+						"attribute":	"N",
+						"common_line_id":	"line387"
+					},
+					"coordinates":	{
+						"x":	115,
+						"y":	387,
+						"width":	10,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_RESULT_V2",
+						"visible":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"format":	"######",
+						"attribute":	"N",
+						"common_line_id":	"line387"
+					},
+					"coordinates":	{
+						"x":	273,
+						"y":	387,
+						"width":	35,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"PLAN_CODE_V",
+						"visible":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"format":	"UUUUUU",
+						"attribute":	"A",
+						"common_line_id":	"line387"
+					},
+					"coordinates":	{
+						"x":	375,
+						"y":	387,
+						"width":	35,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"GO_BUTTOM",
+				"attribute":	"A",
+				"common_line_id":	"line374"
+			},
+			"coordinates":	{
+				"x":	485,
+				"y":	369,
+				"width":	66,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

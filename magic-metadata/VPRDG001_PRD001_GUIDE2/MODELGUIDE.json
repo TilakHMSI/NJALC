@@ -10,8 +10,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	258,
-		"height":	307
+		"width":	314,
+		"height":	353
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -37,138 +37,39 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"line_divider":	true
-			},
+			"style":	null,
 			"props":	{
-				"id":	"Table2",
-				"table_row_height":	18,
-				"table_title_height":	20,
-				"common_line_id":	"line34"
+				"id":	"vSearch",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line26"
 			},
 			"coordinates":	{
-				"x":	13,
-				"y":	34,
-				"width":	228,
-				"height":	271
+				"x":	17,
+				"y":	26,
+				"width":	214,
+				"height":	22
 			},
 			"hint":	null,
-			"controlType":	"A",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column3",
-						"column_title":	"PARTS MODEL CODE",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	90
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"PRD001_S1_PARTS_MTO_CODE",
-								"mgformat":	"mgFormat",
-								"format":	"UUUUUUUUUUU",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line57"
-							},
-							"coordinates":	{
-								"x":	15,
-								"y":	57,
-								"width":	61,
-								"height":	19
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column4",
-						"column_title":	"MODEL NAME",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	101
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"PRD001_S1_MTO_NAME",
-								"mgformat":	"mgFormat",
-								"format":	"UUUUUUUUUUUUUUUUUU",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line57"
-							},
-							"coordinates":	{
-								"x":	106,
-								"y":	57,
-								"width":	96,
-								"height":	19
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column5",
-						"column_title":	"EFM",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	23
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"PRD001_S1_EFM",
-								"items_list":	"E:ENGINE,F:FRAME,M:MISSION",
-								"mgformat":	"mgFormat",
-								"validator":	"rangevalidator",
-								"format":	"U",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line57"
-							},
-							"coordinates":	{
-								"x":	210,
-								"y":	57,
-								"width":	11,
-								"height":	19
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				}
-			]
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Subform9",
+				"common_line_id":	"line54"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	54,
+				"width":	285,
+				"height":	289
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
 		}
 	]
 }

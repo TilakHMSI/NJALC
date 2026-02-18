@@ -1,0 +1,223 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"MonthlyPRODUCTIONSCHDmainte",
+		"window_type":	12,
+		"component_path":	"VPRDO181_MONTHLY_SCHD_ENTRY/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO181_MONTHLY_SCHD_ENTRY_MonthlyPRODUCTIONSCHDmainte"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	590,
+		"height":	520
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	3,
+				"width":	208,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"PLAN CODE",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	20,
+				"y":	8,
+				"width":	45,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PLAN_CODE_V",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	69,
+				"y":	7,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"PLAN MONTH YEAR",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	105,
+				"y":	8,
+				"width":	75,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PLAN_MONTH_YEAR_V",
+				"mgformat":	"mgFormat",
+				"format":	"MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	184,
+				"y":	7,
+				"width":	36,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	270,
+				"y":	5,
+				"width":	49,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	365,
+				"y":	7,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	{
+					"value":	"PGM=VPRDO181",
+					"has_exp":	true
+				},
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	388,
+				"y":	7,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit6",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	453,
+				"y":	7,
+				"width":	55,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit7",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	509,
+				"y":	7,
+				"width":	45,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SubTaskCall",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	31,
+				"width":	581,
+				"height":	484
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}
