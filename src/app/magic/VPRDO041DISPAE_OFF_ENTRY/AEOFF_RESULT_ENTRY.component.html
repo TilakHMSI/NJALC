@@ -6,9 +6,6 @@
                     <h3><label class="lable_overflow mb-0">
                             {{mg.getText(mgc.Label2)}}
                         </label></h3>
-                    <h5 style="background-color: #008080; color: #ffffff;">Last Export Report Time : <input type="time"
-                            [formControlName]="mgc.V_VDharamTime" [magic]="mgc.V_VDharamTime"
-                            style="background-color: #008080; color: #ffffff; border:0" step=1 /></h5>
                     <div class="d-flex align-items-center">
                         <label [magic]="mgc.Edit5" class="mb-0 mr-3">
                             {{mg.getValue(mgc.Edit5)
@@ -71,14 +68,14 @@
                             </div>
                             <div class="col-lg-4" *ngIf="mg.getVisible(mgc.MISSION_DSP)==='visible'">
                                 <div class="form-group">
-                                   
+
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center">
                                 <label class="LastScanned">
                                     {{mg.getValue(mgc.LastScanned) }}</label>
                             </div>
-                    
+
                         </div>
                     </div>
                 </div>
