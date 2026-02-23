@@ -7,7 +7,7 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     SelectExcelFile = "SelectExcelFile",
-        Edit5 = "Edit5",
+        vBlob64Format = "vBlob64Format",
         Label1 = "Label1",
         Select_Excel_File = "Select_Excel_File",
         Execute = "Execute",
@@ -17,8 +17,8 @@ export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get Edit5(): FormControl {
-        return this.fg.controls[MgControlName.Edit5] as FormControl;
+    get vBlob64Format(): FormControl {
+        return this.fg.controls[MgControlName.vBlob64Format] as FormControl;
     }
 
     get Select_Excel_File(): FormControl {

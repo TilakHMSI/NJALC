@@ -76,11 +76,11 @@ export var
         'Column5',
         'Column6',
         'Column7',
-        'Column8',
-        'Column9',
-        'Column10',
-        'Column11',
-        'Column12',
+        // 'Column8',
+        // 'Column9',
+        // 'Column10',
+        // 'Column11',
+        // 'Column12',
         'Column13',
     ];
 

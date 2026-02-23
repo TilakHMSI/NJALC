@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDO181_MONTHLY_SCHD_ENTRY_MODE_GET_ViewMemory_ViewMemory',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrl: './ViewMemory.component.css',
     templateUrl: './ViewMemory.component.html'
 })
 export class ViewMemory extends BaseMatTableMagicComponent implements MagicModalInterface {

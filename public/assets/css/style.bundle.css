@@ -2902,6 +2902,18 @@ pre code {
   color: #3F4254;
 }
 
+.lbl-tbl-sm {
+  font-size: 1rem ! important;
+  font-weight: 600;
+  color: #0a0a0a;
+}
+
+.lbl-tbl-sm-value {
+  font-size: 1rem ! important;
+  font-weight: 400;
+  color: #0a0a0a;
+}
+
 .form-control-cnt {
   display: block;
   width: 100%;
@@ -99171,8 +99183,20 @@ span.menu-text {
   background-color: #f3f6f9;
 }
 
-.selected {
+.mat-mdc-row-selected {
   background: #fbf5aa;
+}
+
+::ng-deep .mat-mdc-row.selected {
+  background-color: #9afac5 !important; 
+}
+
+::ng-deep .mat-mdc-row.selected .mat-mdc-cell {
+  background-color: #e3f2fd !important;  /* Ensure cells inherit */
+}
+
+::ng-deep .mat-mdc-row.selected:hover {
+  background-color: #458a5c !important;
 }
 
 /* .mat-mdc-header-cell {

@@ -4,51 +4,57 @@
   color: #ffffff;
 
 }
+::ng-deep .table_row.selected {
+  background-color: #9afac5 !important;  /* Light blue background */
+}
 
+::ng-deep .table_row.selected:hover {
+  background-color: #458a5c !important;  /* Darker on hover */
+}
 .mat-mdc-table label {
     margin-bottom: 0px;
     margin-right: 5px! important;
 }
 
 .mat-mdc-cell:first-child{
-    flex: 0 0 9%;
+    flex: 0 0 12%;
     padding-left: 5px;
 }
 .mat-mdc-header-cell:first-child{
-    flex: 0 0 9%;
+    flex: 0 0 12%;
     padding-left: 5px;
 }
 .mat-mdc-cell:nth-child(2){
-  flex: 0 0 5%;
+  flex: 0 0 6%;
 }
 .mat-mdc-header-cell:nth-child(2){
-  flex: 0 0 5%;
+  flex: 0 0 6%;
 }
 .mat-mdc-cell:nth-child(3){
-  flex: 0 0 12%;
+  flex: 0 0 17%;
 }
 .mat-mdc-header-cell:nth-child(3){
-  flex: 0 0 12%;
+  flex: 0 0 17%;
 }
 .mat-mdc-cell:nth-child(4){
-  flex: 0 0 23%;
+  flex: 0 0 35%;
 }
 .mat-mdc-header-cell:nth-child(4){
-  flex: 0 0 23%;
+  flex: 0 0 33%;
 }
 .mat-mdc-cell:nth-child(5){
-  flex: 0 0 7%;
+  flex: 0 0 10%;
 }
 .mat-mdc-header-cell:nth-child(5){
-  flex: 0 0 7%;
+  flex: 0 0 12%;
 }
 .mat-mdc-cell:nth-child(6){
-  flex: 0 0 5%;
+  flex: 0 0 20%;
 }
 .mat-mdc-header-cell:nth-child(6){
-  flex: 0 0 5%;
+  flex: 0 0 20%;
 }
-.mat-mdc-cell:nth-child(7){
+/* .mat-mdc-cell:nth-child(7){
     flex: 0 0 5%;
 }
 .mat-mdc-header-cell:nth-child(7){
@@ -77,4 +83,4 @@
 }
 .mat-mdc-header-cell:nth-child(11){
   flex: 0 0 18%;
-}
+} */

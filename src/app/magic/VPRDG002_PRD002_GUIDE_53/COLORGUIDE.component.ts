@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDG002_PRD002_GUIDE_53_COLORGUIDE',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrl: './COLORGUIDE.component.css',
     templateUrl: './COLORGUIDE.component.html'
 })
 export class COLORGUIDE extends BaseMatTableMagicComponent implements MagicModalInterface {
@@ -29,11 +30,11 @@ export class COLORGUIDE extends BaseMatTableMagicComponent implements MagicModal
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "400px";
+    private static readonly height: string = "465px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
-    private static readonly isResizable: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
+    private static readonly isResizable: boolean = false;
     private static readonly isMovable: boolean = true;
     X() {
         return COLORGUIDE.x;

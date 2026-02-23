@@ -8,15 +8,15 @@ import {
 export enum MgControlName {
     WarningmessageGrey = "WarningmessageGrey",
         Label1 = "Label1",
-        P_ERROR = "P_ERROR",
+        pMESSAGE = "pMESSAGE",
         VButton = "VButton",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get P_ERROR(): FormControl {
-        return this.fg.controls[MgControlName.P_ERROR] as FormControl;
+    get pMESSAGE(): FormControl {
+        return this.fg.controls[MgControlName.pMESSAGE] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

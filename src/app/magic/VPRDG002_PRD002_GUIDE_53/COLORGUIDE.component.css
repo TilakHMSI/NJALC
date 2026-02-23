@@ -1,0 +1,13 @@
+.mat-header-row{
+  background: none;
+  background-color: #008080! important;
+  color: #ffffff;  
+}
+
+::ng-deep .table_row.selected {
+  background-color: #9afac5 !important;  /* Light blue background */
+}
+
+::ng-deep .table_row.selected:hover {
+  background-color: #458a5c !important;  /* Darker on hover */
+}
