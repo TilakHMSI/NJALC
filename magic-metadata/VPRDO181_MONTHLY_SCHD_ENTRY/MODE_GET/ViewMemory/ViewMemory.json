@@ -494,7 +494,7 @@
 			"style":	null,
 			"props":	{
 				"id":	"vCreateUpdateInSchedule",
-				"enabled":	{
+				"visible":	{
 					"value":	null,
 					"has_exp":	true
 				},

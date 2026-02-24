@@ -28,9 +28,9 @@
 			},
 			"coordinates":	{
 				"x":	5,
-				"y":	2,
+				"y":	3,
 				"width":	553,
-				"height":	335
+				"height":	334
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -58,15 +58,15 @@
 									"has_exp":	true
 								},
 								"mgformat":	"mgFormat",
-								"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+								"format":	"DD-MM-YYYY",
 								"attribute":	"D",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	8,
-								"y":	59,
+								"y":	60,
 								"width":	53,
 								"height":	15
 							},
@@ -99,11 +99,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	68,
-								"y":	59,
+								"y":	60,
 								"width":	15,
 								"height":	15
 							},
@@ -134,11 +134,11 @@
 								"text":	"PLAN SEQ",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line31"
+								"common_line_id":	"line32"
 							},
 							"coordinates":	{
 								"x":	90,
-								"y":	31,
+								"y":	32,
 								"width":	31,
 								"height":	26
 							},
@@ -155,11 +155,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	90,
-								"y":	59,
+								"y":	60,
 								"width":	35,
 								"height":	15
 							},
@@ -176,11 +176,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line75"
+								"common_line_id":	"line76"
 							},
 							"coordinates":	{
 								"x":	90,
-								"y":	75,
+								"y":	76,
 								"width":	20,
 								"height":	15
 							},
@@ -197,11 +197,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line75"
+								"common_line_id":	"line76"
 							},
 							"coordinates":	{
 								"x":	115,
-								"y":	75,
+								"y":	76,
 								"width":	10,
 								"height":	15
 							},
@@ -232,11 +232,11 @@
 								"text":	"COLOR CODE",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line5"
+								"common_line_id":	"line6"
 							},
 							"coordinates":	{
 								"x":	196,
-								"y":	5,
+								"y":	6,
 								"width":	59,
 								"height":	16
 							},
@@ -251,11 +251,11 @@
 								"text":	"MODEL NAME",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line21"
+								"common_line_id":	"line22"
 							},
 							"coordinates":	{
 								"x":	131,
-								"y":	21,
+								"y":	22,
 								"width":	60,
 								"height":	13
 							},
@@ -272,11 +272,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	130,
-								"y":	59,
+								"y":	60,
 								"width":	60,
 								"height":	15
 							},
@@ -293,11 +293,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	195,
-								"y":	59,
+								"y":	60,
 								"width":	55,
 								"height":	15
 							},
@@ -314,11 +314,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	251,
-								"y":	59,
+								"y":	60,
 								"width":	15,
 								"height":	15
 							},
@@ -335,11 +335,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line75"
+								"common_line_id":	"line76"
 							},
 							"coordinates":	{
 								"x":	130,
-								"y":	75,
+								"y":	76,
 								"width":	95,
 								"height":	15
 							},
@@ -372,11 +372,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	273,
-								"y":	59,
+								"y":	60,
 								"width":	35,
 								"height":	15
 							},
@@ -411,11 +411,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	320,
-								"y":	59,
+								"y":	60,
 								"width":	10,
 								"height":	15
 							},
@@ -450,11 +450,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	349,
-								"y":	59,
+								"y":	60,
 								"width":	10,
 								"height":	15
 							},
@@ -489,11 +489,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	376,
-								"y":	59,
+								"y":	60,
 								"width":	10,
 								"height":	15
 							},
@@ -528,11 +528,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	400,
-								"y":	59,
+								"y":	60,
 								"width":	10,
 								"height":	15
 							},
@@ -567,11 +567,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	423,
-								"y":	59,
+								"y":	60,
 								"width":	10,
 								"height":	15
 							},
@@ -602,11 +602,11 @@
 								"text":	"IND.1ST ENG/FRM NO.TYPE",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line21"
+								"common_line_id":	"line22"
 							},
 							"coordinates":	{
 								"x":	441,
-								"y":	21,
+								"y":	22,
 								"width":	79,
 								"height":	29
 							},
@@ -621,11 +621,11 @@
 								"text":	"NO.",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line34"
+								"common_line_id":	"line35"
 							},
 							"coordinates":	{
 								"x":	505,
-								"y":	34,
+								"y":	35,
 								"width":	36,
 								"height":	16
 							},
@@ -642,11 +642,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line59"
+								"common_line_id":	"line60"
 							},
 							"coordinates":	{
 								"x":	443,
-								"y":	59,
+								"y":	60,
 								"width":	76,
 								"height":	15
 							},
@@ -663,11 +663,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line75"
+								"common_line_id":	"line76"
 							},
 							"coordinates":	{
 								"x":	443,
-								"y":	75,
+								"y":	76,
 								"width":	60,
 								"height":	15
 							},
@@ -685,11 +685,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line75"
+								"common_line_id":	"line76"
 							},
 							"coordinates":	{
 								"x":	505,
-								"y":	75,
+								"y":	76,
 								"width":	40,
 								"height":	15
 							},
@@ -1197,6 +1197,7 @@
 			"style":	null,
 			"props":	{
 				"id":	"GO_BUTTOM",
+				"format":	"U:UPDATE",
 				"attribute":	"A",
 				"common_line_id":	"line374"
 			},

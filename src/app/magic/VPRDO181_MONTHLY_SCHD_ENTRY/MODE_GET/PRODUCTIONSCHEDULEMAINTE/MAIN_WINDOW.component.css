@@ -2,8 +2,14 @@
   background: none;
   background-color: #008080! important;
   color: #ffffff;
-
 }
+.form-group-sm {
+    margin: 0.5rem ! important;
+}
+.form-group {
+    margin: 0.5rem ! important;
+}
+
 ::ng-deep .table_row.selected {
   background-color: #9afac5 !important;  /* Light blue background */
 }

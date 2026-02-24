@@ -1,16 +1,20 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"btnSearch",
-		"format":	"Search"
+		"id":	"S4_IND1ST_CHASSIS_NO",
+		"mgformat":	"mgFormat",
+		"format":	"#######",
+		"attribute":	"N",
+		"is_table_child":	true,
+		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	255,
-		"y":	26,
-		"width":	41,
-		"height":	22
+		"x":	505,
+		"y":	76,
+		"width":	40,
+		"height":	15
 	},
 	"hint":	null,
-	"controlType":	"B",
+	"controlType":	"T",
 	"children":	null
 }

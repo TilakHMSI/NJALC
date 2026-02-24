@@ -49,11 +49,11 @@ export var
         'Column6',
         'Column7',
         'Column8',
-        'Column9',
-        'Column10',
-        'Column11',
-        'Column12',
-        'Column13',
+        // 'Column9',
+        // 'Column10',
+        // 'Column11',
+        // 'Column12',
+        // 'Column13',
         'Column14',
     ];
 

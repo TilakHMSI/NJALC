@@ -24,7 +24,7 @@
 					"value":	false,
 					"has_exp":	true
 				},
-				"items_list":	"ADDITION,UPDATE,SPLIT/MOVE",
+				"items_list":	"ADDITION,UPDATE",
 				"attribute":	"A",
 				"common_line_id":	"line3"
 			},

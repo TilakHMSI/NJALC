@@ -1,7 +1,7 @@
 <div novalidate [formGroup]="screenFormGroup">
     <div [magic]="mgc.VIEW_WORK">
-            <div class="m-tablewrapper pl-0 pr-0">
-                <div class="example-container mat-elevation-z8 Table1TableContainerProps">
+        <div class="m-tablewrapper pl-0 pr-0">
+            <div class="example-container mat-elevation-z8 Table1TableContainerProps">
                 <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
                     (matSortChange)="tableService.sortData($event)">
                     <ng-container [magic]="mgc.Column4" [matColumnDef]="mgc.Column4">
@@ -20,11 +20,10 @@
                                             [style.visibility]="mg.getVisible(mgc.VPRDO182_WORK_W182_PLAN_DATE, row.rowId)"
                                             dateInput />
                                     </div>
-                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.VPRDO182_WORK_W182_PLAN_DATE"
-                                        [rowId]="row.rowId"
-                                        [style.visibility]="mg.getVisible(mgc.VPRDO182_WORK_W182_PLAN_DATE, row.rowId)">
-                                        {{mg.getValue(mgc.VPRDO182_WORK_W182_PLAN_DATE, row.rowId)
-                                        | magicDate : mgc.VPRDO182_WORK_W182_PLAN_DATE}}
+                                    <label *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.VPRDO182_WORK_W182_PLAN_DATE" [rowId]="row.rowId">
+                                        {{ mg.getValue(mgc.VPRDO182_WORK_W182_PLAN_DATE, row.rowId) | date:'dd/MM/yyyy'
+                                        }}
                                     </label>
                                 </div>
                             </div>
@@ -44,8 +43,8 @@
                                             [style.visibility]="mg.getVisible(mgc.SA_DAY_OF_THE_WEEK, row.rowId)"
                                             mgFormat />
                                         <mgError [magic]=mgc.SA_DAY_OF_THE_WEEK [rowId]="row.rowId"> </mgError>
-                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.SA_DAY_OF_THE_WEEK"
-                                            [rowId]="row.rowId"
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SA_DAY_OF_THE_WEEK" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.SA_DAY_OF_THE_WEEK, row.rowId)">
                                             {{mg.getValue(mgc.SA_DAY_OF_THE_WEEK, row.rowId)
                                             }}
@@ -104,8 +103,8 @@
                                             [style.visibility]="mg.getVisible(mgc.W182_PLAN_SEQ_SUFFIX, row.rowId)"
                                             mgFormat />
                                         <mgError [magic]=mgc.W182_PLAN_SEQ_SUFFIX [rowId]="row.rowId"> </mgError>
-                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.W182_PLAN_SEQ_SUFFIX"
-                                            [rowId]="row.rowId"
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.W182_PLAN_SEQ_SUFFIX" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.W182_PLAN_SEQ_SUFFIX, row.rowId)">
                                             {{mg.getValue(mgc.W182_PLAN_SEQ_SUFFIX, row.rowId)
                                             }}
@@ -117,10 +116,10 @@
                     </ng-container>
                     <ng-container [magic]="mgc.Column7" [matColumnDef]="mgc.Column7">
                         <mat-header-cell *matHeaderCellDef>
-                            MODEL CODE/NAME | COLOR CODE
+                            MODEL | COLOR CODE
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
-                            <div style="display: flex; flex-direction: column" *ngIf="mg.ifRowCreated(row)">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input [formControlName]="mgc.VPRDO182_WORK_W182_MTO_CODE"
@@ -136,6 +135,25 @@
                                 </div>
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
+                                        <input [formControlName]="mgc.PRD001_S1_MTO_NAME"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PRD001_S1_MTO_NAME"
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.PRD001_S1_MTO_NAME, row.rowId)"
+                                            mgFormat />
+                                        <mgError [magic]=mgc.PRD001_S1_MTO_NAME [rowId]="row.rowId"> </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PRD001_S1_MTO_NAME" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.PRD001_S1_MTO_NAME, row.rowId)">
+                                            {{mg.getValue(mgc.PRD001_S1_MTO_NAME, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
                                         <input [formControlName]="mgc.VPRDO182_WORK_W182_COLOR_CODE"
                                             *ngIf="mg.isRowInRowEditing(row)"
                                             [magic]="mgc.VPRDO182_WORK_W182_COLOR_CODE" [rowId]="row.rowId"
@@ -143,28 +161,10 @@
                                             mgFormat />
                                         <mgError [magic]=mgc.VPRDO182_WORK_W182_COLOR_CODE [rowId]="row.rowId">
                                         </mgError>
-                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                        <label class="text-danger font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
                                             [magic]="mgc.VPRDO182_WORK_W182_COLOR_CODE" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.VPRDO182_WORK_W182_COLOR_CODE, row.rowId)">
                                             {{mg.getValue(mgc.VPRDO182_WORK_W182_COLOR_CODE, row.rowId)
-                                            }}
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="display: flex; flex-direction: column" *ngIf="mg.ifRowCreated(row)">
-                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input [formControlName]="mgc.PRD001_S1_MTO_NAME"
-                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PRD001_S1_MTO_NAME"
-                                            [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.PRD001_S1_MTO_NAME, row.rowId)"
-                                            mgFormat />
-                                        <mgError [magic]=mgc.PRD001_S1_MTO_NAME [rowId]="row.rowId"> </mgError>
-                                        <label class="text-danger font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PRD001_S1_MTO_NAME"
-                                            [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.PRD001_S1_MTO_NAME, row.rowId)">
-                                            {{mg.getValue(mgc.PRD001_S1_MTO_NAME, row.rowId)
                                             }}
                                         </label>
                                     </div>
@@ -177,8 +177,8 @@
                                             [style.visibility]="mg.getVisible(mgc.W182_COLOR_CODEINSIDE, row.rowId)"
                                             mgFormat />
                                         <mgError [magic]=mgc.W182_COLOR_CODEINSIDE [rowId]="row.rowId"> </mgError>
-                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.W182_COLOR_CODEINSIDE"
-                                            [rowId]="row.rowId"
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.W182_COLOR_CODEINSIDE" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.W182_COLOR_CODEINSIDE, row.rowId)">
                                             {{mg.getValue(mgc.W182_COLOR_CODEINSIDE, row.rowId)
                                             }}
@@ -225,8 +225,8 @@
                                             [style.visibility]="mg.getVisible(mgc.W182_PRODCATEGORY, row.rowId)"
                                             mgFormat rangevalidator />
                                         <mgError [magic]=mgc.W182_PRODCATEGORY [rowId]="row.rowId"> </mgError>
-                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.W182_PRODCATEGORY"
-                                            [rowId]="row.rowId"
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.W182_PRODCATEGORY" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.W182_PRODCATEGORY, row.rowId)">
                                             {{mg.getValue(mgc.W182_PRODCATEGORY, row.rowId)
                                             }}
@@ -250,8 +250,8 @@
                                             [style.visibility]="mg.getVisible(mgc.W182_STAMP_CATEGORY, row.rowId)"
                                             mgFormat rangevalidator />
                                         <mgError [magic]=mgc.W182_STAMP_CATEGORY [rowId]="row.rowId"> </mgError>
-                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.W182_STAMP_CATEGORY"
-                                            [rowId]="row.rowId"
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.W182_STAMP_CATEGORY" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.W182_STAMP_CATEGORY, row.rowId)">
                                             {{mg.getValue(mgc.W182_STAMP_CATEGORY, row.rowId)
                                             }}
@@ -275,8 +275,8 @@
                                             [style.visibility]="mg.getVisible(mgc.W182_EXIT_CATEGORY, row.rowId)"
                                             mgFormat rangevalidator />
                                         <mgError [magic]=mgc.W182_EXIT_CATEGORY [rowId]="row.rowId"> </mgError>
-                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.W182_EXIT_CATEGORY"
-                                            [rowId]="row.rowId"
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.W182_EXIT_CATEGORY" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.W182_EXIT_CATEGORY, row.rowId)">
                                             {{mg.getValue(mgc.W182_EXIT_CATEGORY, row.rowId)
                                             }}
@@ -300,8 +300,8 @@
                                             [style.visibility]="mg.getVisible(mgc.W182_OEM_CATEGORY, row.rowId)"
                                             mgFormat rangevalidator />
                                         <mgError [magic]=mgc.W182_OEM_CATEGORY [rowId]="row.rowId"> </mgError>
-                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.W182_OEM_CATEGORY"
-                                            [rowId]="row.rowId"
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.W182_OEM_CATEGORY" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.W182_OEM_CATEGORY, row.rowId)">
                                             {{mg.getValue(mgc.W182_OEM_CATEGORY, row.rowId)
                                             }}
@@ -325,8 +325,8 @@
                                             [style.visibility]="mg.getVisible(mgc.W182_REPAIR_CATEGORY, row.rowId)"
                                             mgFormat rangevalidator />
                                         <mgError [magic]=mgc.W182_REPAIR_CATEGORY [rowId]="row.rowId"> </mgError>
-                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.W182_REPAIR_CATEGORY"
-                                            [rowId]="row.rowId"
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.W182_REPAIR_CATEGORY" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.W182_REPAIR_CATEGORY, row.rowId)">
                                             {{mg.getValue(mgc.W182_REPAIR_CATEGORY, row.rowId)
                                             }}
@@ -361,7 +361,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="display: flex; flex-direction: column" *ngIf="mg.ifRowCreated(row)">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input [formControlName]="mgc.W182_IND1ST_CHASSIS_NOTYPE"
@@ -381,16 +381,12 @@
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input [formControlName]="mgc.W182_IND1ST_CHASSIS_NO"
-                                            *ngIf="mg.isRowInRowEditing(row)" currencyMask
-                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.W182_IND1ST_CHASSIS_NO))"
-                                            [magic]="mgc.W182_IND1ST_CHASSIS_NO" [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.W182_IND1ST_CHASSIS_NO, row.rowId)"
-                                            mgFormat />
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.W182_IND1ST_CHASSIS_NO" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.W182_IND1ST_CHASSIS_NO [rowId]="row.rowId"> </mgError>
                                         <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.W182_IND1ST_CHASSIS_NO"
-                                            [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.W182_IND1ST_CHASSIS_NO, row.rowId)">
-                                            {{mg.getFormattedValue(mgc.W182_IND1ST_CHASSIS_NO, row.rowId)
+                                            [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.W182_IND1ST_CHASSIS_NO, row.rowId)
                                             }}
                                         </label>
                                     </div>
@@ -404,7 +400,7 @@
                         (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator #paginator [pageSize]="10"  [hidePageSize]="true"
+                <mat-paginator #paginator [pageSize]="10" [hidePageSize]="true"
                     (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
             </div>
@@ -414,8 +410,8 @@
                 MONTHLY TOTAL
             </label>
             <div>
-                <input class="form-control-sm " [formControlName]="mgc.V_MONTHLY_TOTAL_V" type='number' [magic]="mgc.V_MONTHLY_TOTAL_V"
-                    mgFormat />
+                <input class="form-control-sm " [formControlName]="mgc.V_MONTHLY_TOTAL_V" type='number'
+                    [magic]="mgc.V_MONTHLY_TOTAL_V" mgFormat />
                 <mgError [magic]=mgc.V_MONTHLY_TOTAL_V> </mgError>
             </div>
         </div>

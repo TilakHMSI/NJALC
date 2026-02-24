@@ -16,10 +16,9 @@
                                             [magic]="mgc.PRD004PLAN_TABLE_S4_PLAN_DATE" [rowId]="row.rowId" dateInput />
                                     </div>
                                     <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
-                                        [magic]="mgc.PRD004PLAN_TABLE_S4_PLAN_DATE" [rowId]="row.rowId"
-                                        [style.visibility]="mg.getVisible(mgc.PRD004PLAN_TABLE_S4_PLAN_DATE, row.rowId)">
-                                        {{mg.getValue(mgc.PRD004PLAN_TABLE_S4_PLAN_DATE, row.rowId)
-                                        | magicDate : mgc.PRD004PLAN_TABLE_S4_PLAN_DATE}}
+                                        [magic]="mgc.PRD004PLAN_TABLE_S4_PLAN_DATE" [rowId]="row.rowId">
+                                        {{ mg.getValue(mgc.PRD004PLAN_TABLE_S4_PLAN_DATE, row.rowId) | date:'dd/MM/yyyy'
+                                        }}
                                     </label>
                                 </div>
                             </div>
@@ -49,45 +48,57 @@
                     </ng-container>
                     <ng-container [magic]="mgc.Column5" [matColumnDef]="mgc.Column5">
                         <mat-header-cell *matHeaderCellDef>
-                            WEEK NO. | PLAN SEQ
+                            WEEK
+                            NO.
+                            PLAN
+                            SEQ
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                           
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input [formControlName]="mgc.PRD004PLAN_TABLE_S4_WEEK_NO"
-                                        *ngIf="mg.isRowInRowEditing(row)" type='number'
-                                        [magic]="mgc.PRD004PLAN_TABLE_S4_WEEK_NO" [rowId]="row.rowId" mgFormat />
-                                    <mgError [magic]=mgc.PRD004PLAN_TABLE_S4_WEEK_NO [rowId]="row.rowId"> </mgError>
-                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PRD004PLAN_TABLE_S4_WEEK_NO"
-                                        [rowId]="row.rowId">
-                                        {{mg.getValue(mgc.PRD004PLAN_TABLE_S4_WEEK_NO, row.rowId)
-                                        }}
-                                    </label>
-                                </div>
-                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input [formControlName]="mgc.PRD004PLAN_TABLE_S4_PLAN_SEQ"
-                                        *ngIf="mg.isRowInRowEditing(row)" type='number'
-                                        [magic]="mgc.PRD004PLAN_TABLE_S4_PLAN_SEQ" [rowId]="row.rowId" mgFormat />
-                                    <mgError [magic]=mgc.PRD004PLAN_TABLE_S4_PLAN_SEQ [rowId]="row.rowId">
-                                    </mgError>
-                                    <label class="font-size-h6 ml-5" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PRD004PLAN_TABLE_S4_PLAN_SEQ"
-                                        [rowId]="row.rowId">
-                                        {{mg.getValue(mgc.PRD004PLAN_TABLE_S4_PLAN_SEQ, row.rowId)
-                                        }}
-                                    </label>
-                                </div>
-                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input [formControlName]="mgc.S4_PLAN_SEQ_SUFFIX" *ngIf="mg.isRowInRowEditing(row)"
-                                        type='number' [magic]="mgc.S4_PLAN_SEQ_SUFFIX" [rowId]="row.rowId" mgFormat />
-                                    <mgError [magic]=mgc.S4_PLAN_SEQ_SUFFIX [rowId]="row.rowId"> </mgError>
-                                    <label class="font-size-h6 ml-5" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S4_PLAN_SEQ_SUFFIX"
-                                        [rowId]="row.rowId">
-                                        {{mg.getValue(mgc.S4_PLAN_SEQ_SUFFIX, row.rowId)
-                                        }}
-                                    </label>
+                                    <div>
+                                        <input [formControlName]="mgc.PRD004PLAN_TABLE_S4_WEEK_NO"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.PRD004PLAN_TABLE_S4_WEEK_NO" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PRD004PLAN_TABLE_S4_WEEK_NO [rowId]="row.rowId"> </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PRD004PLAN_TABLE_S4_WEEK_NO" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.PRD004PLAN_TABLE_S4_WEEK_NO, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.PRD004PLAN_TABLE_S4_PLAN_SEQ"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.PRD004PLAN_TABLE_S4_PLAN_SEQ" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PRD004PLAN_TABLE_S4_PLAN_SEQ [rowId]="row.rowId">
+                                        </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PRD004PLAN_TABLE_S4_PLAN_SEQ" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.PRD004PLAN_TABLE_S4_PLAN_SEQ, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.S4_PLAN_SEQ_SUFFIX"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.S4_PLAN_SEQ_SUFFIX" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.S4_PLAN_SEQ_SUFFIX [rowId]="row.rowId"> </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S4_PLAN_SEQ_SUFFIX"
+                                            [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.S4_PLAN_SEQ_SUFFIX, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </mat-cell>
                     </ng-container>
                     <ng-container [magic]="mgc.Column6" [matColumnDef]="mgc.Column6">
@@ -97,55 +108,69 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input [formControlName]="mgc.PRD004PLAN_TABLE_S4_MTO_CODE"
-                                        *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PRD004PLAN_TABLE_S4_MTO_CODE"
-                                        [rowId]="row.rowId" mgFormat />
-                                    <mgError [magic]=mgc.PRD004PLAN_TABLE_S4_MTO_CODE [rowId]="row.rowId">
-                                    </mgError>
-                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PRD004PLAN_TABLE_S4_MTO_CODE"
-                                        [rowId]="row.rowId">
-                                        {{mg.getValue(mgc.PRD004PLAN_TABLE_S4_MTO_CODE, row.rowId)
-                                        }}
-                                    </label>
+                                    <div>
+                                        <input [formControlName]="mgc.PRD004PLAN_TABLE_S4_MTO_CODE"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PRD004PLAN_TABLE_S4_MTO_CODE"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PRD004PLAN_TABLE_S4_MTO_CODE [rowId]="row.rowId">
+                                        </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PRD004PLAN_TABLE_S4_MTO_CODE" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.PRD004PLAN_TABLE_S4_MTO_CODE, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
                                 </div>
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input [formControlName]="mgc.PRD001_S1_MTO_NAME" *ngIf="mg.isRowInRowEditing(row)"
-                                        [magic]="mgc.PRD001_S1_MTO_NAME" [rowId]="row.rowId" mgFormat />
-                                    <mgError [magic]=mgc.PRD001_S1_MTO_NAME [rowId]="row.rowId"> </mgError>
-                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PRD001_S1_MTO_NAME"
-                                        [rowId]="row.rowId">
-                                        {{mg.getValue(mgc.PRD001_S1_MTO_NAME, row.rowId)
-                                        }}
-                                    </label>
+                                    <div>
+                                        <input [formControlName]="mgc.PRD001_S1_MTO_NAME"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PRD001_S1_MTO_NAME"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PRD001_S1_MTO_NAME [rowId]="row.rowId"> </mgError>
+                                        <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PRD001_S1_MTO_NAME"
+                                            [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.PRD001_S1_MTO_NAME, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.PRD004PLAN_TABLE_S4_COLOR_CODE"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PRD004PLAN_TABLE_S4_COLOR_CODE" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PRD004PLAN_TABLE_S4_COLOR_CODE [rowId]="row.rowId">
+                                        </mgError>
+                                        <label class="text-danger font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PRD004PLAN_TABLE_S4_COLOR_CODE" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.PRD004PLAN_TABLE_S4_COLOR_CODE, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
                                 </div>
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input [formControlName]="mgc.PRD004PLAN_TABLE_S4_COLOR_CODE"
-                                        *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PRD004PLAN_TABLE_S4_COLOR_CODE"
-                                        [rowId]="row.rowId" mgFormat />
-                                    <mgError [magic]=mgc.PRD004PLAN_TABLE_S4_COLOR_CODE [rowId]="row.rowId">
-                                    </mgError>
-                                    <label class="text-danger font-size-h6" *ngIf="!mg.isRowInRowEditing(row)"
-                                        [magic]="mgc.PRD004PLAN_TABLE_S4_COLOR_CODE" [rowId]="row.rowId">
-                                        {{mg.getValue(mgc.PRD004PLAN_TABLE_S4_COLOR_CODE, row.rowId)
-                                        }}
-                                    </label>
-                                </div>
-                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input [formControlName]="mgc.S4_COLOR_CODEINSIDE" *ngIf="mg.isRowInRowEditing(row)"
-                                        [magic]="mgc.S4_COLOR_CODEINSIDE" [rowId]="row.rowId" mgFormat />
-                                    <mgError [magic]=mgc.S4_COLOR_CODEINSIDE [rowId]="row.rowId"> </mgError>
-                                    <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S4_COLOR_CODEINSIDE"
-                                        [rowId]="row.rowId">
-                                        {{mg.getValue(mgc.S4_COLOR_CODEINSIDE, row.rowId)
-                                        }}
-                                    </label>
+                                    <div>
+                                        <input [formControlName]="mgc.S4_COLOR_CODEINSIDE"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.S4_COLOR_CODEINSIDE"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.S4_COLOR_CODEINSIDE [rowId]="row.rowId"> </mgError>
+                                        <label class="text-danger font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S4_COLOR_CODEINSIDE"
+                                            [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.S4_COLOR_CODEINSIDE, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </mat-cell>
                     </ng-container>
                     <ng-container [magic]="mgc.Column7" [matColumnDef]="mgc.Column7">
                         <mat-header-cell *matHeaderCellDef>
-                            PLAN RESULT
+                            PLAN
+                            RESULT
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
@@ -279,6 +304,7 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
                                         <input [formControlName]="mgc.PRD004PLAN_TABLE_S4_KD_LOT_NO"
                                             *ngIf="mg.isRowInRowEditing(row)"
                                             [magic]="mgc.PRD004PLAN_TABLE_S4_KD_LOT_NO" [rowId]="row.rowId" mgFormat />
@@ -289,8 +315,12 @@
                                             {{mg.getValue(mgc.PRD004PLAN_TABLE_S4_KD_LOT_NO, row.rowId)
                                             }}
                                         </label>
+                                    </div>
                                 </div>
-                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
                                         <input [formControlName]="mgc.S4_IND1ST_CHASSIS_NOTYPE"
                                             *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.S4_IND1ST_CHASSIS_NOTYPE"
                                             [rowId]="row.rowId" mgFormat />
@@ -300,18 +330,20 @@
                                             {{mg.getValue(mgc.S4_IND1ST_CHASSIS_NOTYPE, row.rowId)
                                             }}
                                         </label>
+                                    </div>
                                 </div>
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
                                         <input [formControlName]="mgc.S4_IND1ST_CHASSIS_NO"
-                                            *ngIf="mg.isRowInRowEditing(row)" currencyMask
-                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.S4_IND1ST_CHASSIS_NO))"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
                                             [magic]="mgc.S4_IND1ST_CHASSIS_NO" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.S4_IND1ST_CHASSIS_NO [rowId]="row.rowId"> </mgError>
                                         <label class="font-size-h6" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S4_IND1ST_CHASSIS_NO"
                                             [rowId]="row.rowId">
-                                            {{mg.getFormattedValue(mgc.S4_IND1ST_CHASSIS_NO, row.rowId)
+                                            {{mg.getValue(mgc.S4_IND1ST_CHASSIS_NO, row.rowId)
                                             }}
                                         </label>
+                                    </div>
                                 </div>
                             </div>
                         </mat-cell>
@@ -322,7 +354,7 @@
                         (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator #paginator [pageSize]="10" [hidePageSize]="true" showFirstLastButtons
+                <mat-paginator #paginator [pageSize]="8" [hidePageSize]="true" showFirstLastButtons
                     (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
             </div>
@@ -333,21 +365,21 @@
                     <div class="form-group row">
                         <div class="col-lg-2">
                             <div class="form-group-sm">
-                                <label class="font-size-h6" class="lbl-sm">.</label>
+                                <label class="font-size-h6" >.</label>
                                 <input type="date" [formControlName]="mgc.PLAN_DATA_V" [magic]="mgc.PLAN_DATA_V"
                                     class="form-control-sm" dateInput />
                             </div>
                         </div>
                         <div class="col-lg-1">
                             <div class="form-group-sm">
-                                <label class="font-size-h6" class="lbl-sm">.</label>
+                                <label class="font-size-h6" >.</label>
                                 <input [formControlName]="mgc.SA_DAY_OF_THE_WEEK1" [magic]="mgc.SA_DAY_OF_THE_WEEK1"
                                     class="form-control-sm" mgFormat />
                             </div>
                         </div>
                         <div class="col-lg-1">
                             <div class="form-group-sm">
-                                <label class="font-size-h6" class="lbl-sm">.</label>
+                                <label class="font-size-h6" >.</label>
                                 <input type="number" [formControlName]="mgc.PLAN_SEQ_V" [magic]="mgc.PLAN_SEQ_V"
                                     class="form-control-sm" mgFormat />
                                 <mgError [magic]="mgc.PLAN_SEQ_V"> </mgError>
@@ -355,7 +387,7 @@
                         </div>
                         <div class="col-lg-1">
                             <div class="form-group-sm">
-                                <label class="font-size-h6" class="lbl-sm">.</label>
+                                <label class="font-size-h6" >.</label>
                                 <input [formControlName]="mgc.PLAN_SEQ_SUFFIX_V" [magic]="mgc.PLAN_SEQ_SUFFIX_V"
                                     class="form-control-sm" mgFormat />
                                 <mgError [magic]="mgc.PLAN_SEQ_SUFFIX_V"> </mgError>
@@ -363,7 +395,7 @@
                         </div>
                         <div class="col-lg-2">
                             <div class="form-group">
-                                <label class="font-size-h6" class="lbl-sm">.</label>
+                                <label class="font-size-h6" >.</label>
                                 <div class="input-group">
                                     <input type="text" [formControlName]="mgc.MTO_CODE_V" [magic]="mgc.MTO_CODE_V"
                                         class="form-control-sm" placeholder="SELECT MTO CODE" mgFormat />
@@ -389,7 +421,7 @@
                         </div>
                         <div class="col-lg-2">
                             <div class="form-group">
-                                <label class="font-size-h6" class="lbl-sm">.</label>
+                                <label class="font-size-h6" >.</label>
                                 <div class="input-group">
                                     <input type="text" [formControlName]="mgc.COLOR_CODE_V" [magic]="mgc.COLOR_CODE_V"
                                         class="form-control-sm" placeholder="SELECT COLOR CODE" mgFormat />
@@ -415,14 +447,14 @@
                         </div>
                         <div class="col-lg-1">
                             <div class="form-group-sm">
-                                <label class="font-size-h6" class="lbl-sm">.</label>
+                                <label class="font-size-h6" >.</label>
                                 <input class="form-control-sm" [formControlName]="mgc.PLAN_RESULT_V" type='number'
                                     [magic]="mgc.PLAN_RESULT_V" mgFormat />
                             </div>
                         </div>
                         <div class="col-lg-1">
                             <div class="form-group-sm">
-                                <label class="font-size-h6" class="lbl-sm">.</label>
+                                <label class="font-size-h6" >.</label>
                                 <input [formControlName]="mgc.KD_LOT_NO_V" [magic]="mgc.KD_LOT_NO_V"
                                     class="form-control-sm" mgFormat />
                             </div>

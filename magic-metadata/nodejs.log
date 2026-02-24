@@ -27,24 +27,46 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDG001_PRD001_GUIDE2/MODELGUIDE.json
-[>] Loading JSON file .//magic-metadata/VPRDG001_PRD001_GUIDE2/List/MODELGUIDE.json
-*** Step 2: Processing JSON files -  (2 components) ***
-[>] Processing JSON file for component MODELGUIDE
-[>] Processing JSON file for component MODELGUIDE
-*** Step 3: generate components. (2 components) ***
-[>] generate component MODELGUIDE
-[>] generate component MODELGUIDE
+[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/MonthlyPRODUCTIONSCHDmainte.json
+[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/MODE_GET.json
+[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/SelectExcelFile/SelectExcelFile.json
+[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/ViewMemory/ViewMemory.json
+[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/PRODUCTIONSCHEDULEMAINTE/MAIN_WINDOW.json
+[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/INPUTPARA/INPUTPARA.json
+*** Step 2: Processing JSON files -  (6 components) ***
+[>] Processing JSON file for component MonthlyPRODUCTIONSCHDmainte
+[>] Processing JSON file for component MODE_GET
+[>] Processing JSON file for component SelectExcelFile
+[>] Processing JSON file for component ViewMemory
+[>] Processing JSON file for component MAIN_WINDOW
+[>] Processing JSON file for component INPUTPARA
+*** Step 3: generate components. (6 components) ***
+[>] generate component MonthlyPRODUCTIONSCHDmainte
+[>] generate component MODE_GET
+[>] generate component SelectExcelFile
+[>] generate component ViewMemory
+[>] generate component MAIN_WINDOW
+[>] generate component INPUTPARA
 [>] Step 4: components-list.
- Total old components: 193, added components: 1. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VPRDG001_PRD001_GUIDE2/List/MODELGUIDE.mg.controls.g.ts (1352 bytes)
-[32mCREATE[39m src/app/magic/VPRDG001_PRD001_GUIDE2/List/MODELGUIDE.component.ts (2217 bytes)
-[32mCREATE[39m src/app/magic/VPRDG001_PRD001_GUIDE2/List/MODELGUIDE.component.html (8135 bytes)
-[36mUPDATE[39m src/app/magic/VPRDG001_PRD001_GUIDE2/MODELGUIDE.mg.controls.g.ts (756 bytes)
-[36mUPDATE[39m src/app/magic/VPRDG001_PRD001_GUIDE2/MODELGUIDE.component.ts (2045 bytes)
-[36mUPDATE[39m src/app/magic/VPRDG001_PRD001_GUIDE2/MODELGUIDE.component.html (903 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (66968 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MonthlyPRODUCTIONSCHDmainte.mg.controls.g.ts (1518 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MonthlyPRODUCTIONSCHDmainte.component.ts (2305 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MonthlyPRODUCTIONSCHDmainte.component.html (2312 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/MODE_GET.mg.controls.g.ts (786 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/MODE_GET.component.ts (755 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/MODE_GET.component.html (1163 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/SelectExcelFile/SelectExcelFile.mg.controls.g.ts (995 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/SelectExcelFile/SelectExcelFile.component.ts (2150 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/SelectExcelFile/SelectExcelFile.component.html (1569 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/ViewMemory/ViewMemory.mg.controls.g.ts (2956 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/ViewMemory/ViewMemory.component.ts (2237 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/ViewMemory/ViewMemory.component.html (21921 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/PRODUCTIONSCHEDULEMAINTE/MAIN_WINDOW.mg.controls.g.ts (8445 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/PRODUCTIONSCHEDULEMAINTE/MAIN_WINDOW.component.ts (960 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/PRODUCTIONSCHEDULEMAINTE/MAIN_WINDOW.component.html (48550 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/INPUTPARA/INPUTPARA.mg.controls.g.ts (743 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/INPUTPARA/INPUTPARA.component.ts (2045 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/INPUTPARA/INPUTPARA.component.html (987 bytes)
 
 
 
