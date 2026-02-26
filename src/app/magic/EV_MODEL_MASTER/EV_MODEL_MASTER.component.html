@@ -1,33 +1,3 @@
-<!-- <div novalidate [formGroup]="screenFormGroup">
-    <div style="display: flex; flex-direction: column" [magic]="mgc.EV_MODEL_MASTER">
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit1">
-                {{mg.getValue(mgc.Edit1) }}
-            </label>
-            <label [magic]="mgc.Label5" class="lable_overflow">
-                {{mg.getText(mgc.Label5)}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div [magic]="mgc.MODE_V" (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)">
-                <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
-                    <label>
-                        <input type="radio" [formControlName]="mgc.MODE_V" [value]="o.index" />
-                        {{o.displayValue}}
-                    </label>
-                </div>
-            </div>
-            <button [magic]="mgc.btnexit">
-                Back
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <magic-subform [magic]="mgc.Sub1">
-            </magic-subform>
-        </div>
-    </div>
-</div> -->
-
 <div novalidate [formGroup]="screenFormGroup">
     <div class="container-fluid-ov" [magic]="mgc.EV_MODEL_MASTER">
         <div class="card">
@@ -47,7 +17,7 @@
                     <div class="form-group row">
                         <div class="col-lg-5">
                             <div class="form-group">
-                                <div [magic]="mgc.MODE_V" *ngIf="mg.getVisible(mgc.MODE_V)==='visible'"
+                                <div [magic]="mgc.MODE_V" *ngIf="mg.getVisible(mgc.MODE_V)==='visible'" class="radio-horizontal ml-5"
                                     (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)">
                                     <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
                                         <label class="lbl-sm">

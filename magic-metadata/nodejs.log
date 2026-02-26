@@ -27,46 +27,28 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/MonthlyPRODUCTIONSCHDmainte.json
-[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/MODE_GET.json
-[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/SelectExcelFile/SelectExcelFile.json
-[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/ViewMemory/ViewMemory.json
-[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/PRODUCTIONSCHEDULEMAINTE/MAIN_WINDOW.json
-[>] Loading JSON file .//magic-metadata/VPRDO181_MONTHLY_SCHD_ENTRY/INPUTPARA/INPUTPARA.json
-*** Step 2: Processing JSON files -  (6 components) ***
-[>] Processing JSON file for component MonthlyPRODUCTIONSCHDmainte
-[>] Processing JSON file for component MODE_GET
-[>] Processing JSON file for component SelectExcelFile
-[>] Processing JSON file for component ViewMemory
-[>] Processing JSON file for component MAIN_WINDOW
-[>] Processing JSON file for component INPUTPARA
-*** Step 3: generate components. (6 components) ***
-[>] generate component MonthlyPRODUCTIONSCHDmainte
-[>] generate component MODE_GET
-[>] generate component SelectExcelFile
-[>] generate component ViewMemory
-[>] generate component MAIN_WINDOW
-[>] generate component INPUTPARA
+[>] Loading JSON file .//magic-metadata/EV_MODEL_MASTER/EV_MODEL_MASTER.json
+[>] Loading JSON file .//magic-metadata/EV_MODEL_MASTER/Details/Details.json
+[>] Loading JSON file .//magic-metadata/EV_MODEL_MASTER/Details/MODEL_PICKLIST/MODEL_PICKLIST.json
+*** Step 2: Processing JSON files -  (3 components) ***
+[>] Processing JSON file for component EV_MODEL_MASTER
+[>] Processing JSON file for component Details
+[>] Processing JSON file for component MODEL_PICKLIST
+*** Step 3: generate components. (3 components) ***
+[>] generate component EV_MODEL_MASTER
+[>] generate component Details
+[>] generate component MODEL_PICKLIST
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MonthlyPRODUCTIONSCHDmainte.mg.controls.g.ts (1518 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MonthlyPRODUCTIONSCHDmainte.component.ts (2305 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MonthlyPRODUCTIONSCHDmainte.component.html (2312 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/MODE_GET.mg.controls.g.ts (786 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/MODE_GET.component.ts (755 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/MODE_GET.component.html (1163 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/SelectExcelFile/SelectExcelFile.mg.controls.g.ts (995 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/SelectExcelFile/SelectExcelFile.component.ts (2150 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/SelectExcelFile/SelectExcelFile.component.html (1569 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/ViewMemory/ViewMemory.mg.controls.g.ts (2956 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/ViewMemory/ViewMemory.component.ts (2237 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/ViewMemory/ViewMemory.component.html (21921 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/PRODUCTIONSCHEDULEMAINTE/MAIN_WINDOW.mg.controls.g.ts (8445 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/PRODUCTIONSCHEDULEMAINTE/MAIN_WINDOW.component.ts (960 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/MODE_GET/PRODUCTIONSCHEDULEMAINTE/MAIN_WINDOW.component.html (48550 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/INPUTPARA/INPUTPARA.mg.controls.g.ts (743 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/INPUTPARA/INPUTPARA.component.ts (2045 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO181_MONTHLY_SCHD_ENTRY/INPUTPARA/INPUTPARA.component.html (987 bytes)
+[36mUPDATE[39m src/app/magic/EV_MODEL_MASTER/EV_MODEL_MASTER.mg.controls.g.ts (915 bytes)
+[36mUPDATE[39m src/app/magic/EV_MODEL_MASTER/EV_MODEL_MASTER.component.ts (2113 bytes)
+[36mUPDATE[39m src/app/magic/EV_MODEL_MASTER/EV_MODEL_MASTER.component.html (1394 bytes)
+[36mUPDATE[39m src/app/magic/EV_MODEL_MASTER/Details/Details.mg.controls.g.ts (2254 bytes)
+[36mUPDATE[39m src/app/magic/EV_MODEL_MASTER/Details/Details.component.ts (902 bytes)
+[36mUPDATE[39m src/app/magic/EV_MODEL_MASTER/Details/Details.component.html (14370 bytes)
+[36mUPDATE[39m src/app/magic/EV_MODEL_MASTER/Details/MODEL_PICKLIST/MODEL_PICKLIST.mg.controls.g.ts (872 bytes)
+[36mUPDATE[39m src/app/magic/EV_MODEL_MASTER/Details/MODEL_PICKLIST/MODEL_PICKLIST.component.ts (2292 bytes)
+[36mUPDATE[39m src/app/magic/EV_MODEL_MASTER/Details/MODEL_PICKLIST/MODEL_PICKLIST.component.html (3822 bytes)
 
 
 

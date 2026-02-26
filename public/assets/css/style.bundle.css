@@ -3224,7 +3224,7 @@ textarea.form-control {
 }
 
 .form-group {
-  margin: 1rem;
+  margin: 0.5rem ! important;
 }
 
 .form-group-sm {
@@ -99433,4 +99433,24 @@ input:checked~.tab-content {
 .brown-right-border {
   border-right: 1px solid brown !important;
   position: relative;
+}
+
+.radio-horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust spacing between radios */
+}
+
+.radio-horizontal > div {
+    display: flex;
+    align-items: center;
+}
+
+mat-cell:last-of-type, mat-header-cell:last-of-type, mat-footer-cell:last-of-type {
+    padding-right: 5px! important;
+}
+
+.mdc-data-table__cell, .mdc-data-table__header-cell {
+    padding: 0 5px! important;
 }

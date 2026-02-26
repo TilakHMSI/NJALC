@@ -102,66 +102,53 @@
             <div class="card-body">
                 <div class="form-group row">
                     <div class="col-lg-2">
-                        <!-- <div class="form-group">
-                            <input class="form-control" style="width: 50%;" [formControlName]="mgc.V_LOCATE_P"
-                                [magic]="mgc.V_LOCATE_P" mgFormat />
-
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" style="width: 50%;" [formControlName]="mgc.V_DB_NAME1_P"
-                                [magic]="mgc.V_DB_NAME1_P" mgFormat />
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" style="width: 50%;" [formControlName]="mgc.V_DB_NAME2_P"
-                                [magic]="mgc.V_DB_NAME2_P" mgFormat />
-                        </div> -->
                         
                     </div>
                     <div class="col-lg-8 text-center">
                         <div class="form-group" *ngIf="mg.getVisible(mgc.AEOFF_RESULT_ENTRYVPRDO041)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.AEOFF_RESULT_ENTRYVPRDO041"
                                 *ngIf="mg.getVisible(mgc.AEOFF_RESULT_ENTRYVPRDO041)==='visible'">
                                 {{mg.getValue(mgc.AEOFF_RESULT_ENTRYVPRDO041)}}
                             </button>
                         </div>
                         <div class="form-group" *ngIf="mg.getVisible(mgc.AFOFF_RESULT_ENTRYVPRDO042)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.AFOFF_RESULT_ENTRYVPRDO042"
                                 *ngIf="mg.getVisible(mgc.AFOFF_RESULT_ENTRYVPRDO042)==='visible'">
                                 {{mg.getValue(mgc.AFOFF_RESULT_ENTRYVPRDO042)}}
                             </button>
                         </div>
                         <div class="form-group" *ngIf="mg.getVisible(mgc.VQON_RESULT_ENTRYVPRDO065)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.VQON_RESULT_ENTRYVPRDO065"
                                 *ngIf="mg.getVisible(mgc.VQON_RESULT_ENTRYVPRDO065)==='visible'">
                                 {{mg.getValue(mgc.VQON_RESULT_ENTRYVPRDO065)}}
                             </button>
                         </div>
                         <div class="form-group" *ngIf="mg.getVisible(mgc.FRM_VQOFF_RESULT_ENTVPRDO043)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.FRM_VQOFF_RESULT_ENTVPRDO043"
                                 *ngIf="mg.getVisible(mgc.FRM_VQOFF_RESULT_ENTVPRDO043)==='visible'">
                                 {{mg.getValue(mgc.FRM_VQOFF_RESULT_ENTVPRDO043)}}
                             </button>
                         </div>
                         <div class="form-group" *ngIf="mg.getVisible(mgc.PACKING_RESULT_ENTRYVPRDO044)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.PACKING_RESULT_ENTRYVPRDO044"
                                 *ngIf="mg.getVisible(mgc.PACKING_RESULT_ENTRYVPRDO044)==='visible'">
                                 {{mg.getValue(mgc.PACKING_RESULT_ENTRYVPRDO044)}}
                             </button>
                         </div>
                          <div class="form-group" *ngIf="mg.getVisible(mgc.New_PDIOFF_RESULT_ENTVPRDO066)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.New_PDIOFF_RESULT_ENTVPRDO066"
                                 *ngIf="mg.getVisible(mgc.New_PDIOFF_RESULT_ENTVPRDO066)==='visible'">
                                 {{mg.getValue(mgc.New_PDIOFF_RESULT_ENTVPRDO066)}}
                             </button>
                         </div>
                         <div class="form-group" *ngIf="mg.getVisible(mgc.AF_TEST)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.AF_TEST">
                                 {{mg.getValue(mgc.AF_TEST)}}
                             </button>

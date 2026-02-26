@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-EVPRG7_BATTERY_SCANNING_ENTRY_BATTERYOFFRESULTENTRY',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./BATTERYOFFRESULTENTRY.component.css'],
     templateUrl: './BATTERYOFFRESULTENTRY.component.html'
 })
 export class BATTERYOFFRESULTENTRY extends TaskBaseMagicComponent implements MagicModalInterface {

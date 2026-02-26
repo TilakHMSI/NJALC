@@ -75,8 +75,7 @@
 							"props":	{
 								"id":	"S5_CHASSIS_NO",
 								"mgformat":	"mgFormat",
-								"currency":	"currency",
-								"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+								"format":	"#######",
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,

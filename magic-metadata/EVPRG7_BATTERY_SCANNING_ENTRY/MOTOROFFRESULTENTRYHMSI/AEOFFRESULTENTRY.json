@@ -53,6 +53,10 @@
 							"style":	null,
 							"props":	{
 								"id":	"S5_ENGFRMTYPE",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
 								"mgformat":	"mgFormat",
 								"format":	"XXXXXXXXXXX",
 								"attribute":	"A",
@@ -78,9 +82,12 @@
 									"value":	null,
 									"has_exp":	true
 								},
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
 								"mgformat":	"mgFormat",
-								"currency":	"currency",
-								"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+								"format":	"#######",
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
@@ -117,6 +124,10 @@
 							"props":	{
 								"id":	"S5_MTO_CODE",
 								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"enabled":	{
 									"value":	null,
 									"has_exp":	true
 								},
@@ -161,6 +172,10 @@
 									"value":	null,
 									"has_exp":	true
 								},
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
 								"mgformat":	"mgFormat",
 								"format":	"XX",
 								"attribute":	"A",
@@ -199,6 +214,10 @@
 							"props":	{
 								"id":	"S5_AFOFF_DATE",
 								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"enabled":	{
 									"value":	null,
 									"has_exp":	true
 								},
@@ -244,6 +263,10 @@
 									"value":	null,
 									"has_exp":	true
 								},
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
 								"formatter":	"magicTime",
 								"showsecs":	true,
 								"format":	"HH:MM:SS",
@@ -283,6 +306,10 @@
 							"props":	{
 								"id":	"S5_MTO_NAME",
 								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"enabled":	{
 									"value":	null,
 									"has_exp":	true
 								},

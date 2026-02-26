@@ -52,23 +52,26 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <label>FRAME Number </label>
+                                    <label>FRAME NUMBER </label>
                                     <input class="form-control-ent" [formControlName]="mgc.FRAME_NO_DSP"
                                         [magic]="mgc.FRAME_NO_DSP" mgFormat />
                                     <mgError [magic]=mgc.FRAME_NO_DSP> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.MOTOR_NO_DSP)==='visible'">
+                            <div class="col-lg-3">
                                 <div class="form-group">
-                                    <label>BATTERY Number</label>
+                                    <label>BATTERY NUMBER</label>
                                     <input class="form-control-ent" [formControlName]="mgc.MOTOR_NO_DSP"
                                         [magic]="mgc.MOTOR_NO_DSP" mgFormat />
                                     <mgError [magic]=mgc.MOTOR_NO_DSP> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.MOTOR_NO_DSP)==='visible'">
+                            <div class="col-lg-3" >
                                 <div class="form-group">
-                                   
+                                   <label>BATTERY 2</label>
+                                    <input class="form-control-ent" [formControlName]="mgc.BATTERY2"
+                                        [magic]="mgc.BATTERY2" mgFormat />
+                                    <mgError [magic]=mgc.BATTERY2> </mgError>
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center">

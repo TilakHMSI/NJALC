@@ -1,156 +1,5 @@
-<!-- <div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.PRODUCTIONSEQUENCEPLANMENU"
-    >
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.V_LOCATE_P">
-                {{mg.getValue(mgc.V_LOCATE_P) }}
-            </label>
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
-                PGM=VMNUO002(2-2)
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.V_DB_NAME1_P">
-                {{mg.getValue(mgc.V_DB_NAME1_P) }}
-            </label>
-            <label [magic]="mgc.V_DB_NAME2_P">
-                {{mg.getValue(mgc.V_DB_NAME2_P) }}
-            </label>
-            <label [magic]="mgc.Edit5">
-                {{mg.getValue(mgc.Edit5)
-| magicDate : mgc.Edit5}}
-            </label>
-            <label [magic]="mgc.Edit6">
-                {{mg.getValue(mgc.Edit6)
-| magicTime : mgc.Edit6}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label7"
-                class="lable_overflow"
-            >
-            </label>
-            <button
-                [magic]="mgc.BUTTONVPRDO181"
-                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDO181)"
-            >
-                {{mg.getValue(mgc.BUTTONVPRDO181)}}
-            </button>
-            <button
-                [magic]="mgc.BUTTONVPRDO182"
-                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDO182)"
-            >
-                {{mg.getValue(mgc.BUTTONVPRDO182)}}
-            </button>
-            <button
-                [magic]="mgc.BUTTONVPRDB071"
-                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDB071)"
-            >
-                {{mg.getValue(mgc.BUTTONVPRDB071)}}
-            </button>
-            <button
-                [magic]="mgc.BUTTONVPRDB073"
-                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDB073)"
-            >
-                {{mg.getValue(mgc.BUTTONVPRDB073)}}
-            </button>
-            <label
-                [magic]="mgc.Label8"
-                [style.visibility]="mg.getVisible(mgc.Label8)"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label10"
-                [style.visibility]="mg.getVisible(mgc.Label10)"
-                class="lable_overflow"
-            >
-            </label>
-            <button
-                [magic]="mgc.BUTTONPROD_INDICATE"
-                [style.visibility]="mg.getVisible(mgc.BUTTONPROD_INDICATE)"
-            >
-                {{mg.getValue(mgc.BUTTONPROD_INDICATE)}}
-            </button>
-            <button
-                [magic]="mgc.BUTTONYEAR_PROD_PLAN"
-                [style.visibility]="mg.getVisible(mgc.BUTTONYEAR_PROD_PLAN)"
-            >
-                {{mg.getValue(mgc.BUTTONYEAR_PROD_PLAN)}}
-            </button>
-            <button
-                [magic]="mgc.BUTTONMONTHLY_PROD_PLAN"
-                [style.visibility]="mg.getVisible(mgc.BUTTONMONTHLY_PROD_PLAN)"
-            >
-                {{mg.getValue(mgc.BUTTONMONTHLY_PROD_PLAN)}}
-            </button>
-            <button
-                [magic]="mgc.BUTTONPROD_SEQ_PLAN"
-                [style.visibility]="mg.getVisible(mgc.BUTTONPROD_SEQ_PLAN)"
-            >
-                {{mg.getValue(mgc.BUTTONPROD_SEQ_PLAN)}}
-            </button>
-            <button
-                [magic]="mgc.BUTTONVPRDB078"
-                [style.visibility]="mg.getVisible(mgc.BUTTONVPRDB078)"
-            >
-                {{mg.getValue(mgc.BUTTONVPRDB078)}}
-            </button>
-            <label
-                [magic]="mgc.Label9"
-                [style.visibility]="mg.getVisible(mgc.Label9)"
-                class="lable_overflow"
-            >
-                CAUTION
-            </label>
-            <label
-                [magic]="mgc.Label11"
-                [style.visibility]="mg.getVisible(mgc.Label11)"
-                class="lable_overflow"
-            >
-                LIST
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label12"
-                [style.visibility]="mg.getVisible(mgc.Label12)"
-                class="lable_overflow"
-            >
-            </label>
-            <button
-                [magic]="mgc.BUTTONPROD_SEQ_PLANF"
-                [style.visibility]="mg.getVisible(mgc.BUTTONPROD_SEQ_PLANF)"
-            >
-                {{mg.getValue(mgc.BUTTONPROD_SEQ_PLANF)}}
-            </button>
-            <button
-                [magic]="mgc.BUTTONPROD_SEQ_PLANH"
-                [style.visibility]="mg.getVisible(mgc.BUTTONPROD_SEQ_PLANH)"
-            >
-                {{mg.getValue(mgc.BUTTONPROD_SEQ_PLANH)}}
-            </button>
-        </div>
-    </div>
-</div> -->
-
-
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-
-     <div class="container-fluid-ov" [magic]="mgc.PRODUCTIONSEQUENCEPLANMENU">
-
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.PRODUCTIONSEQUENCEPLANMENU">
         <div class="card">
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center w-100">
@@ -175,92 +24,75 @@
             <div class="card-body">
                 <div class="form-group row">
                     <div class="col-lg-2">
-                        <!-- <div class="form-group">
-                            <input class="form-control" style="width: 50%;" [formControlName]="mgc.V_LOCATE_P"
-                                [magic]="mgc.V_LOCATE_P" mgFormat />
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" style="width: 50%;" [formControlName]="mgc.V_DB_NAME1_P"
-                                [magic]="mgc.V_DB_NAME1_P" mgFormat />
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" style="width: 50%;" [formControlName]="mgc.V_DB_NAME2_P"
-                                [magic]="mgc.V_DB_NAME2_P" mgFormat />
-                        </div> -->
                     </div>
                     <div class="col-lg-8 text-center">
                         <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONVPRDO181)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
-                                [magic]="mgc.BUTTONVPRDO181"
-                                *ngIf="mg.getVisible(mgc.BUTTONVPRDO181)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONVPRDO181" *ngIf="mg.getVisible(mgc.BUTTONVPRDO181)==='visible'">
                                 {{mg.getValue(mgc.BUTTONVPRDO181)}}
                             </button>
                         </div>
                         <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONVPRDO182)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
-                                [magic]="mgc.BUTTONVPRDO182"
-                                *ngIf="mg.getVisible(mgc.BUTTONVPRDO182)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONVPRDO182" *ngIf="mg.getVisible(mgc.BUTTONVPRDO182)==='visible'">
                                 {{mg.getValue(mgc.BUTTONVPRDO182)}}
                             </button>
                         </div>
                         <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONVPRDB071)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
-                                [magic]="mgc.BUTTONVPRDB071"
-                                *ngIf="mg.getVisible(mgc.BUTTONVPRDB071)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONVPRDB071" *ngIf="mg.getVisible(mgc.BUTTONVPRDB071)==='visible'">
                                 {{mg.getValue(mgc.BUTTONVPRDB071)}}
                             </button>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
-                                [magic]="mgc.BUTTONVPRDB073"
-                                *ngIf="mg.getVisible(mgc.BUTTONVPRDB073)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONVPRDB073" *ngIf="mg.getVisible(mgc.BUTTONVPRDB073)==='visible'">
                                 {{mg.getValue(mgc.BUTTONVPRDB073)}}
                             </button>
                         </div>
-                          <div class="form-group">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                        <div class="form-group">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.BUTTONPROD_INDICATE"
                                 *ngIf="mg.getVisible(mgc.BUTTONPROD_INDICATE)==='visible'">
                                 {{mg.getValue(mgc.BUTTONPROD_INDICATE)}}
                             </button>
                         </div>
-                          <div class="form-group">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                        <div class="form-group">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.BUTTONYEAR_PROD_PLAN"
                                 *ngIf="mg.getVisible(mgc.BUTTONYEAR_PROD_PLAN)==='visible'">
                                 {{mg.getValue(mgc.BUTTONYEAR_PROD_PLAN)}}
                             </button>
                         </div>
-                          <div class="form-group">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                        <div class="form-group">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.BUTTONMONTHLY_PROD_PLAN"
                                 *ngIf="mg.getVisible(mgc.BUTTONMONTHLY_PROD_PLAN)==='visible'">
                                 {{mg.getValue(mgc.BUTTONMONTHLY_PROD_PLAN)}}
                             </button>
                         </div>
-                          <div class="form-group">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                        <div class="form-group">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.BUTTONPROD_SEQ_PLAN"
                                 *ngIf="mg.getVisible(mgc.BUTTONPROD_SEQ_PLAN)==='visible'">
                                 {{mg.getValue(mgc.BUTTONPROD_SEQ_PLAN)}}
                             </button>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
-                                [magic]="mgc.BUTTONVPRDB078"
-                                *ngIf="mg.getVisible(mgc.BUTTONVPRDB078)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONVPRDB078" *ngIf="mg.getVisible(mgc.BUTTONVPRDB078)==='visible'">
                                 {{mg.getValue(mgc.BUTTONVPRDB078)}}
                             </button>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.BUTTONPROD_SEQ_PLANF"
                                 *ngIf="mg.getVisible(mgc.BUTTONPROD_SEQ_PLANF)==='visible'">
                                 {{mg.getValue(mgc.BUTTONPROD_SEQ_PLANF)}}
                             </button>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary font-weight-bold mr-3 btn-wdth-75"
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.BUTTONPROD_SEQ_PLANH"
                                 *ngIf="mg.getVisible(mgc.BUTTONPROD_SEQ_PLANH)==='visible'">
                                 {{mg.getValue(mgc.BUTTONPROD_SEQ_PLANH)}}

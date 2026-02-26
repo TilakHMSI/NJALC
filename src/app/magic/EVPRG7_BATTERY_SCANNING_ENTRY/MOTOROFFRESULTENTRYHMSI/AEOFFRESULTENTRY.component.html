@@ -6,7 +6,7 @@
                     (matSortChange)="tableService.sortData($event)">
                     <ng-container [magic]="mgc.Column2" [matColumnDef]="mgc.Column2">
                         <mat-header-cell *matHeaderCellDef>
-                            PU Number
+                            FRAME Number
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
@@ -25,15 +25,13 @@
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input [formControlName]="mgc.S5_CHASSIS_NO" *ngIf="mg.isRowInRowEditing(row)"
-                                            currencyMask
-                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.S5_CHASSIS_NO))"
-                                            [magic]="mgc.S5_CHASSIS_NO" [rowId]="row.rowId"
+                                            type='number' [magic]="mgc.S5_CHASSIS_NO" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_CHASSIS_NO, row.rowId)" mgFormat />
                                         <mgError [magic]=mgc.S5_CHASSIS_NO [rowId]="row.rowId"> </mgError>
                                         <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_CHASSIS_NO"
                                             [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_CHASSIS_NO, row.rowId)">
-                                            {{mg.getFormattedValue(mgc.S5_CHASSIS_NO, row.rowId)
+                                            {{mg.getValue(mgc.S5_CHASSIS_NO, row.rowId)
                                             }}
                                         </label>
                                     </div>
@@ -89,7 +87,7 @@
                     </ng-container>
                     <ng-container [magic]="mgc.Column5" [matColumnDef]="mgc.Column5">
                         <mat-header-cell *matHeaderCellDef>
-                            PCU-OFF DATE
+                            BATTERY-OFF DATE
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
@@ -100,11 +98,10 @@
                                             [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE, row.rowId)"
                                             dateInput />
                                     </div>
-                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_AFOFF_DATE"
-                                        [rowId]="row.rowId"
-                                        [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE, row.rowId)">
-                                        {{mg.getValue(mgc.S5_AFOFF_DATE, row.rowId)
-                                        | magicDate : mgc.S5_AFOFF_DATE}}
+                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.S5_AFOFF_DATE" [rowId]="row.rowId" [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE, row.rowId)">
+                                        {{ mg.getValue(mgc.S5_AFOFF_DATE, row.rowId) | date:'dd/MM/yyyy'
+                                        }}
                                     </label>
                                 </div>
                             </div>
@@ -112,7 +109,7 @@
                     </ng-container>
                     <ng-container [magic]="mgc.Column6" [matColumnDef]="mgc.Column6">
                         <mat-header-cell *matHeaderCellDef>
-                            PCU-OFF TIME
+                            BATTERY-OFF TIME
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">

@@ -1,12 +1,12 @@
 <div novalidate [formGroup]="screenFormGroup">
     <div [magic]="mgc.AEOFFRESULTENTRY">
-            <div class="m-tablewrapper pl-0 pr-0">
-                <div class="example-container mat-elevation-z8 Table1TableContainerProps">
+        <div class="m-tablewrapper pl-0 pr-0">
+            <div class="example-container mat-elevation-z8 Table1TableContainerProps">
                 <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
                     (matSortChange)="tableService.sortData($event)">
                     <ng-container [magic]="mgc.Column2" [matColumnDef]="mgc.Column2">
                         <mat-header-cell *matHeaderCellDef>
-                            GPS Number
+                            Frame Number
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
@@ -15,8 +15,8 @@
                                         <input [formControlName]="mgc.S5_ENGFRMTYPE" *ngIf="mg.isRowInRowEditing(row)"
                                             [magic]="mgc.S5_ENGFRMTYPE" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.S5_ENGFRMTYPE [rowId]="row.rowId"> </mgError>
-                                        <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_ENGFRMTYPE"
-                                            [rowId]="row.rowId">
+                                        <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.S5_ENGFRMTYPE" [rowId]="row.rowId">
                                             {{mg.getValue(mgc.S5_ENGFRMTYPE, row.rowId)
                                             }}
                                         </label>
@@ -25,15 +25,13 @@
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input [formControlName]="mgc.S5_CHASSIS_NO" *ngIf="mg.isRowInRowEditing(row)"
-                                            currencyMask
-                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.S5_CHASSIS_NO))"
-                                            [magic]="mgc.S5_CHASSIS_NO" [rowId]="row.rowId"
+                                            type='number' [magic]="mgc.S5_CHASSIS_NO" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_CHASSIS_NO, row.rowId)" mgFormat />
                                         <mgError [magic]=mgc.S5_CHASSIS_NO [rowId]="row.rowId"> </mgError>
                                         <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_CHASSIS_NO"
                                             [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_CHASSIS_NO, row.rowId)">
-                                            {{mg.getFormattedValue(mgc.S5_CHASSIS_NO, row.rowId)
+                                            {{mg.getValue(mgc.S5_CHASSIS_NO, row.rowId)
                                             }}
                                         </label>
                                     </div>
@@ -53,8 +51,8 @@
                                             [magic]="mgc.S5_MTO_CODE" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_MTO_CODE, row.rowId)" mgFormat />
                                         <mgError [magic]=mgc.S5_MTO_CODE [rowId]="row.rowId"> </mgError>
-                                        <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_MTO_CODE"
-                                            [rowId]="row.rowId"
+                                        <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.S5_MTO_CODE" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_MTO_CODE, row.rowId)">
                                             {{mg.getValue(mgc.S5_MTO_CODE, row.rowId)
                                             }}
@@ -76,8 +74,8 @@
                                             [magic]="mgc.S5_PRODLINE" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_PRODLINE, row.rowId)" mgFormat />
                                         <mgError [magic]=mgc.S5_PRODLINE [rowId]="row.rowId"> </mgError>
-                                        <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_PRODLINE"
-                                            [rowId]="row.rowId"
+                                        <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.S5_PRODLINE" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_PRODLINE, row.rowId)">
                                             {{mg.getValue(mgc.S5_PRODLINE, row.rowId)
                                             }}
@@ -100,11 +98,10 @@
                                             [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE, row.rowId)"
                                             dateInput />
                                     </div>
-                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_AFOFF_DATE"
-                                        [rowId]="row.rowId"
-                                        [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE, row.rowId)">
-                                        {{mg.getValue(mgc.S5_AFOFF_DATE, row.rowId)
-                                        | magicDate : mgc.S5_AFOFF_DATE}}
+                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.S5_AFOFF_DATE" [rowId]="row.rowId" [style.visibility]="mg.getVisible(mgc.S5_AFOFF_DATE, row.rowId)">
+                                        {{ mg.getValue(mgc.S5_AFOFF_DATE, row.rowId) | date:'dd/MM/yyyy'
+                                        }}
                                     </label>
                                 </div>
                             </div>
@@ -122,8 +119,8 @@
                                             [magic]="mgc.S5_AFOFF_TIME" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_AFOFF_TIME, row.rowId)" step=1 />
                                     </div>
-                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_AFOFF_TIME"
-                                        [rowId]="row.rowId"
+                                    <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.S5_AFOFF_TIME" [rowId]="row.rowId"
                                         [style.visibility]="mg.getVisible(mgc.S5_AFOFF_TIME, row.rowId)">
                                         {{mg.getValue(mgc.S5_AFOFF_TIME, row.rowId)
                                         | magicTime : mgc.S5_AFOFF_TIME}}
@@ -144,8 +141,8 @@
                                             [magic]="mgc.S5_MTO_NAME" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_MTO_NAME, row.rowId)" mgFormat />
                                         <mgError [magic]=mgc.S5_MTO_NAME [rowId]="row.rowId"> </mgError>
-                                        <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_MTO_NAME"
-                                            [rowId]="row.rowId"
+                                        <label class="lbl_table-model" *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.S5_MTO_NAME" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_MTO_NAME, row.rowId)">
                                             {{mg.getValue(mgc.S5_MTO_NAME, row.rowId)
                                             }}

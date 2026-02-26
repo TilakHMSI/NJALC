@@ -10,8 +10,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	544,
-		"height":	378
+		"width":	692,
+		"height":	392
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -112,7 +112,7 @@
 							"style":	null,
 							"props":	{
 								"id":	"PCU_ACTIVE",
-								"text":	"QCINSPECTION",
+								"text":	"",
 								"attribute":	"B",
 								"is_table_child":	true,
 								"web_style":	2,
@@ -148,7 +148,7 @@
 							"style":	null,
 							"props":	{
 								"id":	"IVI_ACTIVE",
-								"text":	"FRAMEENGINESCAN",
+								"text":	"",
 								"attribute":	"B",
 								"is_table_child":	true,
 								"web_style":	2,
@@ -184,7 +184,7 @@
 							"style":	null,
 							"props":	{
 								"id":	"GPS_ACTIVE",
-								"text":	"FRAMESCAN",
+								"text":	"",
 								"attribute":	"B",
 								"is_table_child":	true,
 								"web_style":	2,
@@ -220,7 +220,7 @@
 							"style":	null,
 							"props":	{
 								"id":	"SCU_ACTIVE",
-								"text":	"ASSEMBLY",
+								"text":	"",
 								"attribute":	"B",
 								"is_table_child":	true,
 								"web_style":	2,
@@ -230,6 +230,78 @@
 								"x":	370,
 								"y":	72,
 								"width":	19,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"C",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column17",
+						"column_title":	"BATTERY FLAG",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	91
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BATTERY_ACTIVE",
+								"text":	"",
+								"attribute":	"B",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line73"
+							},
+							"coordinates":	{
+								"x":	463,
+								"y":	73,
+								"width":	20,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"C",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column19",
+						"column_title":	"CHARGER FLAG",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	60
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CHARGER_ACTIVE",
+								"text":	"",
+								"attribute":	"B",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line73"
+							},
+							"coordinates":	{
+								"x":	554,
+								"y":	73,
+								"width":	20,
 								"height":	15
 							},
 							"hint":	null,
@@ -266,7 +338,7 @@
 								"common_line_id":	"line73"
 							},
 							"coordinates":	{
-								"x":	463,
+								"x":	614,
 								"y":	73,
 								"width":	28,
 								"height":	22
@@ -286,7 +358,7 @@
 								"common_line_id":	"line99"
 							},
 							"coordinates":	{
-								"x":	463,
+								"x":	614,
 								"y":	99,
 								"width":	35,
 								"height":	22
@@ -306,7 +378,7 @@
 								"common_line_id":	"line125"
 							},
 							"coordinates":	{
-								"x":	463,
+								"x":	614,
 								"y":	125,
 								"width":	43,
 								"height":	22

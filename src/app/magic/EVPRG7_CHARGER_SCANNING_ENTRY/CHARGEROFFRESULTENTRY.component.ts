@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-EVPRG7_CHARGER_SCANNING_ENTRY_CHARGEROFFRESULTENTRY',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./CHARGEROFFRESULTENTRY.component.css'],
     templateUrl: './CHARGEROFFRESULTENTRY.component.html'
 })
 export class CHARGEROFFRESULTENTRY extends TaskBaseMagicComponent implements MagicModalInterface {

@@ -134,6 +134,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"Edit5",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"dataexp":	true,
 				"format":	"XXXXXXXXXXXX",
 				"modifiable":	false,

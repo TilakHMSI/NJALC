@@ -22,6 +22,7 @@ export enum MgControlName {
         MOTOR_NO_DSP = "MOTOR_NO_DSP",
         LastScanned = "LastScanned",
         LastScannedEngine = "LastScannedEngine",
+        BATTERY2 = "BATTERY2",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -61,6 +62,10 @@ export class MgFormControlsAccessor {
 
     get LastScannedEngine(): FormControl {
         return this.fg.controls[MgControlName.LastScannedEngine] as FormControl;
+    }
+
+    get BATTERY2(): FormControl {
+        return this.fg.controls[MgControlName.BATTERY2] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

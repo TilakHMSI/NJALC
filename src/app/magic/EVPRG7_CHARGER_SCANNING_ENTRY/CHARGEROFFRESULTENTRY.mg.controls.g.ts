@@ -22,6 +22,7 @@ export enum MgControlName {
         BATTERY_NO_DSP = "BATTERY_NO_DSP",
         LastScanned = "LastScanned",
         LastScannedEngine = "LastScannedEngine",
+        BATTERY_KEY = "BATTERY_KEY",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

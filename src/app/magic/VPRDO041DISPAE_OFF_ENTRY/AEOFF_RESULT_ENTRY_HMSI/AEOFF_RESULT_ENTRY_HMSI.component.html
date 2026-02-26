@@ -25,13 +25,13 @@
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input [formControlName]="mgc.S5_CHASSIS_NO" *ngIf="mg.isRowInRowEditing(row)"
-                                            currencyMask
-                                            [options]="mg.getNumericPicture(mg.getPicture(mgc.S5_CHASSIS_NO))"
-                                            [magic]="mgc.S5_CHASSIS_NO" [rowId]="row.rowId" mgFormat />
+                                            type='number' [magic]="mgc.S5_CHASSIS_NO" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.S5_CHASSIS_NO, row.rowId)" mgFormat />
                                         <mgError [magic]=mgc.S5_CHASSIS_NO [rowId]="row.rowId"> </mgError>
                                         <label class="lbl_table" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_CHASSIS_NO"
-                                            [rowId]="row.rowId">
-                                            {{mg.getFormattedValue(mgc.S5_CHASSIS_NO, row.rowId)
+                                            [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.S5_CHASSIS_NO, row.rowId)">
+                                            {{mg.getValue(mgc.S5_CHASSIS_NO, row.rowId)
                                             }}
                                         </label>
                                     </div>

@@ -44,7 +44,6 @@
 .mat-mdc-header-cell:nth-child(6){
   flex: 0 0 14%;
 }
-
 .mat-mdc-cell:nth-child(7){
   flex: 0 0 6%;
 }
@@ -52,8 +51,8 @@
   flex: 0 0 6%;
 }
 .mat-mdc-cell:nth-child(8){
-  flex: 0 0 17%;
+  flex: 0 0 16%;
 }
 .mat-mdc-header-cell:nth-child(8){
-  flex: 0 0 17%;
+  flex: 0 0 16%;
 }

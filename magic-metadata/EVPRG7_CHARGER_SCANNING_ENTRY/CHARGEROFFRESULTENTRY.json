@@ -10,8 +10,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	560,
-		"height":	483
+		"width":	622,
+		"height":	527
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -187,8 +187,8 @@
 			"coordinates":	{
 				"x":	83,
 				"y":	387,
-				"width":	474,
-				"height":	52
+				"width":	473,
+				"height":	78
 			},
 			"hint":	null,
 			"controlType":	"L",
@@ -250,6 +250,23 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label16",
+				"text":	"KEY.",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	332,
+				"y":	437,
+				"width":	50,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"BATTERY_NO_DSP",
 				"mgformat":	"mgFormat",
 				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
@@ -269,16 +286,35 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"BATTERY_KEY",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line387"
+			},
+			"coordinates":	{
+				"x":	386,
+				"y":	437,
+				"width":	169,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"LastScanned",
 				"mgformat":	"mgFormat",
 				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
 				"modifiable":	false,
 				"attribute":	"A",
-				"common_line_id":	"line442"
+				"common_line_id":	"line492"
 			},
 			"coordinates":	{
-				"x":	153,
-				"y":	442,
+				"x":	156,
+				"y":	492,
 				"width":	84,
 				"height":	24
 			},
@@ -294,11 +330,11 @@
 				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
 				"modifiable":	false,
 				"attribute":	"A",
-				"common_line_id":	"line442"
+				"common_line_id":	"line492"
 			},
 			"coordinates":	{
-				"x":	249,
-				"y":	442,
+				"x":	252,
+				"y":	492,
 				"width":	84,
 				"height":	24
 			},
