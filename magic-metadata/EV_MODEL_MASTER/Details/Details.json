@@ -10,8 +10,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	692,
-		"height":	392
+		"width":	854,
+		"height":	365
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -50,8 +50,8 @@
 			"coordinates":	{
 				"x":	0,
 				"y":	49,
-				"width":	514,
-				"height":	259
+				"width":	816,
+				"height":	306
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -313,6 +313,42 @@
 				{
 					"style":	null,
 					"props":	{
+						"id":	"Column23",
+						"column_title":	"KEY FLAG",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	67
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"KEY_ACTIVE",
+								"text":	"",
+								"attribute":	"B",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line73"
+							},
+							"coordinates":	{
+								"x":	614,
+								"y":	73,
+								"width":	20,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"C",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
 						"id":	"Column12",
 						"is_table_child":	true,
 						"web_style":	2
@@ -338,7 +374,7 @@
 								"common_line_id":	"line73"
 							},
 							"coordinates":	{
-								"x":	614,
+								"x":	681,
 								"y":	73,
 								"width":	28,
 								"height":	22
@@ -358,7 +394,7 @@
 								"common_line_id":	"line99"
 							},
 							"coordinates":	{
-								"x":	614,
+								"x":	681,
 								"y":	99,
 								"width":	35,
 								"height":	22
@@ -378,7 +414,7 @@
 								"common_line_id":	"line125"
 							},
 							"coordinates":	{
-								"x":	614,
+								"x":	681,
 								"y":	125,
 								"width":	43,
 								"height":	22

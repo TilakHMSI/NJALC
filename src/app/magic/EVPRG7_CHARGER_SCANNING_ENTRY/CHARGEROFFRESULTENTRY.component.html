@@ -64,7 +64,7 @@
                                     <mgError [magic]=mgc.BATTERY_NO_DSP> </mgError>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3" *ngIf="mg.getVisible(mgc.BATTERY_KEY)==='visible'">
                                 <div class="form-group">
                                    <label>KEY</label>
                                     <input class="form-control-ent" [formControlName]="mgc.BATTERY_KEY"

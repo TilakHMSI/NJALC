@@ -53,27 +53,34 @@
 }
 
 .mat-mdc-cell:nth-child(6) {
-  flex: 0 0 14%;
+  flex: 0 0 12%;
 }
 
 .mat-mdc-header-cell:nth-child(6) {
-  flex: 0 0 14%;
+  flex: 0 0 12%;
 }
 
 .mat-mdc-cell:nth-child(7) {
-  flex: 0 0 14%;
+  flex: 0 0 12%;
 }
 
 .mat-mdc-header-cell:nth-child(7) {
-  flex: 0 0 14%;
+  flex: 0 0 12%;
 }
 
 .mat-mdc-cell:nth-child(8) {
-  /* flex: 0 0 14%; */
-  justify-content: flex-end;
+  flex: 0 0 8%;
 }
 
 .mat-mdc-header-cell:nth-child(8) {
-  /* flex: 0 0 14%; */
+  flex: 0 0 8%;
+}
+.mat-mdc-cell:nth-child(9) {
+  /* flex: 0 0 10%; */
+  justify-content: flex-end;
+}
+
+.mat-mdc-header-cell:nth-child(9) {
+  /* flex: 0 0 10%; */
   justify-content: flex-end;
 }

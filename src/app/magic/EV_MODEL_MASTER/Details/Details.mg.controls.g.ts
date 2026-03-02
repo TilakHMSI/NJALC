@@ -23,6 +23,8 @@ export enum MgControlName {
         BATTERY_ACTIVE = "BATTERY_ACTIVE",
         Column19 = "Column19",
         CHARGER_ACTIVE = "CHARGER_ACTIVE",
+        Column23 = "Column23",
+        KEY_ACTIVE = "KEY_ACTIVE",
         Column12 = "Column12",
         EnterRowEditing = "EnterRowEditing",
         SaveRowEditing = "SaveRowEditing",
@@ -38,6 +40,7 @@ export var
         'Column6',
         'Column17',
         'Column19',
+        'Column23',
         'Column12',
     ];
 
@@ -70,6 +73,10 @@ export class MgFormControlsAccessor {
 
     get CHARGER_ACTIVE(): FormControl {
         return this.getTableChildFormControl(MgControlName.CHARGER_ACTIVE);
+    }
+
+    get KEY_ACTIVE(): FormControl {
+        return this.getTableChildFormControl(MgControlName.KEY_ACTIVE);
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {
