@@ -28,7 +28,7 @@ export class VPRDG000_PRD001_GUIDE_51 extends TaskBaseMagicComponent implements 
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "800px";
-    private static readonly height: string = "600px";
+    private static readonly height: string = "650px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = false;

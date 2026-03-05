@@ -106,6 +106,8 @@ export enum MgControlName {
         S1_DESIGNNO = "S1_DESIGNNO",
         S1_VARIANT_NO = "S1_VARIANT_NO",
         Sub2 = "Sub2",
+        Btn_Save="Btn_Save",
+        Btn_Cancel="Btn_Cancel"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

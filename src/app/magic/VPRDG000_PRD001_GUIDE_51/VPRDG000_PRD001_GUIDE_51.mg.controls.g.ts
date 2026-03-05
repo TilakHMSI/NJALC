@@ -12,6 +12,8 @@ export enum MgControlName {
         Label1 = "Label1",
         V_DISP_FLG_V = "V_DISP_FLG_V",
         SubFormDisplay = "SubFormDisplay",
+        vSearch="vSearch",
+        Btn_Search="Btn_Search"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

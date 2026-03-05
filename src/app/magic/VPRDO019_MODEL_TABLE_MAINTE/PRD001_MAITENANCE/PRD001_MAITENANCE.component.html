@@ -1251,6 +1251,53 @@
             
         </div>
     </div>
-    <magic-subform [magic]="mgc.Sub2">
-    </magic-subform> 
+
+  <div class="col-lg-12 mt-2">
+                            <div [magic]="mgc.Tab43">
+                                <div class="tab_control">
+                                    <div class="wizard wizard-3 pb-2">
+                                        <div class="wizard-nav">
+                                            <div class="wizard-steps px-1 py-1">
+                                                <div class="wizard-step" data-wizard-state=""
+                                                    *ngFor="let o of mg.getItemListValues(mgc.Tab43)">
+                                                    <div class="wizard-label"
+                                                        (click)="task.mgOnTabSelectionChanged(mgc.Tab43, o.index)"
+                                                        [ngClass]="{'current01' : mg.isTabPageSelected(mgc.Tab43, o.index+1 )}">
+                                                        <h3 class="wizard-title">
+                                                            <span class="label label-xl label-dottabs mr-2"></span>
+                                                            {{mg.getTabpageText(mgc.Tab43, o.index)}}
+                                                        </h3>
+                                                        <div class="wizard-bar">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content mb-10"
+                                        [style.display]="mg.isTabPageLayerSelected(mgc.Tab43, 1) ? 'flex' : 'none' "
+                                        style="flex-direction: column">
+                                        <magic-subform [magic]="mgc.Sub2">
+                                        </magic-subform>
+                                    </div>
+                                    <div class="tab_content"
+                                        [style.display]="mg.isTabPageLayerSelected(mgc.Tab43, 2) ? 'flex' : 'none' "
+                                        style="flex-direction: column">
+                                       
+
+                                        <magic-subform [magic]="mgc.Sub3">
+                                        </magic-subform>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+    <!-- <magic-subform [magic]="mgc.Sub2">
+    </magic-subform>  -->
+         <div class="form-group row">
+          <button type="button" [magic]="mgc.Btn_Save"
+                            class="btn btn-primary btn-sm font-weight-bold ml-2">Save</button>
+                                  <button type="button" [magic]="mgc.Btn_Cancel"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Cancel</button>
+                            </div>
 </div>

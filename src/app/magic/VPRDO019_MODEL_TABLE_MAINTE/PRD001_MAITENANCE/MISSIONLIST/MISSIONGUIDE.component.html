@@ -1,4 +1,4 @@
-  <div
+  <!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -43,7 +43,7 @@
                                         <mgError
                                             [magic]=mgc.PRD001_S1_MTO_CODE
                                             [rowId]="row.rowId"
-                                        > </mgError>
+                                        > </mgError> 
                                         <label
                                             *ngIf="!mg.isRowInRowEditing(row)"
                                             [magic]="mgc.PRD001_S1_MTO_CODE"
@@ -77,10 +77,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
- <!-- <div novalidate [formGroup]="screenFormGroup">
+<div novalidate [formGroup]="screenFormGroup">
     <div class="container-fluid-ov" [magic]="mgc.MISSIONGUIDE">
         <div class="card">
             <div class="card-header">
@@ -107,12 +107,12 @@
                                 <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                     <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                         <div>
-                                            <input [formControlName]="mgc.S1_MTO CODE" *ngIf="mg.isRowInRowEditing(row)"
-                                                [magic]="mgc.S1_MTO CODE" [rowId]="row.rowId" mgFormat />
-                                            <mgError [magic]=mgc.S1_MTO CODE [rowId]="row.rowId"> </mgError>
-                                            <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S1_MTO CODE"
+                                            <input [formControlName]="mgc.PRD001_S1_MTO_CODE" *ngIf="mg.isRowInRowEditing(row)"
+                                                [magic]="mgc.PRD001_S1_MTO_CODE" [rowId]="row.rowId" mgFormat />
+                                            <mgError [magic]=mgc.PRD001_S1_MTO_CODE [rowId]="row.rowId"> </mgError>
+                                            <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PRD001_S1_MTO_CODE"
                                                 [rowId]="row.rowId">
-                                                {{mg.getValue(mgc.S1_MTO CODE, row.rowId)
+                                                {{mg.getValue(mgc.PRD001_S1_MTO_CODE, row.rowId)
                                                 }}
                                             </label>
                                         </div>
@@ -136,4 +136,4 @@
             </div>
         </div>
     </div>
-    </div> -->
+    </div> 

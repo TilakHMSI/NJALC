@@ -67,6 +67,21 @@
                     </div>
 
                 </div>
+                   <div class="col-lg-12 px-0">
+            <div class="form-group row">
+                <div class="col-lg-6 col-sm-6">
+                    <input class="form-control" [formControlName]="mgc.vSerach" [magic]="mgc.vSerach"
+                        placeholder="Search by MTO NAME,CODE" mgFormat />
+                    <mgError [magic]=mgc.vSerach> </mgError>
+                </div>
+                <div class="col-lg-2 col-sm-2">
+                    <button class="btn btn-warning btn-sm ml-5" [magic]="mgc.Btn_Search">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+        </div>
             </div>
             <div class="col-lg-12">
                 <magic-subform [magic]="mgc.Sub1">

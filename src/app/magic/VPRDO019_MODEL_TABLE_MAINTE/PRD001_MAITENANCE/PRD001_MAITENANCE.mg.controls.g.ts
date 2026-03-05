@@ -103,6 +103,9 @@ export enum MgControlName {
         Tab94 = "Tab94",
         Sub2 = "Sub2",
         Sub3 = "Sub3",
+        Btn_Save="Btn_Save",
+        Btn_Cancel="Btn_Cancel",
+        Tab43="Tab43"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
