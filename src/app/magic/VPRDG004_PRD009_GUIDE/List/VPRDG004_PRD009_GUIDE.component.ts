@@ -1,29 +1,31 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./USENOTICEGUIDE.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./VPRDG004_PRD009_GUIDE.mg.controls.g";
+import { MgDisplayedColumns } from "./VPRDG004_PRD009_GUIDE.mg.controls.g";
 
 
-import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
+import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
 
 
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDG018_PRD090_GUIDE_USENOTICEGUIDE',
-    providers: [...magicProviders],
+    selector: 'mga-VPRDG004_PRD009_GUIDE_List_VPRDG004_PRD009_GUIDE',
+    providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './USENOTICEGUIDE.component.html'
+    templateUrl: './VPRDG004_PRD009_GUIDE.component.html'
 })
-export class USENOTICEGUIDE extends TaskBaseMagicComponent implements MagicModalInterface {
+export class VPRDG004_PRD009_GUIDE extends BaseMatTableMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
     mgfc!: MgFormControlsAccessor;
+    mgdp = MgDisplayedColumns;
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "USENOTICEGUIDE";
+    private static readonly formName: string = "VPRDG004_PRD009_GUIDE";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -34,33 +36,34 @@ export class USENOTICEGUIDE extends TaskBaseMagicComponent implements MagicModal
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return USENOTICEGUIDE.x;
+        return VPRDG004_PRD009_GUIDE.x;
     }
     Y() {
-        return USENOTICEGUIDE.y;
+        return VPRDG004_PRD009_GUIDE.y;
     }
     Width(): string {
-        return USENOTICEGUIDE.width;
+        return VPRDG004_PRD009_GUIDE.width;
     }
     Height(): string {
-        return USENOTICEGUIDE.height;
+        return VPRDG004_PRD009_GUIDE.height;
     }
     IsCenteredToWindow() {
-        return USENOTICEGUIDE.isCenteredToWindow;
+        return VPRDG004_PRD009_GUIDE.isCenteredToWindow;
     }
     FormName() {
-        return USENOTICEGUIDE.formName;
+        return VPRDG004_PRD009_GUIDE.formName;
     }
     ShowTitleBar() {
-        return USENOTICEGUIDE.showTitleBar;
+        return VPRDG004_PRD009_GUIDE.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return USENOTICEGUIDE.shouldCloseOnBackgroundClick;
+        return VPRDG004_PRD009_GUIDE.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return USENOTICEGUIDE.isResizable;
+        return VPRDG004_PRD009_GUIDE.isResizable;
     }
     IsMovable() {
-        return USENOTICEGUIDE.isMovable;
+        return VPRDG004_PRD009_GUIDE.isMovable;
     }
+    override displayedColumns = this.mgdp;
 }

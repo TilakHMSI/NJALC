@@ -6,7 +6,7 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    VPRDG004_PRD009_GUIDE = "VPRDG004_PRD009_GUIDE",
+    ENGINELIST = "ENGINELIST",
         vSearch = "vSearch",
         Btn_Search = "Btn_Search",
         Sub1 = "Sub1",

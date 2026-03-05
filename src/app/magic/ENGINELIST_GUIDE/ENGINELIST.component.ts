@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./USENOTICEGUIDE.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./ENGINELIST.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDG018_PRD090_GUIDE_USENOTICEGUIDE',
+    selector: 'mga-ENGINELIST_GUIDE_ENGINELIST',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './USENOTICEGUIDE.component.html'
+    templateUrl: './ENGINELIST.component.html'
 })
-export class USENOTICEGUIDE extends TaskBaseMagicComponent implements MagicModalInterface {
+export class ENGINELIST extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,7 +23,7 @@ export class USENOTICEGUIDE extends TaskBaseMagicComponent implements MagicModal
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "USENOTICEGUIDE";
+    private static readonly formName: string = "ENGINELIST";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -34,33 +34,33 @@ export class USENOTICEGUIDE extends TaskBaseMagicComponent implements MagicModal
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return USENOTICEGUIDE.x;
+        return ENGINELIST.x;
     }
     Y() {
-        return USENOTICEGUIDE.y;
+        return ENGINELIST.y;
     }
     Width(): string {
-        return USENOTICEGUIDE.width;
+        return ENGINELIST.width;
     }
     Height(): string {
-        return USENOTICEGUIDE.height;
+        return ENGINELIST.height;
     }
     IsCenteredToWindow() {
-        return USENOTICEGUIDE.isCenteredToWindow;
+        return ENGINELIST.isCenteredToWindow;
     }
     FormName() {
-        return USENOTICEGUIDE.formName;
+        return ENGINELIST.formName;
     }
     ShowTitleBar() {
-        return USENOTICEGUIDE.showTitleBar;
+        return ENGINELIST.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return USENOTICEGUIDE.shouldCloseOnBackgroundClick;
+        return ENGINELIST.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return USENOTICEGUIDE.isResizable;
+        return ENGINELIST.isResizable;
     }
     IsMovable() {
-        return USENOTICEGUIDE.isMovable;
+        return ENGINELIST.isMovable;
     }
 }

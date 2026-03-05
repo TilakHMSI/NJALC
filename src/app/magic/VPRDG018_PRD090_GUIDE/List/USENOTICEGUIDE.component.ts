@@ -2,24 +2,26 @@ import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
 import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./USENOTICEGUIDE.mg.controls.g";
+import { MgDisplayedColumns } from "./USENOTICEGUIDE.mg.controls.g";
 
 
-import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
+import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
 
 
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDG018_PRD090_GUIDE_USENOTICEGUIDE',
-    providers: [...magicProviders],
+    selector: 'mga-VPRDG018_PRD090_GUIDE_List_USENOTICEGUIDE',
+    providers: [...matMagicProviders],
     standalone: false,
     templateUrl: './USENOTICEGUIDE.component.html'
 })
-export class USENOTICEGUIDE extends TaskBaseMagicComponent implements MagicModalInterface {
+export class USENOTICEGUIDE extends BaseMatTableMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
     mgfc!: MgFormControlsAccessor;
+    mgdp = MgDisplayedColumns;
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
@@ -63,4 +65,5 @@ export class USENOTICEGUIDE extends TaskBaseMagicComponent implements MagicModal
     IsMovable() {
         return USENOTICEGUIDE.isMovable;
     }
+    override displayedColumns = this.mgdp;
 }

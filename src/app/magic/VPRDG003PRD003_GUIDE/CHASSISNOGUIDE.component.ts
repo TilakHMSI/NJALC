@@ -2,36 +2,33 @@ import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
 import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./CHASSISNOGUIDE.mg.controls.g";
-import { MgDisplayedColumns } from "./CHASSISNOGUIDE.mg.controls.g";
 
 
-import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
+import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 
 
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
     selector: 'mga-VPRDG003PRD003_GUIDE_CHASSISNOGUIDE',
-    providers: [...matMagicProviders],
+    providers: [...magicProviders],
     standalone: false,
-    templateUrl: './CHASSISNOGUIDE.component.html',
-    styleUrl: './PRD003.component.css'
+    templateUrl: './CHASSISNOGUIDE.component.html'
 })
-export class CHASSISNOGUIDE extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class CHASSISNOGUIDE extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
     mgfc!: MgFormControlsAccessor;
-    mgdp = MgDisplayedColumns;
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "CHASSIS NO GUIDE";
-    private static readonly showTitleBar: boolean = false;
+    private static readonly formName: string = "CHASSISNOGUIDE";
+    private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "600px";
-    private static readonly height: string = "500px";
+    private static readonly width: string = "300px";
+    private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;
@@ -66,5 +63,4 @@ export class CHASSISNOGUIDE extends BaseMatTableMagicComponent implements MagicM
     IsMovable() {
         return CHASSISNOGUIDE.isMovable;
     }
-    override displayedColumns = this.mgdp;
 }

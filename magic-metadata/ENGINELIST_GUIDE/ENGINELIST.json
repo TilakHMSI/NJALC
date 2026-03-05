@@ -1,17 +1,17 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"USENOTICEGUIDE",
+		"id":	"ENGINELIST",
 		"window_type":	12,
-		"component_path":	"VPRDG018_PRD090_GUIDE/",
+		"component_path":	"ENGINELIST_GUIDE/",
 		"module_name":	"",
-		"component_uniquename":	"VPRDG018_PRD090_GUIDE_USENOTICEGUIDE"
+		"component_uniquename":	"ENGINELIST_GUIDE_ENGINELIST"
 	},
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
 		"width":	0,
-		"height":	0
+		"height":	398
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -23,13 +23,13 @@
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line30"
+				"common_line_id":	"line47"
 			},
 			"coordinates":	{
-				"x":	28,
-				"y":	30,
-				"width":	216,
-				"height":	41
+				"x":	20,
+				"y":	47,
+				"width":	172,
+				"height":	32
 			},
 			"hint":	null,
 			"controlType":	"T",
@@ -40,13 +40,13 @@
 			"props":	{
 				"id":	"Btn_Search",
 				"format":	"Button",
-				"common_line_id":	"line41"
+				"common_line_id":	"line47"
 			},
 			"coordinates":	{
-				"x":	279,
-				"y":	41,
-				"width":	71,
-				"height":	30
+				"x":	236,
+				"y":	53,
+				"width":	41,
+				"height":	26
 			},
 			"hint":	null,
 			"controlType":	"B",
@@ -56,13 +56,13 @@
 			"style":	null,
 			"props":	{
 				"id":	"Sub1",
-				"common_line_id":	"line96"
+				"common_line_id":	"line127"
 			},
 			"coordinates":	{
-				"x":	27,
-				"y":	96,
-				"width":	340,
-				"height":	206
+				"x":	25,
+				"y":	127,
+				"width":	345,
+				"height":	247
 			},
 			"hint":	null,
 			"controlType":	"F",
