@@ -15,7 +15,7 @@
                         <div class="form-group-sm">
                             <label class="lbl-sm">.</label>
                             <input [formControlName]="mgc.S5_CHASSIS_NO" [magic]="mgc.S5_CHASSIS_NO"
-                                class="form-control-sm" mgFormat />
+                                class="form-control-sm" mgFormat mask="000000" />
                             <mgError [magic]="mgc.S5_CHASSIS_NO"> </mgError>
                         </div>
 
@@ -39,9 +39,11 @@
                     <div class="col-lg-3">
                         <div class="form-group-sm">
                             <label class="lbl-sm" style="width: 100%;">AE-OFF DATE - TIME</label>
-                            <label class="text-danger font-size-h4 mr-8" style="background-color: #ebedf3;"> {{mg.getValue(mgc.S5_AFOFF_DATE)
+                            <label class="text-danger font-size-h4 mr-8" style="background-color: #ebedf3;">
+                                {{mg.getValue(mgc.S5_AFOFF_DATE)
                                 | magicDate : mgc.S5_AFOFF_DATE}}</label>
-                            <label class="text-danger font-size-h4" style="background-color: #ebedf3;"> {{mg.getValue(mgc.S5_AFOFF_TIME)
+                            <label class="text-danger font-size-h4" style="background-color: #ebedf3;">
+                                {{mg.getValue(mgc.S5_AFOFF_TIME)
                                 | magicTime : mgc.S5_AFOFF_TIME}}</label>
                         </div>
                     </div>

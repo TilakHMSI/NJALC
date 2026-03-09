@@ -35,7 +35,7 @@
                             {{mg.getValue(mgc.V_VENGINE_TYPE) }}
                         </label>
                         <label class="lbl_errmessage">
-                            {{mg.getValue(mgc.V_VENGINE_NO) }}
+                            {{ (mg.getValue(mgc.V_VENGINE_NO) || 0).toString().padStart(6, '0') }}
                         </label>
                     </div>
                     <div class="col-lg-4">

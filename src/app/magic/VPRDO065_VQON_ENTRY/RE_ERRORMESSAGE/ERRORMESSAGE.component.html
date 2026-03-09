@@ -4,15 +4,17 @@
             <div class="col-lg-12 col-xxl-12">
                 <div class="form-group row">
                     <div class="col-lg-12">
-                        <label style="background-color: red; text-align: center; width: 100%;" class="font-weight-bolder font-size-h2 text-white">
+                        <label style="background-color: red; text-align: center; width: 100%;"
+                            class="font-weight-bolder font-size-h2 text-white">
                             WARNING
                         </label>
                     </div>
                     <div class="col-lg-4">
-                        <label  [magic]="mgc.Label7" class="lbl_title">
-                            ENGINE NO :
+                        <label [magic]="mgc.Label7" class="lbl_title">
+                            THIS FRAME:
                         </label>
                     </div>
+
                     <div class="col-lg-8">
                         <label class="lbl_errmessage" [magic]="mgc.V_MESSAGE_P">
                             {{mg.getValue(mgc.V_MESSAGE_P) }}
@@ -27,7 +29,7 @@
                     </div>
                     <div class="col-lg-4">
                         <label [magic]="mgc.Label7" class="lbl_title">
-                            THIS FRAME:
+                            ENGINE NO :
                         </label>
                     </div>
                     <div class="col-lg-8">
@@ -35,7 +37,7 @@
                             {{mg.getValue(mgc.V_VENGINE_TYPE) }}
                         </label>
                         <label class="lbl_errmessage">
-                            {{mg.getValue(mgc.V_VENGINE_NO) }}
+                            {{ (mg.getValue(mgc.V_VENGINE_NO) || 0).toString().padStart(6, '0') }}
                         </label>
                     </div>
                     <div class="col-lg-4">
