@@ -1,11 +1,11 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"COLORGUIDE",
+		"id":	"VBOMG003_PRD010_GUIDE2_133",
 		"window_type":	12,
-		"component_path":	"VPRDG002_PRD002_GUIDE_53/",
+		"component_path":	"VBOMG003_PRD010_GUIDE2_133/",
 		"module_name":	"",
-		"component_uniquename":	"VPRDG002_PRD002_GUIDE_53_COLORGUIDE"
+		"component_uniquename":	"VBOMG003_PRD010_GUIDE2_133_VBOMG003_PRD010_GUIDE2_133"
 	},
 	"coordinates":	{
 		"x":	0,
@@ -24,10 +24,10 @@
 				"common_line_id":	"line12"
 			},
 			"coordinates":	{
-				"x":	262,
+				"x":	279,
 				"y":	12,
-				"width":	73,
-				"height":	32
+				"width":	41,
+				"height":	22
 			},
 			"hint":	null,
 			"controlType":	"B",
@@ -40,13 +40,13 @@
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line55"
+				"common_line_id":	"line58"
 			},
 			"coordinates":	{
-				"x":	63,
+				"x":	55,
 				"y":	60,
-				"width":	127,
-				"height":	20
+				"width":	197,
+				"height":	39
 			},
 			"hint":	null,
 			"controlType":	"T",
@@ -57,13 +57,13 @@
 			"props":	{
 				"id":	"Btn_Search",
 				"format":	"Button",
-				"common_line_id":	"line55"
+				"common_line_id":	"line58"
 			},
 			"coordinates":	{
-				"x":	217,
-				"y":	55,
-				"width":	36,
-				"height":	25
+				"x":	268,
+				"y":	58,
+				"width":	72,
+				"height":	42
 			},
 			"hint":	null,
 			"controlType":	"B",
@@ -73,13 +73,13 @@
 			"style":	null,
 			"props":	{
 				"id":	"Sub1",
-				"common_line_id":	"line108"
+				"common_line_id":	"line129"
 			},
 			"coordinates":	{
-				"x":	37,
-				"y":	108,
-				"width":	332,
-				"height":	192
+				"x":	29,
+				"y":	129,
+				"width":	346,
+				"height":	165
 			},
 			"hint":	null,
 			"controlType":	"F",

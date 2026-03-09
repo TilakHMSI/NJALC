@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./COLORGUIDE.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./VBOMG003_PRD010_GUIDE2_133.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDG002_PRD002_GUIDE_53_COLORGUIDE',
+    selector: 'mga-VBOMG003_PRD010_GUIDE2_133_VBOMG003_PRD010_GUIDE2_133',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './COLORGUIDE.component.html'
+    templateUrl: './VBOMG003_PRD010_GUIDE2_133.component.html'
 })
-export class COLORGUIDE extends TaskBaseMagicComponent implements MagicModalInterface {
+export class VBOMG003_PRD010_GUIDE2_133 extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,7 +23,7 @@ export class COLORGUIDE extends TaskBaseMagicComponent implements MagicModalInte
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "COLORGUIDE";
+    private static readonly formName: string = "VBOMG003_PRD010_GUIDE2_133";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -34,33 +34,33 @@ export class COLORGUIDE extends TaskBaseMagicComponent implements MagicModalInte
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return COLORGUIDE.x;
+        return VBOMG003_PRD010_GUIDE2_133.x;
     }
     Y() {
-        return COLORGUIDE.y;
+        return VBOMG003_PRD010_GUIDE2_133.y;
     }
     Width(): string {
-        return COLORGUIDE.width;
+        return VBOMG003_PRD010_GUIDE2_133.width;
     }
     Height(): string {
-        return COLORGUIDE.height;
+        return VBOMG003_PRD010_GUIDE2_133.height;
     }
     IsCenteredToWindow() {
-        return COLORGUIDE.isCenteredToWindow;
+        return VBOMG003_PRD010_GUIDE2_133.isCenteredToWindow;
     }
     FormName() {
-        return COLORGUIDE.formName;
+        return VBOMG003_PRD010_GUIDE2_133.formName;
     }
     ShowTitleBar() {
-        return COLORGUIDE.showTitleBar;
+        return VBOMG003_PRD010_GUIDE2_133.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return COLORGUIDE.shouldCloseOnBackgroundClick;
+        return VBOMG003_PRD010_GUIDE2_133.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return COLORGUIDE.isResizable;
+        return VBOMG003_PRD010_GUIDE2_133.isResizable;
     }
     IsMovable() {
-        return COLORGUIDE.isMovable;
+        return VBOMG003_PRD010_GUIDE2_133.isMovable;
     }
 }

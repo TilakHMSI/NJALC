@@ -1,29 +1,31 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./COLORGUIDE.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./COLORGUIDEIST.mg.controls.g";
+import { MgDisplayedColumns } from "./COLORGUIDEIST.mg.controls.g";
 
 
-import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
+import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
 
 
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDG002_PRD002_GUIDE_53_COLORGUIDE',
-    providers: [...magicProviders],
+    selector: 'mga-VPRDG002_PRD002_GUIDE_53_List_COLORGUIDEIST',
+    providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './COLORGUIDE.component.html'
+    templateUrl: './COLORGUIDEIST.component.html'
 })
-export class COLORGUIDE extends TaskBaseMagicComponent implements MagicModalInterface {
+export class COLORGUIDEIST extends BaseMatTableMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
     mgfc!: MgFormControlsAccessor;
+    mgdp = MgDisplayedColumns;
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "COLORGUIDE";
+    private static readonly formName: string = "COLORGUIDEIST";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -34,33 +36,34 @@ export class COLORGUIDE extends TaskBaseMagicComponent implements MagicModalInte
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return COLORGUIDE.x;
+        return COLORGUIDEIST.x;
     }
     Y() {
-        return COLORGUIDE.y;
+        return COLORGUIDEIST.y;
     }
     Width(): string {
-        return COLORGUIDE.width;
+        return COLORGUIDEIST.width;
     }
     Height(): string {
-        return COLORGUIDE.height;
+        return COLORGUIDEIST.height;
     }
     IsCenteredToWindow() {
-        return COLORGUIDE.isCenteredToWindow;
+        return COLORGUIDEIST.isCenteredToWindow;
     }
     FormName() {
-        return COLORGUIDE.formName;
+        return COLORGUIDEIST.formName;
     }
     ShowTitleBar() {
-        return COLORGUIDE.showTitleBar;
+        return COLORGUIDEIST.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return COLORGUIDE.shouldCloseOnBackgroundClick;
+        return COLORGUIDEIST.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return COLORGUIDE.isResizable;
+        return COLORGUIDEIST.isResizable;
     }
     IsMovable() {
-        return COLORGUIDE.isMovable;
+        return COLORGUIDEIST.isMovable;
     }
+    override displayedColumns = this.mgdp;
 }

@@ -6,18 +6,24 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    COLORGUIDE = "COLORGUIDE",
-        btnexit = "btnexit",
-        vSearch = "vSearch",
-        Btn_Search = "Btn_Search",
-        Sub1 = "Sub1",
+    VBOMG003_PRD010_GUIDE2_List = "VBOMG003_PRD010_GUIDE2_List",
+        Label1 = "Label1",
+        Table2 = "Table2",
+        Column3 = "Column3",
+        SA_PLAN_CODE = "SA_PLAN_CODE",
+        btnSelect = "btnSelect",
 }
 export enum MgCustomProperties {}
+export var
+    MgDisplayedColumns = [
+        'Column3',
+    ];
+
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get vSearch(): FormControl {
-        return this.fg.controls[MgControlName.vSearch] as FormControl;
+    get SA_PLAN_CODE(): FormControl {
+        return this.getTableChildFormControl(MgControlName.SA_PLAN_CODE);
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {
