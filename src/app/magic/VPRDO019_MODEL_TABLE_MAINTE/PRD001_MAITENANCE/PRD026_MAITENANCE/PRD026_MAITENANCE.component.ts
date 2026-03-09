@@ -12,7 +12,9 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO019_MODEL_TABLE_MAINTE_PRD001_MAITENANCE_PRD026_MAITENANCE_PRD026_MAITENANCE',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './PRD026_MAITENANCE.component.html'
+    styleUrl: './PRD026MAINTENANCE.component.css',
+    templateUrl: './PRD026_MAITENANCE.component.html',
+    
 })
 export class PRD026_MAITENANCE extends BaseMatTableMagicComponent {
 

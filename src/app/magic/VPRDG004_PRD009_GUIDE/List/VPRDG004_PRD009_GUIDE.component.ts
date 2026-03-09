@@ -26,7 +26,7 @@ export class VPRDG004_PRD009_GUIDE extends BaseMatTableMagicComponent implements
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "VPRDG004_PRD009_GUIDE";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "300px";

@@ -10,6 +10,7 @@ export enum MgControlName {
         vSearch = "vSearch",
         Btn_Search = "Btn_Search",
         Sub1 = "Sub1",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

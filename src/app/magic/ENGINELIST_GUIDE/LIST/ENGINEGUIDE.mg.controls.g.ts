@@ -10,6 +10,7 @@ export enum MgControlName {
         Table1 = "Table1",
         Column2 = "Column2",
         PRD001_S1_MTO_CODE = "PRD001_S1_MTO_CODE",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export var
