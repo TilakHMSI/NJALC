@@ -26,7 +26,7 @@ export class COLORGUIDEIST extends BaseMatTableMagicComponent implements MagicMo
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "COLORGUIDEIST";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "300px";

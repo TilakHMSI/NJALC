@@ -26,7 +26,7 @@ export class VBOMG003_PRD010_GUIDE2_List extends BaseMatTableMagicComponent impl
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "VBOMG003_PRD010_GUIDE2_List";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "300px";

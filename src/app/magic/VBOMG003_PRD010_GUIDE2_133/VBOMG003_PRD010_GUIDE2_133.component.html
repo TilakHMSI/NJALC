@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -29,4 +29,46 @@
             </magic-subform>
         </div>
     </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+        <div class="container-fluid-ov" [magic]="mgc.VBOMG003_PRD010_GUIDE2_133">
+        <div class="card">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.VBOMG003_PRD010_GUIDE2_133">
+
+             <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            VBOMG003 PRD010 GUIDE
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                       
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+        <div class="col-lg-12 px-0">
+            <div class="form-group row">
+                <div class="col-lg-6 col-sm-6">
+                    <input class="form-control" [formControlName]="mgc.vSearch" [magic]="mgc.vSearch"
+                        placeholder="Search by COLOR CODE AND CODE INSIDE" mgFormat />
+                    <mgError [magic]=mgc.vSearch> </mgError>
+                </div>
+                <div class="col-lg-2 col-sm-2">
+                    <button class="btn btn-warning btn-sm ml-5" [magic]="mgc.Btn_Search">
+                        Search
+                    </button>
+                </div>
+            </div> 
+
+        </div>
+        <div class="col-lg-12 px-0">
+            <magic-subform [magic]="mgc.Sub1">
+            </magic-subform>
+        </div>
+    </div>
+</div>
+
+</div>
 </div>
