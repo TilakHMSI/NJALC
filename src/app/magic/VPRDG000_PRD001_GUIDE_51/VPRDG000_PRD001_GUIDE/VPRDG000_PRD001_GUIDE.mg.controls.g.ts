@@ -19,6 +19,7 @@ export enum MgControlName {
         Column6 = "Column6",
         PRD001_S1_PRODCLOSE_DATE = "PRD001_S1_PRODCLOSE_DATE",
         btnSelect = "btnSelect",
+        
 }
 export enum MgCustomProperties {}
 export var

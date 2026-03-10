@@ -13,7 +13,8 @@ export enum MgControlName {
         V_DISP_FLG_V = "V_DISP_FLG_V",
         SubFormDisplay = "SubFormDisplay",
         vSearch="vSearch",
-        Btn_Search="Btn_Search"
+        Btn_Search="Btn_Search",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

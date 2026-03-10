@@ -25,6 +25,7 @@ export enum MgControlName {
         PR27_GROUP = "PR27_GROUP",
         Column9 = "Column9",
         PR27_GROUP_NAME = "PR27_GROUP_NAME",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export var
