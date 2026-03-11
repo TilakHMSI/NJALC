@@ -105,7 +105,8 @@ export enum MgControlName {
         Sub3 = "Sub3",
         Btn_Save="Btn_Save",
         Btn_Cancel="Btn_Cancel",
-        Tab43="Tab43"
+        Tab43="Tab43",
+        JP_MoDEL="JP_MoDEL"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -286,7 +287,9 @@ export class MgFormControlsAccessor {
     get S1_ATM_METHODVARIANT(): FormControl {
         return this.fg.controls[MgControlName.S1_ATM_METHODVARIANT] as FormControl;
     }
-
+    get JP_MoDEL(): FormControl {
+        return this.fg.controls[MgControlName.JP_MoDEL] as FormControl;
+    }
     getTableChildFormControl(name: MgControlName): FormControl {
         return this.magicServices.mgAccessorService.getFormGroupByRow(this.magicServices.tableService.getSelectedRow()).controls[name] as FormControl;
     }
