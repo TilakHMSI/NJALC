@@ -30,7 +30,8 @@ export enum MgControlName {
         SaveRowEditing="SaveRowEditing",
         EnterRowEditing="EnterRowEditing",
         Column20="Column20",
-        Btn_Add="Btn_Add"
+        Btn_Add="Btn_Add",
+        Btn_Delete="Btn_Delete"
         
 }
 export enum MgCustomProperties {}
