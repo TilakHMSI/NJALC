@@ -25,7 +25,8 @@ export enum MgControlName {
         EnterRowEditing="EnterRowEditing",
         SaveRowEditing="SaveRowEditing",
         Column15="Column15",
-        Btn_Add="Btn_Add"
+        Btn_Add="Btn_Add",
+        Btn_Delete="Btn_Delete"
 
 }
 export enum MgCustomProperties {}

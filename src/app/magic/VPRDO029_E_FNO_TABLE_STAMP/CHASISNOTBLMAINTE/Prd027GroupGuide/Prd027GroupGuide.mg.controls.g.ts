@@ -16,13 +16,14 @@ export enum MgControlName {
         PR27_DIGIT = "PR27_DIGIT",
         Column5 = "Column5",
         PR27_PROD1ST_CHASSIS_NO = "PR27_PROD1ST_CHASSIS_NO",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export var
     MgDisplayedColumns = [
         'Column2',
         'Column3',
-        'Column4',
+        'Column4', 
         'Column5',
     ];
 
