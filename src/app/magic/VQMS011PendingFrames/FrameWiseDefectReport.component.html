@@ -1,0 +1,66 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.FrameWiseDefectReport"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                <<
+                    PENDING
+                    FRAME
+                    REPORT
+                >>
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                FROM DATE:
+            </label>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                TO DATE :
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.vFrom_Date"
+                [magic]="mgc.vFrom_Date"
+                dateInput
+            />
+            <input
+                type="date"
+                [formControlName]="mgc.vTo_Date"
+                [magic]="mgc.vTo_Date"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit7">
+                {{mg.getValue(mgc.Edit7) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Exec">
+                E\XEC\UTE
+            </button>
+            <button [magic]="mgc.v_Exit">
+                E\XIT
+            </button>
+        </div>
+    </div>
+</div>

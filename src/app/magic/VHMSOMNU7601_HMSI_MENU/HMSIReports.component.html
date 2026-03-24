@@ -1,0 +1,86 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.HMSIReports">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Production_Control)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Production_Control">
+                                {{mg.getValue(mgc.Production_Control)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.QC)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.QC">
+                                {{mg.getValue(mgc.QC)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Logostic_IN)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Logostic_IN" >
+                                {{mg.getValue(mgc.Logostic_IN)}}
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.IPP_MENU)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.IPP_MENU">
+                                {{mg.getValue(mgc.IPP_MENU)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.MISREPORT)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.MISREPORT">
+                                {{mg.getValue(mgc.MISREPORT)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.LOGISTICREPORT_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.LOGISTICREPORT_0001" >
+                                {{mg.getValue(mgc.LOGISTICREPORT_0001)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDISPATCH_STOP_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONDISPATCH_STOP_0001">
+                                {{mg.getValue(mgc.BUTTONDISPATCH_STOP_0001)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Imported_Engine_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Imported_Engine_0001" >
+                                {{mg.getValue(mgc.Imported_Engine_0001)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Production_Monitoring_Das_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Production_Monitoring_Das_0001">
+                                {{mg.getValue(mgc.Production_Monitoring_Das_0001)}}
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,266 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"FRAME_DETAIL_VIEW",
+		"window_type":	1,
+		"component_path":	"FRAMERANGE_HOLDEntry_FRAME_RANGE/FRAME_DETAIL_VIEW/",
+		"module_name":	"",
+		"component_uniquename":	"FRAMERANGE_HOLDEntry_FRAME_RANGE_FRAME_DETAIL_VIEW_FRAME_DETAIL_VIEW"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	693,
+		"height":	273
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	20,
+				"table_title_height":	36,
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	0,
+				"width":	681,
+				"height":	263
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"Frame Number",
+						"sortable":	true,
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	139
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"FRAMENUMBER",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line39"
+							},
+							"coordinates":	{
+								"x":	5,
+								"y":	39,
+								"width":	130,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"Model Code",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	90
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"MODELCODE",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line39"
+							},
+							"coordinates":	{
+								"x":	145,
+								"y":	39,
+								"width":	81,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"Model Name",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	139
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"MODELNAME",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line39"
+							},
+							"coordinates":	{
+								"x":	235,
+								"y":	39,
+								"width":	130,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"Color Code",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	83
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"COLORCODE",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line39"
+							},
+							"coordinates":	{
+								"x":	373,
+								"y":	39,
+								"width":	74,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"Repair IN Date",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	105
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"REPAIRINDATE",
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"DD-MM-YYYY",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line39"
+							},
+							"coordinates":	{
+								"x":	455,
+								"y":	39,
+								"width":	70,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"Repair In Time",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	105
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"REPAIRINTIME",
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line39"
+							},
+							"coordinates":	{
+								"x":	558,
+								"y":	39,
+								"width":	76,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

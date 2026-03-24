@@ -1,0 +1,202 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"DEFECTMASTER",
+		"window_type":	12,
+		"component_path":	"VQMS006_DefectMaster/",
+		"module_name":	"",
+		"component_uniquename":	"VQMS006_DefectMaster_DEFECTMASTER"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Option",
+				"items_list":	"ADDITION,UPDATE,INQUIRY",
+				"attribute":	"A",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	2,
+				"width":	174,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	458,
+				"y":	16,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VQMS006",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	476,
+				"y":	2,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	513,
+				"y":	16,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"common_line_id":	"line33"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	37,
+				"width":	174,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"MODEL CODE",
+				"common_line_id":	"line33"
+			},
+			"coordinates":	{
+				"x":	23,
+				"y":	42,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PModel",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line33"
+			},
+			"coordinates":	{
+				"x":	88,
+				"y":	42,
+				"width":	78,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line33"
+			},
+			"coordinates":	{
+				"x":	373,
+				"y":	42,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line33"
+			},
+			"coordinates":	{
+				"x":	476,
+				"y":	33,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DETAIL",
+				"common_line_id":	"line73"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	73,
+				"width":	534,
+				"height":	395
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

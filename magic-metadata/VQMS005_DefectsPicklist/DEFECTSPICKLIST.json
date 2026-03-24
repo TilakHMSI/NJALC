@@ -1,0 +1,72 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"DEFECTSPICKLIST",
+		"window_type":	12,
+		"component_path":	"VQMS005_DefectsPicklist/",
+		"module_name":	"",
+		"component_uniquename":	"VQMS005_DefectsPicklist_DEFECTSPICKLIST"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	658,
+		"height":	548
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vSearch",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line25"
+			},
+			"coordinates":	{
+				"x":	21,
+				"y":	26,
+				"width":	242,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line25"
+			},
+			"coordinates":	{
+				"x":	567,
+				"y":	25,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line70"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	70,
+				"width":	639,
+				"height":	470
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

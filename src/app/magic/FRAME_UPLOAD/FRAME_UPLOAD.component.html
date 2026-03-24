@@ -1,0 +1,61 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.FRAME_UPLOAD"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PGM=DispatchStop
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicDate : mgc.Edit2}}
+            </label>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicTime : mgc.Edit3}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.FRAME_DETAIL_VIEW">
+            </magic-subform>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_Frame"
+                    [magic]="mgc.V_Frame"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_Frame> </mgError>
+            </div>
+            <button [magic]="mgc.b_UploadFile_0001">
+                \Upload File
+            </button>
+            <button [magic]="mgc.b_PickFile">
+                Browse
+            </button>
+        </div>
+    </div>
+</div>

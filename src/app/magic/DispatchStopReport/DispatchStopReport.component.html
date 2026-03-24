@@ -1,0 +1,106 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DispatchStopReport"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                {{mg.getText(mgc.Label1)}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicDate : mgc.Edit2}}
+            </label>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicTime : mgc.Edit3}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                Status
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.v_FilterOption"
+                    [formControlName]="mgc.v_FilterOption"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_FilterOption);"
+                        [selected]="o.index == mg.getValue(mgc.v_FilterOption)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                {{mg.getText(mgc.Label7)}}
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.v_FilterEndDate"
+                [magic]="mgc.v_FilterEndDate"
+                dateInput
+            />
+            <input
+                type="date"
+                [formControlName]="mgc.v_FilterEndFromDate_0001"
+                [magic]="mgc.v_FilterEndFromDate_0001"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                Output Option
+            </label>
+            <div
+                [magic]="mgc.v_OutputOption"
+                (change)="task.mgOnRadioSelectionChanged(mgc.v_OutputOption)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.v_OutputOption);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.v_OutputOption"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.b_ApplyFilter">
+                10
+            </button>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+    </div>
+</div>

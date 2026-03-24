@@ -1,0 +1,189 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"DEFECTSPICKLIST",
+		"window_type":	12,
+		"component_path":	"VQMS005_DefectsPicklist/Picklist/",
+		"module_name":	"",
+		"component_uniquename":	"VQMS005_DefectsPicklist_Picklist_DEFECTSPICKLIST"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	658,
+		"height":	587
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	23,
+				"table_title_height":	20,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	13,
+				"width":	649,
+				"height":	507
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"DEFECT CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	118
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"DEFECTMASTER_DEFECTCODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line36"
+							},
+							"coordinates":	{
+								"x":	9,
+								"y":	36,
+								"width":	78,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"DEFECT NAME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	311
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"DEFECTMASTER_DEFECTDESCRIPTION",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line36"
+							},
+							"coordinates":	{
+								"x":	130,
+								"y":	36,
+								"width":	288,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"STORE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	59
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"DEFECTMASTER_DEFECTSECTION",
+								"mgformat":	"mgFormat",
+								"format":	"UU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line36"
+							},
+							"coordinates":	{
+								"x":	438,
+								"y":	36,
+								"width":	21,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"DEFECTCATEGORY",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	139
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"DEFECTMASTER_DEFECTCATEGORY",
+								"mgformat":	"mgFormat",
+								"format":	"XX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line36"
+							},
+							"coordinates":	{
+								"x":	496,
+								"y":	36,
+								"width":	21,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

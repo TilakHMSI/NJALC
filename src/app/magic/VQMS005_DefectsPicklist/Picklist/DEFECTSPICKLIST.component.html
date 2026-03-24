@@ -1,0 +1,203 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DEFECTSPICKLIST"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table1TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="container_border"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        [magic]="mgc.Column2"
+                        [matColumnDef]="mgc.Column2"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            DEFECT CODE
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.DEFECTMASTER_DEFECTCODE"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.DEFECTMASTER_DEFECTCODE"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.DEFECTMASTER_DEFECTCODE
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.DEFECTMASTER_DEFECTCODE"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.DEFECTMASTER_DEFECTCODE, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column3"
+                        [matColumnDef]="mgc.Column3"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            DEFECT NAME
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.DEFECTMASTER_DEFECTDESCRIPTION"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.DEFECTMASTER_DEFECTDESCRIPTION"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.DEFECTMASTER_DEFECTDESCRIPTION
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.DEFECTMASTER_DEFECTDESCRIPTION"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.DEFECTMASTER_DEFECTDESCRIPTION, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column4"
+                        [matColumnDef]="mgc.Column4"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            STORE
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.DEFECTMASTER_DEFECTSECTION"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.DEFECTMASTER_DEFECTSECTION"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.DEFECTMASTER_DEFECTSECTION
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.DEFECTMASTER_DEFECTSECTION"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.DEFECTMASTER_DEFECTSECTION, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column5"
+                        [matColumnDef]="mgc.Column5"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            DEFECTCATEGORY
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.DEFECTMASTER_DEFECTCATEGORY"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.DEFECTMASTER_DEFECTCATEGORY"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.DEFECTMASTER_DEFECTCATEGORY
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.DEFECTMASTER_DEFECTCATEGORY"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.DEFECTMASTER_DEFECTCATEGORY, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+        </div>
+    </div>
+</div>

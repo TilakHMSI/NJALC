@@ -1,0 +1,125 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"DispatchReleaseWithoutRepairIn",
+		"window_type":	12,
+		"component_path":	"DispatchReleaseUpload_UNHOLD/",
+		"module_name":	"",
+		"component_uniquename":	"DispatchReleaseUpload_UNHOLD_DispatchReleaseWithoutRepairIn"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	459,
+		"height":	291
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=DispatchUnlock",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	351,
+				"y":	7,
+				"width":	96,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	354,
+				"y":	23,
+				"width":	91,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"Dispatch Stop (Unlock)",
+				"common_line_id":	"line34"
+			},
+			"coordinates":	{
+				"x":	119,
+				"y":	34,
+				"width":	204,
+				"height":	34
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Mode",
+				"items_list":	"FRAME_UPLOAD,FRAME_RANGE,FRAME_WISE",
+				"attribute":	"A",
+				"common_line_id":	"line96"
+			},
+			"coordinates":	{
+				"x":	166,
+				"y":	96,
+				"width":	100,
+				"height":	101
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Proeed",
+				"attribute":	"A",
+				"common_line_id":	"line232"
+			},
+			"coordinates":	{
+				"x":	126,
+				"y":	232,
+				"width":	75,
+				"height":	34
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"attribute":	"A",
+				"common_line_id":	"line232"
+			},
+			"coordinates":	{
+				"x":	238,
+				"y":	232,
+				"width":	71,
+				"height":	34
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

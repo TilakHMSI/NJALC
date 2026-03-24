@@ -1,0 +1,367 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PasstypeCorrectionScreen",
+		"window_type":	12,
+		"component_path":	"VQMS012_PassCorrectionEntry/",
+		"module_name":	"",
+		"component_uniquename":	"VQMS012_PassCorrectionEntry_PasstypeCorrectionScreen"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"Line :",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	5,
+				"width":	95,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S5_PRODLINE",
+				"mgformat":	"mgFormat",
+				"format":	"XX",
+				"attribute":	"A",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	113,
+				"y":	5,
+				"width":	15,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VQMS012",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	474,
+				"y":	2,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	324,
+				"y":	13,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	459,
+				"y":	18,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit5",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	514,
+				"y":	18,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"Date :",
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	28,
+				"width":	95,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit7",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	113,
+				"y":	28,
+				"width":	55,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit8",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	474,
+				"y":	34,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line54"
+			},
+			"coordinates":	{
+				"x":	1,
+				"y":	54,
+				"width":	558,
+				"height":	0
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"text":	"FRAME NUMBER :",
+				"common_line_id":	"line54"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	60,
+				"width":	95,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_FRAME_NO",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line54"
+			},
+			"coordinates":	{
+				"x":	113,
+				"y":	60,
+				"width":	133,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"text":	"MODEL CODE :",
+				"common_line_id":	"line54"
+			},
+			"coordinates":	{
+				"x":	376,
+				"y":	60,
+				"width":	105,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ModelWiseMapping_MTOMAPCODE",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line54"
+			},
+			"coordinates":	{
+				"x":	495,
+				"y":	60,
+				"width":	56,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label14",
+				"text":	"PASS DESCRIPTION :",
+				"common_line_id":	"line83"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	83,
+				"width":	95,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vDesc",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line83"
+			},
+			"coordinates":	{
+				"x":	113,
+				"y":	83,
+				"width":	133,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label16",
+				"text":	"FACTORY MODEL CODE :",
+				"common_line_id":	"line83"
+			},
+			"coordinates":	{
+				"x":	376,
+				"y":	83,
+				"width":	105,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S5_MTO_CODE",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line83"
+			},
+			"coordinates":	{
+				"x":	495,
+				"y":	83,
+				"width":	56,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line109"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	109,
+				"width":	545,
+				"height":	366
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

@@ -1,0 +1,27 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DEFECTSPICKLIST"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.vSearch"
+                    [magic]="mgc.vSearch"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.vSearch> </mgError>
+            </div>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.Sub1">
+            </magic-subform>
+        </div>
+    </div>
+</div>

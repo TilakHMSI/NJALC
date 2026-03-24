@@ -1,0 +1,76 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Confirmation",
+		"window_type":	12,
+		"component_path":	"ConfirmOperation/",
+		"module_name":	"",
+		"component_uniquename":	"ConfirmOperation_Confirmation"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	295,
+		"height":	94
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Message",
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	12,
+				"width":	259,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Yes",
+				"format":	"Yes",
+				"attribute":	"A",
+				"common_line_id":	"line58"
+			},
+			"coordinates":	{
+				"x":	152,
+				"y":	58,
+				"width":	56,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_No",
+				"format":	"No",
+				"attribute":	"A",
+				"common_line_id":	"line58"
+			},
+			"coordinates":	{
+				"x":	215,
+				"y":	58,
+				"width":	56,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

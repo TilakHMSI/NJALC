@@ -1,0 +1,77 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DEFECTMASTER"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.v_Option"
+                (change)="task.mgOnRadioSelectionChanged(mgc.v_Option)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.v_Option);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.v_Option"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicDate : mgc.Edit2}}
+            </label>
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PGM=VQMS006
+            </label>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicTime : mgc.Edit3}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                MODEL CODE
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.PModel"
+                    [magic]="mgc.PModel"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PModel> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.PModel"
+                >...</button>
+            </div>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.DETAIL">
+            </magic-subform>
+        </div>
+    </div>
+</div>

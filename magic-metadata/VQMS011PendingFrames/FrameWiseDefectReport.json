@@ -1,0 +1,180 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"FrameWiseDefectReport",
+		"window_type":	12,
+		"component_path":	"VQMS011PendingFrames/",
+		"module_name":	"",
+		"component_uniquename":	"VQMS011PendingFrames_FrameWiseDefectReport"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	423,
+		"height":	228
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"\u003c\u003c  PENDING FRAME REPORT  \u003e\u003e",
+				"common_line_id":	"line10"
+			},
+			"coordinates":	{
+				"x":	21,
+				"y":	10,
+				"width":	380,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	64,
+				"y":	65,
+				"width":	295,
+				"height":	78
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"FROM DATE:",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	78,
+				"width":	78,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"TO DATE :",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	106,
+				"width":	78,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vFrom_Date",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	219,
+				"y":	78,
+				"width":	81,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vTo_Date",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	219,
+				"y":	106,
+				"width":	81,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit7",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	70,
+				"y":	156,
+				"width":	285,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Exec",
+				"format":	"E\\XEC\\UTE",
+				"attribute":	"A",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	182,
+				"width":	84,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Exit",
+				"format":	"E\\XIT",
+				"attribute":	"A",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	219,
+				"y":	182,
+				"width":	84,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

@@ -1,0 +1,73 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ProductionControlHMSI"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                {{mg.getText(mgc.Label1)}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+            </label>
+            <button
+                [magic]="mgc.Defect_Entry_Menu"
+                [style.visibility]="mg.getVisible(mgc.Defect_Entry_Menu)"
+            >
+                {{mg.getValue(mgc.Defect_Entry_Menu)}}
+            </button>
+            <button
+                [magic]="mgc.Defect_Master_Entry"
+                [style.visibility]="mg.getVisible(mgc.Defect_Master_Entry)"
+            >
+                {{mg.getValue(mgc.Defect_Master_Entry)}}
+            </button>
+            <button
+                [magic]="mgc.Code_Type_Master"
+                [style.visibility]="mg.getVisible(mgc.Code_Type_Master)"
+            >
+                {{mg.getValue(mgc.Code_Type_Master)}}
+            </button>
+            <button
+                [magic]="mgc.Reports"
+                [style.visibility]="mg.getVisible(mgc.Reports)"
+            >
+                {{mg.getValue(mgc.Reports)}}
+            </button>
+            <button
+                [magic]="mgc.Passtype_Correction_Entry"
+                [style.visibility]="mg.getVisible(mgc.Passtype_Correction_Entry)"
+            >
+                {{mg.getValue(mgc.Passtype_Correction_Entry)}}
+            </button>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+    </div>
+</div>

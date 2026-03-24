@@ -1,0 +1,408 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"DispatchUnlockWithRepairIn",
+		"window_type":	12,
+		"component_path":	"DispatchReleaseBatch/",
+		"module_name":	"",
+		"component_uniquename":	"DispatchReleaseBatch_DispatchUnlockWithRepairIn"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	854,
+		"height":	486
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=DispatchUnlockBatch",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	666,
+				"y":	3,
+				"width":	181,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	23,
+				"width":	421,
+				"height":	75
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	689,
+				"y":	20,
+				"width":	74,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	764,
+				"y":	20,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"Status",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	29,
+				"y":	31,
+				"width":	75,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_FilterOption",
+				"items_list":	"ALL,PEN,APP",
+				"attribute":	"A",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	146,
+				"y":	33,
+				"width":	163,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit6",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	729,
+				"y":	36,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"b_ApplyFilter",
+				"format":	"10",
+				"attribute":	"A",
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	330,
+				"y":	44,
+				"width":	89,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"Text",
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	507,
+				"y":	41,
+				"width":	23,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"End Date",
+				"common_line_id":	"line62"
+			},
+			"coordinates":	{
+				"x":	29,
+				"y":	62,
+				"width":	75,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_FilterEndDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line62"
+			},
+			"coordinates":	{
+				"x":	149,
+				"y":	62,
+				"width":	74,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_FilterEndFromDate_0001",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line62"
+			},
+			"coordinates":	{
+				"x":	240,
+				"y":	62,
+				"width":	74,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DispatchReleaseBatch_VIEW",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	23,
+				"y":	117,
+				"width":	821,
+				"height":	252
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Group14",
+				"common_line_id":	"line374"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	374,
+				"width":	433,
+				"height":	91
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label15",
+						"text":	"Start Date",
+						"common_line_id":	"line400"
+					},
+					"coordinates":	{
+						"x":	54,
+						"y":	400,
+						"width":	84,
+						"height":	23
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"v_BatchStartDate_0001",
+						"enabled":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"mgformat":	"mgFormat",
+						"format":	"DD/MM/YYYY",
+						"attribute":	"D",
+						"common_line_id":	"line400"
+					},
+					"coordinates":	{
+						"x":	153,
+						"y":	400,
+						"width":	81,
+						"height":	23
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"v_BatchStartTime_0001",
+						"enabled":	{
+							"value":	null,
+							"has_exp":	true
+						},
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"common_line_id":	"line400"
+					},
+					"coordinates":	{
+						"x":	243,
+						"y":	400,
+						"width":	81,
+						"height":	23
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label18",
+						"text":	"End Date",
+						"common_line_id":	"line429"
+					},
+					"coordinates":	{
+						"x":	54,
+						"y":	429,
+						"width":	84,
+						"height":	23
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"v_BatchEndDate_0001",
+						"mgformat":	"mgFormat",
+						"format":	"DD/MM/YYYY",
+						"attribute":	"D",
+						"common_line_id":	"line429"
+					},
+					"coordinates":	{
+						"x":	153,
+						"y":	429,
+						"width":	81,
+						"height":	23
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"v_BatchEndTime_0001",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"common_line_id":	"line429"
+					},
+					"coordinates":	{
+						"x":	243,
+						"y":	429,
+						"width":	81,
+						"height":	23
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SaveBatch",
+				"format":	"10",
+				"attribute":	"A",
+				"common_line_id":	"line374"
+			},
+			"coordinates":	{
+				"x":	345,
+				"y":	429,
+				"width":	89,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

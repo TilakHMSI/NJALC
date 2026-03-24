@@ -1,0 +1,23 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.Confirmation"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Message">
+                {{mg.getValue(mgc.Message) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Yes">
+                Yes
+            </button>
+            <button [magic]="mgc.v_No">
+                No
+            </button>
+        </div>
+    </div>
+</div>

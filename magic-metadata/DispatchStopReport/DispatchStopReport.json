@@ -1,0 +1,264 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"DispatchStopReport",
+		"window_type":	12,
+		"component_path":	"DispatchStopReport/",
+		"module_name":	"",
+		"component_uniquename":	"DispatchStopReport_DispatchStopReport"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	416,
+		"height":	296
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	{
+					"value":	"PGM=DispatchStopReport",
+					"has_exp":	true
+				},
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	223,
+				"y":	3,
+				"width":	181,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	245,
+				"y":	20,
+				"width":	74,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	320,
+				"y":	20,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	285,
+				"y":	36,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"Status",
+				"common_line_id":	"line85"
+			},
+			"coordinates":	{
+				"x":	35,
+				"y":	85,
+				"width":	75,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_FilterOption",
+				"items_list":	"A,H,U,I,O",
+				"attribute":	"A",
+				"common_line_id":	"line85"
+			},
+			"coordinates":	{
+				"x":	175,
+				"y":	86,
+				"width":	174,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"common_line_id":	"line122"
+			},
+			"coordinates":	{
+				"x":	35,
+				"y":	122,
+				"width":	108,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_FilterEndDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line122"
+			},
+			"coordinates":	{
+				"x":	178,
+				"y":	122,
+				"width":	81,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_FilterEndFromDate_0001",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line122"
+			},
+			"coordinates":	{
+				"x":	269,
+				"y":	122,
+				"width":	81,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"text":	"Output Option",
+				"common_line_id":	"line164"
+			},
+			"coordinates":	{
+				"x":	35,
+				"y":	166,
+				"width":	108,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_OutputOption",
+				"items_list":	"P,E",
+				"attribute":	"A",
+				"common_line_id":	"line164"
+			},
+			"coordinates":	{
+				"x":	181,
+				"y":	164,
+				"width":	176,
+				"height":	43
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"b_ApplyFilter",
+				"format":	"10",
+				"attribute":	"A",
+				"common_line_id":	"line236"
+			},
+			"coordinates":	{
+				"x":	161,
+				"y":	237,
+				"width":	89,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line236"
+			},
+			"coordinates":	{
+				"x":	311,
+				"y":	236,
+				"width":	71,
+				"height":	34
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

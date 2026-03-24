@@ -1,0 +1,185 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"REPAIR_IN_ENTRY",
+		"window_type":	12,
+		"component_path":	"REPAIR_IN_ENTRY/",
+		"module_name":	"",
+		"component_uniquename":	"REPAIR_IN_ENTRY_REPAIR_IN_ENTRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	933,
+		"height":	437
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	515,
+				"y":	9,
+				"width":	96,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=RepairIN",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	705,
+				"y":	3,
+				"width":	109,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	689,
+				"y":	20,
+				"width":	74,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	764,
+				"y":	20,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	729,
+				"y":	36,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line54"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	54,
+				"width":	915,
+				"height":	275
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"Frame No",
+				"common_line_id":	"line364"
+			},
+			"coordinates":	{
+				"x":	236,
+				"y":	364,
+				"width":	75,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Frame",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line364"
+			},
+			"coordinates":	{
+				"x":	344,
+				"y":	364,
+				"width":	234,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"b_Submit",
+				"format":	"Submit",
+				"attribute":	"A",
+				"common_line_id":	"line364"
+			},
+			"coordinates":	{
+				"x":	600,
+				"y":	364,
+				"width":	96,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

@@ -1,0 +1,177 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"FrameWiseDefectReport",
+		"window_type":	12,
+		"component_path":	"VQMS009_FramewiseDefectReport/",
+		"module_name":	"",
+		"component_uniquename":	"VQMS009_FramewiseDefectReport_FrameWiseDefectReport"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	423,
+		"height":	228
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"\u003c\u003c  FRAME WISE DEFECT REPORT  \u003e\u003e",
+				"common_line_id":	"line10"
+			},
+			"coordinates":	{
+				"x":	21,
+				"y":	10,
+				"width":	380,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	64,
+				"y":	65,
+				"width":	295,
+				"height":	78
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"DATE:",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	78,
+				"width":	43,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"SHIFT:",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	109,
+				"width":	49,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Date",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	221,
+				"y":	78,
+				"width":	81,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Shift",
+				"items_list":	"A,B,FULL",
+				"attribute":	"A",
+				"common_line_id":	"line65"
+			},
+			"coordinates":	{
+				"x":	221,
+				"y":	109,
+				"width":	81,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"C:\\Magic\\Temp\\FRAME_WISE_DEFECT.CSV",
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	71,
+				"y":	156,
+				"width":	253,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Exec",
+				"format":	"E\\XEC",
+				"attribute":	"A",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	182,
+				"width":	84,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Exit",
+				"format":	"E\\XIT",
+				"attribute":	"A",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	219,
+				"y":	182,
+				"width":	84,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

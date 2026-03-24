@@ -1,0 +1,113 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PICKLISTCATEGORY",
+		"window_type":	12,
+		"component_path":	"VQMS006_DefectMaster/DETAIL/PICKLISTCATEGORY/",
+		"module_name":	"",
+		"component_uniquename":	"VQMS006_DefectMaster_DETAIL_PICKLISTCATEGORY_PICKLISTCATEGORY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	401,
+		"height":	421
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	23,
+				"table_title_height":	20,
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	0,
+				"width":	399,
+				"height":	411
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"SUB CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	86
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_SUBCODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	4,
+								"y":	23,
+								"width":	78,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"DESCRIPTION",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	290
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_DISC",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	91,
+								"y":	23,
+								"width":	288,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

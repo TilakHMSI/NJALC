@@ -1,0 +1,113 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DispatchStop"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PGM=DispatchStop(Lock)
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                Dispatch Stop (Lock)
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+            </label>
+            <div
+                [magic]="mgc.V_Mode"
+                (change)="task.mgOnRadioSelectionChanged(mgc.V_Mode)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_Mode);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.V_Mode"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                Title
+            </label>
+            <div
+                [magic]="mgc.r_TitleOption"
+                (change)="task.mgOnRadioSelectionChanged(mgc.r_TitleOption)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.r_TitleOption);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.r_TitleOption"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.v_Title"
+                    [magic]="mgc.v_Title"
+                    [style.visibility]="mg.getVisible(mgc.v_Title)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_Title> </mgError>
+            </div>
+            <div>
+                <select
+                    [magic]="mgc.v_Title_0001"
+                    [style.visibility]="mg.getVisible(mgc.v_Title_0001)"
+                    [formControlName]="mgc.v_Title_0001"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_Title_0001);"
+                        [selected]="o.index == mg.getValue(mgc.v_Title_0001)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.V_Proeed"
+                [disabled]="mg.isDisabled(mgc.V_Proeed )"
+            >
+                {{mg.getValue(mgc.V_Proeed)}}
+            </button>
+            <button [magic]="mgc.V_Exit">
+                {{mg.getValue(mgc.V_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

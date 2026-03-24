@@ -1,0 +1,166 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DEFECTENTRYSCREEN"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                Line :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_p_LINENO"
+                    [magic]="mgc.V_p_LINENO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_p_LINENO> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                Count : DPR / DEFECT ENTERED / TOTAL DEFECTIVE
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                FRAMES
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                Date :
+            </label>
+            <label [magic]="mgc.Edit6">
+                {{mg.getValue(mgc.Edit6)
+| magicDate : mgc.Edit6}}
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_Total_DPR_Count"
+                    type='number'
+                    [magic]="mgc.V_Total_DPR_Count"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_Total_DPR_Count> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                /
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_Total_Defect_Entered_Count"
+                    type='number'
+                    [magic]="mgc.V_Total_Defect_Entered_Count"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_Total_Defect_Entered_Count> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                /
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_Total_Defect_Count"
+                    type='number'
+                    [magic]="mgc.V_Total_Defect_Count"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_Total_Defect_Count> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label13"
+                class="lable_overflow"
+            >
+                FRAME NUMBER :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.v_FRAME_NO"
+                    [magic]="mgc.v_FRAME_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_FRAME_NO> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label15"
+                class="lable_overflow"
+            >
+                MODEL CODE :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.ModelWiseMapping_MTOMAPCODE"
+                    [magic]="mgc.ModelWiseMapping_MTOMAPCODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.ModelWiseMapping_MTOMAPCODE> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label17"
+                class="lable_overflow"
+            >
+                PASS DESCRIPTION :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD_VQMS_Header_PASS_DESC"
+                    [magic]="mgc.PRD_VQMS_Header_PASS_DESC"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRD_VQMS_Header_PASS_DESC> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label19"
+                class="lable_overflow"
+            >
+                FACTORY MODEL CODE :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.S5_MTO_CODE"
+                    [magic]="mgc.S5_MTO_CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S5_MTO_CODE> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.DEFECT_ENTRY_SCREEN">
+            </magic-subform>
+        </div>
+    </div>
+</div>

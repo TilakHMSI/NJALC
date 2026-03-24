@@ -1,0 +1,135 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.PasstypeCorrectionScreen"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                Line :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.S5_PRODLINE"
+                    [magic]="mgc.S5_PRODLINE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S5_PRODLINE> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PGM=VQMS012
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicDate : mgc.Edit4}}
+            </label>
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5)
+| magicTime : mgc.Edit5}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                Date :
+            </label>
+            <label [magic]="mgc.Edit7">
+                {{mg.getValue(mgc.Edit7)
+| magicDate : mgc.Edit7}}
+            </label>
+            <label [magic]="mgc.Edit8">
+                {{mg.getValue(mgc.Edit8) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                FRAME NUMBER :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.v_FRAME_NO"
+                    [magic]="mgc.v_FRAME_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_FRAME_NO> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                MODEL CODE :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.ModelWiseMapping_MTOMAPCODE"
+                    [magic]="mgc.ModelWiseMapping_MTOMAPCODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.ModelWiseMapping_MTOMAPCODE> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label14"
+                class="lable_overflow"
+            >
+                PASS DESCRIPTION :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.vDesc"
+                    [magic]="mgc.vDesc"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.vDesc> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.vDesc"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label16"
+                class="lable_overflow"
+            >
+                FACTORY MODEL CODE :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.S5_MTO_CODE"
+                    [magic]="mgc.S5_MTO_CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S5_MTO_CODE> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.Sub1">
+            </magic-subform>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PICKLISTPASSRATIOTYPE",
+		"window_type":	12,
+		"component_path":	"VQMS012_PassCorrectionEntry/PICKLISTPASSRATIOTYPE/",
+		"module_name":	"",
+		"component_uniquename":	"VQMS012_PassCorrectionEntry_PICKLISTPASSRATIOTYPE_PICKLISTPASSRATIOTYPE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	150,
+		"height":	192
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	20,
+				"table_title_height":	18,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	13,
+				"width":	145,
+				"height":	177
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"PASS DESCRIPTION",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	123
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PASS_DESCRIPTION",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line34"
+							},
+							"coordinates":	{
+								"x":	10,
+								"y":	34,
+								"width":	115,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

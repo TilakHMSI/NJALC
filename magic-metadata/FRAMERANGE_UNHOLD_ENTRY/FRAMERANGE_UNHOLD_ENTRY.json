@@ -1,0 +1,220 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"FRAMERANGE_UNHOLD_ENTRY",
+		"window_type":	12,
+		"component_path":	"FRAMERANGE_UNHOLD_ENTRY/",
+		"module_name":	"",
+		"component_uniquename":	"FRAMERANGE_UNHOLD_ENTRY_FRAMERANGE_UNHOLD_ENTRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	910,
+		"height":	452
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=DispatchUnlock",
+				"common_line_id":	"line3"
+			},
+			"coordinates":	{
+				"x":	750,
+				"y":	3,
+				"width":	135,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	748,
+				"y":	20,
+				"width":	74,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	823,
+				"y":	20,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	788,
+				"y":	36,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	59,
+				"width":	878,
+				"height":	257
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"common_line_id":	"line328"
+			},
+			"coordinates":	{
+				"x":	266,
+				"y":	328,
+				"width":	378,
+				"height":	119
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"Frame From No",
+				"common_line_id":	"line328"
+			},
+			"coordinates":	{
+				"x":	280,
+				"y":	343,
+				"width":	100,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"Frame To No",
+				"common_line_id":	"line328"
+			},
+			"coordinates":	{
+				"x":	281,
+				"y":	377,
+				"width":	100,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Frame",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line328"
+			},
+			"coordinates":	{
+				"x":	396,
+				"y":	343,
+				"width":	234,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Frame_To_0001",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line328"
+			},
+			"coordinates":	{
+				"x":	396,
+				"y":	377,
+				"width":	234,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"b_Submit",
+				"format":	"Submit",
+				"attribute":	"A",
+				"common_line_id":	"line328"
+			},
+			"coordinates":	{
+				"x":	398,
+				"y":	410,
+				"width":	116,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}
