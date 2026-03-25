@@ -27,18 +27,264 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VHMSOMNU7601_HMSI_MENU/HMSIReports.json
-*** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component HMSIReports
-*** Step 3: generate components. (1 components) ***
-[>] generate component HMSIReports
+[>] Loading JSON file .//magic-metadata/VHMSOMNU7659/ProductionControlHMSI.json
+[>] Loading JSON file .//magic-metadata/VQMS010_VQMS_MENU/ProductionControlHMSI.json
+[>] Loading JSON file .//magic-metadata/VQMS002_DefectEntryMenu/DEFECTENTRYMENU.json
+[>] Loading JSON file .//magic-metadata/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN.json
+[>] Loading JSON file .//magic-metadata/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.json
+[>] Loading JSON file .//magic-metadata/VQMS005_DefectsPicklist/DEFECTSPICKLIST.json
+[>] Loading JSON file .//magic-metadata/VQMS005_DefectsPicklist/Picklist/DEFECTSPICKLIST.json
+[>] Loading JSON file .//magic-metadata/VQMS006_DefectMaster/DEFECTMASTER.json
+[>] Loading JSON file .//magic-metadata/VQMS006_DefectMaster/DETAIL/BrowseDEFECTMASTER.json
+[>] Loading JSON file .//magic-metadata/VQMS006_DefectMaster/DETAIL/PICKLISTSECTION/PICKLISTSECTION.json
+[>] Loading JSON file .//magic-metadata/VQMS006_DefectMaster/DETAIL/PICKLISTCATEGORY/PICKLISTCATEGORY.json
+[>] Loading JSON file .//magic-metadata/VQMS006_DefectMaster/PICKLISTMTOCODE/PICKLISTMTOCODE.json
+[>] Loading JSON file .//magic-metadata/CodeTypeMaster/CodeTypeMaster.json
+[>] Loading JSON file .//magic-metadata/CodeTypeMaster/CodeTypeMaster/CodeTypeMaster.json
+[>] Loading JSON file .//magic-metadata/ConfirmOperation/Confirmation.json
+[>] Loading JSON file .//magic-metadata/VQMS020_Report_Menu/ProductionControlHMSI.json
+[>] Loading JSON file .//magic-metadata/VQMS009_FramewiseDefectReport/FrameWiseDefectReport.json
+[>] Loading JSON file .//magic-metadata/VQMS008_DPRStatusReport/DPRStatusReport.json
+[>] Loading JSON file .//magic-metadata/VQMS011PendingFrames/FrameWiseDefectReport.json
+[>] Loading JSON file .//magic-metadata/VQMS012_PassCorrectionEntry/PasstypeCorrectionScreen.json
+[>] Loading JSON file .//magic-metadata/VQMS012_PassCorrectionEntry/PICKLISTPASSRATIOTYPE/PICKLISTPASSRATIOTYPE.json
+[>] Loading JSON file .//magic-metadata/DispatchStop/DispatchStop.json
+[>] Loading JSON file .//magic-metadata/FRAMEWISEHOLDEntryFrameWise/FRAME_WISE.json
+[>] Loading JSON file .//magic-metadata/FRAMEWISEHOLDEntryFrameWise/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.json
+[>] Loading JSON file .//magic-metadata/FRAMERANGE_HOLDEntry_FRAME_RANGE/FRAME_RANGE.json
+[>] Loading JSON file .//magic-metadata/FRAMERANGE_HOLDEntry_FRAME_RANGE/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.json
+[>] Loading JSON file .//magic-metadata/FRAME_UPLOAD/FRAME_UPLOAD.json
+[>] Loading JSON file .//magic-metadata/FRAME_UPLOAD/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.json
+[>] Loading JSON file .//magic-metadata/REPAIR_IN_ENTRY/REPAIR_IN_ENTRY.json
+[>] Loading JSON file .//magic-metadata/REPAIR_IN_ENTRY/REPAIRINENTRY_VIEW/REPAIRINENTRY_VIEW.json
+[>] Loading JSON file .//magic-metadata/REPAIR_OUT_ENTRY/REPAIR_OUT_ENTRY.json
+[>] Loading JSON file .//magic-metadata/REPAIR_OUT_ENTRY/REPAIROUTENTRY_VIEW/REPAIROUTENTRY_VIEW.json
+[>] Loading JSON file .//magic-metadata/DispatchReleaseUpload_UNHOLD/DispatchReleaseWithoutRepairIn.json
+[>] Loading JSON file .//magic-metadata/FRAMEWISE_UNHOLD_ENTRY/FRAMEWISEUNLOCKENTRY.json
+[>] Loading JSON file .//magic-metadata/FRAMEWISE_UNHOLD_ENTRY/REPAIRINENTRY_VIEW/FRAMEWISEUNHOLDEntry_VIEW.json
+[>] Loading JSON file .//magic-metadata/FRAMERANGE_UNHOLD_ENTRY/FRAMERANGE_UNHOLD_ENTRY.json
+[>] Loading JSON file .//magic-metadata/FRAMERANGE_UNHOLD_ENTRY/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.json
+[>] Loading JSON file .//magic-metadata/FRAMEUpload_UNHOLD_ENTRY/FRAMEUpload_UNHOLD_ENTRY.json
+[>] Loading JSON file .//magic-metadata/FRAMEUpload_UNHOLD_ENTRY/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.json
+[>] Loading JSON file .//magic-metadata/DispatchReleaseBatch/DispatchUnlockWithRepairIn.json
+[>] Loading JSON file .//magic-metadata/DispatchReleaseBatch/DispatchReleaseBatch_VIEW/DispatchReleaseBatch_VIEW.json
+[>] Loading JSON file .//magic-metadata/DispatchStopReport/DispatchStopReport.json
+*** Step 2: Processing JSON files -  (42 components) ***
+[>] Processing JSON file for component ProductionControlHMSI
+[>] Processing JSON file for component ProductionControlHMSI
+[>] Processing JSON file for component DEFECTENTRYMENU
+[>] Processing JSON file for component DEFECTENTRYSCREEN
+[>] Processing JSON file for component DEFECTENTRYSCREEN
+[>] Processing JSON file for component DEFECTSPICKLIST
+[>] Processing JSON file for component DEFECTSPICKLIST
+[>] Processing JSON file for component DEFECTMASTER
+[>] Processing JSON file for component BrowseDEFECTMASTER
+[>] Processing JSON file for component PICKLISTSECTION
+[>] Processing JSON file for component PICKLISTCATEGORY
+[>] Processing JSON file for component PICKLISTMTOCODE
+[>] Processing JSON file for component CodeTypeMaster
+[>] Processing JSON file for component CodeTypeMaster
+[>] Processing JSON file for component Confirmation
+[>] Processing JSON file for component ProductionControlHMSI
+[>] Processing JSON file for component FrameWiseDefectReport
+[>] Processing JSON file for component DPRStatusReport
+[>] Processing JSON file for component FrameWiseDefectReport
+[>] Processing JSON file for component PasstypeCorrectionScreen
+[>] Processing JSON file for component PICKLISTPASSRATIOTYPE
+[>] Processing JSON file for component DispatchStop
+[>] Processing JSON file for component FRAME_WISE
+[>] Processing JSON file for component FRAME_DETAIL_VIEW
+[>] Processing JSON file for component FRAME_RANGE
+[>] Processing JSON file for component FRAME_DETAIL_VIEW
+[>] Processing JSON file for component FRAME_UPLOAD
+[>] Processing JSON file for component FRAME_DETAIL_VIEW
+[>] Processing JSON file for component REPAIR_IN_ENTRY
+[>] Processing JSON file for component REPAIRINENTRY_VIEW
+[>] Processing JSON file for component REPAIR_OUT_ENTRY
+[>] Processing JSON file for component REPAIROUTENTRY_VIEW
+[>] Processing JSON file for component DispatchReleaseWithoutRepairIn
+[>] Processing JSON file for component FRAMEWISEUNLOCKENTRY
+[>] Processing JSON file for component FRAMEWISEUNHOLDEntry_VIEW
+[>] Processing JSON file for component FRAMERANGE_UNHOLD_ENTRY
+[>] Processing JSON file for component FRAME_DETAIL_VIEW
+[>] Processing JSON file for component FRAMEUpload_UNHOLD_ENTRY
+[>] Processing JSON file for component FRAME_DETAIL_VIEW
+[>] Processing JSON file for component DispatchUnlockWithRepairIn
+[>] Processing JSON file for component DispatchReleaseBatch_VIEW
+[>] Processing JSON file for component DispatchStopReport
+*** Step 3: generate components. (42 components) ***
+[>] generate component ProductionControlHMSI
+[>] generate component ProductionControlHMSI
+[>] generate component DEFECTENTRYMENU
+[>] generate component DEFECTENTRYSCREEN
+[>] generate component DEFECTENTRYSCREEN
+[>] generate component DEFECTSPICKLIST
+[>] generate component DEFECTSPICKLIST
+[>] generate component DEFECTMASTER
+[>] generate component BrowseDEFECTMASTER
+[>] generate component PICKLISTSECTION
+[>] generate component PICKLISTCATEGORY
+[>] generate component PICKLISTMTOCODE
+[>] generate component CodeTypeMaster
+[>] generate component CodeTypeMaster
+[>] generate component Confirmation
+[>] generate component ProductionControlHMSI
+[>] generate component FrameWiseDefectReport
+[>] generate component DPRStatusReport
+[>] generate component FrameWiseDefectReport
+[>] generate component PasstypeCorrectionScreen
+[>] generate component PICKLISTPASSRATIOTYPE
+[>] generate component DispatchStop
+[>] generate component FRAME_WISE
+[>] generate component FRAME_DETAIL_VIEW
+[>] generate component FRAME_RANGE
+[>] generate component FRAME_DETAIL_VIEW
+[>] generate component FRAME_UPLOAD
+[>] generate component FRAME_DETAIL_VIEW
+[>] generate component REPAIR_IN_ENTRY
+[>] generate component REPAIRINENTRY_VIEW
+[>] generate component REPAIR_OUT_ENTRY
+[>] generate component REPAIROUTENTRY_VIEW
+[>] generate component DispatchReleaseWithoutRepairIn
+[>] generate component FRAMEWISEUNLOCKENTRY
+[>] generate component FRAMEWISEUNHOLDEntry_VIEW
+[>] generate component FRAMERANGE_UNHOLD_ENTRY
+[>] generate component FRAME_DETAIL_VIEW
+[>] generate component FRAMEUpload_UNHOLD_ENTRY
+[>] generate component FRAME_DETAIL_VIEW
+[>] generate component DispatchUnlockWithRepairIn
+[>] generate component DispatchReleaseBatch_VIEW
+[>] generate component DispatchStopReport
 [>] Step 4: components-list.
- Total old components: 202, added components: 1. 
+ Total old components: 204, added components: 42. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VHMSOMNU7601_HMSI_MENU/HMSIReports.mg.controls.g.ts (1421 bytes)
-[32mCREATE[39m src/app/magic/VHMSOMNU7601_HMSI_MENU/HMSIReports.component.ts (2060 bytes)
-[32mCREATE[39m src/app/magic/VHMSOMNU7601_HMSI_MENU/HMSIReports.component.html (3309 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (69542 bytes)
+[32mCREATE[39m src/app/magic/VHMSOMNU7659/ProductionControlHMSI.mg.controls.g.ts (1136 bytes)
+[32mCREATE[39m src/app/magic/VHMSOMNU7659/ProductionControlHMSI.component.ts (2200 bytes)
+[32mCREATE[39m src/app/magic/VHMSOMNU7659/ProductionControlHMSI.component.html (1499 bytes)
+[32mCREATE[39m src/app/magic/VQMS010_VQMS_MENU/ProductionControlHMSI.mg.controls.g.ts (1302 bytes)
+[32mCREATE[39m src/app/magic/VQMS010_VQMS_MENU/ProductionControlHMSI.component.ts (2205 bytes)
+[32mCREATE[39m src/app/magic/VQMS010_VQMS_MENU/ProductionControlHMSI.component.html (2386 bytes)
+[32mCREATE[39m src/app/magic/VQMS002_DefectEntryMenu/DEFECTENTRYMENU.mg.controls.g.ts (2134 bytes)
+[32mCREATE[39m src/app/magic/VQMS002_DefectEntryMenu/DEFECTENTRYMENU.component.ts (2121 bytes)
+[32mCREATE[39m src/app/magic/VQMS002_DefectEntryMenu/DEFECTENTRYMENU.component.html (4721 bytes)
+[32mCREATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN.mg.controls.g.ts (2583 bytes)
+[32mCREATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN.component.ts (2153 bytes)
+[32mCREATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN.component.html (5217 bytes)
+[32mCREATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.mg.controls.g.ts (1730 bytes)
+[32mCREATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.component.ts (2345 bytes)
+[32mCREATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.component.html (10902 bytes)
+[32mCREATE[39m src/app/magic/VQMS005_DefectsPicklist/DEFECTSPICKLIST.mg.controls.g.ts (760 bytes)
+[32mCREATE[39m src/app/magic/VQMS005_DefectsPicklist/DEFECTSPICKLIST.component.ts (2121 bytes)
+[32mCREATE[39m src/app/magic/VQMS005_DefectsPicklist/DEFECTSPICKLIST.component.html (745 bytes)
+[32mCREATE[39m src/app/magic/VQMS005_DefectsPicklist/Picklist/DEFECTSPICKLIST.mg.controls.g.ts (1697 bytes)
+[32mCREATE[39m src/app/magic/VQMS005_DefectsPicklist/Picklist/DEFECTSPICKLIST.component.ts (2302 bytes)
+[32mCREATE[39m src/app/magic/VQMS005_DefectsPicklist/Picklist/DEFECTSPICKLIST.component.html (10131 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DEFECTMASTER.mg.controls.g.ts (1375 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DEFECTMASTER.component.ts (2073 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DEFECTMASTER.component.html (2377 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DETAIL/BrowseDEFECTMASTER.mg.controls.g.ts (1954 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DETAIL/BrowseDEFECTMASTER.component.ts (961 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DETAIL/BrowseDEFECTMASTER.component.html (13670 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DETAIL/PICKLISTSECTION/PICKLISTSECTION.mg.controls.g.ts (1017 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DETAIL/PICKLISTSECTION/PICKLISTSECTION.component.ts (2313 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DETAIL/PICKLISTSECTION/PICKLISTSECTION.component.html (5597 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DETAIL/PICKLISTCATEGORY/PICKLISTCATEGORY.mg.controls.g.ts (1019 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DETAIL/PICKLISTCATEGORY/PICKLISTCATEGORY.component.ts (2330 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/DETAIL/PICKLISTCATEGORY/PICKLISTCATEGORY.component.html (5599 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/PICKLISTMTOCODE/PICKLISTMTOCODE.mg.controls.g.ts (827 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/PICKLISTMTOCODE/PICKLISTMTOCODE.component.ts (2306 bytes)
+[32mCREATE[39m src/app/magic/VQMS006_DefectMaster/PICKLISTMTOCODE/PICKLISTMTOCODE.component.html (3521 bytes)
+[32mCREATE[39m src/app/magic/CodeTypeMaster/CodeTypeMaster.mg.controls.g.ts (2032 bytes)
+[32mCREATE[39m src/app/magic/CodeTypeMaster/CodeTypeMaster.component.ts (2268 bytes)
+[32mCREATE[39m src/app/magic/CodeTypeMaster/CodeTypeMaster.component.html (11086 bytes)
+[32mCREATE[39m src/app/magic/CodeTypeMaster/CodeTypeMaster/CodeTypeMaster.mg.controls.g.ts (1312 bytes)
+[32mCREATE[39m src/app/magic/CodeTypeMaster/CodeTypeMaster/CodeTypeMaster.component.ts (2112 bytes)
+[32mCREATE[39m src/app/magic/CodeTypeMaster/CodeTypeMaster/CodeTypeMaster.component.html (2509 bytes)
+[32mCREATE[39m src/app/magic/ConfirmOperation/Confirmation.mg.controls.g.ts (750 bytes)
+[32mCREATE[39m src/app/magic/ConfirmOperation/Confirmation.component.ts (2069 bytes)
+[32mCREATE[39m src/app/magic/ConfirmOperation/Confirmation.component.html (594 bytes)
+[32mCREATE[39m src/app/magic/VQMS020_Report_Menu/ProductionControlHMSI.mg.controls.g.ts (1195 bytes)
+[32mCREATE[39m src/app/magic/VQMS020_Report_Menu/ProductionControlHMSI.component.ts (2207 bytes)
+[32mCREATE[39m src/app/magic/VQMS020_Report_Menu/ProductionControlHMSI.component.html (1644 bytes)
+[32mCREATE[39m src/app/magic/VQMS009_FramewiseDefectReport/FrameWiseDefectReport.mg.controls.g.ts (1045 bytes)
+[32mCREATE[39m src/app/magic/VQMS009_FramewiseDefectReport/FrameWiseDefectReport.component.ts (2217 bytes)
+[32mCREATE[39m src/app/magic/VQMS009_FramewiseDefectReport/FrameWiseDefectReport.component.html (2222 bytes)
+[32mCREATE[39m src/app/magic/VQMS008_DPRStatusReport/DPRStatusReport.mg.controls.g.ts (1006 bytes)
+[32mCREATE[39m src/app/magic/VQMS008_DPRStatusReport/DPRStatusReport.component.ts (2121 bytes)
+[32mCREATE[39m src/app/magic/VQMS008_DPRStatusReport/DPRStatusReport.component.html (2122 bytes)
+[32mCREATE[39m src/app/magic/VQMS011PendingFrames/FrameWiseDefectReport.mg.controls.g.ts (1170 bytes)
+[32mCREATE[39m src/app/magic/VQMS011PendingFrames/FrameWiseDefectReport.component.ts (2208 bytes)
+[32mCREATE[39m src/app/magic/VQMS011PendingFrames/FrameWiseDefectReport.component.html (1803 bytes)
+[32mCREATE[39m src/app/magic/VQMS012_PassCorrectionEntry/PasstypeCorrectionScreen.mg.controls.g.ts (2206 bytes)
+[32mCREATE[39m src/app/magic/VQMS012_PassCorrectionEntry/PasstypeCorrectionScreen.component.ts (2260 bytes)
+[32mCREATE[39m src/app/magic/VQMS012_PassCorrectionEntry/PasstypeCorrectionScreen.component.html (4135 bytes)
+[32mCREATE[39m src/app/magic/VQMS012_PassCorrectionEntry/PICKLISTPASSRATIOTYPE/PICKLISTPASSRATIOTYPE.mg.controls.g.ts (875 bytes)
+[32mCREATE[39m src/app/magic/VQMS012_PassCorrectionEntry/PICKLISTPASSRATIOTYPE/PICKLISTPASSRATIOTYPE.component.ts (2415 bytes)
+[32mCREATE[39m src/app/magic/VQMS012_PassCorrectionEntry/PICKLISTPASSRATIOTYPE/PICKLISTPASSRATIOTYPE.component.html (3578 bytes)
+[32mCREATE[39m src/app/magic/DispatchStop/DispatchStop.mg.controls.g.ts (1460 bytes)
+[32mCREATE[39m src/app/magic/DispatchStop/DispatchStop.component.ts (2065 bytes)
+[32mCREATE[39m src/app/magic/DispatchStop/DispatchStop.component.html (3789 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISEHOLDEntryFrameWise/FRAME_WISE.mg.controls.g.ts (1284 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISEHOLDEntryFrameWise/FRAME_WISE.component.ts (2050 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISEHOLDEntryFrameWise/FRAME_WISE.component.html (1867 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISEHOLDEntryFrameWise/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.mg.controls.g.ts (1841 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISEHOLDEntryFrameWise/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.component.ts (974 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISEHOLDEntryFrameWise/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.component.html (13972 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_HOLDEntry_FRAME_RANGE/FRAME_RANGE.mg.controls.g.ts (1458 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_HOLDEntry_FRAME_RANGE/FRAME_RANGE.component.ts (2070 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_HOLDEntry_FRAME_RANGE/FRAME_RANGE.component.html (2328 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_HOLDEntry_FRAME_RANGE/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.mg.controls.g.ts (1841 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_HOLDEntry_FRAME_RANGE/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.component.ts (979 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_HOLDEntry_FRAME_RANGE/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.component.html (13972 bytes)
+[32mCREATE[39m src/app/magic/FRAME_UPLOAD/FRAME_UPLOAD.mg.controls.g.ts (1314 bytes)
+[32mCREATE[39m src/app/magic/FRAME_UPLOAD/FRAME_UPLOAD.component.ts (2065 bytes)
+[32mCREATE[39m src/app/magic/FRAME_UPLOAD/FRAME_UPLOAD.component.html (1820 bytes)
+[32mCREATE[39m src/app/magic/FRAME_UPLOAD/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.mg.controls.g.ts (1841 bytes)
+[32mCREATE[39m src/app/magic/FRAME_UPLOAD/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.component.ts (959 bytes)
+[32mCREATE[39m src/app/magic/FRAME_UPLOAD/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.component.html (13972 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_IN_ENTRY/REPAIR_IN_ENTRY.mg.controls.g.ts (1241 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_IN_ENTRY/REPAIR_IN_ENTRY.component.ts (2113 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_IN_ENTRY/REPAIR_IN_ENTRY.component.html (1725 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_IN_ENTRY/REPAIRINENTRY_VIEW/REPAIRINENTRY_VIEW.mg.controls.g.ts (2134 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_IN_ENTRY/REPAIRINENTRY_VIEW/REPAIRINENTRY_VIEW.component.ts (968 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_IN_ENTRY/REPAIRINENTRY_VIEW/REPAIRINENTRY_VIEW.component.html (17092 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_OUT_ENTRY/REPAIR_OUT_ENTRY.mg.controls.g.ts (1243 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_OUT_ENTRY/REPAIR_OUT_ENTRY.component.ts (2129 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_OUT_ENTRY/REPAIR_OUT_ENTRY.component.html (1727 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_OUT_ENTRY/REPAIROUTENTRY_VIEW/REPAIROUTENTRY_VIEW.mg.controls.g.ts (2261 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_OUT_ENTRY/REPAIROUTENTRY_VIEW/REPAIROUTENTRY_VIEW.component.ts (975 bytes)
+[32mCREATE[39m src/app/magic/REPAIR_OUT_ENTRY/REPAIROUTENTRY_VIEW/REPAIROUTENTRY_VIEW.component.html (18182 bytes)
+[32mCREATE[39m src/app/magic/DispatchReleaseUpload_UNHOLD/DispatchReleaseWithoutRepairIn.mg.controls.g.ts (980 bytes)
+[32mCREATE[39m src/app/magic/DispatchReleaseUpload_UNHOLD/DispatchReleaseWithoutRepairIn.component.ts (2351 bytes)
+[32mCREATE[39m src/app/magic/DispatchReleaseUpload_UNHOLD/DispatchReleaseWithoutRepairIn.component.html (1774 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISE_UNHOLD_ENTRY/FRAMEWISEUNLOCKENTRY.mg.controls.g.ts (1278 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISE_UNHOLD_ENTRY/FRAMEWISEUNLOCKENTRY.component.ts (2195 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISE_UNHOLD_ENTRY/FRAMEWISEUNLOCKENTRY.component.html (1866 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISE_UNHOLD_ENTRY/REPAIRINENTRY_VIEW/FRAMEWISEUNHOLDEntry_VIEW.mg.controls.g.ts (2249 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISE_UNHOLD_ENTRY/REPAIRINENTRY_VIEW/FRAMEWISEUNHOLDEntry_VIEW.component.ts (1010 bytes)
+[32mCREATE[39m src/app/magic/FRAMEWISE_UNHOLD_ENTRY/REPAIRINENTRY_VIEW/FRAMEWISEUNHOLDEntry_VIEW.component.html (18138 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_UNHOLD_ENTRY/FRAMERANGE_UNHOLD_ENTRY.mg.controls.g.ts (1454 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_UNHOLD_ENTRY/FRAMERANGE_UNHOLD_ENTRY.component.ts (2241 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_UNHOLD_ENTRY/FRAMERANGE_UNHOLD_ENTRY.component.html (2229 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_UNHOLD_ENTRY/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.mg.controls.g.ts (2019 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_UNHOLD_ENTRY/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.component.ts (970 bytes)
+[32mCREATE[39m src/app/magic/FRAMERANGE_UNHOLD_ENTRY/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.component.html (16024 bytes)
+[32mCREATE[39m src/app/magic/FRAMEUpload_UNHOLD_ENTRY/FRAMEUpload_UNHOLD_ENTRY.mg.controls.g.ts (1283 bytes)
+[32mCREATE[39m src/app/magic/FRAMEUpload_UNHOLD_ENTRY/FRAMEUpload_UNHOLD_ENTRY.component.ts (2257 bytes)
+[32mCREATE[39m src/app/magic/FRAMEUpload_UNHOLD_ENTRY/FRAMEUpload_UNHOLD_ENTRY.component.html (1735 bytes)
+[32mCREATE[39m src/app/magic/FRAMEUpload_UNHOLD_ENTRY/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.mg.controls.g.ts (2019 bytes)
+[32mCREATE[39m src/app/magic/FRAMEUpload_UNHOLD_ENTRY/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.component.ts (971 bytes)
+[32mCREATE[39m src/app/magic/FRAMEUpload_UNHOLD_ENTRY/FRAME_DETAIL_VIEW/FRAME_DETAIL_VIEW.component.html (16024 bytes)
+[32mCREATE[39m src/app/magic/DispatchReleaseBatch/DispatchUnlockWithRepairIn.mg.controls.g.ts (2663 bytes)
+[32mCREATE[39m src/app/magic/DispatchReleaseBatch/DispatchUnlockWithRepairIn.component.ts (2283 bytes)
+[32mCREATE[39m src/app/magic/DispatchReleaseBatch/DispatchUnlockWithRepairIn.component.html (4791 bytes)
+[32mCREATE[39m src/app/magic/DispatchReleaseBatch/DispatchReleaseBatch_VIEW/DispatchReleaseBatch_VIEW.mg.controls.g.ts (2210 bytes)
+[32mCREATE[39m src/app/magic/DispatchReleaseBatch/DispatchReleaseBatch_VIEW/DispatchReleaseBatch_VIEW.component.ts (1015 bytes)
+[32mCREATE[39m src/app/magic/DispatchReleaseBatch/DispatchReleaseBatch_VIEW/DispatchReleaseBatch_VIEW.component.html (17247 bytes)
+[32mCREATE[39m src/app/magic/DispatchStopReport/DispatchStopReport.mg.controls.g.ts (1866 bytes)
+[32mCREATE[39m src/app/magic/DispatchStopReport/DispatchStopReport.component.ts (2161 bytes)
+[32mCREATE[39m src/app/magic/DispatchStopReport/DispatchStopReport.component.html (3414 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (82841 bytes)
 
 
 

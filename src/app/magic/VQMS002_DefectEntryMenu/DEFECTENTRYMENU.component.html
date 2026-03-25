@@ -1,11 +1,5 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.DEFECTENTRYMENU"
-    >
+<div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.DEFECTENTRYMENU">
         <div style="display: flex; flex-direction: row">
             <label [magic]="mgc.Edit3">
                 {{mg.getValue(mgc.Edit3) }}
@@ -13,21 +7,18 @@
             <label [magic]="mgc.Edit4">
                 {{mg.getValue(mgc.Edit4) }}
             </label>
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label1" class="lable_overflow">
                 PGM=VQMS002
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
             <label [magic]="mgc.Edit5">
                 {{mg.getValue(mgc.Edit5)
-| magicDate : mgc.Edit5}}
+                | magicDate : mgc.Edit5}}
             </label>
             <label [magic]="mgc.Edit6">
                 {{mg.getValue(mgc.Edit6)
-| magicTime : mgc.Edit6}}
+                | magicTime : mgc.Edit6}}
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
@@ -36,92 +27,123 @@
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label8"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label8" class="lable_overflow">
             </label>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE9"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE9)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE9"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE9)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE9)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE5"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE5)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE5"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE5)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE5)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE7"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE7)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE7"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE7)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE7)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE10"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE10)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE10"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE10)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE10)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE4"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE4)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE4"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE4)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE4)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE1"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE1)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE1"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE1)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE1)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE2"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE2)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE2"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE2)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE2)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE6"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE6)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE6"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE6)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE6)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE3"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE3)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE3"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE3)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE3)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE4F"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE4F)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE4F"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE4F)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE4F)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE_8"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE_8)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE_8"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE_8)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE_8)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE80_0001"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE80_0001)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE80_0001"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE80_0001)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE80_0001)}}
             </button>
-            <button
-                [magic]="mgc.BUTTONDEFECTENTRY_LINE11_0001"
-                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE11_0001)"
-            >
+            <button [magic]="mgc.BUTTONDEFECTENTRY_LINE11_0001"
+                [style.visibility]="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE11_0001)">
                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE11_0001)}}
             </button>
             <button [magic]="mgc.btnexit">
                 Back
             </button>
+        </div>
+    </div>
+</div>
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.DEFECTENTRYMENU">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE9)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE9">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE9)}}
+                            </button>
+                        </div>
+                        <!-- <div class="form-group" *ngIf="mg.getVisible(mgc.Defect_Master_Entry)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Defect_Master_Entry">
+                                {{mg.getValue(mgc.Defect_Master_Entry)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Code_Type_Master)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Code_Type_Master">
+                                {{mg.getValue(mgc.Code_Type_Master)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Reports)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Reports">
+                                {{mg.getValue(mgc.Reports)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Passtype_Correction_Entry)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Passtype_Correction_Entry">
+                                {{mg.getValue(mgc.Passtype_Correction_Entry)}}
+                            </button>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-2">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

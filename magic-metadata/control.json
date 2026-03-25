@@ -1,16 +1,36 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"btnexit",
-		"format":	"Back"
+		"id":	"Column25",
+		"column_title":	"BATTERY2 FLAG",
+		"is_table_child":	true,
+		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	511,
-		"y":	60,
-		"width":	41,
-		"height":	22
+		"width":	84
 	},
 	"hint":	null,
-	"controlType":	"B",
-	"children":	null
+	"controlType":	"K",
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BATTERY2_ACTIVE",
+				"text":	"",
+				"attribute":	"B",
+				"is_table_child":	true,
+				"web_style":	2,
+				"common_line_id":	"line73"
+			},
+			"coordinates":	{
+				"x":	554,
+				"y":	73,
+				"width":	20,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		}
+	]
 }
