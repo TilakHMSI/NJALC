@@ -1,27 +1,18 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.ProductionControlHMSI"
-    >
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.ProductionControlHMSI">
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label1" class="lable_overflow">
                 {{mg.getText(mgc.Label1)}}
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
             <label [magic]="mgc.Edit3">
                 {{mg.getValue(mgc.Edit3)
-| magicDate : mgc.Edit3}}
+                | magicDate : mgc.Edit3}}
             </label>
             <label [magic]="mgc.Edit4">
                 {{mg.getValue(mgc.Edit4)
-| magicTime : mgc.Edit4}}
+                | magicTime : mgc.Edit4}}
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
@@ -30,44 +21,86 @@
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label6" class="lable_overflow">
             </label>
-            <button
-                [magic]="mgc.Defect_Entry_Menu"
-                [style.visibility]="mg.getVisible(mgc.Defect_Entry_Menu)"
-            >
+            <button [magic]="mgc.Defect_Entry_Menu" [style.visibility]="mg.getVisible(mgc.Defect_Entry_Menu)">
                 {{mg.getValue(mgc.Defect_Entry_Menu)}}
             </button>
-            <button
-                [magic]="mgc.Defect_Master_Entry"
-                [style.visibility]="mg.getVisible(mgc.Defect_Master_Entry)"
-            >
+            <button [magic]="mgc.Defect_Master_Entry" [style.visibility]="mg.getVisible(mgc.Defect_Master_Entry)">
                 {{mg.getValue(mgc.Defect_Master_Entry)}}
             </button>
-            <button
-                [magic]="mgc.Code_Type_Master"
-                [style.visibility]="mg.getVisible(mgc.Code_Type_Master)"
-            >
+            <button [magic]="mgc.Code_Type_Master" [style.visibility]="mg.getVisible(mgc.Code_Type_Master)">
                 {{mg.getValue(mgc.Code_Type_Master)}}
             </button>
-            <button
-                [magic]="mgc.Reports"
-                [style.visibility]="mg.getVisible(mgc.Reports)"
-            >
+            <button [magic]="mgc.Reports" [style.visibility]="mg.getVisible(mgc.Reports)">
                 {{mg.getValue(mgc.Reports)}}
             </button>
-            <button
-                [magic]="mgc.Passtype_Correction_Entry"
-                [style.visibility]="mg.getVisible(mgc.Passtype_Correction_Entry)"
-            >
+            <button [magic]="mgc.Passtype_Correction_Entry"
+                [style.visibility]="mg.getVisible(mgc.Passtype_Correction_Entry)">
                 {{mg.getValue(mgc.Passtype_Correction_Entry)}}
             </button>
             <button [magic]="mgc.btnexit">
                 Back
             </button>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.ProductionControlHMSI">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Defect_Entry_Menu)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Defect_Entry_Menu">
+                                {{mg.getValue(mgc.Defect_Entry_Menu)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Defect_Master_Entry)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Defect_Master_Entry">
+                                {{mg.getValue(mgc.Defect_Master_Entry)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Code_Type_Master)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Code_Type_Master">
+                                {{mg.getValue(mgc.Code_Type_Master)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Reports)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Reports">
+                                {{mg.getValue(mgc.Reports)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Passtype_Correction_Entry)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Passtype_Correction_Entry">
+                                {{mg.getValue(mgc.Passtype_Correction_Entry)}}
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
