@@ -16,14 +16,8 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"VQMS006_DefectMaster/DEFECTMASTER",
-				"VQMS006_DefectMaster/DETAIL/BrowseDEFECTMASTER",
-				"PICKLISTSECTION/PICKLISTSECTION",
-				"PICKLISTSECTION/List/List",
-				"PICKLISTSCATEGORY/PICKLISTSCATEGORY",
-				"PICKLISTSCATEGORY/List/List",
-				"PICKLISTMTOCODE/PICKLISTMTOCODE",
-				"PICKLISTMTOCODE/List/List"
+				"PRD003GroupGuide/GroupGuide",
+				"PRD003GroupGuide/List/List"
 			]
 		}
 	],

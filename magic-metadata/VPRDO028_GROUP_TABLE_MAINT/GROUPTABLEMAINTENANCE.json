@@ -56,7 +56,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"Label2",
-				"text":	"PGM=VPRDO028",
+				"text":	{
+					"value":	"PGM=VPRDO028",
+					"has_exp":	true
+				},
 				"common_line_id":	"line0"
 			},
 			"coordinates":	{

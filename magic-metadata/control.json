@@ -1,16 +1,20 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"btnSearch",
-		"format":	"Search"
+		"id":	"PR27_GROUP_NAME",
+		"mgformat":	"mgFormat",
+		"format":	"UUUUUUUUUUUUUUUUUUUU",
+		"attribute":	"A",
+		"is_table_child":	true,
+		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	287,
-		"y":	26,
-		"width":	63,
-		"height":	26
+		"x":	76,
+		"y":	88,
+		"width":	108,
+		"height":	19
 	},
 	"hint":	null,
-	"controlType":	"B",
+	"controlType":	"T",
 	"children":	null
 }

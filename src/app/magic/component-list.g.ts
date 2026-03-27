@@ -247,10 +247,16 @@ import { PICKLISTSCATEGORY as PICKLISTSCATEGORY_PICKLISTSCATEGORY } from './PICK
 import { List as PICKLISTSCATEGORY_List_List } from './PICKLISTSCATEGORY/List/List.component';
 import { PICKLISTMTOCODE as PICKLISTMTOCODE_PICKLISTMTOCODE } from './PICKLISTMTOCODE/PICKLISTMTOCODE.component';
 import { List as PICKLISTMTOCODE_List_List } from './PICKLISTMTOCODE/List/List.component';
+import { List as GROUP_TABLE_SELECTION_List_List } from './GROUP_TABLE_SELECTION/List/List.component';
+import { GroupGuide as PRD003GroupGuide_GroupGuide } from './PRD003GroupGuide/GroupGuide.component';
+import { List as PRD003GroupGuide_List_List } from './PRD003GroupGuide/List/List.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               PICKLISTSECTION_PICKLISTSECTION:PICKLISTSECTION_PICKLISTSECTION,
+export const magicGenCmpsHash = {               PRD003GroupGuide_GroupGuide:PRD003GroupGuide_GroupGuide,
+              PRD003GroupGuide_List_List:PRD003GroupGuide_List_List,
+                      GROUP_TABLE_SELECTION_List_List:GROUP_TABLE_SELECTION_List_List,
+                      PICKLISTSECTION_PICKLISTSECTION:PICKLISTSECTION_PICKLISTSECTION,
               PICKLISTSECTION_List_List:PICKLISTSECTION_List_List,
               PICKLISTSCATEGORY_PICKLISTSCATEGORY:PICKLISTSCATEGORY_PICKLISTSCATEGORY,
               PICKLISTSCATEGORY_List_List:PICKLISTSCATEGORY_List_List,
@@ -503,6 +509,9 @@ export const magicGenCmpsHash = {               PICKLISTSECTION_PICKLISTSECTION:
 };
 
 export const magicGenComponents = [
+	PRD003GroupGuide_GroupGuide,
+	PRD003GroupGuide_List_List,
+	GROUP_TABLE_SELECTION_List_List,
 	PICKLISTSECTION_PICKLISTSECTION,
 	PICKLISTSECTION_List_List,
 	PICKLISTSCATEGORY_PICKLISTSCATEGORY,

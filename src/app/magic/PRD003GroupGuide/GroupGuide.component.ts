@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./GROUP_TABLE_SELECTION.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./GroupGuide.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-GROUP_TABLE_SELECTION_GROUP_TABLE_SELECTION',
+    selector: 'mga-PRD003GroupGuide_GroupGuide',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './GROUP_TABLE_SELECTION.component.html'
+    templateUrl: './GroupGuide.component.html'
 })
-export class GROUP_TABLE_SELECTION extends TaskBaseMagicComponent implements MagicModalInterface {
+export class GroupGuide extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,44 +23,44 @@ export class GROUP_TABLE_SELECTION extends TaskBaseMagicComponent implements Mag
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "GROUP_TABLE_SELECTION";
+    private static readonly formName: string = "GroupGuide";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "700px";
+    private static readonly width: string = "500px";
     private static readonly height: string = "600px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = false;
     private static readonly isMovable: boolean = true;
     X() {
-        return GROUP_TABLE_SELECTION.x;
+        return GroupGuide.x;
     }
     Y() {
-        return GROUP_TABLE_SELECTION.y;
+        return GroupGuide.y;
     }
     Width(): string {
-        return GROUP_TABLE_SELECTION.width;
+        return GroupGuide.width;
     }
     Height(): string {
-        return GROUP_TABLE_SELECTION.height;
+        return GroupGuide.height;
     }
     IsCenteredToWindow() {
-        return GROUP_TABLE_SELECTION.isCenteredToWindow;
+        return GroupGuide.isCenteredToWindow;
     }
     FormName() {
-        return GROUP_TABLE_SELECTION.formName;
+        return GroupGuide.formName;
     }
     ShowTitleBar() {
-        return GROUP_TABLE_SELECTION.showTitleBar;
+        return GroupGuide.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return GROUP_TABLE_SELECTION.shouldCloseOnBackgroundClick;
+        return GroupGuide.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return GROUP_TABLE_SELECTION.isResizable;
+        return GroupGuide.isResizable;
     }
     IsMovable() {
-        return GROUP_TABLE_SELECTION.isMovable;
+        return GroupGuide.isMovable;
     }
 }

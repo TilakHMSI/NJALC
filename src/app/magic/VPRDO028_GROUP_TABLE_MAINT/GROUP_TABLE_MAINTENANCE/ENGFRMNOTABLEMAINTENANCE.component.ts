@@ -12,7 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO028_GROUP_TABLE_MAINT_GROUP_TABLE_MAINTENANCE_ENGFRMNOTABLEMAINTENANCE',
     providers: [...matMagicProviders],
     standalone: false,
-    styleUrls: ['./ENGFRMNOTABLEMAINTENANCE.component.css'],
+    styleUrl: './ENGFRMNOTABLEMAINTENANCE.component.css',
     templateUrl: './ENGFRMNOTABLEMAINTENANCE.component.html'
 })
 export class ENGFRMNOTABLEMAINTENANCE extends BaseMatTableMagicComponent {

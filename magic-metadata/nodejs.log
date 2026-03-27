@@ -27,22 +27,22 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN.json
-[>] Loading JSON file .//magic-metadata/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.json
+[>] Loading JSON file .//magic-metadata/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.json
+[>] Loading JSON file .//magic-metadata/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.json
 *** Step 2: Processing JSON files -  (2 components) ***
-[>] Processing JSON file for component DEFECTENTRYSCREEN
-[>] Processing JSON file for component DEFECTENTRYSCREEN
+[>] Processing JSON file for component GROUPTABLEMAINTENANCE
+[>] Processing JSON file for component ENGFRMNOTABLEMAINTENANCE
 *** Step 3: generate components. (2 components) ***
-[>] generate component DEFECTENTRYSCREEN
-[>] generate component DEFECTENTRYSCREEN
+[>] generate component GROUPTABLEMAINTENANCE
+[>] generate component ENGFRMNOTABLEMAINTENANCE
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN.mg.controls.g.ts (2583 bytes)
-[36mUPDATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN.component.ts (2153 bytes)
-[36mUPDATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN.component.html (5145 bytes)
-[36mUPDATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.mg.controls.g.ts (1889 bytes)
-[36mUPDATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.component.ts (2345 bytes)
-[36mUPDATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.component.html (13037 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.mg.controls.g.ts (1378 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.component.ts (2214 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.component.html (2564 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.mg.controls.g.ts (2782 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.component.ts (1014 bytes)
+[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.component.html (21885 bytes)
 
 
 

@@ -6,7 +6,7 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    GROUP_TABLE_SELECTION = "GROUP_TABLE_SELECTION",
+    GroupGuide = "GroupGuide",
         vSearch = "vSearch",
         btnSearch = "btnSearch",
         btnexit = "btnexit",

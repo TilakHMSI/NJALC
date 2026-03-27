@@ -10,12 +10,29 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	648,
+		"width":	587,
 		"height":	428
 	},
 	"hint":	null,
 	"controlType":	null,
 	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnAdd",
+				"format":	"Add",
+				"common_line_id":	"line11"
+			},
+			"coordinates":	{
+				"x":	16,
+				"y":	11,
+				"width":	56,
+				"height":	35
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
 		{
 			"style":	{
 				"line_divider":	true
@@ -24,13 +41,13 @@
 				"id":	"Table1",
 				"table_row_height":	78,
 				"table_title_height":	33,
-				"common_line_id":	"line3"
+				"common_line_id":	"line52"
 			},
 			"coordinates":	{
 				"x":	12,
-				"y":	3,
+				"y":	52,
 				"width":	559,
-				"height":	412
+				"height":	363
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -59,11 +76,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line39"
+								"common_line_id":	"line88"
 							},
 							"coordinates":	{
 								"x":	15,
-								"y":	39,
+								"y":	88,
 								"width":	58,
 								"height":	19
 							},
@@ -96,11 +113,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line39"
+								"common_line_id":	"line88"
 							},
 							"coordinates":	{
 								"x":	76,
-								"y":	39,
+								"y":	88,
 								"width":	108,
 								"height":	19
 							},
@@ -132,11 +149,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line37"
+								"common_line_id":	"line86"
 							},
 							"coordinates":	{
 								"x":	186,
-								"y":	37,
+								"y":	86,
 								"width":	58,
 								"height":	26
 							},
@@ -170,11 +187,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line39"
+								"common_line_id":	"line88"
 							},
 							"coordinates":	{
 								"x":	247,
-								"y":	39,
+								"y":	88,
 								"width":	54,
 								"height":	19
 							},
@@ -208,11 +225,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line39"
+								"common_line_id":	"line88"
 							},
 							"coordinates":	{
 								"x":	307,
-								"y":	39,
+								"y":	88,
 								"width":	55,
 								"height":	19
 							},
@@ -245,11 +262,11 @@
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line39"
+								"common_line_id":	"line88"
 							},
 							"coordinates":	{
 								"x":	368,
-								"y":	39,
+								"y":	88,
 								"width":	38,
 								"height":	19
 							},
@@ -267,11 +284,11 @@
 								"attribute":	"D",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line39"
+								"common_line_id":	"line88"
 							},
 							"coordinates":	{
 								"x":	409,
-								"y":	39,
+								"y":	88,
 								"width":	48,
 								"height":	19
 							},
@@ -288,11 +305,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line39"
+								"common_line_id":	"line88"
 							},
 							"coordinates":	{
 								"x":	462,
-								"y":	39,
+								"y":	88,
 								"width":	20,
 								"height":	19
 							},
@@ -309,11 +326,11 @@
 								"attribute":	"N",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line39"
+								"common_line_id":	"line88"
 							},
 							"coordinates":	{
 								"x":	486,
-								"y":	39,
+								"y":	88,
 								"width":	25,
 								"height":	19
 							},
@@ -340,15 +357,19 @@
 							"style":	null,
 							"props":	{
 								"id":	"EnterRowEditing",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
 								"format":	"Edit",
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	1,
-								"common_line_id":	"line40"
+								"common_line_id":	"line89"
 							},
 							"coordinates":	{
 								"x":	520,
-								"y":	40,
+								"y":	89,
 								"width":	28,
 								"height":	22
 							},
@@ -364,11 +385,11 @@
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	3,
-								"common_line_id":	"line66"
+								"common_line_id":	"line115"
 							},
 							"coordinates":	{
 								"x":	520,
-								"y":	66,
+								"y":	115,
 								"width":	35,
 								"height":	22
 							},
@@ -384,11 +405,11 @@
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	2,
-								"common_line_id":	"line92"
+								"common_line_id":	"line141"
 							},
 							"coordinates":	{
 								"x":	520,
-								"y":	92,
+								"y":	141,
 								"width":	43,
 								"height":	22
 							},

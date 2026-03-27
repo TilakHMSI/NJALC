@@ -1,11 +1,11 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"GROUP_TABLE_SELECTION",
+		"id":	"GroupGuide",
 		"window_type":	12,
-		"component_path":	"GROUP_TABLE_SELECTION/",
+		"component_path":	"PRD003GroupGuide/",
 		"module_name":	"",
-		"component_uniquename":	"GROUP_TABLE_SELECTION_GROUP_TABLE_SELECTION"
+		"component_uniquename":	"PRD003GroupGuide_GroupGuide"
 	},
 	"coordinates":	{
 		"x":	0,
