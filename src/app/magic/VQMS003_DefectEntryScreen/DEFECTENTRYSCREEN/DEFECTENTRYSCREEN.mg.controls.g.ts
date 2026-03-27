@@ -7,7 +7,7 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     DEFECTENTRYSCREEN = "DEFECTENTRYSCREEN",
-        Label1 = "Label1",
+        btnAdd = "btnAdd",
         Table2 = "Table2",
         Column3 = "Column3",
         DEFECTCODE = "DEFECTCODE",
@@ -17,8 +17,11 @@ export enum MgControlName {
         DEFECTMASTER_DEFECTCATEGORY = "DEFECTMASTER_DEFECTCATEGORY",
         Column6 = "Column6",
         DEFECTMASTER_DEFECTSECTION = "DEFECTMASTER_DEFECTSECTION",
+        Column14 = "Column14",
+        EnterRowEditing = "EnterRowEditing",
+        SaveRowEditing = "SaveRowEditing",
+        CancelRowEditing = "CancelRowEditing",
         b_save = "b_save",
-        b_exit = "b_exit",
 }
 export enum MgCustomProperties {}
 export var
@@ -27,6 +30,7 @@ export var
         'Column4',
         'Column5',
         'Column6',
+        'Column14',
     ];
 
 export class MgFormControlsAccessor {

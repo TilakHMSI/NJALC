@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./PICKLISTMTOCODE.mg.controls.g";
-import { MgDisplayedColumns } from "./PICKLISTMTOCODE.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./List.mg.controls.g";
+import { MgDisplayedColumns } from "./List.mg.controls.g";
 
 
 import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
@@ -11,12 +11,12 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VQMS006_DefectMaster_PICKLISTMTOCODE_PICKLISTMTOCODE',
+    selector: 'mga-PICKLISTSCATEGORY_List_List',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './PICKLISTMTOCODE.component.html'
+    templateUrl: './List.component.html'
 })
-export class PICKLISTMTOCODE extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class List extends BaseMatTableMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -25,7 +25,7 @@ export class PICKLISTMTOCODE extends BaseMatTableMagicComponent implements Magic
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "PICKLISTMTOCODE";
+    private static readonly formName: string = "List";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -36,34 +36,34 @@ export class PICKLISTMTOCODE extends BaseMatTableMagicComponent implements Magic
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return PICKLISTMTOCODE.x;
+        return List.x;
     }
     Y() {
-        return PICKLISTMTOCODE.y;
+        return List.y;
     }
     Width(): string {
-        return PICKLISTMTOCODE.width;
+        return List.width;
     }
     Height(): string {
-        return PICKLISTMTOCODE.height;
+        return List.height;
     }
     IsCenteredToWindow() {
-        return PICKLISTMTOCODE.isCenteredToWindow;
+        return List.isCenteredToWindow;
     }
     FormName() {
-        return PICKLISTMTOCODE.formName;
+        return List.formName;
     }
     ShowTitleBar() {
-        return PICKLISTMTOCODE.showTitleBar;
+        return List.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return PICKLISTMTOCODE.shouldCloseOnBackgroundClick;
+        return List.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return PICKLISTMTOCODE.isResizable;
+        return List.isResizable;
     }
     IsMovable() {
-        return PICKLISTMTOCODE.isMovable;
+        return List.isMovable;
     }
     override displayedColumns = this.mgdp;
 }

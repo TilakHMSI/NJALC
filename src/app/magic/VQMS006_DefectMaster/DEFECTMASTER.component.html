@@ -1,66 +1,36 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.DEFECTMASTER"
-    >
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.DEFECTMASTER">
         <div style="display: flex; flex-direction: row">
-            <div
-                [magic]="mgc.v_Option"
-                (change)="task.mgOnRadioSelectionChanged(mgc.v_Option)"
-            >
+            <div [magic]="mgc.v_Option" (change)="task.mgOnRadioSelectionChanged(mgc.v_Option)">
                 <div *ngFor="let o of mg.getItemListValues(mgc.v_Option);">
                     <label>
-                        <input
-                            type="radio"
-                            [formControlName]="mgc.v_Option"
-                            [value]="o.index"
-                        />
+                        <input type="radio" [formControlName]="mgc.v_Option" [value]="o.index" />
                         {{o.displayValue}}
                     </label>
                 </div>
             </div>
             <label [magic]="mgc.Edit2">
                 {{mg.getValue(mgc.Edit2)
-| magicDate : mgc.Edit2}}
+                | magicDate : mgc.Edit2}}
             </label>
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label1" class="lable_overflow">
                 PGM=VQMS006
             </label>
             <label [magic]="mgc.Edit3">
                 {{mg.getValue(mgc.Edit3)
-| magicTime : mgc.Edit3}}
+                | magicTime : mgc.Edit3}}
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label5"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label5" class="lable_overflow">
             </label>
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label6" class="lable_overflow">
                 MODEL CODE
             </label>
             <div>
-                <input
-                    style="width: 70%"
-                    [formControlName]="mgc.PModel"
-                    [magic]="mgc.PModel"
-                    mgFormat
-                />
+                <input style="width: 70%" [formControlName]="mgc.PModel" [magic]="mgc.PModel" mgFormat />
                 <mgError [magic]=mgc.PModel> </mgError>
-                <button
-                    style="min-width: auto; margin: auto"
-                    [magic]="mgc.PModel"
-                >...</button>
+                <button style="min-width: auto; margin: auto" [magic]="mgc.PModel">...</button>
             </div>
             <button [magic]="mgc.btnexit">
                 Back
@@ -70,6 +40,76 @@
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.DETAIL">
+            </magic-subform>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.DEFECTMASTER">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lbl-sm" class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label5)}}
+                        </label></h3>
+                    <button type="button" [magic]="mgc.btnexit"
+                        class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="form-group row" style="margin: 0rem;">
+                <div class="col-lg-12">
+                    <div class="form-group row">
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <div [magic]="mgc.v_Option" *ngIf="mg.getVisible(mgc.v_Option)==='visible'"
+                                    class="radio-horizontal ml-5"
+                                    (change)="task.mgOnRadioSelectionChanged(mgc.v_Option)">
+                                    <div *ngFor="let o of mg.getItemListValues(mgc.v_Option);">
+                                        <label class="lbl-sm">
+                                            <input type="radio" [formControlName]="mgc.v_Option" [value]="o.index" />
+                                            {{o.displayValue}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label>MODEL CODE</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.PModel" [magic]="mgc.PModel"
+                                            class="form-control" placeholder="SELECT MODEL CODE" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.PModel">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
             <magic-subform [magic]="mgc.DETAIL">
             </magic-subform>
         </div>

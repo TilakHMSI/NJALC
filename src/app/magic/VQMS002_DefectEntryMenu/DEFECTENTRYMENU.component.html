@@ -1,4 +1,4 @@
-<div novalidate [formGroup]="screenFormGroup">
+<!-- <div novalidate [formGroup]="screenFormGroup">
     <div style="display: flex; flex-direction: column" [magic]="mgc.DEFECTENTRYMENU">
         <div style="display: flex; flex-direction: row">
             <label [magic]="mgc.Edit3">
@@ -86,7 +86,7 @@
             </button>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <div novalidate [formGroup]="screenFormGroup">
@@ -115,30 +115,80 @@
                                 {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE9)}}
                             </button>
                         </div>
-                        <!-- <div class="form-group" *ngIf="mg.getVisible(mgc.Defect_Master_Entry)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE5)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.Defect_Master_Entry">
-                                {{mg.getValue(mgc.Defect_Master_Entry)}}
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE5">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE5)}}
                             </button>
                         </div>
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.Code_Type_Master)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE7)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.Code_Type_Master">
-                                {{mg.getValue(mgc.Code_Type_Master)}}
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE7">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE7)}}
                             </button>
                         </div>
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.Reports)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE10)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.Reports">
-                                {{mg.getValue(mgc.Reports)}}
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE10">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE10)}}
                             </button>
                         </div>
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.Passtype_Correction_Entry)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE4)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.Passtype_Correction_Entry">
-                                {{mg.getValue(mgc.Passtype_Correction_Entry)}}
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE4">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE4)}}
                             </button>
-                        </div> -->
+                        </div>
+
+                         <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE1)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE1">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE1)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE2)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE2">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE2)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE6)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE6">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE6)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE3)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE3">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE3)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE4F)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE4F">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE4F)}}
+                            </button>
+                        </div>
+
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE_8)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE_8">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE_8)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE80_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE80_0001">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE80_0001)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BUTTONDEFECTENTRY_LINE11_0001)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.BUTTONDEFECTENTRY_LINE11_0001">
+                                {{mg.getValue(mgc.BUTTONDEFECTENTRY_LINE11_0001)}}
+                            </button>
+                        </div>
                     </div>
                     <div class="col-lg-2">
                     </div>

@@ -59,7 +59,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"Label1",
-				"text":	"PGM=VQMS006",
+				"text":	{
+					"value":	"PGM=VQMS006",
+					"has_exp":	true
+				},
 				"common_line_id":	"line2"
 			},
 			"coordinates":	{
@@ -186,13 +189,13 @@
 			"style":	null,
 			"props":	{
 				"id":	"DETAIL",
-				"common_line_id":	"line73"
+				"common_line_id":	"line70"
 			},
 			"coordinates":	{
 				"x":	18,
-				"y":	73,
+				"y":	70,
 				"width":	534,
-				"height":	395
+				"height":	398
 			},
 			"hint":	null,
 			"controlType":	"F",

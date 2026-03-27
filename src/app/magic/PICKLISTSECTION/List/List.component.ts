@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./DEFECTSPICKLIST.mg.controls.g";
-import { MgDisplayedColumns } from "./DEFECTSPICKLIST.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./List.mg.controls.g";
+import { MgDisplayedColumns } from "./List.mg.controls.g";
 
 
 import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
@@ -11,13 +11,12 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VQMS005_DefectsPicklist_Picklist_DEFECTSPICKLIST',
+    selector: 'mga-PICKLISTSECTION_List_List',
     providers: [...matMagicProviders],
     standalone: false,
-    styleUrl: './DEFECTSPICKLIST.component.css',
-    templateUrl: './DEFECTSPICKLIST.component.html'
+    templateUrl: './List.component.html'
 })
-export class DEFECTSPICKLIST extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class List extends BaseMatTableMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -26,7 +25,7 @@ export class DEFECTSPICKLIST extends BaseMatTableMagicComponent implements Magic
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "DEFECTSPICKLIST";
+    private static readonly formName: string = "List";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -37,34 +36,34 @@ export class DEFECTSPICKLIST extends BaseMatTableMagicComponent implements Magic
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return DEFECTSPICKLIST.x;
+        return List.x;
     }
     Y() {
-        return DEFECTSPICKLIST.y;
+        return List.y;
     }
     Width(): string {
-        return DEFECTSPICKLIST.width;
+        return List.width;
     }
     Height(): string {
-        return DEFECTSPICKLIST.height;
+        return List.height;
     }
     IsCenteredToWindow() {
-        return DEFECTSPICKLIST.isCenteredToWindow;
+        return List.isCenteredToWindow;
     }
     FormName() {
-        return DEFECTSPICKLIST.formName;
+        return List.formName;
     }
     ShowTitleBar() {
-        return DEFECTSPICKLIST.showTitleBar;
+        return List.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return DEFECTSPICKLIST.shouldCloseOnBackgroundClick;
+        return List.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return DEFECTSPICKLIST.isResizable;
+        return List.isResizable;
     }
     IsMovable() {
-        return DEFECTSPICKLIST.isMovable;
+        return List.isMovable;
     }
     override displayedColumns = this.mgdp;
 }

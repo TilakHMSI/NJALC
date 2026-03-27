@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VQMS003_DefectEntryScreen_DEFECTENTRYSCREEN_DEFECTENTRYSCREEN',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrl: './DEFECTENTRYSCREEN.component.css',
     templateUrl: './DEFECTENTRYSCREEN.component.html'
 })
 export class DEFECTENTRYSCREEN extends BaseMatTableMagicComponent implements MagicModalInterface {

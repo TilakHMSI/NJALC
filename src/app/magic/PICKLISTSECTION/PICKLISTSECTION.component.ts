@@ -1,31 +1,29 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./PICKLISTCATEGORY.mg.controls.g";
-import { MgDisplayedColumns } from "./PICKLISTCATEGORY.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./PICKLISTSECTION.mg.controls.g";
 
 
-import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
+import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 
 
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VQMS006_DefectMaster_DETAIL_PICKLISTCATEGORY_PICKLISTCATEGORY',
-    providers: [...matMagicProviders],
+    selector: 'mga-PICKLISTSECTION_PICKLISTSECTION',
+    providers: [...magicProviders],
     standalone: false,
-    templateUrl: './PICKLISTCATEGORY.component.html'
+    templateUrl: './PICKLISTSECTION.component.html'
 })
-export class PICKLISTCATEGORY extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class PICKLISTSECTION extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
     mgfc!: MgFormControlsAccessor;
-    mgdp = MgDisplayedColumns;
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "PICKLISTCATEGORY";
+    private static readonly formName: string = "PICKLISTSECTION";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -36,34 +34,33 @@ export class PICKLISTCATEGORY extends BaseMatTableMagicComponent implements Magi
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return PICKLISTCATEGORY.x;
+        return PICKLISTSECTION.x;
     }
     Y() {
-        return PICKLISTCATEGORY.y;
+        return PICKLISTSECTION.y;
     }
     Width(): string {
-        return PICKLISTCATEGORY.width;
+        return PICKLISTSECTION.width;
     }
     Height(): string {
-        return PICKLISTCATEGORY.height;
+        return PICKLISTSECTION.height;
     }
     IsCenteredToWindow() {
-        return PICKLISTCATEGORY.isCenteredToWindow;
+        return PICKLISTSECTION.isCenteredToWindow;
     }
     FormName() {
-        return PICKLISTCATEGORY.formName;
+        return PICKLISTSECTION.formName;
     }
     ShowTitleBar() {
-        return PICKLISTCATEGORY.showTitleBar;
+        return PICKLISTSECTION.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return PICKLISTCATEGORY.shouldCloseOnBackgroundClick;
+        return PICKLISTSECTION.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return PICKLISTCATEGORY.isResizable;
+        return PICKLISTSECTION.isResizable;
     }
     IsMovable() {
-        return PICKLISTCATEGORY.isMovable;
+        return PICKLISTSECTION.isMovable;
     }
-    override displayedColumns = this.mgdp;
 }

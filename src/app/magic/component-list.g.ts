@@ -211,9 +211,6 @@ import { DEFECTSPICKLIST as VQMS005_DefectsPicklist_DEFECTSPICKLIST } from './VQ
 import { DEFECTSPICKLIST as VQMS005_DefectsPicklist_Picklist_DEFECTSPICKLIST } from './VQMS005_DefectsPicklist/Picklist/DEFECTSPICKLIST.component';
 import { DEFECTMASTER as VQMS006_DefectMaster_DEFECTMASTER } from './VQMS006_DefectMaster/DEFECTMASTER.component';
 import { BrowseDEFECTMASTER as VQMS006_DefectMaster_DETAIL_BrowseDEFECTMASTER } from './VQMS006_DefectMaster/DETAIL/BrowseDEFECTMASTER.component';
-import { PICKLISTSECTION as VQMS006_DefectMaster_DETAIL_PICKLISTSECTION_PICKLISTSECTION } from './VQMS006_DefectMaster/DETAIL/PICKLISTSECTION/PICKLISTSECTION.component';
-import { PICKLISTCATEGORY as VQMS006_DefectMaster_DETAIL_PICKLISTCATEGORY_PICKLISTCATEGORY } from './VQMS006_DefectMaster/DETAIL/PICKLISTCATEGORY/PICKLISTCATEGORY.component';
-import { PICKLISTMTOCODE as VQMS006_DefectMaster_PICKLISTMTOCODE_PICKLISTMTOCODE } from './VQMS006_DefectMaster/PICKLISTMTOCODE/PICKLISTMTOCODE.component';
 import { CodeTypeMaster as CodeTypeMaster_CodeTypeMaster } from './CodeTypeMaster/CodeTypeMaster.component';
 import { CodeTypeMaster as CodeTypeMaster_CodeTypeMaster_CodeTypeMaster } from './CodeTypeMaster/CodeTypeMaster/CodeTypeMaster.component';
 import { Confirmation as ConfirmOperation_Confirmation } from './ConfirmOperation/Confirmation.component';
@@ -244,10 +241,22 @@ import { FRAME_DETAIL_VIEW as FRAMEUpload_UNHOLD_ENTRY_FRAME_DETAIL_VIEW_FRAME_D
 import { DispatchUnlockWithRepairIn as DispatchReleaseBatch_DispatchUnlockWithRepairIn } from './DispatchReleaseBatch/DispatchUnlockWithRepairIn.component';
 import { DispatchReleaseBatch_VIEW as DispatchReleaseBatch_DispatchReleaseBatch_VIEW_DispatchReleaseBatch_VIEW } from './DispatchReleaseBatch/DispatchReleaseBatch_VIEW/DispatchReleaseBatch_VIEW.component';
 import { DispatchStopReport as DispatchStopReport_DispatchStopReport } from './DispatchStopReport/DispatchStopReport.component';
+import { PICKLISTSECTION as PICKLISTSECTION_PICKLISTSECTION } from './PICKLISTSECTION/PICKLISTSECTION.component';
+import { List as PICKLISTSECTION_List_List } from './PICKLISTSECTION/List/List.component';
+import { PICKLISTSCATEGORY as PICKLISTSCATEGORY_PICKLISTSCATEGORY } from './PICKLISTSCATEGORY/PICKLISTSCATEGORY.component';
+import { List as PICKLISTSCATEGORY_List_List } from './PICKLISTSCATEGORY/List/List.component';
+import { PICKLISTMTOCODE as PICKLISTMTOCODE_PICKLISTMTOCODE } from './PICKLISTMTOCODE/PICKLISTMTOCODE.component';
+import { List as PICKLISTMTOCODE_List_List } from './PICKLISTMTOCODE/List/List.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               VHMSOMNU7659_ProductionControlHMSI:VHMSOMNU7659_ProductionControlHMSI,
+export const magicGenCmpsHash = {               PICKLISTSECTION_PICKLISTSECTION:PICKLISTSECTION_PICKLISTSECTION,
+              PICKLISTSECTION_List_List:PICKLISTSECTION_List_List,
+              PICKLISTSCATEGORY_PICKLISTSCATEGORY:PICKLISTSCATEGORY_PICKLISTSCATEGORY,
+              PICKLISTSCATEGORY_List_List:PICKLISTSCATEGORY_List_List,
+              PICKLISTMTOCODE_PICKLISTMTOCODE:PICKLISTMTOCODE_PICKLISTMTOCODE,
+              PICKLISTMTOCODE_List_List:PICKLISTMTOCODE_List_List,
+                      VHMSOMNU7659_ProductionControlHMSI:VHMSOMNU7659_ProductionControlHMSI,
               VQMS010_VQMS_MENU_ProductionControlHMSI:VQMS010_VQMS_MENU_ProductionControlHMSI,
               VQMS002_DefectEntryMenu_DEFECTENTRYMENU:VQMS002_DefectEntryMenu_DEFECTENTRYMENU,
               VQMS003_DefectEntryScreen_DEFECTENTRYSCREEN:VQMS003_DefectEntryScreen_DEFECTENTRYSCREEN,
@@ -256,9 +265,6 @@ export const magicGenCmpsHash = {               VHMSOMNU7659_ProductionControlHM
               VQMS005_DefectsPicklist_Picklist_DEFECTSPICKLIST:VQMS005_DefectsPicklist_Picklist_DEFECTSPICKLIST,
               VQMS006_DefectMaster_DEFECTMASTER:VQMS006_DefectMaster_DEFECTMASTER,
               VQMS006_DefectMaster_DETAIL_BrowseDEFECTMASTER:VQMS006_DefectMaster_DETAIL_BrowseDEFECTMASTER,
-              VQMS006_DefectMaster_DETAIL_PICKLISTSECTION_PICKLISTSECTION:VQMS006_DefectMaster_DETAIL_PICKLISTSECTION_PICKLISTSECTION,
-              VQMS006_DefectMaster_DETAIL_PICKLISTCATEGORY_PICKLISTCATEGORY:VQMS006_DefectMaster_DETAIL_PICKLISTCATEGORY_PICKLISTCATEGORY,
-              VQMS006_DefectMaster_PICKLISTMTOCODE_PICKLISTMTOCODE:VQMS006_DefectMaster_PICKLISTMTOCODE_PICKLISTMTOCODE,
               CodeTypeMaster_CodeTypeMaster:CodeTypeMaster_CodeTypeMaster,
               CodeTypeMaster_CodeTypeMaster_CodeTypeMaster:CodeTypeMaster_CodeTypeMaster_CodeTypeMaster,
               ConfirmOperation_Confirmation:ConfirmOperation_Confirmation,
@@ -497,6 +503,12 @@ export const magicGenCmpsHash = {               VHMSOMNU7659_ProductionControlHM
 };
 
 export const magicGenComponents = [
+	PICKLISTSECTION_PICKLISTSECTION,
+	PICKLISTSECTION_List_List,
+	PICKLISTSCATEGORY_PICKLISTSCATEGORY,
+	PICKLISTSCATEGORY_List_List,
+	PICKLISTMTOCODE_PICKLISTMTOCODE,
+	PICKLISTMTOCODE_List_List,
 	VHMSOMNU7659_ProductionControlHMSI,
 	VQMS010_VQMS_MENU_ProductionControlHMSI,
 	VQMS002_DefectEntryMenu_DEFECTENTRYMENU,
@@ -506,9 +518,6 @@ export const magicGenComponents = [
 	VQMS005_DefectsPicklist_Picklist_DEFECTSPICKLIST,
 	VQMS006_DefectMaster_DEFECTMASTER,
 	VQMS006_DefectMaster_DETAIL_BrowseDEFECTMASTER,
-	VQMS006_DefectMaster_DETAIL_PICKLISTSECTION_PICKLISTSECTION,
-	VQMS006_DefectMaster_DETAIL_PICKLISTCATEGORY_PICKLISTCATEGORY,
-	VQMS006_DefectMaster_PICKLISTMTOCODE_PICKLISTMTOCODE,
 	CodeTypeMaster_CodeTypeMaster,
 	CodeTypeMaster_CodeTypeMaster_CodeTypeMaster,
 	ConfirmOperation_Confirmation,

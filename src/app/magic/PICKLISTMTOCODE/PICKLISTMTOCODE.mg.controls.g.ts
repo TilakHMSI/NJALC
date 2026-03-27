@@ -6,11 +6,11 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    DEFECTSPICKLIST = "DEFECTSPICKLIST",
+    PICKLISTMTOCODE = "PICKLISTMTOCODE",
         vSearch = "vSearch",
+        btnSearch = "btnSearch",
         btnexit = "btnexit",
         Sub1 = "Sub1",
-        btnSearch = "btnSearch",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
