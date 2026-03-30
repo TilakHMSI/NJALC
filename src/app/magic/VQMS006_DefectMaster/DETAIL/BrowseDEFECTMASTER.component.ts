@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VQMS006_DefectMaster_DETAIL_BrowseDEFECTMASTER',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrl: './BrowseDEFECTMASTER.component.css',
     templateUrl: './BrowseDEFECTMASTER.component.html'
 })
 export class BrowseDEFECTMASTER extends BaseMatTableMagicComponent {

@@ -37,7 +37,11 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <label [magic]="mgc.DEFECTCODE" [rowId]="row.rowId">
+                                    <input [formControlName]="mgc.DEFECTCODE" style="width: 100%;"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.DEFECTCODE"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.DEFECTCODE [rowId]="row.rowId"> </mgError>
+                                    <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.DEFECTCODE" [rowId]="row.rowId">
                                         {{mg.getValue(mgc.DEFECTCODE, row.rowId)
                                         }}
                                     </label>
@@ -75,17 +79,38 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input style="width: 70%" [formControlName]="mgc.DEFECTCATEGORY"
-                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.DEFECTCATEGORY"
-                                            [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.DEFECTCATEGORY [rowId]="row.rowId"> </mgError>
+                                        <div class="input-group" *ngIf="mg.isRowInRowEditing(row)">
+                                            <input type="text" [formControlName]="mgc.DEFECTCATEGORY"
+                                                *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.DEFECTCATEGORY"
+                                                [rowId]="row.rowId" class="form-control-sm"
+                                                placeholder="SELECT STAMPING HEAD" mgFormat />
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn btn-loanlist btn-icon-sm"
+                                                    [magic]="mgc.DEFECTCATEGORY" [rowId]="row.rowId">
+                                                    <span class="svg-icon svg-icon-lg"><svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                            height="24px" viewBox="0 0 24 24" version="1.1">
+                                                            <g stroke="none" stroke-width="1" fill="none"
+                                                                fill-rule="evenodd">
+                                                                <rect x="0" y="0" width="24" height="24" />
+                                                                <path
+                                                                    d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                    fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                                <path
+                                                                    d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                    fill="#000000" opacity="0.3" />
+                                                            </g>
+                                                        </svg></span></button>
+                                            </div>
+                                             <mgError [magic]=mgc.DEFECTCATEGORY [rowId]="row.rowId"> </mgError>
+                                        </div>
                                         <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.DEFECTCATEGORY"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.DEFECTCATEGORY, row.rowId)
                                             }}
                                         </label>
-                                        <button style="min-width: auto; margin: auto" [magic]="mgc.DEFECTCATEGORY"
-                                            [rowId]="row.rowId">...</button>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -99,17 +124,38 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input style="width: 70%" [formControlName]="mgc.DEFECTSECTION"
-                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.DEFECTSECTION"
-                                            [rowId]="row.rowId" mgFormat />
+                                        <div class="input-group" *ngIf="mg.isRowInRowEditing(row)">
+                                            <input type="text" [formControlName]="mgc.DEFECTSECTION"
+                                                *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.DEFECTSECTION"
+                                                [rowId]="row.rowId" class="form-control-sm"
+                                                placeholder="SELECT STAMPING HEAD" mgFormat />
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn btn-loanlist btn-icon-sm"
+                                                    [magic]="mgc.DEFECTSECTION" [rowId]="row.rowId">
+                                                    <span class="svg-icon svg-icon-lg"><svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                            height="24px" viewBox="0 0 24 24" version="1.1">
+                                                            <g stroke="none" stroke-width="1" fill="none"
+                                                                fill-rule="evenodd">
+                                                                <rect x="0" y="0" width="24" height="24" />
+                                                                <path
+                                                                    d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                    fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                                <path
+                                                                    d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                    fill="#000000" opacity="0.3" />
+                                                            </g>
+                                                        </svg></span></button>
+                                            </div>
+                                        </div>
                                         <mgError [magic]=mgc.DEFECTSECTION [rowId]="row.rowId"> </mgError>
                                         <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.DEFECTSECTION"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.DEFECTSECTION, row.rowId)
                                             }}
                                         </label>
-                                        <button style="min-width: auto; margin: auto" [magic]="mgc.DEFECTSECTION"
-                                            [rowId]="row.rowId">...</button>
+                                        
                                     </div>
                                 </div>
                             </div>
