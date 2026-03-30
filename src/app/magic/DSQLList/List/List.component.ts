@@ -9,7 +9,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 
 
 @Component({
-    selector: 'mga-PRD003GroupGuide_List_List',
+    selector: 'mga-DSQLList_List_List',
     providers: [...matMagicProviders],
     standalone: false,
     templateUrl: './List.component.html'

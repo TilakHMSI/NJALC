@@ -27,22 +27,24 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.json
-[>] Loading JSON file .//magic-metadata/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.json
+[>] Loading JSON file .//magic-metadata/PRD003GroupGuide/GroupGuide.json
+[>] Loading JSON file .//magic-metadata/PRD003GroupGuide/List/List.json
 *** Step 2: Processing JSON files -  (2 components) ***
-[>] Processing JSON file for component GROUPTABLEMAINTENANCE
-[>] Processing JSON file for component ENGFRMNOTABLEMAINTENANCE
+[>] Processing JSON file for component GroupGuide
+[>] Processing JSON file for component List
 *** Step 3: generate components. (2 components) ***
-[>] generate component GROUPTABLEMAINTENANCE
-[>] generate component ENGFRMNOTABLEMAINTENANCE
+[>] generate component GroupGuide
+[>] generate component List
 [>] Step 4: components-list.
+ Total old components: 250, added components: 2. 
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.mg.controls.g.ts (1378 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.component.ts (2214 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUPTABLEMAINTENANCE.component.html (2564 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.mg.controls.g.ts (2782 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.component.ts (1014 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO028_GROUP_TABLE_MAINT/GROUP_TABLE_MAINTENANCE/ENGFRMNOTABLEMAINTENANCE.component.html (21885 bytes)
+[32mCREATE[39m src/app/magic/PRD003GroupGuide/GroupGuide.mg.controls.g.ts (783 bytes)
+[32mCREATE[39m src/app/magic/PRD003GroupGuide/GroupGuide.component.ts (2039 bytes)
+[32mCREATE[39m src/app/magic/PRD003GroupGuide/GroupGuide.component.html (830 bytes)
+[32mCREATE[39m src/app/magic/PRD003GroupGuide/List/List.mg.controls.g.ts (797 bytes)
+[32mCREATE[39m src/app/magic/PRD003GroupGuide/List/List.component.ts (2115 bytes)
+[32mCREATE[39m src/app/magic/PRD003GroupGuide/List/List.component.html (3495 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (83658 bytes)
 
 
 

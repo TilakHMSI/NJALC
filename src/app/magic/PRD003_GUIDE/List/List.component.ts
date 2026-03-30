@@ -9,9 +9,10 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 
 
 @Component({
-    selector: 'mga-PRD003GroupGuide_List_List',
+    selector: 'mga-PRD003_GUIDE_List_List',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrl: './List.component.css',
     templateUrl: './List.component.html'
 })
 export class List extends BaseMatTableMagicComponent {

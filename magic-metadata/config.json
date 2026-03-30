@@ -16,8 +16,8 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"PRD003GroupGuide/GroupGuide",
-				"PRD003GroupGuide/List/List"
+				"PRD003_GUIDE/PRD003_GUIDE",
+				"PRD003_GUIDE/List/List"
 			]
 		}
 	],

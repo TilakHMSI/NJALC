@@ -1,0 +1,32 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.List"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.Search"
+                    [magic]="mgc.Search"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.Search> </mgError>
+            </div>
+            <button [magic]="mgc.btnSearch">
+                Search
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.Subform18">
+            </magic-subform>
+        </div>
+    </div>
+</div>

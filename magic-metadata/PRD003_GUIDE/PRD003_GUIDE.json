@@ -1,0 +1,89 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PRD003_GUIDE",
+		"window_type":	12,
+		"component_path":	"PRD003_GUIDE/",
+		"module_name":	"",
+		"component_uniquename":	"PRD003_GUIDE_PRD003_GUIDE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	713,
+		"height":	388
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Search",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	17,
+				"y":	23,
+				"width":	114,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSearch",
+				"format":	"Search",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	184,
+				"y":	23,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	334,
+				"y":	36,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Subform18",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	78,
+				"width":	624,
+				"height":	296
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

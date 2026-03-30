@@ -2,7 +2,6 @@
 	"style":	null,
 	"props":	{
 		"id":	"List",
-		"window_type":	12,
 		"component_path":	"PRD003GroupGuide/List/",
 		"module_name":	"",
 		"component_uniquename":	"PRD003GroupGuide_List_List"
@@ -10,27 +9,25 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	204,
-		"height":	289
+		"width":	153,
+		"height":	332
 	},
 	"hint":	null,
 	"controlType":	null,
 	"children":	[
 		{
-			"style":	{
-				"line_divider":	true
-			},
+			"style":	null,
 			"props":	{
 				"id":	"Table1",
-				"table_row_height":	21,
-				"table_title_height":	21,
-				"common_line_id":	"line7"
+				"table_row_height":	24,
+				"table_title_height":	19,
+				"common_line_id":	"line13"
 			},
 			"coordinates":	{
-				"x":	5,
-				"y":	7,
-				"width":	196,
-				"height":	278
+				"x":	12,
+				"y":	13,
+				"width":	107,
+				"height":	306
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -38,13 +35,13 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"Column2",
-						"column_title":	"GROUP",
+						"id":	"Column3",
+						"column_title":	"GR",
 						"is_table_child":	true,
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	103
+						"width":	99
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -52,19 +49,19 @@
 						{
 							"style":	null,
 							"props":	{
-								"id":	"GROUP",
+								"id":	"V_GR",
 								"mgformat":	"mgFormat",
-								"format":	"XXXXX",
+								"format":	"XXXX",
 								"attribute":	"A",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line31"
+								"common_line_id":	"line36"
 							},
 							"coordinates":	{
-								"x":	8,
-								"y":	31,
-								"width":	101,
-								"height":	22
+								"x":	16,
+								"y":	36,
+								"width":	34,
+								"height":	20
 							},
 							"hint":	null,
 							"controlType":	"T",

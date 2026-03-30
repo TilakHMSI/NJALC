@@ -250,10 +250,20 @@ import { List as PICKLISTMTOCODE_List_List } from './PICKLISTMTOCODE/List/List.c
 import { List as GROUP_TABLE_SELECTION_List_List } from './GROUP_TABLE_SELECTION/List/List.component';
 import { GroupGuide as PRD003GroupGuide_GroupGuide } from './PRD003GroupGuide/GroupGuide.component';
 import { List as PRD003GroupGuide_List_List } from './PRD003GroupGuide/List/List.component';
+import { List as DSQLList_List } from './DSQLList/List.component';
+import { PRD003_GUIDE as PRD003_GUIDE_PRD003_GUIDE } from './PRD003_GUIDE/PRD003_GUIDE.component';
+import { List as PRD003_GUIDE_List_List } from './PRD003_GUIDE/List/List.component';
+import { List as DSQLList_List_List } from './DSQLList/List/List.component';
+import { DSQLList as DSQLList_DSQLList } from './DSQLList/DSQLList.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               PRD003GroupGuide_GroupGuide:PRD003GroupGuide_GroupGuide,
+export const magicGenCmpsHash = {               DSQLList_DSQLList:DSQLList_DSQLList,
+                      DSQLList_List_List:DSQLList_List_List,
+                      PRD003_GUIDE_PRD003_GUIDE:PRD003_GUIDE_PRD003_GUIDE,
+              PRD003_GUIDE_List_List:PRD003_GUIDE_List_List,
+                      DSQLList_List:DSQLList_List,
+                      PRD003GroupGuide_GroupGuide:PRD003GroupGuide_GroupGuide,
               PRD003GroupGuide_List_List:PRD003GroupGuide_List_List,
                       GROUP_TABLE_SELECTION_List_List:GROUP_TABLE_SELECTION_List_List,
                       PICKLISTSECTION_PICKLISTSECTION:PICKLISTSECTION_PICKLISTSECTION,
@@ -509,6 +519,11 @@ export const magicGenCmpsHash = {               PRD003GroupGuide_GroupGuide:PRD0
 };
 
 export const magicGenComponents = [
+	DSQLList_DSQLList,
+	DSQLList_List_List,
+	PRD003_GUIDE_PRD003_GUIDE,
+	PRD003_GUIDE_List_List,
+	DSQLList_List,
 	PRD003GroupGuide_GroupGuide,
 	PRD003GroupGuide_List_List,
 	GROUP_TABLE_SELECTION_List_List,
