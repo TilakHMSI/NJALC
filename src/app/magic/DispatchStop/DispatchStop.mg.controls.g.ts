@@ -18,6 +18,7 @@ export enum MgControlName {
         v_Title_0001 = "v_Title_0001",
         V_Proeed = "V_Proeed",
         V_Exit = "V_Exit",
+        btn_Close="btn_Close"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

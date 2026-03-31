@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -73,5 +73,78 @@
                 Submit
             </button>
         </div>
+    </div>
+</div> -->
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.FRAME_RANGE">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            PGM=DispatchStop
+                        </label></h3>
+                         <input class="form-control" style="color:white; width:auto;background-color:transparent;border: none;"
+                        [formControlName]="mgc.Edit4" [magic]="mgc.Edit4" mgFormat />
+                           <div class="d-flex align-items-center">
+                        <label [magic]="mgc.Edit2" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit2)
+                            | magicDate : mgc.Edit2}}
+                        </label>
+                        <label [magic]="mgc.Edit3" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit3)
+                            | magicTime : mgc.Edit3}}
+                        </label>
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+           
+                </div>
+            </div>
+ <div class="col-lg-12">
+            <magic-subform [magic]="mgc.FRAME_DETAIL_VIEW">
+            </magic-subform>
+        </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>FRAME FROM NO.</label>
+                                    <input type='number' [formControlName]="mgc.V_Frame"
+                                        [magic]="mgc.V_Frame" class="form-control" mgFormat />
+
+                                </div>
+                            </div>
+                             <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>FRAME TO NO.</label>
+                                    <input type='number' [formControlName]="mgc.V_Frame_To_0001"
+                                        [magic]="mgc.V_Frame_To_0001" class="form-control" mgFormat />
+
+                                </div>
+                            </div>
+                             <div class="col-lg-4">
+                               
+                            </div>
+                            <div style="margin-top: 3.5%;" class="col-lg-4">
+                                <div class="form-group">
+                              <button type="button" [magic]="mgc.b_Submit"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                             SUBMIT
+                                            </button>
+                                            </div>
+                                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       
     </div>
 </div>

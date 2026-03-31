@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -130,6 +130,149 @@
         <div style="display: flex; flex-direction: row">
             <magic-subform [magic]="mgc.Sub1">
             </magic-subform>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.PasstypeCorrectionScreen">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+                        <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Edit8)}}
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <label [magic]="mgc.Edit4" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit4)
+                            | magicDate : mgc.Edit4}}
+                        </label>
+                        <label [magic]="mgc.Edit5" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit5)
+                            | magicTime : mgc.Edit5}}
+                        </label>
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">LINE</label>
+                                    <input [formControlName]="mgc.S5_PRODLINE" [magic]="mgc.S5_PRODLINE" class="form-control-ed"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.S5_PRODLINE"> </mgError>
+                                </div>
+                            </div>
+                    
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">DATE</label>
+                                    <input type="date" [formControlName]="mgc.Edit7" [magic]="mgc.Edit7"
+                                        class="form-control-ed" *ngIf="mg.getVisible(mgc.Edit7)==='visible'"
+                                        dateInput />
+                                </div>
+                            </div>
+           
+                        </div>
+                    </div>
+
+                     <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">FRAME NUMBER :</label>
+                                    <input [formControlName]="mgc.v_FRAME_NO" [magic]="mgc.v_FRAME_NO" class="form-control-ed"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.v_FRAME_NO"> </mgError>
+                                </div>
+                            </div>
+                    
+                            <div class="col-lg-6">
+
+                                     <div class="form-group-sm">
+                                    <label class="lbl-sm">MODEL CODE</label>
+                                    <input [formControlName]="mgc.ModelWiseMapping_MTOMAPCODE" [magic]="mgc.ModelWiseMapping_MTOMAPCODE" class="form-control-ed"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.ModelWiseMapping_MTOMAPCODE"> </mgError>
+                                </div>
+
+                            </div>
+           
+                        </div>
+                    </div>
+                    
+                    
+                           <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+              
+                            
+                            <div class="col-lg-6" *ngIf="mg.getVisible(mgc.S5_MTO_CODE)==='visible'">
+                                <div class="form-group">
+                                    <label class="lbl-sm">FACTORY MODEL CODE</label>
+                                    <input  class="form-control-ed" [formControlName]="mgc.S5_MTO_CODE"
+                                        [magic]="mgc.S5_MTO_CODE" mgFormat />
+                                    <mgError [magic]=mgc.S5_MTO_CODE> </mgError>
+                                </div>
+                            </div>   
+                            
+                                <div class="col-lg-6" *ngIf="mg.getVisible(mgc.vDesc)==='visible'">
+                                <div class="form-group">
+                                    <label class="lbl-sm">PASS DESCRIPTION :</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.vDesc" [magic]="mgc.vDesc"
+                                            class="form-control" placeholder="SELECT BOM CODE" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.vDesc">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+     <div class="col-lg-12 text-center">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.BtnSave"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                SAVE
+                                            </button>
+                                            <button type="button" [magic]="mgc.BtnCancel"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                              EXIT
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+
+                            </div>
+                    
+                        </div>
+                    </div>
+                
+            </div>
         </div>
     </div>
 </div>

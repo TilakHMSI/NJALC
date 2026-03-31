@@ -10,11 +10,13 @@ export enum MgControlName {
         Table1 = "Table1",
         Column2 = "Column2",
         PASS_DESCRIPTION = "PASS_DESCRIPTION",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export var
     MgDisplayedColumns = [
         'Column2',
+     
     ];
 
 export class MgFormControlsAccessor {

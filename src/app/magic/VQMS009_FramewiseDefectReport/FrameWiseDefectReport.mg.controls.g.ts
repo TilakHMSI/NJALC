@@ -16,6 +16,9 @@ export enum MgControlName {
         Label6 = "Label6",
         v_Exec = "v_Exec",
         v_Exit = "v_Exit",
+        btn_Close = "btn_Close",
+        vBlobResponseBase64="vBlobResponseBase64",
+        PrintDetails_FileName = "PrintDetails_FileName"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -27,6 +30,9 @@ export class MgFormControlsAccessor {
 
     get v_Shift(): FormControl {
         return this.fg.controls[MgControlName.v_Shift] as FormControl;
+    }
+     get vBlobResponseBase64(): FormControl {
+        return this.fg.controls[MgControlName.vBlobResponseBase64] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

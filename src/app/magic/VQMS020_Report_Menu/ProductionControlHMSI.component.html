@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -46,6 +46,55 @@
             <button [magic]="mgc.PendingFramesReport">
                 {{mg.getValue(mgc.PendingFramesReport)}}
             </button>
+        </div>
+    </div>
+</div> -->
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.ProductionControlHMSI">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Framewise_Defect_Report)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.Framewise_Defect_Report">
+                                {{mg.getValue(mgc.Framewise_Defect_Report)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.DPR_Status_Report)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.DPR_Status_Report">
+                                {{mg.getValue(mgc.DPR_Status_Report)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.PendingFramesReport)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.PendingFramesReport">
+                                {{mg.getValue(mgc.PendingFramesReport)}}
+                            </button>
+                        </div>
+                     
+                    </div>
+                    <div class="col-lg-2">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
