@@ -25,7 +25,7 @@
                                         <label class="lbl_table" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S5_CHASSIS_NO"
                                             [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.S5_CHASSIS_NO, row.rowId)">
-                                             {{ (mg.getValue(mgc.S5_CHASSIS_NO, row.rowId) || 0).toString().padStart(6, '0') }}
+                                             {{ (mg.getValue(mgc.S5_CHASSIS_NO, row.rowId) || 0).toString().padStart(mg.getValue(mgc.JP_MODULE, row.rowId) === 'T' ? 7 : 6, '0') }}
                                         </label>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
                                         <label class="text-danger font-size-h4" *ngIf="!mg.isRowInRowEditing(row)"
                                             [magic]="mgc.PRD005FRAMEENGINE_NO_S5_ENGNO" [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.PRD005FRAMEENGINE_NO_S5_ENGNO, row.rowId)">
-                                             {{ (mg.getValue(mgc.PRD005FRAMEENGINE_NO_S5_ENGNO, row.rowId) || 0).toString().padStart(6, '0') }}
+                                             {{ (mg.getValue(mgc.PRD005FRAMEENGINE_NO_S5_ENGNO, row.rowId) || 0).toString().padStart(7, '0') }}
                                         </label>
                                     </div>
                                 </div>

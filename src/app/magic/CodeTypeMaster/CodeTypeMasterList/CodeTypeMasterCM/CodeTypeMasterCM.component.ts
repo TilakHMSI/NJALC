@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./Confirmation.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./CodeTypeMasterCM.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,13 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-ConfirmOperation_Confirmation',
+    selector: 'mga-CodeTypeMaster_CodeTypeMasterList_CodeTypeMasterCM_CodeTypeMasterCM',
     providers: [...magicProviders],
     standalone: false,
-    styleUrls: ['./Confirmation.component.css'],
-    templateUrl: './Confirmation.component.html'
+    templateUrl: './CodeTypeMasterCM.component.html'
 })
-export class Confirmation extends TaskBaseMagicComponent implements MagicModalInterface {
+export class CodeTypeMasterCM extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -24,44 +23,44 @@ export class Confirmation extends TaskBaseMagicComponent implements MagicModalIn
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "Confirmation";
+    private static readonly formName: string = "CodeTypeMasterCM";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "450px";
-    private static readonly height: string = "173px";
+    private static readonly width: string = "700px";
+    private static readonly height: string = "350px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
-    private static readonly isResizable: boolean = false;
+    private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return Confirmation.x;
+        return CodeTypeMasterCM.x;
     }
     Y() {
-        return Confirmation.y;
+        return CodeTypeMasterCM.y;
     }
     Width(): string {
-        return Confirmation.width;
+        return CodeTypeMasterCM.width;
     }
     Height(): string {
-        return Confirmation.height;
+        return CodeTypeMasterCM.height;
     }
     IsCenteredToWindow() {
-        return Confirmation.isCenteredToWindow;
+        return CodeTypeMasterCM.isCenteredToWindow;
     }
     FormName() {
-        return Confirmation.formName;
+        return CodeTypeMasterCM.formName;
     }
     ShowTitleBar() {
-        return Confirmation.showTitleBar;
+        return CodeTypeMasterCM.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return Confirmation.shouldCloseOnBackgroundClick;
+        return CodeTypeMasterCM.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return Confirmation.isResizable;
+        return CodeTypeMasterCM.isResizable;
     }
     IsMovable() {
-        return Confirmation.isMovable;
+        return CodeTypeMasterCM.isMovable;
     }
 }

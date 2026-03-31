@@ -2,37 +2,35 @@ import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
 import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./CodeTypeMaster.mg.controls.g";
-import { MgDisplayedColumns } from "./CodeTypeMaster.mg.controls.g";
 
 
-import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
+import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 
 
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
     selector: 'mga-CodeTypeMaster_CodeTypeMaster',
-    providers: [...matMagicProviders],
+    providers: [...magicProviders],
     standalone: false,
     templateUrl: './CodeTypeMaster.component.html'
 })
-export class CodeTypeMaster extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class CodeTypeMaster extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
     mgfc!: MgFormControlsAccessor;
-    mgdp = MgDisplayedColumns;
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "CodeTypeMaster";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "1200px";
+    private static readonly height: string = "650px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
@@ -65,5 +63,4 @@ export class CodeTypeMaster extends BaseMatTableMagicComponent implements MagicM
     IsMovable() {
         return CodeTypeMaster.isMovable;
     }
-    override displayedColumns = this.mgdp;
 }

@@ -1,23 +1,20 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"EnterRowEditing",
-		"visible":	{
-			"value":	null,
-			"has_exp":	true
-		},
-		"format":	"Edit",
+		"id":	"JP_MODULE",
+		"mgformat":	"mgFormat",
+		"format":	"U",
+		"attribute":	"A",
 		"is_table_child":	true,
-		"web_style":	2,
-		"row_editing_type":	1
+		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	560,
-		"y":	64,
-		"width":	28,
-		"height":	22
+		"x":	4,
+		"y":	63,
+		"width":	34,
+		"height":	20
 	},
 	"hint":	null,
-	"controlType":	"B",
+	"controlType":	"T",
 	"children":	null
 }

@@ -7,27 +7,28 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     VQ_OFF_RESULT_ENTRY = "VQ_OFF_RESULT_ENTRY",
-        Table1 = "Table1",
-        Column2 = "Column2",
-        Edit10 = "Edit10",
-        S5_CHASSIS_NO = "S5_CHASSIS_NO",
-        Column3 = "Column3",
-        PRD005FRAMEENGINE_NO_S5_KEY_NO = "PRD005FRAMEENGINE_NO_S5_KEY_NO",
-        Column4 = "Column4",
-        S5_MTO_CODE = "S5_MTO_CODE",
-        Column5 = "Column5",
-        S5_COLOR_CODE = "S5_COLOR_CODE",
-        S5_COLOR_CODEINSIDE = "S5_COLOR_CODEINSIDE",
-        Column6 = "Column6",
-        S5_VQOFF_DATE = "S5_VQOFF_DATE",
-        Column7 = "Column7",
-        S5_VQOFF_TIME = "S5_VQOFF_TIME",
-        Column8 = "Column8",
-        S5_QI_STAMP_NO = "S5_QI_STAMP_NO",
-        Column9 = "Column9",
-        S5_MTO_NAME = "S5_MTO_NAME",
+    Table1 = "Table1",
+    Column2 = "Column2",
+    Edit10 = "Edit10",
+    S5_CHASSIS_NO = "S5_CHASSIS_NO",
+    Column3 = "Column3",
+    PRD005FRAMEENGINE_NO_S5_KEY_NO = "PRD005FRAMEENGINE_NO_S5_KEY_NO",
+    Column4 = "Column4",
+    S5_MTO_CODE = "S5_MTO_CODE",
+    Column5 = "Column5",
+    S5_COLOR_CODE = "S5_COLOR_CODE",
+    S5_COLOR_CODEINSIDE = "S5_COLOR_CODEINSIDE",
+    Column6 = "Column6",
+    S5_VQOFF_DATE = "S5_VQOFF_DATE",
+    Column7 = "Column7",
+    S5_VQOFF_TIME = "S5_VQOFF_TIME",
+    Column8 = "Column8",
+    S5_QI_STAMP_NO = "S5_QI_STAMP_NO",
+    Column9 = "Column9",
+    S5_MTO_NAME = "S5_MTO_NAME",
+    JP_MODULE = "JP_MODULE",
 }
-export enum MgCustomProperties {}
+export enum MgCustomProperties { }
 export var
     MgDisplayedColumns = [
         'Column2',
@@ -41,12 +42,14 @@ export var
     ];
 
 export class MgFormControlsAccessor {
-    constructor(private fg: FormGroup, private magicServices: MagicServices) {}
+    constructor(private fg: FormGroup, private magicServices: MagicServices) { }
 
     get Edit10(): FormControl {
         return this.getTableChildFormControl(MgControlName.Edit10);
     }
-
+    get JP_MODULE(): FormControl {
+        return this.getTableChildFormControl(MgControlName.JP_MODULE);
+    }
     get S5_CHASSIS_NO(): FormControl {
         return this.getTableChildFormControl(MgControlName.S5_CHASSIS_NO);
     }

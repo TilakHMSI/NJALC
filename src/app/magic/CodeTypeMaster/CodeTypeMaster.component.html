@@ -1,240 +1,40 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.CodeTypeMaster"
-    >
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
-                PGM=VQMS004
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.btnexit">
-                Back
-            </button>
-            <label [magic]="mgc.Edit2">
-                {{mg.getValue(mgc.Edit2)
-| magicDate : mgc.Edit2}}
-            </label>
-            <label [magic]="mgc.Edit3">
-                {{mg.getValue(mgc.Edit3)
-| magicTime : mgc.Edit3}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit4">
-                {{mg.getValue(mgc.Edit4) }}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div class="example-container mat-elevation-z8 Table5TableContainerProps">
-                <mat-table
-                    #table
-                    [dataSource]="dataSource"
-                    class="container_border"
-                    matSort
-                    matSortDisableClear
-                    (matSortChange)="tableService.sortData($event)"
-                >
-                    <ng-container
-                        [magic]="mgc.Column6"
-                        [matColumnDef]="mgc.Column6"
-                    >
-                        <mat-header-cell *matHeaderCellDef>
-                            Flag
-                        </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
-                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input
-                                            [formControlName]="mgc.CODETYPE_Flag"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CODETYPE_Flag"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.CODETYPE_Flag
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CODETYPE_Flag"
-                                            [rowId]="row.rowId"
-                                        >
-                                            {{mg.getValue(mgc.CODETYPE_Flag, row.rowId)
-}}
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </mat-cell>
-                    </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column7"
-                        [matColumnDef]="mgc.Column7"
-                    >
-                        <mat-header-cell *matHeaderCellDef>
-                            Code
-                        </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
-                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input
-                                            [formControlName]="mgc.CODETYPE_Code"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CODETYPE_Code"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.CODETYPE_Code
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CODETYPE_Code"
-                                            [rowId]="row.rowId"
-                                        >
-                                            {{mg.getValue(mgc.CODETYPE_Code, row.rowId)
-}}
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </mat-cell>
-                    </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column8"
-                        [matColumnDef]="mgc.Column8"
-                    >
-                        <mat-header-cell *matHeaderCellDef>
-                            Sub Code
-                        </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
-                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input
-                                            [formControlName]="mgc.CODETYPE_SubCode"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CODETYPE_SubCode"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.CODETYPE_SubCode
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CODETYPE_SubCode"
-                                            [rowId]="row.rowId"
-                                        >
-                                            {{mg.getValue(mgc.CODETYPE_SubCode, row.rowId)
-}}
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </mat-cell>
-                    </ng-container>
-                    <ng-container
-                        [magic]="mgc.Column9"
-                        [matColumnDef]="mgc.Column9"
-                    >
-                        <mat-header-cell *matHeaderCellDef>
-                            Description
-                        </mat-header-cell>
-                        <mat-cell
-                            *matCellDef="let row"
-                            magicMark="magicTableRowContainer"
-                        >
-                            <div
-                                style="display: flex; flex-direction: row"
-                                *ngIf="mg.ifRowCreated(row)"
-                            >
-                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input
-                                            [formControlName]="mgc.CODETYPE_Disc"
-                                            *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CODETYPE_Disc"
-                                            [rowId]="row.rowId"
-                                            mgFormat
-                                        />
-                                        <mgError
-                                            [magic]=mgc.CODETYPE_Disc
-                                            [rowId]="row.rowId"
-                                        > </mgError>
-                                        <label
-                                            *ngIf="!mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.CODETYPE_Disc"
-                                            [rowId]="row.rowId"
-                                        >
-                                            {{mg.getValue(mgc.CODETYPE_Disc, row.rowId)
-}}
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </mat-cell>
-                    </ng-container>
-                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-                    <mat-row
-                        *matRowDef="let row; columns: displayedColumns;"
-                        class="table_row"
-                        [ngClass]="{ 'selected': selection.isSelected(row)}"
-                        [magicRow]="row?.rowId"
-                        (click)="row? tableService.selectRow(row.rowId) : null"
-                    >
-                    </mat-row>
-                </mat-table>
-                <mat-paginator
-                    #paginator
-                    [pageSize]="10"
-                    [pageSizeOptions]="[5, 10, 20]"
-                    (page)="tableService.mgOnPaginateChange($event)"
-                >
-                </mat-paginator>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.CodeTypeMaster">
+        <div class="card">
+            <div style="display: flex; flex-direction: column">
+
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <h3><label class="lable_overflow mb-0">
+                               {{mg.getText(mgc.Label14)}}
+                            </label></h3>
+                        <div class="d-flex align-items-center">
+                            <button type="button" [magic]="mgc.btnexit"
+                                class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 px-0">
+                    <div class="form-group row">
+                        <div class="col-lg-6 col-sm-6">
+                            <input class="form-control" [formControlName]="mgc.vSearch" [magic]="mgc.vSearch"
+                                placeholder="Search by Code, Description" mgFormat />
+                            <mgError [magic]=mgc.vSearch> </mgError>
+                        </div>
+                        <div class="col-lg-2 col-sm-2">
+                            <button class="btn btn-warning btn-sm ml-5" [magic]="mgc.btnSearch">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-12 px-0">
+                    <magic-subform [magic]="mgc.Sub1">
+                    </magic-subform>
+                </div>
             </div>
         </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.B_CREATE">
-                {{mg.getValue(mgc.B_CREATE)}}
-            </button>
-            <button [magic]="mgc.B_MODIFY">
-                {{mg.getValue(mgc.B_MODIFY)}}
-            </button>
-            <button [magic]="mgc.B_EXIT">
-                {{mg.getValue(mgc.B_EXIT)}}
-            </button>
-        </div>
+
     </div>
 </div>

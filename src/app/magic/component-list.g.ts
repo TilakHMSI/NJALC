@@ -212,7 +212,6 @@ import { DEFECTSPICKLIST as VQMS005_DefectsPicklist_Picklist_DEFECTSPICKLIST } f
 import { DEFECTMASTER as VQMS006_DefectMaster_DEFECTMASTER } from './VQMS006_DefectMaster/DEFECTMASTER.component';
 import { BrowseDEFECTMASTER as VQMS006_DefectMaster_DETAIL_BrowseDEFECTMASTER } from './VQMS006_DefectMaster/DETAIL/BrowseDEFECTMASTER.component';
 import { CodeTypeMaster as CodeTypeMaster_CodeTypeMaster } from './CodeTypeMaster/CodeTypeMaster.component';
-import { CodeTypeMaster as CodeTypeMaster_CodeTypeMaster_CodeTypeMaster } from './CodeTypeMaster/CodeTypeMaster/CodeTypeMaster.component';
 import { Confirmation as ConfirmOperation_Confirmation } from './ConfirmOperation/Confirmation.component';
 import { ProductionControlHMSI as VQMS020_Report_Menu_ProductionControlHMSI } from './VQMS020_Report_Menu/ProductionControlHMSI.component';
 import { FrameWiseDefectReport as VQMS009_FramewiseDefectReport_FrameWiseDefectReport } from './VQMS009_FramewiseDefectReport/FrameWiseDefectReport.component';
@@ -255,10 +254,14 @@ import { PRD003_GUIDE as PRD003_GUIDE_PRD003_GUIDE } from './PRD003_GUIDE/PRD003
 import { List as PRD003_GUIDE_List_List } from './PRD003_GUIDE/List/List.component';
 import { List as DSQLList_List_List } from './DSQLList/List/List.component';
 import { DSQLList as DSQLList_DSQLList } from './DSQLList/DSQLList.component';
+import { CodeTypeMaster as CodeTypeMaster_CodeTypeMasterList_CodeTypeMaster } from './CodeTypeMaster/CodeTypeMasterList/CodeTypeMaster.component';
+import { CodeTypeMasterCM as CodeTypeMaster_CodeTypeMasterList_CodeTypeMasterCM_CodeTypeMasterCM } from './CodeTypeMaster/CodeTypeMasterList/CodeTypeMasterCM/CodeTypeMasterCM.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               DSQLList_DSQLList:DSQLList_DSQLList,
+export const magicGenCmpsHash = {               CodeTypeMaster_CodeTypeMasterList_CodeTypeMaster:CodeTypeMaster_CodeTypeMasterList_CodeTypeMaster,
+              CodeTypeMaster_CodeTypeMasterList_CodeTypeMasterCM_CodeTypeMasterCM:CodeTypeMaster_CodeTypeMasterList_CodeTypeMasterCM_CodeTypeMasterCM,
+                      DSQLList_DSQLList:DSQLList_DSQLList,
                       DSQLList_List_List:DSQLList_List_List,
                       PRD003_GUIDE_PRD003_GUIDE:PRD003_GUIDE_PRD003_GUIDE,
               PRD003_GUIDE_List_List:PRD003_GUIDE_List_List,
@@ -282,7 +285,6 @@ export const magicGenCmpsHash = {               DSQLList_DSQLList:DSQLList_DSQLL
               VQMS006_DefectMaster_DEFECTMASTER:VQMS006_DefectMaster_DEFECTMASTER,
               VQMS006_DefectMaster_DETAIL_BrowseDEFECTMASTER:VQMS006_DefectMaster_DETAIL_BrowseDEFECTMASTER,
               CodeTypeMaster_CodeTypeMaster:CodeTypeMaster_CodeTypeMaster,
-              CodeTypeMaster_CodeTypeMaster_CodeTypeMaster:CodeTypeMaster_CodeTypeMaster_CodeTypeMaster,
               ConfirmOperation_Confirmation:ConfirmOperation_Confirmation,
               VQMS020_Report_Menu_ProductionControlHMSI:VQMS020_Report_Menu_ProductionControlHMSI,
               VQMS009_FramewiseDefectReport_FrameWiseDefectReport:VQMS009_FramewiseDefectReport_FrameWiseDefectReport,
@@ -519,6 +521,8 @@ export const magicGenCmpsHash = {               DSQLList_DSQLList:DSQLList_DSQLL
 };
 
 export const magicGenComponents = [
+	CodeTypeMaster_CodeTypeMasterList_CodeTypeMaster,
+	CodeTypeMaster_CodeTypeMasterList_CodeTypeMasterCM_CodeTypeMasterCM,
 	DSQLList_DSQLList,
 	DSQLList_List_List,
 	PRD003_GUIDE_PRD003_GUIDE,
@@ -543,7 +547,6 @@ export const magicGenComponents = [
 	VQMS006_DefectMaster_DEFECTMASTER,
 	VQMS006_DefectMaster_DETAIL_BrowseDEFECTMASTER,
 	CodeTypeMaster_CodeTypeMaster,
-	CodeTypeMaster_CodeTypeMaster_CodeTypeMaster,
 	ConfirmOperation_Confirmation,
 	VQMS020_Report_Menu_ProductionControlHMSI,
 	VQMS009_FramewiseDefectReport_FrameWiseDefectReport,

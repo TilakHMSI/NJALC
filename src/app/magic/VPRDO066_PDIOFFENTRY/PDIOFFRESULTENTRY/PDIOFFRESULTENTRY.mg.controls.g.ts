@@ -24,6 +24,7 @@ export enum MgControlName {
         S5_RE_VQ_TIME = "S5_RE_VQ_TIME",
         Column8 = "Column8",
         S5_MTO_NAME = "S5_MTO_NAME",
+                JP_MODULE = "JP_MODULE",
 }
 export enum MgCustomProperties {}
 export var
@@ -42,6 +43,10 @@ export class MgFormControlsAccessor {
 
     get Edit9(): FormControl {
         return this.getTableChildFormControl(MgControlName.Edit9);
+    }
+
+    get JP_MODULE(): FormControl {
+        return this.getTableChildFormControl(MgControlName.JP_MODULE);
     }
 
     get S5_CHASSIS_NO(): FormControl {

@@ -29,6 +29,7 @@ export enum MgControlName {
         S5_AFOFF_TIME = "S5_AFOFF_TIME",
         Column10 = "Column10",
         S5_MTO_NAME = "S5_MTO_NAME",
+        JP_MODULE = "JP_MODULE",
 }
 export enum MgCustomProperties {}
 export var

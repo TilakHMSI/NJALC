@@ -7,54 +7,58 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     AF_OFF_RESULT_ENTRY = "AF_OFF_RESULT_ENTRY",
-        Label3 = "Label3",
-        V_VDharamTime = "V_VDharamTime",
-        Edit1 = "Edit1",
-        Edit2 = "Edit2",
-        V_LOCATE_P = "V_LOCATE_P",
-        Label6 = "Label6",
-        Edit7 = "Edit7",
-        AFOFF_RESULT_ENTRY = "AFOFF_RESULT_ENTRY",
-        Group25 = "Group25",
-        Label26 = "Label26",
-        Label27 = "Label27",
-        Label28 = "Label28",
-        Label29 = "Label29",
-        Edit30 = "Edit30",
-        Edit31 = "Edit31",
-        Edit32 = "Edit32",
-        Edit33 = "Edit33",
-        Edit34 = "Edit34",
-        Group18 = "Group18",
-        Label20 = "Label20",
-        Label19 = "Label19",
-        Edit22 = "Edit22",
-        V_PROGRESS1_V = "V_PROGRESS1_V",
-        Label23 = "Label23",
-        V_PROGRESS2_V = "V_PROGRESS2_V",
-        Label9 = "Label9",
-        Edit10 = "Edit10",
-        MODE_V = "MODE_V",
-        Label11 = "Label11",
-        TYRE_LOT_V = "TYRE_LOT_V",
-        Label12 = "Label12",
-        CHASSIS_NO_V = "CHASSIS_NO_V",
-        Label13 = "Label13",
-        ENGINE_NO_V = "ENGINE_NO_V",
-        btnexit = "btnexit",
-        LastScanned = "LastScanned",
-        LastScannedEngine = "LastScannedEngine",
+    Label3 = "Label3",
+    V_VDharamTime = "V_VDharamTime",
+    Edit1 = "Edit1",
+    Edit2 = "Edit2",
+    V_LOCATE_P = "V_LOCATE_P",
+    Label6 = "Label6",
+    Edit7 = "Edit7",
+    AFOFF_RESULT_ENTRY = "AFOFF_RESULT_ENTRY",
+    Group25 = "Group25",
+    Label26 = "Label26",
+    Label27 = "Label27",
+    Label28 = "Label28",
+    Label29 = "Label29",
+    Edit30 = "Edit30",
+    Edit31 = "Edit31",
+    Edit32 = "Edit32",
+    Edit33 = "Edit33",
+    Edit34 = "Edit34",
+    Group18 = "Group18",
+    Label20 = "Label20",
+    Label19 = "Label19",
+    Edit22 = "Edit22",
+    V_PROGRESS1_V = "V_PROGRESS1_V",
+    Label23 = "Label23",
+    V_PROGRESS2_V = "V_PROGRESS2_V",
+    Label9 = "Label9",
+    Edit10 = "Edit10",
+    MODE_V = "MODE_V",
+    Label11 = "Label11",
+    TYRE_LOT_V = "TYRE_LOT_V",
+    Label12 = "Label12",
+    CHASSIS_NO_V = "CHASSIS_NO_V",
+    Label13 = "Label13",
+    ENGINE_NO_V = "ENGINE_NO_V",
+    btnexit = "btnexit",
+    LastScanned = "LastScanned",
+    LastScannedEngine = "LastScannedEngine",
+    JP_MODEL = "JP_MODEL",
 }
 export enum MgCustomProperties {
     AF_OFF_RESULT_ENTRY_FormName = 'AF_OFF_RESULT_ENTRY~FormName',
 }
 export class MgFormControlsAccessor {
-    constructor(private fg: FormGroup, private magicServices: MagicServices) {}
+    constructor(private fg: FormGroup, private magicServices: MagicServices) { }
 
     get V_VDharamTime(): FormControl {
         return this.fg.controls[MgControlName.V_VDharamTime] as FormControl;
     }
 
+    get JP_MODEL(): FormControl {
+        return this.fg.controls[MgControlName.JP_MODEL] as FormControl;
+    }
     get Edit1(): FormControl {
         return this.fg.controls[MgControlName.Edit1] as FormControl;
     }

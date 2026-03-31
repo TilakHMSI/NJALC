@@ -1,0 +1,202 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CodeTypeMasterCM",
+		"window_type":	12,
+		"component_path":	"CodeTypeMaster/CodeTypeMasterList/CodeTypeMasterCM/",
+		"module_name":	"",
+		"component_uniquename":	"CodeTypeMaster_CodeTypeMasterList_CodeTypeMasterCM_CodeTypeMasterCM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	476,
+		"height":	185
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"Flag",
+				"common_line_id":	"line26"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	26,
+				"width":	96,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_FLAG",
+				"mgformat":	"mgFormat",
+				"format":	"U",
+				"attribute":	"A",
+				"common_line_id":	"line26"
+			},
+			"coordinates":	{
+				"x":	135,
+				"y":	26,
+				"width":	50,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"Code",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	52,
+				"width":	96,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CODE",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	135,
+				"y":	52,
+				"width":	170,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"Sub Code",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	78,
+				"width":	96,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_SUBCODE",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	135,
+				"y":	78,
+				"width":	250,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"Description",
+				"common_line_id":	"line104"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	104,
+				"width":	96,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_DESCRIPTION",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line104"
+			},
+			"coordinates":	{
+				"x":	135,
+				"y":	104,
+				"width":	330,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"B_SAVE",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line143"
+			},
+			"coordinates":	{
+				"x":	136,
+				"y":	143,
+				"width":	96,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line143"
+			},
+			"coordinates":	{
+				"x":	244,
+				"y":	143,
+				"width":	96,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}
