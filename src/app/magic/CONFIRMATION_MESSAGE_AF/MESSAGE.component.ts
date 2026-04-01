@@ -28,8 +28,8 @@ export class MESSAGE extends TaskBaseMagicComponent implements MagicModalInterfa
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "595px";
-    private static readonly height: string = "260px";
+    private static readonly width: string = "600px";
+    private static readonly height: string = "325px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = false;

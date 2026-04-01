@@ -1,17 +1,3 @@
-<!-- <div novalidate [formGroup]="screenFormGroup">
-    <div style="display: flex; flex-direction: column" [magic]="mgc.HomePage">
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.Req">
-                Req
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <router-outlet [magic]="mgc.MainContaint">
-            </router-outlet>
-        </div>
-    </div>
-</div> -->
-
 <div novalidate [formGroup]="screenFormGroup">
     <!--begin::Main-->
     <div [magic]="mgc.HomePage">
@@ -88,19 +74,6 @@
                         <!--end::Brand-->
 
 
-                        <!-- <div class="menugroup">
-            <div id="Menu" #Menu (click)='ToggleMenu()' class="toggleArrow"><i style="padding: 12px 16px 12px;
-              border-radius: 4px; font-size: 0.5rem;" *ngIf="!isExpanded"
-                    class="fas fa-chevron-left arrowsstyle"></i><i *ngIf="isExpanded"
-                    class="fas fa-chevron-right arrowsstyle" style="font-size: 0.5rem;"></i>
-            </div>
-        </div> -->
-                        <!-- <div id="SideNav" #SideNav class="sidenav" style="border: double; border-color: rgb(61, 47, 255);">
-            <Menu class="mt-2" [source]="mg.getCustomProperty('HomePage','Menu')"></Menu>
-            <div style=" height: 35px; width: 215px; position: fixed; bottom: 0;">
-            </div>
-        </div> -->
-
                         <div class="aside-menu-wrapper flex-column-fluid" id="kt_aside_menu_wrapper">
                             <div id="kt_aside_menu" class="aside-menu my-0" data-menu-vertical="1" data-menu-scroll="1"
                                 data-menu-dropdown-timeout="500">
@@ -109,10 +82,7 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-
                     <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
                         <div id="kt_header" class="header header-fixed"
                             style="border: none; border-color: greenyellow;">
@@ -128,7 +98,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="topbar">
                                         <!--begin::Logo-->
-                                        
+                                        <h4 class="title-text mt-5 mb-5 mr-5">{{mg.getCustomProperty('HomePage','Version')}} </h4>
                                             <img alt="Logo" src="assets/media/logos/Logo1.png"
                                                 class="max-h-25px m-5" />
                                         
