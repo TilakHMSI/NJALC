@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-REPAIR_OUT_ENTRY_REPAIROUTENTRY_VIEW_REPAIROUTENTRY_VIEW',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./REPAIREOUTENTRY.component.css'],
     templateUrl: './REPAIROUTENTRY_VIEW.component.html'
 })
 export class REPAIROUTENTRY_VIEW extends BaseMatTableMagicComponent {

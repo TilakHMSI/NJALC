@@ -13,10 +13,11 @@ export enum MgControlName {
         Edit4 = "Edit4",
         Sub1 = "Sub1",
         Label5 = "Label5",
-        V_Frame = "V_Frame",
+        v_FileName = "v_FileName",
         b_UploadFile_0001 = "b_UploadFile_0001",
         b_PickFile = "b_PickFile",
-        btnexit="btnexit"
+        btnexit="btnexit",
+        vBlobFile64Client="vBlobFile64Client"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -34,8 +35,8 @@ export class MgFormControlsAccessor {
         return this.fg.controls[MgControlName.Edit4] as FormControl;
     }
 
-    get V_Frame(): FormControl {
-        return this.fg.controls[MgControlName.V_Frame] as FormControl;
+    get v_FileName(): FormControl {
+        return this.fg.controls[MgControlName.v_FileName] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

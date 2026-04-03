@@ -90,40 +90,35 @@
             <magic-subform [magic]="mgc.FRAME_DETAIL_VIEW">
             </magic-subform>
         </div>
+        <input style="display:none" [formControlName]="mgc.vBlob64Format" [magic]="mgc.vBlob64Format" mgFormat />
             <div class="card-body">
                 <div class="form-group row" style="margin: 0rem;">
                     <div class="col-lg-12">
-                        <div class="form-group row">
+                        
 
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label>FRAME FROM NO.</label>
-                                    <input type='number' [formControlName]="mgc.V_Frame"
-                                        [magic]="mgc.V_Frame" class="form-control" mgFormat />
+                               <div class="form-group row">
+                    <label class="col-lg-2 col-sm-12 col-form-label mt-2">File Name</label>
+                    <div class="col-lg-5 col-sm-12 form-group">
+                        <input class="form-control" type="text" [formControlName]="mgc.vFileName" [magic]="mgc.vFileName" placeholder="Select file to upload" mgFormat />
+                        <mgError [magic]="mgc.vFileName"> </mgError>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 form-group">
+                        <button class="btn btn-sm btn-warning mr-5" magic="Attachment">
+                            <label style="margin-bottom: 0;">
+                                Browse
+                                <input type="file" style="display:none" accept=".xls,.xlsx,.csv" (change)="fileUpload($event)" />
+                            </label>
+                        </button>
+                        <button class="btn btn-sm btn-success mr-2" *ngIf="mg.getVisible(mgc.b_UploadFile_0001)==='visible'"
+                         [magic]="mgc.b_UploadFile_0001" >
+                            <i class="flaticon2-arrow-up"></i>Upload File
+                        </button>
+                    </div>
+                </div>
+                          
+                   
 
-                                </div>
-                            </div>
-                             <div class="col-lg-6">
-                                   <div class="form-group">
-                              <button style="margin-top:7.5%" type="button" [magic]="mgc.b_PickFile"
-                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
-                                             BROWSE
-                                            </button>
-                                            </div>
-                            </div>
-                             <div class="col-lg-4">
-                               
-                            </div>
-                            <div style="margin-top: 3.5%;" class="col-lg-4">
-                                <div class="form-group">
-                              <button type="button" [magic]="mgc.b_UploadFile_0001"
-                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
-                                             UPLOAD FILE
-                                            </button>
-                                            </div>
-                                            </div>
-
-                        </div>
+                        
                     </div>
 
                 </div>

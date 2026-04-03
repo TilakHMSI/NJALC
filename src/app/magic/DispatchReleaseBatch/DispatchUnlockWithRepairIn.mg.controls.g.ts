@@ -28,6 +28,7 @@ export enum MgControlName {
         v_BatchEndDate_0001 = "v_BatchEndDate_0001",
         v_BatchEndTime_0001 = "v_BatchEndTime_0001",
         SaveBatch = "SaveBatch",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-FRAMEUpload_UNHOLD_ENTRY_FRAME_DETAIL_VIEW_FRAME_DETAIL_VIEW',
     providers: [...matMagicProviders],
     standalone: false,
+     styleUrls: ['./FRAMEDETAILSTOP.component.css'],
     templateUrl: './FRAME_DETAIL_VIEW.component.html'
 })
 export class FRAME_DETAIL_VIEW extends BaseMatTableMagicComponent {

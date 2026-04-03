@@ -17,6 +17,8 @@ export enum MgControlName {
         V_Frame = "V_Frame",
         b_UploadFile_0001 = "b_UploadFile_0001",
         b_PickFile = "b_PickFile",
+        vFileName="vFileName",
+        vBlob64Format="vBlob64Format"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
