@@ -14,6 +14,7 @@ export enum MgCustomProperties {
     HomePage_Menu = 'HomePage~Menu',
         HomePage_User = 'HomePage~User',
         HomePage_Module = 'HomePage~Module',
+        HomePage_Version = 'HomePage~Version',
 }
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
