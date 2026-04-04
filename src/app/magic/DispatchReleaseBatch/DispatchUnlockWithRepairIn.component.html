@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -140,5 +140,141 @@
                 10
             </button>
         </div>
+    </div>
+</div> -->
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.DispatchUnlockWithRepairIn">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            PGM=DispatchUnlockBatch
+                        </label></h3>
+                         <input class="form-control" style="color:white; width:auto;background-color:transparent;border: none;"
+                        [formControlName]="mgc.Edit6" [magic]="mgc.Edit6" mgFormat />
+                           <div class="d-flex align-items-center">
+                        <label [magic]="mgc.Edit2" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit2)
+                            | magicDate : mgc.Edit2}}
+                        </label>
+                        <label [magic]="mgc.Edit3" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit3)
+                            | magicTime : mgc.Edit3}}
+                        </label>
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+           
+                </div>
+            </div>
+  <div class="col-lg-12">
+                        <div class="form-group row">
+              <div class="col-lg-3">
+                                <label class="lbl-sm">STATUS</label>
+                                  <select class="form-control-ed" [magic]="mgc.v_FilterOption"
+                                    [formControlName]="mgc.v_FilterOption">
+                                    <option *ngFor="let o of mg.getItemListValues(mgc.v_FilterOption);"
+                                        [selected]="o.index == mg.getValue(mgc.v_FilterOption)" [value]="o.index">
+                                        {{o.displayValue}}
+                                    </option>
+                                </select>
+                            </div>
+                              <div class="col-lg-3">
+                                <label class="lbl-sm">End Date</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.v_FilterEndDate"
+                            [magic]="mgc.v_FilterEndDate" dateInput />
+                            </div>
+                              <div class="col-lg-3">
+                                <label class="lbl-sm"></label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.v_FilterEndFromDate_0001"
+                            [magic]="mgc.v_FilterEndFromDate_0001" dateInput />
+                            </div>
+                              <div class="col-lg-3">
+                                 
+                              <button style="margin-top:7.5%" type="button" [magic]="mgc.b_ApplyFilter"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                            FILTER
+                                            </button>
+                                            
+                            </div>
+                            </div>
+                            </div>
+            
+ <div style="margin-top: 3%;" class="col-lg-12">
+            <magic-subform [magic]="mgc.DispatchReleaseBatch_VIEW">
+            </magic-subform>
+        </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label class="lbl-sm">START Date</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.v_BatchStartDate_0001"
+                            [magic]="mgc.v_BatchStartDate_0001" dateInput />
+
+                                </div>
+                            </div>
+                             <div  class="col-lg-4">
+                                   <div class="form-group">
+                                    <label class="lbl-sm"></label>
+                            <input 
+  class="form-control-ed" 
+  type="time"
+  [formControlName]="mgc.v_BatchStartTime_0001"
+  [magic]="mgc.v_BatchStartTime_0001" 
+/>
+
+                                            </div>
+                            </div>
+                               <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label class="lbl-sm"></label>
+                             
+
+                                </div>
+                            </div>
+
+                             <div class="col-lg-4">
+                                 <div class="form-group">
+                                    <label class="lbl-sm">END Date</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.v_BatchEndDate_0001"
+                            [magic]="mgc.v_BatchEndDate_0001" dateInput />
+
+                                </div>
+                            </div>
+                             <div class="col-lg-4">
+                                 <div class="form-group">
+                                    <label class="lbl-sm"></label>
+                                                         <input 
+  class="form-control-ed" 
+  type="time"
+  [formControlName]="mgc.v_BatchEndTime_0001"
+  [magic]="mgc.v_BatchEndTime_0001" 
+/>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                     <label class="lbl-sm"></label>
+                              <button type="button" [magic]="mgc.SaveBatch"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                             SAVE
+                                            </button>
+                                            </div>
+                                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       
     </div>
 </div>

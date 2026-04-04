@@ -26,6 +26,8 @@ export enum MgControlName {
         b_Print = "b_Print",
         Column10 = "Column10",
         v_Approved = "v_Approved",
+        vBlobResponseBase64="vBlobResponseBase64",
+        vFilePDFName="vFilePDFName"
 }
 export enum MgCustomProperties {}
 export var

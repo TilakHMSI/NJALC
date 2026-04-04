@@ -518,7 +518,7 @@
                         </mat-cell>
                     </ng-container>
 
-                 <ng-container [magic]="mgc.Column9" [matColumnDef]="mgc.Column9">
+                 <!-- <ng-container [magic]="mgc.Column9" [matColumnDef]="mgc.Column9">
   <mat-header-cell *matHeaderCellDef>
     ACTION
   </mat-header-cell>
@@ -532,19 +532,29 @@
                                            
         PRINT
                                             </button>
-      <!-- <button 
-        class="btn btn-primary"
-        *ngIf="mg.isRowInRowEditing(row)"
-        [magic]="mgc.b_Print" 
-        [rowId]="row.rowId">
-
-  
-        PRINT
-      </button> -->
+     
     </div>
 
   </mat-cell>
-</ng-container>
+</ng-container> -->
+<ng-container [magic]="mgc.Column9" [matColumnDef]="mgc.Column9">
+                        <mat-header-cell *matHeaderCellDef>
+                         
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                          <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                            <button class="btn btn-primary btn-sm mb-1" [magic]="mgc.b_Print"
+                                [rowId]="row.rowId" [disabled]="mg.isDisabled(mgc.b_Print , row.rowId)"
+                                *ngIf="mg.getVisible(mgc.b_Print, row.rowId)==='visible'">
+                                <i   aria-hidden="true"> </i>Ptint
+                            </button>
+                              
+                            </div>
+                        </mat-cell>
+                    </ng-container> 
 
                      
                     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

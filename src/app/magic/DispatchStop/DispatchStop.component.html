@@ -187,6 +187,13 @@
                                     </option>
                                 </select>
                     </div>
+                    
+    <div class="form-group-sm">
+                        <label class="lbl-sm"></label>
+                          <input *ngIf="mg.getVisible(mgc.v_Title)==='visible'"  class="form-control" 
+                        [formControlName]="mgc.v_Title" [magic]="mgc.v_Title" mgFormat />
+                        
+                    </div>
 
 
                             
@@ -195,6 +202,7 @@
                                         <div class="form-group d-flex justify-content-center">
 
                                             <button type="button" [magic]="mgc.V_Proeed"
+                                             [disabled]="mg.isDisabled(mgc.V_Proeed )"
                                                 class="btn btn-primary font-weight-bold mr-3 btn-wdth">
                                                 Proceed
                                             </button>

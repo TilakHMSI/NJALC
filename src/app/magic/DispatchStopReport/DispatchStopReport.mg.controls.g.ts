@@ -20,6 +20,8 @@ export enum MgControlName {
         v_OutputOption = "v_OutputOption",
         b_ApplyFilter = "b_ApplyFilter",
         btnexit = "btnexit",
+        vBlobResponseBase64="vBlobResponseBase64",
+        v_FileName="v_FileName"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -52,6 +54,12 @@ export class MgFormControlsAccessor {
     get v_OutputOption(): FormControl {
         return this.fg.controls[MgControlName.v_OutputOption] as FormControl;
     }
+     get v_FileName(): FormControl {
+        return this.fg.controls[MgControlName.v_FileName] as FormControl;
+    }
+     get vBlobResponseBase64(): FormControl {
+                return this.fg.controls[MgControlName.vBlobResponseBase64] as FormControl;
+            }
 
     getTableChildFormControl(name: MgControlName): FormControl {
         return this.magicServices.mgAccessorService.getFormGroupByRow(this.magicServices.tableService.getSelectedRow()).controls[name] as FormControl;

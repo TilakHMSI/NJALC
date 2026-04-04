@@ -20,6 +20,7 @@ export class FRAME_UPLOAD extends TaskBaseMagicComponent implements MagicModalIn
     mgc = MgControlName;
     mgcp = MgCustomProperties;
     mgfc!: MgFormControlsAccessor;
+     fileText: string | ArrayBuffer | undefined;
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
@@ -63,4 +64,42 @@ export class FRAME_UPLOAD extends TaskBaseMagicComponent implements MagicModalIn
     IsMovable() {
         return FRAME_UPLOAD.isMovable;
     }
+
+       fileUpload(event: Event): void {
+  const input = event.target as HTMLInputElement;
+  const file = input.files?.[0];
+  
+  if (!file) {
+    console.warn('No file selected');
+    return;
+  }
+  
+  // Optional: Validate Excel MIME types
+  const excelTypes = [
+    'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', // .xlsx
+    'application/vnd.ms-excel', // .xls
+    'text/csv' // .csv
+  ];
+  if (!excelTypes.includes(file.type)) {
+    console.error('Please select a valid Excel file');
+    return;
+  }
+  
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+  
+  reader.onload = () => {
+    const fullDataUrl = reader.result as string;
+    const commaIndex = fullDataUrl.indexOf(',');
+    if (commaIndex === -1) {
+      console.error('Invalid data URL');
+      return;
+    }
+    
+    const base64Data = fullDataUrl.slice(commaIndex + 1);
+    this.mg.setValueToControl('vBlob64Format', base64Data);
+    this.mg.setValueToControl('vFileName', file.name);
+  };
+        
+}
 }
