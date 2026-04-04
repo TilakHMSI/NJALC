@@ -99475,3 +99475,9 @@ mat-cell:last-of-type, mat-header-cell:last-of-type, mat-footer-cell:last-of-typ
 .mdc-data-table__cell, .mdc-data-table__header-cell {
     padding: 0 5px! important;
 }
+
+
+mgError {
+  color: red;           /* Text color */
+  font-size: 14px;
+}

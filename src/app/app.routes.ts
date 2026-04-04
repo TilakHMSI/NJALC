@@ -15,10 +15,16 @@ export const routes: Routes = [
 
 
         children: [{
-            path: 'VMNUO001',
-            component: RouterContainerMagicComponent,
+                path: 'VMNUO001',
+                component: RouterContainerMagicComponent,
 
-        }, ]
+            },
+            {
+                path: 'ChangeUserPassword',
+                component: RouterContainerMagicComponent,
+
+            },
+        ]
     },
 
 ];

@@ -18,6 +18,12 @@
 						"ModuleName":	"",
 						"OutletName":	"",
 						"children":	null
+					},
+					{
+						"RouteName":	"ChangeUserPassword",
+						"ModuleName":	"",
+						"OutletName":	"",
+						"children":	null
 					}
 				]
 			}

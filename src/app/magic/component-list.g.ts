@@ -97,7 +97,6 @@ import { VPRDG005_PRD015_GUIDE_56 as VPRDG005_PRD015_GUIDE_56_VPRDG005_PRD015_GU
 import { VBOMG002_PRD010_GUIDE1_132 as VBOMG002_PRD010_GUIDE1_132_VBOMG002_PRD010_GUIDE1_132 } from './VBOMG002_PRD010_GUIDE1_132/VBOMG002_PRD010_GUIDE1_132.component';
 import { VBOMG003_PRD010_GUIDE2_1333 as VBOMG003_PRD010_GUIDE2_133_VBOMG003_PRD010_GUIDE2_1333 } from './VBOMG003_PRD010_GUIDE2_133/VBOMG003_PRD010_GUIDE2_1333.component';
 import { COLOR_TABLE_MAINTENANCE as VPRDO011_Color_Table_Maint_COLOR_TABLE_MAINTENANCE } from './VPRDO011_Color_Table_Maint/COLOR_TABLE_MAINTENANCE.component';
-import { COLOR_TABLE_MAINT as VPRDO011_Color_Table_Maint_COLOR_TABLE_MAINT_COLOR_TABLE_MAINT } from './VPRDO011_Color_Table_Maint/COLOR_TABLE_MAINT/COLOR_TABLE_MAINT.component';
 import { COLOR_TABLE_MAINTENANCE_HSC as VPRDO016_Color_Table_MTN_HSC_COLOR_TABLE_MAINTENANCE_HSC } from './VPRDO016_Color_Table_MTN_HSC/COLOR_TABLE_MAINTENANCE_HSC.component';
 import { COLOR_TABLE_MAINT_HSC as VPRDO016_Color_Table_MTN_HSC_COLOR_TABLE_MAINT_HSC_COLOR_TABLE_MAINT_HSC } from './VPRDO016_Color_Table_MTN_HSC/COLOR_TABLE_MAINT_HSC/COLOR_TABLE_MAINT_HSC.component';
 import { VPRDG004_PRD009_GUIDE_HSC as VPRDG004_PRD009_GUIDE_HSC_VPRDG004_PRD009_GUIDE_HSC } from './VPRDG004_PRD009_GUIDE_HSC/VPRDG004_PRD009_GUIDE_HSC.component';
@@ -256,10 +255,16 @@ import { List as DSQLList_List_List } from './DSQLList/List/List.component';
 import { DSQLList as DSQLList_DSQLList } from './DSQLList/DSQLList.component';
 import { CodeTypeMaster as CodeTypeMaster_CodeTypeMasterList_CodeTypeMaster } from './CodeTypeMaster/CodeTypeMasterList/CodeTypeMaster.component';
 import { CodeTypeMasterCM as CodeTypeMaster_CodeTypeMasterList_CodeTypeMasterCM_CodeTypeMasterCM } from './CodeTypeMaster/CodeTypeMasterList/CodeTypeMasterCM/CodeTypeMasterCM.component';
+import { ChangeUserPassword as ChangeUserPassword_ChangeUserPassword } from './ChangeUserPassword/ChangeUserPassword.component';
+import { COLOR_TABLE_LIST as VPRDO011_Color_Table_Maint_COLOR_TABLE_LIST_COLOR_TABLE_LIST } from './VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_LIST.component';
+import { COLOR_TABLE_MAINT as VPRDO011_Color_Table_Maint_COLOR_TABLE_LIST_COLOR_TABLE_MAINT_COLOR_TABLE_MAINT } from './VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_MAINT/COLOR_TABLE_MAINT.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               CodeTypeMaster_CodeTypeMasterList_CodeTypeMaster:CodeTypeMaster_CodeTypeMasterList_CodeTypeMaster,
+export const magicGenCmpsHash = {               VPRDO011_Color_Table_Maint_COLOR_TABLE_LIST_COLOR_TABLE_LIST:VPRDO011_Color_Table_Maint_COLOR_TABLE_LIST_COLOR_TABLE_LIST,
+              VPRDO011_Color_Table_Maint_COLOR_TABLE_LIST_COLOR_TABLE_MAINT_COLOR_TABLE_MAINT:VPRDO011_Color_Table_Maint_COLOR_TABLE_LIST_COLOR_TABLE_MAINT_COLOR_TABLE_MAINT,
+                      ChangeUserPassword_ChangeUserPassword:ChangeUserPassword_ChangeUserPassword,
+                      CodeTypeMaster_CodeTypeMasterList_CodeTypeMaster:CodeTypeMaster_CodeTypeMasterList_CodeTypeMaster,
               CodeTypeMaster_CodeTypeMasterList_CodeTypeMasterCM_CodeTypeMasterCM:CodeTypeMaster_CodeTypeMasterList_CodeTypeMasterCM_CodeTypeMasterCM,
                       DSQLList_DSQLList:DSQLList_DSQLList,
                       DSQLList_List_List:DSQLList_List_List,
@@ -425,7 +430,6 @@ export const magicGenCmpsHash = {               CodeTypeMaster_CodeTypeMasterLis
               VBOMG002_PRD010_GUIDE1_132_VBOMG002_PRD010_GUIDE1_132:VBOMG002_PRD010_GUIDE1_132_VBOMG002_PRD010_GUIDE1_132,
               VBOMG003_PRD010_GUIDE2_133_VBOMG003_PRD010_GUIDE2_1333:VBOMG003_PRD010_GUIDE2_133_VBOMG003_PRD010_GUIDE2_1333,
               VPRDO011_Color_Table_Maint_COLOR_TABLE_MAINTENANCE:VPRDO011_Color_Table_Maint_COLOR_TABLE_MAINTENANCE,
-              VPRDO011_Color_Table_Maint_COLOR_TABLE_MAINT_COLOR_TABLE_MAINT:VPRDO011_Color_Table_Maint_COLOR_TABLE_MAINT_COLOR_TABLE_MAINT,
               VPRDO016_Color_Table_MTN_HSC_COLOR_TABLE_MAINTENANCE_HSC:VPRDO016_Color_Table_MTN_HSC_COLOR_TABLE_MAINTENANCE_HSC,
               VPRDO016_Color_Table_MTN_HSC_COLOR_TABLE_MAINT_HSC_COLOR_TABLE_MAINT_HSC:VPRDO016_Color_Table_MTN_HSC_COLOR_TABLE_MAINT_HSC_COLOR_TABLE_MAINT_HSC,
               VPRDG004_PRD009_GUIDE_HSC_VPRDG004_PRD009_GUIDE_HSC:VPRDG004_PRD009_GUIDE_HSC_VPRDG004_PRD009_GUIDE_HSC,
@@ -521,6 +525,9 @@ export const magicGenCmpsHash = {               CodeTypeMaster_CodeTypeMasterLis
 };
 
 export const magicGenComponents = [
+	VPRDO011_Color_Table_Maint_COLOR_TABLE_LIST_COLOR_TABLE_LIST,
+	VPRDO011_Color_Table_Maint_COLOR_TABLE_LIST_COLOR_TABLE_MAINT_COLOR_TABLE_MAINT,
+	ChangeUserPassword_ChangeUserPassword,
 	CodeTypeMaster_CodeTypeMasterList_CodeTypeMaster,
 	CodeTypeMaster_CodeTypeMasterList_CodeTypeMasterCM_CodeTypeMasterCM,
 	DSQLList_DSQLList,
@@ -687,7 +694,6 @@ export const magicGenComponents = [
 	VBOMG002_PRD010_GUIDE1_132_VBOMG002_PRD010_GUIDE1_132,
 	VBOMG003_PRD010_GUIDE2_133_VBOMG003_PRD010_GUIDE2_1333,
 	VPRDO011_Color_Table_Maint_COLOR_TABLE_MAINTENANCE,
-	VPRDO011_Color_Table_Maint_COLOR_TABLE_MAINT_COLOR_TABLE_MAINT,
 	VPRDO016_Color_Table_MTN_HSC_COLOR_TABLE_MAINTENANCE_HSC,
 	VPRDO016_Color_Table_MTN_HSC_COLOR_TABLE_MAINT_HSC_COLOR_TABLE_MAINT_HSC,
 	VPRDG004_PRD009_GUIDE_HSC_VPRDG004_PRD009_GUIDE_HSC,

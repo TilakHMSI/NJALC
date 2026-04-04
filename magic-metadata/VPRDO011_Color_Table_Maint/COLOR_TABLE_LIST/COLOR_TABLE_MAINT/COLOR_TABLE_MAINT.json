@@ -1,0 +1,238 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"COLOR_TABLE_MAINT",
+		"window_type":	12,
+		"component_path":	"VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_MAINT/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO011_Color_Table_Maint_COLOR_TABLE_LIST_COLOR_TABLE_MAINT_COLOR_TABLE_MAINT"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	696,
+		"height":	429
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label16",
+				"text":	"S9_COLOR_CODE",
+				"common_line_id":	"line48"
+			},
+			"coordinates":	{
+				"x":	81,
+				"y":	48,
+				"width":	125,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S9_COLOR_CODE",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line48"
+			},
+			"coordinates":	{
+				"x":	228,
+				"y":	48,
+				"width":	50,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"back",
+				"common_line_id":	"line63"
+			},
+			"coordinates":	{
+				"x":	541,
+				"y":	63,
+				"width":	56,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label17",
+				"text":	"S9_COLOR_NAME",
+				"common_line_id":	"line85"
+			},
+			"coordinates":	{
+				"x":	81,
+				"y":	88,
+				"width":	125,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S9_COLOR_NAME",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line85"
+			},
+			"coordinates":	{
+				"x":	228,
+				"y":	85,
+				"width":	144,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S9_MAIN_COLOR",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line122"
+			},
+			"coordinates":	{
+				"x":	228,
+				"y":	122,
+				"width":	60,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label18",
+				"text":	"S9_MAIN_COLOR",
+				"common_line_id":	"line138"
+			},
+			"coordinates":	{
+				"x":	81,
+				"y":	138,
+				"width":	125,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label19",
+				"text":	"S9_START_DATE",
+				"common_line_id":	"line175"
+			},
+			"coordinates":	{
+				"x":	81,
+				"y":	182,
+				"width":	125,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S9_START_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line175"
+			},
+			"coordinates":	{
+				"x":	228,
+				"y":	175,
+				"width":	67,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S9_ABOLITION_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line216"
+			},
+			"coordinates":	{
+				"x":	228,
+				"y":	216,
+				"width":	70,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label20",
+				"text":	"S9_ABOLITION_DATE",
+				"common_line_id":	"line228"
+			},
+			"coordinates":	{
+				"x":	81,
+				"y":	228,
+				"width":	125,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSave",
+				"format":	"Save",
+				"common_line_id":	"line285"
+			},
+			"coordinates":	{
+				"x":	203,
+				"y":	285,
+				"width":	94,
+				"height":	38
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

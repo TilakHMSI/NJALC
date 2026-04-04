@@ -19,29 +19,11 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"MODE_V",
-				"items_list":	"ADDITION,UPDATE,INQUIRY",
-				"attribute":	"A",
-				"common_line_id":	"line0"
-			},
-			"coordinates":	{
-				"x":	71,
-				"y":	0,
-				"width":	166,
-				"height":	26
-			},
-			"hint":	null,
-			"controlType":	"R",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"V_LOCATE_P",
 				"mgformat":	"mgFormat",
 				"format":	"XXX",
 				"attribute":	"A",
-				"common_line_id":	"line0"
+				"common_line_id":	"line3"
 			},
 			"coordinates":	{
 				"x":	470,
@@ -58,7 +40,7 @@
 			"props":	{
 				"id":	"Label2",
 				"text":	"PGM=VPRDO011",
-				"common_line_id":	"line0"
+				"common_line_id":	"line3"
 			},
 			"coordinates":	{
 				"x":	494,

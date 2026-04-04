@@ -7,54 +7,41 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     COLOR_TABLE_MAINT = "COLOR_TABLE_MAINT",
-        Table1 = "Table1",
-        Column2 = "Column2",
+        Label16 = "Label16",
         S9_COLOR_CODE = "S9_COLOR_CODE",
-        Column3 = "Column3",
+        btnexit = "btnexit",
+        Label17 = "Label17",
         S9_COLOR_NAME = "S9_COLOR_NAME",
-        Column4 = "Column4",
         S9_MAIN_COLOR = "S9_MAIN_COLOR",
-        Column5 = "Column5",
+        Label18 = "Label18",
+        Label19 = "Label19",
         S9_START_DATE = "S9_START_DATE",
-        Column6 = "Column6",
         S9_ABOLITION_DATE = "S9_ABOLITION_DATE",
-        Column12 = "Column12",
-        EnterRowEditing = "EnterRowEditing",
-        SaveRowEditing = "SaveRowEditing",
-        CancelRowEditing = "CancelRowEditing",
+        Label20 = "Label20",
+        btnSave = "btnSave",
 }
 export enum MgCustomProperties {}
-export var
-    MgDisplayedColumns = [
-        'Column2',
-        'Column3',
-        'Column4',
-        'Column5',
-        'Column6',
-        'Column12',
-    ];
-
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
     get S9_COLOR_CODE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S9_COLOR_CODE);
+        return this.fg.controls[MgControlName.S9_COLOR_CODE] as FormControl;
     }
 
     get S9_COLOR_NAME(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S9_COLOR_NAME);
+        return this.fg.controls[MgControlName.S9_COLOR_NAME] as FormControl;
     }
 
     get S9_MAIN_COLOR(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S9_MAIN_COLOR);
+        return this.fg.controls[MgControlName.S9_MAIN_COLOR] as FormControl;
     }
 
     get S9_START_DATE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S9_START_DATE);
+        return this.fg.controls[MgControlName.S9_START_DATE] as FormControl;
     }
 
     get S9_ABOLITION_DATE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S9_ABOLITION_DATE);
+        return this.fg.controls[MgControlName.S9_ABOLITION_DATE] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {
