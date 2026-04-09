@@ -1,0 +1,118 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PLAN_TABLE_MAINTE_CM",
+		"window_type":	12,
+		"component_path":	"VPRDO001_PLAN_TABLE_MAINTE/PLAN_TABLE_MAINTE_LIST/PLAN_TABLE_MAINTE_CM/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO001_PLAN_TABLE_MAINTE_PLAN_TABLE_MAINTE_LIST_PLAN_TABLE_MAINTE_CM_PLAN_TABLE_MAINTE_CM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	531,
+		"height":	332
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label18",
+				"text":	"P15_PS_CODE",
+				"common_line_id":	"line69"
+			},
+			"coordinates":	{
+				"x":	28,
+				"y":	69,
+				"width":	129,
+				"height":	25
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"P15_PS_CODE",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line69"
+			},
+			"coordinates":	{
+				"x":	163,
+				"y":	70,
+				"width":	74,
+				"height":	25
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label19",
+				"text":	"P15_APPL_MODELTYPE",
+				"common_line_id":	"line110"
+			},
+			"coordinates":	{
+				"x":	28,
+				"y":	110,
+				"width":	129,
+				"height":	25
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"P15_APPL_MODELTYPE",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line110"
+			},
+			"coordinates":	{
+				"x":	163,
+				"y":	110,
+				"width":	104,
+				"height":	25
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSave",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"Save",
+				"common_line_id":	"line177"
+			},
+			"coordinates":	{
+				"x":	121,
+				"y":	177,
+				"width":	90,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

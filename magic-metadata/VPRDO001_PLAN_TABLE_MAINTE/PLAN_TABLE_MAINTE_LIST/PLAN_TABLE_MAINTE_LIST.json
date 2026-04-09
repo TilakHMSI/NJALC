@@ -1,0 +1,168 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PLAN_TABLE_MAINTE_LIST",
+		"window_type":	12,
+		"component_path":	"VPRDO001_PLAN_TABLE_MAINTE/PLAN_TABLE_MAINTE_LIST/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO001_PLAN_TABLE_MAINTE_PLAN_TABLE_MAINTE_LIST_PLAN_TABLE_MAINTE_LIST"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	531,
+		"height":	332
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnadd",
+				"format":	"Add",
+				"common_line_id":	"line4"
+			},
+			"coordinates":	{
+				"x":	51,
+				"y":	4,
+				"width":	65,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table5",
+				"table_row_height":	78,
+				"table_title_height":	16,
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	51,
+				"y":	52,
+				"width":	447,
+				"height":	271
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"P/S CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	73
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"P15_PS_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line72"
+							},
+							"coordinates":	{
+								"x":	55,
+								"y":	72,
+								"width":	56,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"APPL MODEL/TYPE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	268
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"P15_APPL_MODELTYPE",
+								"show_zoom_button":	true,
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line72"
+							},
+							"coordinates":	{
+								"x":	130,
+								"y":	72,
+								"width":	86,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column22",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	49
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnEdit",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line72"
+							},
+							"coordinates":	{
+								"x":	396,
+								"y":	72,
+								"width":	41,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}
