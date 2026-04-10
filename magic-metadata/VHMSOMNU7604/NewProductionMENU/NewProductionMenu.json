@@ -1,0 +1,412 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"NewProductionMenu",
+		"window_type":	12,
+		"component_path":	"VHMSOMNU7604/NewProductionMENU/",
+		"module_name":	"",
+		"component_uniquename":	"VHMSOMNU7604_NewProductionMENU_NewProductionMenu"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	776,
+		"height":	489
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line21"
+			},
+			"coordinates":	{
+				"x":	579,
+				"y":	21,
+				"width":	56,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VFRAME_HOLD_UTILITY",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line59"
+			},
+			"coordinates":	{
+				"x":	470,
+				"y":	59,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VFRAMEENGINE",
+				"attribute":	"A",
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	91,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VHOLD_FRAME_REPORT",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	470,
+				"y":	91,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Mapping_Master",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line127"
+			},
+			"coordinates":	{
+				"x":	469,
+				"y":	127,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VSHIFTPDI",
+				"attribute":	"A",
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	156,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_CKD_CaseOffPackingStatus",
+				"attribute":	"A",
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	240,
+				"y":	158,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Card_RePrintNew",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	469,
+				"y":	163,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VAFUNITEUTIL",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line189"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	189,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BNew_Card_Print",
+				"attribute":	"A",
+				"common_line_id":	"line189"
+			},
+			"coordinates":	{
+				"x":	240,
+				"y":	190,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vAEAFSHIFT",
+				"attribute":	"A",
+				"common_line_id":	"line221"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	221,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"B_AEOFF_REPORT",
+				"attribute":	"A",
+				"common_line_id":	"line221"
+			},
+			"coordinates":	{
+				"x":	241,
+				"y":	221,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vAEHOURMST",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line254"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	254,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VAF_Target",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line254"
+			},
+			"coordinates":	{
+				"x":	242,
+				"y":	254,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vAFHOURMST",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line286"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	286,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VAF_ShiftTime",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line286"
+			},
+			"coordinates":	{
+				"x":	242,
+				"y":	286,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vPRODSEQPLAN",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line319"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	319,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VAE_Target",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line319"
+			},
+			"coordinates":	{
+				"x":	242,
+				"y":	319,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VAE_ShiftTime",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line351"
+			},
+			"coordinates":	{
+				"x":	242,
+				"y":	351,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VDISPLAY_BOARD_MONITOR",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line416"
+			},
+			"coordinates":	{
+				"x":	242,
+				"y":	416,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

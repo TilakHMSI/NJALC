@@ -1,0 +1,227 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.IN_PROCESS">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem ! important;">
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                            <div class="col-lg-2 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    FRAME NUMBER
+                                </label>
+                                <label class="lbl-header-tbl-data" [magic]="mgc.V2CHASSIS_NOFrame">
+                                    {{mg.getValue(mgc.V2CHASSIS_NOFrame)}}
+                                </label>
+                            </div>
+                            <div class="col-lg-2 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    ENGINE NUMBER
+                                </label>
+                                <label class="lbl-header-tbl-data" [magic]="mgc.Edit65">
+                                    {{mg.getValue(mgc.Edit65)}}
+                                </label>
+                            </div>
+                            <div class="col-lg-2 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    MODEL CODE
+                                </label>
+                                <label class="lbl-header-tbl-data" [magic]="mgc.S5_SALES_MTOC_CODE">
+                                    {{mg.getValue(mgc.S5_SALES_MTOC_CODE)}}
+                                </label>
+                            </div>
+                            <div class="col-lg-2 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    TYPE
+                                </label>
+                                <label class="lbl-header-tbl-data" [magic]="mgc.S5_SALES_MTOC_CODE_0001">
+                                    {{mg.getValue(mgc.S5_SALES_MTOC_CODE_0001)}}
+                                </label>
+                            </div>
+                            <div class="col-lg-2 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    OPTION
+                                </label>
+                                <label class="lbl-header-tbl-data" [magic]="mgc.S5_SALES_MTOC_CODE_0002">
+                                    {{mg.getValue(mgc.S5_SALES_MTOC_CODE_0002)}}
+                                </label>
+                            </div>
+                            <div class="col-lg-2 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    COLOR
+                                </label>
+                                <label class="lbl-header-tbl-data" [magic]="mgc.S5_COLOR_CODE">
+                                    {{mg.getValue(mgc.S5_COLOR_CODE)}}
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                            <div class="col-lg-1">
+
+                            </div>
+                            <div class="col-lg-2 border rounded p-2 mr-1 ml-1">
+                                <label class="lbl-header">
+                                    AE/AF-OFF
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.S5_AFOFF_DATE">
+                                    {{mg.getValue(mgc.S5_AFOFF_DATE)
+                                    | magicDate : mgc.S5_AFOFF_DATE}}
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.S5_AFOFF_TIME">
+                                    {{mg.getValue(mgc.S5_AFOFF_TIME)
+                                    | magicTime : mgc.S5_AFOFF_TIME}}
+                                </label>
+                            </div>
+                            <div class="col-lg-2 border rounded p-2 mr-1 ml-1">
+                                <label class="lbl-header">
+                                    VQ-ON
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.S5_VQON_DATE_0001">
+                                    {{mg.getValue(mgc.S5_VQON_DATE_0001)
+                                    | magicDate : mgc.S5_VQON_DATE_0001}}
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.S5_VQON_TIME_0001">
+                                    {{mg.getValue(mgc.S5_VQON_TIME_0001)
+                                    | magicTime : mgc.S5_VQON_TIME_0001}}
+                                </label>
+                            </div>
+                            <div class="col-lg-2 border rounded p-2 mr-1 ml-1">
+                                <label class="lbl-header">
+                                    VQ-OFF
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.S5_VQOFF_DATE_0001">
+                                    {{mg.getValue(mgc.S5_VQOFF_DATE_0001)
+                                    | magicDate : mgc.S5_VQOFF_DATE_0001}}
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.S5_VQON_TIME_0002">
+                                    {{mg.getValue(mgc.S5_VQON_TIME_0002)
+                                    | magicTime : mgc.S5_VQON_TIME_0002}}
+                                </label>
+                            </div>
+                            <div class="col-lg-2 border rounded p-2 mr-1 ml-1">
+                                <label class="lbl-header">
+                                    PDI-OFF
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.S5_RE_VQ_DATE_0001">
+                                    {{mg.getValue(mgc.S5_RE_VQ_DATE_0001)
+                                    | magicDate : mgc.S5_RE_VQ_DATE_0001}}
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.S5_RE_VQ_TIME_0001">
+                                    {{mg.getValue(mgc.S5_RE_VQ_TIME_0001)
+                                    | magicTime : mgc.S5_RE_VQ_TIME_0001}}
+                                </label>
+                            </div>
+                            <div class="col-lg-2 border rounded p-2 mr-1 ml-1">
+                                <label class="lbl-header">
+                                    LOGICSTICS IN
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.S5_AFOFF_DATE1">
+                                    {{mg.getValue(mgc.S5_AFOFF_DATE1)
+                                    | magicDate : mgc.S5_AFOFF_DATE1}}
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.S5_AFOFF_TIME1">
+                                    {{mg.getValue(mgc.S5_AFOFF_TIME1)
+                                    | magicTime : mgc.S5_AFOFF_TIME1}}
+                                </label>
+                            </div>
+                            <div class="col-lg-1">
+
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <hr class="border-danger w-100">
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-lg-2">
+                                <label>
+                                    .
+                                </label>
+                                <label class="lbl-header">
+                                    SC QTY
+                                </label>
+                                <label class="lbl-header">
+                                    MC QTY
+                                </label>
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="lbl-header">
+                                    AE/AF-OFF
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.AE_COUNT_SC">
+                                    {{mg.getValue(mgc.AE_COUNT_SC) }}
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.AE_COUNT_MC">
+                                    {{mg.getValue(mgc.AE_COUNT_MC) }}
+                                </label>
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="lbl-header">
+                                    PDI-OFF
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.PDI_COUNT_SC">
+                                    {{mg.getValue(mgc.PDI_COUNT_SC) }}
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.PDI_COUNT_MC">
+                                    {{mg.getValue(mgc.PDI_COUNT_MC) }}
+                                </label>
+                                <label class="lbl-header-text">
+                                </label>
+                                <label class="lbl-header">
+                                    TOTAL SC+MC
+                                </label>
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="lbl-header">
+                                    LOGICSTICS IN
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.SI_COUNT_SC">
+                                    {{mg.getValue(mgc.SI_COUNT_SC) }}
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.SI_COUNT_MC">
+                                    {{mg.getValue(mgc.SI_COUNT_MC) }}
+                                </label>
+                                <label class="lbl-header-text">
+
+                                </label>
+                                <label class="lbl-header-text" [magic]="mgc.SI_COUNT_SC_MC">
+                                    {{mg.getValue(mgc.SI_COUNT_SC_MC) }}
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-lg-3">
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>FRAME NO </label>
+                                    <input class="form-control-ent" [formControlName]="mgc.CHASSIS_NOFrame"
+                                        [magic]="mgc.CHASSIS_NOFrame" mgFormat />
+                                    <mgError [magic]=mgc.CHASSIS_NOFrame> </mgError>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

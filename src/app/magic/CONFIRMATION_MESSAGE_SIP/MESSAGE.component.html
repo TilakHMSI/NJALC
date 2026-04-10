@@ -1,0 +1,42 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.MESSAGE"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                Message
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                Scanned successfully!!!
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                FRAME NO -
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_VFrame"
+                    [magic]="mgc.V_VFrame"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_VFrame> </mgError>
+            </div>
+        </div>
+    </div>
+</div>

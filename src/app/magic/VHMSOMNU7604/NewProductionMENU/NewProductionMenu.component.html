@@ -1,0 +1,133 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.NewProductionMenu"
+    >
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.VFRAME_HOLD_UTILITY"
+                [style.visibility]="mg.getVisible(mgc.VFRAME_HOLD_UTILITY)"
+            >
+                {{mg.getValue(mgc.VFRAME_HOLD_UTILITY)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.VFRAMEENGINE">
+                {{mg.getValue(mgc.VFRAMEENGINE)}}
+            </button>
+            <button
+                [magic]="mgc.VHOLD_FRAME_REPORT"
+                [style.visibility]="mg.getVisible(mgc.VHOLD_FRAME_REPORT)"
+            >
+                {{mg.getValue(mgc.VHOLD_FRAME_REPORT)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.v_Mapping_Master"
+                [style.visibility]="mg.getVisible(mgc.v_Mapping_Master)"
+            >
+                {{mg.getValue(mgc.v_Mapping_Master)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.VSHIFTPDI">
+                {{mg.getValue(mgc.VSHIFTPDI)}}
+            </button>
+            <button [magic]="mgc.v_CKD_CaseOffPackingStatus">
+                {{mg.getValue(mgc.v_CKD_CaseOffPackingStatus)}}
+            </button>
+            <button
+                [magic]="mgc.Card_RePrintNew"
+                [style.visibility]="mg.getVisible(mgc.Card_RePrintNew)"
+            >
+                {{mg.getValue(mgc.Card_RePrintNew)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.VAFUNITEUTIL"
+                [style.visibility]="mg.getVisible(mgc.VAFUNITEUTIL)"
+            >
+                {{mg.getValue(mgc.VAFUNITEUTIL)}}
+            </button>
+            <button [magic]="mgc.BNew_Card_Print">
+                {{mg.getValue(mgc.BNew_Card_Print)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.vAEAFSHIFT">
+                {{mg.getValue(mgc.vAEAFSHIFT)}}
+            </button>
+            <button [magic]="mgc.B_AEOFF_REPORT">
+                {{mg.getValue(mgc.B_AEOFF_REPORT)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.vAEHOURMST"
+                [style.visibility]="mg.getVisible(mgc.vAEHOURMST)"
+            >
+                {{mg.getValue(mgc.vAEHOURMST)}}
+            </button>
+            <button
+                [magic]="mgc.VAF_Target"
+                [disabled]="mg.isDisabled(mgc.VAF_Target )"
+            >
+                {{mg.getValue(mgc.VAF_Target)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.vAFHOURMST"
+                [style.visibility]="mg.getVisible(mgc.vAFHOURMST)"
+            >
+                {{mg.getValue(mgc.vAFHOURMST)}}
+            </button>
+            <button
+                [magic]="mgc.VAF_ShiftTime"
+                [disabled]="mg.isDisabled(mgc.VAF_ShiftTime )"
+            >
+                {{mg.getValue(mgc.VAF_ShiftTime)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.vPRODSEQPLAN"
+                [style.visibility]="mg.getVisible(mgc.vPRODSEQPLAN)"
+            >
+                {{mg.getValue(mgc.vPRODSEQPLAN)}}
+            </button>
+            <button
+                [magic]="mgc.VAE_Target"
+                [disabled]="mg.isDisabled(mgc.VAE_Target )"
+            >
+                {{mg.getValue(mgc.VAE_Target)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.VAE_ShiftTime"
+                [disabled]="mg.isDisabled(mgc.VAE_ShiftTime )"
+            >
+                {{mg.getValue(mgc.VAE_ShiftTime)}}
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.VDISPLAY_BOARD_MONITOR"
+                [style.visibility]="mg.getVisible(mgc.VDISPLAY_BOARD_MONITOR)"
+            >
+                {{mg.getValue(mgc.VDISPLAY_BOARD_MONITOR)}}
+            </button>
+        </div>
+    </div>
+</div>
