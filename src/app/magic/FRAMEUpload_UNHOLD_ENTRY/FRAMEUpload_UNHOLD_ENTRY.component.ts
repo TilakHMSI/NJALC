@@ -31,7 +31,7 @@ export class FRAMEUpload_UNHOLD_ENTRY extends TaskBaseMagicComponent implements 
     private static readonly width: string = "1050px";
     private static readonly height: string = "800px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
