@@ -57,6 +57,7 @@ export enum MgControlName {
         Label55 = "Label55",
         CHASSIS_NOFrame = "CHASSIS_NOFrame",
         Label47 = "Label47",
+        LastScanned = "LastScanned",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

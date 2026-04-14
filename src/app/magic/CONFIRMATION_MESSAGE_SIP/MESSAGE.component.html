@@ -1,41 +1,46 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.MESSAGE"
-    >
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.MESSAGE">
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label2" class="lable_overflow">
                 Message
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label5"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label5" class="lable_overflow">
                 Scanned successfully!!!
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label12"
-                class="lable_overflow"
-            >
+            <label [magic]="mgc.Label12" class="lable_overflow">
                 FRAME NO -
             </label>
             <div>
-                <input
-                    [formControlName]="mgc.V_VFrame"
-                    [magic]="mgc.V_VFrame"
-                    mgFormat
-                />
+                <input [formControlName]="mgc.V_VFrame" [magic]="mgc.V_VFrame" mgFormat />
                 <mgError [magic]=mgc.V_VFrame> </mgError>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex justify-content-center align-items-center" [magic]="mgc.MESSAGE">
+        <div class="message-box text-center p-3">
+            <!-- Top title -->
+            <div class="message-title mb-2">Message</div>
+
+            <!-- Status line -->
+            <div class="status-box mx-auto py-2 px-3">
+               <label class="lbl_Status" [magic]="mgc.Label5"
+                    class="lable_overflow">
+                    Scanned successfully!!!
+                </label>
+            </div>
+
+            <!-- Engine and Frame row -->
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <span class="engine-label me-2">FRAME NO -</span>
+              <span class="engine-no text-primary">{{mg.getValue(mgc.V_VFrame) }}</span> 
             </div>
         </div>
     </div>
