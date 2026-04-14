@@ -30,7 +30,7 @@ export class REPAIR_OUT_ENTRY extends TaskBaseMagicComponent implements MagicMod
     private static readonly width: string = "1050px";
     private static readonly height: string = "800px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {

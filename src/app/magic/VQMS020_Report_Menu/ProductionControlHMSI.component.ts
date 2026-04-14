@@ -30,7 +30,7 @@ export class ProductionControlHMSI extends TaskBaseMagicComponent implements Mag
     private static readonly width: string = "1200px";
     private static readonly height: string = "700px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
