@@ -1,0 +1,111 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.MissingNumbers"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PGM=VHMSO7613
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicDate : mgc.Edit2}}
+            </label>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicTime : mgc.Edit3}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label11"
+                class="lable_overflow"
+            >
+                Reprot Path :
+            </label>
+            <div
+                [magic]="mgc.VGenerate"
+                (change)="task.mgOnRadioSelectionChanged(mgc.VGenerate)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.VGenerate);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.VGenerate"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                Date From :
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.VDateFrom"
+                [magic]="mgc.VDateFrom"
+                dateInput
+            />
+            <label [magic]="mgc.Edit10">
+                {{mg.getValue(mgc.Edit10) }}
+            </label>
+            <div
+                [magic]="mgc.V_Operation"
+                (change)="task.mgOnRadioSelectionChanged(mgc.V_Operation)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_Operation);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.V_Operation"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                Date To :
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.VDateTo"
+                [magic]="mgc.VDateTo"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.EXEC_BUTTON">
+                {{mg.getValue(mgc.EXEC_BUTTON)}}
+            </button>
+            <button [magic]="mgc.CancelCtl">
+                {{mg.getValue(mgc.CancelCtl)}}
+            </button>
+        </div>
+    </div>
+</div>

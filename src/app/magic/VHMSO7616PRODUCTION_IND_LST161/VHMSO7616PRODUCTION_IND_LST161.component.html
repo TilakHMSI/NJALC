@@ -1,0 +1,78 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.VHMSO7616PRODUCTION_IND_LST161"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                MTO CODE
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.MTO_CODE"
+                    [magic]="mgc.MTO_CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.MTO_CODE> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.MTO_CODE"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                PLAN DATE
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.V_DATE"
+                [magic]="mgc.V_DATE"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.V_RADIO"
+                (change)="task.mgOnRadioSelectionChanged(mgc.V_RADIO)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_RADIO);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.V_RADIO"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_FILE_NAME"
+                    [magic]="mgc.V_FILE_NAME"
+                    [style.visibility]="mg.getVisible(mgc.V_FILE_NAME)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_FILE_NAME> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.V_BUTTON">
+                Proceed
+            </button>
+        </div>
+    </div>
+</div>

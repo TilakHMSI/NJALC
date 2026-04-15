@@ -1,0 +1,289 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"MissingNumbers",
+		"window_type":	12,
+		"component_path":	"VHMSO7613MISSING_ENG_FRM160/",
+		"module_name":	"",
+		"component_uniquename":	"VHMSO7613MISSING_ENG_FRM160_MissingNumbers"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	290,
+		"height":	265
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VHMSO7613",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	215,
+				"y":	0,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	184,
+				"y":	16,
+				"width":	54,
+				"height":	11
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	240,
+				"y":	16,
+				"width":	45,
+				"height":	11
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	37,
+				"width":	274,
+				"height":	187
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	176,
+				"width":	255,
+				"height":	41
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"text":	"Reprot Path :",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	25,
+				"y":	189,
+				"width":	70,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VGenerate",
+				"items_list":	"Screen/Preview,CSV/Export",
+				"attribute":	"A",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	28,
+				"y":	60,
+				"width":	91,
+				"height":	47
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"Date From :",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	31,
+				"y":	135,
+				"width":	60,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VDateFrom",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	93,
+				"y":	133,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit10",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	100,
+				"y":	187,
+				"width":	159,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Operation",
+				"items_list":	"AE/OFF,AF/OFF,PDI/OFF,UnUnited",
+				"attribute":	"A",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	136,
+				"y":	60,
+				"width":	138,
+				"height":	47
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"Date To :",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	150,
+				"y":	135,
+				"width":	50,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VDateTo",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line37"
+			},
+			"coordinates":	{
+				"x":	204,
+				"y":	133,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"EXEC_BUTTON",
+				"attribute":	"A",
+				"common_line_id":	"line234"
+			},
+			"coordinates":	{
+				"x":	145,
+				"y":	234,
+				"width":	66,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CancelCtl",
+				"attribute":	"A",
+				"common_line_id":	"line234"
+			},
+			"coordinates":	{
+				"x":	214,
+				"y":	234,
+				"width":	66,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}
