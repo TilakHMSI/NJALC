@@ -23,6 +23,12 @@
     font-size: 1.3rem;
     width: 100%;
 }
+.lbl-header-data {
+    text-align: center;
+    width: 100%;
+    background-color: #90f39c;
+}
+
 
 hr{
     border:2! important;
