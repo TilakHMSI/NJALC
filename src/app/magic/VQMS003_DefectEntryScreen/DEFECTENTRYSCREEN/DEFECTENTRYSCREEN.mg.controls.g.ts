@@ -22,6 +22,8 @@ export enum MgControlName {
         SaveRowEditing = "SaveRowEditing",
         CancelRowEditing = "CancelRowEditing",
         b_save = "b_save",
+        vDEFECTCODE = "vDEFECTCODE",
+        btnDelete = "btnDelete",
 }
 export enum MgCustomProperties {}
 export var

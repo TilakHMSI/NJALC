@@ -1,17 +1,51 @@
 <div novalidate [formGroup]="screenFormGroup">
     <div [magic]="mgc.DEFECTENTRYSCREEN">
-        <div
+        <!-- <div
             class="container-fluid d-flex align-items-center justify-content-sm-between justify-content-center flex-wrap flex-sm-nowrap">
             <div class="d-flex align-items-center flex-wrap mr-1">
                 <div class="d-flex align-items-center ser-bt1">
-                    <button type="button" class="btn btn-sm btn-success mb-2 mr-4" [magic]="mgc.btnAdd"
+                     <button type="button" class="btn btn-sm btn-success mb-2 mr-4" [magic]="mgc.btnAdd"
                         *ngIf="mg.getVisible(mgc.btnAdd)==='visible'">
                         <i class="flaticon-app mr-2"></i>Add
-                    </button>
+                    </button> 
                     <button class="btn btn-sm btn-success mb-2" [magic]="mgc.b_save">
                         <i class="flaticon-app mr-2"></i>{{mg.getValue(mgc.b_save)}}
                     </button>
                 </div>
+            </div>
+        </div> -->
+        <div class="col-lg-12">
+            <div class="form-group row">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label>SELECT DEFECT CODE</label>
+                        <div class="input-group">
+                            <input type="text" [formControlName]="mgc.vDEFECTCODE" [magic]="mgc.vDEFECTCODE" class="form-control"
+                                placeholder="SELECT DEFECT CODE" mgFormat />
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-loanlist btn-icon" [magic]="mgc.vDEFECTCODE">
+                                    <span class="svg-icon svg-icon-lg"><svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                            viewBox="0 0 24 24" version="1.1">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <rect x="0" y="0" width="24" height="24" />
+                                                <path
+                                                    d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                    fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                <path
+                                                    d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                    fill="#000000" opacity="0.3" />
+                                            </g>
+                                        </svg></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3">
+                    <button class="btn btn-sm btn-success mb-2" [magic]="mgc.b_save">
+                        <i class="flaticon-app mr-2"></i>{{mg.getValue(mgc.b_save)}}
+                    </button>
+                </div> -->
             </div>
         </div>
         <div class="m-tablewrapper pl-0 pr-0">
@@ -134,6 +168,12 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.CancelRowEditing"
                                     [rowId]="row.rowId">
+                                    <i class="icon-xl fas fa-eraser text-danger" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <button class="btn-tbl" [magic]="mgc.btnDelete"
+                                   [style.visibility]="mg.getVisible(mgc.btnDelete, row.rowId)" [rowId]="row.rowId">
                                     <i class="icon-xl fas fa-eraser text-danger" aria-hidden="true"></i>
                                 </button>
                             </div>
