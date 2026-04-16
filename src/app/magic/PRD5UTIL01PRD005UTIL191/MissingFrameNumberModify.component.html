@@ -1,0 +1,64 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.MissingFrameNumberModify"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                {{mg.getText(mgc.Label1)}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicDate : mgc.Edit2}}
+            </label>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicTime : mgc.Edit3}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                DATE FROM
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.VFrom_Date"
+                [magic]="mgc.VFrom_Date"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                DATE TO
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.VTo_Date"
+                [magic]="mgc.VTo_Date"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.VOkButton">
+                {{mg.getValue(mgc.VOkButton)}}
+            </button>
+            <button [magic]="mgc.btn_Exit">
+                Exit
+            </button>
+        </div>
+    </div>
+</div>

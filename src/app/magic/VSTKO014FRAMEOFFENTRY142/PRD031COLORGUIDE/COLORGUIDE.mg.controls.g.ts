@@ -1,0 +1,35 @@
+import {
+    FormControl,
+    FormGroup
+} from "@angular/forms";
+import {
+    MagicServices
+} from "@magic-xpa/angular";
+export enum MgControlName {
+    COLORGUIDE = "COLORGUIDE",
+        Table1 = "Table1",
+        Column2 = "Column2",
+        V_COL_CD = "V_COL_CD",
+        V_COLI_CD = "V_COLI_CD",
+}
+export enum MgCustomProperties {}
+export var
+    MgDisplayedColumns = [
+        'Column2',
+    ];
+
+export class MgFormControlsAccessor {
+    constructor(private fg: FormGroup, private magicServices: MagicServices) {}
+
+    get V_COL_CD(): FormControl {
+        return this.getTableChildFormControl(MgControlName.V_COL_CD);
+    }
+
+    get V_COLI_CD(): FormControl {
+        return this.getTableChildFormControl(MgControlName.V_COLI_CD);
+    }
+
+    getTableChildFormControl(name: MgControlName): FormControl {
+        return this.magicServices.mgAccessorService.getFormGroupByRow(this.magicServices.tableService.getSelectedRow()).controls[name] as FormControl;
+    }
+}

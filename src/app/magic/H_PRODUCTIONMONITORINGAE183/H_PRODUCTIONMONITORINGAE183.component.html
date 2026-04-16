@@ -1,0 +1,67 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.H_PRODUCTIONMONITORINGAE183"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                <<<
+                    HOURLY
+                    PRODUCTION
+                    MONITORING
+                    AE
+                >>>
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                DATE:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.v_Date"
+                [magic]="mgc.v_Date"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                PRODUCTION LINE:
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.v_ProdLine"
+                    [formControlName]="mgc.v_ProdLine"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_ProdLine);"
+                        [selected]="o.index == mg.getValue(mgc.v_ProdLine)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Exec">
+                E\XEC
+            </button>
+            <button [magic]="mgc.v_Exit">
+                E\XIT
+            </button>
+        </div>
+    </div>
+</div>

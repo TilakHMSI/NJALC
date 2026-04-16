@@ -1,0 +1,89 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.FrameEngineResult"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                VHMSO7679
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+            </label>
+            <button [magic]="mgc.OK_V">
+                {{mg.getValue(mgc.OK_V)}}
+            </button>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                Date Range
+            </label>
+            <div
+                [magic]="mgc.VCHOICE"
+                (change)="task.mgOnRadioSelectionChanged(mgc.VCHOICE)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.VCHOICE);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.VCHOICE"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                FROM
+            </label>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                TO
+            </label>
+            <button [magic]="mgc.CancelCtl">
+                {{mg.getValue(mgc.CancelCtl)}}
+            </button>
+            <input
+                type="date"
+                [formControlName]="mgc.DATE_V_FROM"
+                [magic]="mgc.DATE_V_FROM"
+                dateInput
+            />
+            <input
+                type="date"
+                [formControlName]="mgc.DATE_V_TO"
+                [magic]="mgc.DATE_V_TO"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                C:\MAGIC\TEMP\EFQUERY.CSV
+            </label>
+        </div>
+    </div>
+</div>

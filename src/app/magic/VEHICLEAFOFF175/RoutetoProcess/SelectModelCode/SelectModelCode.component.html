@@ -1,0 +1,21 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.SelectModelCode"
+    >
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.OK">
+                OK
+            </button>
+            <button [magic]="mgc.Select_All">
+                Select
+            </button>
+            <button [magic]="mgc.DeSelect_All">
+                Deselect
+            </button>
+        </div>
+    </div>
+</div>

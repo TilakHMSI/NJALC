@@ -1,0 +1,365 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VPRDB023_LFACTORYFRAMELIST249",
+		"component_path":	"VPRDB023_LFACTORYFRAMELIST249/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB023_LFACTORYFRAMELIST249_VPRDB023_LFACTORYFRAMELIST249"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	274,
+		"height":	245
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	146,
+				"y":	2,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PGM=VPRDB023",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	169,
+				"y":	2,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	130,
+				"y":	16,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	186,
+				"y":	16,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"Line",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	46,
+				"y":	44,
+				"width":	31,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_plant",
+				"items_list":	{
+					"value":	"Line",
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	109,
+				"y":	44,
+				"width":	113,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Group7",
+				"common_line_id":	"line73"
+			},
+			"coordinates":	{
+				"x":	26,
+				"y":	73,
+				"width":	210,
+				"height":	42
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label9",
+						"text":	"Date",
+						"common_line_id":	"line89"
+					},
+					"coordinates":	{
+						"x":	33,
+						"y":	89,
+						"width":	31,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"vDateRange",
+						"mgformat":	"mgFormat",
+						"format":	"DD/MM/YYYY",
+						"attribute":	"D",
+						"common_line_id":	"line89"
+					},
+					"coordinates":	{
+						"x":	60,
+						"y":	89,
+						"width":	65,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label10",
+						"text":	"Time",
+						"common_line_id":	"line89"
+					},
+					"coordinates":	{
+						"x":	130,
+						"y":	89,
+						"width":	25,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"vTimeRange",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"common_line_id":	"line89"
+					},
+					"coordinates":	{
+						"x":	158,
+						"y":	89,
+						"width":	60,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SELECT_V",
+				"items_list":	"ALL DATA,DATA SELECT",
+				"attribute":	"A",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	29,
+				"y":	123,
+				"width":	79,
+				"height":	46
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DAY_V",
+				"mgformat":	"mgFormat",
+				"format":	"###",
+				"attribute":	"N",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	138,
+				"y":	151,
+				"width":	16,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label14",
+				"text":	"DAYS PASSED",
+				"common_line_id":	"line123"
+			},
+			"coordinates":	{
+				"x":	163,
+				"y":	151,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"EXECBUTTON",
+				"format":	"Exec",
+				"attribute":	"A",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	44,
+				"y":	182,
+				"width":	59,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CANCELBUTTON",
+				"format":	"Exit",
+				"attribute":	"A",
+				"common_line_id":	"line182"
+			},
+			"coordinates":	{
+				"x":	120,
+				"y":	182,
+				"width":	59,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label18",
+				"text":	"EXPORT FILE PATH :",
+				"common_line_id":	"line213"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	213,
+				"width":	99,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label19",
+				"text":	"\"C:\\MAGIC\\TEMP\\FACTORY_STOCK.TXT\"",
+				"common_line_id":	"line213"
+			},
+			"coordinates":	{
+				"x":	108,
+				"y":	210,
+				"width":	166,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label20",
+				"text":	"\"C:\\MAGIC\\TEMP\\FRAME_SUMMARY.TXT\"",
+				"common_line_id":	"line228"
+			},
+			"coordinates":	{
+				"x":	108,
+				"y":	228,
+				"width":	166,
+				"height":	11
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		}
+	]
+}

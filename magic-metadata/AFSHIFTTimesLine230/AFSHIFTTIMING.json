@@ -1,0 +1,126 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"AFSHIFTTIMING",
+		"window_type":	12,
+		"component_path":	"AFSHIFTTimesLine230/",
+		"module_name":	"",
+		"component_uniquename":	"AFSHIFTTimesLine230_AFSHIFTTIMING"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	1010,
+		"height":	296
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"Shift :",
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	264,
+				"y":	26,
+				"width":	55,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	325,
+				"y":	16,
+				"width":	360,
+				"height":	46
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VShift",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UU",
+				"attribute":	"A",
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	325,
+				"y":	26,
+				"width":	104,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"Production Line :",
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	496,
+				"y":	26,
+				"width":	87,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VProd",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XX",
+				"attribute":	"A",
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	589,
+				"y":	26,
+				"width":	85,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line73"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	73,
+				"width":	990,
+				"height":	211
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

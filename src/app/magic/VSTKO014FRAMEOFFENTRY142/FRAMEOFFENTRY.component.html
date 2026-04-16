@@ -1,0 +1,393 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.FRAMEOFFENTRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE"
+                    [magic]="mgc.V_LOCATE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_PGID"
+                    [magic]="mgc.V_PGID"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_PGID> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicDate : mgc.Edit4}}
+            </label>
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5)
+| magicTime : mgc.Edit5}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.V_DISP_LINE1"
+                (change)="task.mgOnRadioSelectionChanged(mgc.V_DISP_LINE1)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_DISP_LINE1);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.V_DISP_LINE1"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <div
+                [magic]="mgc.EXEC_TYPE_VINQ"
+                (change)="task.mgOnRadioSelectionChanged(mgc.EXEC_TYPE_VINQ)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.EXEC_TYPE_VINQ);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.EXEC_TYPE_VINQ"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                FROM
+            </label>
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                MODEL
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.DATE_FROM_VINQ"
+                [magic]="mgc.DATE_FROM_VINQ"
+                dateInput
+            />
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.MTO_CODE_VINQ"
+                    [magic]="mgc.MTO_CODE_VINQ"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.MTO_CODE_VINQ> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.MTO_CODE_VINQ"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                TO
+            </label>
+            <label
+                [magic]="mgc.Label14"
+                class="lable_overflow"
+            >
+                COLOR
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.DATE_TO_VINQ"
+                [magic]="mgc.DATE_TO_VINQ"
+                dateInput
+            />
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.COLOR_CODE_VINQ"
+                    [magic]="mgc.COLOR_CODE_VINQ"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.COLOR_CODE_VINQ> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.COLOR_CODE_VINQ"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.COLOR_CODEINSIDE_VINQ"
+                    [magic]="mgc.COLOR_CODEINSIDE_VINQ"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.COLOR_CODEINSIDE_VINQ> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.V_DISP_LINE2"
+                (change)="task.mgOnRadioSelectionChanged(mgc.V_DISP_LINE2)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_DISP_LINE2);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.V_DISP_LINE2"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.V_DISP_LINE3"
+                (change)="task.mgOnRadioSelectionChanged(mgc.V_DISP_LINE3)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_DISP_LINE3);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.V_DISP_LINE3"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label17"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <div
+                [magic]="mgc.EXEC_MODE_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.EXEC_MODE_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.EXEC_MODE_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.EXEC_MODE_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label20"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label21"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label32"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label39"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label19"
+                class="lable_overflow"
+            >
+                LAST OFF REFRECTED DATE
+            </label>
+            <label
+                [magic]="mgc.Label27"
+                class="lable_overflow"
+            >
+                DATE
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.ENTRY_DATE_VADD"
+                [magic]="mgc.ENTRY_DATE_VADD"
+                dateInput
+            />
+            <label
+                [magic]="mgc.Label22"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label28"
+                class="lable_overflow"
+            >
+                MODEL CODE
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.MTO_CODE_VADD"
+                    [magic]="mgc.MTO_CODE_VADD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.MTO_CODE_VADD> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.MTO_CODE_VADD"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label23"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label29"
+                class="lable_overflow"
+            >
+                COLOR
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.COLOR_CODE_VADD"
+                    [magic]="mgc.COLOR_CODE_VADD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.COLOR_CODE_VADD> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.COLOR_CODE_VADD"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.COLOR_CODEINSIDE_VADD"
+                    [magic]="mgc.COLOR_CODEINSIDE_VADD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.COLOR_CODEINSIDE_VADD> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.COLOR_CODEINSIDE_VADD"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label24"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label30"
+                class="lable_overflow"
+            >
+                FRAME QTY.
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.FRAME_QTY_VADD"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.FRAME_QTY_VADD))"
+                    [magic]="mgc.FRAME_QTY_VADD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.FRAME_QTY_VADD> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label25"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label31"
+                class="lable_overflow"
+            >
+                MODEL NAME
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD001_S1_MTO_NAME"
+                    [magic]="mgc.PRD001_S1_MTO_NAME"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRD001_S1_MTO_NAME> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label26"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+            <label
+                [magic]="mgc.Label18"
+                class="lable_overflow"
+            >
+                **UnSupported Control**
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.V_DISP_LINE4"
+                (change)="task.mgOnRadioSelectionChanged(mgc.V_DISP_LINE4)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_DISP_LINE4);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.V_DISP_LINE4"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.DateMTOADD">
+            </magic-subform>
+        </div>
+    </div>
+</div>

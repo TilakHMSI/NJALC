@@ -1,0 +1,209 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"FrameEngineResult",
+		"window_type":	12,
+		"component_path":	"VHMSO7679FRAME_ENGINE168/",
+		"module_name":	"",
+		"component_uniquename":	"VHMSO7679FRAME_ENGINE168_FrameEngineResult"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	363,
+		"height":	204
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"VHMSO7679",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	288,
+				"y":	2,
+				"width":	72,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	50,
+				"y":	20,
+				"width":	263,
+				"height":	141
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	57,
+				"y":	27,
+				"width":	251,
+				"height":	128
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"OK_V",
+				"attribute":	"A",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	72,
+				"y":	117,
+				"width":	97,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"Date Range",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	79,
+				"y":	38,
+				"width":	80,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"FROM",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	131,
+				"y":	57,
+				"width":	35,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"TO",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	131,
+				"y":	81,
+				"width":	21,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CancelCtl",
+				"attribute":	"A",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	184,
+				"y":	117,
+				"width":	97,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DATE_V_FROM",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	186,
+				"y":	56,
+				"width":	83,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DATE_V_TO",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	186,
+				"y":	80,
+				"width":	83,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"C:\\MAGIC\\TEMP\\EFQUERY.CSV",
+				"common_line_id":	"line174"
+			},
+			"coordinates":	{
+				"x":	65,
+				"y":	174,
+				"width":	233,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		}
+	]
+}

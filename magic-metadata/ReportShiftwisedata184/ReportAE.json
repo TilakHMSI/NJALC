@@ -1,0 +1,162 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"ReportAE",
+		"window_type":	12,
+		"component_path":	"ReportShiftwisedata184/",
+		"module_name":	"",
+		"component_uniquename":	"ReportShiftwisedata184_ReportAE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	283,
+		"height":	167
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Group1",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	7,
+				"width":	251,
+				"height":	104
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label2",
+						"text":	"Date From",
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	55,
+						"y":	23,
+						"width":	54,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Date_From",
+						"mgformat":	"mgFormat",
+						"format":	"DD-MM-YYYY",
+						"attribute":	"D",
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	130,
+						"y":	23,
+						"width":	79,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label4",
+						"text":	"Date To",
+						"common_line_id":	"line55"
+					},
+					"coordinates":	{
+						"x":	55,
+						"y":	55,
+						"width":	48,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Date_To",
+						"mgformat":	"mgFormat",
+						"format":	"DD-MM-YYYY",
+						"attribute":	"D",
+						"common_line_id":	"line55"
+					},
+					"coordinates":	{
+						"x":	130,
+						"y":	55,
+						"width":	79,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label6",
+						"text":	"C:\\Magic\\Temp\\prod_report.txt",
+						"common_line_id":	"line78"
+					},
+					"coordinates":	{
+						"x":	51,
+						"y":	78,
+						"width":	170,
+						"height":	15
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"B_OK",
+				"format":	"OK",
+				"attribute":	"A",
+				"common_line_id":	"line125"
+			},
+			"coordinates":	{
+				"x":	163,
+				"y":	125,
+				"width":	46,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"B_Exit",
+				"format":	"Exit",
+				"attribute":	"A",
+				"common_line_id":	"line125"
+			},
+			"coordinates":	{
+				"x":	218,
+				"y":	125,
+				"width":	46,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

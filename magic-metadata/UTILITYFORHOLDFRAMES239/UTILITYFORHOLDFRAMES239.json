@@ -1,0 +1,426 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"UTILITYFORHOLDFRAMES239",
+		"window_type":	12,
+		"component_path":	"UTILITYFORHOLDFRAMES239/",
+		"module_name":	"",
+		"component_uniquename":	"UTILITYFORHOLDFRAMES239_UTILITYFORHOLDFRAMES239"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	814,
+		"height":	557
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Date",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	657,
+				"y":	2,
+				"width":	79,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Time",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"attribute":	"T",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	741,
+				"y":	2,
+				"width":	65,
+				"height":	17
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"Hold Utility",
+				"common_line_id":	"line26"
+			},
+			"coordinates":	{
+				"x":	693,
+				"y":	26,
+				"width":	91,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line51"
+			},
+			"coordinates":	{
+				"x":	13,
+				"y":	51,
+				"width":	795,
+				"height":	303
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"common_line_id":	"line368"
+			},
+			"coordinates":	{
+				"x":	13,
+				"y":	368,
+				"width":	787,
+				"height":	54
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"Frame No.",
+				"common_line_id":	"line368"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	373,
+				"width":	289,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_F_no",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line368"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	392,
+				"width":	172,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Ch_no",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"#######",
+				"attribute":	"N",
+				"common_line_id":	"line368"
+			},
+			"coordinates":	{
+				"x":	192,
+				"y":	392,
+				"width":	116,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_MTO_Code",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line368"
+			},
+			"coordinates":	{
+				"x":	314,
+				"y":	392,
+				"width":	172,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"Model Code",
+				"common_line_id":	"line368"
+			},
+			"coordinates":	{
+				"x":	316,
+				"y":	373,
+				"width":	81,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Ind_dat",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line368"
+			},
+			"coordinates":	{
+				"x":	491,
+				"y":	392,
+				"width":	145,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"Indication Date",
+				"common_line_id":	"line368"
+			},
+			"coordinates":	{
+				"x":	492,
+				"y":	373,
+				"width":	109,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PLN_Dat",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line368"
+			},
+			"coordinates":	{
+				"x":	647,
+				"y":	392,
+				"width":	145,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"Plan Date",
+				"common_line_id":	"line368"
+			},
+			"coordinates":	{
+				"x":	649,
+				"y":	373,
+				"width":	84,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Flag",
+				"items_list":	"HOLD,UNHOLD",
+				"attribute":	"A",
+				"common_line_id":	"line440"
+			},
+			"coordinates":	{
+				"x":	17,
+				"y":	440,
+				"width":	105,
+				"height":	87
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Frame_no",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line440"
+			},
+			"coordinates":	{
+				"x":	210,
+				"y":	481,
+				"width":	270,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label15",
+				"text":	"Please Scan Frame Here !",
+				"common_line_id":	"line440"
+			},
+			"coordinates":	{
+				"x":	211,
+				"y":	451,
+				"width":	175,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_Day_Count",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"##########",
+				"attribute":	"N",
+				"common_line_id":	"line440"
+			},
+			"coordinates":	{
+				"x":	532,
+				"y":	481,
+				"width":	76,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label16",
+				"text":	"Day Count",
+				"common_line_id":	"line440"
+			},
+			"coordinates":	{
+				"x":	533,
+				"y":	451,
+				"width":	73,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label17",
+				"text":	"Total Count",
+				"common_line_id":	"line440"
+			},
+			"coordinates":	{
+				"x":	689,
+				"y":	451,
+				"width":	87,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_All_Count",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"##########",
+				"attribute":	"N",
+				"common_line_id":	"line440"
+			},
+			"coordinates":	{
+				"x":	689,
+				"y":	481,
+				"width":	76,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}

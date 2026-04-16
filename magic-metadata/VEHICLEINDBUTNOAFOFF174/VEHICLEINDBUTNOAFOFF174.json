@@ -1,0 +1,216 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VEHICLEINDBUTNOAFOFF174",
+		"window_type":	12,
+		"component_path":	"VEHICLEINDBUTNOAFOFF174/",
+		"module_name":	"",
+		"component_uniquename":	"VEHICLEINDBUTNOAFOFF174_VEHICLEINDBUTNOAFOFF174"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	459,
+		"height":	366
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"Consider:",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	80,
+				"y":	39,
+				"width":	80,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Radio",
+				"items_list":	"Planned Date,Indication Date",
+				"attribute":	"A",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	160,
+				"y":	13,
+				"width":	205,
+				"height":	62
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"Date From:",
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	73,
+				"y":	91,
+				"width":	88,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_PlanDateFrom",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	160,
+				"y":	91,
+				"width":	93,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"To:",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	128,
+				"y":	117,
+				"width":	33,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_PlanDateTo",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line117"
+			},
+			"coordinates":	{
+				"x":	160,
+				"y":	117,
+				"width":	93,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"Generate:",
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	80,
+				"y":	182,
+				"width":	80,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_GenXLorRep",
+				"items_list":	"Report,XL Sheet",
+				"attribute":	"A",
+				"common_line_id":	"line156"
+			},
+			"coordinates":	{
+				"x":	160,
+				"y":	156,
+				"width":	205,
+				"height":	62
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"Path:",
+				"common_line_id":	"line247"
+			},
+			"coordinates":	{
+				"x":	31,
+				"y":	247,
+				"width":	48,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Path",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line247"
+			},
+			"coordinates":	{
+				"x":	81,
+				"y":	247,
+				"width":	345,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Generate",
+				"format":	"Generate Report",
+				"attribute":	"A",
+				"common_line_id":	"line312"
+			},
+			"coordinates":	{
+				"x":	151,
+				"y":	312,
+				"width":	155,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

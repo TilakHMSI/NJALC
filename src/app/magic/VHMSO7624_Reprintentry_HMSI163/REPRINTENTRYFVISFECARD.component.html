@@ -1,0 +1,132 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.REPRINTENTRYFVISFECARD"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+            </label>
+            <div
+                [magic]="mgc.MODE_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.MODE_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                ENG/FRM TYPE
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.ENGFRMTYPE_V"
+                    [magic]="mgc.ENGFRMTYPE_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.ENGFRMTYPE_V> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.ENGFRMTYPE_V"
+                >...</button>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.CHASSIS_NOFROM_V"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.CHASSIS_NOFROM_V))"
+                    [magic]="mgc.CHASSIS_NOFROM_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.CHASSIS_NOFROM_V> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                FROM
+            </label>
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                -
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.CHASSIS_NOTO_V"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.CHASSIS_NOTO_V))"
+                    [magic]="mgc.CHASSIS_NOTO_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.CHASSIS_NOTO_V> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                TO
+            </label>
+            <label [magic]="mgc.Edit14">
+                {{mg.getValue(mgc.Edit14) }}
+            </label>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                TOTAL
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                PGM=VHMSO7624
+            </label>
+            <label [magic]="mgc.Edit6">
+                {{mg.getValue(mgc.Edit6)
+| magicDate : mgc.Edit6}}
+            </label>
+            <label [magic]="mgc.Edit7">
+                {{mg.getValue(mgc.Edit7)
+| magicTime : mgc.Edit7}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.ConfirmEntry">
+            </magic-subform>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.PRINT_BOTTON_V">
+                {{mg.getValue(mgc.PRINT_BOTTON_V)}}
+            </button>
+            <button [magic]="mgc.DEL">
+                {{mg.getValue(mgc.DEL)}}
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,154 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.VPRDB023_LFACTORYFRAMELIST249"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.LOCATE_P"
+                    [magic]="mgc.LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VPRDB023
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                Line
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.v_plant"
+                    [formControlName]="mgc.v_plant"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_plant);"
+                        [selected]="o.index == mg.getValue(mgc.v_plant)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group7"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label9"
+                        class="lable_overflow"
+                    >
+                        Date
+                    </label>
+                    <input
+                        type="date"
+                        [formControlName]="mgc.vDateRange"
+                        [magic]="mgc.vDateRange"
+                        dateInput
+                    />
+                    <label
+                        [magic]="mgc.Label10"
+                        class="lable_overflow"
+                    >
+                        Time
+                    </label>
+                    <input
+                        type="time"
+                        [formControlName]="mgc.vTimeRange"
+                        [magic]="mgc.vTimeRange"
+                        step=1
+                    />
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.SELECT_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.SELECT_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.SELECT_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.SELECT_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.DAY_V"
+                    type='number'
+                    [magic]="mgc.DAY_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.DAY_V> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label14"
+                class="lable_overflow"
+            >
+                DAYS PASSED
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.EXECBUTTON">
+                Exec
+            </button>
+            <button [magic]="mgc.CANCELBUTTON">
+                Exit
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label18"
+                class="lable_overflow"
+            >
+                EXPORT FILE PATH :
+            </label>
+            <label
+                [magic]="mgc.Label19"
+                class="lable_overflow"
+            >
+                "C:\MAGIC\TEMP\FACTORY_STOCK.TXT"
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label20"
+                class="lable_overflow"
+            >
+                "C:\MAGIC\TEMP\FRAME_SUMMARY.TXT"
+            </label>
+        </div>
+    </div>
+</div>

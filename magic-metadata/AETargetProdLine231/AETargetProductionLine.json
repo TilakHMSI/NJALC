@@ -1,0 +1,126 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"AETargetProductionLine",
+		"window_type":	12,
+		"component_path":	"AETargetProdLine231/",
+		"module_name":	"",
+		"component_uniquename":	"AETargetProdLine231_AETargetProductionLine"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	656,
+		"height":	332
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	165,
+				"y":	20,
+				"width":	348,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"Shift :",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	26,
+				"width":	60,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VShift",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UU",
+				"attribute":	"A",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	265,
+				"y":	26,
+				"width":	23,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"Production Line :",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	323,
+				"y":	26,
+				"width":	125,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VProd",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XX",
+				"attribute":	"A",
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	485,
+				"y":	26,
+				"width":	23,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"TargetProdLine",
+				"common_line_id":	"line72"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	72,
+				"width":	643,
+				"height":	250
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

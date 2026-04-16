@@ -1,0 +1,110 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"AESHIFTTIMING",
+		"window_type":	12,
+		"component_path":	"AEShiftTimesLine232/",
+		"module_name":	"",
+		"component_uniquename":	"AEShiftTimesLine232_AESHIFTTIMING"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	547,
+		"height":	232
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"Shift :",
+				"common_line_id":	"line30"
+			},
+			"coordinates":	{
+				"x":	41,
+				"y":	30,
+				"width":	55,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VShift",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UU",
+				"attribute":	"A",
+				"common_line_id":	"line30"
+			},
+			"coordinates":	{
+				"x":	125,
+				"y":	30,
+				"width":	114,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"Production Line :",
+				"common_line_id":	"line30"
+			},
+			"coordinates":	{
+				"x":	306,
+				"y":	30,
+				"width":	79,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"VProd",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XX",
+				"attribute":	"A",
+				"common_line_id":	"line30"
+			},
+			"coordinates":	{
+				"x":	391,
+				"y":	30,
+				"width":	93,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line76"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	76,
+				"width":	522,
+				"height":	146
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

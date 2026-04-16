@@ -1,0 +1,69 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.MAINTAINHRLYPRLDUCTIONAE204"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                MAINTAIN HOURLY PRLDUCTION PLAN MASTER AE
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                PRODUCTION LINE:
+            </label>
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                SHIFT:
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.V_SHIFT"
+                    [formControlName]="mgc.V_SHIFT"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.V_SHIFT);"
+                        [selected]="o.index == mg.getValue(mgc.V_SHIFT)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+            <div>
+                <select
+                    [magic]="mgc.V_PRD_LINE"
+                    [formControlName]="mgc.V_PRD_LINE"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.V_PRD_LINE);"
+                        [selected]="o.index == mg.getValue(mgc.V_PRD_LINE)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.Sub1">
+            </magic-subform>
+        </div>
+    </div>
+</div>

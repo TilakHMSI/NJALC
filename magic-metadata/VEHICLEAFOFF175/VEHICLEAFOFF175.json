@@ -1,0 +1,273 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VEHICLEAFOFF175",
+		"window_type":	12,
+		"component_path":	"VEHICLEAFOFF175/",
+		"module_name":	"",
+		"component_uniquename":	"VEHICLEAFOFF175_VEHICLEAFOFF175"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	569,
+		"height":	410
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	"Click to select models ---\u003e",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	72,
+				"y":	169,
+				"width":	224,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	99,
+				"y":	75,
+				"width":	370,
+				"height":	130
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"Date From:",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	116,
+				"y":	94,
+				"width":	78,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"Prod Line :",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	116,
+				"y":	130,
+				"width":	78,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_DateFrom",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	204,
+				"y":	94,
+				"width":	81,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Prod_Line",
+				"items_list":	{
+					"value":	"Line",
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	204,
+				"y":	130,
+				"width":	160,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"To:",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	309,
+				"y":	94,
+				"width":	28,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_ModeList",
+				"format":	"Model \\List",
+				"attribute":	"A",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	320,
+				"y":	169,
+				"width":	125,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_DateTo",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	338,
+				"y":	94,
+				"width":	81,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"common_line_id":	"line205"
+			},
+			"coordinates":	{
+				"x":	99,
+				"y":	205,
+				"width":	370,
+				"height":	143
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit10",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line205"
+			},
+			"coordinates":	{
+				"x":	108,
+				"y":	289,
+				"width":	358,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"Generate:",
+				"common_line_id":	"line205"
+			},
+			"coordinates":	{
+				"x":	116,
+				"y":	241,
+				"width":	70,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_GenXLorRep",
+				"items_list":	"Report,XL Sheet",
+				"attribute":	"A",
+				"common_line_id":	"line205"
+			},
+			"coordinates":	{
+				"x":	204,
+				"y":	208,
+				"width":	165,
+				"height":	56
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Generate",
+				"format":	"Generate Report",
+				"attribute":	"A",
+				"common_line_id":	"line205"
+			},
+			"coordinates":	{
+				"x":	220,
+				"y":	312,
+				"width":	119,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

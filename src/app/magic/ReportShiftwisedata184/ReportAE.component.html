@@ -1,0 +1,62 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ReportAE"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group1"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label2"
+                        class="lable_overflow"
+                    >
+                        Date From
+                    </label>
+                    <input
+                        type="date"
+                        [formControlName]="mgc.Date_From"
+                        [magic]="mgc.Date_From"
+                        dateInput
+                    />
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label4"
+                        class="lable_overflow"
+                    >
+                        Date To
+                    </label>
+                    <input
+                        type="date"
+                        [formControlName]="mgc.Date_To"
+                        [magic]="mgc.Date_To"
+                        dateInput
+                    />
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label6"
+                        class="lable_overflow"
+                    >
+                        C:\Magic\Temp\prod_report.txt
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.B_OK">
+                OK
+            </button>
+            <button [magic]="mgc.B_Exit">
+                Exit
+            </button>
+        </div>
+    </div>
+</div>

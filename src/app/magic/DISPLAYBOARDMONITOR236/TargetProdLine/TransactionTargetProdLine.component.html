@@ -1,0 +1,74 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.TransactionTargetProdLine"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                TARGET :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_VTarget"
+                    type='number'
+                    [magic]="mgc.V_VTarget"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_VTarget> </mgError>
+            </div>
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                PLAN :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_VPlan"
+                    type='number'
+                    [magic]="mgc.V_VPlan"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_VPlan> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                ACTUAL :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_VActual"
+                    type='number'
+                    [magic]="mgc.V_VActual"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_VActual> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_VMessage"
+                    [magic]="mgc.V_VMessage"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_VMessage> </mgError>
+            </div>
+        </div>
+    </div>
+</div>

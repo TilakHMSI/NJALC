@@ -1,0 +1,142 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"MAINTAINHRLYPRLDUCTIONAF203",
+		"window_type":	12,
+		"component_path":	"MAINTAINHRLYPRLDUCTIONAF203/",
+		"module_name":	"",
+		"component_uniquename":	"MAINTAINHRLYPRLDUCTIONAF203_MAINTAINHRLYPRLDUCTIONAF203"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	790,
+		"height":	561
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"MAINTAIN HOURLY PRLDUCTION PLAN MASTER AF",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	159,
+				"y":	13,
+				"width":	463,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	45,
+				"y":	55,
+				"width":	265,
+				"height":	65
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"PRODUCTION LINE:",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	50,
+				"y":	91,
+				"width":	119,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"SHIFT:",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	120,
+				"y":	65,
+				"width":	49,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_SHIFT",
+				"items_list":	"A SHIFT,B SHIFT",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	67,
+				"width":	105,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PRD_LINE",
+				"items_list":	{
+					"value":	"Line Date",
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	91,
+				"width":	134,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line133"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	133,
+				"width":	751,
+				"height":	395
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

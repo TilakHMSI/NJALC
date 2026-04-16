@@ -1,0 +1,83 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.PLSQLERROR"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                VCSTS005
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_IDERROR_V"
+                    [magic]="mgc.V_IDERROR_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_IDERROR_V> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                ORACLE ERROR CODE :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_O_ERR_CD_P"
+                    type='number'
+                    [magic]="mgc.V_O_ERR_CD_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_O_ERR_CD_P> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                SQL PROGRAM ID :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_O_PG_ID_P"
+                    [magic]="mgc.V_O_PG_ID_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_O_PG_ID_P> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                SQL No. :
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_O_SQL_NO_P"
+                    type='number'
+                    [magic]="mgc.V_O_SQL_NO_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_O_SQL_NO_P> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

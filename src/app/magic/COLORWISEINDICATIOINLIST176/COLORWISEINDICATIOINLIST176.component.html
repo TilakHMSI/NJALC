@@ -1,0 +1,80 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.COLORWISEINDICATIOINLIST176"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                Date From:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.v_DateFrom"
+                [magic]="mgc.v_DateFrom"
+                dateInput
+            />
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                To:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.v_DateTo"
+                [magic]="mgc.v_DateTo"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                Generate:
+            </label>
+            <div
+                [magic]="mgc.v_GenXLorRep"
+                (change)="task.mgOnRadioSelectionChanged(mgc.v_GenXLorRep)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.v_GenXLorRep);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.v_GenXLorRep"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                Path:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.v_Path"
+                    [magic]="mgc.v_Path"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_Path> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Generate">
+                Generate Report
+            </button>
+        </div>
+    </div>
+</div>

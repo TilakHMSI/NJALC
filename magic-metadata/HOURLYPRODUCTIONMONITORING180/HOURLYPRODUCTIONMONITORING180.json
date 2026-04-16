@@ -1,0 +1,147 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"HOURLYPRODUCTIONMONITORING180",
+		"window_type":	12,
+		"component_path":	"HOURLYPRODUCTIONMONITORING180/",
+		"module_name":	"",
+		"component_uniquename":	"HOURLYPRODUCTIONMONITORING180_HOURLYPRODUCTIONMONITORING180"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	790,
+		"height":	554
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"\u003c\u003c\u003c    HOURLY PRODUCTION MONITORING AF    \u003e\u003e\u003e",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	13,
+				"width":	750,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"DATE:",
+				"common_line_id":	"line211"
+			},
+			"coordinates":	{
+				"x":	301,
+				"y":	211,
+				"width":	43,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Date",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line211"
+			},
+			"coordinates":	{
+				"x":	341,
+				"y":	211,
+				"width":	79,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"PRODUCTION LINE:",
+				"common_line_id":	"line234"
+			},
+			"coordinates":	{
+				"x":	225,
+				"y":	236,
+				"width":	119,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_ProdLine",
+				"items_list":	{
+					"value":	"Line",
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line234"
+			},
+			"coordinates":	{
+				"x":	340,
+				"y":	234,
+				"width":	134,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Exec",
+				"format":	"E\\XEC",
+				"attribute":	"A",
+				"common_line_id":	"line309"
+			},
+			"coordinates":	{
+				"x":	268,
+				"y":	309,
+				"width":	79,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Exit",
+				"format":	"E\\XIT",
+				"attribute":	"A",
+				"common_line_id":	"line309"
+			},
+			"coordinates":	{
+				"x":	353,
+				"y":	309,
+				"width":	79,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

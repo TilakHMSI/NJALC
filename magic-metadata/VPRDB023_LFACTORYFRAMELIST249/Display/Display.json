@@ -1,0 +1,88 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Display",
+		"component_path":	"VPRDB023_LFACTORYFRAMELIST249/Display/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB023_LFACTORYFRAMELIST249_Display_Display"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	368,
+		"height":	114
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"FILE PATH :-",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	13,
+				"width":	93,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"\"C:\\MAGIC\\TEMP\\FACTORY_STOCK.TXT\"",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	49,
+				"width":	240,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"\"C:\\MAGIC\\TEMP\\FRAME_SUMMARY.TXT\"",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	55,
+				"y":	80,
+				"width":	240,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_ok",
+				"format":	"OK",
+				"attribute":	"A",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	315,
+				"y":	78,
+				"width":	41,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

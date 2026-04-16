@@ -1,0 +1,102 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.SHIFTWISE_AF_OFF_REPORT_177"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                DATE:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.v_Date"
+                [magic]="mgc.v_Date"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                SHIFT:
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.v_Shift"
+                    [magic]="mgc.v_Shift"
+                    mgFormat
+                    rangevalidator
+                />
+                <mgError [magic]=mgc.v_Shift> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                LINE:
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.v_Plant"
+                    [formControlName]="mgc.v_Plant"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_Plant);"
+                        [selected]="o.index == mg.getValue(mgc.v_Plant)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                REPORT TYPE:
+            </label>
+            <div
+                [magic]="mgc.v_ReportType"
+                (change)="task.mgOnRadioSelectionChanged(mgc.v_ReportType)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.v_ReportType);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.v_ReportType"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                C:\magic\temp\ShiftAf.csv
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Exec">
+                EXEC
+            </button>
+            <button [magic]="mgc.v_Exit">
+                EXIT
+            </button>
+        </div>
+    </div>
+</div>

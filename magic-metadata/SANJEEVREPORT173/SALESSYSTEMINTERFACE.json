@@ -1,0 +1,222 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"SALESSYSTEMINTERFACE",
+		"window_type":	12,
+		"component_path":	"SANJEEVREPORT173/",
+		"module_name":	"",
+		"component_uniquename":	"SANJEEVREPORT173_SALESSYSTEMINTERFACE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	250,
+		"height":	156
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VPRDB050",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	188,
+				"y":	0,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	149,
+				"y":	16,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line16"
+			},
+			"coordinates":	{
+				"x":	205,
+				"y":	16,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"DATE SELECT:",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	28,
+				"y":	55,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"FROM_DATE_V",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	91,
+				"y":	55,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"-",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	151,
+				"y":	55,
+				"width":	8,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"TO_DATE_V",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	160,
+				"y":	55,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"OUTPUT FILENAME:",
+				"common_line_id":	"line81"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	81,
+				"width":	139,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"OUTPUT_FILE_NAME_V",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line98"
+			},
+			"coordinates":	{
+				"x":	13,
+				"y":	98,
+				"width":	225,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"EXECBUTTON",
+				"attribute":	"A",
+				"common_line_id":	"line130"
+			},
+			"coordinates":	{
+				"x":	64,
+				"y":	130,
+				"width":	60,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CANCELBUTTON",
+				"attribute":	"A",
+				"common_line_id":	"line130"
+			},
+			"coordinates":	{
+				"x":	126,
+				"y":	130,
+				"width":	60,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

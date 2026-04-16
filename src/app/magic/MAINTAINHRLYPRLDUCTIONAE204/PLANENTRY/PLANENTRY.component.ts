@@ -1,0 +1,27 @@
+import { Component } from '@angular/core';
+
+import { FormGroup } from "@angular/forms";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./PLANENTRY.mg.controls.g";
+import { MgDisplayedColumns } from "./PLANENTRY.mg.controls.g";
+
+
+import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
+
+
+@Component({
+    selector: 'mga-MAINTAINHRLYPRLDUCTIONAE204_PLANENTRY_PLANENTRY',
+    providers: [...matMagicProviders],
+    standalone: false,
+    templateUrl: './PLANENTRY.component.html'
+})
+export class PLANENTRY extends BaseMatTableMagicComponent {
+
+    mgc = MgControlName;
+    mgcp = MgCustomProperties;
+    mgfc!: MgFormControlsAccessor;
+    mgdp = MgDisplayedColumns;
+    override createFormControlsAccessor(formGroup: FormGroup) {
+        this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
+    }
+    override displayedColumns = this.mgdp;
+}

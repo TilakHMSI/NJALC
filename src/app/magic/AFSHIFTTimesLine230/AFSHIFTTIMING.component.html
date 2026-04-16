@@ -1,0 +1,59 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.AFSHIFTTIMING"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                Shift :
+            </label>
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.VShift"
+                    [magic]="mgc.VShift"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.VShift> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.VShift"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                Production Line :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.VProd"
+                    [magic]="mgc.VProd"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.VProd> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.VProd"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.Sub1">
+            </magic-subform>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,181 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"COLORWISEINDICATIOINLIST176",
+		"window_type":	12,
+		"component_path":	"COLORWISEINDICATIOINLIST176/",
+		"module_name":	"",
+		"component_uniquename":	"COLORWISEINDICATIOINLIST176_COLORWISEINDICATIOINLIST176"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	355,
+		"height":	180
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"Date From:",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	31,
+				"y":	13,
+				"width":	68,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_DateFrom",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	99,
+				"y":	13,
+				"width":	90,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"To:",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	206,
+				"y":	13,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_DateTo",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	235,
+				"y":	13,
+				"width":	90,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"Generate:",
+				"common_line_id":	"line39"
+			},
+			"coordinates":	{
+				"x":	105,
+				"y":	57,
+				"width":	62,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_GenXLorRep",
+				"items_list":	"Report,XL Sheet",
+				"attribute":	"A",
+				"common_line_id":	"line39"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	39,
+				"width":	81,
+				"height":	50
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"Path:",
+				"common_line_id":	"line104"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	104,
+				"width":	36,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Path",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line104"
+			},
+			"coordinates":	{
+				"x":	50,
+				"y":	104,
+				"width":	295,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Generate",
+				"format":	"Generate Report",
+				"attribute":	"A",
+				"common_line_id":	"line143"
+			},
+			"coordinates":	{
+				"x":	111,
+				"y":	143,
+				"width":	133,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

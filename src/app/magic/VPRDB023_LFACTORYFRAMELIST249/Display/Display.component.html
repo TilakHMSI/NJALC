@@ -1,0 +1,37 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.Display"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                FILE PATH :-
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                "C:\MAGIC\TEMP\FACTORY_STOCK.TXT"
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                "C:\MAGIC\TEMP\FRAME_SUMMARY.TXT"
+            </label>
+            <button [magic]="mgc.v_ok">
+                OK
+            </button>
+        </div>
+    </div>
+</div>

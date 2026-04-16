@@ -1,0 +1,432 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CONFIRM",
+		"window_type":	12,
+		"component_path":	"VHMSO7624ReprintentryHMSI210/CONFIRM/",
+		"module_name":	"",
+		"component_uniquename":	"VHMSO7624ReprintentryHMSI210_CONFIRM_CONFIRM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	456,
+		"height":	351
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Group1",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	7,
+				"width":	165,
+				"height":	36
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"V_ENGFRMTYPE_V",
+						"mgformat":	"mgFormat",
+						"format":	"UUUUUUUUUUU",
+						"modifiable":	false,
+						"attribute":	"A",
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	8,
+						"y":	23,
+						"width":	60,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"V_CHASSIS_NOFROM_V",
+						"mgformat":	"mgFormat",
+						"currency":	"currency",
+						"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+						"modifiable":	false,
+						"attribute":	"N",
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	74,
+						"y":	23,
+						"width":	40,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label4",
+						"text":	"-",
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	115,
+						"y":	23,
+						"width":	4,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"V_CHASSIS_NOTO_V",
+						"mgformat":	"mgFormat",
+						"currency":	"currency",
+						"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+						"modifiable":	false,
+						"attribute":	"N",
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	120,
+						"y":	23,
+						"width":	40,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Group6",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	52,
+				"width":	450,
+				"height":	263
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	{
+						"line_divider":	true
+					},
+					"props":	{
+						"id":	"Table10",
+						"table_row_height":	33,
+						"table_title_height":	20,
+						"no_modifiable_descendants":	true,
+						"common_line_id":	"line68"
+					},
+					"coordinates":	{
+						"x":	9,
+						"y":	68,
+						"width":	439,
+						"height":	221
+					},
+					"hint":	null,
+					"controlType":	"A",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Column11",
+								"column_title":	"CHASSIS NO.",
+								"is_table_child":	true,
+								"web_style":	2
+							},
+							"coordinates":	{
+								"width":	91
+							},
+							"hint":	null,
+							"controlType":	"K",
+							"children":	[
+								{
+									"style":	null,
+									"props":	{
+										"id":	"Label17",
+										"is_table_child":	true,
+										"web_style":	2,
+										"common_line_id":	"line91"
+									},
+									"coordinates":	{
+										"x":	10,
+										"y":	91,
+										"width":	90,
+										"height":	16
+									},
+									"hint":	null,
+									"controlType":	"L",
+									"children":	null
+								},
+								{
+									"style":	null,
+									"props":	{
+										"id":	"Label18",
+										"text":	"-",
+										"is_table_child":	true,
+										"web_style":	2,
+										"common_line_id":	"line91"
+									},
+									"coordinates":	{
+										"x":	53,
+										"y":	91,
+										"width":	4,
+										"height":	13
+									},
+									"hint":	null,
+									"controlType":	"L",
+									"children":	null
+								}
+							]
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Column12",
+								"column_title":	"QTY",
+								"is_table_child":	true,
+								"web_style":	2
+							},
+							"coordinates":	{
+								"width":	34
+							},
+							"hint":	null,
+							"controlType":	"K",
+							"children":	[
+								{
+									"style":	null,
+									"props":	{
+										"id":	"Label21",
+										"is_table_child":	true,
+										"web_style":	2,
+										"common_line_id":	"line286"
+									},
+									"coordinates":	{
+										"x":	103,
+										"y":	286,
+										"width":	35,
+										"height":	26
+									},
+									"hint":	null,
+									"controlType":	"L",
+									"children":	null
+								}
+							]
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Column13",
+								"column_title":	"EFM",
+								"is_table_child":	true,
+								"web_style":	2
+							},
+							"coordinates":	{
+								"width":	24
+							},
+							"hint":	null,
+							"controlType":	"K",
+							"children":	[
+								
+							]
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Column14",
+								"column_title":	"MODEL CODE",
+								"is_table_child":	true,
+								"web_style":	2
+							},
+							"coordinates":	{
+								"width":	149
+							},
+							"hint":	null,
+							"controlType":	"K",
+							"children":	[
+								{
+									"style":	null,
+									"props":	{
+										"id":	"Label19",
+										"is_table_child":	true,
+										"web_style":	2,
+										"common_line_id":	"line91"
+									},
+									"coordinates":	{
+										"x":	160,
+										"y":	91,
+										"width":	145,
+										"height":	29
+									},
+									"hint":	null,
+									"controlType":	"L",
+									"children":	null
+								}
+							]
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Column15",
+								"column_title":	"REP",
+								"is_table_child":	true,
+								"web_style":	2
+							},
+							"coordinates":	{
+								"width":	26
+							},
+							"hint":	null,
+							"controlType":	"K",
+							"children":	[
+								
+							]
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Column16",
+								"column_title":	"NOTE",
+								"is_table_child":	true,
+								"web_style":	2
+							},
+							"coordinates":	{
+								"width":	93
+							},
+							"hint":	null,
+							"controlType":	"K",
+							"children":	[
+								{
+									"style":	null,
+									"props":	{
+										"id":	"Label20",
+										"text":	"-",
+										"is_table_child":	true,
+										"web_style":	2,
+										"common_line_id":	"line107"
+									},
+									"coordinates":	{
+										"x":	418,
+										"y":	107,
+										"width":	4,
+										"height":	13
+									},
+									"hint":	null,
+									"controlType":	"L",
+									"children":	null
+								}
+							]
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label7",
+						"common_line_id":	"line286"
+					},
+					"coordinates":	{
+						"x":	10,
+						"y":	286,
+						"width":	90,
+						"height":	26
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label8",
+						"text":	"TOTAL",
+						"common_line_id":	"line286"
+					},
+					"coordinates":	{
+						"x":	60,
+						"y":	296,
+						"width":	30,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"V_V_QTYCONFIRM",
+						"mgformat":	"mgFormat",
+						"format":	"########",
+						"modifiable":	false,
+						"attribute":	"N",
+						"common_line_id":	"line286"
+					},
+					"coordinates":	{
+						"x":	103,
+						"y":	296,
+						"width":	30,
+						"height":	13
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"attribute":	"A",
+				"common_line_id":	"line322"
+			},
+			"coordinates":	{
+				"x":	160,
+				"y":	322,
+				"width":	68,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"attribute":	"A",
+				"common_line_id":	"line322"
+			},
+			"coordinates":	{
+				"x":	228,
+				"y":	322,
+				"width":	68,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

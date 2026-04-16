@@ -1,0 +1,346 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"REPRINTENTRYFVISFECARD",
+		"window_type":	12,
+		"component_path":	"VHMSO7624ReprintentryHMSI210/",
+		"module_name":	"",
+		"component_uniquename":	"VHMSO7624ReprintentryHMSI210_REPRINTENTRYFVISFECARD"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	5,
+				"width":	345,
+				"height":	36
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MODE_V",
+				"items_list":	"ADDITION,INQUIRY",
+				"attribute":	"A",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	14,
+				"y":	13,
+				"width":	108,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"ENG/FRM TYPE",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	129,
+				"y":	7,
+				"width":	61,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ENGFRMTYPE_V",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	130,
+				"y":	23,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CHASSIS_NOFROM_V",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"attribute":	"N",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	201,
+				"y":	23,
+				"width":	40,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"FROM",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	203,
+				"y":	7,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"text":	"-",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	246,
+				"y":	23,
+				"width":	4,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CHASSIS_NOTO_V",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"attribute":	"N",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	258,
+				"y":	23,
+				"width":	40,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"TO",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	260,
+				"y":	7,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit14",
+				"dataexp":	true,
+				"format":	"########",
+				"modifiable":	false,
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	305,
+				"y":	23,
+				"width":	40,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"TOTAL",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	318,
+				"y":	7,
+				"width":	30,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	358,
+				"y":	10,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"PGM=VHMSO7624",
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	383,
+				"y":	10,
+				"width":	66,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit6",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	451,
+				"y":	8,
+				"width":	55,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit7",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	507,
+				"y":	8,
+				"width":	45,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ConfirmEntry",
+				"common_line_id":	"line50"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	50,
+				"width":	551,
+				"height":	406
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRINT_BOTTON_V",
+				"attribute":	"A",
+				"common_line_id":	"line462"
+			},
+			"coordinates":	{
+				"x":	376,
+				"y":	462,
+				"width":	86,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DEL",
+				"attribute":	"A",
+				"common_line_id":	"line462"
+			},
+			"coordinates":	{
+				"x":	466,
+				"y":	462,
+				"width":	86,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

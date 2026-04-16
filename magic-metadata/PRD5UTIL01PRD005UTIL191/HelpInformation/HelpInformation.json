@@ -1,0 +1,104 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"HelpInformation",
+		"window_type":	12,
+		"component_path":	"PRD5UTIL01PRD005UTIL191/HelpInformation/",
+		"module_name":	"",
+		"component_uniquename":	"PRD5UTIL01PRD005UTIL191_HelpInformation_HelpInformation"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	1108,
+		"height":	298
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"Frame \u0026 Engine Information in PRD005 Table is stored in following way:\r\n\r\nRow1 -\u003e Frame Number, Engine Number\r\nRow2 -\u003e Engine Number, Frame Number\r\n\r\nDuring Af-Off, Frame Number is united against Engine Number and vice versa.\r\n\r\n",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	23,
+				"width":	527,
+				"height":	89
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	14,
+				"y":	13,
+				"width":	397,
+				"height":	245
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"Utility works to find all data mismatch for Row 2 option.\r\n\r\nFollowing process is used:\r\n\r\n\u003e Find Engine Number with blank Frame Number.\r\n\u003e Find Frame Number for above Engine Number.\r\n\u003e Update Frame Number against the Engine Number.\r\n",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	26,
+				"y":	121,
+				"width":	374,
+				"height":	102
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"Create Date: 04-Oct-2009",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	26,
+				"y":	232,
+				"width":	255,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"attribute":	"A",
+				"common_line_id":	"line266"
+			},
+			"coordinates":	{
+				"x":	315,
+				"y":	266,
+				"width":	96,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

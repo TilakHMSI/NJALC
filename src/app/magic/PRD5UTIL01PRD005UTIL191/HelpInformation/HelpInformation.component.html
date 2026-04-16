@@ -1,0 +1,47 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.HelpInformation"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                Frame & Engine Information in PRD005 Table is stored in following way:
+                Row1 -> Frame Number, Engine Number
+                Row2 -> Engine Number, Frame Number
+                During Af-Off, Frame Number is united against Engine Number and vice versa.
+            </label>
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                Utility works to find all data mismatch for Row 2 option.
+                Following process is used:
+                > Find Engine Number with blank Frame Number.
+                > Find Frame Number for above Engine Number.
+                > Update Frame Number against the Engine Number.
+            </label>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                Create Date: 04-Oct-2009
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

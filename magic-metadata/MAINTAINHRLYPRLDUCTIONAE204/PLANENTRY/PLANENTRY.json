@@ -1,0 +1,563 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PLANENTRY",
+		"window_type":	1,
+		"component_path":	"MAINTAINHRLYPRLDUCTIONAE204/PLANENTRY/",
+		"module_name":	"",
+		"component_uniquename":	"MAINTAINHRLYPRLDUCTIONAE204_PLANENTRY_PLANENTRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	671,
+		"height":	436
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	20,
+				"table_title_height":	20,
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	0,
+				"width":	668,
+				"height":	286
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"SR NO.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	56
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SRNO",
+								"mgformat":	"mgFormat",
+								"format":	"##",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	4,
+								"y":	23,
+								"width":	21,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"TIME FROM",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	78
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"TIME_F",
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	65,
+								"y":	23,
+								"width":	62,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"TIME TO",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	71
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"TIME_T",
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	138,
+								"y":	23,
+								"width":	62,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"TOTAL TIME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	88
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_v_TOT_TIME",
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	220,
+								"y":	23,
+								"width":	62,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"ACTUAL PROD. TIME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	135
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_v_GRND_TIME",
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	335,
+								"y":	23,
+								"width":	62,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"HOURLY PROD.",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	89
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"HRLY_PLN",
+								"mgformat":	"mgFormat",
+								"format":	"#####",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	431,
+								"y":	23,
+								"width":	43,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column8",
+						"column_title":	"CUMM. PROD. TOTAL",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	129
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"HOURLY_PROD_PLAN_AE_COMM_PLN",
+								"mgformat":	"mgFormat",
+								"format":	"#######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line23"
+							},
+							"coordinates":	{
+								"x":	550,
+								"y":	23,
+								"width":	56,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_v_TAB",
+				"items_list":	"BREAK 1,BREAK 2",
+				"attribute":	"A",
+				"common_line_id":	"line312"
+			},
+			"coordinates":	{
+				"x":	25,
+				"y":	312,
+				"width":	620,
+				"height":	91
+			},
+			"hint":	null,
+			"controlType":	"J",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"layer":	1,
+						"id":	"V_v_TAB"
+					},
+					"coordinates":	null,
+					"hint":	null,
+					"controlType":	"Z",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label18",
+								"text":	"BREAK FROM - 1:",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	35,
+								"y":	364,
+								"width":	113,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BR_TIM_F_1",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	145,
+								"y":	364,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label21",
+								"text":	"BREAK TO - 1:",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	235,
+								"y":	364,
+								"width":	98,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BR_TIM_T_1",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	330,
+								"y":	364,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label26",
+								"text":	"TOTAL BREAK TIME - 1:",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	420,
+								"y":	364,
+								"width":	154,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_v_BR_TOT_TIME_1",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	569,
+								"y":	364,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"layer":	2,
+						"id":	"V_v_TAB"
+					},
+					"coordinates":	null,
+					"hint":	null,
+					"controlType":	"Z",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label17",
+								"text":	"BREAK FROM - 2:",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	35,
+								"y":	364,
+								"width":	113,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BR_TIM_F_2",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	149,
+								"y":	364,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label22",
+								"text":	"BREAK TO - 2:",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	235,
+								"y":	364,
+								"width":	98,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BR_TIM_T_2",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	334,
+								"y":	364,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label25",
+								"text":	"TOTAL BREAK TIME - 2:",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	419,
+								"y":	364,
+								"width":	154,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_v_BR_TOT_TIME_2",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line364"
+							},
+							"coordinates":	{
+								"x":	570,
+								"y":	364,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

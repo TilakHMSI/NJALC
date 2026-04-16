@@ -1,0 +1,220 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"SHIFTWISE_AF_OFF_REPORT_177",
+		"window_type":	12,
+		"component_path":	"SHIFTWISE_AF_OFF_REPORT_177/",
+		"module_name":	"",
+		"component_uniquename":	"SHIFTWISE_AF_OFF_REPORT_177_SHIFTWISE_AF_OFF_REPORT_177"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	396,
+		"height":	293
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"DATE:",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	60,
+				"width":	43,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Date",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	140,
+				"y":	60,
+				"width":	81,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"SHIFT:",
+				"common_line_id":	"line86"
+			},
+			"coordinates":	{
+				"x":	88,
+				"y":	86,
+				"width":	49,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Shift",
+				"items_list":	"A,B,C",
+				"mgformat":	"mgFormat",
+				"validator":	"rangevalidator",
+				"format":	"U",
+				"attribute":	"A",
+				"common_line_id":	"line86"
+			},
+			"coordinates":	{
+				"x":	140,
+				"y":	86,
+				"width":	18,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"LINE:",
+				"common_line_id":	"line112"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	112,
+				"width":	43,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Plant",
+				"items_list":	{
+					"value":	"Line",
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line112"
+			},
+			"coordinates":	{
+				"x":	140,
+				"y":	112,
+				"width":	140,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"REPORT TYPE:",
+				"common_line_id":	"line138"
+			},
+			"coordinates":	{
+				"x":	45,
+				"y":	146,
+				"width":	91,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_ReportType",
+				"items_list":	"PREVIEW,XL SHEET",
+				"attribute":	"A",
+				"common_line_id":	"line138"
+			},
+			"coordinates":	{
+				"x":	140,
+				"y":	138,
+				"width":	210,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"C:\\magic\\temp\\ShiftAf.csv",
+				"common_line_id":	"line195"
+			},
+			"coordinates":	{
+				"x":	106,
+				"y":	195,
+				"width":	183,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Exec",
+				"format":	"EXEC",
+				"attribute":	"A",
+				"common_line_id":	"line242"
+			},
+			"coordinates":	{
+				"x":	111,
+				"y":	242,
+				"width":	84,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Exit",
+				"format":	"EXIT",
+				"attribute":	"A",
+				"common_line_id":	"line242"
+			},
+			"coordinates":	{
+				"x":	201,
+				"y":	242,
+				"width":	84,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

@@ -1,0 +1,226 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CONFIRM"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group1"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label [magic]="mgc.V_ENGFRMTYPE_V">
+                        {{mg.getValue(mgc.V_ENGFRMTYPE_V) }}
+                    </label>
+                    <label [magic]="mgc.V_CHASSIS_NOFROM_V">
+                        {{mg.getValue(mgc.V_CHASSIS_NOFROM_V) }}
+                    </label>
+                    <label
+                        [magic]="mgc.Label4"
+                        class="lable_overflow"
+                    >
+                        -
+                    </label>
+                    <label [magic]="mgc.V_CHASSIS_NOTO_V">
+                        {{mg.getValue(mgc.V_CHASSIS_NOTO_V) }}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group6"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <div class="example-container mat-elevation-z8 Table10TableContainerProps">
+                        <mat-table
+                            #table
+                            [dataSource]="dataSource"
+                            class="container_border"
+                            matSort
+                            matSortDisableClear
+                            (matSortChange)="tableService.sortData($event)"
+                        >
+                            <ng-container
+                                [magic]="mgc.Column11"
+                                [matColumnDef]="mgc.Column11"
+                            >
+                                <mat-header-cell *matHeaderCellDef>
+                                    CHASSIS NO.
+                                </mat-header-cell>
+                                <mat-cell
+                                    *matCellDef="let row"
+                                    magicMark="magicTableRowContainer"
+                                >
+                                    <div
+                                        style="display: flex; flex-direction: row"
+                                        *ngIf="mg.ifRowCreated(row)"
+                                    >
+                                        <label
+                                            [magic]="mgc.Label17"
+                                            [rowId]="row.rowId"
+                                            class="lable_overflow"
+                                        >
+                                        </label>
+                                        <label
+                                            [magic]="mgc.Label18"
+                                            [rowId]="row.rowId"
+                                            class="lable_overflow"
+                                        >
+                                            -
+                                        </label>
+                                    </div>
+                                </mat-cell>
+                            </ng-container>
+                            <ng-container
+                                [magic]="mgc.Column12"
+                                [matColumnDef]="mgc.Column12"
+                            >
+                                <mat-header-cell *matHeaderCellDef>
+                                    QTY
+                                </mat-header-cell>
+                                <mat-cell
+                                    *matCellDef="let row"
+                                    magicMark="magicTableRowContainer"
+                                >
+                                    <div
+                                        style="display: flex; flex-direction: row"
+                                        *ngIf="mg.ifRowCreated(row)"
+                                    >
+                                        <label
+                                            [magic]="mgc.Label21"
+                                            [rowId]="row.rowId"
+                                            class="lable_overflow"
+                                        >
+                                        </label>
+                                    </div>
+                                </mat-cell>
+                            </ng-container>
+                            <ng-container
+                                [magic]="mgc.Column13"
+                                [matColumnDef]="mgc.Column13"
+                            >
+                                <mat-header-cell *matHeaderCellDef>
+                                    EFM
+                                </mat-header-cell>
+                                <mat-cell
+                                    *matCellDef="let row"
+                                    magicMark="magicTableRowContainer"
+                                >
+                                </mat-cell>
+                            </ng-container>
+                            <ng-container
+                                [magic]="mgc.Column14"
+                                [matColumnDef]="mgc.Column14"
+                            >
+                                <mat-header-cell *matHeaderCellDef>
+                                    MODEL CODE
+                                </mat-header-cell>
+                                <mat-cell
+                                    *matCellDef="let row"
+                                    magicMark="magicTableRowContainer"
+                                >
+                                    <div
+                                        style="display: flex; flex-direction: row"
+                                        *ngIf="mg.ifRowCreated(row)"
+                                    >
+                                        <label
+                                            [magic]="mgc.Label19"
+                                            [rowId]="row.rowId"
+                                            class="lable_overflow"
+                                        >
+                                        </label>
+                                    </div>
+                                </mat-cell>
+                            </ng-container>
+                            <ng-container
+                                [magic]="mgc.Column15"
+                                [matColumnDef]="mgc.Column15"
+                            >
+                                <mat-header-cell *matHeaderCellDef>
+                                    REP
+                                </mat-header-cell>
+                                <mat-cell
+                                    *matCellDef="let row"
+                                    magicMark="magicTableRowContainer"
+                                >
+                                </mat-cell>
+                            </ng-container>
+                            <ng-container
+                                [magic]="mgc.Column16"
+                                [matColumnDef]="mgc.Column16"
+                            >
+                                <mat-header-cell *matHeaderCellDef>
+                                    NOTE
+                                </mat-header-cell>
+                                <mat-cell
+                                    *matCellDef="let row"
+                                    magicMark="magicTableRowContainer"
+                                >
+                                    <div
+                                        style="display: flex; flex-direction: row"
+                                        *ngIf="mg.ifRowCreated(row)"
+                                    >
+                                        <label
+                                            [magic]="mgc.Label20"
+                                            [rowId]="row.rowId"
+                                            class="lable_overflow"
+                                        >
+                                            -
+                                        </label>
+                                    </div>
+                                </mat-cell>
+                            </ng-container>
+                            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                            <mat-row
+                                *matRowDef="let row; columns: displayedColumns;"
+                                class="table_row"
+                                [ngClass]="{ 'selected': selection.isSelected(row)}"
+                                [magicRow]="row?.rowId"
+                                (click)="row? tableService.selectRow(row.rowId) : null"
+                            >
+                            </mat-row>
+                        </mat-table>
+                        <mat-paginator
+                            #paginator
+                            [pageSize]="10"
+                            [pageSizeOptions]="[5, 10, 20]"
+                            (page)="tableService.mgOnPaginateChange($event)"
+                        >
+                        </mat-paginator>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label7"
+                        class="lable_overflow"
+                    >
+                    </label>
+                    <label
+                        [magic]="mgc.Label8"
+                        class="lable_overflow"
+                    >
+                        TOTAL
+                    </label>
+                    <label [magic]="mgc.V_V_QTYCONFIRM">
+                        {{mg.getValue(mgc.V_V_QTYCONFIRM) }}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DISPLAYBOARD"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                WorkStationes :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.VWorkstatione"
+                    [magic]="mgc.VWorkstatione"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.VWorkstatione> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.VWorkstatione"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                Production Line :
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.VProd"
+                    [magic]="mgc.VProd"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.VProd> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.VProd"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.VOK">
+                {{mg.getValue(mgc.VOK)}}
+            </button>
+            <button [magic]="mgc.VExit">
+                {{mg.getValue(mgc.VExit)}}
+            </button>
+        </div>
+    </div>
+</div>

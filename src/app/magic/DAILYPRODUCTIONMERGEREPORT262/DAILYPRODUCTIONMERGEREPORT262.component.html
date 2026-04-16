@@ -1,0 +1,108 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.DAILYPRODUCTIONMERGEREPORT262"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit1">
+                {{mg.getValue(mgc.Edit1) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                <<
+                    DAILY
+                    PRODUCTION
+                    MERGE
+                    REPORT
+                >>
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                DATE:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.v_Date"
+                [magic]="mgc.v_Date"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                SHIFT:
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.v_Shift"
+                    [formControlName]="mgc.v_Shift"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_Shift);"
+                        [selected]="o.index == mg.getValue(mgc.v_Shift)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                PRODUCTION LINE:
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.v_Prod_Line"
+                    [formControlName]="mgc.v_Prod_Line"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_Prod_Line);"
+                        [selected]="o.index == mg.getValue(mgc.v_Prod_Line)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Exec">
+                E\XEC
+            </button>
+            <button [magic]="mgc.v_Exit">
+                E\XIT
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Edit7"
+                [style.visibility]="mg.getVisible(mgc.Edit7)"
+            >
+                {{mg.getValue(mgc.Edit7) }}
+            </label>
+            <label
+                [magic]="mgc.Edit8"
+                [style.visibility]="mg.getVisible(mgc.Edit8)"
+            >
+                {{mg.getValue(mgc.Edit8) }}
+            </label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,132 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"SelectMTOCode",
+		"window_type":	12,
+		"component_path":	"VHMSO7619_MTO_CODE_GUIDE_162/",
+		"module_name":	"",
+		"component_uniquename":	"VHMSO7619_MTO_CODE_GUIDE_162_SelectMTOCode"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	220,
+		"height":	436
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VHMSO7619",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	130,
+				"y":	0,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	20,
+				"table_title_height":	20,
+				"common_line_id":	"line28"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	28,
+				"width":	214,
+				"height":	400
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"MTO CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	71
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD001_S1_MTO_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line50"
+							},
+							"coordinates":	{
+								"x":	8,
+								"y":	50,
+								"width":	66,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"MTO NAME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	128
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD001_S1_MTO_NAME",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line50"
+							},
+							"coordinates":	{
+								"x":	79,
+								"y":	50,
+								"width":	123,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

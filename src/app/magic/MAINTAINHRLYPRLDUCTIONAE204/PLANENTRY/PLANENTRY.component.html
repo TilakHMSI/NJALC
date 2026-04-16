@@ -1,0 +1,426 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.PLANENTRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table1TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="container_border"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        [magic]="mgc.Column2"
+                        [matColumnDef]="mgc.Column2"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            SR NO.
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.SRNO"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            type='number'
+                                            [magic]="mgc.SRNO"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.SRNO
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.SRNO"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.SRNO, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column3"
+                        [matColumnDef]="mgc.Column3"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            TIME FROM
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div
+                                        *ngIf="mg.isRowInRowEditing(row)"
+                                        style="display: flex; flex-direction: row"
+                                    >
+                                        <input
+                                            type="time"
+                                            [formControlName]="mgc.TIME_F"
+                                            [magic]="mgc.TIME_F"
+                                            [rowId]="row.rowId"
+                                            step=1
+                                        />
+                                    </div>
+                                    <label
+                                        *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.TIME_F"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue(mgc.TIME_F, row.rowId)
+| magicTime : mgc.TIME_F}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column4"
+                        [matColumnDef]="mgc.Column4"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            TIME TO
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div
+                                        *ngIf="mg.isRowInRowEditing(row)"
+                                        style="display: flex; flex-direction: row"
+                                    >
+                                        <input
+                                            type="time"
+                                            [formControlName]="mgc.TIME_T"
+                                            [magic]="mgc.TIME_T"
+                                            [rowId]="row.rowId"
+                                            step=1
+                                        />
+                                    </div>
+                                    <label
+                                        *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.TIME_T"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue(mgc.TIME_T, row.rowId)
+| magicTime : mgc.TIME_T}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column5"
+                        [matColumnDef]="mgc.Column5"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            TOTAL TIME
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div
+                                        *ngIf="mg.isRowInRowEditing(row)"
+                                        style="display: flex; flex-direction: row"
+                                    >
+                                        <input
+                                            type="time"
+                                            [formControlName]="mgc.V_v_TOT_TIME"
+                                            [magic]="mgc.V_v_TOT_TIME"
+                                            [rowId]="row.rowId"
+                                            step=1
+                                        />
+                                    </div>
+                                    <label
+                                        *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.V_v_TOT_TIME"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue(mgc.V_v_TOT_TIME, row.rowId)
+| magicTime : mgc.V_v_TOT_TIME}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column6"
+                        [matColumnDef]="mgc.Column6"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            ACTUAL PROD. TIME
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div
+                                        *ngIf="mg.isRowInRowEditing(row)"
+                                        style="display: flex; flex-direction: row"
+                                    >
+                                        <input
+                                            type="time"
+                                            [formControlName]="mgc.V_v_GRND_TIME"
+                                            [magic]="mgc.V_v_GRND_TIME"
+                                            [rowId]="row.rowId"
+                                            step=1
+                                        />
+                                    </div>
+                                    <label
+                                        *ngIf="!mg.isRowInRowEditing(row)"
+                                        [magic]="mgc.V_v_GRND_TIME"
+                                        [rowId]="row.rowId"
+                                    >
+                                        {{mg.getValue(mgc.V_v_GRND_TIME, row.rowId)
+| magicTime : mgc.V_v_GRND_TIME}}
+                                    </label>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column7"
+                        [matColumnDef]="mgc.Column7"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            HOURLY PROD.
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.HRLY_PLN"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            type='number'
+                                            [magic]="mgc.HRLY_PLN"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.HRLY_PLN
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.HRLY_PLN"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.HRLY_PLN, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column8"
+                        [matColumnDef]="mgc.Column8"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                            CUMM. PROD. TOTAL
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input
+                                            [formControlName]="mgc.HOURLY_PROD_PLAN_AE_COMM_PLN"
+                                            *ngIf="mg.isRowInRowEditing(row)"
+                                            type='number'
+                                            [magic]="mgc.HOURLY_PROD_PLAN_AE_COMM_PLN"
+                                            [rowId]="row.rowId"
+                                            mgFormat
+                                        />
+                                        <mgError
+                                            [magic]=mgc.HOURLY_PROD_PLAN_AE_COMM_PLN
+                                            [rowId]="row.rowId"
+                                        > </mgError>
+                                        <label
+                                            *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.HOURLY_PROD_PLAN_AE_COMM_PLN"
+                                            [rowId]="row.rowId"
+                                        >
+                                            {{mg.getValue(mgc.HOURLY_PROD_PLAN_AE_COMM_PLN, row.rowId)
+}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+        </div>
+        <div [magic]="mgc.V_v_TAB">
+            <div class="tab_control">
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_v_TAB)">
+                    <button
+                        class="tab_button"
+                        (click)="task.mgOnTabSelectionChanged(mgc.V_v_TAB, o.index)"
+                        [ngClass]="{'tab_button_active' : mg.isTabPageSelected(mgc.V_v_TAB, o.index+1 )}"
+                    >
+                        {{mg.getTabpageText(mgc.V_v_TAB, o.index)}}
+                    </button>
+                </div>
+                <div
+                    class="tab_content"
+                    [style.display]="mg.isTabPageLayerSelected(mgc.V_v_TAB, 1) ? 'flex' : 'none' "
+                    style="flex-direction: column"
+                >
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            [magic]="mgc.Label18"
+                            class="lable_overflow"
+                        >
+                            BREAK FROM - 1:
+                        </label>
+                        <input
+                            type="time"
+                            [formControlName]="mgc.BR_TIM_F_1"
+                            [magic]="mgc.BR_TIM_F_1"
+                            step=1
+                        />
+                        <label
+                            [magic]="mgc.Label21"
+                            class="lable_overflow"
+                        >
+                            BREAK TO - 1:
+                        </label>
+                        <input
+                            type="time"
+                            [formControlName]="mgc.BR_TIM_T_1"
+                            [magic]="mgc.BR_TIM_T_1"
+                            step=1
+                        />
+                        <label
+                            [magic]="mgc.Label26"
+                            class="lable_overflow"
+                        >
+                            TOTAL BREAK TIME - 1:
+                        </label>
+                        <input
+                            type="time"
+                            [formControlName]="mgc.V_v_BR_TOT_TIME_1"
+                            [magic]="mgc.V_v_BR_TOT_TIME_1"
+                            step=1
+                        />
+                    </div>
+                </div>
+                <div
+                    class="tab_content"
+                    [style.display]="mg.isTabPageLayerSelected(mgc.V_v_TAB, 2) ? 'flex' : 'none' "
+                    style="flex-direction: column"
+                >
+                    <div style="display: flex; flex-direction: row">
+                        <label
+                            [magic]="mgc.Label17"
+                            class="lable_overflow"
+                        >
+                            BREAK FROM - 2:
+                        </label>
+                        <input
+                            type="time"
+                            [formControlName]="mgc.BR_TIM_F_2"
+                            [magic]="mgc.BR_TIM_F_2"
+                            step=1
+                        />
+                        <label
+                            [magic]="mgc.Label22"
+                            class="lable_overflow"
+                        >
+                            BREAK TO - 2:
+                        </label>
+                        <input
+                            type="time"
+                            [formControlName]="mgc.BR_TIM_T_2"
+                            [magic]="mgc.BR_TIM_T_2"
+                            step=1
+                        />
+                        <label
+                            [magic]="mgc.Label25"
+                            class="lable_overflow"
+                        >
+                            TOTAL BREAK TIME - 2:
+                        </label>
+                        <input
+                            type="time"
+                            [formControlName]="mgc.V_v_BR_TOT_TIME_2"
+                            [magic]="mgc.V_v_BR_TOT_TIME_2"
+                            step=1
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

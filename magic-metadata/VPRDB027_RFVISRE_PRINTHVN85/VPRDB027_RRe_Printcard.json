@@ -1,0 +1,181 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VPRDB027_RRe_Printcard",
+		"window_type":	12,
+		"component_path":	"VPRDB027_RFVISRE_PRINTHVN85/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB027_RFVISRE_PRINTHVN85_VPRDB027_RRe_Printcard"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	221,
+		"height":	138
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VPRDB027",
+				"common_line_id":	"line11"
+			},
+			"coordinates":	{
+				"x":	118,
+				"y":	11,
+				"width":	99,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"NOW PRINTING ...",
+				"common_line_id":	"line26"
+			},
+			"coordinates":	{
+				"x":	34,
+				"y":	26,
+				"width":	120,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"PLAN CODE:",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	34,
+				"y":	49,
+				"width":	89,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PLAN_CODE",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	114,
+				"y":	49,
+				"width":	69,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"PLAN DATE:",
+				"common_line_id":	"line62"
+			},
+			"coordinates":	{
+				"x":	34,
+				"y":	62,
+				"width":	89,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PLAN_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line62"
+			},
+			"coordinates":	{
+				"x":	114,
+				"y":	62,
+				"width":	89,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"PLAN SEQ:",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	34,
+				"y":	75,
+				"width":	84,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PLAN_SEQ",
+				"mgformat":	"mgFormat",
+				"format":	"###",
+				"attribute":	"N",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	114,
+				"y":	75,
+				"width":	54,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PLAN_SEQ_SUFFIX",
+				"mgformat":	"mgFormat",
+				"format":	"#",
+				"attribute":	"N",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	173,
+				"y":	75,
+				"width":	26,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}
