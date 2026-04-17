@@ -5,32 +5,32 @@
 }
 
 .mat-mdc-cell:first-child{
-    flex: 0 0 15%;
+    flex: 0 0 12%;
     padding-left: 5px;
 }
 .mat-mdc-header-cell:first-child{
-    flex: 0 0 15%;
+    flex: 0 0 12%;
     padding-left: 5px;
 }
 .mat-mdc-cell:nth-child(2){
-  flex: 0 0 45%;
+  flex: 0 0 52%;
 }
 .mat-mdc-header-cell:nth-child(2){
-  flex: 0 0 45%;
+  flex: 0 0 52%;
 }
 
 .mat-mdc-cell:nth-child(3){
-  flex: 0 0 15%;
+  flex: 0 0 13%;
 }
 .mat-mdc-header-cell:nth-child(3){
-  flex: 0 0 15%;
+  flex: 0 0 13%;
 }
 
 .mat-mdc-cell:nth-child(4){
-  flex: 0 0 15%;
+  flex: 0 0 13%;
 }
 .mat-mdc-header-cell:nth-child(4){
-  flex: 0 0 15%;
+  flex: 0 0 13%;
 }
 
 .mat-mdc-cell:nth-child(5){

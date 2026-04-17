@@ -7,51 +7,51 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     DEFECTENTRYSCREEN = "DEFECTENTRYSCREEN",
-        btnAdd = "btnAdd",
+        vDEFECTCODE = "vDEFECTCODE",
+        b_save = "b_save",
         Table2 = "Table2",
-        Column3 = "Column3",
+        Column22 = "Column22",
         DEFECTCODE = "DEFECTCODE",
         Column4 = "Column4",
-        DEFECTMASTER_DEFECTDESCRIPTION = "DEFECTMASTER_DEFECTDESCRIPTION",
-        Column5 = "Column5",
-        DEFECTMASTER_DEFECTCATEGORY = "DEFECTMASTER_DEFECTCATEGORY",
-        Column6 = "Column6",
-        DEFECTMASTER_DEFECTSECTION = "DEFECTMASTER_DEFECTSECTION",
-        Column14 = "Column14",
-        EnterRowEditing = "EnterRowEditing",
-        SaveRowEditing = "SaveRowEditing",
-        CancelRowEditing = "CancelRowEditing",
-        b_save = "b_save",
-        vDEFECTCODE = "vDEFECTCODE",
+        DEFECTDESCRIPTION = "DEFECTDESCRIPTION",
+        Column24 = "Column24",
+        DEFECTCATEGORY = "DEFECTCATEGORY",
+        Column26 = "Column26",
+        DEFECTSECTION = "DEFECTSECTION",
+        Column28 = "Column28",
         btnDelete = "btnDelete",
 }
 export enum MgCustomProperties {}
 export var
     MgDisplayedColumns = [
-        'Column3',
+        'Column22',
         'Column4',
-        'Column5',
-        'Column6',
-        'Column14',
+        'Column24',
+        'Column26',
+        'Column28',
     ];
 
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
+    get vDEFECTCODE(): FormControl {
+        return this.fg.controls[MgControlName.vDEFECTCODE] as FormControl;
+    }
+
     get DEFECTCODE(): FormControl {
         return this.getTableChildFormControl(MgControlName.DEFECTCODE);
     }
 
-    get DEFECTMASTER_DEFECTDESCRIPTION(): FormControl {
-        return this.getTableChildFormControl(MgControlName.DEFECTMASTER_DEFECTDESCRIPTION);
+    get DEFECTDESCRIPTION(): FormControl {
+        return this.getTableChildFormControl(MgControlName.DEFECTDESCRIPTION);
     }
 
-    get DEFECTMASTER_DEFECTCATEGORY(): FormControl {
-        return this.getTableChildFormControl(MgControlName.DEFECTMASTER_DEFECTCATEGORY);
+    get DEFECTCATEGORY(): FormControl {
+        return this.getTableChildFormControl(MgControlName.DEFECTCATEGORY);
     }
 
-    get DEFECTMASTER_DEFECTSECTION(): FormControl {
-        return this.getTableChildFormControl(MgControlName.DEFECTMASTER_DEFECTSECTION);
+    get DEFECTSECTION(): FormControl {
+        return this.getTableChildFormControl(MgControlName.DEFECTSECTION);
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {
