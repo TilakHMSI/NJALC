@@ -57,7 +57,7 @@
 								"modifiable":	false,
 								"formatter":	"magicDate",
 								"mgformat":	"mgFormat",
-								"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+								"format":	"DD-MM-YYYY",
 								"attribute":	"D",
 								"is_table_child":	true,
 								"web_style":	2,

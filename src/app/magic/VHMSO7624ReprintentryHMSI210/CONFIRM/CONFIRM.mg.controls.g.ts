@@ -29,7 +29,6 @@ export enum MgControlName {
         Label8 = "Label8",
         V_V_QTYCONFIRM = "V_V_QTYCONFIRM",
         btn_Exit = "btn_Exit",
-        btn_Exit = "btn_Exit",
 }
 export enum MgCustomProperties {}
 export var

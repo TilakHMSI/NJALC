@@ -5040,6 +5040,7 @@ input[type="button"].btn-block {
 .input-group>.form-control,
 .input-group>.form-control-sm,
 .input-group>.form-control-edsm,
+.input-group>.form-control-editsm,
 .input-group>.form-control-plaintext,
 .input-group>.custom-select,
 .input-group>.custom-file {
@@ -5055,6 +5056,7 @@ input[type="button"].btn-block {
 .input-group>.form-control+.form-control,
 .input-group>.form-control-sm+.form-control-sm,
 .input-group>.form-control-edsm+.form-control-edsm,
+.input-group>.form-control-editsm+.form-control-editsm,
 .input-group>.form-control+.custom-select,
 .input-group>.form-control+.custom-file,
 .input-group>.form-control-plaintext+.form-control,

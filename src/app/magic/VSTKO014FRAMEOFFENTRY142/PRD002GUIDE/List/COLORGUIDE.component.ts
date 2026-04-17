@@ -11,7 +11,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VSTKO014FRAMEOFFENTRY142_PRD031COLORGUIDE_COLORGUIDE',
+    selector: 'mga-VSTKO014FRAMEOFFENTRY142_PRD002GUIDE_List_COLORGUIDE',
     providers: [...matMagicProviders],
     standalone: false,
     templateUrl: './COLORGUIDE.component.html'
@@ -26,14 +26,14 @@ export class COLORGUIDE extends BaseMatTableMagicComponent implements MagicModal
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "COLORGUIDE";
-    private static readonly showTitleBar: boolean = false;
+    private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "800px";
-    private static readonly height: string = "650px";
+    private static readonly width: string = "300px";
+    private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = false;
-    private static readonly isResizable: boolean = false;
+    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
         return COLORGUIDE.x;

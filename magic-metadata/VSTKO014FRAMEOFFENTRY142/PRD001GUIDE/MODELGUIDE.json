@@ -17,137 +17,56 @@
 	"controlType":	null,
 	"children":	[
 		{
-			"style":	{
-				"line_divider":	true
-			},
+			"style":	null,
 			"props":	{
-				"id":	"Table1",
-				"table_row_height":	20,
-				"table_title_height":	20,
-				"common_line_id":	"line11"
+				"id":	"vSearch",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line7"
 			},
 			"coordinates":	{
-				"x":	6,
-				"y":	11,
-				"width":	249,
-				"height":	283
+				"x":	9,
+				"y":	7,
+				"width":	154,
+				"height":	25
 			},
 			"hint":	null,
-			"controlType":	"A",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column2",
-						"column_title":	"MTO CODE",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	66
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"PRD001_S1_MTO_CODE",
-								"mgformat":	"mgFormat",
-								"format":	"UUUUUUUUUUU",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line34"
-							},
-							"coordinates":	{
-								"x":	11,
-								"y":	34,
-								"width":	60,
-								"height":	15
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column3",
-						"column_title":	"MTO NAME",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	100
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"PRD001_S1_MTO_NAME",
-								"mgformat":	"mgFormat",
-								"format":	"UUUUUUUUUUUUUUUUUU",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line34"
-							},
-							"coordinates":	{
-								"x":	76,
-								"y":	34,
-								"width":	95,
-								"height":	15
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column4",
-						"column_title":	"PROD.CLOSE DATE",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	68
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"PRD001_S1_PRODCLOSE_DATE",
-								"formatter":	"magicDate",
-								"mgformat":	"mgFormat",
-								"format":	"DD-MM-YYYY",
-								"attribute":	"D",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line34"
-							},
-							"coordinates":	{
-								"x":	176,
-								"y":	34,
-								"width":	55,
-								"height":	15
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				}
-			]
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	171,
+				"y":	8,
+				"width":	32,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line38"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	38,
+				"width":	239,
+				"height":	263
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
 		}
 	]
 }

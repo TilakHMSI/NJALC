@@ -116,54 +116,18 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"V_DISP_LINE1",
-				"items_list":	"0,1",
-				"attribute":	"A",
-				"common_line_id":	"line52"
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line46"
 			},
 			"coordinates":	{
-				"x":	20,
-				"y":	50,
-				"width":	500,
-				"height":	2
+				"x":	504,
+				"y":	46,
+				"width":	41,
+				"height":	22
 			},
 			"hint":	null,
-			"controlType":	"R",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label6",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	20,
-				"y":	52,
-				"width":	0,
-				"height":	60
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"EXEC_TYPE_VINQ",
-				"items_list":	"DATE,MODEL",
-				"attribute":	"A",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	94,
-				"y":	52,
-				"width":	90,
-				"height":	59
-			},
-			"hint":	null,
-			"controlType":	"R",
+			"controlType":	"B",
 			"children":	null
 		},
 		{
@@ -171,7 +135,7 @@
 			"props":	{
 				"id":	"Label8",
 				"text":	"FROM",
-				"common_line_id":	"line52"
+				"common_line_id":	"line60"
 			},
 			"coordinates":	{
 				"x":	193,
@@ -186,28 +150,11 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label12",
-				"text":	"MODEL",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	193,
-				"y":	89,
-				"width":	30,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"DATE_FROM_VINQ",
 				"mgformat":	"mgFormat",
-				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"format":	"DD-MM-YYYY",
 				"attribute":	"D",
-				"common_line_id":	"line52"
+				"common_line_id":	"line60"
 			},
 			"coordinates":	{
 				"x":	224,
@@ -222,29 +169,9 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"MTO_CODE_VINQ",
-				"show_zoom_button":	true,
-				"mgformat":	"mgFormat",
-				"format":	"UUUUUUUUUUU",
-				"attribute":	"A",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	225,
-				"y":	89,
-				"width":	61,
-				"height":	15
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Label10",
 				"text":	"TO",
-				"common_line_id":	"line52"
+				"common_line_id":	"line60"
 			},
 			"coordinates":	{
 				"x":	303,
@@ -259,28 +186,11 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label14",
-				"text":	"COLOR",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	303,
-				"y":	89,
-				"width":	30,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"DATE_TO_VINQ",
 				"mgformat":	"mgFormat",
-				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"format":	"DD-MM-YYYY",
 				"attribute":	"D",
-				"common_line_id":	"line52"
+				"common_line_id":	"line60"
 			},
 			"coordinates":	{
 				"x":	334,
@@ -295,12 +205,84 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"EXEC_TYPE_VINQ",
+				"items_list":	"DATE,MODEL",
+				"attribute":	"A",
+				"common_line_id":	"line89"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	52,
+				"width":	90,
+				"height":	59
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"text":	"MODEL",
+				"common_line_id":	"line89"
+			},
+			"coordinates":	{
+				"x":	193,
+				"y":	89,
+				"width":	30,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MTO_CODE_VINQ",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line89"
+			},
+			"coordinates":	{
+				"x":	225,
+				"y":	89,
+				"width":	61,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label14",
+				"text":	"COLOR",
+				"common_line_id":	"line89"
+			},
+			"coordinates":	{
+				"x":	303,
+				"y":	89,
+				"width":	30,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"COLOR_CODE_VINQ",
 				"show_zoom_button":	true,
 				"mgformat":	"mgFormat",
 				"format":	"UUUUUUUUUU",
 				"attribute":	"A",
-				"common_line_id":	"line52"
+				"common_line_id":	"line89"
 			},
 			"coordinates":	{
 				"x":	334,
@@ -319,7 +301,7 @@
 				"mgformat":	"mgFormat",
 				"format":	"XX",
 				"attribute":	"A",
-				"common_line_id":	"line52"
+				"common_line_id":	"line89"
 			},
 			"coordinates":	{
 				"x":	395,
@@ -334,165 +316,9 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label7",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line52"
-			},
-			"coordinates":	{
-				"x":	520,
-				"y":	52,
-				"width":	0,
-				"height":	60
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"V_DISP_LINE2",
-				"items_list":	"0,1",
-				"attribute":	"A",
-				"common_line_id":	"line112"
-			},
-			"coordinates":	{
-				"x":	20,
-				"y":	112,
-				"width":	500,
-				"height":	2
-			},
-			"hint":	null,
-			"controlType":	"R",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"V_DISP_LINE3",
-				"items_list":	"0,1",
-				"attribute":	"A",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	20,
-				"y":	127,
-				"width":	500,
-				"height":	2
-			},
-			"hint":	null,
-			"controlType":	"R",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label17",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	20,
-				"y":	128,
-				"width":	0,
-				"height":	60
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"EXEC_MODE_V",
-				"items_list":	"INQ,ADD",
-				"attribute":	"A",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	24,
-				"y":	15,
-				"width":	70,
-				"height":	211
-			},
-			"hint":	null,
-			"controlType":	"R",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label20",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	113,
-				"y":	148,
-				"width":	0,
-				"height":	36
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label21",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	113,
-				"y":	148,
-				"width":	388,
-				"height":	0
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label32",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	113,
-				"y":	163,
-				"width":	388,
-				"height":	0
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label39",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	113,
-				"y":	184,
-				"width":	388,
-				"height":	0
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Label19",
 				"text":	"LAST OFF REFRECTED DATE",
-				"common_line_id":	"line128"
+				"common_line_id":	"line132"
 			},
 			"coordinates":	{
 				"x":	115,
@@ -509,7 +335,7 @@
 			"props":	{
 				"id":	"Label27",
 				"text":	"DATE",
-				"common_line_id":	"line128"
+				"common_line_id":	"line150"
 			},
 			"coordinates":	{
 				"x":	115,
@@ -524,45 +350,9 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"ENTRY_DATE_VADD",
-				"mgformat":	"mgFormat",
-				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
-				"attribute":	"D",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	115,
-				"y":	166,
-				"width":	55,
-				"height":	15
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label22",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	171,
-				"y":	148,
-				"width":	0,
-				"height":	36
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Label28",
 				"text":	"MODEL CODE",
-				"common_line_id":	"line128"
+				"common_line_id":	"line150"
 			},
 			"coordinates":	{
 				"x":	174,
@@ -577,46 +367,9 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"MTO_CODE_VADD",
-				"show_zoom_button":	true,
-				"mgformat":	"mgFormat",
-				"format":	"UUUUUUUUUUU",
-				"attribute":	"A",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	174,
-				"y":	166,
-				"width":	60,
-				"height":	15
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label23",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	235,
-				"y":	148,
-				"width":	0,
-				"height":	36
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"Label29",
 				"text":	"COLOR",
-				"common_line_id":	"line128"
+				"common_line_id":	"line150"
 			},
 			"coordinates":	{
 				"x":	238,
@@ -631,12 +384,85 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"Label30",
+				"text":	"FRAME  QTY.",
+				"common_line_id":	"line150"
+			},
+			"coordinates":	{
+				"x":	331,
+				"y":	150,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label31",
+				"text":	"MODEL NAME",
+				"common_line_id":	"line150"
+			},
+			"coordinates":	{
+				"x":	404,
+				"y":	150,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ENTRY_DATE_VADD",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line166"
+			},
+			"coordinates":	{
+				"x":	115,
+				"y":	166,
+				"width":	55,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MTO_CODE_VADD",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line166"
+			},
+			"coordinates":	{
+				"x":	174,
+				"y":	166,
+				"width":	60,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"COLOR_CODE_VADD",
 				"show_zoom_button":	true,
 				"mgformat":	"mgFormat",
 				"format":	"UUUUUUUUUU",
 				"attribute":	"A",
-				"common_line_id":	"line128"
+				"common_line_id":	"line166"
 			},
 			"coordinates":	{
 				"x":	238,
@@ -656,7 +482,7 @@
 				"mgformat":	"mgFormat",
 				"format":	"UU",
 				"attribute":	"A",
-				"common_line_id":	"line128"
+				"common_line_id":	"line166"
 			},
 			"coordinates":	{
 				"x":	298,
@@ -671,46 +497,12 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label24",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	320,
-				"y":	148,
-				"width":	0,
-				"height":	36
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label30",
-				"text":	"FRAME  QTY.",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	331,
-				"y":	150,
-				"width":	60,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"FRAME_QTY_VADD",
 				"mgformat":	"mgFormat",
 				"currency":	"currency",
 				"format":	"#,###,###",
 				"attribute":	"N",
-				"common_line_id":	"line128"
+				"common_line_id":	"line166"
 			},
 			"coordinates":	{
 				"x":	341,
@@ -725,45 +517,11 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label25",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	401,
-				"y":	148,
-				"width":	0,
-				"height":	36
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label31",
-				"text":	"MODEL NAME",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	404,
-				"y":	150,
-				"width":	55,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
 				"id":	"PRD001_S1_MTO_NAME",
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line128"
+				"common_line_id":	"line166"
 			},
 			"coordinates":	{
 				"x":	404,
@@ -778,53 +536,36 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label26",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	500,
-				"y":	148,
-				"width":	0,
-				"height":	36
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label18",
-				"text":	"**UnSupported Control**",
-				"common_line_id":	"line128"
-			},
-			"coordinates":	{
-				"x":	520,
-				"y":	128,
-				"width":	0,
-				"height":	60
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"V_DISP_LINE4",
-				"items_list":	"0,1",
+				"id":	"EXEC_MODE_V",
+				"items_list":	"INQ,ADD",
 				"attribute":	"A",
-				"common_line_id":	"line189"
+				"common_line_id":	"line184"
 			},
 			"coordinates":	{
-				"x":	20,
-				"y":	189,
-				"width":	500,
-				"height":	2
+				"x":	12,
+				"y":	3,
+				"width":	70,
+				"height":	211
 			},
 			"hint":	null,
 			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label39",
+				"text":	"**UnSupported Control**",
+				"common_line_id":	"line184"
+			},
+			"coordinates":	{
+				"x":	113,
+				"y":	184,
+				"width":	388,
+				"height":	0
+			},
+			"hint":	null,
+			"controlType":	"L",
 			"children":	null
 		},
 		{

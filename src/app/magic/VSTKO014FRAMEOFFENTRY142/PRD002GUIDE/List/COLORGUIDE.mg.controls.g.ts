@@ -6,30 +6,22 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    MODELGUIDE = "MODELGUIDE",
+    COLORGUIDE = "COLORGUIDE",
         Table1 = "Table1",
         Column2 = "Column2",
-        V_MTOCD = "V_MTOCD",
-        Column3 = "Column3",
-        V_MTONAM = "V_MTONAM",
-        btnexit = "btnexit",
+        PRD002_S2_COLOR_CODE = "PRD002_S2_COLOR_CODE",
 }
 export enum MgCustomProperties {}
 export var
     MgDisplayedColumns = [
         'Column2',
-        'Column3',
     ];
 
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get V_MTOCD(): FormControl {
-        return this.getTableChildFormControl(MgControlName.V_MTOCD);
-    }
-
-    get V_MTONAM(): FormControl {
-        return this.getTableChildFormControl(MgControlName.V_MTONAM);
+    get PRD002_S2_COLOR_CODE(): FormControl {
+        return this.getTableChildFormControl(MgControlName.PRD002_S2_COLOR_CODE);
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

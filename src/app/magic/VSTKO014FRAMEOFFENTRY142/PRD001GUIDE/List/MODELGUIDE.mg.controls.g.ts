@@ -9,27 +9,33 @@ export enum MgControlName {
     MODELGUIDE = "MODELGUIDE",
         Table1 = "Table1",
         Column2 = "Column2",
-        V_MTOCD = "V_MTOCD",
+        PRD001_S1_MTO_CODE = "PRD001_S1_MTO_CODE",
         Column3 = "Column3",
-        V_MTONAM = "V_MTONAM",
-        btnexit = "btnexit",
+        PRD001_S1_MTO_NAME = "PRD001_S1_MTO_NAME",
+        Column4 = "Column4",
+        PRD001_S1_PRODCLOSE_DATE = "PRD001_S1_PRODCLOSE_DATE",
 }
 export enum MgCustomProperties {}
 export var
     MgDisplayedColumns = [
         'Column2',
         'Column3',
+        'Column4',
     ];
 
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get V_MTOCD(): FormControl {
-        return this.getTableChildFormControl(MgControlName.V_MTOCD);
+    get PRD001_S1_MTO_CODE(): FormControl {
+        return this.getTableChildFormControl(MgControlName.PRD001_S1_MTO_CODE);
     }
 
-    get V_MTONAM(): FormControl {
-        return this.getTableChildFormControl(MgControlName.V_MTONAM);
+    get PRD001_S1_MTO_NAME(): FormControl {
+        return this.getTableChildFormControl(MgControlName.PRD001_S1_MTO_NAME);
+    }
+
+    get PRD001_S1_PRODCLOSE_DATE(): FormControl {
+        return this.getTableChildFormControl(MgControlName.PRD001_S1_PRODCLOSE_DATE);
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

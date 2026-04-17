@@ -6,13 +6,12 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    MODELGUIDE = "MODELGUIDE",
+    COLORGUIDE = "COLORGUIDE",
         Table1 = "Table1",
         Column2 = "Column2",
-        V_MTOCD = "V_MTOCD",
+        PRD002_S2_COLOR_CODE = "PRD002_S2_COLOR_CODE",
         Column3 = "Column3",
-        V_MTONAM = "V_MTONAM",
-        btnexit = "btnexit",
+        V_COLOR_CODEINSIDE_P = "V_COLOR_CODEINSIDE_P",
 }
 export enum MgCustomProperties {}
 export var
@@ -24,12 +23,12 @@ export var
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get V_MTOCD(): FormControl {
-        return this.getTableChildFormControl(MgControlName.V_MTOCD);
+    get PRD002_S2_COLOR_CODE(): FormControl {
+        return this.getTableChildFormControl(MgControlName.PRD002_S2_COLOR_CODE);
     }
 
-    get V_MTONAM(): FormControl {
-        return this.getTableChildFormControl(MgControlName.V_MTONAM);
+    get V_COLOR_CODEINSIDE_P(): FormControl {
+        return this.getTableChildFormControl(MgControlName.V_COLOR_CODEINSIDE_P);
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

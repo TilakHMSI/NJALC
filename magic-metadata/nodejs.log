@@ -27,28 +27,84 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDO011_Color_Table_Maint/COLOR_TABLE_MAINTENANCE.json
-[>] Loading JSON file .//magic-metadata/VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_LIST.json
-[>] Loading JSON file .//magic-metadata/VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_MAINT/COLOR_TABLE_MAINT.json
-*** Step 2: Processing JSON files -  (3 components) ***
-[>] Processing JSON file for component COLOR_TABLE_MAINTENANCE
-[>] Processing JSON file for component COLOR_TABLE_LIST
-[>] Processing JSON file for component COLOR_TABLE_MAINT
-*** Step 3: generate components. (3 components) ***
-[>] generate component COLOR_TABLE_MAINTENANCE
-[>] generate component COLOR_TABLE_LIST
-[>] generate component COLOR_TABLE_MAINT
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/FRAMEOFFENTRY.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/PRD001GUIDE/MODELGUIDE.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/PRD001GUIDE/List/MODELGUIDE.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/PRD002GUIDE/COLORGUIDE.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/PRD002GUIDE/List/COLORGUIDE.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/PRD002INSIDEGUIDE/COLORGUIDE.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/PRD002INSIDEGUIDE/List/COLORGUIDE.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/PRD031MODELGUIDE/MODELGUIDE.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/PRD031COLORGUIDE/COLORGUIDE.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/DETAILDATE/DETAILDATE.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/DETAILMTOCODE/DETAILMTOCODE.json
+[>] Loading JSON file .//magic-metadata/VSTKO014FRAMEOFFENTRY142/DETAILADD/DETAILADD.json
+*** Step 2: Processing JSON files -  (12 components) ***
+[>] Processing JSON file for component FRAMEOFFENTRY
+[>] Processing JSON file for component MODELGUIDE
+[>] Processing JSON file for component MODELGUIDE
+[>] Processing JSON file for component COLORGUIDE
+[>] Processing JSON file for component COLORGUIDE
+[>] Processing JSON file for component COLORGUIDE
+[>] Processing JSON file for component COLORGUIDE
+[>] Processing JSON file for component MODELGUIDE
+[>] Processing JSON file for component COLORGUIDE
+[>] Processing JSON file for component DETAILDATE
+[>] Processing JSON file for component DETAILMTOCODE
+[>] Processing JSON file for component DETAILADD
+*** Step 3: generate components. (12 components) ***
+[>] generate component FRAMEOFFENTRY
+[>] generate component MODELGUIDE
+[>] generate component MODELGUIDE
+[>] generate component COLORGUIDE
+[>] generate component COLORGUIDE
+[>] generate component COLORGUIDE
+[>] generate component COLORGUIDE
+[>] generate component MODELGUIDE
+[>] generate component COLORGUIDE
+[>] generate component DETAILDATE
+[>] generate component DETAILMTOCODE
+[>] generate component DETAILADD
 [>] Step 4: components-list.
+ Total old components: 353, added components: 3. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VPRDO011_Color_Table_Maint/COLOR_TABLE_MAINTENANCE.mg.controls.g.ts (1293 bytes)
-[32mCREATE[39m src/app/magic/VPRDO011_Color_Table_Maint/COLOR_TABLE_MAINTENANCE.component.ts (2244 bytes)
-[32mCREATE[39m src/app/magic/VPRDO011_Color_Table_Maint/COLOR_TABLE_MAINTENANCE.component.html (2156 bytes)
-[32mCREATE[39m src/app/magic/VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_LIST.mg.controls.g.ts (1849 bytes)
-[32mCREATE[39m src/app/magic/VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_LIST.component.ts (967 bytes)
-[32mCREATE[39m src/app/magic/VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_LIST.component.html (13550 bytes)
-[32mCREATE[39m src/app/magic/VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_MAINT/COLOR_TABLE_MAINT.mg.controls.g.ts (1611 bytes)
-[32mCREATE[39m src/app/magic/VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_MAINT/COLOR_TABLE_MAINT.component.ts (2189 bytes)
-[32mCREATE[39m src/app/magic/VPRDO011_Color_Table_Maint/COLOR_TABLE_LIST/COLOR_TABLE_MAINT/COLOR_TABLE_MAINT.component.html (3022 bytes)
+[32mCREATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD001GUIDE/List/MODELGUIDE.mg.controls.g.ts (1345 bytes)
+[32mCREATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD001GUIDE/List/MODELGUIDE.component.ts (2231 bytes)
+[32mCREATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD001GUIDE/List/MODELGUIDE.component.html (7798 bytes)
+[32mCREATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002GUIDE/List/COLORGUIDE.mg.controls.g.ts (869 bytes)
+[32mCREATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002GUIDE/List/COLORGUIDE.component.ts (2231 bytes)
+[32mCREATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002GUIDE/List/COLORGUIDE.component.html (3581 bytes)
+[32mCREATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002INSIDEGUIDE/List/COLORGUIDE.mg.controls.g.ts (1107 bytes)
+[32mCREATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002INSIDEGUIDE/List/COLORGUIDE.component.ts (2237 bytes)
+[32mCREATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002INSIDEGUIDE/List/COLORGUIDE.component.html (5715 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/FRAMEOFFENTRY.mg.controls.g.ts (3756 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/FRAMEOFFENTRY.component.ts (2092 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/FRAMEOFFENTRY.component.html (8871 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD001GUIDE/MODELGUIDE.mg.controls.g.ts (750 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD001GUIDE/MODELGUIDE.component.ts (2059 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD001GUIDE/MODELGUIDE.component.html (740 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002GUIDE/COLORGUIDE.mg.controls.g.ts (750 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002GUIDE/COLORGUIDE.component.ts (2059 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002GUIDE/COLORGUIDE.component.html (740 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002INSIDEGUIDE/COLORGUIDE.mg.controls.g.ts (750 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002INSIDEGUIDE/COLORGUIDE.component.ts (2065 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD002INSIDEGUIDE/COLORGUIDE.component.html (740 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD031MODELGUIDE/MODELGUIDE.mg.controls.g.ts (1007 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD031MODELGUIDE/MODELGUIDE.component.ts (2231 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD031MODELGUIDE/MODELGUIDE.component.html (5594 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD031COLORGUIDE/COLORGUIDE.mg.controls.g.ts (967 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD031COLORGUIDE/COLORGUIDE.component.ts (2231 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/PRD031COLORGUIDE/COLORGUIDE.component.html (4823 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/DETAILDATE/DETAILDATE.mg.controls.g.ts (2087 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/DETAILDATE/DETAILDATE.component.ts (929 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/DETAILDATE/DETAILDATE.component.html (8251 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/DETAILMTOCODE/DETAILMTOCODE.mg.controls.g.ts (2093 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/DETAILMTOCODE/DETAILMTOCODE.component.ts (947 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/DETAILMTOCODE/DETAILMTOCODE.component.html (8254 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/DETAILADD/DETAILADD.mg.controls.g.ts (2085 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/DETAILADD/DETAILADD.component.ts (923 bytes)
+[36mUPDATE[39m src/app/magic/VSTKO014FRAMEOFFENTRY142/DETAILADD/DETAILADD.component.html (10245 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (116990 bytes)
 
 
 

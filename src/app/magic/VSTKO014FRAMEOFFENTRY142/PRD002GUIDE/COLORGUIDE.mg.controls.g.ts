@@ -7,21 +7,16 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     COLORGUIDE = "COLORGUIDE",
-        Table1 = "Table1",
-        Column2 = "Column2",
-        PRD002_S2_COLOR_CODE = "PRD002_S2_COLOR_CODE",
+        vSearch = "vSearch",
+        btnexit = "btnexit",
+        Sub1 = "Sub1",
 }
 export enum MgCustomProperties {}
-export var
-    MgDisplayedColumns = [
-        'Column2',
-    ];
-
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get PRD002_S2_COLOR_CODE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.PRD002_S2_COLOR_CODE);
+    get vSearch(): FormControl {
+        return this.fg.controls[MgControlName.vSearch] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

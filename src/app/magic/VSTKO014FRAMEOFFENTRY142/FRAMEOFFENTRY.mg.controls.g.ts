@@ -12,46 +12,31 @@ export enum MgControlName {
         V_PGID = "V_PGID",
         Edit4 = "Edit4",
         Edit5 = "Edit5",
-        V_DISP_LINE1 = "V_DISP_LINE1",
-        Label6 = "Label6",
-        EXEC_TYPE_VINQ = "EXEC_TYPE_VINQ",
+        btnexit = "btnexit",
         Label8 = "Label8",
-        Label12 = "Label12",
         DATE_FROM_VINQ = "DATE_FROM_VINQ",
-        MTO_CODE_VINQ = "MTO_CODE_VINQ",
         Label10 = "Label10",
-        Label14 = "Label14",
         DATE_TO_VINQ = "DATE_TO_VINQ",
+        EXEC_TYPE_VINQ = "EXEC_TYPE_VINQ",
+        Label12 = "Label12",
+        MTO_CODE_VINQ = "MTO_CODE_VINQ",
+        Label14 = "Label14",
         COLOR_CODE_VINQ = "COLOR_CODE_VINQ",
         COLOR_CODEINSIDE_VINQ = "COLOR_CODEINSIDE_VINQ",
-        Label7 = "Label7",
-        V_DISP_LINE2 = "V_DISP_LINE2",
-        V_DISP_LINE3 = "V_DISP_LINE3",
-        Label17 = "Label17",
-        EXEC_MODE_V = "EXEC_MODE_V",
-        Label20 = "Label20",
-        Label21 = "Label21",
-        Label32 = "Label32",
-        Label39 = "Label39",
         Label19 = "Label19",
         Label27 = "Label27",
-        ENTRY_DATE_VADD = "ENTRY_DATE_VADD",
-        Label22 = "Label22",
         Label28 = "Label28",
-        MTO_CODE_VADD = "MTO_CODE_VADD",
-        Label23 = "Label23",
         Label29 = "Label29",
+        Label30 = "Label30",
+        Label31 = "Label31",
+        ENTRY_DATE_VADD = "ENTRY_DATE_VADD",
+        MTO_CODE_VADD = "MTO_CODE_VADD",
         COLOR_CODE_VADD = "COLOR_CODE_VADD",
         COLOR_CODEINSIDE_VADD = "COLOR_CODEINSIDE_VADD",
-        Label24 = "Label24",
-        Label30 = "Label30",
         FRAME_QTY_VADD = "FRAME_QTY_VADD",
-        Label25 = "Label25",
-        Label31 = "Label31",
         PRD001_S1_MTO_NAME = "PRD001_S1_MTO_NAME",
-        Label26 = "Label26",
-        Label18 = "Label18",
-        V_DISP_LINE4 = "V_DISP_LINE4",
+        EXEC_MODE_V = "EXEC_MODE_V",
+        Label39 = "Label39",
         DateMTOADD = "DateMTOADD",
 }
 export enum MgCustomProperties {}
@@ -74,24 +59,20 @@ export class MgFormControlsAccessor {
         return this.fg.controls[MgControlName.Edit5] as FormControl;
     }
 
-    get V_DISP_LINE1(): FormControl {
-        return this.fg.controls[MgControlName.V_DISP_LINE1] as FormControl;
+    get DATE_FROM_VINQ(): FormControl {
+        return this.fg.controls[MgControlName.DATE_FROM_VINQ] as FormControl;
+    }
+
+    get DATE_TO_VINQ(): FormControl {
+        return this.fg.controls[MgControlName.DATE_TO_VINQ] as FormControl;
     }
 
     get EXEC_TYPE_VINQ(): FormControl {
         return this.fg.controls[MgControlName.EXEC_TYPE_VINQ] as FormControl;
     }
 
-    get DATE_FROM_VINQ(): FormControl {
-        return this.fg.controls[MgControlName.DATE_FROM_VINQ] as FormControl;
-    }
-
     get MTO_CODE_VINQ(): FormControl {
         return this.fg.controls[MgControlName.MTO_CODE_VINQ] as FormControl;
-    }
-
-    get DATE_TO_VINQ(): FormControl {
-        return this.fg.controls[MgControlName.DATE_TO_VINQ] as FormControl;
     }
 
     get COLOR_CODE_VINQ(): FormControl {
@@ -100,18 +81,6 @@ export class MgFormControlsAccessor {
 
     get COLOR_CODEINSIDE_VINQ(): FormControl {
         return this.fg.controls[MgControlName.COLOR_CODEINSIDE_VINQ] as FormControl;
-    }
-
-    get V_DISP_LINE2(): FormControl {
-        return this.fg.controls[MgControlName.V_DISP_LINE2] as FormControl;
-    }
-
-    get V_DISP_LINE3(): FormControl {
-        return this.fg.controls[MgControlName.V_DISP_LINE3] as FormControl;
-    }
-
-    get EXEC_MODE_V(): FormControl {
-        return this.fg.controls[MgControlName.EXEC_MODE_V] as FormControl;
     }
 
     get ENTRY_DATE_VADD(): FormControl {
@@ -138,8 +107,8 @@ export class MgFormControlsAccessor {
         return this.fg.controls[MgControlName.PRD001_S1_MTO_NAME] as FormControl;
     }
 
-    get V_DISP_LINE4(): FormControl {
-        return this.fg.controls[MgControlName.V_DISP_LINE4] as FormControl;
+    get EXEC_MODE_V(): FormControl {
+        return this.fg.controls[MgControlName.EXEC_MODE_V] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

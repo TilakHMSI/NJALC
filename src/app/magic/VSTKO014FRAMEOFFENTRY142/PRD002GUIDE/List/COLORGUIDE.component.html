@@ -1,35 +1,24 @@
 <div novalidate [formGroup]="screenFormGroup">
-    <div  [magic]="mgc.COLORGUIDE">
+    <div [magic]="mgc.COLORGUIDE">
             <div class="m-tablewrapper pl-0 pr-0">
                 <div class="example-container mat-elevation-z8 Table1TableContainerProps">
                 <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
                     (matSortChange)="tableService.sortData($event)">
                     <ng-container [magic]="mgc.Column2" [matColumnDef]="mgc.Column2">
                         <mat-header-cell *matHeaderCellDef>
-                            COLOR
+                            COLOR CODE
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.V_COL_CD" *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.V_COL_CD" [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.V_COL_CD [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.V_COL_CD"
+                                        <input [formControlName]="mgc.PRD002_S2_COLOR_CODE"
+                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PRD002_S2_COLOR_CODE"
+                                            [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PRD002_S2_COLOR_CODE [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PRD002_S2_COLOR_CODE"
                                             [rowId]="row.rowId">
-                                            {{mg.getValue(mgc.V_COL_CD, row.rowId)
-                                            }}
-                                        </label>
-                                    </div>
-                                </div>
-                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input [formControlName]="mgc.V_COLI_CD" *ngIf="mg.isRowInRowEditing(row)"
-                                            [magic]="mgc.V_COLI_CD" [rowId]="row.rowId" mgFormat />
-                                        <mgError [magic]=mgc.V_COLI_CD [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.V_COLI_CD"
-                                            [rowId]="row.rowId">
-                                            {{mg.getValue(mgc.V_COLI_CD, row.rowId)
+                                            {{mg.getValue(mgc.PRD002_S2_COLOR_CODE, row.rowId)
                                             }}
                                         </label>
                                     </div>

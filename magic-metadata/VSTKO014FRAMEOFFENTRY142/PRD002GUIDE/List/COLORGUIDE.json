@@ -1,0 +1,78 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"COLORGUIDE",
+		"window_type":	12,
+		"component_path":	"VSTKO014FRAMEOFFENTRY142/PRD002GUIDE/List/",
+		"module_name":	"",
+		"component_uniquename":	"VSTKO014FRAMEOFFENTRY142_PRD002GUIDE_List_COLORGUIDE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	90,
+		"height":	328
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	20,
+				"table_title_height":	20,
+				"common_line_id":	"line20"
+			},
+			"coordinates":	{
+				"x":	9,
+				"y":	20,
+				"width":	74,
+				"height":	288
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"COLOR CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	58
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD002_S2_COLOR_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line44"
+							},
+							"coordinates":	{
+								"x":	13,
+								"y":	44,
+								"width":	55,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}
