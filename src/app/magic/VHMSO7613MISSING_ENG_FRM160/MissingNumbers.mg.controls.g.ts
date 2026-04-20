@@ -22,6 +22,9 @@ export enum MgControlName {
         VDateTo = "VDateTo",
         EXEC_BUTTON = "EXEC_BUTTON",
         CancelCtl = "CancelCtl",
+        btn_Close="btn_Close",
+        vFileName="vFileName",
+        vBlob64base="vBlob64base"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

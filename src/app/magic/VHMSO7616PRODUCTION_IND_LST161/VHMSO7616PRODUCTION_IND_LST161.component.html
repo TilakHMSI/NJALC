@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -73,6 +73,121 @@
             <button [magic]="mgc.V_BUTTON">
                 Proceed
             </button>
+        </div>
+    </div>
+</div> -->
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.VHMSO7616PRODUCTION_IND_LST161">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                          VHMSO7616PRODUCTION_IND_LST161
+                        </label></h3>
+                  
+                    <div class="d-flex align-items-center">
+
+                    
+                        <button type="button" [magic]="mgc.btn_Close"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+
+                       <div class="col-lg-6" *ngIf="mg.getVisible(mgc.MTO_CODE)==='visible'">
+                                <div class="form-group">
+                                    <label class="lbl-sm">MTO CODE </label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.MTO_CODE" [magic]="mgc.MTO_CODE"
+                                            class="form-control" placeholder="SELECT MTO CODE" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.MTO_CODE">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="col-lg-6">
+                                 <div class="form-group">
+                                    <label class="lbl-sm">Plan Date</label>
+                                <input style="margin-top: 5px;" class="form-control-ed" type="date" [formControlName]="mgc.V_DATE"
+                            [magic]="mgc.V_DATE" dateInput />
+
+                                </div>
+                            </div>
+
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+              
+
+
+                 <div class="form-group">
+        <label></label>
+        <div [magic]="mgc.V_RADIO"
+             (change)="task.mgOnRadioSelectionChanged(mgc.V_RADIO)">
+
+            <div style="display: inline-block; margin-right: 15px;"
+                 *ngFor="let o of mg.getItemListValues(mgc.V_RADIO);">
+                <label>
+                    <input type="radio"
+                           [formControlName]="mgc.V_RADIO"
+                           [value]="o.index" />
+                    {{o.displayValue}}
+                </label>
+            </div>
+
+        </div>
+    </div>
+<!--             
+                            <div class="col-lg-6" *ngIf="mg.getVisible(mgc.V_FILE_NAME)==='visible'">
+                                <div class="form-group">
+                                    <label class="lbl-sm">File Name</label>
+                                    <input  class="form-control-ed" [formControlName]="mgc.V_FILE_NAME"
+                                        [magic]="mgc.V_FILE_NAME" mgFormat />
+                                    <mgError [magic]=mgc.V_FILE_NAME> </mgError>
+                                </div>
+                            </div>   -->
+
+   <div class="col-lg-12 text-center" style="margin-top: 5%;">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.V_BUTTON"
+                                             [disabled]="mg.isDisabled(mgc.V_BUTTON )"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                Proceed
+                                            </button>
+                                            <button type="button" [magic]="mgc.Cancel"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                          Cancel
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

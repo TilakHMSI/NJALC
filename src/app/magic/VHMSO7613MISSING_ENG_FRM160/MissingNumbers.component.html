@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -106,6 +106,123 @@
             <button [magic]="mgc.CancelCtl">
                 {{mg.getValue(mgc.CancelCtl)}}
             </button>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.MissingNumbers">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                          Missing Numbers
+                        </label></h3>
+                  
+                    <div class="d-flex align-items-center">
+                        <label  class="mb-0 mr-3">
+                            PGM=VHMSO7613
+                        </label>
+                            <label [magic]="mgc.Edit2" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit2)
+                            | magicDate : mgc.Edit2}}
+                        </label>
+                        <label [magic]="mgc.Edit3" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit3)
+                            | magicTime : mgc.Edit3}}
+                        </label>
+                    
+                        <button type="button" [magic]="mgc.btn_Close"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                          
+                              <div class="form-group">
+        <label></label>
+        <div [magic]="mgc.VGenerate"
+             (change)="task.mgOnRadioSelectionChanged(mgc.VGenerate)">
+
+            <div style="display: inline-block; margin-right: 15px;"
+                 *ngFor="let o of mg.getItemListValues(mgc.VGenerate);">
+                <label>
+                    <input type="radio"
+                           [formControlName]="mgc.VGenerate"
+                           [value]="o.index" />
+                    {{o.displayValue}}
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+
+                 <div class="form-group">
+        <label></label>
+        <div [magic]="mgc.V_Operation"
+             (change)="task.mgOnRadioSelectionChanged(mgc.V_Operation)">
+
+            <div style="display: inline-block; margin-right: 15px;"
+                 *ngFor="let o of mg.getItemListValues(mgc.V_Operation);">
+                <label>
+                    <input type="radio"
+                           [formControlName]="mgc.V_Operation"
+                           [value]="o.index" />
+                    {{o.displayValue}}
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+     <div class="col-lg-6">
+                                 <div class="form-group">
+                                    <label class="lbl-sm">Date From</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.VDateFrom"
+                            [magic]="mgc.VDateFrom" dateInput />
+
+                                </div>
+                            </div>
+
+                             <div class="col-lg-6">
+                                 <div class="form-group">
+                                    <label class="lbl-sm">Date To</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.VDateTo"
+                            [magic]="mgc.VDateTo" dateInput />
+
+                                </div>
+                            </div>
+
+
+
+                            
+
+   <div class="col-lg-12 text-center" style="margin-top: 5%;">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.EXEC_BUTTON"
+                                             [disabled]="mg.isDisabled(mgc.EXEC_BUTTON )"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                EXEC
+                                            </button>
+                                            <button type="button" [magic]="mgc.CancelCtl"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                          Cancel
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

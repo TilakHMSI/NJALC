@@ -16,6 +16,10 @@ export enum MgControlName {
         Label6 = "Label6",
         v_Path = "v_Path",
         v_Generate = "v_Generate",
+       CancelCtl="CancelCtl",
+       btn_Close="btn_Close",
+       vBlob64base="vBlob64base",
+        vFileName="vFileName"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

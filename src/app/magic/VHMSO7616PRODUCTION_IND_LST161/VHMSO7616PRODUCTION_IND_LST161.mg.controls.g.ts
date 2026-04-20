@@ -14,6 +14,11 @@ export enum MgControlName {
         V_RADIO = "V_RADIO",
         V_FILE_NAME = "V_FILE_NAME",
         V_BUTTON = "V_BUTTON",
+        btn_Close="btn_Close",
+        Cancel="Cancel",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName"
+
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

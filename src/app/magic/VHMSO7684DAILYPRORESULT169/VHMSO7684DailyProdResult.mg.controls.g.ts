@@ -15,6 +15,9 @@ export enum MgControlName {
         DATE_V = "DATE_V",
         EXEC_BUTTON = "EXEC_BUTTON",
         CANCEL_BUTTON = "CANCEL_BUTTON",
+        btn_Close="btn_Close",
+        vFileName="vFileName",
+        vBlob64base="vBlob64base"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

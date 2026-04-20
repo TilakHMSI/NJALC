@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -53,6 +53,80 @@
             <button [magic]="mgc.CANCEL_BUTTON">
                 C:Cancel
             </button>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.VPRDB015_LMONTHPRODRESULT">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                          Month Prod Result
+                        </label></h3>
+                  
+                    <div class="d-flex align-items-center">
+                        <input class="form-control" style="color:white; width:auto;background-color:transparent;border: none;"
+                        [formControlName]="mgc.V_LOCATE_P" [magic]="mgc.V_LOCATE_P" mgFormat />
+                        <label  class="mb-0 mr-3">
+                           PGM=VHMSO7642
+                        </label>
+                        
+                            <label [magic]="mgc.Edit3" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit3)
+                            | magicDate : mgc.Edit3}}
+                        </label>
+                        <label [magic]="mgc.Edit4" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit4)
+                            | magicTime : mgc.Edit4}}
+                        </label>
+                    
+                        <button type="button" [magic]="mgc.btn_Close"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                          
+
+
+     <div class="col-lg-6">
+                                 <div class="form-group">
+                                    <label class="lbl-sm">MONTH YEAR</label>
+ <input class="form-control-ed" type="date" [formControlName]="mgc.DATE_V"
+                            [magic]="mgc.DATE_V" dateInput /> 
+
+                                </div>
+                            </div>
+
+        
+
+   <div class="col-lg-12 text-center" style="margin-top: 5%;">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.EXEC_BUTTON"
+                                             [disabled]="mg.isDisabled(mgc.EXEC_BUTTON )"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                EXEC
+                                            </button>
+                                            <button type="button" [magic]="mgc.CANCEL_BUTTON"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                          Cancel
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

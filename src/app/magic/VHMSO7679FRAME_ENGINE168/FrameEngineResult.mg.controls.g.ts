@@ -18,6 +18,10 @@ export enum MgControlName {
         DATE_V_FROM = "DATE_V_FROM",
         DATE_V_TO = "DATE_V_TO",
         Label9 = "Label9",
+        btn_Close="btn_Close",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName"
+
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

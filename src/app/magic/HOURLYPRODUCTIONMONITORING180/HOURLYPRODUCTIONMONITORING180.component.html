@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -11,12 +11,12 @@
                 [magic]="mgc.Label1"
                 class="lable_overflow"
             >
-                <<<
+               
                     HOURLY
                     PRODUCTION
                     MONITORING
                     AF
-                >>>
+                
             </label>
         </div>
         <div style="display: flex; flex-direction: row">
@@ -62,6 +62,77 @@
             <button [magic]="mgc.v_Exit">
                 E\XIT
             </button>
+        </div>
+    </div>
+</div> -->
+
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.HOURLYPRODUCTIONMONITORING180">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                     AF HOURLY PRODUCTION MONITORING
+                        </label></h3>
+                  
+                    <div class="d-flex align-items-center">
+                     
+                    
+                        <button type="button" [magic]="mgc.btn_Close"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                          
+
+         <div class="col-lg-6">
+                                 <div class="form-group">
+                                    <label class="lbl-sm">Date </label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.v_Date"
+                            [magic]="mgc.v_Date" dateInput />
+
+                                </div>
+                            </div>
+
+                              <div class="col-lg-6">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm"> Production Line</label>
+                        <select class="form-control-ed" [magic]="mgc.v_ProdLine" [formControlName]="mgc.v_ProdLine">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.v_ProdLine);"
+                                [selected]="o.index == mg.getValue(mgc.v_ProdLine)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+   <div class="col-lg-12 text-center" style="margin-top: 5%;">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.v_Exec"
+                                             [disabled]="mg.isDisabled(mgc.v_Exec )"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                              EXEC
+                                            </button>
+                                            <button type="button" [magic]="mgc.v_Exit"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                          EXIT
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

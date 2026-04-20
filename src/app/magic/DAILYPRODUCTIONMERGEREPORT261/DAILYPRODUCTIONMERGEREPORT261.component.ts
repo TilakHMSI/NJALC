@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { FormGroup } from "@angular/forms";
+import { FormControl, FormGroup } from "@angular/forms";
 import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./DAILYPRODUCTIONMERGEREPORT261.mg.controls.g";
 
 
@@ -24,13 +24,13 @@ export class DAILYPRODUCTIONMERGEREPORT261 extends TaskBaseMagicComponent implem
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "DAILYPRODUCTIONMERGEREPORT261";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "700px";
+    private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
@@ -63,4 +63,5 @@ export class DAILYPRODUCTIONMERGEREPORT261 extends TaskBaseMagicComponent implem
     IsMovable() {
         return DAILYPRODUCTIONMERGEREPORT261.isMovable;
     }
+  
 }
