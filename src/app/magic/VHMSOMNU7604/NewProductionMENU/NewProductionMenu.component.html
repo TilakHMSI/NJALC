@@ -1,4 +1,4 @@
-<div novalidate [formGroup]="screenFormGroup">
+<!-- <div novalidate [formGroup]="screenFormGroup">
     <div style="display: flex; flex-direction: column" [magic]="mgc.NewProductionMenu">
         <div style="display: flex; flex-direction: row">
             <button [magic]="mgc.btnexit">
@@ -85,9 +85,9 @@
             </button>
         </div>
     </div>
-</div>
+</div> -->
 
-<!-- 
+
 <div novalidate [formGroup]="screenFormGroup">
     <div class="container-fluid-ov" [magic]="mgc.NewProductionMenu">
         <div class="card">
@@ -106,135 +106,130 @@
             <div class="card-body">
                 <div class="form-group row">
                     <div class="col-lg-4 text-center">
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.MISSING_E_F_V)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.VFRAMEENGINE)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.MISSING_E_F_V">
-                                {{mg.getValue(mgc.MISSING_E_F_V)}}
+                                [magic]="mgc.VFRAMEENGINE">
+                                {{mg.getValue(mgc.VFRAMEENGINE)}}
                             </button>
                         </div>
 
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.INDICATION_LIST_V)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.VSHIFTPDI)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.INDICATION_LIST_V">
-                                {{mg.getValue(mgc.INDICATION_LIST_V)}}
+                                [magic]="mgc.VSHIFTPDI">
+                                {{mg.getValue(mgc.VSHIFTPDI)}}
                             </button>
                         </div>
 
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.ENGINE_CARD_V)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.VAFUNITEUTIL)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.ENGINE_CARD_V">
-                                {{mg.getValue(mgc.ENGINE_CARD_V)}}
+                                [magic]="mgc.VAFUNITEUTIL">
+                                {{mg.getValue(mgc.VAFUNITEUTIL)}}
                             </button>
                         </div>
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.MONTHLY_PRODUCTION_V)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.vAEAFSHIFT)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.MONTHLY_PRODUCTION_V">
-                                {{mg.getValue(mgc.MONTHLY_PRODUCTION_V)}}
+                                [magic]="mgc.vAEAFSHIFT">
+                                {{mg.getValue(mgc.vAEAFSHIFT)}}
                             </button>
                         </div>
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.FRAME_OFF_V)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.FRAME_OFF_V">
-                                {{mg.getValue(mgc.FRAME_OFF_V)}}
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.vAEHOURMST)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.vAEHOURMST">
+                                {{mg.getValue(mgc.vAEHOURMST)}}
+                            </button>
+                        </div>
+
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.vAFHOURMST)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.vAFHOURMST">
+                                {{mg.getValue(mgc.vAFHOURMST)}}
+                            </button>
+                        </div>
+
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.vPRODSEQPLAN)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.vPRODSEQPLAN">
+                                {{mg.getValue(mgc.vPRODSEQPLAN)}}
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center">                       
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.v_CKD_CaseOffPackingStatus)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.v_CKD_CaseOffPackingStatus">
+                                {{mg.getValue(mgc.v_CKD_CaseOffPackingStatus)}}
+                            </button>
+                        </div>
+
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.BNew_Card_Print)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.BNew_Card_Print">
+                                {{mg.getValue(mgc.BNew_Card_Print)}}
+                            </button>
+                        </div>
+
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.B_AEOFF_REPORT)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.B_AEOFF_REPORT">
+                                {{mg.getValue(mgc.B_AEOFF_REPORT)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.VAF_Target)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.VAF_Target">
+                                {{mg.getValue(mgc.VAF_Target)}}
+                            </button>
+                        </div>
+                                                <div class="form-group" *ngIf="mg.getVisible(mgc.VAF_ShiftTime)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.VAF_ShiftTime">
+                                {{mg.getValue(mgc.VAF_ShiftTime)}}
+                            </button>
+                        </div>
+
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.VAE_Target)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.VAE_Target">
+                                {{mg.getValue(mgc.VAE_Target)}}
+                            </button>
+                        </div>
+
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.VAE_ShiftTime)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.VAE_ShiftTime">
+                                {{mg.getValue(mgc.VAE_ShiftTime)}}
+                            </button>
+                        </div>
+
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.VDISPLAY_BOARD_MONITOR)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.VDISPLAY_BOARD_MONITOR">
+                                {{mg.getValue(mgc.VDISPLAY_BOARD_MONITOR)}}
                             </button>
                         </div>
                     </div>
                     <div class="col-lg-4 text-center">
 
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.DAILY_PROD_V)==='visible'">
+
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.VFRAME_HOLD_UTILITY)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.DAILY_PROD_V">
-                                {{mg.getValue(mgc.DAILY_PROD_V)}}
+                                [magic]="mgc.VFRAME_HOLD_UTILITY">
+                                {{mg.getValue(mgc.VFRAME_HOLD_UTILITY)}}
                             </button>
                         </div>
 
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.DAILY_FRAME_V)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.VHOLD_FRAME_REPORT)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.DAILY_FRAME_V">
-                                {{mg.getValue(mgc.DAILY_FRAME_V)}}
-                            </button>
-                        </div>
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.KSPA_ENGINE_V)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.KSPA_ENGINE_V">
-                                {{mg.getValue(mgc.KSPA_ENGINE_V)}}
+                                [magic]="mgc.VHOLD_FRAME_REPORT">
+                                {{mg.getValue(mgc.VHOLD_FRAME_REPORT)}}
                             </button>
                         </div>
 
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.NOT_AF_OFF)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.NOT_AF_OFF">
-                                {{mg.getValue(mgc.NOT_AF_OFF)}}
-                            </button>
-                        </div>
-
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.AF_OFF)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.AF_OFF">
-                                {{mg.getValue(mgc.AF_OFF)}}
-                            </button>
-                        </div>
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.CLRINDLIST)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.CLRINDLIST">
-                                {{mg.getValue(mgc.CLRINDLIST)}}
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.SHIFTWISEAFOFF)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.v_Mapping_Master)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.SHIFTWISEAFOFF">
-                                {{mg.getValue(mgc.SHIFTWISEAFOFF)}}
+                                [magic]="mgc.v_Mapping_Master">
+                                {{mg.getValue(mgc.v_Mapping_Master)}}
                             </button>
                         </div>
-
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.DLY_PRD_LST)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.DLY_PRD_LST">
-                                {{mg.getValue(mgc.DLY_PRD_LST)}}
-                            </button>
-                        </div>
-
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.HRLY_PRD_REP__AF)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.Card_RePrintNew)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.HRLY_PRD_REP__AF">
-                                {{mg.getValue(mgc.HRLY_PRD_REP__AF)}}
-                            </button>
-                        </div>
-
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.HRLY_PRD_REP__AE)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.HRLY_PRD_REP__AE">
-                                {{mg.getValue(mgc.HRLY_PRD_REP__AE)}}
-                            </button>
-                        </div>
-
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.DLY_PRD_LST_MERGE)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.DLY_PRD_LST_MERGE">
-                                {{mg.getValue(mgc.DLY_PRD_LST_MERGE)}}
-                            </button>
-                        </div>
-
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.DAILY_FRAME_V_MERGE)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.DAILY_FRAME_V_MERGE">
-                                {{mg.getValue(mgc.DAILY_FRAME_V_MERGE)}}
-                            </button>
-                        </div>
-
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.FACTORY_STOCK)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.FACTORY_STOCK">
-                                {{mg.getValue(mgc.FACTORY_STOCK)}}
-                            </button>
-                        </div>
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.V_ShiftwiseProductionReport)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.V_ShiftwiseProductionReport">
-                                {{mg.getValue(mgc.V_ShiftwiseProductionReport)}}
-                            </button>
-                        </div>
-                        <div class="form-group" *ngIf="mg.getVisible(mgc.VMORE)==='visible'">
-                            <button class="btn btn-warning font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.VMORE">
-                                {{mg.getValue(mgc.VMORE)}}
+                                [magic]="mgc.Card_RePrintNew">
+                                {{mg.getValue(mgc.Card_RePrintNew)}}
                             </button>
                         </div>
                     </div>
@@ -242,4 +237,4 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
