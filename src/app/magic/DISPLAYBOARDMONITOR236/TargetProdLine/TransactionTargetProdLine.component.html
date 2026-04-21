@@ -1,74 +1,27 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.TransactionTargetProdLine"
-    >
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
-                TARGET :
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.V_VTarget"
-                    type='number'
-                    [magic]="mgc.V_VTarget"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_VTarget> </mgError>
+<div class="d-flex justify-content-center align-items-center"  novalidate [formGroup]="screenFormGroup">
+    <div [magic]="mgc.TransactionTargetProdLine">
+        <div class="message-box text-center p-3  w-100">
+            <div class="message-title mb-2">Message</div>
+
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <span class="engine-label me-2">TARGET -</span>
+                <span class="engine-no text-primary">{{mg.getValue(mgc.V_VTarget) }}</span>
             </div>
-            <button [magic]="mgc.btnexit">
-                Back
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label4"
-                class="lable_overflow"
-            >
-                PLAN :
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.V_VPlan"
-                    type='number'
-                    [magic]="mgc.V_VPlan"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_VPlan> </mgError>
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <span class="engine-label mr-5">PLAN -</span>
+                <span class="engine-no text-primary">{{mg.getValue(mgc.V_VPlan) }}</span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <span class="engine-label mr-5">ACTUAL -</span>
+                <span class="engine-no text-primary">{{mg.getValue(mgc.V_VActual) }}</span>
+            </div>
+
+            <div class="status-box mx-auto py-2 px-3 w-100">
+                <label class="lbl_Status" class="lable_overflow">
+                    {{mg.getValue(mgc.V_VMessage) }}
+                </label>
             </div>
         </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
-                ACTUAL :
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.V_VActual"
-                    type='number'
-                    [magic]="mgc.V_VActual"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_VActual> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div>
-                <input
-                    [formControlName]="mgc.V_VMessage"
-                    [magic]="mgc.V_VMessage"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_VMessage> </mgError>
-            </div>
-        </div>
+        <button type="button" [magic]="mgc.btnexit" class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
     </div>
 </div>

@@ -323,7 +323,7 @@
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	51
+						"width":	49
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -331,57 +331,17 @@
 						{
 							"style":	null,
 							"props":	{
-								"id":	"EnterRowEditing",
+								"id":	"btnEdit",
 								"format":	"Edit",
 								"is_table_child":	true,
 								"web_style":	2,
-								"row_editing_type":	1,
-								"common_line_id":	"line98"
+								"row_editing_type":	0,
+								"common_line_id":	"line100"
 							},
 							"coordinates":	{
-								"x":	662,
-								"y":	98,
+								"x":	661,
+								"y":	100,
 								"width":	28,
-								"height":	22
-							},
-							"hint":	null,
-							"controlType":	"B",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"SaveRowEditing",
-								"format":	"Save",
-								"is_table_child":	true,
-								"web_style":	2,
-								"row_editing_type":	3,
-								"common_line_id":	"line124"
-							},
-							"coordinates":	{
-								"x":	662,
-								"y":	124,
-								"width":	35,
-								"height":	22
-							},
-							"hint":	null,
-							"controlType":	"B",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"CancelRowEditing",
-								"format":	"Cancel",
-								"is_table_child":	true,
-								"web_style":	2,
-								"row_editing_type":	2,
-								"common_line_id":	"line150"
-							},
-							"coordinates":	{
-								"x":	662,
-								"y":	150,
-								"width":	43,
 								"height":	22
 							},
 							"hint":	null,
@@ -396,275 +356,16 @@
 								"is_table_child":	true,
 								"web_style":	2,
 								"row_editing_type":	0,
-								"common_line_id":	"line176"
+								"common_line_id":	"line125"
 							},
 							"coordinates":	{
 								"x":	662,
-								"y":	176,
+								"y":	125,
 								"width":	41,
 								"height":	22
 							},
 							"hint":	null,
 							"controlType":	"B",
-							"children":	null
-						}
-					]
-				}
-			]
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"V_v_TAB",
-				"items_list":	"BREAK 1,BREAK 2",
-				"attribute":	"A",
-				"common_line_id":	"line312"
-			},
-			"coordinates":	{
-				"x":	25,
-				"y":	312,
-				"width":	620,
-				"height":	91
-			},
-			"hint":	null,
-			"controlType":	"J",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"layer":	1,
-						"id":	"V_v_TAB"
-					},
-					"coordinates":	null,
-					"hint":	null,
-					"controlType":	"Z",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"Label18",
-								"text":	"BREAK FROM - 1:",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	35,
-								"y":	364,
-								"width":	113,
-								"height":	15
-							},
-							"hint":	null,
-							"controlType":	"L",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"BR_TIM_F_1",
-								"showsecs":	true,
-								"format":	"HH:MM:SS",
-								"attribute":	"T",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	145,
-								"y":	364,
-								"width":	68,
-								"height":	18
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"Label21",
-								"text":	"BREAK TO - 1:",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	235,
-								"y":	364,
-								"width":	98,
-								"height":	15
-							},
-							"hint":	null,
-							"controlType":	"L",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"BR_TIM_T_1",
-								"showsecs":	true,
-								"format":	"HH:MM:SS",
-								"attribute":	"T",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	330,
-								"y":	364,
-								"width":	68,
-								"height":	18
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"Label26",
-								"text":	"TOTAL BREAK TIME - 1:",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	420,
-								"y":	364,
-								"width":	154,
-								"height":	15
-							},
-							"hint":	null,
-							"controlType":	"L",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"V_v_BR_TOT_TIME_1",
-								"showsecs":	true,
-								"format":	"HH:MM:SS",
-								"attribute":	"T",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	569,
-								"y":	364,
-								"width":	68,
-								"height":	18
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"layer":	2,
-						"id":	"V_v_TAB"
-					},
-					"coordinates":	null,
-					"hint":	null,
-					"controlType":	"Z",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"Label17",
-								"text":	"BREAK FROM - 2:",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	35,
-								"y":	364,
-								"width":	113,
-								"height":	15
-							},
-							"hint":	null,
-							"controlType":	"L",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"BR_TIM_F_2",
-								"showsecs":	true,
-								"format":	"HH:MM:SS",
-								"attribute":	"T",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	149,
-								"y":	364,
-								"width":	68,
-								"height":	18
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"Label22",
-								"text":	"BREAK TO - 2:",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	235,
-								"y":	364,
-								"width":	98,
-								"height":	15
-							},
-							"hint":	null,
-							"controlType":	"L",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"BR_TIM_T_2",
-								"showsecs":	true,
-								"format":	"HH:MM:SS",
-								"attribute":	"T",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	334,
-								"y":	364,
-								"width":	68,
-								"height":	18
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"Label25",
-								"text":	"TOTAL BREAK TIME - 2:",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	419,
-								"y":	364,
-								"width":	154,
-								"height":	15
-							},
-							"hint":	null,
-							"controlType":	"L",
-							"children":	null
-						},
-						{
-							"style":	null,
-							"props":	{
-								"id":	"V_v_BR_TOT_TIME_2",
-								"showsecs":	true,
-								"format":	"HH:MM:SS",
-								"attribute":	"T",
-								"common_line_id":	"line364"
-							},
-							"coordinates":	{
-								"x":	570,
-								"y":	364,
-								"width":	68,
-								"height":	18
-							},
-							"hint":	null,
-							"controlType":	"T",
 							"children":	null
 						}
 					]

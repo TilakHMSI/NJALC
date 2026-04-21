@@ -148,11 +148,11 @@
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line126"
+				"common_line_id":	"line135"
 			},
 			"coordinates":	{
-				"x":	51,
-				"y":	126,
+				"x":	137,
+				"y":	135,
 				"width":	365,
 				"height":	35
 			},

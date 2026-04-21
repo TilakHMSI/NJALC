@@ -24,23 +24,8 @@ export enum MgControlName {
         Column8 = "Column8",
         HOURLY_PROD_PLAN_COMM_PLN = "HOURLY_PROD_PLAN_COMM_PLN",
         Column30 = "Column30",
-        EnterRowEditing = "EnterRowEditing",
-        SaveRowEditing = "SaveRowEditing",
-        CancelRowEditing = "CancelRowEditing",
+        btnEdit = "btnEdit",
         btnDelete = "btnDelete",
-        V_v_TAB = "V_v_TAB",
-        Label18 = "Label18",
-        BR_TIM_F_1 = "BR_TIM_F_1",
-        Label21 = "Label21",
-        BR_TIM_T_1 = "BR_TIM_T_1",
-        Label26 = "Label26",
-        V_v_BR_TOT_TIME_1 = "V_v_BR_TOT_TIME_1",
-        Label17 = "Label17",
-        BR_TIM_F_2 = "BR_TIM_F_2",
-        Label22 = "Label22",
-        BR_TIM_T_2 = "BR_TIM_T_2",
-        Label25 = "Label25",
-        V_v_BR_TOT_TIME_2 = "V_v_BR_TOT_TIME_2",
 }
 export enum MgCustomProperties {}
 export var
@@ -84,30 +69,6 @@ export class MgFormControlsAccessor {
 
     get HOURLY_PROD_PLAN_COMM_PLN(): FormControl {
         return this.getTableChildFormControl(MgControlName.HOURLY_PROD_PLAN_COMM_PLN);
-    }
-
-    get BR_TIM_F_1(): FormControl {
-        return this.fg.controls[MgControlName.BR_TIM_F_1] as FormControl;
-    }
-
-    get BR_TIM_T_1(): FormControl {
-        return this.fg.controls[MgControlName.BR_TIM_T_1] as FormControl;
-    }
-
-    get V_v_BR_TOT_TIME_1(): FormControl {
-        return this.fg.controls[MgControlName.V_v_BR_TOT_TIME_1] as FormControl;
-    }
-
-    get BR_TIM_F_2(): FormControl {
-        return this.fg.controls[MgControlName.BR_TIM_F_2] as FormControl;
-    }
-
-    get BR_TIM_T_2(): FormControl {
-        return this.fg.controls[MgControlName.BR_TIM_T_2] as FormControl;
-    }
-
-    get V_v_BR_TOT_TIME_2(): FormControl {
-        return this.fg.controls[MgControlName.V_v_BR_TOT_TIME_2] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

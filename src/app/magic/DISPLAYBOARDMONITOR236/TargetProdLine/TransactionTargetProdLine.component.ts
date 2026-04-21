@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-DISPLAYBOARDMONITOR236_TargetProdLine_TransactionTargetProdLine',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./TransactionTargetProdLine.component.css'],
     templateUrl: './TransactionTargetProdLine.component.html'
 })
 export class TransactionTargetProdLine extends TaskBaseMagicComponent implements MagicModalInterface {
@@ -24,11 +25,11 @@ export class TransactionTargetProdLine extends TaskBaseMagicComponent implements
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "TransactionTargetProdLine";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "1250px";
+    private static readonly height: string = "750px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;

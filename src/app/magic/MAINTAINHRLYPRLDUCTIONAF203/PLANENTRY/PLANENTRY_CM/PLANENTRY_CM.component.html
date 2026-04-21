@@ -1,3 +1,81 @@
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.PLANENTRY_CM">
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input [formControlName]="mgc.SRNO" type='number' [magic]="mgc.SRNO" mgFormat />
+                <mgError [magic]=mgc.SRNO> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <input type="time" [formControlName]="mgc.TIME_F" [magic]="mgc.TIME_F" step=1 />
+            <input type="time" [formControlName]="mgc.TIME_T" [magic]="mgc.TIME_T" step=1 />
+            <input type="time" [formControlName]="mgc.v_TOT_TIME" [magic]="mgc.v_TOT_TIME" step=1 />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input [formControlName]="mgc.HRLY_PLN" type='number' [magic]="mgc.HRLY_PLN" mgFormat />
+                <mgError [magic]=mgc.HRLY_PLN> </mgError>
+            </div>
+        </div>
+        <div [magic]="mgc.V_v_TAB">
+            <div class="tab_control">
+                <div *ngFor="let o of mg.getItemListValues(mgc.V_v_TAB)">
+                    <button class="tab_button" (click)="task.mgOnTabSelectionChanged(mgc.V_v_TAB, o.index)"
+                        [ngClass]="{'tab_button_active' : mg.isTabPageSelected(mgc.V_v_TAB, o.index+1 )}">
+                        {{mg.getTabpageText(mgc.V_v_TAB, o.index)}}
+                    </button>
+                </div>
+                <div class="tab_content" [style.display]="mg.isTabPageLayerSelected(mgc.V_v_TAB, 1) ? 'flex' : 'none' "
+                    style="flex-direction: column">
+                    <div style="display: flex; flex-direction: row">
+                        <label [magic]="mgc.Label18" class="lable_overflow">
+                            BREAK FROM - 1:
+                        </label>
+                        <input type="time" [formControlName]="mgc.BR_TIM_F_1" [magic]="mgc.BR_TIM_F_1" step=1 />
+                        <label [magic]="mgc.Label21" class="lable_overflow">
+                            BREAK TO - 1:
+                        </label>
+                        <input type="time" [formControlName]="mgc.BR_TIM_T_1" [magic]="mgc.BR_TIM_T_1" step=1 />
+                        <label [magic]="mgc.Label26" class="lable_overflow">
+                            TOTAL BREAK TIME - 1:
+                        </label>
+                        <input type="time" [formControlName]="mgc.V_v_BR_TOT_TIME_1" [magic]="mgc.V_v_BR_TOT_TIME_1"
+                            step=1 />
+                    </div>
+                </div>
+                <div class="tab_content" [style.display]="mg.isTabPageLayerSelected(mgc.V_v_TAB, 2) ? 'flex' : 'none' "
+                    style="flex-direction: column">
+                    <div style="display: flex; flex-direction: row">
+                        <label [magic]="mgc.Label17" class="lable_overflow">
+                            BREAK FROM - 2:
+                        </label>
+                        <input type="time" [formControlName]="mgc.BR_TIM_F_2" [magic]="mgc.BR_TIM_F_2" step=1 />
+                        <label [magic]="mgc.Label22" class="lable_overflow">
+                            BREAK TO - 2:
+                        </label>
+                        <input type="time" [formControlName]="mgc.BR_TIM_T_2" [magic]="mgc.BR_TIM_T_2" step=1 />
+                        <label [magic]="mgc.Label25" class="lable_overflow">
+                            TOTAL BREAK TIME - 2:
+                        </label>
+                        <input type="time" [formControlName]="mgc.V_v_BR_TOT_TIME_2" [magic]="mgc.V_v_BR_TOT_TIME_2"
+                            step=1 />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnSave">
+                Save
+            </button>
+        </div>
+    </div>
+</div> -->
+
 <div novalidate [formGroup]="screenFormGroup">
     <div class="container-fluid-ov" [magic]="mgc.PLANENTRY_CM">
         <div class="card">

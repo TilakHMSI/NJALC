@@ -110,8 +110,8 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"VExit",
-				"attribute":	"A",
+				"id":	"btnexit",
+				"format":	"back",
 				"common_line_id":	"line189"
 			},
 			"coordinates":	{
