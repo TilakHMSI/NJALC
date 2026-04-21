@@ -1,0 +1,175 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.PLANENTRY_CM">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            PLAN ENTRY : CM
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-3">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">SR NO</label>
+                                    <input [formControlName]="mgc.SRNO" [magic]="mgc.SRNO" class="form-control-editsm"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.SRNO"> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">TIME FROM</label>
+                                    <input type="time" class="form-control-editsm" [formControlName]="mgc.TIME_F"
+                                        [magic]="mgc.TIME_F" step=1 />
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">TIME To</label>
+                                    <input type="time" class="form-control-editsm" [formControlName]="mgc.TIME_T"
+                                        [magic]="mgc.TIME_T" step=1 />
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">TOTAL TIME</label>
+                                    <input type="time" class="form-control" [formControlName]="mgc.v_TOT_TIME"
+                                        [magic]="mgc.v_TOT_TIME" />
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">HOURLY PROD (In Nos.)</label>
+                                    <input class="form-control-editsm" [formControlName]="mgc.HRLY_PLN" type='number' [magic]="mgc.HRLY_PLN"
+                                        mgFormat />
+                                    <mgError [magic]=mgc.HRLY_PLN> </mgError>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div [magic]="mgc.V_v_TAB">
+                            <div class="tab_control">
+                                <div class="wizard wizard-3 pb-11">
+                                    <div class="wizard-nav">
+                                        <div class="wizard-steps px-1 py-1">
+                                            <div class="wizard-step" data-wizard-state=""
+                                                *ngFor="let o of mg.getItemListValues(mgc.V_v_TAB)">
+                                                <div class="wizard-label"
+                                                    (click)="task.mgOnTabSelectionChanged(mgc.V_v_TAB, o.index)"
+                                                    [ngClass]="{'current01' : mg.isTabPageSelected(mgc.V_v_TAB, o.index+1 )}">
+                                                    <h3 class="wizard-title">
+                                                        <span class="label label-xl label-dottabs mr-2"></span>
+                                                        {{mg.getTabpageText(mgc.V_v_TAB, o.index)}}
+                                                    </h3>
+                                                    <div class="wizard-bar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab_content mb-10"
+                                    [style.display]="mg.isTabPageLayerSelected(mgc.V_v_TAB, 1) ? 'flex' : 'none' "
+                                    style="flex-direction: column">
+                                    <div class="col-lg-12 col-xxl-12">
+                                        <div class="form-group row">
+                                            <div class="col-lg-3">
+                                                <div class="form-group-sm">
+                                                    <label class="lbl-sm">BREAK FROM - 1:</label>
+                                                    <input type="time" class="form-control-editsm"
+                                                        [formControlName]="mgc.BR_TIM_F_1" [magic]="mgc.BR_TIM_F_1"
+                                                        step=1 />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group-sm">
+                                                    <label class="lbl-sm">BREAK TO - 1:</label>
+                                                    <input type="time" class="form-control-editsm"
+                                                        [formControlName]="mgc.BR_TIM_T_1" [magic]="mgc.BR_TIM_T_1"
+                                                        step=1 />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group-sm">
+                                                    <label class="lbl-sm">TOTAL BREAK TIME - 1:</label>
+                                                    <input type="time" class="form-control"
+                                                        [formControlName]="mgc.V_v_BR_TOT_TIME_1" [magic]="mgc.V_v_BR_TOT_TIME_1"
+                                                        step=1 />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tab_content"
+                                    [style.display]="mg.isTabPageLayerSelected(mgc.V_v_TAB, 2) ? 'flex' : 'none' "
+                                    style="flex-direction: column">
+                                     <div class="col-lg-12 col-xxl-12">
+                                        <div class="form-group row">
+                                            <div class="col-lg-3">
+                                                <div class="form-group-sm">
+                                                    <label class="lbl-sm">BREAK FROM - 2:</label>
+                                                    <input type="time" class="form-control-editsm"
+                                                        [formControlName]="mgc.BR_TIM_F_2" [magic]="mgc.BR_TIM_F_2"
+                                                        step=1 />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group-sm">
+                                                    <label class="lbl-sm">BREAK TO - 2:</label>
+                                                    <input type="time" class="form-control-editsm"
+                                                        [formControlName]="mgc.BR_TIM_T_2" [magic]="mgc.BR_TIM_T_2"
+                                                        step=1 />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group-sm">
+                                                    <label class="lbl-sm">TOTAL BREAK TIME - 2:</label>
+                                                    <input type="time" class="form-control"
+                                                        [formControlName]="mgc.V_v_BR_TOT_TIME_2" [magic]="mgc.V_v_BR_TOT_TIME_2"
+                                                        step=1 />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-12 text-center">
+                                <div class="form-group d-flex justify-content-center">
+                                    <button type="button" [magic]="mgc.btnSave"
+                                        class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        SAVE
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

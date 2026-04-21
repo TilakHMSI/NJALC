@@ -13,6 +13,7 @@ export enum MgControlName {
         Label3 = "Label3",
         V_SHIFT = "V_SHIFT",
         V_PRD_LINE = "V_PRD_LINE",
+        btnexit = "btnexit",
         Sub1 = "Sub1",
 }
 export enum MgCustomProperties {}

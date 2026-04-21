@@ -2,7 +2,7 @@
 	"style":	null,
 	"props":	{
 		"id":	"HoldFrame",
-		"window_type":	1,
+		"window_type":	12,
 		"component_path":	"UTILITYFORHOLDFRAMES239/HoldFrame/",
 		"module_name":	"",
 		"component_uniquename":	"UTILITYFORHOLDFRAMES239_HoldFrame_HoldFrame"

@@ -1,0 +1,48 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.EVSM_BOMCODE"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                Model Code
+            </label>
+            <label [magic]="mgc.V_MODEL_CODE">
+                {{mg.getValue(mgc.V_MODEL_CODE) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+                BOM Code
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_BOM_CODE"
+                    [magic]="mgc.V_BOM_CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_BOM_CODE> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                [magic]="mgc.B_SAVE"
+                [disabled]="mg.isDisabled(mgc.B_SAVE )"
+            >
+                {{mg.getValue(mgc.B_SAVE)}}
+            </button>
+            <button [magic]="mgc.B_EXIT">
+                {{mg.getValue(mgc.B_EXIT)}}
+            </button>
+        </div>
+    </div>
+</div>

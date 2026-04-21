@@ -125,6 +125,23 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	663,
+				"y":	62,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"Sub1",
 				"common_line_id":	"line133"
 			},

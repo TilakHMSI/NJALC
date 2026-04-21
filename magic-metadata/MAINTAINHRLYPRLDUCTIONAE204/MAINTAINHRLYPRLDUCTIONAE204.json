@@ -74,8 +74,8 @@
 				"common_line_id":	"line55"
 			},
 			"coordinates":	{
-				"x":	120,
-				"y":	65,
+				"x":	115,
+				"y":	56,
 				"width":	49,
 				"height":	20
 			},
@@ -93,7 +93,7 @@
 			},
 			"coordinates":	{
 				"x":	170,
-				"y":	67,
+				"y":	55,
 				"width":	105,
 				"height":	20
 			},
@@ -120,6 +120,23 @@
 			},
 			"hint":	null,
 			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	683,
+				"y":	64,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
 			"children":	null
 		},
 		{

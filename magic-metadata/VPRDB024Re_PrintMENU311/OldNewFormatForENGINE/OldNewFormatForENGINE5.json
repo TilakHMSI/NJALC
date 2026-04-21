@@ -1,0 +1,88 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"OldNewFormatForENGINE5",
+		"window_type":	12,
+		"component_path":	"VPRDB024Re_PrintMENU311/OldNewFormatForENGINE/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB024Re_PrintMENU311_OldNewFormatForENGINE_OldNewFormatForENGINE5"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	379,
+		"height":	154
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"CHOOSE THE FORMAT IN WHICH CARDS ARE TO BE PRINTED",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	13,
+				"width":	358,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Old_new",
+				"attribute":	"A",
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	96,
+				"y":	41,
+				"width":	185,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_New_new",
+				"attribute":	"A",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	96,
+				"y":	78,
+				"width":	185,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_4CARD_FORMAT",
+				"attribute":	"A",
+				"common_line_id":	"line115"
+			},
+			"coordinates":	{
+				"x":	96,
+				"y":	115,
+				"width":	185,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

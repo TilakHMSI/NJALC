@@ -7,6 +7,11 @@
         [magic]="mgc.PLANENTRY"
     >
         <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnAdd">
+                Add
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
             <div class="example-container mat-elevation-z8 Table1TableContainerProps">
                 <mat-table
                     #table
@@ -299,6 +304,65 @@
                                         </label>
                                     </div>
                                 </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        [magic]="mgc.Column30"
+                        [matColumnDef]="mgc.Column30"
+                    >
+                        <mat-header-cell *matHeaderCellDef>
+                        </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    *ngIf="!mg.isRowInRowEditing(row)"
+                                    [magic]="mgc.EnterRowEditing"
+                                    [rowId]="row.rowId"
+                                >
+                                    Edit
+                                </button>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    *ngIf="mg.isRowInRowEditing(row)"
+                                    [magic]="mgc.SaveRowEditing"
+                                    [rowId]="row.rowId"
+                                >
+                                    Save
+                                </button>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    *ngIf="mg.isRowInRowEditing(row)"
+                                    [magic]="mgc.CancelRowEditing"
+                                    [rowId]="row.rowId"
+                                >
+                                    Cancel
+                                </button>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <button
+                                    [magic]="mgc.btnDelete"
+                                    [rowId]="row.rowId"
+                                >
+                                    Delete
+                                </button>
                             </div>
                         </mat-cell>
                     </ng-container>

@@ -1,0 +1,55 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CKDCaseOffPackingStatus251"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit1">
+                {{mg.getValue(mgc.Edit1)
+| magicDate : mgc.Edit1}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicTime : mgc.Edit2}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                PLAN MONTH
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.Plan_Month"
+                [magic]="mgc.Plan_Month"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.Proceed">
+                Proceed
+            </button>
+            <button [magic]="mgc.Exit">
+                Exit
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                C:\Magic\Temp\Case_Off_Packing_Status.txt
+            </label>
+        </div>
+    </div>
+</div>

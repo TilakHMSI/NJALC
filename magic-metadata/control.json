@@ -1,55 +1,97 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Table2",
-		"table_row_height":	104,
-		"table_title_height":	20
+		"id":	"Column11",
+		"column_title":	"CHASSIS NO.",
+		"is_table_child":	true,
+		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	3,
-		"y":	71,
-		"width":	598,
-		"height":	332
+		"width":	91
 	},
 	"hint":	null,
-	"controlType":	"A",
+	"controlType":	"K",
 	"children":	[
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Column4",
-				"column_title":	"DEFECT DESCRIPTION",
+				"id":	"Label17",
 				"is_table_child":	true,
-				"web_style":	2
+				"web_style":	2,
+				"common_line_id":	"line91"
 			},
 			"coordinates":	{
-				"width":	265
+				"x":	10,
+				"y":	91,
+				"width":	90,
+				"height":	16
 			},
 			"hint":	null,
-			"controlType":	"K",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"DEFECTDESCRIPTION",
-						"mgformat":	"mgFormat",
-						"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-						"attribute":	"A",
-						"is_table_child":	true,
-						"web_style":	2,
-						"common_line_id":	"line94"
-					},
-					"coordinates":	{
-						"x":	10,
-						"y":	94,
-						"width":	256,
-						"height":	16
-					},
-					"hint":	null,
-					"controlType":	"T",
-					"children":	null
-				}
-			]
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"X3_CHASSIS_NO_FROM",
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"#######",
+				"attribute":	"N",
+				"is_table_child":	true,
+				"web_style":	2,
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	91,
+				"width":	40,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label19",
+				"text":	"-",
+				"is_table_child":	true,
+				"web_style":	2,
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	53,
+				"y":	91,
+				"width":	4,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"X3_CHASSIS_NOTO",
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"#######",
+				"attribute":	"N",
+				"is_table_child":	true,
+				"web_style":	2,
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	58,
+				"y":	91,
+				"width":	40,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
 		}
 	]
 }

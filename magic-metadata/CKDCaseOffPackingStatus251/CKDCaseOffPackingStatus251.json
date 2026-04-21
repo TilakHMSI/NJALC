@@ -1,0 +1,166 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CKDCaseOffPackingStatus251",
+		"component_path":	"CKDCaseOffPackingStatus251/",
+		"module_name":	"",
+		"component_uniquename":	"CKDCaseOffPackingStatus251_CKDCaseOffPackingStatus251"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	348,
+		"height":	166
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit1",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"DD/MM/YYYY",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	180,
+				"y":	13,
+				"width":	74,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	270,
+				"y":	13,
+				"width":	60,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	41,
+				"y":	52,
+				"width":	265,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"PLAN MONTH",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	95,
+				"y":	65,
+				"width":	83,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Plan_Month",
+				"mgformat":	"mgFormat",
+				"format":	"MM/YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line52"
+			},
+			"coordinates":	{
+				"x":	195,
+				"y":	65,
+				"width":	55,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Proceed",
+				"format":	"Proceed",
+				"attribute":	"A",
+				"common_line_id":	"line104"
+			},
+			"coordinates":	{
+				"x":	215,
+				"y":	104,
+				"width":	70,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Exit",
+				"format":	"Exit",
+				"attribute":	"A",
+				"common_line_id":	"line104"
+			},
+			"coordinates":	{
+				"x":	285,
+				"y":	104,
+				"width":	49,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"C:\\Magic\\Temp\\Case_Off_Packing_Status.txt",
+				"common_line_id":	"line143"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	143,
+				"width":	330,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		}
+	]
+}

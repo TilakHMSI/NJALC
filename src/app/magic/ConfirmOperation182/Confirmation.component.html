@@ -1,0 +1,34 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.Confirmation"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group1"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label2"
+                        class="lable_overflow"
+                    >
+                        Are you sure to confirm operation?
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Yes">
+                Yes
+            </button>
+            <button [magic]="mgc.v_No">
+                No
+            </button>
+        </div>
+    </div>
+</div>

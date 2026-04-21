@@ -1,0 +1,420 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"PLANENTRY_CM",
+		"window_type":	12,
+		"component_path":	"MAINTAINHRLYPRLDUCTIONAE204/PLANENTRY/PLANENTRY_CM/",
+		"module_name":	"",
+		"component_uniquename":	"MAINTAINHRLYPRLDUCTIONAE204_PLANENTRY_PLANENTRY_CM_PLANENTRY_CM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	761,
+		"height":	436
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SRNO",
+				"mgformat":	"mgFormat",
+				"format":	"##",
+				"attribute":	"N",
+				"common_line_id":	"line19"
+			},
+			"coordinates":	{
+				"x":	235,
+				"y":	19,
+				"width":	21,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line56"
+			},
+			"coordinates":	{
+				"x":	659,
+				"y":	56,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"TIME_F",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"attribute":	"T",
+				"common_line_id":	"line66"
+			},
+			"coordinates":	{
+				"x":	210,
+				"y":	66,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"TIME_T",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"attribute":	"T",
+				"common_line_id":	"line66"
+			},
+			"coordinates":	{
+				"x":	305,
+				"y":	66,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_TOT_TIME",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"attribute":	"T",
+				"common_line_id":	"line66"
+			},
+			"coordinates":	{
+				"x":	458,
+				"y":	66,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"HRLY_PLN",
+				"mgformat":	"mgFormat",
+				"format":	"#####",
+				"attribute":	"N",
+				"common_line_id":	"line92"
+			},
+			"coordinates":	{
+				"x":	213,
+				"y":	92,
+				"width":	43,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_v_TAB",
+				"items_list":	"BREAK 1,BREAK 2",
+				"attribute":	"A",
+				"common_line_id":	"line129"
+			},
+			"coordinates":	{
+				"x":	43,
+				"y":	129,
+				"width":	620,
+				"height":	126
+			},
+			"hint":	null,
+			"controlType":	"J",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"layer":	1,
+						"id":	"V_v_TAB"
+					},
+					"coordinates":	null,
+					"hint":	null,
+					"controlType":	"Z",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label18",
+								"text":	"BREAK FROM - 1:",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	53,
+								"y":	181,
+								"width":	113,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BR_TIM_F_1",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	163,
+								"y":	181,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label21",
+								"text":	"BREAK TO - 1:",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	253,
+								"y":	181,
+								"width":	98,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BR_TIM_T_1",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	348,
+								"y":	181,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label26",
+								"text":	"TOTAL BREAK TIME - 1:",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	438,
+								"y":	181,
+								"width":	154,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_v_BR_TOT_TIME_1",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	587,
+								"y":	181,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"layer":	2,
+						"id":	"V_v_TAB"
+					},
+					"coordinates":	null,
+					"hint":	null,
+					"controlType":	"Z",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label17",
+								"text":	"BREAK FROM - 2:",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	53,
+								"y":	181,
+								"width":	113,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BR_TIM_F_2",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	167,
+								"y":	181,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label22",
+								"text":	"BREAK TO - 2:",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	253,
+								"y":	181,
+								"width":	98,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"BR_TIM_T_2",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	352,
+								"y":	181,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label25",
+								"text":	"TOTAL BREAK TIME - 2:",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	437,
+								"y":	181,
+								"width":	154,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_v_BR_TOT_TIME_2",
+								"enabled":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"common_line_id":	"line181"
+							},
+							"coordinates":	{
+								"x":	588,
+								"y":	181,
+								"width":	68,
+								"height":	18
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSave",
+				"format":	"Save",
+				"common_line_id":	"line355"
+			},
+			"coordinates":	{
+				"x":	305,
+				"y":	355,
+				"width":	91,
+				"height":	25
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

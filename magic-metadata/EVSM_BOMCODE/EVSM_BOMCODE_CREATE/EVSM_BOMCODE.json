@@ -1,0 +1,130 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"EVSM_BOMCODE",
+		"component_path":	"EVSM_BOMCODE/EVSM_BOMCODE_CREATE/",
+		"module_name":	"",
+		"component_uniquename":	"EVSM_BOMCODE_EVSM_BOMCODE_CREATE_EVSM_BOMCODE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	405,
+		"height":	117
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"Model Code",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	13,
+				"width":	96,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_MODEL_CODE",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	135,
+				"y":	13,
+				"width":	170,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"BOM Code",
+				"common_line_id":	"line39"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	39,
+				"width":	96,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_BOM_CODE",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line39"
+			},
+			"coordinates":	{
+				"x":	135,
+				"y":	39,
+				"width":	250,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"B_SAVE",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"A",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	105,
+				"y":	78,
+				"width":	96,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"B_EXIT",
+				"attribute":	"A",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	215,
+				"y":	78,
+				"width":	96,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

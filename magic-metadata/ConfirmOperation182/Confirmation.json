@@ -1,0 +1,90 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Confirmation",
+		"window_type":	12,
+		"component_path":	"ConfirmOperation182/",
+		"module_name":	"",
+		"component_uniquename":	"ConfirmOperation182_Confirmation"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	295,
+		"height":	94
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Group1",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	13,
+				"width":	257,
+				"height":	31
+			},
+			"hint":	null,
+			"controlType":	"G",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Label2",
+						"text":	"Are you sure to confirm operation?",
+						"common_line_id":	"line23"
+					},
+					"coordinates":	{
+						"x":	22,
+						"y":	23,
+						"width":	245,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"L",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_Yes",
+				"format":	"Yes",
+				"attribute":	"A",
+				"common_line_id":	"line58"
+			},
+			"coordinates":	{
+				"x":	152,
+				"y":	58,
+				"width":	56,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"v_No",
+				"format":	"No",
+				"attribute":	"A",
+				"common_line_id":	"line58"
+			},
+			"coordinates":	{
+				"x":	215,
+				"y":	58,
+				"width":	56,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

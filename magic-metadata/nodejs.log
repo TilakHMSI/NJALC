@@ -1,5 +1,20 @@
 Generation output:
 
+ Generate Modules
+
+C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
+copying files
+
+
+
+C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
+generating modules
+[V-CLI] cmd.exe /c ng g @magic-xpa/cli:modules
+   Number of modules to be check for generate: 1
+Nothing to be done.
+
+Generate Components
+
 C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
 copying files
 
@@ -12,17 +27,24 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.json
-*** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component DEFECTENTRYSCREEN
-*** Step 3: generate components. (1 components) ***
-[>] generate component DEFECTENTRYSCREEN
+[>] Loading JSON file .//magic-metadata/VHMSO7624PRD003_GUIDE/CHASSISNOGUIDE.json
+[>] Loading JSON file .//magic-metadata/VHMSO7624PRD003_GUIDE/List/List.json
+*** Step 2: Processing JSON files -  (2 components) ***
+[>] Processing JSON file for component CHASSISNOGUIDE
+[>] Processing JSON file for component List
+*** Step 3: generate components. (2 components) ***
+[>] generate component CHASSISNOGUIDE
+[>] generate component List
 [>] Step 4: components-list.
+ Total old components: 356, added components: 2. 
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.mg.controls.g.ts (1718 bytes)
-[36mUPDATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.component.ts (972 bytes)
-[36mUPDATE[39m src/app/magic/VQMS003_DefectEntryScreen/DEFECTENTRYSCREEN/DEFECTENTRYSCREEN.component.html (9790 bytes)
+[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/CHASSISNOGUIDE.mg.controls.g.ts (793 bytes)
+[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/CHASSISNOGUIDE.component.ts (2104 bytes)
+[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/CHASSISNOGUIDE.component.html (907 bytes)
+[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/List/List.mg.controls.g.ts (1309 bytes)
+[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/List/List.component.ts (2120 bytes)
+[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/List/List.component.html (7955 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (117465 bytes)
 
 
 
-Generation warnings/errors:

@@ -7,6 +7,7 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     PLANENTRY = "PLANENTRY",
+        btnAdd = "btnAdd",
         Table1 = "Table1",
         Column2 = "Column2",
         SRNO = "SRNO",
@@ -22,6 +23,11 @@ export enum MgControlName {
         HRLY_PLN = "HRLY_PLN",
         Column8 = "Column8",
         HOURLY_PROD_PLAN_COMM_PLN = "HOURLY_PROD_PLAN_COMM_PLN",
+        Column30 = "Column30",
+        EnterRowEditing = "EnterRowEditing",
+        SaveRowEditing = "SaveRowEditing",
+        CancelRowEditing = "CancelRowEditing",
+        btnDelete = "btnDelete",
         V_v_TAB = "V_v_TAB",
         Label18 = "Label18",
         BR_TIM_F_1 = "BR_TIM_F_1",
@@ -46,6 +52,7 @@ export var
         'Column6',
         'Column7',
         'Column8',
+        'Column30',
     ];
 
 export class MgFormControlsAccessor {
