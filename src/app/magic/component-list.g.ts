@@ -375,10 +375,14 @@ import { ENTRY as VHMSO7624ReprintentryHMSI310_ENTRY_ENTRY } from './VHMSO7624Re
 import { PLANENTRY_CM as MAINTAINHRLYPRLDUCTIONAE204_PLANENTRY_PLANENTRY_CM_PLANENTRY_CM } from './MAINTAINHRLYPRLDUCTIONAE204/PLANENTRY/PLANENTRY_CM/PLANENTRY_CM.component';
 import { PLANENTRY_CM as MAINTAINHRLYPRLDUCTIONAF203_PLANENTRY_PLANENTRY_CM_PLANENTRY_CM } from './MAINTAINHRLYPRLDUCTIONAF203/PLANENTRY/PLANENTRY_CM/PLANENTRY_CM.component';
 import { TargetProdLine as DISPLAYBOARDMONITOR236_TargetProdLine_Timer_TargetProdLine } from './DISPLAYBOARDMONITOR236/TargetProdLine/Timer/TargetProdLine.component';
+import { SelectModelCode as VEHICLEAFOFF175_SelectModelCode_SelectModelCode } from './VEHICLEAFOFF175/SelectModelCode/SelectModelCode.component';
+import { SelectModelCode as VEHICLEAFOFF175_SelectModelCode_ListView_SelectModelCode } from './VEHICLEAFOFF175/SelectModelCode/ListView/SelectModelCode.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               DISPLAYBOARDMONITOR236_TargetProdLine_Timer_TargetProdLine:DISPLAYBOARDMONITOR236_TargetProdLine_Timer_TargetProdLine,
+export const magicGenCmpsHash = {               VEHICLEAFOFF175_SelectModelCode_SelectModelCode:VEHICLEAFOFF175_SelectModelCode_SelectModelCode,
+              VEHICLEAFOFF175_SelectModelCode_ListView_SelectModelCode:VEHICLEAFOFF175_SelectModelCode_ListView_SelectModelCode,
+                      DISPLAYBOARDMONITOR236_TargetProdLine_Timer_TargetProdLine:DISPLAYBOARDMONITOR236_TargetProdLine_Timer_TargetProdLine,
                       MAINTAINHRLYPRLDUCTIONAF203_PLANENTRY_PLANENTRY_CM_PLANENTRY_CM:MAINTAINHRLYPRLDUCTIONAF203_PLANENTRY_PLANENTRY_CM_PLANENTRY_CM,
                       MAINTAINHRLYPRLDUCTIONAE204_PLANENTRY_PLANENTRY_CM_PLANENTRY_CM:MAINTAINHRLYPRLDUCTIONAE204_PLANENTRY_PLANENTRY_CM_PLANENTRY_CM,
                       PRDHOLDFRAMEREPORT240_Prd_hold_frameReport:PRDHOLDFRAMEREPORT240_Prd_hold_frameReport,
@@ -759,6 +763,8 @@ export const magicGenCmpsHash = {               DISPLAYBOARDMONITOR236_TargetPro
 };
 
 export const magicGenComponents = [
+	VEHICLEAFOFF175_SelectModelCode_SelectModelCode,
+	VEHICLEAFOFF175_SelectModelCode_ListView_SelectModelCode,
 	DISPLAYBOARDMONITOR236_TargetProdLine_Timer_TargetProdLine,
 	MAINTAINHRLYPRLDUCTIONAF203_PLANENTRY_PLANENTRY_CM_PLANENTRY_CM,
 	MAINTAINHRLYPRLDUCTIONAE204_PLANENTRY_PLANENTRY_CM_PLANENTRY_CM,

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./VEHICLEAFOFF175.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./SelectModelCode.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VEHICLEAFOFF175_VEHICLEAFOFF175',
+    selector: 'mga-VEHICLEAFOFF175_SelectModelCode_SelectModelCode',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './VEHICLEAFOFF175.component.html'
+    templateUrl: './SelectModelCode.component.html'
 })
-export class VEHICLEAFOFF175 extends TaskBaseMagicComponent implements MagicModalInterface {
+export class SelectModelCode extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,7 +23,7 @@ export class VEHICLEAFOFF175 extends TaskBaseMagicComponent implements MagicModa
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "VEHICLEAFOFF175";
+    private static readonly formName: string = "SelectModelCode";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -34,33 +34,33 @@ export class VEHICLEAFOFF175 extends TaskBaseMagicComponent implements MagicModa
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return VEHICLEAFOFF175.x;
+        return SelectModelCode.x;
     }
     Y() {
-        return VEHICLEAFOFF175.y;
+        return SelectModelCode.y;
     }
     Width(): string {
-        return VEHICLEAFOFF175.width;
+        return SelectModelCode.width;
     }
     Height(): string {
-        return VEHICLEAFOFF175.height;
+        return SelectModelCode.height;
     }
     IsCenteredToWindow() {
-        return VEHICLEAFOFF175.isCenteredToWindow;
+        return SelectModelCode.isCenteredToWindow;
     }
     FormName() {
-        return VEHICLEAFOFF175.formName;
+        return SelectModelCode.formName;
     }
     ShowTitleBar() {
-        return VEHICLEAFOFF175.showTitleBar;
+        return SelectModelCode.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return VEHICLEAFOFF175.shouldCloseOnBackgroundClick;
+        return SelectModelCode.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return VEHICLEAFOFF175.isResizable;
+        return SelectModelCode.isResizable;
     }
     IsMovable() {
-        return VEHICLEAFOFF175.isMovable;
+        return SelectModelCode.isMovable;
     }
 }

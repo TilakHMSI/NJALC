@@ -1,0 +1,107 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"SelectModelCode",
+		"window_type":	12,
+		"component_path":	"VEHICLEAFOFF175/SelectModelCode/",
+		"module_name":	"",
+		"component_uniquename":	"VEHICLEAFOFF175_SelectModelCode_SelectModelCode"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	427,
+		"height":	377
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Sub1",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	31,
+				"y":	42,
+				"width":	143,
+				"height":	269
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Button10",
+				"format":	"Back",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	286,
+				"y":	141,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"OK",
+				"format":	"OK",
+				"attribute":	"A",
+				"common_line_id":	"line346"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	346,
+				"width":	60,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Select_All",
+				"format":	"Select",
+				"attribute":	"A",
+				"common_line_id":	"line346"
+			},
+			"coordinates":	{
+				"x":	70,
+				"y":	346,
+				"width":	60,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DeSelect_All",
+				"format":	"Deselect",
+				"attribute":	"A",
+				"common_line_id":	"line346"
+			},
+			"coordinates":	{
+				"x":	133,
+				"y":	346,
+				"width":	65,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

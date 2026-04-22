@@ -7,6 +7,7 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     VEHICLEAFOFF175 = "VEHICLEAFOFF175",
+        btn_Close = "btn_Close",
         Label7 = "Label7",
         Label1 = "Label1",
         Label2 = "Label2",
@@ -21,10 +22,9 @@ export enum MgControlName {
         Label9 = "Label9",
         v_GenXLorRep = "v_GenXLorRep",
         v_Generate = "v_Generate",
-        CancelCtl="CancelCtl",
-        btn_Close="btn_Close",
-        vBlob64base="vBlob64base",
-        vFileName="vFileName"
+        vFileName = "vFileName",
+        vBlob64base = "vBlob64base",
+        CancelCtl = "CancelCtl",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -48,6 +48,14 @@ export class MgFormControlsAccessor {
 
     get v_GenXLorRep(): FormControl {
         return this.fg.controls[MgControlName.v_GenXLorRep] as FormControl;
+    }
+
+    get vFileName(): FormControl {
+        return this.fg.controls[MgControlName.vFileName] as FormControl;
+    }
+
+    get vBlob64base(): FormControl {
+        return this.fg.controls[MgControlName.vBlob64base] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

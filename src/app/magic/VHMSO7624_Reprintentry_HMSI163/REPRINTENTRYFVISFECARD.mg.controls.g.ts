@@ -25,6 +25,7 @@ export enum MgControlName {
         ConfirmEntry = "ConfirmEntry",
         PRINT_BOTTON_V = "PRINT_BOTTON_V",
         DEL = "DEL",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
