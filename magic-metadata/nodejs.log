@@ -27,24 +27,30 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VHMSO7624PRD003_GUIDE/CHASSISNOGUIDE.json
-[>] Loading JSON file .//magic-metadata/VHMSO7624PRD003_GUIDE/List/List.json
-*** Step 2: Processing JSON files -  (2 components) ***
-[>] Processing JSON file for component CHASSISNOGUIDE
-[>] Processing JSON file for component List
-*** Step 3: generate components. (2 components) ***
-[>] generate component CHASSISNOGUIDE
-[>] generate component List
+[>] Loading JSON file .//magic-metadata/VEHICLEAFOFF175/VEHICLEAFOFF175.json
+[>] Loading JSON file .//magic-metadata/VEHICLEAFOFF175/SelectModelCode/SelectModelCode.json
+[>] Loading JSON file .//magic-metadata/VEHICLEAFOFF175/SelectModelCode/ListView/SelectModelCode.json
+*** Step 2: Processing JSON files -  (3 components) ***
+[>] Processing JSON file for component VEHICLEAFOFF175
+[>] Processing JSON file for component SelectModelCode
+[>] Processing JSON file for component SelectModelCode
+*** Step 3: generate components. (3 components) ***
+[>] generate component VEHICLEAFOFF175
+[>] generate component SelectModelCode
+[>] generate component SelectModelCode
 [>] Step 4: components-list.
- Total old components: 356, added components: 2. 
+ Total old components: 377, added components: 2. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/CHASSISNOGUIDE.mg.controls.g.ts (793 bytes)
-[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/CHASSISNOGUIDE.component.ts (2104 bytes)
-[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/CHASSISNOGUIDE.component.html (907 bytes)
-[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/List/List.mg.controls.g.ts (1309 bytes)
-[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/List/List.component.ts (2120 bytes)
-[32mCREATE[39m src/app/magic/VHMSO7624PRD003_GUIDE/List/List.component.html (7955 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (117465 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/SelectModelCode.mg.controls.g.ts (715 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/SelectModelCode.component.ts (2129 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/SelectModelCode.component.html (752 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/ListView/SelectModelCode.mg.controls.g.ts (1153 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/ListView/SelectModelCode.component.ts (959 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/ListView/SelectModelCode.component.html (5255 bytes)
+[36mUPDATE[39m src/app/magic/VEHICLEAFOFF175/VEHICLEAFOFF175.mg.controls.g.ts (1945 bytes)
+[36mUPDATE[39m src/app/magic/VEHICLEAFOFF175/VEHICLEAFOFF175.component.ts (2113 bytes)
+[36mUPDATE[39m src/app/magic/VEHICLEAFOFF175/VEHICLEAFOFF175.component.html (4042 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (124361 bytes)
 
 
 

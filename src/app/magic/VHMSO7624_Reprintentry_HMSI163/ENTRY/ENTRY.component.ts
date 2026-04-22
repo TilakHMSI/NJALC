@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VHMSO7624_Reprintentry_HMSI163_ENTRY_ENTRY',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./ENTRY.component.css'],
     templateUrl: './ENTRY.component.html'
 })
 export class ENTRY extends BaseMatTableMagicComponent {

@@ -3154,7 +3154,7 @@ pre code {
 
 .form-control:disabled,
 .form-control[readonly] {
-  background-color: #F3F6F9;
+  background-color: #f3f6f9;
   opacity: 1;
 }
 
@@ -72481,7 +72481,7 @@ code {
 }
 
 .form-control[readonly] {
-  background-color: #ffffff;
+  background-color: #f3f6f9;
 }
 
 .form-control.form-control-pill {

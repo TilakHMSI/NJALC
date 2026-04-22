@@ -14,6 +14,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VHMSO7624ReprintentryHMSI210_CONFIRM_CONFIRM',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./CONFIRM.component.css'],
     templateUrl: './CONFIRM.component.html'
 })
 export class CONFIRM extends BaseMatTableMagicComponent implements MagicModalInterface {
@@ -26,15 +27,15 @@ export class CONFIRM extends BaseMatTableMagicComponent implements MagicModalInt
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "CONFIRM";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "1000px";
+    private static readonly height: string = "700px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
-    private static readonly isMovable: boolean = true;
+    private static readonly isMovable: boolean = false;
     X() {
         return CONFIRM.x;
     }
