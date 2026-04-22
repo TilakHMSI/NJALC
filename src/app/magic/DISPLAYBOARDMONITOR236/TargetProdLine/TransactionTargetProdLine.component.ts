@@ -29,11 +29,11 @@ export class TransactionTargetProdLine extends TaskBaseMagicComponent implements
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "1250px";
-    private static readonly height: string = "750px";
+    private static readonly height: string = "730px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
-    private static readonly isMovable: boolean = true;
+    private static readonly isMovable: boolean = false;
     X() {
         return TransactionTargetProdLine.x;
     }
