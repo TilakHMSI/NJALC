@@ -11,6 +11,7 @@ export enum MgControlName {
         v_Old_new = "v_Old_new",
         v_New_new = "v_New_new",
         v_4CARD_FORMAT = "v_4CARD_FORMAT",
+        btn_Close="btn_Close"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
