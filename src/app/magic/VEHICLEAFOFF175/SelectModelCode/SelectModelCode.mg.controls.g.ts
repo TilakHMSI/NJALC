@@ -12,6 +12,7 @@ export enum MgControlName {
         OK = "OK",
         Select_All = "Select_All",
         DeSelect_All = "DeSelect_All",
+        btnexit="btnexit"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -25,4 +25,64 @@
             </button>
         </div>
     </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    
+    <div class="container-fluid-ov" [magic]="mgc.SelectModelCode">
+                   <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                           Select Model Code 
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                       
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+        <div class="card-body">
+            <div class="form-group row" style="margin: 0rem;">
+            </div>
+            <div class="col-lg-12">
+                <magic-subform [magic]="mgc.Sub1">
+                </magic-subform>
+            </div>
+        </div>
+           <div class="form-group row" style="margin: 0rem;">
+         <div class="col-lg-4">
+                                 <div class="form-group">
+
+                   <button type="button" [magic]="mgc.OK"
+                                             [disabled]="mg.isDisabled(mgc.OK )"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                OK
+                                            </button>
+                                            </div>
+                                            </div>
+                                             <div class="col-lg-4">
+                                 <div class="form-group">
+
+                   <button type="button" [magic]="mgc.Select_All"
+                                             [disabled]="mg.isDisabled(mgc.Select_All )"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                Select All
+                                            </button>
+                                            </div>
+                                            </div>
+                                             <div class="col-lg-4">
+                                 <div class="form-group">
+
+                   <button type="button" [magic]="mgc.DeSelect_All"
+                                             [disabled]="mg.isDisabled(mgc.DeSelect_All )"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                DeSelect All
+                                            </button>
+                                            </div>
+                                            </div>
+                                            </div>
+    </div>
+</div>
 </div>
