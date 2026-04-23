@@ -2,6 +2,7 @@
 	"style":	null,
 	"props":	{
 		"id":	"EVSM_BOMCODE",
+		"window_type":	12,
 		"component_path":	"EVSM_BOMCODE/",
 		"module_name":	"",
 		"component_uniquename":	"EVSM_BOMCODE_EVSM_BOMCODE"
@@ -9,8 +10,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	815,
-		"height":	530
+		"width":	395,
+		"height":	320
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -19,127 +20,76 @@
 			"style":	null,
 			"props":	{
 				"id":	"Label1",
-				"text":	" EVSM BOM CODE MASTER",
-				"common_line_id":	"line20"
+				"text":	{
+					"value":	" EVSM BOM CODE MASTER",
+					"has_exp":	true
+				},
+				"common_line_id":	"line0"
 			},
 			"coordinates":	{
-				"x":	90,
-				"y":	20,
-				"width":	635,
-				"height":	88
+				"x":	0,
+				"y":	0,
+				"width":	276,
+				"height":	35
 			},
 			"hint":	null,
 			"controlType":	"L",
 			"children":	null
 		},
 		{
-			"style":	{
-				"line_divider":	true
-			},
+			"style":	null,
 			"props":	{
-				"id":	"Table2",
-				"table_row_height":	21,
-				"table_title_height":	20,
-				"common_line_id":	"line143"
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line13"
 			},
 			"coordinates":	{
-				"x":	158,
-				"y":	143,
-				"width":	496,
-				"height":	312
+				"x":	307,
+				"y":	13,
+				"width":	41,
+				"height":	22
 			},
 			"hint":	null,
-			"controlType":	"A",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column3",
-						"column_title":	"MODEL_CODE",
-						"sortable":	false,
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	236
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"MODEL_CODE",
-								"mgformat":	"mgFormat",
-								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line169"
-							},
-							"coordinates":	{
-								"x":	165,
-								"y":	169,
-								"width":	228,
-								"height":	16
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vSearch",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	37,
+				"y":	44,
+				"width":	147,
+				"height":	32
+			},
+			"hint":	{
+				"text":	{
+					"value":	"Search By Model /BOM Code",
+					"has_exp":	false
 				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column4",
-						"column_title":	"BOM_CODE",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	236
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
-						{
-							"style":	null,
-							"props":	{
-								"id":	"BOM_CODE",
-								"mgformat":	"mgFormat",
-								"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-								"attribute":	"A",
-								"is_table_child":	true,
-								"web_style":	2,
-								"common_line_id":	"line169"
-							},
-							"coordinates":	{
-								"x":	401,
-								"y":	169,
-								"width":	228,
-								"height":	16
-							},
-							"hint":	null,
-							"controlType":	"T",
-							"children":	null
-						}
-					]
-				}
-			]
+				"hint_color":	null
+			},
+			"controlType":	"T",
+			"children":	null
 		},
 		{
 			"style":	null,
 			"props":	{
-				"id":	"B_CREATE",
-				"attribute":	"A",
-				"common_line_id":	"line488"
+				"id":	"Btn_Search",
+				"format":	"Search",
+				"common_line_id":	"line44"
 			},
 			"coordinates":	{
-				"x":	368,
-				"y":	488,
-				"width":	96,
-				"height":	23
+				"x":	233,
+				"y":	44,
+				"width":	93,
+				"height":	19
 			},
 			"hint":	null,
 			"controlType":	"B",
@@ -148,52 +98,17 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"B_MODIFY",
-				"attribute":	"A",
-				"common_line_id":	"line488"
+				"id":	"Sub1",
+				"common_line_id":	"line103"
 			},
 			"coordinates":	{
-				"x":	468,
-				"y":	488,
-				"width":	96,
-				"height":	23
+				"x":	18,
+				"y":	103,
+				"width":	353,
+				"height":	205
 			},
 			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"B_DELETE",
-				"attribute":	"A",
-				"common_line_id":	"line488"
-			},
-			"coordinates":	{
-				"x":	568,
-				"y":	488,
-				"width":	96,
-				"height":	23
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"B_EXIT",
-				"attribute":	"A",
-				"common_line_id":	"line488"
-			},
-			"coordinates":	{
-				"x":	668,
-				"y":	488,
-				"width":	96,
-				"height":	23
-			},
-			"hint":	null,
-			"controlType":	"B",
+			"controlType":	"F",
 			"children":	null
 		}
 	]

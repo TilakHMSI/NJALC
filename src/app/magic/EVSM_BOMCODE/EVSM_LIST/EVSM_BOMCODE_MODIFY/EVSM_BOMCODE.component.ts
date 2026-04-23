@@ -10,7 +10,7 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-EVSM_BOMCODE_EVSM_BOMCODE',
+    selector: 'mga-EVSM_BOMCODE_EVSM_LIST_EVSM_BOMCODE_MODIFY_EVSM_BOMCODE',
     providers: [...magicProviders],
     standalone: false,
     templateUrl: './EVSM_BOMCODE.component.html'
@@ -27,8 +27,8 @@ export class EVSM_BOMCODE extends TaskBaseMagicComponent implements MagicModalIn
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1150px";
-    private static readonly height: string = "720px";
+    private static readonly width: string = "550px";
+    private static readonly height: string = "320px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;

@@ -1,211 +1,22 @@
 {
-	"style":	{
-		"line_divider":	true
-	},
+	"style":	null,
 	"props":	{
-		"id":	"Table10",
-		"table_row_height":	33,
-		"table_title_height":	20,
-		"no_modifiable_descendants":	true
+		"id":	"V_Ind_dat",
+		"enabled":	{
+			"value":	null,
+			"has_exp":	true
+		},
+		"mgformat":	"mgFormat",
+		"format":	"DD-MM-YYYY",
+		"attribute":	"D"
 	},
 	"coordinates":	{
-		"x":	9,
-		"y":	68,
-		"width":	439,
-		"height":	221
+		"x":	491,
+		"y":	392,
+		"width":	145,
+		"height":	26
 	},
 	"hint":	null,
-	"controlType":	"A",
-	"children":	[
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Column11",
-				"column_title":	"CHASSIS NO.",
-				"is_table_child":	true,
-				"web_style":	2
-			},
-			"coordinates":	{
-				"width":	91
-			},
-			"hint":	null,
-			"controlType":	"K",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Label17",
-						"is_table_child":	true,
-						"web_style":	2,
-						"common_line_id":	"line91"
-					},
-					"coordinates":	{
-						"x":	10,
-						"y":	91,
-						"width":	90,
-						"height":	16
-					},
-					"hint":	null,
-					"controlType":	"L",
-					"children":	null
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Label18",
-						"text":	"-",
-						"is_table_child":	true,
-						"web_style":	2,
-						"common_line_id":	"line91"
-					},
-					"coordinates":	{
-						"x":	53,
-						"y":	91,
-						"width":	4,
-						"height":	13
-					},
-					"hint":	null,
-					"controlType":	"L",
-					"children":	null
-				}
-			]
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Column12",
-				"column_title":	"QTY",
-				"is_table_child":	true,
-				"web_style":	2
-			},
-			"coordinates":	{
-				"width":	34
-			},
-			"hint":	null,
-			"controlType":	"K",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Label21",
-						"is_table_child":	true,
-						"web_style":	2,
-						"common_line_id":	"line286"
-					},
-					"coordinates":	{
-						"x":	103,
-						"y":	286,
-						"width":	35,
-						"height":	26
-					},
-					"hint":	null,
-					"controlType":	"L",
-					"children":	null
-				}
-			]
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Column13",
-				"column_title":	"EFM",
-				"is_table_child":	true,
-				"web_style":	2
-			},
-			"coordinates":	{
-				"width":	24
-			},
-			"hint":	null,
-			"controlType":	"K",
-			"children":	[
-				
-			]
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Column14",
-				"column_title":	"MODEL CODE",
-				"is_table_child":	true,
-				"web_style":	2
-			},
-			"coordinates":	{
-				"width":	149
-			},
-			"hint":	null,
-			"controlType":	"K",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Label19",
-						"is_table_child":	true,
-						"web_style":	2,
-						"common_line_id":	"line91"
-					},
-					"coordinates":	{
-						"x":	160,
-						"y":	91,
-						"width":	145,
-						"height":	29
-					},
-					"hint":	null,
-					"controlType":	"L",
-					"children":	null
-				}
-			]
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Column15",
-				"column_title":	"REP",
-				"is_table_child":	true,
-				"web_style":	2
-			},
-			"coordinates":	{
-				"width":	26
-			},
-			"hint":	null,
-			"controlType":	"K",
-			"children":	[
-				
-			]
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Column16",
-				"column_title":	"NOTE",
-				"is_table_child":	true,
-				"web_style":	2
-			},
-			"coordinates":	{
-				"width":	93
-			},
-			"hint":	null,
-			"controlType":	"K",
-			"children":	[
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Label20",
-						"text":	"-",
-						"is_table_child":	true,
-						"web_style":	2,
-						"common_line_id":	"line107"
-					},
-					"coordinates":	{
-						"x":	418,
-						"y":	107,
-						"width":	4,
-						"height":	13
-					},
-					"hint":	null,
-					"controlType":	"L",
-					"children":	null
-				}
-			]
-		}
-	]
+	"controlType":	"T",
+	"children":	null
 }

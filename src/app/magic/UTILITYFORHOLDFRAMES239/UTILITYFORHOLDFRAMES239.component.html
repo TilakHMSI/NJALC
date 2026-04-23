@@ -1,153 +1,133 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.UTILITYFORHOLDFRAMES239"
-    >
-        <div style="display: flex; flex-direction: row">
-            <input
-                type="date"
-                [formControlName]="mgc.V_Date"
-                [magic]="mgc.V_Date"
-                dateInput
-            />
-            <input
-                type="time"
-                [formControlName]="mgc.V_Time"
-                [magic]="mgc.V_Time"
-                step=1
-            />
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label3"
-                class="lable_overflow"
-            >
-                Hold Utility
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <magic-subform [magic]="mgc.Sub1">
-            </magic-subform>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label4"
-                class="lable_overflow"
-            >
-            </label>
-            <label
-                [magic]="mgc.Label5"
-                class="lable_overflow"
-            >
-                Frame No.
-            </label>
-            <div>
-                <input
-                    [formControlName]="mgc.V_F_no"
-                    [magic]="mgc.V_F_no"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_F_no> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.V_Ch_no"
-                    type='number'
-                    [magic]="mgc.V_Ch_no"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_Ch_no> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.V_MTO_Code"
-                    [magic]="mgc.V_MTO_Code"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_MTO_Code> </mgError>
-            </div>
-            <label
-                [magic]="mgc.Label6"
-                class="lable_overflow"
-            >
-                Model Code
-            </label>
-            <input
-                type="date"
-                [formControlName]="mgc.V_Ind_dat"
-                [magic]="mgc.V_Ind_dat"
-                dateInput
-            />
-            <label
-                [magic]="mgc.Label7"
-                class="lable_overflow"
-            >
-                Indication Date
-            </label>
-            <input
-                type="date"
-                [formControlName]="mgc.V_PLN_Dat"
-                [magic]="mgc.V_PLN_Dat"
-                dateInput
-            />
-            <label
-                [magic]="mgc.Label8"
-                class="lable_overflow"
-            >
-                Plan Date
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div
-                [magic]="mgc.Flag"
-                (change)="task.mgOnRadioSelectionChanged(mgc.Flag)"
-            >
-                <div *ngFor="let o of mg.getItemListValues(mgc.Flag);">
-                    <label>
-                        <input
-                            type="radio"
-                            [formControlName]="mgc.Flag"
-                            [value]="o.index"
-                        />
-                        {{o.displayValue}}
-                    </label>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.UTILITYFORHOLDFRAMES239">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label3)}}
+                        </label></h3>
+
+                    <div class="d-flex align-items-center">
+                        <!-- <label [magic]="mgc.Edit1" class="mb-0 mr-3">
+                            {{mg.getValue(mgc.Edit1)
+                            | magicDate : mgc.Edit1}}
+                        </label>
+                        <label [magic]="mgc.Edit2" class="mb-0 mr-1">
+                            {{mg.getValue(mgc.Edit2)
+                            | magicTime : mgc.Edit2}}
+                        </label> -->
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
                 </div>
             </div>
-            <div>
-                <input
-                    [formControlName]="mgc.Frame_no"
-                    [magic]="mgc.Frame_no"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.Frame_no> </mgError>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem ! important;">
+                    <div class="col-lg-12">
+                        <magic-subform [magic]="mgc.Sub1">
+                        </magic-subform>
+                    </div>
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">FRAME NUMBER</label>
+                                    <input [formControlName]="mgc.V_F_no" [magic]="mgc.V_F_no" class="form-control-sm"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.V_F_no"> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-1">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">.</label>
+                                    <input [formControlName]="mgc.V_Ch_no" [magic]="mgc.V_Ch_no" class="form-control-sm"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.V_Ch_no"> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">MODEL CODE</label>
+                                    <input [formControlName]="mgc.V_MTO_Code" [magic]="mgc.V_MTO_Code"
+                                        class="form-control-sm" mgFormat />
+                                    <mgError [magic]="mgc.V_MTO_Code"> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm" style="width: 100%;">Indication Date</label>
+                                    <!-- <input class="form-control-sm" type="date" [formControlName]="mgc.V_Ind_dat"
+                                        [magic]="mgc.V_Ind_dat" /> -->
+
+                                    <input type="date" class="form-control-sm" [formControlName]="mgc.V_Ind_dat" [magic]="mgc.V_Ind_dat"
+                                        dateInput />
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm" style="width: 100%;">Plan Date</label>
+                                    <!-- <input class="form-control-sm" type="date" [formControlName]="mgc.V_PLN_Dat"
+                                        [magic]="mgc.V_PLN_Dat" /> -->
+
+                                     <input type="date" class="form-control-sm" [formControlName]="mgc.V_PLN_Dat" [magic]="mgc.V_PLN_Dat"
+                                        dateInput />
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <div [magic]="mgc.Flag" *ngIf="mg.getVisible(mgc.Flag)==='visible'"
+                                        (change)="task.mgOnRadioSelectionChanged(mgc.Flag)">
+                                        <div *ngFor="let o of mg.getItemListValues(mgc.Flag);">
+                                            <label>
+                                                <input type="radio" [formControlName]="mgc.Flag" [value]="o.index" />
+                                                {{o.displayValue}}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>Please Scan Frame Here !</label>
+                                    <input class="form-control-ent" [formControlName]="mgc.Frame_no"
+                                        [magic]="mgc.Frame_no" mgFormat />
+                                    <mgError [magic]=mgc.Frame_no> </mgError>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">Day Count</label>
+                                    <input class="form-control-cnt" [formControlName]="mgc.V_Day_Count" type='number'
+                                        [magic]="mgc.V_Day_Count" mgFormat />
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">Total Count</label>
+                                    <input class="form-control-cnt" [formControlName]="mgc.V_All_Count" type='number'
+                                        [magic]="mgc.V_All_Count" mgFormat />
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-12 text-center">
+                                <label class="LastScanned mr-8">
+                                    {{mg.getValue(mgc.LastScanned) }}</label>
+                                <label class="LastScanned ml-5 mr-8">
+                                    | | </label>
+                                <label class="LastScanned ml-5">
+                                    {{mg.getValue(mgc.LastScannedEngine) }}</label>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <label
-                [magic]="mgc.Label15"
-                class="lable_overflow"
-            >
-                Please Scan Frame Here !
-            </label>
-            <label [magic]="mgc.V_Day_Count">
-                {{mg.getValue(mgc.V_Day_Count) }}
-            </label>
-            <label
-                [magic]="mgc.Label16"
-                class="lable_overflow"
-            >
-                Day Count
-            </label>
-            <label
-                [magic]="mgc.Label17"
-                class="lable_overflow"
-            >
-                Total Count
-            </label>
-            <label [magic]="mgc.V_All_Count">
-                {{mg.getValue(mgc.V_All_Count) }}
-            </label>
         </div>
     </div>
 </div>

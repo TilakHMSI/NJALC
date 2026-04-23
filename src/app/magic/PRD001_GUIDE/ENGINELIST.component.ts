@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./EVSM_BOMCODE.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./ENGINELIST.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-EVSM_BOMCODE_EVSM_BOMCODE',
+    selector: 'mga-PRD001_GUIDE_ENGINELIST',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './EVSM_BOMCODE.component.html'
+    templateUrl: './ENGINELIST.component.html'
 })
-export class EVSM_BOMCODE extends TaskBaseMagicComponent implements MagicModalInterface {
+export class ENGINELIST extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,44 +23,44 @@ export class EVSM_BOMCODE extends TaskBaseMagicComponent implements MagicModalIn
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "EVSM_BOMCODE";
+    private static readonly formName: string = "ENGINELIST";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1150px";
-    private static readonly height: string = "720px";
+    private static readonly width: string = "500px";
+    private static readonly height: string = "550px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
-    private static readonly isResizable: boolean = true;
+    private static readonly isResizable: boolean = false;
     private static readonly isMovable: boolean = true;
     X() {
-        return EVSM_BOMCODE.x;
+        return ENGINELIST.x;
     }
     Y() {
-        return EVSM_BOMCODE.y;
+        return ENGINELIST.y;
     }
     Width(): string {
-        return EVSM_BOMCODE.width;
+        return ENGINELIST.width;
     }
     Height(): string {
-        return EVSM_BOMCODE.height;
+        return ENGINELIST.height;
     }
     IsCenteredToWindow() {
-        return EVSM_BOMCODE.isCenteredToWindow;
+        return ENGINELIST.isCenteredToWindow;
     }
     FormName() {
-        return EVSM_BOMCODE.formName;
+        return ENGINELIST.formName;
     }
     ShowTitleBar() {
-        return EVSM_BOMCODE.showTitleBar;
+        return ENGINELIST.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return EVSM_BOMCODE.shouldCloseOnBackgroundClick;
+        return ENGINELIST.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return EVSM_BOMCODE.isResizable;
+        return ENGINELIST.isResizable;
     }
     IsMovable() {
-        return EVSM_BOMCODE.isMovable;
+        return ENGINELIST.isMovable;
     }
 }
