@@ -1,0 +1,26 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.Reprocess"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                Confirm
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnYes">
+                Yes
+            </button>
+            <button [magic]="mgc.btnNo">
+                No
+            </button>
+        </div>
+    </div>
+</div>

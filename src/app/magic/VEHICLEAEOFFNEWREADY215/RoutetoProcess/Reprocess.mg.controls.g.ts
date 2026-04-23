@@ -6,12 +6,10 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    HelpInformation = "HelpInformation",
-        Label2 = "Label2",
+    Reprocess = "Reprocess",
         Label1 = "Label1",
-        Label3 = "Label3",
-        Label4 = "Label4",
-        btnexit = "btnexit",
+        btnYes = "btnYes",
+        btnNo = "btnNo",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

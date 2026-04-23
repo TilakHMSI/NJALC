@@ -1,22 +1,531 @@
 {
-	"style":	null,
+	"style":	{
+		"line_divider":	true
+	},
 	"props":	{
-		"id":	"V_Ind_dat",
-		"enabled":	{
-			"value":	null,
-			"has_exp":	true
-		},
-		"mgformat":	"mgFormat",
-		"format":	"DD-MM-YYYY",
-		"attribute":	"D"
+		"id":	"Table1",
+		"table_row_height":	78,
+		"table_title_height":	20
 	},
 	"coordinates":	{
-		"x":	491,
-		"y":	392,
-		"width":	145,
-		"height":	26
+		"x":	12,
+		"y":	12,
+		"width":	596,
+		"height":	117
 	},
 	"hint":	null,
-	"controlType":	"T",
-	"children":	null
+	"controlType":	"A",
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column2",
+				"column_title":	"ProdLine",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	55
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"ShiftTimesLine_ProdLine",
+						"mgformat":	"mgFormat",
+						"format":	"XX",
+						"attribute":	"A",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line35"
+					},
+					"coordinates":	{
+						"x":	16,
+						"y":	35,
+						"width":	23,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column3",
+				"column_title":	"Shift",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	44
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"ShiftTimesLine_SHIFT",
+						"items_list":	"A,B,C,",
+						"mgformat":	"mgFormat",
+						"validator":	"rangevalidator",
+						"format":	"UU",
+						"attribute":	"A",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line35"
+					},
+					"coordinates":	{
+						"x":	71,
+						"y":	35,
+						"width":	23,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column4",
+				"column_title":	"Shift Start | End",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	77
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"ShiftStartTime",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line35"
+					},
+					"coordinates":	{
+						"x":	115,
+						"y":	35,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"ShiftEndTime",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line55"
+					},
+					"coordinates":	{
+						"x":	115,
+						"y":	55,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column6",
+				"column_title":	"Brk1 Start | End",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	73
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Brk1Start",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line35"
+					},
+					"coordinates":	{
+						"x":	191,
+						"y":	35,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Brk1End",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line55"
+					},
+					"coordinates":	{
+						"x":	192,
+						"y":	55,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column8",
+				"column_title":	"Brk2Start",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	73
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Brk2Start",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line35"
+					},
+					"coordinates":	{
+						"x":	263,
+						"y":	35,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Brk2End",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line55"
+					},
+					"coordinates":	{
+						"x":	265,
+						"y":	55,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column10",
+				"column_title":	"Brk3Start",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	73
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Brk3Start",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line33"
+					},
+					"coordinates":	{
+						"x":	342,
+						"y":	33,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Brk3End",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line54"
+					},
+					"coordinates":	{
+						"x":	338,
+						"y":	54,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column12",
+				"column_title":	"Brk4Start",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	73
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Brk4Start",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line35"
+					},
+					"coordinates":	{
+						"x":	412,
+						"y":	35,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Brk4End",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line55"
+					},
+					"coordinates":	{
+						"x":	411,
+						"y":	55,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column14",
+				"column_title":	"Brk5tSart",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	73
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Brk5tSart",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line35"
+					},
+					"coordinates":	{
+						"x":	485,
+						"y":	35,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Brk5End",
+						"formatter":	"magicTime",
+						"showsecs":	true,
+						"format":	"HH:MM:SS",
+						"attribute":	"T",
+						"is_table_child":	true,
+						"web_style":	2,
+						"common_line_id":	"line55"
+					},
+					"coordinates":	{
+						"x":	484,
+						"y":	55,
+						"width":	65,
+						"height":	16
+					},
+					"hint":	null,
+					"controlType":	"T",
+					"children":	null
+				}
+			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Column33",
+				"is_table_child":	true,
+				"web_style":	2
+			},
+			"coordinates":	{
+				"width":	51
+			},
+			"hint":	null,
+			"controlType":	"K",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"EnterRowEditing",
+						"format":	"Edit",
+						"is_table_child":	true,
+						"web_style":	2,
+						"row_editing_type":	1,
+						"common_line_id":	"line36"
+					},
+					"coordinates":	{
+						"x":	557,
+						"y":	36,
+						"width":	28,
+						"height":	22
+					},
+					"hint":	null,
+					"controlType":	"B",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"SaveRowEditing",
+						"format":	"Save",
+						"is_table_child":	true,
+						"web_style":	2,
+						"row_editing_type":	3,
+						"common_line_id":	"line62"
+					},
+					"coordinates":	{
+						"x":	557,
+						"y":	62,
+						"width":	35,
+						"height":	22
+					},
+					"hint":	null,
+					"controlType":	"B",
+					"children":	null
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"CancelRowEditing",
+						"format":	"Cancel",
+						"is_table_child":	true,
+						"web_style":	2,
+						"row_editing_type":	2,
+						"common_line_id":	"line88"
+					},
+					"coordinates":	{
+						"x":	557,
+						"y":	88,
+						"width":	43,
+						"height":	22
+					},
+					"hint":	null,
+					"controlType":	"B",
+					"children":	null
+				}
+			]
+		}
+	]
 }

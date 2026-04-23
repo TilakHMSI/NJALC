@@ -1,0 +1,111 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.VEHICLEAEOFF"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                Date From:
+            </label>
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                Prod Line :
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                Model Code
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.v_DateFrom"
+                [magic]="mgc.v_DateFrom"
+                dateInput
+            />
+            <div>
+                <select
+                    [magic]="mgc.v_Prod_Line"
+                    [formControlName]="mgc.v_Prod_Line"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_Prod_Line);"
+                        [selected]="o.index == mg.getValue(mgc.v_Prod_Line)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.v_model_code"
+                    [magic]="mgc.v_model_code"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.v_model_code> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                To:
+            </label>
+            <button [magic]="mgc.btn_gZoom">
+                Generate Model Code
+            </button>
+            <input
+                type="date"
+                [formControlName]="mgc.v_DateTo"
+                [magic]="mgc.v_DateTo"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                Generate:
+            </label>
+            <div
+                [magic]="mgc.v_GenXLorRep"
+                (change)="task.mgOnRadioSelectionChanged(mgc.v_GenXLorRep)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.v_GenXLorRep);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.v_GenXLorRep"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit11">
+                {{mg.getValue(mgc.Edit11) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Generate">
+                Generate Report
+            </button>
+        </div>
+    </div>
+</div>

@@ -10,7 +10,7 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	1003,
+		"width":	604,
 		"height":	159
 	},
 	"hint":	null,
@@ -22,14 +22,14 @@
 			},
 			"props":	{
 				"id":	"Table1",
-				"table_row_height":	23,
+				"table_row_height":	78,
 				"table_title_height":	20,
 				"common_line_id":	"line10"
 			},
 			"coordinates":	{
 				"x":	5,
 				"y":	10,
-				"width":	995,
+				"width":	596,
 				"height":	114
 			},
 			"hint":	null,
@@ -120,7 +120,7 @@
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	79
+						"width":	77
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -146,23 +146,7 @@
 							"hint":	null,
 							"controlType":	"T",
 							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column5",
-						"column_title":	"ShiftEndTime",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	75
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
+						},
 						{
 							"style":	null,
 							"props":	{
@@ -173,11 +157,11 @@
 								"attribute":	"T",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line33"
+								"common_line_id":	"line53"
 							},
 							"coordinates":	{
-								"x":	186,
-								"y":	33,
+								"x":	108,
+								"y":	53,
 								"width":	65,
 								"height":	16
 							},
@@ -214,7 +198,7 @@
 								"common_line_id":	"line33"
 							},
 							"coordinates":	{
-								"x":	261,
+								"x":	184,
 								"y":	33,
 								"width":	65,
 								"height":	16
@@ -222,23 +206,7 @@
 							"hint":	null,
 							"controlType":	"T",
 							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column7",
-						"column_title":	"Brk1End",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	73
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
+						},
 						{
 							"style":	null,
 							"props":	{
@@ -249,11 +217,11 @@
 								"attribute":	"T",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line33"
+								"common_line_id":	"line53"
 							},
 							"coordinates":	{
-								"x":	334,
-								"y":	33,
+								"x":	185,
+								"y":	53,
 								"width":	65,
 								"height":	16
 							},
@@ -290,7 +258,7 @@
 								"common_line_id":	"line33"
 							},
 							"coordinates":	{
-								"x":	406,
+								"x":	256,
 								"y":	33,
 								"width":	65,
 								"height":	16
@@ -298,23 +266,7 @@
 							"hint":	null,
 							"controlType":	"T",
 							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column9",
-						"column_title":	"Brk2End",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	73
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
+						},
 						{
 							"style":	null,
 							"props":	{
@@ -325,11 +277,11 @@
 								"attribute":	"T",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line33"
+								"common_line_id":	"line53"
 							},
 							"coordinates":	{
-								"x":	479,
-								"y":	33,
+								"x":	258,
+								"y":	53,
 								"width":	65,
 								"height":	16
 							},
@@ -366,7 +318,7 @@
 								"common_line_id":	"line33"
 							},
 							"coordinates":	{
-								"x":	551,
+								"x":	328,
 								"y":	33,
 								"width":	65,
 								"height":	16
@@ -374,23 +326,7 @@
 							"hint":	null,
 							"controlType":	"T",
 							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column11",
-						"column_title":	"Brk3End",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	73
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
+						},
 						{
 							"style":	null,
 							"props":	{
@@ -401,11 +337,11 @@
 								"attribute":	"T",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line33"
+								"common_line_id":	"line53"
 							},
 							"coordinates":	{
-								"x":	624,
-								"y":	33,
+								"x":	331,
+								"y":	53,
 								"width":	65,
 								"height":	16
 							},
@@ -442,7 +378,7 @@
 								"common_line_id":	"line33"
 							},
 							"coordinates":	{
-								"x":	696,
+								"x":	400,
 								"y":	33,
 								"width":	65,
 								"height":	16
@@ -450,23 +386,7 @@
 							"hint":	null,
 							"controlType":	"T",
 							"children":	null
-						}
-					]
-				},
-				{
-					"style":	null,
-					"props":	{
-						"id":	"Column13",
-						"column_title":	"Brk4End",
-						"is_table_child":	true,
-						"web_style":	2
-					},
-					"coordinates":	{
-						"width":	73
-					},
-					"hint":	null,
-					"controlType":	"K",
-					"children":	[
+						},
 						{
 							"style":	null,
 							"props":	{
@@ -477,11 +397,11 @@
 								"attribute":	"T",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line33"
+								"common_line_id":	"line53"
 							},
 							"coordinates":	{
-								"x":	769,
-								"y":	33,
+								"x":	404,
+								"y":	53,
 								"width":	65,
 								"height":	16
 							},
@@ -518,8 +438,30 @@
 								"common_line_id":	"line33"
 							},
 							"coordinates":	{
-								"x":	841,
+								"x":	472,
 								"y":	33,
+								"width":	65,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Brk5End",
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line53"
+							},
+							"coordinates":	{
+								"x":	477,
+								"y":	53,
 								"width":	65,
 								"height":	16
 							},
@@ -532,13 +474,12 @@
 				{
 					"style":	null,
 					"props":	{
-						"id":	"Column15",
-						"column_title":	"Brk5End",
+						"id":	"Column33",
 						"is_table_child":	true,
 						"web_style":	2
 					},
 					"coordinates":	{
-						"width":	68
+						"width":	51
 					},
 					"hint":	null,
 					"controlType":	"K",
@@ -546,79 +487,66 @@
 						{
 							"style":	null,
 							"props":	{
-								"id":	"Brk5End",
-								"formatter":	"magicTime",
-								"showsecs":	true,
-								"format":	"HH:MM:SS",
-								"attribute":	"T",
+								"id":	"EnterRowEditing",
+								"format":	"Edit",
 								"is_table_child":	true,
 								"web_style":	2,
-								"common_line_id":	"line33"
+								"row_editing_type":	1,
+								"common_line_id":	"line34"
 							},
 							"coordinates":	{
-								"x":	914,
-								"y":	33,
-								"width":	65,
-								"height":	16
+								"x":	550,
+								"y":	34,
+								"width":	28,
+								"height":	22
 							},
 							"hint":	null,
-							"controlType":	"T",
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SaveRowEditing",
+								"format":	"Save",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	3,
+								"common_line_id":	"line60"
+							},
+							"coordinates":	{
+								"x":	550,
+								"y":	60,
+								"width":	35,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CancelRowEditing",
+								"format":	"Cancel",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	2,
+								"common_line_id":	"line86"
+							},
+							"coordinates":	{
+								"x":	550,
+								"y":	86,
+								"width":	43,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
 							"children":	null
 						}
 					]
 				}
 			]
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"VModify",
-				"attribute":	"A",
-				"common_line_id":	"line130"
-			},
-			"coordinates":	{
-				"x":	8,
-				"y":	130,
-				"width":	96,
-				"height":	23
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"VSave",
-				"attribute":	"A",
-				"common_line_id":	"line130"
-			},
-			"coordinates":	{
-				"x":	106,
-				"y":	130,
-				"width":	96,
-				"height":	23
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"VCancel",
-				"attribute":	"A",
-				"common_line_id":	"line130"
-			},
-			"coordinates":	{
-				"x":	840,
-				"y":	130,
-				"width":	96,
-				"height":	23
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
 		}
 	]
 }

@@ -1,0 +1,71 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Reprocess",
+		"window_type":	12,
+		"component_path":	"VEHICLEAEOFFNEWREADY215/RoutetoProcess/",
+		"module_name":	"",
+		"component_uniquename":	"VEHICLEAEOFFNEWREADY215_RoutetoProcess_Reprocess"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	426,
+		"height":	114
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"Confirm",
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	90,
+				"y":	36,
+				"width":	110,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnYes",
+				"format":	"Yes",
+				"common_line_id":	"line70"
+			},
+			"coordinates":	{
+				"x":	90,
+				"y":	70,
+				"width":	84,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnNo",
+				"format":	"No",
+				"common_line_id":	"line70"
+			},
+			"coordinates":	{
+				"x":	190,
+				"y":	70,
+				"width":	84,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

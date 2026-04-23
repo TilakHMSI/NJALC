@@ -1,64 +1,63 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.MissingFrameNumberModify"
-    >
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
-                {{mg.getText(mgc.Label1)}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Edit2">
-                {{mg.getValue(mgc.Edit2)
-| magicDate : mgc.Edit2}}
-            </label>
-            <label [magic]="mgc.Edit3">
-                {{mg.getValue(mgc.Edit3)
-| magicTime : mgc.Edit3}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label5"
-                class="lable_overflow"
-            >
-                DATE FROM
-            </label>
-            <input
-                type="date"
-                [formControlName]="mgc.VFrom_Date"
-                [magic]="mgc.VFrom_Date"
-                dateInput
-            />
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label7"
-                class="lable_overflow"
-            >
-                DATE TO
-            </label>
-            <input
-                type="date"
-                [formControlName]="mgc.VTo_Date"
-                [magic]="mgc.VTo_Date"
-                dateInput
-            />
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.VOkButton">
-                {{mg.getValue(mgc.VOkButton)}}
-            </button>
-            <button [magic]="mgc.btn_Exit">
-                Exit
-            </button>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.MissingFrameNumberModify">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                       
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>From Date </label>
+                                    <input class="form-control-ed"  type="date" [formControlName]="mgc.VFrom_Date"
+                                        [magic]="mgc.VFrom_Date" dateInput />
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>To Date </label>
+                                    <input class="form-control-ed"  type="date" [formControlName]="mgc.VTo_Date"
+                                        [magic]="mgc.VTo_Date" dateInput />
+
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group row">
+                                    <div class="col-lg-12 text-center" style="margin-top: 5%;">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.VOkButton"
+                                                [disabled]="mg.isDisabled(mgc.VOkButton )"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                Ok
+                                            </button>
+                                            <button type="button" [magic]="mgc.btnHelp"
+                                                class="btn btn-warning font-weight-bold mr-3 btn-wdth">
+                                                Help
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

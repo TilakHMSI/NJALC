@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-AFTARGET_PROD_LINE229_TargetProdLine_TransactionTargetProdLine',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./TransactionTargetProdLine.component.css'],
     templateUrl: './TransactionTargetProdLine.component.html'
 })
 export class TransactionTargetProdLine extends BaseMatTableMagicComponent {

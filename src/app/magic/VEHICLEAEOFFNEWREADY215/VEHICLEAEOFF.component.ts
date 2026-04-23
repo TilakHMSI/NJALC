@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./AFSHIFTTIMING.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./VEHICLEAEOFF.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-AFSHIFTTimesLine230_AFSHIFTTIMING',
+    selector: 'mga-VEHICLEAEOFFNEWREADY215_VEHICLEAEOFF',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './AFSHIFTTIMING.component.html'
+    templateUrl: './VEHICLEAEOFF.component.html'
 })
-export class AFSHIFTTIMING extends TaskBaseMagicComponent implements MagicModalInterface {
+export class VEHICLEAEOFF extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,44 +23,44 @@ export class AFSHIFTTIMING extends TaskBaseMagicComponent implements MagicModalI
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "AFSHIFTTIMING";
-    private static readonly showTitleBar: boolean = false;
+    private static readonly formName: string = "VEHICLEAEOFF";
+    private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1150px";
-    private static readonly height: string = "450px";
+    private static readonly width: string = "300px";
+    private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = false;
+    private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return AFSHIFTTIMING.x;
+        return VEHICLEAEOFF.x;
     }
     Y() {
-        return AFSHIFTTIMING.y;
+        return VEHICLEAEOFF.y;
     }
     Width(): string {
-        return AFSHIFTTIMING.width;
+        return VEHICLEAEOFF.width;
     }
     Height(): string {
-        return AFSHIFTTIMING.height;
+        return VEHICLEAEOFF.height;
     }
     IsCenteredToWindow() {
-        return AFSHIFTTIMING.isCenteredToWindow;
+        return VEHICLEAEOFF.isCenteredToWindow;
     }
     FormName() {
-        return AFSHIFTTIMING.formName;
+        return VEHICLEAEOFF.formName;
     }
     ShowTitleBar() {
-        return AFSHIFTTIMING.showTitleBar;
+        return VEHICLEAEOFF.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return AFSHIFTTIMING.shouldCloseOnBackgroundClick;
+        return VEHICLEAEOFF.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return AFSHIFTTIMING.isResizable;
+        return VEHICLEAEOFF.isResizable;
     }
     IsMovable() {
-        return AFSHIFTTIMING.isMovable;
+        return VEHICLEAEOFF.isMovable;
     }
 }

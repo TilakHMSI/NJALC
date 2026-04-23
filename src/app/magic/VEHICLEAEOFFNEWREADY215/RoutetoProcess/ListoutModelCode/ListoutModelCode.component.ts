@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./SHIFTPICKLIST.mg.controls.g";
-import { MgDisplayedColumns } from "./SHIFTPICKLIST.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./ListoutModelCode.mg.controls.g";
+import { MgDisplayedColumns } from "./ListoutModelCode.mg.controls.g";
 
 
 import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angular-material-core";
@@ -11,12 +11,12 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-SHIFTPICKLIST_SHIFTPICKLIST',
+    selector: 'mga-VEHICLEAEOFFNEWREADY215_RoutetoProcess_ListoutModelCode_ListoutModelCode',
     providers: [...matMagicProviders],
     standalone: false,
-    templateUrl: './SHIFTPICKLIST.component.html'
+    templateUrl: './ListoutModelCode.component.html'
 })
-export class SHIFTPICKLIST extends BaseMatTableMagicComponent implements MagicModalInterface {
+export class ListoutModelCode extends BaseMatTableMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -25,45 +25,45 @@ export class SHIFTPICKLIST extends BaseMatTableMagicComponent implements MagicMo
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "SHIFTPICKLIST";
+    private static readonly formName: string = "ListoutModelCode";
     private static readonly showTitleBar: boolean = true;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "500px";
-    private static readonly height: string = "350px";
+    private static readonly width: string = "300px";
+    private static readonly height: string = "300px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = false;
+    private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return SHIFTPICKLIST.x;
+        return ListoutModelCode.x;
     }
     Y() {
-        return SHIFTPICKLIST.y;
+        return ListoutModelCode.y;
     }
     Width(): string {
-        return SHIFTPICKLIST.width;
+        return ListoutModelCode.width;
     }
     Height(): string {
-        return SHIFTPICKLIST.height;
+        return ListoutModelCode.height;
     }
     IsCenteredToWindow() {
-        return SHIFTPICKLIST.isCenteredToWindow;
+        return ListoutModelCode.isCenteredToWindow;
     }
     FormName() {
-        return SHIFTPICKLIST.formName;
+        return ListoutModelCode.formName;
     }
     ShowTitleBar() {
-        return SHIFTPICKLIST.showTitleBar;
+        return ListoutModelCode.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return SHIFTPICKLIST.shouldCloseOnBackgroundClick;
+        return ListoutModelCode.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return SHIFTPICKLIST.isResizable;
+        return ListoutModelCode.isResizable;
     }
     IsMovable() {
-        return SHIFTPICKLIST.isMovable;
+        return ListoutModelCode.isMovable;
     }
     override displayedColumns = this.mgdp;
 }

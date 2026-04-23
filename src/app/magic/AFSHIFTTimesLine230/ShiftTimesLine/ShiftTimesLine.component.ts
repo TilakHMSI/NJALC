@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-AFSHIFTTimesLine230_ShiftTimesLine_ShiftTimesLine',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./ShiftTimesLine.component.css'],
     templateUrl: './ShiftTimesLine.component.html'
 })
 export class ShiftTimesLine extends BaseMatTableMagicComponent {

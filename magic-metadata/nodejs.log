@@ -27,30 +27,30 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VEHICLEAFOFF175/VEHICLEAFOFF175.json
-[>] Loading JSON file .//magic-metadata/VEHICLEAFOFF175/SelectModelCode/SelectModelCode.json
-[>] Loading JSON file .//magic-metadata/VEHICLEAFOFF175/SelectModelCode/ListView/SelectModelCode.json
+[>] Loading JSON file .//magic-metadata/VEHICLEAEOFFNEWREADY215/VEHICLEAEOFF.json
+[>] Loading JSON file .//magic-metadata/VEHICLEAEOFFNEWREADY215/RoutetoProcess/Reprocess.json
+[>] Loading JSON file .//magic-metadata/VEHICLEAEOFFNEWREADY215/RoutetoProcess/ListoutModelCode/ListoutModelCode.json
 *** Step 2: Processing JSON files -  (3 components) ***
-[>] Processing JSON file for component VEHICLEAFOFF175
-[>] Processing JSON file for component SelectModelCode
-[>] Processing JSON file for component SelectModelCode
+[>] Processing JSON file for component VEHICLEAEOFF
+[>] Processing JSON file for component Reprocess
+[>] Processing JSON file for component ListoutModelCode
 *** Step 3: generate components. (3 components) ***
-[>] generate component VEHICLEAFOFF175
-[>] generate component SelectModelCode
-[>] generate component SelectModelCode
+[>] generate component VEHICLEAEOFF
+[>] generate component Reprocess
+[>] generate component ListoutModelCode
 [>] Step 4: components-list.
- Total old components: 377, added components: 2. 
+ Total old components: 381, added components: 3. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/SelectModelCode.mg.controls.g.ts (715 bytes)
-[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/SelectModelCode.component.ts (2129 bytes)
-[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/SelectModelCode.component.html (752 bytes)
-[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/ListView/SelectModelCode.mg.controls.g.ts (1153 bytes)
-[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/ListView/SelectModelCode.component.ts (959 bytes)
-[32mCREATE[39m src/app/magic/VEHICLEAFOFF175/SelectModelCode/ListView/SelectModelCode.component.html (5255 bytes)
-[36mUPDATE[39m src/app/magic/VEHICLEAFOFF175/VEHICLEAFOFF175.mg.controls.g.ts (1945 bytes)
-[36mUPDATE[39m src/app/magic/VEHICLEAFOFF175/VEHICLEAFOFF175.component.ts (2113 bytes)
-[36mUPDATE[39m src/app/magic/VEHICLEAFOFF175/VEHICLEAFOFF175.component.html (4042 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (124361 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAEOFFNEWREADY215/VEHICLEAEOFF.mg.controls.g.ts (1702 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAEOFFNEWREADY215/VEHICLEAEOFF.component.ts (2076 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAEOFFNEWREADY215/VEHICLEAEOFF.component.html (3426 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAEOFFNEWREADY215/RoutetoProcess/Reprocess.mg.controls.g.ts (635 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAEOFFNEWREADY215/RoutetoProcess/Reprocess.component.ts (2046 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAEOFFNEWREADY215/RoutetoProcess/Reprocess.component.html (638 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAEOFFNEWREADY215/RoutetoProcess/ListoutModelCode/ListoutModelCode.mg.controls.g.ts (909 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAEOFFNEWREADY215/RoutetoProcess/ListoutModelCode/ListoutModelCode.component.ts (2341 bytes)
+[32mCREATE[39m src/app/magic/VEHICLEAEOFFNEWREADY215/RoutetoProcess/ListoutModelCode/ListoutModelCode.component.html (3622 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (125800 bytes)
 
 
 
