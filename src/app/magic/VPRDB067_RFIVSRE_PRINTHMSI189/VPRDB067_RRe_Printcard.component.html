@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -76,6 +76,72 @@
                     mgFormat
                 />
                 <mgError [magic]=mgc.vPLAN_SEQ_SUFFIX> </mgError>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div style="background-color: rgb(192, 199, 202);" novalidate [formGroup]="screenFormGroup">
+    <div class="d-flex flex-column flex-column-fluid" [magic]="mgc.VPRDB067_RRe_Printcard">
+       
+            <div class="col-lg-12 col-xxl-12">
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <label style="background-color: rgb(49, 84, 238); text-align: center; width: 100%;"
+                            class="font-weight-bolder font-size-h2 text-white">
+                         PGM=VPRDB067
+                        
+                        </label>
+                    </div>
+                    <div class="col-lg-12">
+                        <label style="width: 100%; font-size: 1.5rem; font-weight: 600;text-align: center;">NOW
+                            PRINTING ...</label>
+                    </div>
+                    <div class="col-lg-4">
+                        <label  class="lbl_title">
+                            PLAN CODE:
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+
+                        <label class="lbl_errmessage">
+                            {{mg.getValue(mgc.vPLAN_CODE) }}
+                        </label>
+
+                    </div>
+                    <div class="col-lg-4">
+
+                        <label  class="lbl_title">
+                            PLAN DATE:
+                        </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lbl_errmessage" [magic]="mgc.vPLAN_DATE">
+                            {{mg.getValue(mgc.vPLAN_DATE)
+                            | magicDate : mgc.vPLAN_DATE}}
+                        </label>
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <label  class="lbl_title">
+                            PLAN SEQ:
+                        </label>
+                    </div>
+                    <div class="col-lg-4">
+                        <label class="lbl_errmessage">
+                            {{mg.getValue(mgc.vPLAN_SEQ) }}
+                        </label>
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="lbl_errmessage">
+                            {{mg.getValue(mgc.vPLAN_SEQ_SUFFIX) }}
+                        </label>
+                    </div>
+
+
+
+
             </div>
         </div>
     </div>
