@@ -1,0 +1,186 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"RESULT",
+		"window_type":	12,
+		"component_path":	"VPRDB050SHIPPEDFNOTXTOUT100/RESULT/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB050SHIPPEDFNOTXTOUT100_RESULT_RESULT"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	243,
+		"height":	135
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"DATE SELECT:",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	23,
+				"y":	13,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit2",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	86,
+				"y":	13,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"-",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	146,
+				"y":	13,
+				"width":	8,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	158,
+				"y":	13,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"OUTPUT FILENAME:",
+				"common_line_id":	"line39"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	39,
+				"width":	80,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit6",
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"modifiable":	false,
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	8,
+				"y":	55,
+				"width":	225,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"DATA COUNT:",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	3,
+				"y":	78,
+				"width":	80,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_COUNT_V",
+				"mgformat":	"mgFormat",
+				"format":	"#####",
+				"modifiable":	false,
+				"attribute":	"N",
+				"common_line_id":	"line78"
+			},
+			"coordinates":	{
+				"x":	86,
+				"y":	78,
+				"width":	30,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"attribute":	"A",
+				"common_line_id":	"line109"
+			},
+			"coordinates":	{
+				"x":	88,
+				"y":	109,
+				"width":	68,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

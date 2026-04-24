@@ -10,8 +10,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	403,
-		"height":	177
+		"width":	360,
+		"height":	166
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -24,9 +24,9 @@
 				"common_line_id":	"line3"
 			},
 			"coordinates":	{
-				"x":	294,
+				"x":	314,
 				"y":	3,
-				"width":	65,
+				"width":	45,
 				"height":	13
 			},
 			"hint":	null,

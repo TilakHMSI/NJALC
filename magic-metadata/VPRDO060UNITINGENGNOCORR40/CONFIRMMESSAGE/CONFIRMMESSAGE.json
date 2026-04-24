@@ -1,0 +1,73 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"CONFIRMMESSAGE",
+		"window_type":	12,
+		"component_path":	"VPRDO060UNITINGENGNOCORR40/CONFIRMMESSAGE/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO060UNITINGENGNOCORR40_CONFIRMMESSAGE_CONFIRMMESSAGE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	415,
+		"height":	86
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_MESSAGE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line29"
+			},
+			"coordinates":	{
+				"x":	4,
+				"y":	29,
+				"width":	405,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Select",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	105,
+				"y":	55,
+				"width":	66,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btn_Exit",
+				"attribute":	"A",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	243,
+				"y":	55,
+				"width":	66,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

@@ -1,0 +1,117 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.SHIPPINGRESULTINQUIRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label3"
+                class="lable_overflow"
+            >
+            </label>
+            <div
+                [magic]="mgc.SELECT_DATE_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.SELECT_DATE_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.SELECT_DATE_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.SELECT_DATE_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <div
+                [magic]="mgc.SELECT_FORMAT_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.SELECT_FORMAT_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.SELECT_FORMAT_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.SELECT_FORMAT_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <input
+                type="date"
+                [formControlName]="mgc.YYYYMMDD_V"
+                [magic]="mgc.YYYYMMDD_V"
+                dateInput
+            />
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VPRDO036
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                [style.visibility]="mg.getVisible(mgc.Label5)"
+                class="lable_overflow"
+            >
+                DELIVERY
+            </label>
+            <label
+                [magic]="mgc.Label6"
+                [style.visibility]="mg.getVisible(mgc.Label6)"
+                class="lable_overflow"
+            >
+                SHIPPING
+            </label>
+            <label [magic]="mgc.Edit7">
+                {{mg.getValue(mgc.Edit7)
+| magicDate : mgc.Edit7}}
+            </label>
+            <label [magic]="mgc.Edit8">
+                {{mg.getValue(mgc.Edit8)
+| magicTime : mgc.Edit8}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                RETURN
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.YYYYMM_V"
+                [magic]="mgc.YYYYMM_V"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label11"
+                class="lable_overflow"
+            >
+                EXC.OUTGO.
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.SHIPPING_RESULT_INQUIRY">
+            </magic-subform>
+        </div>
+    </div>
+</div>

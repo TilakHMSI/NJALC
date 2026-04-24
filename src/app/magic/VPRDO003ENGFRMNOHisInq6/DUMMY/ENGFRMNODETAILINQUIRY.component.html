@@ -1,0 +1,463 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.ENGFRMNODETAILINQUIRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                VIN TYPE
+            </label>
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                VIN C/D
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                FRAME NO.MARK
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD008MTOC_HISTORY_S8_VIN_TYPE"
+                    [magic]="mgc.PRD008MTOC_HISTORY_S8_VIN_TYPE"
+                    mgFormat
+                    rangevalidator
+                />
+                <mgError [magic]=mgc.PRD008MTOC_HISTORY_S8_VIN_TYPE> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD008MTOC_HISTORY_S8_VIN_CD"
+                    [magic]="mgc.PRD008MTOC_HISTORY_S8_VIN_CD"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRD008MTOC_HISTORY_S8_VIN_CD> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_FRAME_NOMARK"
+                    [magic]="mgc.S8_FRAME_NOMARK"
+                    mgFormat
+                    rangevalidator
+                />
+                <mgError [magic]=mgc.S8_FRAME_NOMARK> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label14"
+                class="lable_overflow"
+            >
+                MTO CODE
+            </label>
+            <label
+                [magic]="mgc.Label19"
+                class="lable_overflow"
+            >
+                MTO NAME
+            </label>
+            <label
+                [magic]="mgc.Label25"
+                class="lable_overflow"
+            >
+                COLOR CODE
+            </label>
+            <label
+                [magic]="mgc.Label31"
+                class="lable_overflow"
+            >
+                COLOR CODE(INSIDE)
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD008MTOC_HISTORY_S8_MTO_CODE"
+                    [magic]="mgc.PRD008MTOC_HISTORY_S8_MTO_CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRD008MTOC_HISTORY_S8_MTO_CODE> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD008MTOC_HISTORY_S8_MTO_NAME"
+                    [magic]="mgc.PRD008MTOC_HISTORY_S8_MTO_NAME"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRD008MTOC_HISTORY_S8_MTO_NAME> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_COLOR_CODE"
+                    [magic]="mgc.S8_COLOR_CODE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S8_COLOR_CODE> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_COLOR_CODEINSIDE"
+                    [magic]="mgc.S8_COLOR_CODEINSIDE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S8_COLOR_CODEINSIDE> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label17"
+                class="lable_overflow"
+            >
+                EFM
+            </label>
+            <label
+                [magic]="mgc.Label23"
+                class="lable_overflow"
+            >
+                TYPE
+            </label>
+            <label
+                [magic]="mgc.Label29"
+                class="lable_overflow"
+            >
+                ENGINE NO.
+            </label>
+            <label
+                [magic]="mgc.Label35"
+                class="lable_overflow"
+            >
+                AE-OFF DATE
+            </label>
+            <label
+                [magic]="mgc.Label11"
+                class="lable_overflow"
+            >
+                UNITING (ENGINE)
+            </label>
+            <label [magic]="mgc.Edit15">
+                {{mg.getValue(mgc.Edit15) }}
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD008MTOC_HISTORY_S8_ENGTYPE"
+                    [magic]="mgc.PRD008MTOC_HISTORY_S8_ENGTYPE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRD008MTOC_HISTORY_S8_ENGTYPE> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD008MTOC_HISTORY_S8_ENGNO"
+                    type='number'
+                    [magic]="mgc.PRD008MTOC_HISTORY_S8_ENGNO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRD008MTOC_HISTORY_S8_ENGNO> </mgError>
+            </div>
+            <input
+                type="date"
+                [formControlName]="mgc.S8_AEOFF_DATE"
+                [magic]="mgc.S8_AEOFF_DATE"
+                dateInput
+            />
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label18"
+                class="lable_overflow"
+            >
+                EFM
+            </label>
+            <label
+                [magic]="mgc.Label24"
+                class="lable_overflow"
+            >
+                TYPE
+            </label>
+            <label
+                [magic]="mgc.Label30"
+                class="lable_overflow"
+            >
+                FRAME NO.
+            </label>
+            <label
+                [magic]="mgc.Label36"
+                class="lable_overflow"
+            >
+                AF-OFF DATE
+            </label>
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                UNITING (FRAME)
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD008MTOC_HISTORY_S8_EFM"
+                    [magic]="mgc.PRD008MTOC_HISTORY_S8_EFM"
+                    mgFormat
+                    rangevalidator
+                />
+                <mgError [magic]=mgc.PRD008MTOC_HISTORY_S8_EFM> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_ENGFRMTYPE"
+                    [magic]="mgc.S8_ENGFRMTYPE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S8_ENGFRMTYPE> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_CHASSIS_NO"
+                    currencyMask
+                    [options]="mg.getNumericPicture(mg.getPicture(mgc.S8_CHASSIS_NO))"
+                    [magic]="mgc.S8_CHASSIS_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S8_CHASSIS_NO> </mgError>
+            </div>
+            <input
+                type="date"
+                [formControlName]="mgc.S8_AFOFF_DATE"
+                [magic]="mgc.S8_AFOFF_DATE"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label37"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label39"
+                class="lable_overflow"
+            >
+                KD LOT NO.
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_KD_LOT_NO"
+                    [magic]="mgc.S8_KD_LOT_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S8_KD_LOT_NO> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label38"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label41"
+                class="lable_overflow"
+            >
+                VQ-ON
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.S8_VQON_DATE"
+                [magic]="mgc.S8_VQON_DATE"
+                dateInput
+            />
+            <label
+                [magic]="mgc.Label43"
+                class="lable_overflow"
+            >
+                VQ-OFF
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.S8_VQOFF_DATE"
+                [magic]="mgc.S8_VQOFF_DATE"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label45"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label51"
+                class="lable_overflow"
+            >
+                CONTRACT NO.
+            </label>
+            <label
+                [magic]="mgc.Label57"
+                class="lable_overflow"
+            >
+                CASE NO.
+            </label>
+            <label
+                [magic]="mgc.Label61"
+                class="lable_overflow"
+            >
+                PACKING TYPE
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_CONTRACT_NO"
+                    [magic]="mgc.S8_CONTRACT_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S8_CONTRACT_NO> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.PRD008MTOC_HISTORY_S8_CASE_NO"
+                    [magic]="mgc.PRD008MTOC_HISTORY_S8_CASE_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRD008MTOC_HISTORY_S8_CASE_NO> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_PACKING_TYPE"
+                    [magic]="mgc.S8_PACKING_TYPE"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S8_PACKING_TYPE> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label58"
+                class="lable_overflow"
+            >
+                EXCEPTIONAL
+            </label>
+            <label
+                [magic]="mgc.Label46"
+                class="lable_overflow"
+            >
+                PDI-OFF
+            </label>
+            <label
+                [magic]="mgc.Label52"
+                class="lable_overflow"
+            >
+                LOADING
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.S8_PDIOFF_DATE"
+                [magic]="mgc.S8_PDIOFF_DATE"
+                dateInput
+            />
+            <input
+                type="date"
+                [formControlName]="mgc.S8_LOADING_DATE"
+                [magic]="mgc.S8_LOADING_DATE"
+                dateInput
+            />
+            <input
+                type="date"
+                [formControlName]="mgc.S8_EXCOUTGODATE"
+                [magic]="mgc.S8_EXCOUTGODATE"
+                dateInput
+            />
+            <label
+                [magic]="mgc.Label48"
+                class="lable_overflow"
+            >
+                PACKING
+            </label>
+            <label
+                [magic]="mgc.Label54"
+                class="lable_overflow"
+            >
+                DELIVERY
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.S8_PACKING_DATE"
+                [magic]="mgc.S8_PACKING_DATE"
+                dateInput
+            />
+            <input
+                type="date"
+                [formControlName]="mgc.S8_SHIPPING_DATE"
+                [magic]="mgc.S8_SHIPPING_DATE"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label62"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label66"
+                class="lable_overflow"
+            >
+                CERTIFICATE NO.
+            </label>
+            <label
+                [magic]="mgc.Label67"
+                class="lable_overflow"
+            >
+                CERTIFICATE CATEGORY
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_CERTIFICATE_NO"
+                    type='number'
+                    [magic]="mgc.S8_CERTIFICATE_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S8_CERTIFICATE_NO> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_CERTIFICATE_CATEGORY"
+                    [magic]="mgc.S8_CERTIFICATE_CATEGORY"
+                    mgFormat
+                    rangevalidator
+                />
+                <mgError [magic]=mgc.S8_CERTIFICATE_CATEGORY> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label64"
+                class="lable_overflow"
+            >
+                QI STAMP NO.
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.S8_QI_STAMP_NO"
+                    [magic]="mgc.S8_QI_STAMP_NO"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.S8_QI_STAMP_NO> </mgError>
+            </div>
+        </div>
+    </div>
+</div>

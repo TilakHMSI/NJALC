@@ -1,0 +1,192 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.AFOFFRESULTENTRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit1">
+                {{mg.getValue(mgc.Edit1)
+| magicDate : mgc.Edit1}}
+            </label>
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicTime : mgc.Edit2}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                PGM=VPRDO060
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5) }}
+            </label>
+            <label [magic]="mgc.Edit7">
+                {{mg.getValue(mgc.Edit7) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label8"
+                class="lable_overflow"
+            >
+                FRAME NO.
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.MODE_V"
+                (change)="task.mgOnRadioSelectionChanged(mgc.MODE_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.MODE_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.MODE_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.UN_CHASSIS_NO_V"
+                    [magic]="mgc.UN_CHASSIS_NO_V"
+                    [style.visibility]="mg.getVisible(mgc.UN_CHASSIS_NO_V)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.UN_CHASSIS_NO_V> </mgError>
+            </div>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.RE_CHASSIS_NO_V"
+                    [magic]="mgc.RE_CHASSIS_NO_V"
+                    [style.visibility]="mg.getVisible(mgc.RE_CHASSIS_NO_V)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.RE_CHASSIS_NO_V> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.RE_CHASSIS_NO_V"
+                    [style.visibility]="mg.getVisible(mgc.RE_CHASSIS_NO_V)"
+                >...</button>
+            </div>
+            <label
+                [magic]="mgc.Label10"
+                class="lable_overflow"
+            >
+                ENGINE NO.
+            </label>
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.ENGINE_NO_V"
+                    [magic]="mgc.ENGINE_NO_V"
+                    [style.visibility]="mg.getVisible(mgc.ENGINE_NO_V)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.ENGINE_NO_V> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.ENGINE_NO_V"
+                    [style.visibility]="mg.getVisible(mgc.ENGINE_NO_V)"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.Group14"
+                class="container_border"
+                style="display: flex; flex-direction: column"
+            >
+                <div style="display: flex; flex-direction: row">
+                    <label
+                        [magic]="mgc.Label15"
+                        class="lable_overflow"
+                    >
+                        FRAME-NO.
+                    </label>
+                    <label
+                        [magic]="mgc.Label16"
+                        class="lable_overflow"
+                    >
+                        ENGINE-NO.
+                    </label>
+                    <label
+                        [magic]="mgc.Label17"
+                        class="lable_overflow"
+                    >
+                        AF-OFF DATE
+                    </label>
+                    <label
+                        [magic]="mgc.Label18"
+                        class="lable_overflow"
+                    >
+                        AF-OFF TIME
+                    </label>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        <input
+                            [formControlName]="mgc.V_DISP_FRAME_NO"
+                            [magic]="mgc.V_DISP_FRAME_NO"
+                            [style.visibility]="mg.getVisible(mgc.V_DISP_FRAME_NO)"
+                            mgFormat
+                        />
+                        <mgError [magic]=mgc.V_DISP_FRAME_NO> </mgError>
+                    </div>
+                    <label
+                        [magic]="mgc.Edit20"
+                        [style.visibility]="mg.getVisible(mgc.Edit20)"
+                    >
+                        {{mg.getValue(mgc.Edit20) }}
+                    </label>
+                    <label
+                        [magic]="mgc.Edit21"
+                        [style.visibility]="mg.getVisible(mgc.Edit21)"
+                    >
+                        {{mg.getValue(mgc.Edit21) }}
+                    </label>
+                    <label
+                        [magic]="mgc.Edit22"
+                        [style.visibility]="mg.getVisible(mgc.Edit22)"
+                    >
+                        {{mg.getValue(mgc.Edit22)
+| magicDate : mgc.Edit22}}
+                    </label>
+                    <label
+                        [magic]="mgc.Edit23"
+                        [style.visibility]="mg.getVisible(mgc.Edit23)"
+                    >
+                        {{mg.getValue(mgc.Edit23)
+| magicTime : mgc.Edit23}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.Sub1">
+            </magic-subform>
+        </div>
+    </div>
+</div>

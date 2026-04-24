@@ -1,0 +1,240 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VPRDB018MODELREORG",
+		"window_type":	12,
+		"component_path":	"VPRDB018MTOCREORG79/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDB018MTOCREORG79_VPRDB018MODELREORG"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	178,
+		"height":	91
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	0,
+				"width":	20,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PGM=VPRDB018",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	116,
+				"y":	0,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	22,
+				"y":	14,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit3",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	76,
+				"y":	13,
+				"width":	53,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit4",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	133,
+				"y":	13,
+				"width":	44,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"Passage month number:",
+				"common_line_id":	"line33"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	33,
+				"width":	105,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PASSAGE_MONTH_V",
+				"items_list":	"1-12",
+				"mgformat":	"mgFormat",
+				"validator":	"rangevalidator",
+				"format":	"##",
+				"attribute":	"N",
+				"common_line_id":	"line33"
+			},
+			"coordinates":	{
+				"x":	119,
+				"y":	33,
+				"width":	16,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"month",
+				"common_line_id":	"line33"
+			},
+			"coordinates":	{
+				"x":	140,
+				"y":	33,
+				"width":	26,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"Passage Date        :",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	49,
+				"width":	106,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_PASSAGE_DATE_V",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line49"
+			},
+			"coordinates":	{
+				"x":	119,
+				"y":	49,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONEXEC",
+				"attribute":	"A",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	49,
+				"y":	68,
+				"width":	60,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"BUTTONCANCEL",
+				"attribute":	"A",
+				"common_line_id":	"line68"
+			},
+			"coordinates":	{
+				"x":	115,
+				"y":	68,
+				"width":	60,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

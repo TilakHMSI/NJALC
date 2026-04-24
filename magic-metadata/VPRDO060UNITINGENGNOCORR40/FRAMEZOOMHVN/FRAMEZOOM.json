@@ -1,0 +1,295 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"FRAMEZOOM",
+		"window_type":	12,
+		"component_path":	"VPRDO060UNITINGENGNOCORR40/FRAMEZOOMHVN/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO060UNITINGENGNOCORR40_FRAMEZOOMHVN_FRAMEZOOM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	386,
+		"height":	280
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	21,
+				"table_title_height":	36,
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	1,
+				"y":	2,
+				"width":	383,
+				"height":	276
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"FRAME NO.\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	94
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Edit8",
+								"dataexp":	true,
+								"format":	"UUUUUUUUUUU",
+								"modifiable":	false,
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line44"
+							},
+							"coordinates":	{
+								"x":	4,
+								"y":	44,
+								"width":	55,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Edit9",
+								"dataexp":	true,
+								"format":	"XXXXXXX",
+								"modifiable":	false,
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line44"
+							},
+							"coordinates":	{
+								"x":	60,
+								"y":	44,
+								"width":	35,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"MTO NAME\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	99
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_P05_MTO_NAME",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line44"
+							},
+							"coordinates":	{
+								"x":	98,
+								"y":	44,
+								"width":	95,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"COLOR CODE\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	59
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_P05_COLOR_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line44"
+							},
+							"coordinates":	{
+								"x":	196,
+								"y":	44,
+								"width":	55,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"AF-OFF DATE\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	55
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_P05_AFOFF_DATE",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line44"
+							},
+							"coordinates":	{
+								"x":	255,
+								"y":	44,
+								"width":	51,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"AF-OFF TIME\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	45
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_P05_AFOFF_TIME",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line44"
+							},
+							"coordinates":	{
+								"x":	311,
+								"y":	44,
+								"width":	40,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	18
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_P05_VIN_TYPE",
+								"items_list":	" :OTHER,V:VIN,I:ISO",
+								"mgformat":	"mgFormat",
+								"validator":	"rangevalidator",
+								"format":	"X",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line44"
+							},
+							"coordinates":	{
+								"x":	358,
+								"y":	44,
+								"width":	11,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

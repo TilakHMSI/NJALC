@@ -1,0 +1,107 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.SALESSYSTEMINTERFACE"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                PGM=VPRDB050
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit2">
+                {{mg.getValue(mgc.Edit2)
+| magicDate : mgc.Edit2}}
+            </label>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicTime : mgc.Edit3}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label4"
+                class="lable_overflow"
+            >
+                LINE:
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.v_Plan_Line"
+                    [formControlName]="mgc.v_Plan_Line"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_Plan_Line);"
+                        [selected]="o.index == mg.getValue(mgc.v_Plan_Line)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                DATE SELECT:
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.FROM_DATE_V"
+                [magic]="mgc.FROM_DATE_V"
+                dateInput
+            />
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                -
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.TO_DATE_V"
+                [magic]="mgc.TO_DATE_V"
+                dateInput
+            />
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                OUTPUT FILENAME:
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    style="width: 70%"
+                    [formControlName]="mgc.OUTPUT_FILE_NAME_V"
+                    [magic]="mgc.OUTPUT_FILE_NAME_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.OUTPUT_FILE_NAME_V> </mgError>
+                <button
+                    style="min-width: auto; margin: auto"
+                    [magic]="mgc.OUTPUT_FILE_NAME_V"
+                >...</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.EXECBUTTON">
+                {{mg.getValue(mgc.EXECBUTTON)}}
+            </button>
+            <button [magic]="mgc.CANCELBUTTON">
+                {{mg.getValue(mgc.CANCELBUTTON)}}
+            </button>
+        </div>
+    </div>
+</div>

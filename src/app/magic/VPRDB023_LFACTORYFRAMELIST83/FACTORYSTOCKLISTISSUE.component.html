@@ -1,0 +1,103 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.FACTORYSTOCKLISTISSUE"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VPRDB023
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                LINE
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.v_plant"
+                    [formControlName]="mgc.v_plant"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_plant);"
+                        [selected]="o.index == mg.getValue(mgc.v_plant)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.SELECT_V"
+                [style.visibility]="mg.getVisible(mgc.SELECT_V)"
+                (change)="task.mgOnRadioSelectionChanged(mgc.SELECT_V)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.SELECT_V);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.SELECT_V"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.DAY_V"
+                    type='number'
+                    [magic]="mgc.DAY_V"
+                    [style.visibility]="mg.getVisible(mgc.DAY_V)"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.DAY_V> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label7"
+                [style.visibility]="mg.getVisible(mgc.Label7)"
+                class="lable_overflow"
+            >
+                DAYS PASSED
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.EXECBUTTON">
+                {{mg.getValue(mgc.EXECBUTTON)}}
+            </button>
+            <button [magic]="mgc.CANCELBUTTON">
+                {{mg.getValue(mgc.CANCELBUTTON)}}
+            </button>
+        </div>
+    </div>
+</div>

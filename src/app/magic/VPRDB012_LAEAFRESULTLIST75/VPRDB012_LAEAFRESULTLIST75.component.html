@@ -1,0 +1,71 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.VPRDB012_LAEAFRESULTLIST75"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VPRDB012
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div
+                [magic]="mgc.OPT_DATE"
+                (change)="task.mgOnRadioSelectionChanged(mgc.OPT_DATE)"
+            >
+                <div *ngFor="let o of mg.getItemListValues(mgc.OPT_DATE);">
+                    <label>
+                        <input
+                            type="radio"
+                            [formControlName]="mgc.OPT_DATE"
+                            [value]="o.index"
+                        />
+                        {{o.displayValue}}
+                    </label>
+                </div>
+            </div>
+            <input
+                type="date"
+                [formControlName]="mgc.DATEMMYYYYY"
+                [magic]="mgc.DATEMMYYYYY"
+                dateInput
+            />
+            <input
+                type="date"
+                [formControlName]="mgc.DATEDDMMYYYY"
+                [magic]="mgc.DATEDDMMYYYY"
+                dateInput
+            />
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit5">
+                {{mg.getValue(mgc.Edit5)
+| magicTime : mgc.Edit5}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.EXEC_BUTTON">
+                E:Exec
+            </button>
+            <button [magic]="mgc.CANCEL_BUTTON">
+                C:Cancel
+            </button>
+        </div>
+    </div>
+</div>

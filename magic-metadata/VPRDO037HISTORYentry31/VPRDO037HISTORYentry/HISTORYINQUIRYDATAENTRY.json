@@ -1,0 +1,226 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"HISTORYINQUIRYDATAENTRY",
+		"window_type":	1,
+		"component_path":	"VPRDO037HISTORYentry31/VPRDO037HISTORYentry/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO037HISTORYentry31_VPRDO037HISTORYentry_HISTORYINQUIRYDATAENTRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	503,
+		"height":	351
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	18,
+				"table_title_height":	20,
+				"common_line_id":	"line7"
+			},
+			"coordinates":	{
+				"x":	115,
+				"y":	7,
+				"width":	338,
+				"height":	338
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"EFM",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	68
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SB_EFM",
+								"items_list":	"E:ENGINE,F:FRAME,M:MISSION",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	118,
+								"y":	29,
+								"width":	62,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"D",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"ENG/FRM TYPE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	65
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SB_ENGFRMTYPE",
+								"show_zoom_button":	true,
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	185,
+								"y":	29,
+								"width":	55,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"ENG/FRM NO.FROM",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	80
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SB_CHASSIS_NOFROM",
+								"mgformat":	"mgFormat",
+								"format":	"#######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	250,
+								"y":	29,
+								"width":	35,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"ENG/FRM NO.TO",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	70
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SB_CHASSIS_NOTO",
+								"mgformat":	"mgFormat",
+								"format":	"#######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	330,
+								"y":	29,
+								"width":	35,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"RESULT",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	41
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Edit10",
+								"dataexp":	true,
+								"format":	"######",
+								"modifiable":	false,
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line29"
+							},
+							"coordinates":	{
+								"x":	400,
+								"y":	29,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

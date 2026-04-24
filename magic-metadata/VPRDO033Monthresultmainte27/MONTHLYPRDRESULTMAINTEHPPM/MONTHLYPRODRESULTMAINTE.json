@@ -1,0 +1,611 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"MONTHLYPRODRESULTMAINTE",
+		"window_type":	1,
+		"component_path":	"VPRDO033Monthresultmainte27/MONTHLYPRDRESULTMAINTEHPPM/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO033Monthresultmainte27_MONTHLYPRDRESULTMAINTEHPPM_MONTHLYPRODRESULTMAINTE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	351
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	34,
+				"table_title_height":	68,
+				"common_line_id":	"line5"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	5,
+				"width":	560,
+				"height":	314
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"MODEL CODE\r\nMODEL NAME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	98
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_MTO_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	3,
+								"y":	76,
+								"width":	55,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PRD001_S1_MTO_NAME",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line93"
+							},
+							"coordinates":	{
+								"x":	3,
+								"y":	93,
+								"width":	90,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"COLOR CODE\r\nINSIDE OEM",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	60
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_COLOR_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"UUUUUUUUUU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	103,
+								"y":	76,
+								"width":	50,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_COLOR_CODEINSIDE",
+								"mgformat":	"mgFormat",
+								"format":	"UU",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line93"
+							},
+							"coordinates":	{
+								"x":	103,
+								"y":	93,
+								"width":	15,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_OEM_DISP_V",
+								"mgformat":	"mgFormat",
+								"format":	"XXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line93"
+							},
+							"coordinates":	{
+								"x":	133,
+								"y":	93,
+								"width":	19,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"LAST MONTH PROGRESS\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	36
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_LAST_MONTH_PROGRESS",
+								"mgformat":	"mgFormat",
+								"format":	"-######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	161,
+								"y":	76,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"AM-OFF PLAN\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	36
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_M_AFOFF_PLAN_RESULT",
+								"mgformat":	"mgFormat",
+								"format":	"######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	198,
+								"y":	76,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column6",
+						"column_title":	"AM-OFF\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	38
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_M_AFOFF_RESULT",
+								"mgformat":	"mgFormat",
+								"format":	"######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	234,
+								"y":	76,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column7",
+						"column_title":	"TOTAL PROGRESS\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	40
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_TOTAL_PROGRESS_V",
+								"mgformat":	"mgFormat",
+								"format":	"-#####",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	274,
+								"y":	76,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column8",
+						"column_title":	"QM-OFF\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	36
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_M_VQOFF_RESULT",
+								"mgformat":	"mgFormat",
+								"format":	"######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	311,
+								"y":	76,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column9",
+						"column_title":	"PACK.\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	38
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_M_PACKING_RESULT",
+								"mgformat":	"mgFormat",
+								"format":	"######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	349,
+								"y":	76,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column10",
+						"column_title":	"SHIP.\r\n",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	43
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_M_SHIPPING_RESULT",
+								"mgformat":	"mgFormat",
+								"format":	"#######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	386,
+								"y":	76,
+								"width":	35,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column11",
+						"column_title":	"RETURN\r\nNQM-OFF STOCK",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	41
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_M_RETURN_RESULT",
+								"mgformat":	"mgFormat",
+								"format":	"######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	433,
+								"y":	76,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_NON_VQOFF_STOCK",
+								"mgformat":	"mgFormat",
+								"format":	"-######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line93"
+							},
+							"coordinates":	{
+								"x":	428,
+								"y":	93,
+								"width":	35,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column12",
+						"column_title":	"RESHIP.\r\nQM-OFF STOCK",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	41
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_M_RESHIPPING_RESULT",
+								"mgformat":	"mgFormat",
+								"format":	"#######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	469,
+								"y":	76,
+								"width":	35,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_VQOFF_STOCK",
+								"mgformat":	"mgFormat",
+								"format":	"-######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line93"
+							},
+							"coordinates":	{
+								"x":	469,
+								"y":	93,
+								"width":	35,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column13",
+						"column_title":	"EXC. OUTGO.\r\nPACKING STOCK",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	38
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_M_EXCOUTGORESULT",
+								"mgformat":	"mgFormat",
+								"format":	"######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line76"
+							},
+							"coordinates":	{
+								"x":	514,
+								"y":	76,
+								"width":	30,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"S7_PACKING_STOCK",
+								"mgformat":	"mgFormat",
+								"format":	"-######",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line93"
+							},
+							"coordinates":	{
+								"x":	510,
+								"y":	93,
+								"width":	35,
+								"height":	13
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

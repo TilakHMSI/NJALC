@@ -1,0 +1,235 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.MONTHLYPRODRESULTINQUIRY"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VPRDO034
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label7"
+                class="lable_overflow"
+            >
+                MMYYYY
+            </label>
+            <input
+                type="date"
+                [formControlName]="mgc.YYYYMM_V"
+                [magic]="mgc.YYYYMM_V"
+                dateInput
+            />
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                EFM
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.EFM_V"
+                    [formControlName]="mgc.EFM_V"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.EFM_V);"
+                        [selected]="o.index == mg.getValue(mgc.EFM_V)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+            <label
+                [magic]="mgc.Label9"
+                class="lable_overflow"
+            >
+                PROD.LINE
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.PRODLINE_V"
+                    [magic]="mgc.PRODLINE_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.PRODLINE_V> </mgError>
+            </div>
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btnexit">
+                Back
+            </button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.MONTHLY_PRODRESULT_INQUIRY">
+            </magic-subform>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label11"
+                class="lable_overflow"
+            >
+            </label>
+            <label
+                [magic]="mgc.Label12"
+                class="lable_overflow"
+            >
+                TOTAL
+            </label>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_LAST_M_PROG_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_LAST_M_PROG_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_LAST_M_PROG_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_AFOFF_PLAN_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_AFOFF_PLAN_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_AFOFF_PLAN_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_AFOFF_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_AFOFF_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_AFOFF_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_TOTAL_PROG_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_TOTAL_PROG_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_TOTAL_PROG_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_WEOFF_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_WEOFF_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_WEOFF_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_VQOFF_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_VQOFF_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_VQOFF_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_PACK_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_PACK_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_PACK_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_SHIP_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_SHIP_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_SHIP_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_NVQOFF_STOCK_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_NVQOFF_STOCK_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_NVQOFF_STOCK_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_RETURN_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_RETURN_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_RETURN_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_RESHIP_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_RESHIP_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_RESHIP_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_VQOFF_STOCK_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_VQOFF_STOCK_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_VQOFF_STOCK_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_PACKING_STOCK_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_PACKING_STOCK_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_PACKING_STOCK_V> </mgError>
+            </div>
+            <div>
+                <input
+                    [formControlName]="mgc.V_TOTAL_EXCOUTGO_V"
+                    type='number'
+                    [magic]="mgc.V_TOTAL_EXCOUTGO_V"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_TOTAL_EXCOUTGO_V> </mgError>
+            </div>
+        </div>
+    </div>
+</div>

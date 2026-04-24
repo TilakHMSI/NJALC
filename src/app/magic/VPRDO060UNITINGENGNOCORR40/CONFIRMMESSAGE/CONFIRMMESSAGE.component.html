@@ -1,0 +1,28 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.CONFIRMMESSAGE"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_MESSAGE_P"
+                    [magic]="mgc.V_MESSAGE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_MESSAGE_P> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.btn_Select">
+                {{mg.getValue(mgc.btn_Select)}}
+            </button>
+            <button [magic]="mgc.btn_Exit">
+                {{mg.getValue(mgc.btn_Exit)}}
+            </button>
+        </div>
+    </div>
+</div>

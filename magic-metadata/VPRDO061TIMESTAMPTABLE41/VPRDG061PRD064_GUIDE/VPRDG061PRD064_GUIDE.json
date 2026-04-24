@@ -1,0 +1,95 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"VPRDG061PRD064_GUIDE",
+		"window_type":	12,
+		"component_path":	"VPRDO061TIMESTAMPTABLE41/VPRDG061PRD064_GUIDE/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO061TIMESTAMPTABLE41_VPRDG061PRD064_GUIDE_VPRDG061PRD064_GUIDE"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	295,
+		"height":	0
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"PGM=VPRDG061",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	200,
+				"y":	0,
+				"width":	95,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table2",
+				"table_row_height":	29,
+				"table_title_height":	23,
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	59,
+				"y":	36,
+				"width":	118,
+				"height":	258
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"PLAN CODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	96
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"V_P64_PLAN_CODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line62"
+							},
+							"coordinates":	{
+								"x":	62,
+								"y":	62,
+								"width":	43,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,62 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.VPRDO037HISTORYentry31"
+    >
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input
+                    [formControlName]="mgc.V_LOCATE_P"
+                    [magic]="mgc.V_LOCATE_P"
+                    mgFormat
+                />
+                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            </div>
+            <label
+                [magic]="mgc.Label2"
+                class="lable_overflow"
+            >
+                PGM=VPRDO037
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Edit3">
+                {{mg.getValue(mgc.Edit3)
+| magicDate : mgc.Edit3}}
+            </label>
+            <label [magic]="mgc.Edit4">
+                {{mg.getValue(mgc.Edit4)
+| magicTime : mgc.Edit4}}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <magic-subform [magic]="mgc.VPRDO037HISTORY_entry">
+            </magic-subform>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                class="lable_overflow"
+            >
+                * IN CASE OF OEM & REPLACEMENT ENG,
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label6"
+                class="lable_overflow"
+            >
+                PLEASE INPUT EFM BY 'F'.
+            </label>
+            <button [magic]="mgc.LIST_BUTTON">
+                {{mg.getValue(mgc.LIST_BUTTON)}}
+            </button>
+            <button [magic]="mgc.DELETE_BUTTON">
+                {{mg.getValue(mgc.DELETE_BUTTON)}}
+            </button>
+        </div>
+    </div>
+</div>

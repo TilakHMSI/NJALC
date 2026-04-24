@@ -1,0 +1,406 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.ENGFRMNODETAILINQUIRY">
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label1" class="lable_overflow">
+            </label>
+            <label [magic]="mgc.Label4" class="lable_overflow">
+                VIN TYPE
+            </label>
+            <label [magic]="mgc.Label11" class="lable_overflow">
+                VIN C/D
+            </label>
+            <label [magic]="mgc.Label17" class="lable_overflow">
+                FRAME NO.MARK
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_VIN_TYPE" [magic]="mgc.S5_VIN_TYPE" mgFormat rangevalidator />
+                <mgError [magic]=mgc.S5_VIN_TYPE> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.PRD005FRAMEENGINE_NO_S5_VIN_CD"
+                    [magic]="mgc.PRD005FRAMEENGINE_NO_S5_VIN_CD" mgFormat />
+                <mgError [magic]=mgc.PRD005FRAMEENGINE_NO_S5_VIN_CD> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_FRAME_NOMARK" [magic]="mgc.S5_FRAME_NOMARK" mgFormat rangevalidator />
+                <mgError [magic]=mgc.S5_FRAME_NOMARK> </mgError>
+            </div>
+            <label [magic]="mgc.Label6" class="lable_overflow">
+                OEM
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_OEM_CATEGORY" [magic]="mgc.S5_OEM_CATEGORY" mgFormat rangevalidator />
+                <mgError [magic]=mgc.S5_OEM_CATEGORY> </mgError>
+            </div>
+            <label [magic]="mgc.Label2" class="lable_overflow">
+            </label>
+            <label [magic]="mgc.Label8" class="lable_overflow">
+                UNITING(ENG./FRM.)
+            </label>
+            <label [magic]="mgc.Label14" class="lable_overflow">
+                MODEL CODE
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_ENGMTO_CODE" [magic]="mgc.S5_ENGMTO_CODE" mgFormat />
+                <mgError [magic]=mgc.S5_ENGMTO_CODE> </mgError>
+            </div>
+            <label [magic]="mgc.Label3" class="lable_overflow">
+            </label>
+            <label [magic]="mgc.Label15" class="lable_overflow">
+                MODEL CODE
+            </label>
+            <label [magic]="mgc.Label9" class="lable_overflow">
+                AT/M
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_ATM_MTO_CODE" [magic]="mgc.S5_ATM_MTO_CODE" mgFormat />
+                <mgError [magic]=mgc.S5_ATM_MTO_CODE> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label20" class="lable_overflow">
+                EFM
+            </label>
+            <div>
+                <input [formControlName]="mgc.PRD005FRAMEENGINE_NO_S5_ENGEFM"
+                    [magic]="mgc.PRD005FRAMEENGINE_NO_S5_ENGEFM" mgFormat rangevalidator />
+                <mgError [magic]=mgc.PRD005FRAMEENGINE_NO_S5_ENGEFM> </mgError>
+            </div>
+            <label [magic]="mgc.Label21" class="lable_overflow">
+                EFM
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_ATM_EFM" [magic]="mgc.S5_ATM_EFM" mgFormat rangevalidator />
+                <mgError [magic]=mgc.S5_ATM_EFM> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label22" class="lable_overflow">
+            </label>
+            <label [magic]="mgc.Label28" class="lable_overflow">
+                MODEL CODE
+            </label>
+            <label [magic]="mgc.Label34" class="lable_overflow">
+                EFM
+            </label>
+            <label [magic]="mgc.Label37" class="lable_overflow">
+                MODEL NAME
+            </label>
+            <label [magic]="mgc.Label39" class="lable_overflow">
+                COLOR CODE
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_MTO_CODE" [magic]="mgc.S5_MTO_CODE" mgFormat />
+                <mgError [magic]=mgc.S5_MTO_CODE> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.PRD005FRAMEENGINE_NO_S5_EFM" [magic]="mgc.PRD005FRAMEENGINE_NO_S5_EFM"
+                    mgFormat rangevalidator />
+                <mgError [magic]=mgc.PRD005FRAMEENGINE_NO_S5_EFM> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_MTO_NAME" [magic]="mgc.S5_MTO_NAME" mgFormat />
+                <mgError [magic]=mgc.S5_MTO_NAME> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_COLOR_CODE" [magic]="mgc.S5_COLOR_CODE" mgFormat />
+                <mgError [magic]=mgc.S5_COLOR_CODE> </mgError>
+            </div>
+            <label [magic]="mgc.Label36" class="lable_overflow">
+                AE/AF-OFF DATE
+            </label>
+            <label [magic]="mgc.Label25" class="lable_overflow">
+                TYPE
+            </label>
+            <label [magic]="mgc.Label31" class="lable_overflow">
+                NO.
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_ENGTYPE" [magic]="mgc.S5_ENGTYPE" mgFormat />
+                <mgError [magic]=mgc.S5_ENGTYPE> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.PRD005FRAMEENGINE_NO_S5_ENGNO" type='number'
+                    [magic]="mgc.PRD005FRAMEENGINE_NO_S5_ENGNO" mgFormat />
+                <mgError [magic]=mgc.PRD005FRAMEENGINE_NO_S5_ENGNO> </mgError>
+            </div>
+            <input type="date" [formControlName]="mgc.S5_AEOFF_DATE" [magic]="mgc.S5_AEOFF_DATE" dateInput />
+            <label [magic]="mgc.Label26" class="lable_overflow">
+                TYPE
+            </label>
+            <label [magic]="mgc.Label32" class="lable_overflow">
+                NO.
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_ATM_NOTYPE" [magic]="mgc.S5_ATM_NOTYPE" mgFormat />
+                <mgError [magic]=mgc.S5_ATM_NOTYPE> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.PRD005FRAMEENGINE_NO_S5_ATM_NO" type='number'
+                    [magic]="mgc.PRD005FRAMEENGINE_NO_S5_ATM_NO" mgFormat />
+                <mgError [magic]=mgc.PRD005FRAMEENGINE_NO_S5_ATM_NO> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label62" class="lable_overflow">
+            </label>
+            <label [magic]="mgc.Label69" class="lable_overflow">
+            </label>
+            <label [magic]="mgc.Label54" class="lable_overflow">
+                SALES MODEL CODE
+            </label>
+            <label [magic]="mgc.Label42" class="lable_overflow">
+                COLOR CODE(INSIDE)
+            </label>
+            <label [magic]="mgc.Label63" class="lable_overflow">
+                KD LOT NO.
+            </label>
+            <label [magic]="mgc.Label72" class="lable_overflow">
+                CONTRACT NO.
+            </label>
+            <label [magic]="mgc.Label79" class="lable_overflow">
+                CASE NO.
+            </label>
+            <label [magic]="mgc.Label85" class="lable_overflow">
+                PACKING TYPE
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_COLOR_CODEINSIDE" [magic]="mgc.S5_COLOR_CODEINSIDE" mgFormat />
+                <mgError [magic]=mgc.S5_COLOR_CODEINSIDE> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_SALES_MTOC_CODE" [magic]="mgc.S5_SALES_MTOC_CODE" mgFormat />
+                <mgError [magic]=mgc.S5_SALES_MTOC_CODE> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_KD_LOT_NO" [magic]="mgc.S5_KD_LOT_NO" mgFormat />
+                <mgError [magic]=mgc.S5_KD_LOT_NO> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_CONTRACT_NO" [magic]="mgc.S5_CONTRACT_NO" mgFormat />
+                <mgError [magic]=mgc.S5_CONTRACT_NO> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_CASE_NO" [magic]="mgc.S5_CASE_NO" mgFormat />
+                <mgError [magic]=mgc.S5_CASE_NO> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_PACKING_TYPE" [magic]="mgc.S5_PACKING_TYPE" mgFormat />
+                <mgError [magic]=mgc.S5_PACKING_TYPE> </mgError>
+            </div>
+            <label [magic]="mgc.Label41" class="lable_overflow">
+            </label>
+            <label [magic]="mgc.Label50" class="lable_overflow">
+                REPLACE ENG
+            </label>
+            <label [magic]="mgc.Label56" class="lable_overflow">
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Label65" class="lable_overflow">
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Label71" class="lable_overflow">
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Label80" class="lable_overflow">
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Label86" class="lable_overflow">
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Label57" class="lable_overflow">
+                AE/AF-OFF
+            </label>
+            <label [magic]="mgc.Label47" class="lable_overflow">
+                PLAN DATE
+            </label>
+            <label [magic]="mgc.Label81" class="lable_overflow">
+                PDI-OFF
+            </label>
+            <label [magic]="mgc.Label87" class="lable_overflow">
+                PACKING
+            </label>
+            <label [magic]="mgc.Label66" class="lable_overflow">
+                VQ-ON
+            </label>
+            <label [magic]="mgc.Label73" class="lable_overflow">
+                VQ-OFF
+            </label>
+            <input type="date" [formControlName]="mgc.S5_PLAN_DATE" [magic]="mgc.S5_PLAN_DATE" dateInput />
+            <div>
+                <input [formControlName]="mgc.S5_REPLACE_CATEGORY" [magic]="mgc.S5_REPLACE_CATEGORY" mgFormat
+                    rangevalidator />
+                <mgError [magic]=mgc.S5_REPLACE_CATEGORY> </mgError>
+            </div>
+            <input type="date" [formControlName]="mgc.S5_AFOFF_DATE" [magic]="mgc.S5_AFOFF_DATE" dateInput />
+            <input type="date" [formControlName]="mgc.S5_VQON_DATE" [magic]="mgc.S5_VQON_DATE" dateInput />
+            <input type="date" [formControlName]="mgc.S5_VQOFF_DATE" [magic]="mgc.S5_VQOFF_DATE" dateInput />
+            <input type="date" [formControlName]="mgc.S5_RE_VQ_DATE" [magic]="mgc.S5_RE_VQ_DATE" dateInput />
+            <input type="date" [formControlName]="mgc.S5_PACKING_DATE" [magic]="mgc.S5_PACKING_DATE" dateInput />
+            <div>
+                <input [formControlName]="mgc.S5_PLAN_SEQ" type='number' [magic]="mgc.S5_PLAN_SEQ" mgFormat />
+                <mgError [magic]=mgc.S5_PLAN_SEQ> </mgError>
+            </div>
+            <input type="time" [formControlName]="mgc.S5_AFOFF_TIME" [magic]="mgc.S5_AFOFF_TIME" step=1 />
+            <input type="time" [formControlName]="mgc.S5_VQON_TIME" [magic]="mgc.S5_VQON_TIME" step=1 />
+            <input type="time" [formControlName]="mgc.S5_VQOFF_TIME" [magic]="mgc.S5_VQOFF_TIME" step=1 />
+            <input type="time" [formControlName]="mgc.S5_RE_VQ_TIME" [magic]="mgc.S5_RE_VQ_TIME" step=1 />
+            <input type="time" [formControlName]="mgc.S5_PACKING_TIME" [magic]="mgc.S5_PACKING_TIME" step=1 />
+            <div>
+                <input [formControlName]="mgc.S5_PLAN_SEQ_SUFFIX" type='number' [magic]="mgc.S5_PLAN_SEQ_SUFFIX"
+                    mgFormat />
+                <mgError [magic]=mgc.S5_PLAN_SEQ_SUFFIX> </mgError>
+            </div>
+            <label [magic]="mgc.Label48" class="lable_overflow">
+                PROD.IND.DATE
+            </label>
+            <label [magic]="mgc.Label52" class="lable_overflow">
+                PROD.LINE
+            </label>
+            <label [magic]="mgc.Label60" class="lable_overflow">
+                TIRE LOT
+            </label>
+            <label [magic]="mgc.Label90" class="lable_overflow">
+                PALETTE
+            </label>
+            <label [magic]="mgc.Label76" class="lable_overflow">
+                KEY NO.
+            </label>
+            <input type="date" [formControlName]="mgc.S5_PRODINDDATE" [magic]="mgc.S5_PRODINDDATE" dateInput />
+            <div>
+                <input [formControlName]="mgc.S5_PRODLINE" [magic]="mgc.S5_PRODLINE" mgFormat />
+                <mgError [magic]=mgc.S5_PRODLINE> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_TIRE_LOT" [magic]="mgc.S5_TIRE_LOT" mgFormat />
+                <mgError [magic]=mgc.S5_TIRE_LOT> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.PRD005FRAMEENGINE_NO_S5_KEY_NO"
+                    [magic]="mgc.PRD005FRAMEENGINE_NO_S5_KEY_NO" mgFormat />
+                <mgError [magic]=mgc.PRD005FRAMEENGINE_NO_S5_KEY_NO> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_PALLET_No" type='number' [magic]="mgc.S5_PALLET_No" mgFormat />
+                <mgError [magic]=mgc.S5_PALLET_No> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.Label92" class="lable_overflow">
+            </label>
+            <label [magic]="mgc.Label94" class="lable_overflow">
+                DESIGN.NOISE
+            </label>
+            <label [magic]="mgc.Label100" class="lable_overflow">
+                DESIGN.NO.
+            </label>
+            <label [magic]="mgc.Label108" class="lable_overflow">
+                VARIANT NO.
+            </label>
+            <label [magic]="mgc.Label118" class="lable_overflow">
+                CERTIFICATE NO.
+            </label>
+            <label [magic]="mgc.Label122" class="lable_overflow">
+                CERTIFICATE CATEGORY
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_DESIGNNOISE" [magic]="mgc.S5_DESIGNNOISE" mgFormat />
+                <mgError [magic]=mgc.S5_DESIGNNOISE> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_DESIGNNO" [magic]="mgc.S5_DESIGNNO" mgFormat />
+                <mgError [magic]=mgc.S5_DESIGNNO> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_VARIANT_NO" type='number' [magic]="mgc.S5_VARIANT_NO" mgFormat />
+                <mgError [magic]=mgc.S5_VARIANT_NO> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_CERTIFICATE_NO" type='number' [magic]="mgc.S5_CERTIFICATE_NO"
+                    mgFormat />
+                <mgError [magic]=mgc.S5_CERTIFICATE_NO> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_CERTIFICATE_CATEGORY" [magic]="mgc.S5_CERTIFICATE_CATEGORY" mgFormat
+                    rangevalidator />
+                <mgError [magic]=mgc.S5_CERTIFICATE_CATEGORY> </mgError>
+            </div>
+            <label [magic]="mgc.Label116" class="lable_overflow">
+                QI STAMP NO.
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_QI_STAMP_NO" [magic]="mgc.S5_QI_STAMP_NO" mgFormat />
+                <mgError [magic]=mgc.S5_QI_STAMP_NO> </mgError>
+            </div>
+            <label [magic]="mgc.Label124" [style.visibility]="mg.getVisible(mgc.Label124)" class="lable_overflow">
+                RE-DELIVERY
+            </label>
+            <label [magic]="mgc.Label95" class="lable_overflow">
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Label101" class="lable_overflow">
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Label109" class="lable_overflow">
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Label119" class="lable_overflow">
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Label125" class="lable_overflow">
+                **UnSupported Control**
+            </label>
+            <label [magic]="mgc.Label132" class="lable_overflow">
+                EXCEPTIONAL
+            </label>
+            <label [magic]="mgc.Label104" [style.visibility]="mg.getVisible(mgc.Label104)" class="lable_overflow">
+                DELIVERY
+            </label>
+            <label [magic]="mgc.Label96" class="lable_overflow">
+                LOADING
+            </label>
+            <label [magic]="mgc.Label114" class="lable_overflow">
+                RETURN
+            </label>
+            <input type="date" [formControlName]="mgc.S5_LOADING_DATE" [magic]="mgc.S5_LOADING_DATE" dateInput />
+            <input type="date" [formControlName]="mgc.S5_SHIPPING_DATE" [magic]="mgc.S5_SHIPPING_DATE" dateInput />
+            <input type="date" [formControlName]="mgc.S5_RETURN_DATE" [magic]="mgc.S5_RETURN_DATE" dateInput />
+            <input type="date" [formControlName]="mgc.S5_RESHIPPING_DATE" [magic]="mgc.S5_RESHIPPING_DATE" dateInput />
+            <input type="date" [formControlName]="mgc.S5_EXCOUTGODATE" [magic]="mgc.S5_EXCOUTGODATE" dateInput />
+            <input type="time" [formControlName]="mgc.S5_LODAING_TIME" [magic]="mgc.S5_LODAING_TIME" step=1 />
+            <input type="time" [formControlName]="mgc.S5_SHIPPING_TIME" [magic]="mgc.S5_SHIPPING_TIME" step=1 />
+            <input type="time" [formControlName]="mgc.S5_RETURN_TIME" [magic]="mgc.S5_RETURN_TIME" step=1 />
+            <input type="time" [formControlName]="mgc.S5_RESHIPPING_TIME" [magic]="mgc.S5_RESHIPPING_TIME" step=1 />
+            <input type="time" [formControlName]="mgc.S5_EXCOUTGOTIME" [magic]="mgc.S5_EXCOUTGOTIME" step=1 />
+            <label [magic]="mgc.Label128" class="lable_overflow">
+                SALES TOSS VQ
+            </label>
+            <label [magic]="mgc.Label110" class="lable_overflow">
+                ACT LINE
+            </label>
+            <label [magic]="mgc.Label102" class="lable_overflow">
+                TRUCK
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_SALES_SYSTEM_TOSSVQ" [magic]="mgc.S5_SALES_SYSTEM_TOSSVQ" mgFormat
+                    rangevalidator />
+                <mgError [magic]=mgc.S5_SALES_SYSTEM_TOSSVQ> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_TRUCK_No" type='number' [magic]="mgc.S5_TRUCK_No" mgFormat />
+                <mgError [magic]=mgc.S5_TRUCK_No> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.S5_ACTUAL_PROD_LINE" [magic]="mgc.S5_ACTUAL_PROD_LINE" mgFormat />
+                <mgError [magic]=mgc.S5_ACTUAL_PROD_LINE> </mgError>
+            </div>
+            <label [magic]="mgc.Label130" class="lable_overflow">
+                SH
+            </label>
+            <div>
+                <input [formControlName]="mgc.S5_SALES_TOSS" [magic]="mgc.S5_SALES_TOSS" mgFormat rangevalidator />
+                <mgError [magic]=mgc.S5_SALES_TOSS> </mgError>
+            </div>
+        </div>
+    </div>
+</div>

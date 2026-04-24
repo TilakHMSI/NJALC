@@ -1,0 +1,290 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"INQUIRY",
+		"window_type":	1,
+		"component_path":	"VPRDO061TIMESTAMPTABLE41/INQUIRY/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO061TIMESTAMPTABLE41_INQUIRY_INQUIRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	500,
+		"height":	208
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"OPERATION TYPE",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	40,
+				"y":	23,
+				"width":	50,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"OPERATION START TIME",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	128,
+				"y":	23,
+				"width":	56,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"OPERATION START TYPE",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	205,
+				"y":	23,
+				"width":	61,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"OPERATION END TIME",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	313,
+				"y":	23,
+				"width":	56,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"OPERATION END TYPE",
+				"common_line_id":	"line23"
+			},
+			"coordinates":	{
+				"x":	395,
+				"y":	23,
+				"width":	56,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	55,
+				"width":	465,
+				"height":	120
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table7",
+				"table_row_height":	33,
+				"table_title_height":	0,
+				"common_line_id":	"line55"
+			},
+			"coordinates":	{
+				"x":	26,
+				"y":	65,
+				"width":	450,
+				"height":	99
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column8",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	84
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"VPRDO064_WORK_W64_OPE_TYPE",
+								"mgformat":	"mgFormat",
+								"format":	"X",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line75"
+							},
+							"coordinates":	{
+								"x":	43,
+								"y":	75,
+								"width":	39,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column9",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	190
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"W64_OPE_START_TIME",
+								"formatter":	"magicTime",
+								"format":	"HH:MM",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line75"
+							},
+							"coordinates":	{
+								"x":	140,
+								"y":	75,
+								"width":	36,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"W64_OPE_START_TYPE",
+								"items_list":	"1:YESTERDAY,2:TODAY,3:TOMORROW",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line75"
+							},
+							"coordinates":	{
+								"x":	200,
+								"y":	75,
+								"width":	78,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"D",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column10",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	171
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"VPRDO064_WORK_W64_OPE_END_TIME",
+								"formatter":	"magicTime",
+								"format":	"HH:MM",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line75"
+							},
+							"coordinates":	{
+								"x":	325,
+								"y":	75,
+								"width":	36,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"VPRDO064_WORK_W64_OPE_END_TYPE",
+								"items_list":	"1.YESTERDAY,2:TODAY,3:TOMORROW",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line75"
+							},
+							"coordinates":	{
+								"x":	390,
+								"y":	75,
+								"width":	78,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"D",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

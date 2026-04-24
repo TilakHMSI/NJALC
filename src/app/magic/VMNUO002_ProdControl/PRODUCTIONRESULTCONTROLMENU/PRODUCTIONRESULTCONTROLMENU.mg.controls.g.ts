@@ -40,6 +40,7 @@ export enum MgControlName {
         Label14 = "Label14",
         BUTTONPDIOFF_FRAME_TXTHMSI = "BUTTONPDIOFF_FRAME_TXTHMSI",
         Label15 = "Label15",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

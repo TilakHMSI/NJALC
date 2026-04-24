@@ -1,0 +1,1235 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"ENGFRMNODETAILINQUIRY",
+		"window_type":	1,
+		"component_path":	"VPRDO003ENGFRMNOHisInq6/DUMMY/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO003ENGFRMNOHisInq6_DUMMY_ENGFRMNODETAILINQUIRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	445
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	41,
+				"width":	248,
+				"height":	67
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"VIN TYPE",
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	47,
+				"width":	40,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"VIN C/D",
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	68,
+				"width":	35,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"text":	"FRAME NO.MARK",
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	88,
+				"width":	65,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRD008MTOC_HISTORY_S8_VIN_TYPE",
+				"items_list":	" :OTHER,V:VIN,I:ISO",
+				"mgformat":	"mgFormat",
+				"validator":	"rangevalidator",
+				"format":	"U",
+				"attribute":	"A",
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	47,
+				"width":	13,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRD008MTOC_HISTORY_S8_VIN_CD",
+				"mgformat":	"mgFormat",
+				"format":	"U",
+				"attribute":	"A",
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	67,
+				"width":	13,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_FRAME_NOMARK",
+				"items_list":	" :OTHER,*:*,H:HM*",
+				"mgformat":	"mgFormat",
+				"validator":	"rangevalidator",
+				"format":	"U",
+				"attribute":	"A",
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	86,
+				"width":	13,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	111,
+				"width":	248,
+				"height":	120
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label14",
+				"text":	"MTO CODE",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	122,
+				"width":	40,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label19",
+				"text":	"MTO NAME",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	150,
+				"width":	40,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label25",
+				"text":	"COLOR CODE",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	177,
+				"width":	50,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label31",
+				"text":	"COLOR CODE(INSIDE)",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	198,
+				"width":	73,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRD008MTOC_HISTORY_S8_MTO_CODE",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	120,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRD008MTOC_HISTORY_S8_MTO_NAME",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	150,
+				"width":	91,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_COLOR_CODE",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	177,
+				"width":	51,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_COLOR_CODEINSIDE",
+				"mgformat":	"mgFormat",
+				"format":	"UU",
+				"attribute":	"A",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	205,
+				"width":	13,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	270,
+				"y":	111,
+				"width":	136,
+				"height":	120
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label17",
+				"text":	"EFM",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	276,
+				"y":	140,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label23",
+				"text":	"TYPE",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	276,
+				"y":	163,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label29",
+				"text":	"ENGINE NO.",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	276,
+				"y":	184,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label35",
+				"text":	"AE-OFF DATE",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	276,
+				"y":	205,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"text":	"UNITING (ENGINE)",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	283,
+				"y":	115,
+				"width":	113,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit15",
+				"dataexp":	true,
+				"format":	"X",
+				"modifiable":	false,
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	338,
+				"y":	138,
+				"width":	11,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRD008MTOC_HISTORY_S8_ENGTYPE",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	338,
+				"y":	161,
+				"width":	41,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRD008MTOC_HISTORY_S8_ENGNO",
+				"mgformat":	"mgFormat",
+				"format":	"#######",
+				"attribute":	"N",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	338,
+				"y":	182,
+				"width":	41,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_AEOFF_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	338,
+				"y":	203,
+				"width":	54,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label10",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	410,
+				"y":	111,
+				"width":	136,
+				"height":	120
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label18",
+				"text":	"EFM",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	416,
+				"y":	140,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label24",
+				"text":	"TYPE",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	416,
+				"y":	163,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label30",
+				"text":	"FRAME NO.",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	416,
+				"y":	184,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label36",
+				"text":	"AF-OFF DATE",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	416,
+				"y":	205,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"text":	"UNITING (FRAME)",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	423,
+				"y":	115,
+				"width":	113,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRD008MTOC_HISTORY_S8_EFM",
+				"items_list":	"E:ENGINE,F:FRAME,M:MISSION",
+				"mgformat":	"mgFormat",
+				"validator":	"rangevalidator",
+				"format":	"X",
+				"attribute":	"A",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	478,
+				"y":	138,
+				"width":	11,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_ENGFRMTYPE",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	478,
+				"y":	161,
+				"width":	61,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_CHASSIS_NO",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"attribute":	"N",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	478,
+				"y":	182,
+				"width":	41,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_AFOFF_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line111"
+			},
+			"coordinates":	{
+				"x":	478,
+				"y":	203,
+				"width":	54,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label37",
+				"common_line_id":	"line260"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	260,
+				"width":	248,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label39",
+				"text":	"KD LOT NO.",
+				"common_line_id":	"line260"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	265,
+				"width":	50,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_KD_LOT_NO",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line260"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	267,
+				"width":	74,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label38",
+				"common_line_id":	"line260"
+			},
+			"coordinates":	{
+				"x":	270,
+				"y":	260,
+				"width":	276,
+				"height":	94
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label41",
+				"text":	"VQ-ON",
+				"common_line_id":	"line260"
+			},
+			"coordinates":	{
+				"x":	276,
+				"y":	268,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_VQON_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line260"
+			},
+			"coordinates":	{
+				"x":	338,
+				"y":	268,
+				"width":	54,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label43",
+				"text":	"VQ-OFF",
+				"common_line_id":	"line260"
+			},
+			"coordinates":	{
+				"x":	416,
+				"y":	268,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_VQOFF_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line260"
+			},
+			"coordinates":	{
+				"x":	478,
+				"y":	268,
+				"width":	54,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label45",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	289,
+				"width":	248,
+				"height":	67
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label51",
+				"text":	"CONTRACT NO.",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	297,
+				"width":	60,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label57",
+				"text":	"CASE NO.",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	317,
+				"width":	40,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label61",
+				"text":	"PACKING TYPE",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	336,
+				"width":	60,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_CONTRACT_NO",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	296,
+				"width":	62,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRD008MTOC_HISTORY_S8_CASE_NO",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	315,
+				"width":	41,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_PACKING_TYPE",
+				"mgformat":	"mgFormat",
+				"format":	"UUU",
+				"attribute":	"A",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	335,
+				"width":	16,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label58",
+				"text":	"EXCEPTIONAL",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	273,
+				"y":	332,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label46",
+				"text":	"PDI-OFF",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	276,
+				"y":	289,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label52",
+				"text":	"LOADING",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	276,
+				"y":	310,
+				"width":	56,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_PDIOFF_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	338,
+				"y":	289,
+				"width":	54,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_LOADING_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	338,
+				"y":	310,
+				"width":	54,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_EXCOUTGODATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	338,
+				"y":	332,
+				"width":	54,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label48",
+				"text":	"PACKING",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	416,
+				"y":	289,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label54",
+				"text":	"DELIVERY",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	416,
+				"y":	310,
+				"width":	56,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_PACKING_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	478,
+				"y":	289,
+				"width":	54,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_SHIPPING_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line289"
+			},
+			"coordinates":	{
+				"x":	478,
+				"y":	310,
+				"width":	54,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label62",
+				"common_line_id":	"line362"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	362,
+				"width":	248,
+				"height":	62
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label66",
+				"text":	"CERTIFICATE NO.",
+				"common_line_id":	"line362"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	372,
+				"width":	75,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label67",
+				"text":	"CERTIFICATE CATEGORY",
+				"common_line_id":	"line362"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	393,
+				"width":	56,
+				"height":	29
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_CERTIFICATE_NO",
+				"mgformat":	"mgFormat",
+				"format":	"#######",
+				"attribute":	"N",
+				"common_line_id":	"line362"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	371,
+				"width":	36,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_CERTIFICATE_CATEGORY",
+				"items_list":	" :OTHER,X:PRINTED",
+				"mgformat":	"mgFormat",
+				"validator":	"rangevalidator",
+				"format":	"U",
+				"attribute":	"A",
+				"common_line_id":	"line362"
+			},
+			"coordinates":	{
+				"x":	94,
+				"y":	393,
+				"width":	13,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label64",
+				"text":	"QI STAMP NO.",
+				"common_line_id":	"line362"
+			},
+			"coordinates":	{
+				"x":	139,
+				"y":	371,
+				"width":	65,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S8_QI_STAMP_NO",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line362"
+			},
+			"coordinates":	{
+				"x":	201,
+				"y":	371,
+				"width":	51,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}

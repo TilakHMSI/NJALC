@@ -1,0 +1,543 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"DAILYPRODRESULTINQUIRY",
+		"window_type":	12,
+		"component_path":	"VPRDO032Dairyprodresltinq26/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO032Dairyprodresltinq26_DAILYPRODRESULTINQUIRY"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	21,
+				"y":	5,
+				"width":	284,
+				"height":	52
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SELECT_V",
+				"items_list":	"DDMMYYYY,MMYYYY",
+				"attribute":	"A",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	23,
+				"y":	7,
+				"width":	59,
+				"height":	49
+			},
+			"hint":	null,
+			"controlType":	"R",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_LOCATE_P",
+				"mgformat":	"mgFormat",
+				"format":	"XXX",
+				"attribute":	"A",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	469,
+				"y":	2,
+				"width":	21,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	"PGM=VPRDO032",
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	494,
+				"y":	2,
+				"width":	60,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"YYYYMMDD_V",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line15"
+			},
+			"coordinates":	{
+				"x":	84,
+				"y":	15,
+				"width":	53,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit5",
+				"dataexp":	true,
+				"formatter":	"magicDate",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"modifiable":	false,
+				"common_line_id":	"line15"
+			},
+			"coordinates":	{
+				"x":	454,
+				"y":	20,
+				"width":	55,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit6",
+				"dataexp":	true,
+				"formatter":	"magicTime",
+				"showsecs":	true,
+				"format":	"HH:MM:SS",
+				"modifiable":	false,
+				"common_line_id":	"line15"
+			},
+			"coordinates":	{
+				"x":	510,
+				"y":	20,
+				"width":	45,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"YYYYMM_V",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"mgformat":	"mgFormat",
+				"format":	"MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	84,
+				"y":	33,
+				"width":	38,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label8",
+				"text":	"EFM",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	139,
+				"y":	34,
+				"width":	15,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"EFM_V",
+				"items_list":	"E:ENGINE,F:FRAME,M:MISSION",
+				"attribute":	"A",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	160,
+				"y":	31,
+				"width":	60,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label9",
+				"text":	"PROD.LINE",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	228,
+				"y":	34,
+				"width":	45,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PRODLINE_V",
+				"mgformat":	"mgFormat",
+				"format":	"XX",
+				"attribute":	"A",
+				"common_line_id":	"line31"
+			},
+			"coordinates":	{
+				"x":	278,
+				"y":	34,
+				"width":	13,
+				"height":	16
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line43"
+			},
+			"coordinates":	{
+				"x":	390,
+				"y":	43,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DAILY_PRODRESULT_INQUIRY",
+				"common_line_id":	"line70"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	70,
+				"width":	541,
+				"height":	351
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label11",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	5,
+				"y":	432,
+				"width":	544,
+				"height":	37
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label12",
+				"text":	"TOTAL",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	11,
+				"y":	436,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_LAST_PROG",
+				"mgformat":	"mgFormat",
+				"format":	"-######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	171,
+				"y":	436,
+				"width":	41,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_PLAN",
+				"mgformat":	"mgFormat",
+				"format":	"######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	216,
+				"y":	436,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_AF_OFF",
+				"mgformat":	"mgFormat",
+				"format":	"######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	249,
+				"y":	436,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_PROG",
+				"mgformat":	"mgFormat",
+				"format":	"-######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	284,
+				"y":	436,
+				"width":	41,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_TOTAL_PROG",
+				"mgformat":	"mgFormat",
+				"format":	"-######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	328,
+				"y":	436,
+				"width":	41,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_WE_OFF",
+				"mgformat":	"mgFormat",
+				"format":	"######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	371,
+				"y":	436,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_VQ_OFF",
+				"mgformat":	"mgFormat",
+				"format":	"######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	406,
+				"y":	436,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_PACK",
+				"mgformat":	"mgFormat",
+				"format":	"######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	441,
+				"y":	436,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_SHIP",
+				"mgformat":	"mgFormat",
+				"format":	"######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	476,
+				"y":	436,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_RETURN",
+				"mgformat":	"mgFormat",
+				"format":	"######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	476,
+				"y":	452,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_RESHIP",
+				"mgformat":	"mgFormat",
+				"format":	"######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	513,
+				"y":	436,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"V_CNT_EX_OUT",
+				"mgformat":	"mgFormat",
+				"format":	"######",
+				"attribute":	"N",
+				"common_line_id":	"line432"
+			},
+			"coordinates":	{
+				"x":	513,
+				"y":	452,
+				"width":	31,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}
