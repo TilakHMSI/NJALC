@@ -2,7 +2,7 @@
 	"create_route_map":	false,
 	"create_new_project":	false,
 	"created_menu":	false,
-	"created_views":	false,
+	"created_views":	true,
 	"theme":	"basicHTML",
 	"output_folder":	"C:\\MagicXPA412\\Projects\\HondaALC\\output",
 	"backup_current":	false,
@@ -16,7 +16,11 @@
 			"module_name":	"",
 			"load_on_demand":	false,
 			"form_files":	[
-				"AEShiftTimesLine232/ShiftTimesLine/ShiftTimesLine"
+				"VPRDB024Re_PrintMENU209/VPRDB024Re_PrintMENU209",
+				"VPRDB024Re_PrintMENU209/OldNewFormatForFrame/OldNewFormatForFrame5",
+				"VPRDB024Re_PrintMENU209/OldNewFormatForFrame/OldFormat/OldFormat7",
+				"VPRDB024Re_PrintMENU209/OldNewFormatForFrame/NewFormat/NewFormat7",
+				"VPRDB024Re_PrintMENU209/OldNewFormatForENGINE/OldNewFormatForENGINE5"
 			]
 		}
 	],

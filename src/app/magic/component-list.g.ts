@@ -382,10 +382,20 @@ import { ENGINEGUIDE as PRD001_GUIDE_LIST_ENGINEGUIDE } from './PRD001_GUIDE/LIS
 import { VEHICLEAEOFF as VEHICLEAEOFFNEWREADY215_VEHICLEAEOFF } from './VEHICLEAEOFFNEWREADY215/VEHICLEAEOFF.component';
 import { Reprocess as VEHICLEAEOFFNEWREADY215_RoutetoProcess_Reprocess } from './VEHICLEAEOFFNEWREADY215/RoutetoProcess/Reprocess.component';
 import { ListoutModelCode as VEHICLEAEOFFNEWREADY215_RoutetoProcess_ListoutModelCode_ListoutModelCode } from './VEHICLEAEOFFNEWREADY215/RoutetoProcess/ListoutModelCode/ListoutModelCode.component';
+import { VPRDB024Re_PrintMENU209 as VPRDB024Re_PrintMENU209_VPRDB024Re_PrintMENU209 } from './VPRDB024Re_PrintMENU209/VPRDB024Re_PrintMENU209.component';
+import { OldNewFormatForFrame5 as VPRDB024Re_PrintMENU209_OldNewFormatForFrame_OldNewFormatForFrame5 } from './VPRDB024Re_PrintMENU209/OldNewFormatForFrame/OldNewFormatForFrame5.component';
+import { OldFormat7 as VPRDB024Re_PrintMENU209_OldNewFormatForFrame_OldFormat_OldFormat7 } from './VPRDB024Re_PrintMENU209/OldNewFormatForFrame/OldFormat/OldFormat7.component';
+import { NewFormat7 as VPRDB024Re_PrintMENU209_OldNewFormatForFrame_NewFormat_NewFormat7 } from './VPRDB024Re_PrintMENU209/OldNewFormatForFrame/NewFormat/NewFormat7.component';
+import { OldNewFormatForENGINE5 as VPRDB024Re_PrintMENU209_OldNewFormatForENGINE_OldNewFormatForENGINE5 } from './VPRDB024Re_PrintMENU209/OldNewFormatForENGINE/OldNewFormatForENGINE5.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               VEHICLEAEOFFNEWREADY215_VEHICLEAEOFF:VEHICLEAEOFFNEWREADY215_VEHICLEAEOFF,
+export const magicGenCmpsHash = {               VPRDB024Re_PrintMENU209_VPRDB024Re_PrintMENU209:VPRDB024Re_PrintMENU209_VPRDB024Re_PrintMENU209,
+              VPRDB024Re_PrintMENU209_OldNewFormatForFrame_OldNewFormatForFrame5:VPRDB024Re_PrintMENU209_OldNewFormatForFrame_OldNewFormatForFrame5,
+              VPRDB024Re_PrintMENU209_OldNewFormatForFrame_OldFormat_OldFormat7:VPRDB024Re_PrintMENU209_OldNewFormatForFrame_OldFormat_OldFormat7,
+              VPRDB024Re_PrintMENU209_OldNewFormatForFrame_NewFormat_NewFormat7:VPRDB024Re_PrintMENU209_OldNewFormatForFrame_NewFormat_NewFormat7,
+              VPRDB024Re_PrintMENU209_OldNewFormatForENGINE_OldNewFormatForENGINE5:VPRDB024Re_PrintMENU209_OldNewFormatForENGINE_OldNewFormatForENGINE5,
+                      VEHICLEAEOFFNEWREADY215_VEHICLEAEOFF:VEHICLEAEOFFNEWREADY215_VEHICLEAEOFF,
               VEHICLEAEOFFNEWREADY215_RoutetoProcess_Reprocess:VEHICLEAEOFFNEWREADY215_RoutetoProcess_Reprocess,
               VEHICLEAEOFFNEWREADY215_RoutetoProcess_ListoutModelCode_ListoutModelCode:VEHICLEAEOFFNEWREADY215_RoutetoProcess_ListoutModelCode_ListoutModelCode,
                       PRD001_GUIDE_ENGINELIST:PRD001_GUIDE_ENGINELIST,
@@ -773,6 +783,11 @@ export const magicGenCmpsHash = {               VEHICLEAEOFFNEWREADY215_VEHICLEA
 };
 
 export const magicGenComponents = [
+	VPRDB024Re_PrintMENU209_VPRDB024Re_PrintMENU209,
+	VPRDB024Re_PrintMENU209_OldNewFormatForFrame_OldNewFormatForFrame5,
+	VPRDB024Re_PrintMENU209_OldNewFormatForFrame_OldFormat_OldFormat7,
+	VPRDB024Re_PrintMENU209_OldNewFormatForFrame_NewFormat_NewFormat7,
+	VPRDB024Re_PrintMENU209_OldNewFormatForENGINE_OldNewFormatForENGINE5,
 	VEHICLEAEOFFNEWREADY215_VEHICLEAEOFF,
 	VEHICLEAEOFFNEWREADY215_RoutetoProcess_Reprocess,
 	VEHICLEAEOFFNEWREADY215_RoutetoProcess_ListoutModelCode_ListoutModelCode,

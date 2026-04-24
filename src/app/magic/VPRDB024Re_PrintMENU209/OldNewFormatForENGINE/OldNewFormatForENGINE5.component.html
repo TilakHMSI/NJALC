@@ -1,0 +1,26 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.OldNewFormatForENGINE5"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label1"
+                class="lable_overflow"
+            >
+                CHOOSE THE FORMAT IN WHICH CARDS ARE TO BE PRINTED
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.v_Old_new">
+                {{mg.getValue(mgc.v_Old_new)}}
+            </button>
+            <button [magic]="mgc.v_New_new">
+                {{mg.getValue(mgc.v_New_new)}}
+            </button>
+        </div>
+    </div>
+</div>
