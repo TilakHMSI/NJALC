@@ -13,7 +13,6 @@ export enum MgControlName {
         V_LOCATE_P = "V_LOCATE_P",
         Label4 = "Label4",
         Edit5 = "Edit5",
-        Edit7 = "Edit7",
         Label8 = "Label8",
         MODE_V = "MODE_V",
         UN_CHASSIS_NO_V = "UN_CHASSIS_NO_V",
@@ -52,9 +51,6 @@ export class MgFormControlsAccessor {
         return this.fg.controls[MgControlName.Edit5] as FormControl;
     }
 
-    get Edit7(): FormControl {
-        return this.fg.controls[MgControlName.Edit7] as FormControl;
-    }
 
     get MODE_V(): FormControl {
         return this.fg.controls[MgControlName.MODE_V] as FormControl;

@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO032Dairyprodresltinq26_DAILYPRODRESULTINQUIRY_DAILYPRODRESULTINQUIRY',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./DAILYPRODRESULTINQUIRY.component.css'],
     templateUrl: './DAILYPRODRESULTINQUIRY.component.html'
 })
 export class DAILYPRODRESULTINQUIRY extends BaseMatTableMagicComponent {

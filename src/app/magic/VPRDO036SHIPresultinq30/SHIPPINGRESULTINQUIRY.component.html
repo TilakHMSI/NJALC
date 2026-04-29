@@ -1,117 +1,62 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.SHIPPINGRESULTINQUIRY"
-    >
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label3"
-                class="lable_overflow"
-            >
-            </label>
-            <div
-                [magic]="mgc.SELECT_DATE_V"
-                (change)="task.mgOnRadioSelectionChanged(mgc.SELECT_DATE_V)"
-            >
-                <div *ngFor="let o of mg.getItemListValues(mgc.SELECT_DATE_V);">
-                    <label>
-                        <input
-                            type="radio"
-                            [formControlName]="mgc.SELECT_DATE_V"
-                            [value]="o.index"
-                        />
-                        {{o.displayValue}}
-                    </label>
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.SHIPPINGRESULTINQUIRY">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label2)}}
+                        </label></h3>
+                    <button type="button" [magic]="mgc.btnexit"
+                        class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
                 </div>
             </div>
-            <div
-                [magic]="mgc.SELECT_FORMAT_V"
-                (change)="task.mgOnRadioSelectionChanged(mgc.SELECT_FORMAT_V)"
-            >
-                <div *ngFor="let o of mg.getItemListValues(mgc.SELECT_FORMAT_V);">
-                    <label>
-                        <input
-                            type="radio"
-                            [formControlName]="mgc.SELECT_FORMAT_V"
-                            [value]="o.index"
-                        />
-                        {{o.displayValue}}
-                    </label>
+        </div>
+        <div class="card-body">
+            <div class="form-group row" style="margin: 0rem;">
+                <div class="col-lg-12">
+                    <div class="form-group row">
+                        <div class="col-lg-2">
+                            <div [magic]="mgc.SELECT_DATE_V" *ngIf="mg.getVisible(mgc.SELECT_DATE_V)==='visible'"
+                                (change)="task.mgOnRadioSelectionChanged(mgc.SELECT_DATE_V)">
+                                <div *ngFor="let o of mg.getItemListValues(mgc.SELECT_DATE_V);">
+                                    <label>
+                                        <input type="radio" [formControlName]="mgc.SELECT_DATE_V" [value]="o.index" />
+                                        {{o.displayValue}}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div [magic]="mgc.SELECT_FORMAT_V" *ngIf="mg.getVisible(mgc.SELECT_FORMAT_V)==='visible'"
+                                (change)="task.mgOnRadioSelectionChanged(mgc.SELECT_FORMAT_V)">
+                                <div *ngFor="let o of mg.getItemListValues(mgc.SELECT_FORMAT_V);">
+                                    <label>
+                                        <input type="radio" [formControlName]="mgc.SELECT_FORMAT_V" [value]="o.index" />
+                                        {{o.displayValue}}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group" *ngIf="mg.getVisible(mgc.YYYYMMDD_V)==='visible'">
+                                <label>DD-MM-YYYY</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.YYYYMMDD_V"
+                                    [magic]="mgc.YYYYMMDD_V" dateInput />
+                            </div>
+                            <div class="form-group" *ngIf="mg.getVisible(mgc.YYYYMM_V)==='visible'">
+                                <label>MM-YYYY</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.YYYYMM_V"
+                                    [magic]="mgc.YYYYMM_V" dateInput />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <input
-                type="date"
-                [formControlName]="mgc.YYYYMMDD_V"
-                [magic]="mgc.YYYYMMDD_V"
-                dateInput
-            />
-            <div>
-                <input
-                    [formControlName]="mgc.V_LOCATE_P"
-                    [magic]="mgc.V_LOCATE_P"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.V_LOCATE_P> </mgError>
+            <div class="col-lg-12">
+                <magic-subform [magic]="mgc.SHIPPING_RESULT_INQUIRY">
+                </magic-subform>
             </div>
-            <label
-                [magic]="mgc.Label2"
-                class="lable_overflow"
-            >
-                PGM=VPRDO036
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label5"
-                [style.visibility]="mg.getVisible(mgc.Label5)"
-                class="lable_overflow"
-            >
-                DELIVERY
-            </label>
-            <label
-                [magic]="mgc.Label6"
-                [style.visibility]="mg.getVisible(mgc.Label6)"
-                class="lable_overflow"
-            >
-                SHIPPING
-            </label>
-            <label [magic]="mgc.Edit7">
-                {{mg.getValue(mgc.Edit7)
-| magicDate : mgc.Edit7}}
-            </label>
-            <label [magic]="mgc.Edit8">
-                {{mg.getValue(mgc.Edit8)
-| magicTime : mgc.Edit8}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label10"
-                class="lable_overflow"
-            >
-                RETURN
-            </label>
-            <input
-                type="date"
-                [formControlName]="mgc.YYYYMM_V"
-                [magic]="mgc.YYYYMM_V"
-                dateInput
-            />
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label
-                [magic]="mgc.Label11"
-                class="lable_overflow"
-            >
-                EXC.OUTGO.
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <magic-subform [magic]="mgc.SHIPPING_RESULT_INQUIRY">
-            </magic-subform>
+            
         </div>
     </div>
 </div>

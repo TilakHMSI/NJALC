@@ -10,8 +10,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	574,
-		"height":	327
+		"width":	613,
+		"height":	333
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -22,14 +22,14 @@
 			},
 			"props":	{
 				"id":	"Table1",
-				"table_row_height":	34,
+				"table_row_height":	78,
 				"table_title_height":	68,
 				"common_line_id":	"line5"
 			},
 			"coordinates":	{
 				"x":	0,
 				"y":	5,
-				"width":	568,
+				"width":	601,
 				"height":	314
 			},
 			"hint":	null,
@@ -638,6 +638,81 @@
 							},
 							"hint":	null,
 							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column34",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	51
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"EnterRowEditing",
+								"format":	"Edit",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	1,
+								"common_line_id":	"line77"
+							},
+							"coordinates":	{
+								"x":	550,
+								"y":	77,
+								"width":	28,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"SaveRowEditing",
+								"format":	"Save",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	3,
+								"common_line_id":	"line103"
+							},
+							"coordinates":	{
+								"x":	550,
+								"y":	103,
+								"width":	35,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"CancelRowEditing",
+								"format":	"Cancel",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	2,
+								"common_line_id":	"line129"
+							},
+							"coordinates":	{
+								"x":	550,
+								"y":	129,
+								"width":	43,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
 							"children":	null
 						}
 					]

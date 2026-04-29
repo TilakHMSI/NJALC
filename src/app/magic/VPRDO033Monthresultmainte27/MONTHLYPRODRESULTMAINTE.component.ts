@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDO033Monthresultmainte27_MONTHLYPRODRESULTMAINTE',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./MONTHLYPRODRESULTMAINTE.component.css'],
     templateUrl: './MONTHLYPRODRESULTMAINTE.component.html'
 })
 export class MONTHLYPRODRESULTMAINTE extends TaskBaseMagicComponent implements MagicModalInterface {
@@ -24,13 +25,13 @@ export class MONTHLYPRODRESULTMAINTE extends TaskBaseMagicComponent implements M
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
     private static readonly formName: string = "MONTHLYPRODRESULTMAINTE";
-    private static readonly showTitleBar: boolean = true;
+    private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "300px";
-    private static readonly height: string = "300px";
+    private static readonly width: string = "1200px";
+    private static readonly height: string = "750px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {

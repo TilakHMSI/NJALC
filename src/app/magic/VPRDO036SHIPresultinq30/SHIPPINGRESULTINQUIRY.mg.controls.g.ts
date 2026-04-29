@@ -21,6 +21,7 @@ export enum MgControlName {
         YYYYMM_V = "YYYYMM_V",
         Label11 = "Label11",
         SHIPPING_RESULT_INQUIRY = "SHIPPING_RESULT_INQUIRY",
+        btnexit = "btnexit",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

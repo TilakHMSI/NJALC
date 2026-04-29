@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO035AEAFresult29_AEOFFAFOFFRESULTINQUIRY_AEOFFAFOFFRESULTINQUIRY',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./AEOFFAFOFFRESULTINQUIRY.component.css'],
     templateUrl: './AEOFFAFOFFRESULTINQUIRY.component.html'
 })
 export class AEOFFAFOFFRESULTINQUIRY extends BaseMatTableMagicComponent {

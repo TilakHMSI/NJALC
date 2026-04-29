@@ -208,9 +208,10 @@
                     <ng-container [magic]="mgc.Column9" [matColumnDef]="mgc.Column9">
                         <mat-header-cell *matHeaderCellDef>
                             VQ-ON
+                            VQ-OFF
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
-                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                            <div style="display: flex; flex-direction: column" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
                                         <input [formControlName]="mgc.PRDO032_WORK_W1_CNT_WEOFF"
@@ -220,6 +221,20 @@
                                         <label *ngIf="!mg.isRowInRowEditing(row)"
                                             [magic]="mgc.PRDO032_WORK_W1_CNT_WEOFF" [rowId]="row.rowId">
                                             {{mg.getValue(mgc.PRDO032_WORK_W1_CNT_WEOFF, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input [formControlName]="mgc.PRDO032_WORK_W1_CNT_VQOFF_DATE"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.PRDO032_WORK_W1_CNT_VQOFF_DATE" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.PRDO032_WORK_W1_CNT_VQOFF_DATE [rowId]="row.rowId">
+                                        </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PRDO032_WORK_W1_CNT_VQOFF_DATE" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.PRDO032_WORK_W1_CNT_VQOFF_DATE, row.rowId)
                                             }}
                                         </label>
                                     </div>
@@ -354,7 +369,7 @@
                         (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator #paginator [pageSize]="8" [hidePageSize]="true"
+                <mat-paginator #paginator [pageSize]="5" [hidePageSize]="true"
                     (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
             </div>

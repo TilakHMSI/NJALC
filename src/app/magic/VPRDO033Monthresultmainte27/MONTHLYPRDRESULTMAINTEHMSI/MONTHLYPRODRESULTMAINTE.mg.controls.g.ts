@@ -40,6 +40,10 @@ export enum MgControlName {
         Column14 = "Column14",
         S7_M_EXCOUTGORESULT = "S7_M_EXCOUTGORESULT",
         S7_PACKING_STOCK = "S7_PACKING_STOCK",
+        Column34 = "Column34",
+        EnterRowEditing = "EnterRowEditing",
+        SaveRowEditing = "SaveRowEditing",
+        CancelRowEditing = "CancelRowEditing",
 }
 export enum MgCustomProperties {}
 export var
@@ -51,12 +55,12 @@ export var
         'Column6',
         'Column7',
         'Column8',
-        'Column9',
         'Column10',
         'Column11',
         'Column12',
         'Column13',
         'Column14',
+        'Column34',
     ];
 
 export class MgFormControlsAccessor {

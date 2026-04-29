@@ -12,6 +12,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
     selector: 'mga-VPRDO033Monthresultmainte27_MONTHLYPRDRESULTMAINTEHPPM_MONTHLYPRODRESULTMAINTE',
     providers: [...matMagicProviders],
     standalone: false,
+    styleUrls: ['./MONTHLYPRODRESULTMAINTE.component.css'],
     templateUrl: './MONTHLYPRODRESULTMAINTE.component.html'
 })
 export class MONTHLYPRODRESULTMAINTE extends BaseMatTableMagicComponent {

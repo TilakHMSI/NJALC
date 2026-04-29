@@ -1,22 +1,3 @@
-<!-- <div class="d-flex justify-content-center align-items-center" novalidate [formGroup]="screenFormGroup">
-    <div style="display: flex; flex-direction: column" [magic]="mgc.Confirmation">
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Message">
-                {{mg.getValue(mgc.Message) }}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button  class="btn btn-primary font-weight-bold mr-3 btn-wdth" [magic]="mgc.v_Yes">
-                Yes
-            </button>
-            <button  class="btn btn-secondary font-weight-bold mr-3 btn-wdth" [magic]="mgc.v_No">
-                No
-            </button>
-        </div>
-    </div>
-</div> -->
-
-
 <div class="d-flex justify-content-center align-items-center" [magic]="mgc.Confirmation">
         <div class="message-box text-center p-3">
             <!-- Top title -->
@@ -27,8 +8,6 @@
                     {{mg.getValue(mgc.Message) }}
                 </label>
             </div>
-
-            <!-- Engine and Frame row -->
             <div class="d-flex justify-content-center align-items-center mb-4">
                  <button  class="btn btn-primary font-weight-bold mr-3 btn-wdth" [magic]="mgc.v_Yes">
                 Yes
