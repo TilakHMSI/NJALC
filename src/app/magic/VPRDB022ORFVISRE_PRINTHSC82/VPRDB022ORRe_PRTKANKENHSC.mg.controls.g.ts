@@ -16,6 +16,8 @@ export enum MgControlName {
         Label7 = "Label7",
         vPLAN_SEQ = "vPLAN_SEQ",
         vPLAN_SEQ_SUFFIX = "vPLAN_SEQ_SUFFIX",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
