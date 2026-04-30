@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -84,6 +84,93 @@
             >
                 C:\MAGIC\TEMP\EFQUERY.CSV
             </label>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.FrameEngineResult">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                         Frame Engine Result
+                        </label></h3>
+                  
+                    <div class="d-flex align-items-center">
+                   
+                        <button type="button" [magic]="mgc.btn_Close"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+
+     <div class="col-lg-6">
+                                 <div class="form-group">
+                                    <label class="lbl-sm">Date From</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.DATE_V_FROM"
+                            [magic]="mgc.DATE_V_FROM" dateInput />
+
+                                </div>
+                            </div>
+
+                             <div class="col-lg-6">
+                                 <div class="form-group">
+                                    <label class="lbl-sm">Date To</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.DATE_V_TO"
+                            [magic]="mgc.DATE_V_TO" dateInput />
+
+                                </div>
+                            </div>
+
+                                                   <div class="col-lg-6">
+                    <div class="form-group-sm">
+        <label></label>
+        <div [magic]="mgc.VCHOICE"
+             (change)="task.mgOnRadioSelectionChanged(mgc.VCHOICE)">
+
+            <div style="display: inline-block; margin-right: 15px;"
+                 *ngFor="let o of mg.getItemListValues(mgc.VCHOICE);">
+                <label>
+                    <input type="radio"
+                           [formControlName]="mgc.VCHOICE"
+                           [value]="o.index" />
+                    {{o.displayValue}}
+                </label>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+                            
+
+   <div class="col-lg-12 text-center" style="margin-top: 5%;">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.OK_V"
+                                             [disabled]="mg.isDisabled(mgc.OK_V )"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                            OK
+                                            </button>
+                                            <button type="button" [magic]="mgc.CancelCtl"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        CANCEL
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

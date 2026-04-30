@@ -20,6 +20,9 @@ export enum MgControlName {
         OUTPUT_FILE_NAME_V = "OUTPUT_FILE_NAME_V",
         EXECBUTTON = "EXECBUTTON",
         CANCELBUTTON = "CANCELBUTTON",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName",
+        btn_Close="btn_Close"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

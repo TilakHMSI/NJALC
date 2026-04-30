@@ -13,6 +13,9 @@ export enum MgControlName {
         Edit4 = "Edit4",
         EXEC_BUTTON = "EXEC_BUTTON",
         EXEC_BUTTON_001 = "EXEC_BUTTON_001",
+        btn_Close="btn_Close",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

@@ -18,6 +18,9 @@ export enum MgControlName {
         Label6 = "Label6",
         Button_Cancel = "Button_Cancel",
         Plan_date_To = "Plan_date_To",
+        btn_Close="btn_Close",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

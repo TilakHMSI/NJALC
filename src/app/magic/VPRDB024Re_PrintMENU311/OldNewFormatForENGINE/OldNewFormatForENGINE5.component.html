@@ -78,7 +78,7 @@
                                                 class="btn btn-primary font-weight-bold mr-3 btn-wdth">
                                           NEW FORMAT
                                             </button>
-                                              <button type="button" [magic]="mgc.v_4CARD_FORMAT"
+                                              <button type="button" [magic]="mgc.v_4CARD_FORMAT" *ngIf="mg.getVisible(mgc.v_4CARD_FORMAT)==='visible'"
                                                 class="btn btn-primary font-weight-bold mr-3 btn-wdth">
                                           4 CARD FORMAT
                                             </button>

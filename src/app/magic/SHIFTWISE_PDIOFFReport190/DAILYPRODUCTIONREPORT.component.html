@@ -1,4 +1,4 @@
-<div
+<!-- <div
     novalidate
     [formGroup]="screenFormGroup"
 >
@@ -140,6 +140,123 @@
                         {{o.displayValue}}
                     </option>
                 </select>
+            </div>
+        </div>
+    </div>
+</div>  -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.DAILYPRODUCTIONREPORT">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                         SHIFTWISE PDI-OFF REPORT
+                        </label></h3>
+                  
+                    <div class="d-flex align-items-center">
+                   
+                        <button type="button" [magic]="mgc.btn_Close"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+
+                    <div class="col-lg-12">
+                        <div class="form-group row">
+
+     <div class="col-lg-6">
+                                 <div class="form-group">
+                                    <label class="lbl-sm">Date From</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.v_DateFrom"
+                            [magic]="mgc.v_DateFrom" dateInput />
+
+                                </div>
+                            </div>
+
+                             <div class="col-lg-6">
+                                 <div class="form-group">
+                                    <label class="lbl-sm">Date To</label>
+                                <input class="form-control-ed" type="date" [formControlName]="mgc.v_DateTo"
+                            [magic]="mgc.v_DateTo" dateInput />
+
+                                </div>
+                            </div>
+                  <div class="col-lg-6">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm"> Production Line</label>
+                        <select class="form-control-ed" [magic]="mgc.v_Prod_Line" [formControlName]="mgc.v_Prod_Line">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.v_Prod_Line);"
+                                [selected]="o.index == mg.getValue(mgc.v_Prod_Line)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                            
+
+   <div class="col-lg-12 text-center" style="margin-top: 5%;">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.v_Exec"
+                                             [disabled]="mg.isDisabled(mgc.v_Exec )"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                           EXEC
+                                            </button>
+                                            <button type="button" [magic]="mgc.v_Exit"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                       EXIT
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Label5"
+                [style.visibility]="mg.getVisible(mgc.Label5)"
+                class="lable_overflow"
+            >
+                SHIFT:
+            </label>
+            <div>
+                <select
+                    [magic]="mgc.v_Shift"
+                    [style.visibility]="mg.getVisible(mgc.v_Shift)"
+                    [formControlName]="mgc.v_Shift"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_Shift);"
+                        [selected]="o.index == mg.getValue(mgc.v_Shift)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+            <div>
+                <select
+                    [magic]="mgc.v_Page_type"
+                    [style.visibility]="mg.getVisible(mgc.v_Page_type)"
+                    [formControlName]="mgc.v_Page_type"
+                >
+                    <option
+                        *ngFor="let o of mg.getItemListValues(mgc.v_Page_type);"
+                        [selected]="o.index == mg.getValue(mgc.v_Page_type)"
+                        [value]="o.index"
+                    >
+                        {{o.displayValue}}
+                    </option>
+                </select>
+            </div>
+        </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -23,6 +23,15 @@ export enum MgControlName {
         Label5 = "Label5",
         v_Shift = "v_Shift",
         v_Page_type = "v_Page_type",
+        btn_Close="btn_Close",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName",
+         vBlob64baseA="vBlob64baseA",
+        vFileNameA="vFileNameA",
+         vBlob64baseB="vBlob64baseB",
+        vFileNameB="vFileNameB",
+         vBlob64baseC="vBlob64baseC",
+        vFileNameC="vFileNameC"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

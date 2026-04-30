@@ -68,6 +68,8 @@ export class VHMSO7684DailyProdResult extends TaskBaseMagicComponent implements 
         const group: FormGroup = this.screenFormGroup;
         (group.controls['vBlob64base'] as FormControl).registerOnChange(this.OnChange.bind(this));
         (group.controls['vBlob64base1'] as FormControl).registerOnChange(this.OnChange.bind(this));
+        (group.controls['vBlob64baseB1'] as FormControl).registerOnChange(this.OnChange.bind(this));
+        (group.controls['vBlob64baseB2'] as FormControl).registerOnChange(this.OnChange.bind(this));
       }
 
      OnChange() {
@@ -75,10 +77,16 @@ export class VHMSO7684DailyProdResult extends TaskBaseMagicComponent implements 
           this.mg.getValue('vBlob64base') !== undefined &&
           this.mg.getValue('vBlob64base') !== null,
           this.mg.getValue('vBlob64base1') !== undefined &&
-          this.mg.getValue('vBlob64base1') !== null
+          this.mg.getValue('vBlob64base1') !== null,
+          this.mg.getValue('vBlob64baseB1') !== undefined &&
+          this.mg.getValue('vBlob64baseB1') !== null,
+          this.mg.getValue('vBlob64baseB2') !== undefined &&
+          this.mg.getValue('vBlob64baseB2') !== null
         ) {
           this.downloadblb2();
           this.downloadblb3();
+          this.downloadblb4();
+          this.downloadblb5();
         }
       }
       downloadblb2() {
@@ -121,6 +129,56 @@ export class VHMSO7684DailyProdResult extends TaskBaseMagicComponent implements 
           if (binLb2.size !== 0) {
             const downloadlink = document.createElement('a');
             const filename = this.mg.getValue(this.mgc.vFileName1);
+            const linkSource = window.URL.createObjectURL(binLb2);
+    
+            downloadlink.href = linkSource;
+            downloadlink.download = filename;
+            downloadlink.click();
+            window.URL.revokeObjectURL(linkSource);
+          }
+        }
+    
+      }
+        downloadblb4() {
+        const base64 = this.mg.getValue('vBlob64baseB1');
+        if (base64 !== undefined || base64 !== null) {
+          const byteCharacters = atob(base64);
+          const byteNumbers = new Array(byteCharacters.length);
+    
+          for (let i = 0; i < byteCharacters.length; i++) {
+            byteNumbers[i] = byteCharacters.charCodeAt(i);
+          }
+    
+          const byteArray = new Uint8Array(byteNumbers);
+          const binLb2 = new window.Blob([byteArray]);
+          if (binLb2.size !== 0) {
+            const downloadlink = document.createElement('a');
+            const filename = this.mg.getValue(this.mgc.vFileNameB1);
+            const linkSource = window.URL.createObjectURL(binLb2);
+    
+            downloadlink.href = linkSource;
+            downloadlink.download = filename;
+            downloadlink.click();
+            window.URL.revokeObjectURL(linkSource);
+          }
+        }
+    
+      }
+        downloadblb5() {
+        const base64 = this.mg.getValue('vBlob64baseB2');
+        if (base64 !== undefined || base64 !== null) {
+          const byteCharacters = atob(base64);
+          const byteNumbers = new Array(byteCharacters.length);
+    
+          for (let i = 0; i < byteCharacters.length; i++) {
+            byteNumbers[i] = byteCharacters.charCodeAt(i);
+          }
+    
+          const byteArray = new Uint8Array(byteNumbers);
+          const binLb2 = new window.Blob([byteArray]);
+          if (binLb2.size !== 0) {
+            const downloadlink = document.createElement('a');
+            const filename = this.mg.getValue(this.mgc.vFileNameB2);
             const linkSource = window.URL.createObjectURL(binLb2);
     
             downloadlink.href = linkSource;

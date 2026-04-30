@@ -21,6 +21,10 @@ export enum MgControlName {
         v_GenXLorRep = "v_GenXLorRep",
         Edit11 = "Edit11",
         v_Generate = "v_Generate",
+        btn_Close="btn_Close",
+        v_Exit="v_Exit",
+        vBlob64base="vBlob64base",
+        vFileName="vFileName"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

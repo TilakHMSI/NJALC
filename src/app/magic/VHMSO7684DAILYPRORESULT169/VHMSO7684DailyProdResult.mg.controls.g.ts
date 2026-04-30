@@ -19,7 +19,11 @@ export enum MgControlName {
         vFileName="vFileName",
         vBlob64base="vBlob64base",
          vFileName1="vFileName1",
-        vBlob64base1="vBlob64base1"
+        vBlob64base1="vBlob64base1",
+        vFileNameB1="vFileNameB1",
+        vBlob64baseB1="vBlob64baseB1",
+         vFileNameB2="vFileNameB2",
+        vBlob64baseB2="vBlob64baseB2"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

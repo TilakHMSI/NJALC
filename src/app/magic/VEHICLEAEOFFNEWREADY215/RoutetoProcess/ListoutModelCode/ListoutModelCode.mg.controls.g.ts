@@ -10,6 +10,7 @@ export enum MgControlName {
         Table1 = "Table1",
         Column2 = "Column2",
         Temp__Model_Code_Model_Code = "Temp__Model_Code_Model_Code",
+        btn_Close="btn_Close"
 }
 export enum MgCustomProperties {}
 export var
