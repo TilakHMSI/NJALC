@@ -1,0 +1,199 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"COLOR_CM",
+		"window_type":	12,
+		"component_path":	"VPRDO019_MODEL_TABLE_MAINTE/PRD001_MAITENANCE/PRD002_MAITENANCE/COLOR_CM/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO019_MODEL_TABLE_MAINTE_PRD001_MAITENANCE_PRD002_MAITENANCE_COLOR_CM_COLOR_CM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	759,
+		"height":	297
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S2_COLOR_CODE",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	12,
+				"width":	123,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S2_COLOR_CODEINSIDE",
+				"modifiable":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UU",
+				"attribute":	"A",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	322,
+				"y":	12,
+				"width":	15,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line12"
+			},
+			"coordinates":	{
+				"x":	594,
+				"y":	13,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S2_SALES_MTOC_CODE",
+				"modifiable":	false,
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line50"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	50,
+				"width":	165,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S2_START_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line84"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	84,
+				"width":	53,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S2_ABOLITION_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"MagicSoftware.Studio.Program.WebClientGenerator.ValueExp",
+				"attribute":	"D",
+				"common_line_id":	"line84"
+			},
+			"coordinates":	{
+				"x":	264,
+				"y":	84,
+				"width":	53,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"COLOR_DRAWING_NO",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line120"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	120,
+				"width":	80,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S2_POS_CODE",
+				"mgformat":	"mgFormat",
+				"format":	"#####",
+				"attribute":	"A",
+				"common_line_id":	"line120"
+			},
+			"coordinates":	{
+				"x":	264,
+				"y":	120,
+				"width":	30,
+				"height":	15
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnSave",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"Save",
+				"common_line_id":	"line197"
+			},
+			"coordinates":	{
+				"x":	170,
+				"y":	197,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

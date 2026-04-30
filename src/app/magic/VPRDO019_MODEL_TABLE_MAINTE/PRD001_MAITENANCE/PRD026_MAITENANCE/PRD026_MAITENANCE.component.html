@@ -13,47 +13,17 @@
                             STAMPING HEAD
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
-
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <div class="input-group" *ngIf="mg.isRowInRowEditing(row)">
-                                            <input type="text" [formControlName]="mgc.PR26_ENGFRMTYPE"
-                                                *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PR26_ENGFRMTYPE"
-                                                [rowId]="row.rowId" class="form-control-sm"
-                                                placeholder="SELECT STAMPING HEAD" mgFormat />
-                                            <div class="input-group-append">
-                                                <button type="button" class="btn btn-loanlist btn-icon-sm"
-                                                    [magic]="mgc.PR26_ENGFRMTYPE" [rowId]="row.rowId">
-                                                    <span class="svg-icon svg-icon-lg"><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-                                                            height="24px" viewBox="0 0 24 24" version="1.1">
-                                                            <g stroke="none" stroke-width="1" fill="none"
-                                                                fill-rule="evenodd">
-                                                                <rect x="0" y="0" width="24" height="24" />
-                                                                <path
-                                                                    d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
-                                                                    fill="#000000" fill-rule="nonzero" opacity="0.3" />
-                                                                <path
-                                                                    d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
-                                                                    fill="#000000" opacity="0.3" />
-                                                            </g>
-                                                        </svg></span></button>
-                                            </div>
-                                        </div>
-
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PR26_ENGFRMTYPE"
-                                            [rowId]="row.rowId">
-                                            {{mg.getValue(mgc.PR26_ENGFRMTYPE, row.rowId)
-                                            }}
-                                        </label>
-                                    </div>
+                                    <label [magic]="mgc.PR26_ENGFRMTYPE" [rowId]="row.rowId">
+                                        {{mg.getValue(mgc.PR26_ENGFRMTYPE, row.rowId)
+                                        }}
+                                    </label>
                                 </div>
                             </div>
-
                         </mat-cell>
                     </ng-container>
+                    
                     <ng-container [magic]="mgc.Column3" [matColumnDef]="mgc.Column3">
                         <mat-header-cell *matHeaderCellDef>
                             PROD.1ST NO.
@@ -62,15 +32,12 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.PR26_PROD1ST_CHASSIS_NO" style="width: 100%;"
-                                            *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.PR26_PROD1ST_CHASSIS_NO"
-                                            [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.PR26_PROD1ST_CHASSIS_NO, row.rowId)"
-                                            mgFormat />
+                                        <input [formControlName]="mgc.PR26_PROD1ST_CHASSIS_NO"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.PR26_PROD1ST_CHASSIS_NO" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.PR26_PROD1ST_CHASSIS_NO [rowId]="row.rowId"> </mgError>
                                         <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PR26_PROD1ST_CHASSIS_NO"
-                                            [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.PR26_PROD1ST_CHASSIS_NO, row.rowId)">
+                                            [rowId]="row.rowId">
                                             {{mg.getValue(mgc.PR26_PROD1ST_CHASSIS_NO, row.rowId)
                                             }}
                                         </label>
@@ -81,24 +48,16 @@
                     </ng-container>
                     <ng-container [magic]="mgc.Column4" [matColumnDef]="mgc.Column4">
                         <mat-header-cell *matHeaderCellDef>
-                            PRINTED NUMBER
+                            PRINTED_NUMBER
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input [formControlName]="mgc.PRINTED_NUMBER" *ngIf="mg.isRowInRowEditing(row)" style="width: 100%;"
-                                            [magic]="mgc.PRINTED_NUMBER" [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.PRINTED_NUMBER, row.rowId)"
-                                            mgFormat />
-                                        <mgError [magic]=mgc.PRINTED_NUMBER [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PRINTED_NUMBER"
-                                            [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.PRINTED_NUMBER, row.rowId)">
-                                            {{mg.getValue(mgc.PRINTED_NUMBER, row.rowId)
-                                            }}
-                                        </label>
-                                    </div>
+                                    <label [magic]="mgc.PRINTED_NUMBER" [rowId]="row.rowId"
+                                        [style.visibility]="mg.getVisible(mgc.PRINTED_NUMBER, row.rowId)">
+                                        {{mg.getValue(mgc.PRINTED_NUMBER, row.rowId)
+                                        }}
+                                    </label>
                                 </div>
                             </div>
                         </mat-cell>
@@ -110,18 +69,10 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input [formControlName]="mgc.Edit14" *ngIf="mg.isRowInRowEditing(row)" style="width: 100%;"
-                                            [magic]="mgc.Edit14" [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.Edit14, row.rowId)" mgFormat />
-                                        <mgError [magic]=mgc.Edit14 [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.Edit14"
-                                            [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.Edit14, row.rowId)">
-                                            {{mg.getValue(mgc.Edit14, row.rowId)
-                                            }}
-                                        </label>
-                                    </div>
+                                    <label [magic]="mgc.Edit14" [rowId]="row.rowId">
+                                        {{mg.getValue(mgc.Edit14, row.rowId)
+                                        }}
+                                    </label>
                                 </div>
                             </div>
                         </mat-cell>
@@ -133,18 +84,10 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <div>
-                                        <input [formControlName]="mgc.Edit15" *ngIf="mg.isRowInRowEditing(row)" style="width: 100%;"
-                                            [magic]="mgc.Edit15" [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.Edit15, row.rowId)" mgFormat />
-                                        <mgError [magic]=mgc.Edit15 [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.Edit15"
-                                            [rowId]="row.rowId"
-                                            [style.visibility]="mg.getVisible(mgc.Edit15, row.rowId)">
-                                            {{mg.getValue(mgc.Edit15, row.rowId)
-                                            }}
-                                        </label>
-                                    </div>
+                                    <label [magic]="mgc.Edit15" [rowId]="row.rowId">
+                                        {{mg.getValue(mgc.Edit15, row.rowId)
+                                        }}
+                                    </label>
                                 </div>
                             </div>
                         </mat-cell>
@@ -197,7 +140,11 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <label [magic]="mgc.PR27_GROUP"
+                                        <input [formControlName]="mgc.PR27_GROUP" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PR27_GROUP" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.PR27_GROUP, row.rowId)" mgFormat />
+                                        <mgError [magic]=mgc.PR27_GROUP [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PR27_GROUP"
                                             [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.PR27_GROUP, row.rowId)">
                                             {{mg.getValue(mgc.PR27_GROUP, row.rowId)
@@ -216,7 +163,12 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <label [magic]="mgc.PR27_GROUP_NAME"
+                                        <input [formControlName]="mgc.PR27_GROUP_NAME" *ngIf="mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.PR27_GROUP_NAME" [rowId]="row.rowId"
+                                            [style.visibility]="mg.getVisible(mgc.PR27_GROUP_NAME, row.rowId)"
+                                            mgFormat />
+                                        <mgError [magic]=mgc.PR27_GROUP_NAME [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.PR27_GROUP_NAME"
                                             [rowId]="row.rowId"
                                             [style.visibility]="mg.getVisible(mgc.PR27_GROUP_NAME, row.rowId)">
                                             {{mg.getValue(mgc.PR27_GROUP_NAME, row.rowId)
@@ -227,34 +179,19 @@
                             </div>
                         </mat-cell>
                     </ng-container>
-
-                    <ng-container [matColumnDef]="mgc.Column20">
-                        <mat-header-cell *matHeaderCellDef>
-                            ACTION
+                    <ng-container [magic]="mgc.Column20" [matColumnDef]="mgc.Column20">
+                        <mat-header-cell *matHeaderCellDef [style.visibility]="mg.getVisible(mgc.Column20)">
+                            Action
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
-                                <button class="btn-tbl" *ngIf="!mg.isRowInRowEditing(row)"
-                                    [style.visibility]="mg.getVisible(mgc.EnterRowEditing, row.rowId)"
-                                    [magic]="mgc.EnterRowEditing" [rowId]="row.rowId">
+                                <button class="btn-tbl" [magic]="mgc.btnEdit" [rowId]="row.rowId"
+                                    [style.visibility]="mg.getVisible(mgc.btnEdit, row.rowId)">
                                     <i class="icon-xl far fa-edit text-info" aria-hidden="true"></i>
                                 </button>
                             </div>
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
-                                <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.SaveRowEditing"
-                                    [rowId]="row.rowId">
-                                    <i class="icon-xl far fa-save text-success" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
-                                <button class="btn-tbl" *ngIf="mg.isRowInRowEditing(row)" [magic]="mgc.CancelRowEditing"
-                                    [rowId]="row.rowId">
-                                    <i class="icon-xl fas fa-eraser text-danger" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
-                                <button class="btn-tbl" 
-                                    [style.visibility]="mg.getVisible(mgc.Btn_Delete, row.rowId)"
+                                <button class="btn-tbl" [style.visibility]="mg.getVisible(mgc.Btn_Delete, row.rowId)"
                                     [magic]="mgc.Btn_Delete" [rowId]="row.rowId">
                                     <i class="fas fa-trash" aria-hidden="true"></i>
                                 </button>
@@ -267,10 +204,11 @@
                         (click)="row? tableService.selectRow(row.rowId) : null">
                     </mat-row>
                 </mat-table>
-                <mat-paginator #paginator [pageSize]="5" [hidePageSize]="true"
+                <mat-paginator #paginator [pageSize]="10" [hidePageSize]="true"
                     (page)="tableService.mgOnPaginateChange($event)">
                 </mat-paginator>
             </div>
+
         </div>
     </div>
 </div>

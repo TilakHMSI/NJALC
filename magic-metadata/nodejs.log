@@ -12,16 +12,18 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDO033Monthresultmainte27/MONTHLYPRDRESULTMAINTEHMSI/MONTHLYPRODRESULTMAINTE.json
+[>] Loading JSON file .//magic-metadata/VPRDO019_MODEL_TABLE_MAINTE/PRD001_MAITENANCE/PRD026_MAITENANCE/STAMP_CM/STAMP_CM.json
 *** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component MONTHLYPRODRESULTMAINTE
+[>] Processing JSON file for component STAMP_CM
 *** Step 3: generate components. (1 components) ***
-[>] generate component MONTHLYPRODRESULTMAINTE
+[>] generate component STAMP_CM
 [>] Step 4: components-list.
+ Total old components: 437, added components: 1. 
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/VPRDO033Monthresultmainte27/MONTHLYPRDRESULTMAINTEHMSI/MONTHLYPRODRESULTMAINTE.mg.controls.g.ts (4900 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO033Monthresultmainte27/MONTHLYPRDRESULTMAINTEHMSI/MONTHLYPRODRESULTMAINTE.component.ts (1013 bytes)
-[36mUPDATE[39m src/app/magic/VPRDO033Monthresultmainte27/MONTHLYPRDRESULTMAINTEHMSI/MONTHLYPRODRESULTMAINTE.component.html (41635 bytes)
+[32mCREATE[39m src/app/magic/VPRDO019_MODEL_TABLE_MAINTE/PRD001_MAITENANCE/PRD026_MAITENANCE/STAMP_CM/STAMP_CM.mg.controls.g.ts (2097 bytes)
+[32mCREATE[39m src/app/magic/VPRDO019_MODEL_TABLE_MAINTE/PRD001_MAITENANCE/PRD026_MAITENANCE/STAMP_CM/STAMP_CM.component.ts (2065 bytes)
+[32mCREATE[39m src/app/magic/VPRDO019_MODEL_TABLE_MAINTE/PRD001_MAITENANCE/PRD026_MAITENANCE/STAMP_CM/STAMP_CM.component.html (2753 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (145071 bytes)
 
 
 

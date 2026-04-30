@@ -26,9 +26,7 @@ export enum MgControlName {
         PR27_GROUP = "PR27_GROUP",
         Column10 = "Column10",
         PR27_GROUP_NAME = "PR27_GROUP_NAME",
-        CancelRowEditing="CancelRowEditing",
-        SaveRowEditing="SaveRowEditing",
-        EnterRowEditing="EnterRowEditing",
+        btnEdit="btnEdit",
         Column20="Column20",
         Btn_Add="Btn_Add",
         Btn_Delete="Btn_Delete"

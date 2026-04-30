@@ -28,7 +28,7 @@ export class ENGFRMNOTABLEMAINTENANCE extends TaskBaseMagicComponent implements 
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "1200px";
-    private static readonly height: string = "650px";
+    private static readonly height: string = "700px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = true;
     private static readonly isResizable: boolean = true;
