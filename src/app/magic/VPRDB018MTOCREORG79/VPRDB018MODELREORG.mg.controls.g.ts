@@ -19,6 +19,7 @@ export enum MgControlName {
         V_PASSAGE_DATE_V = "V_PASSAGE_DATE_V",
         BUTTONEXEC = "BUTTONEXEC",
         BUTTONCANCEL = "BUTTONCANCEL",
+        btn_Close="btn_Close"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
