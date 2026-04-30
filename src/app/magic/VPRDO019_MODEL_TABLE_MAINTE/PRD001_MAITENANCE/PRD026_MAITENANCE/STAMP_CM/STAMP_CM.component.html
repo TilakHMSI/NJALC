@@ -1,0 +1,171 @@
+<!-- <div novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.STAMP_CM">
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.PR26_ENGFRMTYPE">
+                {{mg.getValue(mgc.PR26_ENGFRMTYPE) }}
+            </label>
+            <button style="min-width: auto; margin: auto" [magic]="mgc.PR26_ENGFRMTYPE"
+                [disabled]="mg.isDisabled(mgc.PR26_ENGFRMTYPE)">...</button>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div>
+                <input [formControlName]="mgc.PR26_PROD1ST_CHASSIS_NO" type='number'
+                    [magic]="mgc.PR26_PROD1ST_CHASSIS_NO" mgFormat />
+                <mgError [magic]=mgc.PR26_PROD1ST_CHASSIS_NO> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label [magic]="mgc.PRINTED_NUMBER" [style.visibility]="mg.getVisible(mgc.PRINTED_NUMBER)">
+                {{mg.getValue(mgc.PRINTED_NUMBER) }}
+            </label>
+            <label [magic]="mgc.Edit14">
+                {{mg.getValue(mgc.Edit14) }}
+            </label>
+            <label [magic]="mgc.Edit15">
+                {{mg.getValue(mgc.Edit15) }}
+            </label>
+            <input type="date" [formControlName]="mgc.PR26_START_DATE" [magic]="mgc.PR26_START_DATE" dateInput />
+            <input type="date" [formControlName]="mgc.PR26_ABOLITION_DATE" [magic]="mgc.PR26_ABOLITION_DATE"
+                dateInput />
+            <div>
+                <input [formControlName]="mgc.PR27_GROUP" [magic]="mgc.PR27_GROUP"
+                    [style.visibility]="mg.getVisible(mgc.PR27_GROUP)" mgFormat />
+                <mgError [magic]=mgc.PR27_GROUP> </mgError>
+            </div>
+            <div>
+                <input [formControlName]="mgc.PR27_GROUP_NAME" [magic]="mgc.PR27_GROUP_NAME"
+                    [style.visibility]="mg.getVisible(mgc.PR27_GROUP_NAME)" mgFormat />
+                <mgError [magic]=mgc.PR27_GROUP_NAME> </mgError>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button [magic]="mgc.SaveRowEditing">
+                SAVE
+            </button>
+        </div>
+    </div>
+</div> -->
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.STAMP_CM">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            STAMP : CM
+                        </label></h3>
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>STAMPING HEAD</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.PR26_ENGFRMTYPE" [magic]="mgc.PR26_ENGFRMTYPE"
+                                            class="form-control" placeholder="SELECT STAMPING HEAD" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.PR26_ENGFRMTYPE">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">CHASSIS NO</label>
+                                    <input type="number" class="form-control"
+                                        [formControlName]="mgc.PR26_PROD1ST_CHASSIS_NO"
+                                        [magic]="mgc.PR26_PROD1ST_CHASSIS_NO" mgFormat />
+                                    <mgError [magic]="mgc.PR26_PROD1ST_CHASSIS_NO"> </mgError>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">PRINTED NUMBER</label>
+                                    <input type="number" class="form-control" [formControlName]="mgc.PRINTED_NUMBER"
+                                        [magic]="mgc.PRINTED_NUMBER" mgFormat />
+                                    <mgError [magic]="mgc.PRINTED_NUMBER"> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">START DATE</label>
+                                    <input type="date" class="form-control" [formControlName]="mgc.PR26_START_DATE"
+                                        [magic]="mgc.PR26_START_DATE" dateInput />
+                                    <mgError [magic]="mgc.PR26_START_DATE"> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">ABOLITION DATE</label>
+                                    <input type="date" class="form-control"
+                                        [formControlName]="mgc.PR26_ABOLITION_DATE" [magic]="mgc.PR26_ABOLITION_DATE"
+                                        dateInput />
+                                    <mgError [magic]="mgc.PR26_ABOLITION_DATE"> </mgError>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-2">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">GROUP</label>
+                                    <input class="form-control" [formControlName]="mgc.PR27_GROUP"
+                                        [magic]="mgc.PR27_GROUP" mgFormat />
+                                    <mgError [magic]="mgc.PR27_GROUP"> </mgError>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">GROUP NAME</label>
+                                    <input class="form-control" [formControlName]="mgc.PR27_GROUP_NAME"
+                                        [magic]="mgc.PR27_GROUP_NAME" mgFormat />
+                                    <mgError [magic]="mgc.PR27_GROUP_NAME"> </mgError>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                            <div class="col-lg-12 text-center">
+                                <div class="form-group d-flex justify-content-center">
+                                    <button type="button" [magic]="mgc.btnSave"
+                                        class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                        SAVE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

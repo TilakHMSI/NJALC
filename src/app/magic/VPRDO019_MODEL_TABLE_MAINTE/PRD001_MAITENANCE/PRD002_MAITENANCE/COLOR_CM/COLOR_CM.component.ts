@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./VPRDO061TIMESTAMPTABLE41.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./COLOR_CM.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,12 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDO061TIMESTAMPTABLE41_VPRDO061TIMESTAMPTABLE41',
+    selector: 'mga-VPRDO019_MODEL_TABLE_MAINTE_PRD001_MAITENANCE_PRD002_MAITENANCE_COLOR_CM_COLOR_CM',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './VPRDO061TIMESTAMPTABLE41.component.html'
+    templateUrl: './COLOR_CM.component.html'
 })
-export class VPRDO061TIMESTAMPTABLE41 extends TaskBaseMagicComponent implements MagicModalInterface {
+export class COLOR_CM extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -23,44 +23,44 @@ export class VPRDO061TIMESTAMPTABLE41 extends TaskBaseMagicComponent implements 
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "VPRDO061TIMESTAMPTABLE41";
+    private static readonly formName: string = "COLOR_CM";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1200px";
-    private static readonly height: string = "750px";
+    private static readonly width: string = "900px";
+    private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return VPRDO061TIMESTAMPTABLE41.x;
+        return COLOR_CM.x;
     }
     Y() {
-        return VPRDO061TIMESTAMPTABLE41.y;
+        return COLOR_CM.y;
     }
     Width(): string {
-        return VPRDO061TIMESTAMPTABLE41.width;
+        return COLOR_CM.width;
     }
     Height(): string {
-        return VPRDO061TIMESTAMPTABLE41.height;
+        return COLOR_CM.height;
     }
     IsCenteredToWindow() {
-        return VPRDO061TIMESTAMPTABLE41.isCenteredToWindow;
+        return COLOR_CM.isCenteredToWindow;
     }
     FormName() {
-        return VPRDO061TIMESTAMPTABLE41.formName;
+        return COLOR_CM.formName;
     }
     ShowTitleBar() {
-        return VPRDO061TIMESTAMPTABLE41.showTitleBar;
+        return COLOR_CM.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return VPRDO061TIMESTAMPTABLE41.shouldCloseOnBackgroundClick;
+        return COLOR_CM.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return VPRDO061TIMESTAMPTABLE41.isResizable;
+        return COLOR_CM.isResizable;
     }
     IsMovable() {
-        return VPRDO061TIMESTAMPTABLE41.isMovable;
+        return COLOR_CM.isMovable;
     }
 }

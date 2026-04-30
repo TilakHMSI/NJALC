@@ -6,70 +6,47 @@ import {
     MagicServices
 } from "@magic-xpa/angular";
 export enum MgControlName {
-    PRD002_MAITENANCE = "PRD002_MAITENANCE",
-        Table1 = "Table1",
-        Column2 = "Column2",
+    COLOR_CM = "COLOR_CM",
         S2_COLOR_CODE = "S2_COLOR_CODE",
         S2_COLOR_CODEINSIDE = "S2_COLOR_CODEINSIDE",
-        Column3 = "Column3",
+        btnexit = "btnexit",
         S2_SALES_MTOC_CODE = "S2_SALES_MTOC_CODE",
-        Column4 = "Column4",
         S2_START_DATE = "S2_START_DATE",
-        Column5 = "Column5",
         S2_ABOLITION_DATE = "S2_ABOLITION_DATE",
-        Column6 = "Column6",
         COLOR_DRAWING_NO = "COLOR_DRAWING_NO",
-        Column7 = "Column7",
         S2_POS_CODE = "S2_POS_CODE",
-        CancelRowEditing="CancelRowEditing",
-        btnEdit="btnEdit",
-        SaveRowEditing="SaveRowEditing",
-        Column21="Column21",
-        Btn_Add="Btn_Add",
-        Btn_Delete="Btn_Delete"
-
+        btnSave = "btnSave",
 }
 export enum MgCustomProperties {}
-export var
-    MgDisplayedColumns = [
-        'Column2',
-        'Column3',
-        'Column4',
-        'Column5',
-        'Column6',
-        'Column7',
-        'Column21',
-    ];
-
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
     get S2_COLOR_CODE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S2_COLOR_CODE);
+        return this.fg.controls[MgControlName.S2_COLOR_CODE] as FormControl;
     }
 
     get S2_COLOR_CODEINSIDE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S2_COLOR_CODEINSIDE);
+        return this.fg.controls[MgControlName.S2_COLOR_CODEINSIDE] as FormControl;
     }
 
     get S2_SALES_MTOC_CODE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S2_SALES_MTOC_CODE);
+        return this.fg.controls[MgControlName.S2_SALES_MTOC_CODE] as FormControl;
     }
 
     get S2_START_DATE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S2_START_DATE);
+        return this.fg.controls[MgControlName.S2_START_DATE] as FormControl;
     }
 
     get S2_ABOLITION_DATE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S2_ABOLITION_DATE);
+        return this.fg.controls[MgControlName.S2_ABOLITION_DATE] as FormControl;
     }
 
     get COLOR_DRAWING_NO(): FormControl {
-        return this.getTableChildFormControl(MgControlName.COLOR_DRAWING_NO);
+        return this.fg.controls[MgControlName.COLOR_DRAWING_NO] as FormControl;
     }
 
     get S2_POS_CODE(): FormControl {
-        return this.getTableChildFormControl(MgControlName.S2_POS_CODE);
+        return this.fg.controls[MgControlName.S2_POS_CODE] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

@@ -5,11 +5,11 @@
 }
 
 .mat-mdc-cell:first-child{
-    flex: 0 0 16%;
+    flex: 0 0 12%;
     padding-left: 2px;
 }
 .mat-mdc-header-cell:first-child{
-    flex: 0 0 16%;
+    flex: 0 0 12%;
     padding-left: 2px;
 }
 .mat-mdc-cell:nth-child(2){
@@ -49,10 +49,10 @@
   flex: 0 0 8%;
 }
 .mat-mdc-cell:nth-child(9){
-  flex: 0 0 12%;
+  flex: 0 0 16%;
 }
 .mat-mdc-header-cell:nth-child(9){
-  flex: 0 0 12%;
+  flex: 0 0 16%;
 }
 .mat-mdc-cell:nth-child(10){
   flex: 0 0 8%;
