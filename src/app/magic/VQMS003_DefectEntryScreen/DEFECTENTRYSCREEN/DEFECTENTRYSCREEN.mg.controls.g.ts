@@ -20,6 +20,7 @@ export enum MgControlName {
         DEFECTSECTION = "DEFECTSECTION",
         Column28 = "Column28",
         btnDelete = "btnDelete",
+        btnDefectCode = "btnDefectCode",
 }
 export enum MgCustomProperties {}
 export var
