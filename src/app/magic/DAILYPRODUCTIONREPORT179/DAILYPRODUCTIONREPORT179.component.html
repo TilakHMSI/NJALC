@@ -168,10 +168,10 @@
                         </select>
                     </div>
                 </div>
-                            <div class="col-lg-6">
+                            <div *ngIf="mg.getVisible(mgc.v_Page_type)==='visible'" class="col-lg-6">
                     <div class="form-group-sm">
-                        <label class="lbl-sm" [style.visibility]="mg.getVisible(mgc.v_Page_type)">Page Type</label>
-                        <select class="form-control-ed" [style.visibility]="mg.getVisible(mgc.v_Page_type)" [magic]="mgc.v_Page_type" [formControlName]="mgc.v_Page_type">
+                        <label class="lbl-sm"  >Page Type</label>
+                        <select class="form-control-ed" *ngIf="mg.getVisible(mgc.v_Page_type)==='visible'" [magic]="mgc.v_Page_type" [formControlName]="mgc.v_Page_type">
                             <option *ngFor="let o of mg.getItemListValues(mgc.v_Page_type);"
                                 [selected]="o.index == mg.getValue(mgc.v_Page_type)" [value]="o.index">
                                 {{o.displayValue}}
