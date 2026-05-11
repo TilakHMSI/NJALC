@@ -3770,17 +3770,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #ffffff;
-  background-color: #3699FF;
-  border-color: #3699FF;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  background-color: #6c757d !important;  /* gray */
+  border-color: #6c757d !important;
+  color: #fff;
 }
 
 .btn-primary:hover {
-  color: #ffffff;
-  background-color: #1086ff;
-  border-color: #037fff;
+   background-color: #007bff !important;  /* blue */
+  border-color: #007bff !important;
+  color: #fff;
 }
 
 .btn-primary:focus,
