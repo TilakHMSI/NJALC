@@ -8,7 +8,6 @@ import {
 export enum MgControlName {
     DEFECTENTRYSCREEN = "DEFECTENTRYSCREEN",
         vDEFECTCODE = "vDEFECTCODE",
-        b_save = "b_save",
         Table2 = "Table2",
         Column22 = "Column22",
         DEFECTCODE = "DEFECTCODE",
