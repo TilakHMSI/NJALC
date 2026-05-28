@@ -11,6 +11,7 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
     selector: 'mga-VPRDO031ENGFRMNOinquiry25_ENGFRMNODETAILINQUIRY_ENGFRMNODETAILINQUIRY',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./ENGFRMNODETAILINQUIRY.component.css'],
     templateUrl: './ENGFRMNODETAILINQUIRY.component.html'
 })
 export class ENGFRMNODETAILINQUIRY extends TaskBaseMagicComponent {

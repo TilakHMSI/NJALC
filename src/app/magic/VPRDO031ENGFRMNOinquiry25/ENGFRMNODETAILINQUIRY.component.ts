@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-VPRDO031ENGFRMNOinquiry25_ENGFRMNODETAILINQUIRY',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./ENGFRMNODETAILINQUIRY.component.css'],
     templateUrl: './ENGFRMNODETAILINQUIRY.component.html'
 })
 export class ENGFRMNODETAILINQUIRY extends TaskBaseMagicComponent implements MagicModalInterface {
@@ -27,8 +28,8 @@ export class ENGFRMNODETAILINQUIRY extends TaskBaseMagicComponent implements Mag
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1200px";
-    private static readonly height: string = "700px";
+    private static readonly width: string = "1300px";
+    private static readonly height: string = "780px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
