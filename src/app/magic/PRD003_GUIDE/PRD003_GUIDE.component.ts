@@ -27,8 +27,8 @@ export class PRD003_GUIDE extends TaskBaseMagicComponent implements MagicModalIn
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "700px";
-    private static readonly height: string = "550px";
+    private static readonly width: string = "750px";
+    private static readonly height: string = "610px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = false;
