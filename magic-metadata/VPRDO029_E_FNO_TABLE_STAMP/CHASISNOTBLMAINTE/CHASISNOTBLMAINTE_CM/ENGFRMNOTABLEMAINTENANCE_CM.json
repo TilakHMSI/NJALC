@@ -1,0 +1,317 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"ENGFRMNOTABLEMAINTENANCE_CM",
+		"window_type":	12,
+		"component_path":	"VPRDO029_E_FNO_TABLE_STAMP/CHASISNOTBLMAINTE/CHASISNOTBLMAINTE_CM/",
+		"module_name":	"",
+		"component_uniquename":	"VPRDO029_E_FNO_TABLE_STAMP_CHASISNOTBLMAINTE_CHASISNOTBLMAINTE_CM_ENGFRMNOTABLEMAINTENANCE_CM"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	621,
+		"height":	447
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	9,
+				"width":	60,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S3_ENGFRMTYPE",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUU",
+				"attribute":	"A",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	227,
+				"y":	18,
+				"width":	55,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S3_PROD1ST_CHASSIS_NO",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"attribute":	"N",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	285,
+				"y":	18,
+				"width":	35,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S3_START_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	378,
+				"y":	18,
+				"width":	50,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S3_ABOLITION_DATE",
+				"mgformat":	"mgFormat",
+				"format":	"DD-MM-YYYY",
+				"attribute":	"D",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	432,
+				"y":	18,
+				"width":	50,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PR27_NEXT_CHASSIS_NO",
+				"mgformat":	"mgFormat",
+				"currency":	"currency",
+				"format":	"MagicSoftware#Studio#ogram#WeblientGenerator,ValueExp###,###,###,###,###,###,###,###,###,",
+				"attribute":	"N",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	487,
+				"y":	18,
+				"width":	35,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PR27_LAST_PLAN_CODE",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	528,
+				"y":	18,
+				"width":	28,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PR27_LAST_PRODINDDATE",
+				"mgformat":	"mgFormat",
+				"format":	"DDMMYYYY",
+				"attribute":	"D",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	557,
+				"y":	18,
+				"width":	38,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PR27_LAST_PLAN_SEQ",
+				"mgformat":	"mgFormat",
+				"format":	"###",
+				"attribute":	"N",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	595,
+				"y":	18,
+				"width":	13,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PR27_LAST_PLAN_SEQ_SUF",
+				"mgformat":	"mgFormat",
+				"format":	"#",
+				"attribute":	"N",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	609,
+				"y":	18,
+				"width":	8,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S3_GROUP",
+				"show_zoom_button":	true,
+				"mgformat":	"mgFormat",
+				"format":	"UUU",
+				"attribute":	"A",
+				"common_line_id":	"line66"
+			},
+			"coordinates":	{
+				"x":	139,
+				"y":	66,
+				"width":	25,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	"NEXT INDICATE",
+				"common_line_id":	"line66"
+			},
+			"coordinates":	{
+				"x":	230,
+				"y":	66,
+				"width":	90,
+				"height":	26
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"SaveRowEditing",
+				"format":	"Save",
+				"common_line_id":	"line84"
+			},
+			"coordinates":	{
+				"x":	393,
+				"y":	84,
+				"width":	35,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CancelRowEditing",
+				"format":	"Cancel",
+				"common_line_id":	"line84"
+			},
+			"coordinates":	{
+				"x":	487,
+				"y":	84,
+				"width":	43,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S3_VIN_TYPE",
+				"items_list":	"V:FMVSS(17_WITH C/D),I:ISO(17_WITHOUT C/D),:OTHER",
+				"attribute":	"A",
+				"common_line_id":	"line132"
+			},
+			"coordinates":	{
+				"x":	74,
+				"y":	132,
+				"width":	118,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"S3_FRAME_NOMARK",
+				"items_list":	" :OTHER,*:*,H:HM*",
+				"attribute":	"A",
+				"common_line_id":	"line132"
+			},
+			"coordinates":	{
+				"x":	320,
+				"y":	132,
+				"width":	50,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		}
+	]
+}
