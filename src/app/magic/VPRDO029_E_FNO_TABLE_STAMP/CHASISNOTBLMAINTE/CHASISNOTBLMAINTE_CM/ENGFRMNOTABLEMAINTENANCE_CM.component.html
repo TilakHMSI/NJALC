@@ -1,145 +1,173 @@
-<div
-    novalidate
-    [formGroup]="screenFormGroup"
->
-    <div
-        style="display: flex; flex-direction: column"
-        [magic]="mgc.ENGFRMNOTABLEMAINTENANCE_CM"
-    >
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.btnexit">
-                Back
-            </button>
-            <div>
-                <input
-                    [formControlName]="mgc.S3_ENGFRMTYPE"
-                    [magic]="mgc.S3_ENGFRMTYPE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S3_ENGFRMTYPE> </mgError>
+
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.ENGFRMNOTABLEMAINTENANCE_CM">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+                     
+                    <div class="d-flex align-items-center">
+                        <button type="button" [magic]="mgc.btnexit"
+                            class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <input
-                    [formControlName]="mgc.S3_PROD1ST_CHASSIS_NO"
-                    currencyMask
-                    [options]="mg.getNumericPicture(mg.getPicture(mgc.S3_PROD1ST_CHASSIS_NO))"
-                    [magic]="mgc.S3_PROD1ST_CHASSIS_NO"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S3_PROD1ST_CHASSIS_NO> </mgError>
-            </div>
-            <input
-                type="date"
-                [formControlName]="mgc.S3_START_DATE"
-                [magic]="mgc.S3_START_DATE"
-                dateInput
-            />
-            <input
-                type="date"
-                [formControlName]="mgc.S3_ABOLITION_DATE"
-                [magic]="mgc.S3_ABOLITION_DATE"
-                dateInput
-            />
-            <div>
-                <input
-                    [formControlName]="mgc.PR27_NEXT_CHASSIS_NO"
-                    currencyMask
-                    [options]="mg.getNumericPicture(mg.getPicture(mgc.PR27_NEXT_CHASSIS_NO))"
-                    [magic]="mgc.PR27_NEXT_CHASSIS_NO"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.PR27_NEXT_CHASSIS_NO> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.PR27_LAST_PLAN_CODE"
-                    [magic]="mgc.PR27_LAST_PLAN_CODE"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.PR27_LAST_PLAN_CODE> </mgError>
-            </div>
-            <input
-                type="date"
-                [formControlName]="mgc.PR27_LAST_PRODINDDATE"
-                [magic]="mgc.PR27_LAST_PRODINDDATE"
-                dateInput
-            />
-            <div>
-                <input
-                    [formControlName]="mgc.PR27_LAST_PLAN_SEQ"
-                    type='number'
-                    [magic]="mgc.PR27_LAST_PLAN_SEQ"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.PR27_LAST_PLAN_SEQ> </mgError>
-            </div>
-            <div>
-                <input
-                    [formControlName]="mgc.PR27_LAST_PLAN_SEQ_SUF"
-                    type='number'
-                    [magic]="mgc.PR27_LAST_PLAN_SEQ_SUF"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.PR27_LAST_PLAN_SEQ_SUF> </mgError>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div>
-                <input
-                    style="width: 70%"
-                    [formControlName]="mgc.S3_GROUP"
-                    [magic]="mgc.S3_GROUP"
-                    mgFormat
-                />
-                <mgError [magic]=mgc.S3_GROUP> </mgError>
-                <button
-                    style="min-width: auto; margin: auto"
-                    [magic]="mgc.S3_GROUP"
-                >...</button>
-            </div>
-            <label
-                [magic]="mgc.Label1"
-                class="lable_overflow"
-            >
-                NEXT INDICATE
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <button [magic]="mgc.SaveRowEditing">
-                Save
-            </button>
-            <button [magic]="mgc.CancelRowEditing">
-                Cancel
-            </button>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <div>
-                <select
-                    [magic]="mgc.S3_VIN_TYPE"
-                    [formControlName]="mgc.S3_VIN_TYPE"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.S3_VIN_TYPE);"
-                        [selected]="o.index == mg.getValue(mgc.S3_VIN_TYPE)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
-            </div>
-            <div>
-                <select
-                    [magic]="mgc.S3_FRAME_NOMARK"
-                    [formControlName]="mgc.S3_FRAME_NOMARK"
-                >
-                    <option
-                        *ngFor="let o of mg.getItemListValues(mgc.S3_FRAME_NOMARK);"
-                        [selected]="o.index == mg.getValue(mgc.S3_FRAME_NOMARK)"
-                        [value]="o.index"
-                    >
-                        {{o.displayValue}}
-                    </option>
-                </select>
+            <div class="card-body">
+                <div class="form-group row" style="margin: 0rem;">
+                    <div class="col-lg-12 col-xxl-12">
+                        <div class="form-group row">
+                                 <div class="col-lg-6">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">VIN TYPE</label>
+                        <select class="form-control-ed" [magic]="mgc.S3_VIN_TYPE" [formControlName]="mgc.S3_VIN_TYPE">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.S3_VIN_TYPE);"
+                                [selected]="o.index == mg.getValue(mgc.S3_VIN_TYPE)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                      <div class="col-lg-6" *ngIf="mg.getVisible(mgc.S3_GROUP)==='visible'">
+                                <div class="form-group">
+                                    <label class="lbl-sm">GROUP :</label>
+                                    <div class="input-group">
+                                        <input type="text" [formControlName]="mgc.S3_GROUP" [magic]="mgc.S3_GROUP"
+                                            class="form-control" placeholder="SELECT GROUP" mgFormat />
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-loanlist btn-icon"
+                                                [magic]="mgc.S3_GROUP">
+                                                <span class="svg-icon svg-icon-lg"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                                                        height="24px" viewBox="0 0 24 24" version="1.1">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <rect x="0" y="0" width="24" height="24" />
+                                                            <path
+                                                                d="M3,12 C3,12 5.45454545,6 12,6 C16.9090909,6 21,12 21,12 C21,12 16.9090909,18 12,18 C5.45454545,18 3,12 3,12 Z"
+                                                                fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                            <path
+                                                                d="M12,15 C10.3431458,15 9,13.6568542 9,12 C9,10.3431458 10.3431458,9 12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 Z"
+                                                                fill="#000000" opacity="0.3" />
+                                                        </g>
+                                                    </svg></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">STAMPING HEAD :</label>
+                                    <input [formControlName]="mgc.S3_ENGFRMTYPE" [magic]="mgc.S3_ENGFRMTYPE" class="form-control-ed"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.S3_ENGFRMTYPE"> </mgError>
+                                </div>
+                            </div>
+                                <div class="col-lg-6">
+                                     <div class="form-group-sm">
+                                    <label class="lbl-sm">1ST NO</label>
+                                    <input [formControlName]="mgc.S3_PROD1ST_CHASSIS_NO" [magic]="mgc.S3_PROD1ST_CHASSIS_NO" class="form-control-ed"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.S3_PROD1ST_CHASSIS_NO"> </mgError>
+                                </div>
+
+                            </div>
+                                  <div class="col-lg-6">
+                    <div class="form-group-sm">
+                        <label class="lbl-sm">NO. MARK</label>
+                        <select class="form-control-ed" [magic]="mgc.S3_FRAME_NOMARK" [formControlName]="mgc.S3_FRAME_NOMARK">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.S3_FRAME_NOMARK);"
+                                [selected]="o.index == mg.getValue(mgc.S3_FRAME_NOMARK)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                    
+                            <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">START DATE</label>
+                                    <input type="date" [formControlName]="mgc.S3_START_DATE" [magic]="mgc.S3_START_DATE"
+                                        class="form-control-ed" *ngIf="mg.getVisible(mgc.S3_START_DATE)==='visible'"
+                                        dateInput />
+                                </div>
+                            </div>
+                              <div class="col-lg-6">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">ABOLITION DATE</label>
+                                    <input type="date" [formControlName]="mgc.S3_ABOLITION_DATE" [magic]="mgc.S3_ABOLITION_DATE"
+                                        class="form-control-ed" *ngIf="mg.getVisible(mgc.S3_ABOLITION_DATE)==='visible'"
+                                        dateInput />
+                                </div>
+                            </div>
+                             <div class="col-lg-6">
+                                     <div class="form-group-sm">
+                                    <label class="lbl-sm">NEXT INDICATE</label>
+                                    <input [formControlName]="mgc.PR27_NEXT_CHASSIS_NO" [magic]="mgc.PR27_NEXT_CHASSIS_NO" class="form-control-ed"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.PR27_NEXT_CHASSIS_NO"> </mgError>
+                                </div>
+
+                            </div>
+                                <div class="col-lg-4">
+                                     <div class="form-group-sm">
+                                    <label class="lbl-sm">LAST INDICATE</label>
+                                    <input [formControlName]="mgc.PR27_LAST_PLAN_CODE" [magic]="mgc.PR27_LAST_PLAN_CODE" class="form-control-ed"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.PR27_LAST_PLAN_CODE"> </mgError>
+                                </div>
+
+                            </div>
+  
+                              <div class="col-lg-4">
+                                <div class="form-group-sm">
+                                    <label class="lbl-sm">.</label>
+                                    <input type="date" [formControlName]="mgc.PR27_LAST_PRODINDDATE" [magic]="mgc.PR27_LAST_PRODINDDATE"
+                                        class="form-control-ed" *ngIf="mg.getVisible(mgc.PR27_LAST_PRODINDDATE)==='visible'"
+                                        dateInput />
+                                </div>
+                            </div>    
+                            <div class="col-lg-2">
+                                     <div class="form-group-sm">
+                                    <label class="lbl-sm">.</label>
+                                    <input [formControlName]="mgc.PR27_LAST_PLAN_SEQ" [magic]="mgc.PR27_LAST_PLAN_SEQ" class="form-control-ed"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.PR27_LAST_PLAN_SEQ"> </mgError>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-2">
+                                     <div class="form-group-sm">
+                                    <label class="lbl-sm">.</label>
+                                    <input [formControlName]="mgc.PR27_LAST_PLAN_SEQ_SUF" [magic]="mgc.PR27_LAST_PLAN_SEQ_SUF" class="form-control-ed"
+                                        mgFormat />
+                                    <mgError [magic]="mgc.PR27_LAST_PLAN_SEQ_SUF"> </mgError>
+                                </div>
+
+                            </div>
+
+
+                    </div>
+                                               
+     <div class="col-lg-12 text-center">
+                                        <div class="form-group d-flex justify-content-center">
+
+                                            <button type="button" [magic]="mgc.SaveRowEditing"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                                SAVE
+                                            </button>
+                                            <button type="button" [magic]="mgc.CancelRowEditing"
+                                                class="btn btn-primary font-weight-bold mr-3 btn-wdth">
+                                              EXIT
+                                            </button>
+
+                            </div>
+                    
+                        </div>
+                    </div>
+                
             </div>
         </div>
     </div>

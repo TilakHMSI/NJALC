@@ -30,7 +30,7 @@ export class VPRDB003_PROD_INDICATE extends TaskBaseMagicComponent implements Ma
     private static readonly width: string = "600px";
     private static readonly height: string = "500px";
     private static readonly isCenteredToWindow: boolean = true;
-    private static readonly shouldCloseOnBackgroundClick: boolean = true;
+    private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
