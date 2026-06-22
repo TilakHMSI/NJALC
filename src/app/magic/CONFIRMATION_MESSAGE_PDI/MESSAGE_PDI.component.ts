@@ -29,7 +29,7 @@ export class MESSAGE_PDI extends TaskBaseMagicComponent implements MagicModalInt
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "580px";
-    private static readonly height: string = "262px";
+    private static readonly height: string = "305px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = false;
