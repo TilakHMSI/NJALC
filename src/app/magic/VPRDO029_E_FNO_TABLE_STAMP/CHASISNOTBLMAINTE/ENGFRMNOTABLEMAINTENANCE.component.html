@@ -163,7 +163,7 @@
                                     <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
                                         <input type="date" [formControlName]="mgc.S3_START_DATE"
                                             class="form-control-tbl" [magic]="mgc.S3_START_DATE" [rowId]="row.rowId"
-                                            dateInput />
+                                          max="9999-12-31" dateInput />
                                     </div>
                                     <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S3_START_DATE"
                                         [rowId]="row.rowId">
@@ -185,7 +185,7 @@
                                     <div *ngIf="mg.isRowInRowEditing(row)" style="display: flex; flex-direction: row">
                                         <input type="date" [formControlName]="mgc.S3_ABOLITION_DATE"
                                             class="form-control-tbl" [magic]="mgc.S3_ABOLITION_DATE" [rowId]="row.rowId"
-                                            dateInput />
+                                            max="9999-12-31" dateInput />
                                     </div>
                                     <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.S3_ABOLITION_DATE"
                                         [rowId]="row.rowId">

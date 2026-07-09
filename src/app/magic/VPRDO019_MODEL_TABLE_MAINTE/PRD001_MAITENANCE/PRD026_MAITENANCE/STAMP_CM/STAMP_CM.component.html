@@ -117,15 +117,16 @@
                                 <div class="form-group-sm">
                                     <label class="lbl-sm">START DATE</label>
                                     <input type="date" class="form-control" [formControlName]="mgc.PR26_START_DATE"
-                                        [magic]="mgc.PR26_START_DATE" dateInput />
+                                         max="9999-12-31" [magic]="mgc.PR26_START_DATE" dateInput />
                                     <mgError [magic]="mgc.PR26_START_DATE"> </mgError>
                                 </div>
                             </div>
+    
                             <div class="col-lg-4">
                                 <div class="form-group-sm">
                                     <label class="lbl-sm">ABOLITION DATE</label>
                                     <input type="date" class="form-control"
-                                        [formControlName]="mgc.PR26_ABOLITION_DATE" [magic]="mgc.PR26_ABOLITION_DATE"
+                                        max="9999-12-31" [formControlName]="mgc.PR26_ABOLITION_DATE" [magic]="mgc.PR26_ABOLITION_DATE"
                                         dateInput />
                                     <mgError [magic]="mgc.PR26_ABOLITION_DATE"> </mgError>
                                 </div>
