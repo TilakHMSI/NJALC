@@ -186,6 +186,42 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"btn_Close",
+				"format":	"Back",
+				"common_line_id":	"line287"
+			},
+			"coordinates":	{
+				"x":	588,
+				"y":	287,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vFileName1",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line325"
+			},
+			"coordinates":	{
+				"x":	73,
+				"y":	327,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"v_Exec",
 				"format":	"E\\XEC",
 				"attribute":	"A",
@@ -222,7 +258,62 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Edit8",
+				"id":	"vFileName",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line342"
+			},
+			"coordinates":	{
+				"x":	629,
+				"y":	342,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vBlob64base1",
+				"password_edit":	false,
+				"attribute":	"O",
+				"common_line_id":	"line384"
+			},
+			"coordinates":	{
+				"x":	76,
+				"y":	389,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vBlob64base",
+				"password_edit":	false,
+				"attribute":	"O",
+				"common_line_id":	"line384"
+			},
+			"coordinates":	{
+				"x":	634,
+				"y":	384,
+				"width":	34,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Edit7",
 				"visible":	{
 					"value":	null,
 					"has_exp":	true
@@ -245,7 +336,7 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Edit7",
+				"id":	"Edit8",
 				"visible":	{
 					"value":	null,
 					"has_exp":	true

@@ -1,37 +1,18 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Column3",
-		"column_title":	"PROD.1ST NO.",
-		"is_table_child":	true,
-		"web_style":	2
+		"id":	"V_Frame",
+		"mgformat":	"mgFormat",
+		"format":	"UUUUUUUUUUUUUUUUU",
+		"attribute":	"A"
 	},
 	"coordinates":	{
-		"width":	68
+		"x":	356,
+		"y":	364,
+		"width":	234,
+		"height":	23
 	},
 	"hint":	null,
-	"controlType":	"K",
-	"children":	[
-		{
-			"style":	null,
-			"props":	{
-				"id":	"PR26_PROD1ST_CHASSIS_NO",
-				"mgformat":	"mgFormat",
-				"format":	"#######",
-				"attribute":	"N",
-				"is_table_child":	true,
-				"web_style":	2,
-				"common_line_id":	"line70"
-			},
-			"coordinates":	{
-				"x":	105,
-				"y":	70,
-				"width":	40,
-				"height":	13
-			},
-			"hint":	null,
-			"controlType":	"T",
-			"children":	null
-		}
-	]
+	"controlType":	"T",
+	"children":	null
 }
