@@ -183,9 +183,9 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"dataexp":	true,
+				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXX",
-				"modifiable":	false,
+				"attribute":	"A",
 				"common_line_id":	"line83"
 			},
 			"coordinates":	{
@@ -206,9 +206,9 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"dataexp":	true,
+				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXX",
-				"modifiable":	false,
+				"attribute":	"A",
 				"common_line_id":	"line83"
 			},
 			"coordinates":	{
@@ -229,9 +229,9 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"dataexp":	true,
+				"mgformat":	"mgFormat",
 				"format":	"XXXX",
-				"modifiable":	false,
+				"attribute":	"A",
 				"common_line_id":	"line83"
 			},
 			"coordinates":	{
@@ -252,9 +252,9 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"dataexp":	true,
+				"mgformat":	"mgFormat",
 				"format":	"XXX",
-				"modifiable":	false,
+				"attribute":	"A",
 				"common_line_id":	"line83"
 			},
 			"coordinates":	{
@@ -276,7 +276,7 @@
 					"has_exp":	true
 				},
 				"mgformat":	"mgFormat",
-				"format":	"XXXXXXXXXX",
+				"format":	"XXXXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
 				"common_line_id":	"line83"
 			},
@@ -400,11 +400,9 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"dataexp":	true,
-				"formatter":	"magicDate",
 				"mgformat":	"mgFormat",
-				"format":	"DD-MM-YYYY",
-				"modifiable":	false,
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
 				"common_line_id":	"line178"
 			},
 			"coordinates":	{
@@ -425,11 +423,9 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"dataexp":	true,
-				"formatter":	"magicDate",
 				"mgformat":	"mgFormat",
-				"format":	"DD-MM-YYYY",
-				"modifiable":	false,
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
 				"common_line_id":	"line178"
 			},
 			"coordinates":	{
@@ -450,11 +446,9 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"dataexp":	true,
-				"formatter":	"magicDate",
 				"mgformat":	"mgFormat",
-				"format":	"DD-MM-YYYY",
-				"modifiable":	false,
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
 				"common_line_id":	"line178"
 			},
 			"coordinates":	{
@@ -475,11 +469,9 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"dataexp":	true,
-				"formatter":	"magicDate",
 				"mgformat":	"mgFormat",
-				"format":	"DD-MM-YYYY",
-				"modifiable":	false,
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
 				"common_line_id":	"line178"
 			},
 			"coordinates":	{
@@ -500,11 +492,9 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"dataexp":	true,
-				"formatter":	"magicDate",
 				"mgformat":	"mgFormat",
-				"format":	"DD-MM-YYYY",
-				"modifiable":	false,
+				"format":	"DD/MM/YYYY",
+				"attribute":	"D",
 				"common_line_id":	"line178"
 			},
 			"coordinates":	{
@@ -617,11 +607,9 @@
 					"value":	null,
 					"has_exp":	true
 				},
-				"dataexp":	true,
-				"formatter":	"magicTime",
 				"showsecs":	true,
 				"format":	"HH:MM:SS",
-				"modifiable":	false,
+				"attribute":	"T",
 				"common_line_id":	"line212"
 			},
 			"coordinates":	{
@@ -757,7 +745,7 @@
 					"has_exp":	true
 				},
 				"mgformat":	"mgFormat",
-				"format":	"XX",
+				"format":	"XXX",
 				"attribute":	"A",
 				"common_line_id":	"line301"
 			},
@@ -1022,6 +1010,26 @@
 			},
 			"hint":	null,
 			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"LastScanned",
+				"mgformat":	"mgFormat",
+				"format":	"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+				"modifiable":	false,
+				"attribute":	"A",
+				"common_line_id":	"line443"
+			},
+			"coordinates":	{
+				"x":	668,
+				"y":	446,
+				"width":	121,
+				"height":	28
+			},
+			"hint":	null,
+			"controlType":	"T",
 			"children":	null
 		}
 	]
