@@ -112,12 +112,13 @@
                                             [style.visibility]="mg.getVisible(mgc.REPAIRINUSERID, row.rowId)"
                                             mgFormat />
                                         <mgError [magic]=mgc.REPAIRINUSERID [rowId]="row.rowId"> </mgError>
-                                        <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.REPAIRINUSERID"
+                                        <label class="label label-lg font-weight-bold label-inline" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.REPAIRINUSERID"
                                             [rowId]="row.rowId"
+                                            [ngClass]="{'label-light-info': mg.getValue('REPAIRINUSERID', row.rowId) != 'ABC'}"
                                             [style.visibility]="mg.getVisible(mgc.REPAIRINUSERID, row.rowId)">
                                             {{mg.getValue(mgc.REPAIRINUSERID, row.rowId)
                                             }}
-                                        </label>
+                                        </label>                                        
                                     </div>
                                 </div>
                             </div>

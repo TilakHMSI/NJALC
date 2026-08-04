@@ -27,8 +27,8 @@ export class REPAIR_OUT_ENTRY extends TaskBaseMagicComponent implements MagicMod
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "1050px";
-    private static readonly height: string = "800px";
+    private static readonly width: string = "1150px";
+    private static readonly height: string = "720px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
