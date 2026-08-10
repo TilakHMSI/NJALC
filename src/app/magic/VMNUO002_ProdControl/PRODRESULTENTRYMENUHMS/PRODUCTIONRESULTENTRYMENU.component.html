@@ -1,83 +1,4 @@
 <div novalidate [formGroup]="screenFormGroup">
-    <!-- <div style="display: flex; flex-direction: column" [magic]="mgc.PRODUCTIONRESULTENTRYMENU">
-        <div style="display: flex; flex-direction: row">
-            <div *ngIf="mg.isImageExists(mgc.Image1)">
-                <img [magic]="mgc.Image1" [src]="mg.getImage(mgc.Image1)" />
-            </div>
-            <label [magic]="mgc.Label2" class="lable_overflow">
-                HMSI
-            </label>
-            <label [magic]="mgc.V_LOCATE_P">
-                {{mg.getValue(mgc.V_LOCATE_P) }}
-            </label>
-            <label [magic]="mgc.Edit5">
-                {{mg.getValue(mgc.Edit5)
-                | magicDate : mgc.Edit5}}
-            </label>
-            <label [magic]="mgc.Label4" class="lable_overflow">
-                PGM=VMNUO002(4)
-            </label>
-            <label [magic]="mgc.Edit6">
-                {{mg.getValue(mgc.Edit6)
-                | magicTime : mgc.Edit6}}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.V_DB_NAME1_P">
-                {{mg.getValue(mgc.V_DB_NAME1_P) }}
-            </label>
-            <label [magic]="mgc.V_DB_NAME2_P">
-                {{mg.getValue(mgc.V_DB_NAME2_P) }}
-            </label>
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <label [magic]="mgc.Label9" class="lable_overflow">
-            </label>
-            <button [magic]="mgc.New_PDIOFF_RESULT_ENTVPRDO066"
-                [style.visibility]="mg.getVisible(mgc.New_PDIOFF_RESULT_ENTVPRDO066)">
-                {{mg.getValue(mgc.New_PDIOFF_RESULT_ENTVPRDO066)}}
-            </button>
-            <button [magic]="mgc.AEOFF_RESULT_ENTRYVPRDO041"
-                [style.visibility]="mg.getVisible(mgc.AEOFF_RESULT_ENTRYVPRDO041)">
-                {{mg.getValue(mgc.AEOFF_RESULT_ENTRYVPRDO041)}}
-            </button>
-            <button [magic]="mgc.AFOFF_RESULT_ENTRYVPRDO042"
-                [style.visibility]="mg.getVisible(mgc.AFOFF_RESULT_ENTRYVPRDO042)">
-                {{mg.getValue(mgc.AFOFF_RESULT_ENTRYVPRDO042)}}
-            </button>
-            <button [magic]="mgc.VQON_RESULT_ENTRYVPRDO065"
-                [style.visibility]="mg.getVisible(mgc.VQON_RESULT_ENTRYVPRDO065)"
-                [disabled]="mg.isDisabled(mgc.VQON_RESULT_ENTRYVPRDO065 )">
-                {{mg.getValue(mgc.VQON_RESULT_ENTRYVPRDO065)}}
-            </button>
-            <button [magic]="mgc.FRM_VQOFF_RESULT_ENTVPRDO043"
-                [style.visibility]="mg.getVisible(mgc.FRM_VQOFF_RESULT_ENTVPRDO043)">
-                {{mg.getValue(mgc.FRM_VQOFF_RESULT_ENTVPRDO043)}}
-            </button>
-            <button [magic]="mgc.PACKING_RESULT_ENTRYVPRDO044"
-                [style.visibility]="mg.getVisible(mgc.PACKING_RESULT_ENTRYVPRDO044)">
-                {{mg.getValue(mgc.PACKING_RESULT_ENTRYVPRDO044)}}
-            </button>
-            <button [magic]="mgc.SHIPPING_RESULT_ENTRYVPRDO045"
-                [style.visibility]="mg.getVisible(mgc.SHIPPING_RESULT_ENTRYVPRDO045)">
-                {{mg.getValue(mgc.SHIPPING_RESULT_ENTRYVPRDO045)}}
-            </button>
-            <button [magic]="mgc.RETURN_RESULT_ENTRYVPRDO046"
-                [style.visibility]="mg.getVisible(mgc.RETURN_RESULT_ENTRYVPRDO046)">
-                {{mg.getValue(mgc.RETURN_RESULT_ENTRYVPRDO046)}}
-            </button>
-            <button [magic]="mgc.EXC_OUTGO_RESULTVPRDO047"
-                [style.visibility]="mg.getVisible(mgc.EXC_OUTGO_RESULTVPRDO047)">
-                {{mg.getValue(mgc.EXC_OUTGO_RESULTVPRDO047)}}
-            </button>
-            <button [magic]="mgc.BJPN_ENGINE_NO_ENTRY" [style.visibility]="mg.getVisible(mgc.BJPN_ENGINE_NO_ENTRY)">
-                {{mg.getValue(mgc.BJPN_ENGINE_NO_ENTRY)}}
-            </button>
-        </div>
-    </div> -->
-
-
-
     <div class="container-fluid-ov" [magic]="mgc.PRODUCTIONRESULTENTRYMENU">
         <div class="card">
             <div class="card-header">
@@ -151,6 +72,12 @@
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.AF_TEST">
                                 {{mg.getValue(mgc.AF_TEST)}}
+                            </button>
+                        </div>
+                        <div class="form-group" >
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.PDI_LOG">
+                                {{mg.getValue(mgc.PDI_LOG)}}
                             </button>
                         </div>
                     </div>

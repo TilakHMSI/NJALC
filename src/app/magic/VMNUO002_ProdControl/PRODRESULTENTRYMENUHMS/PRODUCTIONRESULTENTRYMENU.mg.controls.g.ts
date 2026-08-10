@@ -28,6 +28,7 @@ export enum MgControlName {
         BJPN_ENGINE_NO_ENTRY = "BJPN_ENGINE_NO_ENTRY",
         btnexit = "btnexit",
         AF_TEST = "AF_TEST",
+        PDI_LOG = "PDI_LOG"
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

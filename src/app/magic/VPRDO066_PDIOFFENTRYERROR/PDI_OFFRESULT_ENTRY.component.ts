@@ -10,7 +10,7 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDO066_PDIOFFENTRY_PDI_OFFRESULT_ENTRY',
+    selector: 'mga-VPRDO066_PDIOFFENTRYERROR_PDI_OFFRESULT_ENTRY',
     providers: [...magicProviders],
     standalone: false,
     templateUrl: './PDI_OFFRESULT_ENTRY.component.html'
@@ -23,7 +23,7 @@ export class PDI_OFFRESULT_ENTRY extends TaskBaseMagicComponent implements Magic
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "PDI OFF RESULT ENTRY <>4";
+    private static readonly formName: string = "PDI_OFFRESULT_ENTRY";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
@@ -63,6 +63,5 @@ export class PDI_OFFRESULT_ENTRY extends TaskBaseMagicComponent implements Magic
     IsMovable() {
         return PDI_OFFRESULT_ENTRY.isMovable;
     }
-
 
 }

@@ -1,18 +1,16 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"V_Frame",
-		"mgformat":	"mgFormat",
-		"format":	"UUUUUUUUUUUUUUUUU",
-		"attribute":	"A"
+		"id":	"PDI_LOG",
+		"format":	"PDI ENTRY WITH LOGS"
 	},
 	"coordinates":	{
-		"x":	356,
-		"y":	364,
-		"width":	234,
-		"height":	23
+		"x":	420,
+		"y":	262,
+		"width":	225,
+		"height":	33
 	},
 	"hint":	null,
-	"controlType":	"T",
+	"controlType":	"B",
 	"children":	null
 }

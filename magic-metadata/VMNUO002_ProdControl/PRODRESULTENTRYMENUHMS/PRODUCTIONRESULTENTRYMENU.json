@@ -10,8 +10,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	560,
-		"height":	533
+		"width":	658,
+		"height":	637
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -53,6 +53,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"V_LOCATE_P",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"XXX",
 				"modifiable":	false,
@@ -94,7 +98,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"Label4",
-				"text":	"PGM=VMNUO002(4)",
+				"text":	{
+					"value":	"PGM=VMNUO002(4)",
+					"has_exp":	true
+				},
 				"common_line_id":	"line3"
 			},
 			"coordinates":	{
@@ -132,6 +139,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"V_DB_NAME1_P",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXX",
 				"modifiable":	false,
@@ -152,6 +163,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"V_DB_NAME2_P",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXX",
 				"modifiable":	false,
@@ -391,6 +406,124 @@
 			"coordinates":	{
 				"x":	169,
 				"y":	419,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PDI_LOG",
+				"format":	"PDI ENTRY WITH LOGS",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	420,
+				"y":	262,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"X",
+				"common_line_id":	"line60"
+			},
+			"coordinates":	{
+				"x":	483,
+				"y":	64,
+				"width":	25,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"AF_TEST",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"AF VISION TEST",
+				"common_line_id":	"line458"
+			},
+			"coordinates":	{
+				"x":	168,
+				"y":	458,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ODOMETER_CATEGORY_MASTER",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"ODOMETER CATEGORY MASTER",
+				"common_line_id":	"line497"
+			},
+			"coordinates":	{
+				"x":	168,
+				"y":	497,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ODOMETER_FRAME_CAPTURE",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"ODOMETER FRAME CAPTURE",
+				"common_line_id":	"line536"
+			},
+			"coordinates":	{
+				"x":	168,
+				"y":	536,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ODOMETER_READING",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"format":	"ODOMETER READING",
+				"common_line_id":	"line575"
+			},
+			"coordinates":	{
+				"x":	168,
+				"y":	575,
 				"width":	225,
 				"height":	33
 			},
