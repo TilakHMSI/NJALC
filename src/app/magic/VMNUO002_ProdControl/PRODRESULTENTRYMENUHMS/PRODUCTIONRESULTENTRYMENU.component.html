@@ -23,7 +23,7 @@
             <div class="card-body">
                 <div class="form-group row">
                     <div class="col-lg-2">
-                        
+
                     </div>
                     <div class="col-lg-8 text-center">
                         <div class="form-group" *ngIf="mg.getVisible(mgc.AEOFF_RESULT_ENTRYVPRDO041)==='visible'">
@@ -61,7 +61,7 @@
                                 {{mg.getValue(mgc.PACKING_RESULT_ENTRYVPRDO044)}}
                             </button>
                         </div>
-                         <div class="form-group" *ngIf="mg.getVisible(mgc.New_PDIOFF_RESULT_ENTVPRDO066)==='visible'">
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.New_PDIOFF_RESULT_ENTVPRDO066)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.New_PDIOFF_RESULT_ENTVPRDO066"
                                 *ngIf="mg.getVisible(mgc.New_PDIOFF_RESULT_ENTVPRDO066)==='visible'">
@@ -69,15 +69,32 @@
                             </button>
                         </div>
                         <div class="form-group" *ngIf="mg.getVisible(mgc.AF_TEST)==='visible'">
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.AF_TEST">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.AF_TEST">
                                 {{mg.getValue(mgc.AF_TEST)}}
                             </button>
                         </div>
-                        <div class="form-group" >
-                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
-                                [magic]="mgc.PDI_LOG">
+
+                        <div class="form-group">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75" [magic]="mgc.PDI_LOG">
                                 {{mg.getValue(mgc.PDI_LOG)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.ODOMETER_CATEGORY_MASTER)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.ODOMETER_CATEGORY_MASTER">
+                                {{mg.getValue(mgc.ODOMETER_CATEGORY_MASTER)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.ODOMETER_FRAME_CAPTURE)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.ODOMETER_FRAME_CAPTURE">
+                                {{mg.getValue(mgc.ODOMETER_FRAME_CAPTURE)}}
+                            </button>
+                        </div>
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.ODOMETER_READING)==='visible'">
+                            <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
+                                [magic]="mgc.ODOMETER_READING">
+                                {{mg.getValue(mgc.ODOMETER_READING)}}
                             </button>
                         </div>
                     </div>

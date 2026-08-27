@@ -1,0 +1,67 @@
+<div novalidate [formGroup]="screenFormGroup">
+    <div class="container-fluid-ov" [magic]="mgc.OdometerReadingEntry">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <h3><label class="lbl-sm" class="lable_overflow mb-0">
+                            {{mg.getText(mgc.Label1)}}
+                        </label></h3>
+                    <button type="button" [magic]="mgc.btnexit"
+                        class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="form-group row" style="margin: 0rem;">
+                <div class="col-lg-12">
+                    <div class="form-group row">
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <input class="form-control" [formControlName]="mgc.FrameNo" [magic]="mgc.FrameNo"
+                                    placeholder="Search by Frame No" mgFormat />
+                                <mgError [magic]=mgc.FrameNo> </mgError>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-2 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    MTO CODE
+                                </label>
+                                <label class="lbl-header-tbl-data" [magic]="mgc.Label2">
+                                    {{mg.getText(mgc.Label2)}}
+                                </label>
+                        </div>
+                        <div class="col-lg-2 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    COLOR CODE
+                                </label>
+                                <label class="lbl-header-tbl-data" [magic]="mgc.Label3">
+                                    {{mg.getText(mgc.Label3)}}
+                                </label>
+                        </div>
+                        <div class="col-lg-2 border-yellow rounded p-2">
+                                <label class="lbl-header-tbl">
+                                    PLANT
+                                </label>
+                                <label class="lbl-header-tbl-data" [magic]="mgc.Label4">
+                                    {{mg.getText(mgc.Label4)}}
+                                </label>
+                        </div> -->
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <input class="mt-4" type="checkbox" [formControlName]="mgc.FLAGOFF" [magic]="mgc.FLAGOFF"
+                                    id="FLAGOFF" />
+                                <label for="FLAGOFF">
+                                    CHECK FLAG OFF FRAMES
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <magic-subform [magic]="mgc.DETAIL">
+            </magic-subform>
+        </div>
+    </div>
+</div>

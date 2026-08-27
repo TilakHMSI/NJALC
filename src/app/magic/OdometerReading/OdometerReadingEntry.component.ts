@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormGroup } from "@angular/forms";
-import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./VPRDS005OKNO.mg.controls.g";
+import { MgFormControlsAccessor, MgControlName, MgCustomProperties } from "./OdometerReadingEntry.mg.controls.g";
 
 
 import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
@@ -10,13 +10,12 @@ import { TaskBaseMagicComponent, magicProviders } from "@magic-xpa/angular";
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-VPRDS005OKNO_VPRDS005OKNO',
+    selector: 'mga-OdometerReading_OdometerReadingEntry',
     providers: [...magicProviders],
     standalone: false,
-    templateUrl: './VPRDS005OKNO.component.html',
-    styleUrl: './OKNO.component.css'
+    templateUrl: './OdometerReadingEntry.component.html'
 })
-export class VPRDS005OKNO extends TaskBaseMagicComponent implements MagicModalInterface {
+export class OdometerReadingEntry extends TaskBaseMagicComponent implements MagicModalInterface {
 
     mgc = MgControlName;
     mgcp = MgCustomProperties;
@@ -24,44 +23,44 @@ export class VPRDS005OKNO extends TaskBaseMagicComponent implements MagicModalIn
     override createFormControlsAccessor(formGroup: FormGroup) {
         this.mgfc = new MgFormControlsAccessor(formGroup, this.magicServices);
     }
-    private static readonly formName: string = "VPRDS005 OK NO";
+    private static readonly formName: string = "OdometerReadingEntry";
     private static readonly showTitleBar: boolean = false;
     private static readonly x: number = 0;
     private static readonly y: number = 0;
-    private static readonly width: string = "600px";
-    private static readonly height: string = "160px";
+    private static readonly width: string = "1250px";
+    private static readonly height: string = "720px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
     private static readonly isMovable: boolean = true;
     X() {
-        return VPRDS005OKNO.x;
+        return OdometerReadingEntry.x;
     }
     Y() {
-        return VPRDS005OKNO.y;
+        return OdometerReadingEntry.y;
     }
     Width(): string {
-        return VPRDS005OKNO.width;
+        return OdometerReadingEntry.width;
     }
     Height(): string {
-        return VPRDS005OKNO.height;
+        return OdometerReadingEntry.height;
     }
     IsCenteredToWindow() {
-        return VPRDS005OKNO.isCenteredToWindow;
+        return OdometerReadingEntry.isCenteredToWindow;
     }
     FormName() {
-        return VPRDS005OKNO.formName;
+        return OdometerReadingEntry.formName;
     }
     ShowTitleBar() {
-        return VPRDS005OKNO.showTitleBar;
+        return OdometerReadingEntry.showTitleBar;
     }
     ShouldCloseOnBackgroundClick() {
-        return VPRDS005OKNO.shouldCloseOnBackgroundClick;
+        return OdometerReadingEntry.shouldCloseOnBackgroundClick;
     }
     IsResizable() {
-        return VPRDS005OKNO.isResizable;
+        return OdometerReadingEntry.isResizable;
     }
     IsMovable() {
-        return VPRDS005OKNO.isMovable;
+        return OdometerReadingEntry.isMovable;
     }
 }

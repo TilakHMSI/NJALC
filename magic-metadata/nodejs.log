@@ -12,18 +12,16 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/VPRDO029_E_FNO_TABLE_STAMP/CHASISNOTBLMAINTE/CHASISNOTBLMAINTE_CM/ENGFRMNOTABLEMAINTENANCE_CM.json
+[>] Loading JSON file .//magic-metadata/OdometerReading/DETAIL/DETAILFLAGOFF.json
 *** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component ENGFRMNOTABLEMAINTENANCE_CM
+[>] Processing JSON file for component DETAILFLAGOFF
 *** Step 3: generate components. (1 components) ***
-[>] generate component ENGFRMNOTABLEMAINTENANCE_CM
+[>] generate component DETAILFLAGOFF
 [>] Step 4: components-list.
- Total old components: 441, added components: 1. 
 [>]  ********************************* E N D    GENERATE *********************************
-[32mCREATE[39m src/app/magic/VPRDO029_E_FNO_TABLE_STAMP/CHASISNOTBLMAINTE/CHASISNOTBLMAINTE_CM/ENGFRMNOTABLEMAINTENANCE_CM.mg.controls.g.ts (2874 bytes)
-[32mCREATE[39m src/app/magic/VPRDO029_E_FNO_TABLE_STAMP/CHASISNOTBLMAINTE/CHASISNOTBLMAINTE_CM/ENGFRMNOTABLEMAINTENANCE_CM.component.ts (2343 bytes)
-[32mCREATE[39m src/app/magic/VPRDO029_E_FNO_TABLE_STAMP/CHASISNOTBLMAINTE/CHASISNOTBLMAINTE_CM/ENGFRMNOTABLEMAINTENANCE_CM.component.html (5120 bytes)
-[36mUPDATE[39m src/app/magic/component-list.g.ts (146763 bytes)
+[36mUPDATE[39m src/app/magic/OdometerReading/DETAIL/DETAILFLAGOFF.mg.controls.g.ts (2066 bytes)
+[36mUPDATE[39m src/app/magic/OdometerReading/DETAIL/DETAILFLAGOFF.component.ts (931 bytes)
+[36mUPDATE[39m src/app/magic/OdometerReading/DETAIL/DETAILFLAGOFF.component.html (13834 bytes)
 
 
 

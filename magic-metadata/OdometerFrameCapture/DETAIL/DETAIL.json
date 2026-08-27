@@ -1,0 +1,364 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"DETAIL",
+		"window_type":	1,
+		"component_path":	"OdometerFrameCapture/DETAIL/",
+		"module_name":	"",
+		"component_uniquename":	"OdometerFrameCapture_DETAIL_DETAIL"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	675,
+		"height":	473
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Table1",
+				"table_row_height":	78,
+				"table_title_height":	20,
+				"common_line_id":	"line40"
+			},
+			"coordinates":	{
+				"x":	15,
+				"y":	40,
+				"width":	648,
+				"height":	415
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column1",
+						"column_title":	"FRAMENO",
+						"sortable":	true,
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	70
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"FRAMENO",
+								"modifiable":	false,
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line64"
+							},
+							"coordinates":	{
+								"x":	19,
+								"y":	64,
+								"width":	50,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column2",
+						"column_title":	"INITIATEDATE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	91
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"INITIATEDATE",
+								"modifiable":	false,
+								"formatter":	"magicDate",
+								"mgformat":	"mgFormat",
+								"format":	"DD/MM/YYYY",
+								"attribute":	"D",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line63"
+							},
+							"coordinates":	{
+								"x":	89,
+								"y":	63,
+								"width":	84,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column3",
+						"column_title":	"TIME",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	85
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"INITIATETIME",
+								"modifiable":	false,
+								"formatter":	"magicTime",
+								"showsecs":	true,
+								"format":	"HH:MM:SS",
+								"attribute":	"T",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line63"
+							},
+							"coordinates":	{
+								"x":	180,
+								"y":	63,
+								"width":	80,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"MTOCODE",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	138
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"MTOCODE",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line63"
+							},
+							"coordinates":	{
+								"x":	265,
+								"y":	63,
+								"width":	130,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"JPMODEL",
+								"mgformat":	"mgFormat",
+								"format":	"U",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line83"
+							},
+							"coordinates":	{
+								"x":	265,
+								"y":	83,
+								"width":	13,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column17",
+						"column_title":	"INITIATE BY",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	80
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"INITIATEUSER",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line64"
+							},
+							"coordinates":	{
+								"x":	403,
+								"y":	64,
+								"width":	57,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column29",
+						"column_title":	"PLANT",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	49
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"PLANT",
+								"mgformat":	"mgFormat",
+								"format":	"XXXXXXXXXXXXXXX",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line64"
+							},
+							"coordinates":	{
+								"x":	483,
+								"y":	64,
+								"width":	40,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column19",
+						"column_title":	"FLAG ON",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	64
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"FLAGON",
+								"modifiable":	false,
+								"text":	"",
+								"attribute":	"B",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line64"
+							},
+							"coordinates":	{
+								"x":	544,
+								"y":	64,
+								"width":	20,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"C",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
+						"id":	"Column27",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	49
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnDetails",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"format":	"Details",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line64"
+							},
+							"coordinates":	{
+								"x":	596,
+								"y":	64,
+								"width":	41,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}

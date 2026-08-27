@@ -472,10 +472,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"ODOMETER_CATEGORY_MASTER",
-				"visible":	{
-					"value":	null,
-					"has_exp":	true
-				},
 				"format":	"ODOMETER CATEGORY MASTER",
 				"common_line_id":	"line497"
 			},
@@ -493,10 +489,6 @@
 			"style":	null,
 			"props":	{
 				"id":	"ODOMETER_FRAME_CAPTURE",
-				"visible":	{
-					"value":	null,
-					"has_exp":	true
-				},
 				"format":	"ODOMETER FRAME CAPTURE",
 				"common_line_id":	"line536"
 			},

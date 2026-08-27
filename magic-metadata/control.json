@@ -1,16 +1,27 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"PDI_LOG",
-		"format":	"PDI ENTRY WITH LOGS"
+		"id":	"FLAGON",
+		"tooltip":	{
+			"value":	null,
+			"has_exp":	true
+		},
+		"modifiable":	{
+			"value":	true,
+			"has_exp":	true
+		},
+		"text":	"",
+		"attribute":	"B",
+		"is_table_child":	true,
+		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	420,
-		"y":	262,
-		"width":	225,
-		"height":	33
+		"x":	538,
+		"y":	93,
+		"width":	15,
+		"height":	15
 	},
 	"hint":	null,
-	"controlType":	"B",
+	"controlType":	"C",
 	"children":	null
 }

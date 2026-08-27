@@ -1,0 +1,181 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"FrameCapture",
+		"window_type":	12,
+		"component_path":	"OdometerFrameCapture/",
+		"module_name":	"",
+		"component_uniquename":	"OdometerFrameCapture_FrameCapture"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	{
+					"value":	"PGM=ODOMETER",
+					"has_exp":	true
+				},
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	476,
+				"y":	2,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line18"
+			},
+			"coordinates":	{
+				"x":	511,
+				"y":	18,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"FRAMENO",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	43,
+				"y":	42,
+				"width":	61,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"FrameNo",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	132,
+				"y":	42,
+				"width":	159,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"FLAGOFF",
+				"text":	"CHECK FLAG OFF FRAMES",
+				"attribute":	"B",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	372,
+				"y":	42,
+				"width":	164,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label2",
+				"text":	{
+					"value":	"CODE",
+					"has_exp":	true
+				},
+				"common_line_id":	"line77"
+			},
+			"coordinates":	{
+				"x":	49,
+				"y":	77,
+				"width":	55,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"COLOR",
+				"common_line_id":	"line77"
+			},
+			"coordinates":	{
+				"x":	110,
+				"y":	77,
+				"width":	55,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"PLANT",
+				"common_line_id":	"line77"
+			},
+			"coordinates":	{
+				"x":	187,
+				"y":	77,
+				"width":	55,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DETAIL",
+				"common_line_id":	"line121"
+			},
+			"coordinates":	{
+				"x":	18,
+				"y":	121,
+				"width":	534,
+				"height":	358
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

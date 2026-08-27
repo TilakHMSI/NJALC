@@ -445,10 +445,28 @@ import { PDIOFFRESULTENTRY as VPRDO066_PDIOFFENTRYERROR_PDIOFFRESULTENTRY_PDIOFF
 import { ERRORMESSAGE as VPRDO066_PDIOFFENTRYERROR_ERRORMESSAGE_ERRORMESSAGE } from './VPRDO066_PDIOFFENTRYERROR/ERRORMESSAGE/ERRORMESSAGE.component';
 import { ERRORMESSAGE as VPRDO066_PDIOFFENTRYERROR_RE_ERRORMESSAGE_ERRORMESSAGE } from './VPRDO066_PDIOFFENTRYERROR/RE_ERRORMESSAGE/ERRORMESSAGE.component';
 import { Confirmation as VPRDO066_PDIOFFENTRYERROR_Confirmation_Confirmation } from './VPRDO066_PDIOFFENTRYERROR/Confirmation/Confirmation.component';
+import { OdometerCriteriaMaster as OdometerCriteriaMaster_OdometerCriteriaMaster } from './OdometerCriteriaMaster/OdometerCriteriaMaster.component';
+import { DETAIL as OdometerCriteriaMaster_DETAIL_DETAIL } from './OdometerCriteriaMaster/DETAIL/DETAIL.component';
+import { FrameCapture as OdometerFrameCapture_FrameCapture } from './OdometerFrameCapture/FrameCapture.component';
+import { DETAIL as OdometerFrameCapture_DETAIL_DETAIL } from './OdometerFrameCapture/DETAIL/DETAIL.component';
+import { CriteriaDetails as OdometerFrameCapture_DETAIL_CriteriaDetails_CriteriaDetails } from './OdometerFrameCapture/DETAIL/CriteriaDetails/CriteriaDetails.component';
+import { OdometerReadingEntry as OdometerReading_OdometerReadingEntry } from './OdometerReading/OdometerReadingEntry.component';
+import { DETAILFLAGON as OdometerReading_DETAIL_DETAILFLAGON } from './OdometerReading/DETAIL/DETAILFLAGON.component';
+import { DETAILFLAGOFF as OdometerReading_DETAIL_DETAILFLAGOFF } from './OdometerReading/DETAIL/DETAILFLAGOFF.component';
+import { CriteriaDetails as OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails } from './OdometerReading/DETAIL/CriteriaDetails/CriteriaDetails.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               VPRDO066_PDIOFFENTRYERROR_PDI_OFFRESULT_ENTRY:VPRDO066_PDIOFFENTRYERROR_PDI_OFFRESULT_ENTRY,
+export const magicGenCmpsHash = {               OdometerReading_OdometerReadingEntry:OdometerReading_OdometerReadingEntry,
+              OdometerReading_DETAIL_DETAILFLAGON:OdometerReading_DETAIL_DETAILFLAGON,
+              OdometerReading_DETAIL_DETAILFLAGOFF:OdometerReading_DETAIL_DETAILFLAGOFF,
+              OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails:OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails,
+                      OdometerFrameCapture_FrameCapture:OdometerFrameCapture_FrameCapture,
+              OdometerFrameCapture_DETAIL_DETAIL:OdometerFrameCapture_DETAIL_DETAIL,
+              OdometerFrameCapture_DETAIL_CriteriaDetails_CriteriaDetails:OdometerFrameCapture_DETAIL_CriteriaDetails_CriteriaDetails,
+                      OdometerCriteriaMaster_OdometerCriteriaMaster:OdometerCriteriaMaster_OdometerCriteriaMaster,
+              OdometerCriteriaMaster_DETAIL_DETAIL:OdometerCriteriaMaster_DETAIL_DETAIL,
+                      VPRDO066_PDIOFFENTRYERROR_PDI_OFFRESULT_ENTRY:VPRDO066_PDIOFFENTRYERROR_PDI_OFFRESULT_ENTRY,
               VPRDO066_PDIOFFENTRYERROR_PDIOFFRESULTENTRY_PDIOFFRESULTENTRY:VPRDO066_PDIOFFENTRYERROR_PDIOFFRESULTENTRY_PDIOFFRESULTENTRY,
               VPRDO066_PDIOFFENTRYERROR_ERRORMESSAGE_ERRORMESSAGE:VPRDO066_PDIOFFENTRYERROR_ERRORMESSAGE_ERRORMESSAGE,
               VPRDO066_PDIOFFENTRYERROR_RE_ERRORMESSAGE_ERRORMESSAGE:VPRDO066_PDIOFFENTRYERROR_RE_ERRORMESSAGE_ERRORMESSAGE,
@@ -899,6 +917,15 @@ export const magicGenCmpsHash = {               VPRDO066_PDIOFFENTRYERROR_PDI_OF
 };
 
 export const magicGenComponents = [
+	OdometerReading_OdometerReadingEntry,
+	OdometerReading_DETAIL_DETAILFLAGON,
+	OdometerReading_DETAIL_DETAILFLAGOFF,
+	OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails,
+	OdometerFrameCapture_FrameCapture,
+	OdometerFrameCapture_DETAIL_DETAIL,
+	OdometerFrameCapture_DETAIL_CriteriaDetails_CriteriaDetails,
+	OdometerCriteriaMaster_OdometerCriteriaMaster,
+	OdometerCriteriaMaster_DETAIL_DETAIL,
 	VPRDO066_PDIOFFENTRYERROR_PDI_OFFRESULT_ENTRY,
 	VPRDO066_PDIOFFENTRYERROR_PDIOFFRESULTENTRY_PDIOFFRESULTENTRY,
 	VPRDO066_PDIOFFENTRYERROR_ERRORMESSAGE_ERRORMESSAGE,

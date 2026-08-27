@@ -1,0 +1,127 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"OdometerReadingEntry",
+		"window_type":	12,
+		"component_path":	"OdometerReading/",
+		"module_name":	"",
+		"component_uniquename":	"OdometerReading_OdometerReadingEntry"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	560,
+		"height":	481
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label1",
+				"text":	{
+					"value":	"PGM=ODOMETER",
+					"has_exp":	true
+				},
+				"common_line_id":	"line2"
+			},
+			"coordinates":	{
+				"x":	476,
+				"y":	2,
+				"width":	70,
+				"height":	13
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnexit",
+				"format":	"Back",
+				"common_line_id":	"line18"
+			},
+			"coordinates":	{
+				"x":	511,
+				"y":	18,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"text":	"SEARCH",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	75,
+				"y":	42,
+				"width":	61,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"FrameNo",
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	142,
+				"y":	42,
+				"width":	121,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"FLAGOFF",
+				"text":	"FLAG OFF",
+				"attribute":	"B",
+				"common_line_id":	"line42"
+			},
+			"coordinates":	{
+				"x":	420,
+				"y":	42,
+				"width":	77,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"C",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"DETAIL",
+				"common_line_id":	"line80"
+			},
+			"coordinates":	{
+				"x":	12,
+				"y":	80,
+				"width":	534,
+				"height":	398
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}
