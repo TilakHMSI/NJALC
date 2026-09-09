@@ -1,5 +1,20 @@
 Generation output:
 
+ Generate Modules
+
+C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
+copying files
+
+
+
+C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
+generating modules
+[V-CLI] cmd.exe /c ng g @magic-xpa/cli:modules
+   Number of modules to be check for generate: 1
+Nothing to be done.
+
+Generate Components
+
 C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
 copying files
 
@@ -12,17 +27,22 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/OdometerReading/DETAIL/DETAILFLAGOFF.json
-*** Step 2: Processing JSON files -  (1 components) ***
+[>] Loading JSON file .//magic-metadata/OdometerFlagOffDetail/DETAILFLAGOFF.json
+[>] Loading JSON file .//magic-metadata/OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.json
+*** Step 2: Processing JSON files -  (2 components) ***
 [>] Processing JSON file for component DETAILFLAGOFF
-*** Step 3: generate components. (1 components) ***
+[>] Processing JSON file for component CriteriaDetails
+*** Step 3: generate components. (2 components) ***
 [>] generate component DETAILFLAGOFF
+[>] generate component CriteriaDetails
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/OdometerReading/DETAIL/DETAILFLAGOFF.mg.controls.g.ts (2066 bytes)
-[36mUPDATE[39m src/app/magic/OdometerReading/DETAIL/DETAILFLAGOFF.component.ts (931 bytes)
-[36mUPDATE[39m src/app/magic/OdometerReading/DETAIL/DETAILFLAGOFF.component.html (13834 bytes)
+[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/DETAILFLAGOFF.mg.controls.g.ts (2066 bytes)
+[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/DETAILFLAGOFF.component.ts (2259 bytes)
+[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/DETAILFLAGOFF.component.html (13834 bytes)
+[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.mg.controls.g.ts (1603 bytes)
+[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.component.ts (2307 bytes)
+[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.component.html (8557 bytes)
 
 
 
-Generation warnings/errors:

@@ -454,10 +454,14 @@ import { OdometerReadingEntry as OdometerReading_OdometerReadingEntry } from './
 import { DETAILFLAGON as OdometerReading_DETAIL_DETAILFLAGON } from './OdometerReading/DETAIL/DETAILFLAGON.component';
 import { DETAILFLAGOFF as OdometerReading_DETAIL_DETAILFLAGOFF } from './OdometerReading/DETAIL/DETAILFLAGOFF.component';
 import { CriteriaDetails as OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails } from './OdometerReading/DETAIL/CriteriaDetails/CriteriaDetails.component';
+import { DETAILFLAGOFF as OdometerFlagOffDetail_DETAILFLAGOFF } from './OdometerFlagOffDetail/DETAILFLAGOFF.component';
+import { CriteriaDetails as OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails } from './OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               OdometerReading_OdometerReadingEntry:OdometerReading_OdometerReadingEntry,
+export const magicGenCmpsHash = {               OdometerFlagOffDetail_DETAILFLAGOFF:OdometerFlagOffDetail_DETAILFLAGOFF,
+              OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails:OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails,
+                      OdometerReading_OdometerReadingEntry:OdometerReading_OdometerReadingEntry,
               OdometerReading_DETAIL_DETAILFLAGON:OdometerReading_DETAIL_DETAILFLAGON,
               OdometerReading_DETAIL_DETAILFLAGOFF:OdometerReading_DETAIL_DETAILFLAGOFF,
               OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails:OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails,
@@ -917,6 +921,8 @@ export const magicGenCmpsHash = {               OdometerReading_OdometerReadingE
 };
 
 export const magicGenComponents = [
+	OdometerFlagOffDetail_DETAILFLAGOFF,
+	OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails,
 	OdometerReading_OdometerReadingEntry,
 	OdometerReading_DETAIL_DETAILFLAGON,
 	OdometerReading_DETAIL_DETAILFLAGOFF,

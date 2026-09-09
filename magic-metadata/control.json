@@ -1,27 +1,20 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"FLAGON",
-		"tooltip":	{
-			"value":	null,
-			"has_exp":	true
-		},
-		"modifiable":	{
-			"value":	true,
-			"has_exp":	true
-		},
-		"text":	"",
-		"attribute":	"B",
+		"id":	"READINGFROM",
+		"mgformat":	"mgFormat",
+		"format":	"###",
+		"attribute":	"N",
 		"is_table_child":	true,
 		"web_style":	2
 	},
 	"coordinates":	{
-		"x":	538,
-		"y":	93,
-		"width":	15,
-		"height":	15
+		"x":	303,
+		"y":	92,
+		"width":	120,
+		"height":	20
 	},
 	"hint":	null,
-	"controlType":	"C",
+	"controlType":	"T",
 	"children":	null
 }

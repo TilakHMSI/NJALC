@@ -16,6 +16,7 @@ export enum MgControlName {
         Label2 = "Label2",
         Label3 = "Label3",
         Label4 = "Label4",
+        DETAIL2 = "DETAIL2",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

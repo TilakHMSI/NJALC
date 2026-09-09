@@ -13,6 +13,7 @@ export enum MgControlName {
         FrameNo = "FrameNo",
         FLAGOFF = "FLAGOFF",
         DETAIL = "DETAIL",
+        DETAIL2 = "DETAIL2",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
