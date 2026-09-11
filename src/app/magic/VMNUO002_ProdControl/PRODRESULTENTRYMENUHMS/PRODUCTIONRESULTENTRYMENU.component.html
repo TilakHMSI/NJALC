@@ -97,7 +97,7 @@
                                 {{mg.getValue(mgc.ODOMETER_READING)}}
                             </button>
                         </div>
-                        <div class="form-group" >
+                        <div class="form-group" *ngIf="mg.getVisible(mgc.ODOMETER_REPORT)==='visible'">
                             <button class="btn btn-primary font-weight-bold mb-3 btn-wdth-75"
                                 [magic]="mgc.ODOMETER_REPORT">
                                 {{mg.getValue(mgc.ODOMETER_REPORT)}}
