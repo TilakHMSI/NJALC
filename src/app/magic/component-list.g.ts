@@ -456,10 +456,16 @@ import { DETAILFLAGOFF as OdometerReading_DETAIL_DETAILFLAGOFF } from './Odomete
 import { CriteriaDetails as OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails } from './OdometerReading/DETAIL/CriteriaDetails/CriteriaDetails.component';
 import { DETAILFLAGOFF as OdometerFlagOffDetail_DETAILFLAGOFF } from './OdometerFlagOffDetail/DETAILFLAGOFF.component';
 import { CriteriaDetails as OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails } from './OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.component';
+import { FrameReport as OdometerReport_FrameReport } from './OdometerReport/FrameReport.component';
+import { DETAIL as OdometerReport_DETAIL_DETAIL } from './OdometerReport/DETAIL/DETAIL.component';
+import { CriteriaDetails as OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails } from './OdometerReport/DETAIL/CriteriaDetails/CriteriaDetails.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               OdometerFlagOffDetail_DETAILFLAGOFF:OdometerFlagOffDetail_DETAILFLAGOFF,
+export const magicGenCmpsHash = {               OdometerReport_FrameReport:OdometerReport_FrameReport,
+              OdometerReport_DETAIL_DETAIL:OdometerReport_DETAIL_DETAIL,
+              OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails:OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails,
+                      OdometerFlagOffDetail_DETAILFLAGOFF:OdometerFlagOffDetail_DETAILFLAGOFF,
               OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails:OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails,
                       OdometerReading_OdometerReadingEntry:OdometerReading_OdometerReadingEntry,
               OdometerReading_DETAIL_DETAILFLAGON:OdometerReading_DETAIL_DETAILFLAGON,
@@ -921,6 +927,9 @@ export const magicGenCmpsHash = {               OdometerFlagOffDetail_DETAILFLAG
 };
 
 export const magicGenComponents = [
+	OdometerReport_FrameReport,
+	OdometerReport_DETAIL_DETAIL,
+	OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails,
 	OdometerFlagOffDetail_DETAILFLAGOFF,
 	OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails,
 	OdometerReading_OdometerReadingEntry,

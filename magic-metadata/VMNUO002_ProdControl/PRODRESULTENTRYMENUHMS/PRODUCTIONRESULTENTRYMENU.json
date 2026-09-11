@@ -472,6 +472,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"ODOMETER_CATEGORY_MASTER",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"format":	"ODOMETER CATEGORY MASTER",
 				"common_line_id":	"line497"
 			},
@@ -489,6 +493,10 @@
 			"style":	null,
 			"props":	{
 				"id":	"ODOMETER_FRAME_CAPTURE",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"format":	"ODOMETER FRAME CAPTURE",
 				"common_line_id":	"line536"
 			},
@@ -516,6 +524,23 @@
 			"coordinates":	{
 				"x":	168,
 				"y":	575,
+				"width":	225,
+				"height":	33
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"ODOMETER_REPORT",
+				"format":	"ODOMETER REPORT",
+				"common_line_id":	"line593"
+			},
+			"coordinates":	{
+				"x":	413,
+				"y":	593,
 				"width":	225,
 				"height":	33
 			},
