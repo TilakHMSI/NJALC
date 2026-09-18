@@ -7,6 +7,8 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     CriteriaDetails = "CriteriaDetails",
+        Label36 = "Label36",
+        pFrameNo = "pFrameNo",
         btnexit = "btnexit",
         btnUpdate = "btnUpdate",
         Table1 = "Table1",
@@ -18,7 +20,6 @@ export enum MgControlName {
         OdoCriteriaMaster_REMARKS = "OdoCriteriaMaster_REMARKS",
         Column4 = "Column4",
         READINGFROM = "READINGFROM",
-        pFrameNo = "pFrameNo",
 }
 export enum MgCustomProperties {}
 export var
@@ -33,7 +34,7 @@ export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
     get pFrameNo(): FormControl {
-        return this.getTableChildFormControl(MgControlName.pFrameNo);
+        return this.fg.controls[MgControlName.pFrameNo] as FormControl;
     }
 
     get SHIPPINGCRITERIA(): FormControl {

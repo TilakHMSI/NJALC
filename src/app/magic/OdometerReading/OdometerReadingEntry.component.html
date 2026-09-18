@@ -6,7 +6,7 @@
                     <h3><label class="lbl-sm" class="lable_overflow mb-0">
                             {{mg.getText(mgc.Label1)}}
                         </label></h3>
-                    <button type="button" [magic]="mgc.btnexit"
+                    <button type="button" [magic]="mgc.btn_Close"
                         class="btn btn-danger btn-sm font-weight-bold ml-2">Back</button>
                 </div>
             </div>
@@ -15,57 +15,62 @@
             <div class="form-group row" style="margin: 0rem;">
                 <div class="col-lg-12">
                     <div class="form-group row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-4">
+
+                        </div>
+                        <div class="col-lg-4 border-yellow rounded p-2">
                             <div class="form-group">
-                                <input class="form-control" [formControlName]="mgc.FrameNo" [magic]="mgc.FrameNo"
-                                    placeholder="Search by Frame No" mgFormat />
-                                <mgError [magic]=mgc.FrameNo> </mgError>
+                                <label class="lbl-header-tbl">
+                                    FRAME NO.
+                                </label>
+                                <input class="form-control-ent" [formControlName]="mgc.vFRAMENO" [magic]="mgc.vFRAMENO"
+                                    placeholder="Scan Frame" mgFormat />
+                                <mgError [magic]=mgc.vFRAMENO> </mgError>
                             </div>
                         </div>
-                        <!-- <div class="col-lg-2 border-yellow rounded p-2">
-                                <label class="lbl-header-tbl">
-                                    MTO CODE
-                                </label>
-                                <label class="lbl-header-tbl-data" [magic]="mgc.Label2">
-                                    {{mg.getText(mgc.Label2)}}
-                                </label>
+                        <div class="col-lg-4">
+
                         </div>
-                        <div class="col-lg-2 border-yellow rounded p-2">
-                                <label class="lbl-header-tbl">
-                                    COLOR CODE
-                                </label>
-                                <label class="lbl-header-tbl-data" [magic]="mgc.Label3">
-                                    {{mg.getText(mgc.Label3)}}
-                                </label>
+                        <div class="col-lg-2">
+
                         </div>
-                        <div class="col-lg-2 border-yellow rounded p-2">
-                                <label class="lbl-header-tbl">
-                                    PLANT
-                                </label>
-                                <label class="lbl-header-tbl-data" [magic]="mgc.Label4">
-                                    {{mg.getText(mgc.Label4)}}
-                                </label>
-                        </div> -->
-                        <div class="col-lg-3">
-                            <div class="form-group">
-                                <input class="mt-4" type="checkbox" [formControlName]="mgc.FLAGOFF"
-                                    [magic]="mgc.FLAGOFF" id="FLAGOFF" />
-                                <label for="FLAGOFF">
-                                    CHECK FLAG OFF FRAMES
-                                </label>
-                            </div>
+                        <div class="col-lg-3 border-yellow rounded p-2">
+                            <label class="lbl-header-tbl">
+                                MTO CODE
+                            </label>
+                            <label class="lbl-header-tbl-data" [magic]="mgc.Label2">
+                                {{mg.getText(mgc.Label2)}}
+                            </label>
                         </div>
+                        <div class="col-lg-3 border-yellow rounded p-2">
+                            <label class="lbl-header-tbl">
+                                COLOR CODE
+                            </label>
+                            <label class="lbl-header-tbl-data" [magic]="mgc.Label3">
+                                {{mg.getText(mgc.Label3)}}
+                            </label>
+                        </div>
+                        <div class="col-lg-3 border-yellow rounded p-2">
+                            <label class="lbl-header-tbl">
+                                PLANT
+                            </label>
+                            <label class="lbl-header-tbl-data" [magic]="mgc.Label4">
+                                {{mg.getText(mgc.Label4)}}
+                            </label>
+                        </div>
+                        <div class="col-lg-2">
+
+                        </div>
+
+                        <div class="col-lg-12 border-yellow rounded p-2" *ngIf="mg.getVisible(mgc.Label6)==='visible'">
+                            <label class="h3 text-danger" [magic]="mgc.Label6">
+                                {{mg.getText(mgc.Label6)}}
+                            </label>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-12" *ngIf="mg.getVisible(mgc.DETAIL)==='visible'">
-            <magic-subform [magic]="mgc.DETAIL">
-            </magic-subform>
-        </div>
-        <div class="col-lg-12" *ngIf="mg.getVisible(mgc.DETAIL2)==='visible'">
-            <magic-subform [magic]="mgc.DETAIL2">
-            </magic-subform>
         </div>
     </div>
 </div>

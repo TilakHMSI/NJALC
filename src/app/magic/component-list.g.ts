@@ -451,25 +451,23 @@ import { FrameCapture as OdometerFrameCapture_FrameCapture } from './OdometerFra
 import { DETAIL as OdometerFrameCapture_DETAIL_DETAIL } from './OdometerFrameCapture/DETAIL/DETAIL.component';
 import { CriteriaDetails as OdometerFrameCapture_DETAIL_CriteriaDetails_CriteriaDetails } from './OdometerFrameCapture/DETAIL/CriteriaDetails/CriteriaDetails.component';
 import { OdometerReadingEntry as OdometerReading_OdometerReadingEntry } from './OdometerReading/OdometerReadingEntry.component';
-import { DETAILFLAGON as OdometerReading_DETAIL_DETAILFLAGON } from './OdometerReading/DETAIL/DETAILFLAGON.component';
-import { DETAILFLAGOFF as OdometerReading_DETAIL_DETAILFLAGOFF } from './OdometerReading/DETAIL/DETAILFLAGOFF.component';
-import { CriteriaDetails as OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails } from './OdometerReading/DETAIL/CriteriaDetails/CriteriaDetails.component';
+import { CriteriaDetails as OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails } from './OdometerReading/CriteriaDetails/CriteriaDetails.component';
 import { DETAILFLAGOFF as OdometerFlagOffDetail_DETAILFLAGOFF } from './OdometerFlagOffDetail/DETAILFLAGOFF.component';
 import { CriteriaDetails as OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails } from './OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.component';
 import { FrameReport as OdometerReport_FrameReport } from './OdometerReport/FrameReport.component';
 import { DETAIL as OdometerReport_DETAIL_DETAIL } from './OdometerReport/DETAIL/DETAIL.component';
 import { CriteriaDetails as OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails } from './OdometerReport/DETAIL/CriteriaDetails/CriteriaDetails.component';
+import { CriteriaDetails as OdometerReading_CriteriaDetails_CriteriaDetails } from './OdometerReading/CriteriaDetails/CriteriaDetails.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               OdometerReport_FrameReport:OdometerReport_FrameReport,
+export const magicGenCmpsHash = {               OdometerReading_CriteriaDetails_CriteriaDetails:OdometerReading_CriteriaDetails_CriteriaDetails,
+                      OdometerReport_FrameReport:OdometerReport_FrameReport,
               OdometerReport_DETAIL_DETAIL:OdometerReport_DETAIL_DETAIL,
               OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails:OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails,
                       OdometerFlagOffDetail_DETAILFLAGOFF:OdometerFlagOffDetail_DETAILFLAGOFF,
               OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails:OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails,
                       OdometerReading_OdometerReadingEntry:OdometerReading_OdometerReadingEntry,
-              OdometerReading_DETAIL_DETAILFLAGON:OdometerReading_DETAIL_DETAILFLAGON,
-              OdometerReading_DETAIL_DETAILFLAGOFF:OdometerReading_DETAIL_DETAILFLAGOFF,
               OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails:OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails,
                       OdometerFrameCapture_FrameCapture:OdometerFrameCapture_FrameCapture,
               OdometerFrameCapture_DETAIL_DETAIL:OdometerFrameCapture_DETAIL_DETAIL,
@@ -927,14 +925,13 @@ export const magicGenCmpsHash = {               OdometerReport_FrameReport:Odome
 };
 
 export const magicGenComponents = [
+	OdometerReading_CriteriaDetails_CriteriaDetails,
 	OdometerReport_FrameReport,
 	OdometerReport_DETAIL_DETAIL,
 	OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails,
 	OdometerFlagOffDetail_DETAILFLAGOFF,
 	OdometerFlagOffDetail_CriteriaDetails_CriteriaDetails,
 	OdometerReading_OdometerReadingEntry,
-	OdometerReading_DETAIL_DETAILFLAGON,
-	OdometerReading_DETAIL_DETAILFLAGOFF,
 	OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails,
 	OdometerFrameCapture_FrameCapture,
 	OdometerFrameCapture_DETAIL_DETAIL,

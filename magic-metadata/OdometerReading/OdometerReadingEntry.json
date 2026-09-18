@@ -10,8 +10,8 @@
 	"coordinates":	{
 		"x":	0,
 		"y":	0,
-		"width":	560,
-		"height":	481
+		"width":	588,
+		"height":	407
 	},
 	"hint":	null,
 	"controlType":	null,
@@ -21,14 +21,14 @@
 			"props":	{
 				"id":	"Label1",
 				"text":	{
-					"value":	"PGM=ODOMETER",
+					"value":	"PGM=ODOMETER READING",
 					"has_exp":	true
 				},
-				"common_line_id":	"line2"
+				"common_line_id":	"line9"
 			},
 			"coordinates":	{
-				"x":	476,
-				"y":	2,
+				"x":	503,
+				"y":	9,
 				"width":	70,
 				"height":	13
 			},
@@ -39,13 +39,13 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"btnexit",
+				"id":	"btn_Close",
 				"format":	"Back",
-				"common_line_id":	"line18"
+				"common_line_id":	"line25"
 			},
 			"coordinates":	{
-				"x":	511,
-				"y":	18,
+				"x":	538,
+				"y":	25,
 				"width":	41,
 				"height":	22
 			},
@@ -56,13 +56,13 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label6",
-				"text":	"SEARCH",
-				"common_line_id":	"line42"
+				"id":	"Label5",
+				"text":	"FRAMENO",
+				"common_line_id":	"line49"
 			},
 			"coordinates":	{
-				"x":	75,
-				"y":	42,
+				"x":	70,
+				"y":	49,
 				"width":	61,
 				"height":	22
 			},
@@ -73,16 +73,16 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"FrameNo",
+				"id":	"vFRAMENO",
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXXX",
 				"attribute":	"A",
-				"common_line_id":	"line42"
+				"common_line_id":	"line49"
 			},
 			"coordinates":	{
-				"x":	142,
-				"y":	42,
-				"width":	121,
+				"x":	159,
+				"y":	49,
+				"width":	159,
 				"height":	22
 			},
 			"hint":	null,
@@ -92,35 +92,61 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"FLAGOFF",
-				"text":	"FLAG OFF",
-				"attribute":	"B",
-				"common_line_id":	"line42"
+				"id":	"Label2",
+				"text":	{
+					"value":	"CODE",
+					"has_exp":	true
+				},
+				"common_line_id":	"line84"
 			},
 			"coordinates":	{
-				"x":	420,
-				"y":	42,
-				"width":	77,
-				"height":	22
+				"x":	76,
+				"y":	84,
+				"width":	55,
+				"height":	23
 			},
 			"hint":	null,
-			"controlType":	"C",
+			"controlType":	"L",
 			"children":	null
 		},
 		{
 			"style":	null,
 			"props":	{
-				"id":	"DETAIL",
-				"common_line_id":	"line80"
+				"id":	"Label3",
+				"text":	{
+					"value":	"COLOR",
+					"has_exp":	true
+				},
+				"common_line_id":	"line84"
 			},
 			"coordinates":	{
-				"x":	12,
-				"y":	80,
-				"width":	534,
-				"height":	398
+				"x":	137,
+				"y":	84,
+				"width":	55,
+				"height":	23
 			},
 			"hint":	null,
-			"controlType":	"F",
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	{
+					"value":	"PLANT",
+					"has_exp":	true
+				},
+				"common_line_id":	"line84"
+			},
+			"coordinates":	{
+				"x":	214,
+				"y":	84,
+				"width":	55,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"L",
 			"children":	null
 		}
 	]

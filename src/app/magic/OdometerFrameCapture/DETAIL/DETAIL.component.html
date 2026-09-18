@@ -138,6 +138,13 @@
                                 <button [magic]="mgc.btnDetails" class="btn-tbl" [rowId]="row.rowId" *ngIf="mg.getVisible(mgc.btnDetails, row.rowId)">
                                     <i class="icon-xl fas fa-arrow-right text-primary" aria-hidden="true"></i>
                                 </button>
+                                <label class="label label-lg font-weight-bold label-inline"
+                                [title]="mg.getTitle(mgc.Label2, row.rowId)"
+                                    *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.Label2" [rowId]="row.rowId"
+                                    [ngClass]="{'label-light-success':mg.getText('Label2', row.rowId) == 'PASS',
+                                                'label-light-danger':mg.getText('Label2', row.rowId) == 'FAILED'}">
+                                    {{mg.getText(mgc.Label2, row.rowId)}}
+                                </label>
                             </div>
                         </mat-cell>
                     </ng-container>

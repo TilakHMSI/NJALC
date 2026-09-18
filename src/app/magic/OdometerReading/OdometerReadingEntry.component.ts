@@ -13,6 +13,7 @@ import { MagicModalInterface } from "@magic-xpa/angular";
     selector: 'mga-OdometerReading_OdometerReadingEntry',
     providers: [...magicProviders],
     standalone: false,
+    styleUrls: ['./OdometerReadingEntry.component.css'],
     templateUrl: './OdometerReadingEntry.component.html'
 })
 export class OdometerReadingEntry extends TaskBaseMagicComponent implements MagicModalInterface {

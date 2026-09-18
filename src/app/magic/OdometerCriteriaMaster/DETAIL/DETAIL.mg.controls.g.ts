@@ -18,7 +18,7 @@ export enum MgControlName {
         Column4 = "Column4",
         REMARKS = "REMARKS",
         Column17 = "Column17",
-        RANGEFROM = "RANGEFROM",
+        Exclude = "Exclude",
         Column19 = "Column19",
         RANGETO = "RANGETO",
         Column12 = "Column12",
@@ -58,8 +58,8 @@ export class MgFormControlsAccessor {
         return this.getTableChildFormControl(MgControlName.REMARKS);
     }
 
-    get RANGEFROM(): FormControl {
-        return this.getTableChildFormControl(MgControlName.RANGEFROM);
+    get Exclude(): FormControl {
+        return this.getTableChildFormControl(MgControlName.Exclude);
     }
 
     get RANGETO(): FormControl {

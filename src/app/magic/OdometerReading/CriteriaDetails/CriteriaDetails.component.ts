@@ -11,7 +11,7 @@ import { BaseMatTableMagicComponent, matMagicProviders } from "@magic-xpa/angula
 import { MagicModalInterface } from "@magic-xpa/angular";
 
 @Component({
-    selector: 'mga-OdometerReading_DETAIL_CriteriaDetails_CriteriaDetails',
+    selector: 'mga-OdometerReading_CriteriaDetails_CriteriaDetails',
     providers: [...matMagicProviders],
     standalone: false,
     styleUrls: ['./CriteriaDetails.component.css'],

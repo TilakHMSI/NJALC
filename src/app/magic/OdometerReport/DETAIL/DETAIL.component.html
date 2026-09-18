@@ -1,5 +1,5 @@
 <div novalidate [formGroup]="screenFormGroup">
-    <div  [magic]="mgc.DETAIL">
+    <div [magic]="mgc.DETAIL">
         <div class="m-tablewrapper pl-0 pr-0">
             <div class="example-container mat-elevation-z8 Table1TableContainerProps">
                 <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
@@ -34,12 +34,12 @@
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.MTOCODE, row.rowId)
                                             }}
-                                        
-                                        <label class="text-danger h3" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.JPMODEL"
-                                            [rowId]="row.rowId">
-                                            {{mg.getValue(mgc.JPMODEL, row.rowId)
-                                            }}
-                                        </label></label>
+
+                                            <label class="text-danger h3" *ngIf="!mg.isRowInRowEditing(row)"
+                                                [magic]="mgc.JPMODEL" [rowId]="row.rowId">
+                                                {{mg.getValue(mgc.JPMODEL, row.rowId)
+                                                }}
+                                            </label></label>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@
                                     </label>
                                 </div>
                             </div>
-                            
+
                         </mat-cell>
                     </ng-container>
                     <ng-container [magic]="mgc.Column36" [matColumnDef]="mgc.Column36">
@@ -145,8 +145,8 @@
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
-                                    <input class="mr-5"  type="checkbox" id="FLAGON_{{row.rowId}}" [formControlName]="mgc.FLAGON"
-                                        [magic]="mgc.FLAGON" [rowId]="row.rowId" />
+                                    <input class="mr-5" type="checkbox" id="FLAGON_{{row.rowId}}"
+                                        [formControlName]="mgc.FLAGON" [magic]="mgc.FLAGON" [rowId]="row.rowId" />
                                 </div>
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <input type="checkbox" id="FLAGOFF_{{row.rowId}}" [formControlName]="mgc.FLAGOFF"
@@ -181,9 +181,17 @@
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
-                                <button [magic]="mgc.btnDetails" class="btn-tbl" [rowId]="row.rowId" *ngIf="mg.getVisible(mgc.btnDetails, row.rowId)">
+                                <button [magic]="mgc.btnDetails" class="btn-tbl" [rowId]="row.rowId"
+                                    *ngIf="mg.getVisible(mgc.btnDetails, row.rowId)">
                                     <i class="icon-xl fas fa-arrow-right text-primary" aria-hidden="true"></i>
                                 </button>
+                                <label class="label label-lg font-weight-bold label-inline"
+                                [title]="mg.getTitle(mgc.Label2, row.rowId)"
+                                    *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.Label2" [rowId]="row.rowId"
+                                    [ngClass]="{'label-light-success':mg.getText('Label2', row.rowId) == 'PASS',
+                                                'label-light-danger':mg.getText('Label2', row.rowId) == 'FAILED'}">
+                                    {{mg.getText(mgc.Label2, row.rowId)}}
+                                </label>
                             </div>
                         </mat-cell>
                     </ng-container>

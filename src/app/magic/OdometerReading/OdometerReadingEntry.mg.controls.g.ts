@@ -8,23 +8,20 @@ import {
 export enum MgControlName {
     OdometerReadingEntry = "OdometerReadingEntry",
         Label1 = "Label1",
-        btnexit = "btnexit",
+        btn_Close = "btn_Close",
+        Label5 = "Label5",
+        vFRAMENO = "vFRAMENO",
+        Label2 = "Label2",
+        Label3 = "Label3",
+        Label4 = "Label4",
         Label6 = "Label6",
-        FrameNo = "FrameNo",
-        FLAGOFF = "FLAGOFF",
-        DETAIL = "DETAIL",
-        DETAIL2 = "DETAIL2",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get FrameNo(): FormControl {
-        return this.fg.controls[MgControlName.FrameNo] as FormControl;
-    }
-
-    get FLAGOFF(): FormControl {
-        return this.fg.controls[MgControlName.FLAGOFF] as FormControl;
+    get vFRAMENO(): FormControl {
+        return this.fg.controls[MgControlName.vFRAMENO] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

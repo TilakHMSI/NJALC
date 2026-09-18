@@ -25,6 +25,7 @@ export enum MgControlName {
         JPMODEL = "JPMODEL",
         Column29 = "Column29",
         PLANT = "PLANT",
+        Label2 = "Label2",
 }
 export enum MgCustomProperties {}
 export var

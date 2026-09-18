@@ -27,22 +27,22 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/OdometerFlagOffDetail/DETAILFLAGOFF.json
-[>] Loading JSON file .//magic-metadata/OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.json
+[>] Loading JSON file .//magic-metadata/OdometerReading/OdometerReadingEntry.json
+[>] Loading JSON file .//magic-metadata/OdometerReading/CriteriaDetails/CriteriaDetails.json
 *** Step 2: Processing JSON files -  (2 components) ***
-[>] Processing JSON file for component DETAILFLAGOFF
+[>] Processing JSON file for component OdometerReadingEntry
 [>] Processing JSON file for component CriteriaDetails
 *** Step 3: generate components. (2 components) ***
-[>] generate component DETAILFLAGOFF
+[>] generate component OdometerReadingEntry
 [>] generate component CriteriaDetails
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/DETAILFLAGOFF.mg.controls.g.ts (2066 bytes)
-[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/DETAILFLAGOFF.component.ts (2259 bytes)
-[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/DETAILFLAGOFF.component.html (13834 bytes)
-[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.mg.controls.g.ts (1603 bytes)
-[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.component.ts (2307 bytes)
-[36mUPDATE[39m src/app/magic/OdometerFlagOffDetail/CriteriaDetails/CriteriaDetails.component.html (8557 bytes)
+[36mUPDATE[39m src/app/magic/OdometerReading/OdometerReadingEntry.mg.controls.g.ts (890 bytes)
+[36mUPDATE[39m src/app/magic/OdometerReading/OdometerReadingEntry.component.ts (2188 bytes)
+[36mUPDATE[39m src/app/magic/OdometerReading/OdometerReadingEntry.component.html (1669 bytes)
+[36mUPDATE[39m src/app/magic/OdometerReading/CriteriaDetails/CriteriaDetails.mg.controls.g.ts (1636 bytes)
+[36mUPDATE[39m src/app/magic/OdometerReading/CriteriaDetails/CriteriaDetails.component.ts (2301 bytes)
+[36mUPDATE[39m src/app/magic/OdometerReading/CriteriaDetails/CriteriaDetails.component.html (8814 bytes)
 
 
 
