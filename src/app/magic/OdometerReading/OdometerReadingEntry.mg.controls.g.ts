@@ -15,6 +15,8 @@ export enum MgControlName {
         Label3 = "Label3",
         Label4 = "Label4",
         Label6 = "Label6",
+        Label7 = "Label7",
+        vFRAME_SF = "vFRAME_SF",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
@@ -22,6 +24,10 @@ export class MgFormControlsAccessor {
 
     get vFRAMENO(): FormControl {
         return this.fg.controls[MgControlName.vFRAMENO] as FormControl;
+    }
+
+    get vFRAME_SF(): FormControl {
+        return this.fg.controls[MgControlName.vFRAME_SF] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

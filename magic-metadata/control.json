@@ -1,61 +1,19 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Column27",
-		"is_table_child":	true,
-		"web_style":	2
+		"id":	"vFRAME_SF",
+		"modifiable":	false,
+		"mgformat":	"mgFormat",
+		"format":	"XXXXXXXXXXXXXXXXXX",
+		"attribute":	"A"
 	},
 	"coordinates":	{
-		"width":	49
+		"x":	155,
+		"y":	220,
+		"width":	176,
+		"height":	24
 	},
 	"hint":	null,
-	"controlType":	"K",
-	"children":	[
-		{
-			"style":	null,
-			"props":	{
-				"id":	"btnDetails",
-				"visible":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"format":	"Details",
-				"is_table_child":	true,
-				"web_style":	2,
-				"row_editing_type":	0,
-				"common_line_id":	"line36"
-			},
-			"coordinates":	{
-				"x":	699,
-				"y":	36,
-				"width":	41,
-				"height":	22
-			},
-			"hint":	null,
-			"controlType":	"B",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"Label2",
-				"text":	{
-					"value":	"Text",
-					"has_exp":	true
-				},
-				"is_table_child":	true,
-				"web_style":	2,
-				"common_line_id":	"line62"
-			},
-			"coordinates":	{
-				"x":	699,
-				"y":	62,
-				"width":	23,
-				"height":	15
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		}
-	]
+	"controlType":	"T",
+	"children":	null
 }
