@@ -26,6 +26,7 @@ export enum MgControlName {
         Column29 = "Column29",
         PLANT = "PLANT",
         Label2 = "Label2",
+        btnPass = "btnPass",
 }
 export enum MgCustomProperties {}
 export var

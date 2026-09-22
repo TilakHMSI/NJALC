@@ -16,7 +16,6 @@
                 <div class="col-lg-12">
                     <div class="form-group row">
                         <div class="col-lg-4">
-
                         </div>
                         <div class="col-lg-4 border-yellow rounded p-2">
                             <div class="form-group">
@@ -62,26 +61,38 @@
 
                         </div>
 
-                        <div class="col-lg-12 mt-10" style="width: 100%; text-align: center;" *ngIf="mg.getVisible(mgc.vFRAME_SF)==='visible'">
+                        <div class="col-lg-12 mt-5" style="width: 100%; text-align: center;"
+                            *ngIf="mg.getVisible(mgc.vFRAME_SF)==='visible'">
                             <label class="h1 text-danger" [magic]="mgc.vFRAME_SF">
                                 {{mg.getValue(mgc.vFRAME_SF) }}
                             </label>
                         </div>
 
-                        <div class="col-lg-12 border-yellow rounded p-2 mt-5" *ngIf="mg.getVisible(mgc.Label6)==='visible'">
+                        <div class="col-lg-12 border-yellow rounded p-2 mt-3" style="width: 100%; text-align: center;"
+                            *ngIf="mg.getVisible(mgc.Label6)==='visible'">
                             <label class="h3 text-danger" [magic]="mgc.Label6">
                                 {{mg.getText(mgc.Label6)}}
                             </label>
                         </div>
-                        
-                        <div class="col-lg-12 border-yellow rounded p-2 mt-5" *ngIf="mg.getVisible(mgc.Label7)==='visible'">
+
+                        <div class="col-lg-12 border-yellow rounded p-2 mt-3" style="width: 100%; text-align: center;"
+                            *ngIf="mg.getVisible(mgc.Label7)==='visible'">
                             <label class="h3 text-danger" [magic]="mgc.Label7">
                                 {{mg.getText(mgc.Label7)}}
                             </label>
                         </div>
 
+
+
                     </div>
                 </div>
+
+                <div class="col-lg-12">
+                    <magic-subform [magic]="mgc.Sub1" [style.visibility]="mg.getVisible(mgc.Sub1)">
+                    </magic-subform>
+
+                </div>
+
             </div>
         </div>
     </div>

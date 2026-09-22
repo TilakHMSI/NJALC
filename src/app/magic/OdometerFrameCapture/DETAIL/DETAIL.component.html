@@ -63,12 +63,12 @@
                                         <label *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.MTOCODE"
                                             [rowId]="row.rowId">
                                             {{mg.getValue(mgc.MTOCODE, row.rowId)
-                                            }} 
-                                        <label class="text-danger h3" *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.JPMODEL"
-                                            [rowId]="row.rowId">
-                                            {{mg.getValue(mgc.JPMODEL, row.rowId)
                                             }}
-                                        </label>
+                                            <label class="text-danger h3" *ngIf="!mg.isRowInRowEditing(row)"
+                                                [magic]="mgc.JPMODEL" [rowId]="row.rowId">
+                                                {{mg.getValue(mgc.JPMODEL, row.rowId)
+                                                }}
+                                            </label>
                                         </label>
                                     </div>
                                 </div>
@@ -135,13 +135,17 @@
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
-                                <button [magic]="mgc.btnDetails" class="btn-tbl" [rowId]="row.rowId" *ngIf="mg.getVisible(mgc.btnDetails, row.rowId)">
+                                <button [magic]="mgc.btnDetails" class="btn-tbl" [rowId]="row.rowId"
+                                    *ngIf="mg.getVisible(mgc.btnDetails, row.rowId) === 'visible'">
                                     <i class="icon-xl fas fa-arrow-right text-primary" aria-hidden="true"></i>
                                 </button>
+                                <button [magic]="mgc.btnPass" [rowId]="row.rowId" class="btn btn-primary btn-sm" 
+                                    *ngIf="mg.getVisible(mgc.btnPass, row.rowId) === 'visible'">
+                                    Pass
+                                </button>
                                 <label class="label label-lg font-weight-bold label-inline"
-                                [title]="mg.getTitle(mgc.Label2, row.rowId)"
-                                    *ngIf="!mg.isRowInRowEditing(row)" [magic]="mgc.Label2" [rowId]="row.rowId"
-                                    [ngClass]="{'label-light-success':mg.getText('Label2', row.rowId) == 'PASS',
+                                    [title]="mg.getTitle(mgc.Label2, row.rowId)" *ngIf="!mg.isRowInRowEditing(row)"
+                                    [magic]="mgc.Label2" [rowId]="row.rowId" [ngClass]="{'label-light-success':mg.getText('Label2', row.rowId) == 'PASS',
                                                 'label-light-danger':mg.getText('Label2', row.rowId) == 'FAILED'}">
                                     {{mg.getText(mgc.Label2, row.rowId)}}
                                 </label>

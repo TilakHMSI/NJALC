@@ -355,6 +355,56 @@
 							"hint":	null,
 							"controlType":	"B",
 							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"Label2",
+								"tooltip":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"text":	{
+									"value":	"Text",
+									"has_exp":	true
+								},
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line90"
+							},
+							"coordinates":	{
+								"x":	596,
+								"y":	90,
+								"width":	41,
+								"height":	15
+							},
+							"hint":	null,
+							"controlType":	"L",
+							"children":	null
+						},
+						{
+							"style":	null,
+							"props":	{
+								"id":	"btnPass",
+								"visible":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"format":	"Pass",
+								"is_table_child":	true,
+								"web_style":	2,
+								"row_editing_type":	0,
+								"common_line_id":	"line109"
+							},
+							"coordinates":	{
+								"x":	596,
+								"y":	109,
+								"width":	41,
+								"height":	22
+							},
+							"hint":	null,
+							"controlType":	"B",
+							"children":	null
 						}
 					]
 				}

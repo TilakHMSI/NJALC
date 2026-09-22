@@ -17,6 +17,7 @@ export enum MgControlName {
         Label6 = "Label6",
         Label7 = "Label7",
         vFRAME_SF = "vFRAME_SF",
+        Sub1 = "Sub1",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {

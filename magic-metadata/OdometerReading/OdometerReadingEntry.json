@@ -148,6 +148,78 @@
 			"hint":	null,
 			"controlType":	"L",
 			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label6",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	{
+					"value":	"Text",
+					"has_exp":	true
+				},
+				"common_line_id":	"line187"
+			},
+			"coordinates":	{
+				"x":	155,
+				"y":	187,
+				"width":	49,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vFRAME_SF",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
+				"common_line_id":	"line220"
+			},
+			"coordinates":	{
+				"x":	155,
+				"y":	220,
+				"width":	176,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label7",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	{
+					"value":	"Text",
+					"has_exp":	true
+				},
+				"common_line_id":	"line258"
+			},
+			"coordinates":	{
+				"x":	159,
+				"y":	258,
+				"width":	49,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
 		}
 	]
 }

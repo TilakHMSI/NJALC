@@ -458,10 +458,14 @@ import { FrameReport as OdometerReport_FrameReport } from './OdometerReport/Fram
 import { DETAIL as OdometerReport_DETAIL_DETAIL } from './OdometerReport/DETAIL/DETAIL.component';
 import { CriteriaDetails as OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails } from './OdometerReport/DETAIL/CriteriaDetails/CriteriaDetails.component';
 import { CriteriaDetails as OdometerReading_CriteriaDetails_CriteriaDetails } from './OdometerReading/CriteriaDetails/CriteriaDetails.component';
+import { CriteriaDetailsView as OdometerReading_CriteriaDetailsView_CriteriaDetailsView } from './OdometerReading/CriteriaDetailsView/CriteriaDetailsView.component';
+import { UpdateFailedFrame as OdometerFrameCapture_DETAIL_UpdateFailedFrame_UpdateFailedFrame } from './OdometerFrameCapture/DETAIL/UpdateFailedFrame/UpdateFailedFrame.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               OdometerReading_CriteriaDetails_CriteriaDetails:OdometerReading_CriteriaDetails_CriteriaDetails,
+export const magicGenCmpsHash = {               OdometerFrameCapture_DETAIL_UpdateFailedFrame_UpdateFailedFrame:OdometerFrameCapture_DETAIL_UpdateFailedFrame_UpdateFailedFrame,
+                      OdometerReading_CriteriaDetailsView_CriteriaDetailsView:OdometerReading_CriteriaDetailsView_CriteriaDetailsView,
+                      OdometerReading_CriteriaDetails_CriteriaDetails:OdometerReading_CriteriaDetails_CriteriaDetails,
                       OdometerReport_FrameReport:OdometerReport_FrameReport,
               OdometerReport_DETAIL_DETAIL:OdometerReport_DETAIL_DETAIL,
               OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails:OdometerReport_DETAIL_CriteriaDetails_CriteriaDetails,
@@ -925,6 +929,8 @@ export const magicGenCmpsHash = {               OdometerReading_CriteriaDetails_
 };
 
 export const magicGenComponents = [
+	OdometerFrameCapture_DETAIL_UpdateFailedFrame_UpdateFailedFrame,
+	OdometerReading_CriteriaDetailsView_CriteriaDetailsView,
 	OdometerReading_CriteriaDetails_CriteriaDetails,
 	OdometerReport_FrameReport,
 	OdometerReport_DETAIL_DETAIL,
