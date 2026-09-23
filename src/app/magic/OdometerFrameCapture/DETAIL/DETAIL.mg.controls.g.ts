@@ -27,6 +27,7 @@ export enum MgControlName {
         PLANT = "PLANT",
         Label2 = "Label2",
         btnPass = "btnPass",
+        FRAMESEQ = "FRAMESEQ",
 }
 export enum MgCustomProperties {}
 export var
@@ -46,6 +47,10 @@ export class MgFormControlsAccessor {
 
     get FRAMENO(): FormControl {
         return this.getTableChildFormControl(MgControlName.FRAMENO);
+    }
+
+    get FRAMESEQ(): FormControl {
+        return this.getTableChildFormControl(MgControlName.FRAMESEQ);
     }
 
     get INITIATEDATE(): FormControl {

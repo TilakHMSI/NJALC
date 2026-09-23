@@ -1,12 +1,14 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"Column27",
+		"id":	"Column1",
+		"column_title":	"FRAMENO",
+		"sortable":	true,
 		"is_table_child":	true,
 		"web_style":	2
 	},
 	"coordinates":	{
-		"width":	49
+		"width":	98
 	},
 	"hint":	null,
 	"controlType":	"K",
@@ -14,75 +16,44 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"btnDetails",
-				"visible":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"format":	"Details",
+				"id":	"FRAMENO",
+				"modifiable":	false,
+				"mgformat":	"mgFormat",
+				"format":	"XXXXXXXXXXXXXXXXXX",
+				"attribute":	"A",
 				"is_table_child":	true,
 				"web_style":	2,
-				"row_editing_type":	0,
 				"common_line_id":	"line64"
 			},
 			"coordinates":	{
-				"x":	596,
+				"x":	19,
 				"y":	64,
-				"width":	41,
-				"height":	22
+				"width":	50,
+				"height":	20
 			},
 			"hint":	null,
-			"controlType":	"B",
+			"controlType":	"T",
 			"children":	null
 		},
 		{
 			"style":	null,
 			"props":	{
-				"id":	"Label2",
-				"tooltip":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"text":	{
-					"value":	"Text",
-					"has_exp":	true
-				},
+				"id":	"FRAMESEQ",
+				"mgformat":	"mgFormat",
+				"format":	"##############",
+				"attribute":	"N",
 				"is_table_child":	true,
 				"web_style":	2,
-				"common_line_id":	"line90"
+				"common_line_id":	"line88"
 			},
 			"coordinates":	{
-				"x":	596,
-				"y":	90,
-				"width":	41,
-				"height":	15
+				"x":	19,
+				"y":	88,
+				"width":	90,
+				"height":	20
 			},
 			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
-			"style":	null,
-			"props":	{
-				"id":	"btnPass",
-				"visible":	{
-					"value":	null,
-					"has_exp":	true
-				},
-				"format":	"Pass",
-				"is_table_child":	true,
-				"web_style":	2,
-				"row_editing_type":	0,
-				"common_line_id":	"line109"
-			},
-			"coordinates":	{
-				"x":	596,
-				"y":	109,
-				"width":	41,
-				"height":	22
-			},
-			"hint":	null,
-			"controlType":	"B",
+			"controlType":	"T",
 			"children":	null
 		}
 	]
