@@ -460,10 +460,12 @@ import { CriteriaDetails as OdometerReport_DETAIL_CriteriaDetails_CriteriaDetail
 import { CriteriaDetails as OdometerReading_CriteriaDetails_CriteriaDetails } from './OdometerReading/CriteriaDetails/CriteriaDetails.component';
 import { CriteriaDetailsView as OdometerReading_CriteriaDetailsView_CriteriaDetailsView } from './OdometerReading/CriteriaDetailsView/CriteriaDetailsView.component';
 import { UpdateFailedFrame as OdometerFrameCapture_DETAIL_UpdateFailedFrame_UpdateFailedFrame } from './OdometerFrameCapture/DETAIL/UpdateFailedFrame/UpdateFailedFrame.component';
+import { CriteriaDetailsMain as OdometerFrameCapture_CriteriaDetailsMain_CriteriaDetailsMain } from './OdometerFrameCapture/CriteriaDetailsMain/CriteriaDetailsMain.component';
 
 export const title = "";
 
-export const magicGenCmpsHash = {               OdometerFrameCapture_DETAIL_UpdateFailedFrame_UpdateFailedFrame:OdometerFrameCapture_DETAIL_UpdateFailedFrame_UpdateFailedFrame,
+export const magicGenCmpsHash = {               OdometerFrameCapture_CriteriaDetailsMain_CriteriaDetailsMain:OdometerFrameCapture_CriteriaDetailsMain_CriteriaDetailsMain,
+                      OdometerFrameCapture_DETAIL_UpdateFailedFrame_UpdateFailedFrame:OdometerFrameCapture_DETAIL_UpdateFailedFrame_UpdateFailedFrame,
                       OdometerReading_CriteriaDetailsView_CriteriaDetailsView:OdometerReading_CriteriaDetailsView_CriteriaDetailsView,
                       OdometerReading_CriteriaDetails_CriteriaDetails:OdometerReading_CriteriaDetails_CriteriaDetails,
                       OdometerReport_FrameReport:OdometerReport_FrameReport,
@@ -929,6 +931,7 @@ export const magicGenCmpsHash = {               OdometerFrameCapture_DETAIL_Upda
 };
 
 export const magicGenComponents = [
+	OdometerFrameCapture_CriteriaDetailsMain_CriteriaDetailsMain,
 	OdometerFrameCapture_DETAIL_UpdateFailedFrame_UpdateFailedFrame,
 	OdometerReading_CriteriaDetailsView_CriteriaDetailsView,
 	OdometerReading_CriteriaDetails_CriteriaDetails,
