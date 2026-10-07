@@ -1,20 +1,5 @@
 Generation output:
 
- Generate Modules
-
-C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
-copying files
-
-
-
-C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
-generating modules
-[V-CLI] cmd.exe /c ng g @magic-xpa/cli:modules
-   Number of modules to be check for generate: 1
-Nothing to be done.
-
-Generate Components
-
 C:\MagicXPA412\Projects\HondaALC\output\HondaALC>echo off 
 copying files
 
@@ -27,22 +12,19 @@ generating components
    Number of modules to be check for generate: 1
 [>]           ******    Start Web Module name : []    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/OdometerReading/OdometerReadingEntry.json
-[>] Loading JSON file .//magic-metadata/OdometerReading/CriteriaDetails/CriteriaDetails.json
-*** Step 2: Processing JSON files -  (2 components) ***
-[>] Processing JSON file for component OdometerReadingEntry
-[>] Processing JSON file for component CriteriaDetails
-*** Step 3: generate components. (2 components) ***
-[>] generate component OdometerReadingEntry
-[>] generate component CriteriaDetails
+[>] Loading JSON file .//magic-metadata/OdometerFrameCapture/CriteriaDetailsMain/CriteriaDetailsMain.json
+*** Step 2: Processing JSON files -  (1 components) ***
+[>] Processing JSON file for component CriteriaDetailsMain
+*** Step 3: generate components. (1 components) ***
+[>] generate component CriteriaDetailsMain
 [>] Step 4: components-list.
+ Total old components: 462, added components: 1. 
 [>]  ********************************* E N D    GENERATE *********************************
-[36mUPDATE[39m src/app/magic/OdometerReading/OdometerReadingEntry.mg.controls.g.ts (890 bytes)
-[36mUPDATE[39m src/app/magic/OdometerReading/OdometerReadingEntry.component.ts (2188 bytes)
-[36mUPDATE[39m src/app/magic/OdometerReading/OdometerReadingEntry.component.html (1669 bytes)
-[36mUPDATE[39m src/app/magic/OdometerReading/CriteriaDetails/CriteriaDetails.mg.controls.g.ts (1636 bytes)
-[36mUPDATE[39m src/app/magic/OdometerReading/CriteriaDetails/CriteriaDetails.component.ts (2301 bytes)
-[36mUPDATE[39m src/app/magic/OdometerReading/CriteriaDetails/CriteriaDetails.component.html (8814 bytes)
+[32mCREATE[39m src/app/magic/OdometerFrameCapture/CriteriaDetailsMain/CriteriaDetailsMain.mg.controls.g.ts (1552 bytes)
+[32mCREATE[39m src/app/magic/OdometerFrameCapture/CriteriaDetailsMain/CriteriaDetailsMain.component.ts (2374 bytes)
+[32mCREATE[39m src/app/magic/OdometerFrameCapture/CriteriaDetailsMain/CriteriaDetailsMain.component.html (7956 bytes)
+[36mUPDATE[39m src/app/magic/component-list.g.ts (153226 bytes)
 
 
 
+Generation warnings/errors:
