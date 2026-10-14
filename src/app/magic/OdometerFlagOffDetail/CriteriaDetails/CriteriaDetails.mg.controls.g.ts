@@ -19,6 +19,8 @@ export enum MgControlName {
         OdoCriteriaMaster_REMARKS = "OdoCriteriaMaster_REMARKS",
         Column4 = "Column4",
         READINGFROM = "READINGFROM",
+        FLAGERROR = "FLAGERROR",
+        PASSREMARK = "PASSREMARK",
 }
 export enum MgCustomProperties {}
 export var

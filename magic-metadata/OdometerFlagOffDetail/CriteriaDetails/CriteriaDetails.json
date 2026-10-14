@@ -82,7 +82,7 @@
 				"x":	10,
 				"y":	69,
 				"width":	596,
-				"height":	360
+				"height":	200
 			},
 			"hint":	null,
 			"controlType":	"A",
@@ -218,10 +218,6 @@
 							"style":	null,
 							"props":	{
 								"id":	"READINGFROM",
-								"modifiable":	{
-									"value":	true,
-									"has_exp":	true
-								},
 								"mgformat":	"mgFormat",
 								"format":	"###",
 								"attribute":	"N",
@@ -242,6 +238,54 @@
 					]
 				}
 			]
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"FLAGERROR",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	{
+					"value":	"Text",
+					"has_exp":	true
+				},
+				"common_line_id":	"line284"
+			},
+			"coordinates":	{
+				"x":	23,
+				"y":	284,
+				"width":	532,
+				"height":	36
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"PASSREMARK",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"text":	{
+					"value":	"Text",
+					"has_exp":	true
+				},
+				"common_line_id":	"line320"
+			},
+			"coordinates":	{
+				"x":	25,
+				"y":	320,
+				"width":	532,
+				"height":	42
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
 		}
 	]
 }
