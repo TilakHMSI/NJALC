@@ -31,7 +31,7 @@ export class CriteriaDetailsMain extends BaseMatTableMagicComponent implements M
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "1050px";
-    private static readonly height: string = "700px";
+    private static readonly height: string = "630px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
