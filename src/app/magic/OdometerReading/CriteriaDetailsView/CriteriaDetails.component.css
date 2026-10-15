@@ -5,11 +5,11 @@
 }
 
 .mat-mdc-cell:first-child {
-    flex: 0 0 10%;
+    flex: 0 0 5%;
     padding-left: 5px;
 }
 .mat-mdc-header-cell:first-child {
-    flex: 0 0 10%;
+    flex: 0 0 5%;
     padding-left: 10px;
 }
 /* .mat-mdc-cell:nth-child(2) {
@@ -19,16 +19,16 @@
     flex: 0 0 20%;
 } */
  .mat-mdc-cell:nth-child(3){
-  flex: 0 0 50%;
+  flex: 0 0 60%;
 }
 .mat-mdc-header-cell:nth-child(3){
-  flex: 0 0 50%;
+  flex: 0 0 60%;
 }
 .mat-mdc-cell:nth-child(4){
   justify-content: center;
-  flex: 0 0 15%;
+  flex: 0 0 10%;
 }
 .mat-mdc-header-cell:nth-child(4){
   justify-content: center;
-  flex: 0 0 15%;
+  flex: 0 0 10%;
 } 

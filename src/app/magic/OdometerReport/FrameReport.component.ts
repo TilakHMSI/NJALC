@@ -27,7 +27,7 @@ export class FrameReport extends TaskBaseMagicComponent implements MagicModalInt
     private static readonly x: number = 0;
     private static readonly y: number = 0;
     private static readonly width: string = "1250px";
-    private static readonly height: string = "720px";
+    private static readonly height: string = "675px";
     private static readonly isCenteredToWindow: boolean = true;
     private static readonly shouldCloseOnBackgroundClick: boolean = false;
     private static readonly isResizable: boolean = true;
