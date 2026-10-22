@@ -7,20 +7,21 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     CriteriaDetails = "CriteriaDetails",
-        FRAMENO = "FRAMENO",
-        pFrameNo = "pFrameNo",
-        btnexit = "btnexit",
-        Table1 = "Table1",
-        Column2 = "Column2",
-        Label1 = "Label1",
-        Column3 = "Column3",
-        SHIPPINGCRITERIA = "SHIPPINGCRITERIA",
-        Column4 = "Column4",
-        REMARKS = "REMARKS",
-        Column34 = "Column34",
-        READINGFROM = "READINGFROM",
+    FRAMENO = "FRAMENO",
+    pFrameNo = "pFrameNo",
+    btnexit = "btnexit",
+    Table1 = "Table1",
+    Column2 = "Column2",
+    Label1 = "Label1",
+    Column3 = "Column3",
+    SHIPPINGCRITERIA = "SHIPPINGCRITERIA",
+    Column4 = "Column4",
+    REMARKS = "REMARKS",
+    Column34 = "Column34",
+    READINGFROM = "READINGFROM",
+    MK = "MK",
 }
-export enum MgCustomProperties {}
+export enum MgCustomProperties { }
 export var
     MgDisplayedColumns = [
         'Column2',
@@ -30,10 +31,14 @@ export var
     ];
 
 export class MgFormControlsAccessor {
-    constructor(private fg: FormGroup, private magicServices: MagicServices) {}
+    constructor(private fg: FormGroup, private magicServices: MagicServices) { }
 
     get pFrameNo(): FormControl {
         return this.fg.controls[MgControlName.pFrameNo] as FormControl;
+    }
+    
+    get MK(): FormControl {
+        return this.fg.controls[MgControlName.MK] as FormControl;
     }
 
     get SHIPPINGCRITERIA(): FormControl {

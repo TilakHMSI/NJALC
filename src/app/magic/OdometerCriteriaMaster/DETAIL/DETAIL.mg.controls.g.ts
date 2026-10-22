@@ -19,6 +19,8 @@ export enum MgControlName {
         REMARKS = "REMARKS",
         Column17 = "Column17",
         Exclude = "Exclude",
+        Column27 = "Column27",
+        RANGEFROM = "RANGEFROM",
         Column19 = "Column19",
         RANGETO = "RANGETO",
         Column12 = "Column12",
@@ -35,6 +37,7 @@ export var
         'Column3',
         'Column4',
         'Column17',
+        'Column27',
         'Column19',
         'Column12',
     ];

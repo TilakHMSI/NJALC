@@ -26,9 +26,9 @@
 }
 .mat-mdc-cell:nth-child(4){
   justify-content: center;
-  flex: 0 0 10%;
+  flex: 0 0 12%;
 }
 .mat-mdc-header-cell:nth-child(4){
   justify-content: center;
-  flex: 0 0 10%;
+  flex: 0 0 12%;
 } 

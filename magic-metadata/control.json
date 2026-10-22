@@ -1,23 +1,18 @@
 {
 	"style":	null,
 	"props":	{
-		"id":	"PASSREMARK",
-		"visible":	{
-			"value":	null,
-			"has_exp":	true
-		},
-		"text":	{
-			"value":	"Text",
-			"has_exp":	true
-		}
+		"id":	"MK",
+		"dataexp":	true,
+		"format":	"XXXXX",
+		"modifiable":	false
 	},
 	"coordinates":	{
-		"x":	25,
-		"y":	320,
-		"width":	532,
-		"height":	42
+		"x":	427,
+		"y":	27,
+		"width":	13,
+		"height":	20
 	},
 	"hint":	null,
-	"controlType":	"L",
+	"controlType":	"T",
 	"children":	null
 }

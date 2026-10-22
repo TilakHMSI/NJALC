@@ -13,17 +13,28 @@
         </div>
         <div class="col-lg-12">
             <div class="form-group row">
-                <div class="col-lg-9 border-yellow rounded p-2">
-                        <label class=" mt-4 h3">
-                            UPDATE SHIPPING CRITERIA DETAILS FOR FRAME NO.
-                        
-                        <label class="ml-5 text-primary h3" [magic]="mgc.pFrameNo">
+                <div class="col-lg-8">
+                    <label class=" mt-4 h4">
+                        UPDATE SHIPPING CRITERIA DETAILS FOR FRAME NO.
+                        <label class="ml-2 text-primary h4" [magic]="mgc.pFrameNo">
                             {{mg.getValue(mgc.pFrameNo) }}
                         </label></label>
-                        <!-- <input class="form-control h3" [formControlName]="mgc.pFrameNo" [magic]="mgc.pFrameNo"
+                    <!-- <input class="form-control h3" [formControlName]="mgc.pFrameNo" [magic]="mgc.pFrameNo"
                             mgFormat /> -->
                 </div>
-                <div class="col-lg-3 border-yellow rounded p-2" *ngIf="mg.getVisible(mgc.btnUpdate)==='visible'">
+                <div class="col-lg-2" [style.visibility]="mg.getVisible(mgc.MK)">
+                    <div class="form-group-sm">
+                        <label>Reading Unit</label>
+                        <select class="form-control" [magic]="mgc.MK" [formControlName]="mgc.MK"
+                            aria-placeholder="Reading Unit">
+                            <option *ngFor="let o of mg.getItemListValues(mgc.MK);"
+                                [selected]="o.index == mg.getValue(mgc.MK)" [value]="o.index">
+                                {{o.displayValue}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2" *ngIf="mg.getVisible(mgc.btnUpdate)==='visible'">
                     <div class="d-flex justify-content-end mt-2 mb-4 mr-5">
                         <button class="btn btn-sm btn-success" [magic]="mgc.btnUpdate">
                             Update
@@ -92,7 +103,8 @@
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <input type="checkbox" id="FLAGON_{{row.rowId}}" [formControlName]="mgc.FLAGON"
-                                        [title]="mg.getTitle(mgc.FLAGON, row.rowId)" [magic]="mgc.FLAGON" [rowId]="row.rowId" />
+                                        [title]="mg.getTitle(mgc.FLAGON, row.rowId)" [magic]="mgc.FLAGON"
+                                        [rowId]="row.rowId" />
                                 </div>
                             </div>
                         </mat-cell>

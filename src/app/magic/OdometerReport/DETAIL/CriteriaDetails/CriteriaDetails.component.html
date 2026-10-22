@@ -76,7 +76,7 @@
                     </ng-container>
                     <ng-container [magic]="mgc.Column34" [matColumnDef]="mgc.Column34">
                         <mat-header-cell *matHeaderCellDef>
-                            READING
+                            READING ({{mg.getValue(mgc.MK) }})
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">

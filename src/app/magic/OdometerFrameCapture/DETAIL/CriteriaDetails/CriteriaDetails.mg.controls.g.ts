@@ -19,6 +19,7 @@ export enum MgControlName {
         Column19 = "Column19",
         FLAGON = "FLAGON",
         pFrameNo  = "pFrameNo",
+        MK = "MK",
 }
 export enum MgCustomProperties {}
 export var
@@ -34,6 +35,10 @@ export class MgFormControlsAccessor {
 
     get pFrameNo(): FormControl {
         return this.getTableChildFormControl(MgControlName.pFrameNo);
+    }
+
+    get MK(): FormControl {
+        return this.getTableChildFormControl(MgControlName.MK);
     }
 
     get SHIPPINGCRITERIA(): FormControl {

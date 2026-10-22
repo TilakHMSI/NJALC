@@ -204,8 +204,45 @@
 				{
 					"style":	null,
 					"props":	{
+						"id":	"Column27",
+						"column_title":	"RANGE(MILES)",
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	80
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	null,
+							"props":	{
+								"id":	"RANGEFROM",
+								"mgformat":	"mgFormat",
+								"format":	"###",
+								"attribute":	"N",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line64"
+							},
+							"coordinates":	{
+								"x":	408,
+								"y":	64,
+								"width":	74,
+								"height":	20
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	null,
+					"props":	{
 						"id":	"Column19",
-						"column_title":	"RANGETO",
+						"column_title":	"RANGE(KM)",
 						"is_table_child":	true,
 						"web_style":	2
 					},
@@ -227,7 +264,7 @@
 								"common_line_id":	"line64"
 							},
 							"coordinates":	{
-								"x":	408,
+								"x":	488,
 								"y":	64,
 								"width":	57,
 								"height":	20
@@ -263,7 +300,7 @@
 								"common_line_id":	"line65"
 							},
 							"coordinates":	{
-								"x":	480,
+								"x":	560,
 								"y":	65,
 								"width":	20,
 								"height":	15
@@ -302,7 +339,7 @@
 								"common_line_id":	"line64"
 							},
 							"coordinates":	{
-								"x":	552,
+								"x":	632,
 								"y":	64,
 								"width":	28,
 								"height":	22
@@ -322,7 +359,7 @@
 								"common_line_id":	"line90"
 							},
 							"coordinates":	{
-								"x":	552,
+								"x":	632,
 								"y":	90,
 								"width":	35,
 								"height":	22
@@ -342,7 +379,7 @@
 								"common_line_id":	"line116"
 							},
 							"coordinates":	{
-								"x":	552,
+								"x":	632,
 								"y":	116,
 								"width":	43,
 								"height":	22
@@ -362,7 +399,7 @@
 								"common_line_id":	"line142"
 							},
 							"coordinates":	{
-								"x":	552,
+								"x":	632,
 								"y":	142,
 								"width":	41,
 								"height":	22

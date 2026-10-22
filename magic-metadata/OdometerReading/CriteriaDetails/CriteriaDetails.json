@@ -73,6 +73,25 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"ReadingUnit",
+				"modifiable":	false,
+				"dataexp":	true,
+				"format":	"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	389,
+				"y":	36,
+				"width":	33,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"btnUpdate",
 				"visible":	{
 					"value":	null,

@@ -36,7 +36,7 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"FRAMENO",
+				"id":	"pFrameNo",
 				"modifiable":	false,
 				"mgformat":	"mgFormat",
 				"format":	"XXXXXXXXXXXXXXXXXX",
@@ -73,7 +73,33 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"MK",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"items_list":	"M,K",
+				"attribute":	"A",
+				"common_line_id":	"line36"
+			},
+			"coordinates":	{
+				"x":	407,
+				"y":	36,
+				"width":	70,
+				"height":	19
+			},
+			"hint":	null,
+			"controlType":	"D",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"btnUpdate",
+				"visible":	{
+					"value":	null,
+					"has_exp":	true
+				},
 				"format":	"Update",
 				"common_line_id":	"line36"
 			},
@@ -220,7 +246,7 @@
 					"style":	null,
 					"props":	{
 						"id":	"Column19",
-						"column_title":	"FLAG ON",
+						"column_title":	"Select",
 						"is_table_child":	true,
 						"web_style":	2
 					},
@@ -234,6 +260,14 @@
 							"style":	null,
 							"props":	{
 								"id":	"FLAGON",
+								"tooltip":	{
+									"value":	null,
+									"has_exp":	true
+								},
+								"modifiable":	{
+									"value":	true,
+									"has_exp":	true
+								},
 								"text":	"",
 								"attribute":	"B",
 								"is_table_child":	true,

@@ -83,14 +83,17 @@
                     </ng-container>
                     <ng-container [magic]="mgc.Column4" [matColumnDef]="mgc.Column4">
                         <mat-header-cell *matHeaderCellDef>
-                            READING
+                            READING (
+                            <label [magic]="mgc.ReadingUnit">
+                                {{mg.getValue(mgc.ReadingUnit) }}
+                            </label>)
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
                                 <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
                                     <div>
-                                        <input [formControlName]="mgc.READINGFROM" class="form-control-ent" type='number'
-                                            [magic]="mgc.READINGFROM" [rowId]="row.rowId" mgFormat />
+                                        <input [formControlName]="mgc.READINGFROM" class="form-control-ent"
+                                            type='number' [magic]="mgc.READINGFROM" [rowId]="row.rowId" mgFormat />
                                         <mgError [magic]=mgc.READINGFROM [rowId]="row.rowId"> </mgError>
                                     </div>
                                 </div>

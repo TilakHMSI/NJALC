@@ -99,10 +99,31 @@
                             </div>
                         </mat-cell>
                     </ng-container>
-
+                    <ng-container [magic]="mgc.Column27" [matColumnDef]="mgc.Column27">
+                        <mat-header-cell *matHeaderCellDef>
+                            RANGE (MILES)
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
+                            <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                    <div>
+                                        <input class="form-control-ed" [formControlName]="mgc.RANGEFROM"
+                                            *ngIf="mg.isRowInRowEditing(row)" type='number'
+                                            [magic]="mgc.RANGEFROM" [rowId]="row.rowId" mgFormat />
+                                        <mgError [magic]=mgc.RANGEFROM [rowId]="row.rowId"> </mgError>
+                                        <label *ngIf="!mg.isRowInRowEditing(row)"
+                                            [magic]="mgc.RANGEFROM" [rowId]="row.rowId">
+                                            {{mg.getValue(mgc.RANGEFROM, row.rowId)
+                                            }}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
                     <ng-container [magic]="mgc.Column19" [matColumnDef]="mgc.Column19">
                         <mat-header-cell *matHeaderCellDef>
-                            RANGETO
+                            RANGE (KM)
                         </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer">
                             <div style="display: flex; flex-direction: row" *ngIf="mg.ifRowCreated(row)">

@@ -56,6 +56,25 @@
 		{
 			"style":	null,
 			"props":	{
+				"id":	"READINGUNIT",
+				"modifiable":	false,
+				"dataexp":	true,
+				"format":	"XXXXX",
+				"common_line_id":	"line9"
+			},
+			"coordinates":	{
+				"x":	575,
+				"y":	13,
+				"width":	13,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
 				"id":	"Table1",
 				"table_row_height":	78,
 				"table_title_height":	20,
